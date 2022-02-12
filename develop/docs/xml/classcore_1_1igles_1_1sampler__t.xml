@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1igles_1_1sampler__t" kind="class" language="C++" prot="public">
+    <compoundname>core::igles::sampler_t</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1igles_1_1sampler__t_1a22cfda8ce09d3f2523ab2e0c9f30fd53" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int core::igles::sampler_t::m_Sampler</definition>
+        <argsstring></argsstring>
+        <name>m_Sampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="27" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1aca8a58a53de7479babe3acc58710fffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sampler_t::sampler_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, core::resource::handle&lt; core::data::sampler_t &gt; sampler_data)</argsstring>
+        <name>sampler_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">core::data::sampler_t</ref> &gt;</type>
+          <declname>sampler_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/sampler.cpp" bodystart="13" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1acb7f1dd856a4dc08c1ffcf704b1a01a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sampler_t::~sampler_t</definition>
+        <argsstring>()</argsstring>
+        <name>~sampler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="17" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/sampler.cpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1a868f268d9c73b1311fb00d62fb106e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::sampler_t::sampler_t</definition>
+        <argsstring>(const sampler_t &amp;other)=delete</argsstring>
+        <name>sampler_t</name>
+        <param>
+          <type>const sampler_t &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1a29c59889a606b558d154f71761f2e7f2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::sampler_t::sampler_t</definition>
+        <argsstring>(sampler_t &amp;&amp;other) noexcept=delete</argsstring>
+        <name>sampler_t</name>
+        <param>
+          <type>sampler_t &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1a9443248bf79e0faff96ca07b886b00bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sampler_t &amp;</type>
+        <definition>sampler_t&amp; core::igles::sampler_t::operator=</definition>
+        <argsstring>(const sampler_t &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const sampler_t &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="21" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1aa9346a33d94367407fe3fda894689f3b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>sampler_t &amp;</type>
+        <definition>sampler_t&amp; core::igles::sampler_t::operator=</definition>
+        <argsstring>(sampler_t &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>sampler_t &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="22" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1sampler__t_1aa757f735d0277d0f88aed944cb9c0b2a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int core::igles::sampler_t::id</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="24" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/sampler.hpp" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classcore_1_1igles_1_1sampler__t_1aa757f735d0277d0f88aed944cb9c0b2a" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>id</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1a22cfda8ce09d3f2523ab2e0c9f30fd53" prot="private" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>m_Sampler</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1a9443248bf79e0faff96ca07b886b00bf" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1aa9346a33d94367407fe3fda894689f3b" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1aca8a58a53de7479babe3acc58710fffb" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>sampler_t</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1a868f268d9c73b1311fb00d62fb106e52" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>sampler_t</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1a29c59889a606b558d154f71761f2e7f2" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>sampler_t</name></member>
+      <member refid="classcore_1_1igles_1_1sampler__t_1acb7f1dd856a4dc08c1ffcf704b1a01a1" prot="public" virt="non-virtual"><scope>core::igles::sampler_t</scope><name>~sampler_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

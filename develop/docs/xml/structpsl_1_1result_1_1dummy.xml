@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1result_1_1dummy" kind="struct" language="C++" prot="private">
+    <compoundname>psl::result::dummy</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/expected.hpp" line="46" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/expected.hpp" bodystart="45" bodyend="46"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1is__range" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::is_range</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1details_1_1is__range_1a6ef45cc81b2f4b9f7a104598789023d1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::serialization::details::is_range&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{utility::templates::is_trivial_container&lt;T&gt;::value ||
+										 utility::templates::is_complex_container&lt;T&gt;::value}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="281" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="280" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="279" bodyend="283"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1details_1_1is__range_1a6ef45cc81b2f4b9f7a104598789023d1" prot="public" virt="non-virtual"><scope>psl::serialization::details::is_range</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

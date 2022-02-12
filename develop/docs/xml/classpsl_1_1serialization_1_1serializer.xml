@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1serialization_1_1serializer" kind="class" language="C++" prot="public">
+    <compoundname>psl::serialization::serializer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpsl_1_1serialization_1_1serializer_1adfee88ec5b53e41bb93491204e4247d0" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; uint64_t, invocable_wrapper_base * &gt;</type>
+        <definition>std::unordered_map&lt;uint64_t, invocable_wrapper_base*&gt; psl::serialization::serializer::m_Factory</definition>
+        <argsstring></argsstring>
+        <name>m_Factory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="1043" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1afafdeaa0524ac96a4995b8c5be13adf5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void psl::serialization::serializer::check</definition>
+        <argsstring>()</argsstring>
+        <name>check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="879" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="879" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a045442b3e900dcc13ea9f4f376a76a2b" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>static constexpr bool psl::serialization::serializer::is_member_fn</definition>
+        <argsstring>()</argsstring>
+        <name>is_member_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="896" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="896" bodyend="900"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1ab8636e9deafed7d8ad194c0a1d301511" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>static constexpr bool psl::serialization::serializer::is_fn</definition>
+        <argsstring>()</argsstring>
+        <name>is_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="903" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="903" bodyend="907"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a744e35d08e3ada052d5d64f7e4ccc702" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::serialization::serializer::~serializer</definition>
+        <argsstring>()</argsstring>
+        <name>~serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="910" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="910" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a7384ea17874f7bdc024bf0c74d03a708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::serialization::serializer::serialize</definition>
+        <argsstring>(T *target, psl::format::container &amp;out, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::format::container &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="919" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="919" bodyend="923"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a665b88a637f5aa86baafc0016b744569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::serialization::serializer::serialize</definition>
+        <argsstring>(T &amp;target, psl::string8::view filename, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="926" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="926" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a095a7fd2f78eed7e2ca1f8411dc847ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::serialization::serializer::serialize</definition>
+        <argsstring>(T *target, psl::string8::view filename, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="934" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="934" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1aa29ffeedfb036a757691e6163641a9a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::serialization::serializer::serialize</definition>
+        <argsstring>(T &amp;target, psl::format::container &amp;out, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::format::container &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="943" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="943" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a9429d192a1e027ad5b16cad782126eaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool psl::serialization::serializer::deserialize</definition>
+        <argsstring>(T *&amp;target, psl::format::container &amp;out, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::format::container &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="962" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="962" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a9fd5a76b78f959d34e5192ea5e10d87d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool psl::serialization::serializer::deserialize</definition>
+        <argsstring>(T *&amp;target, psl::string8::view filename, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="997" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="997" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a0de338f8c88b3ea4bd9d422cd60692f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool psl::serialization::serializer::deserialize</definition>
+        <argsstring>(T &amp;target, psl::string8::view filename, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="1006" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="1006" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a0621d0a29b3ef6dbbfe3f109059d6737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Encoder</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool psl::serialization::serializer::deserialize</definition>
+        <argsstring>(T &amp;target, psl::format::container &amp;out, std::optional&lt; psl::string8::view &gt; name={})</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>psl::format::container &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; psl::string8::view &gt;</type>
+          <declname>name</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="1015" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="1015" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1serializer_1a548a893b0ccfda79031455280b6d243e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::serialization::serializer::add_factory</definition>
+        <argsstring>(F &amp;&amp;f)</argsstring>
+        <name>add_factory</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="1038" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="1038" bodyend="1041"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="877" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="876" bodyend="1044"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a548a893b0ccfda79031455280b6d243e" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>add_factory</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1afafdeaa0524ac96a4995b8c5be13adf5" prot="private" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>check</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a9429d192a1e027ad5b16cad782126eaa" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>deserialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a9fd5a76b78f959d34e5192ea5e10d87d" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>deserialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a0de338f8c88b3ea4bd9d422cd60692f2" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>deserialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a0621d0a29b3ef6dbbfe3f109059d6737" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>deserialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1ab8636e9deafed7d8ad194c0a1d301511" prot="private" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>is_fn</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a045442b3e900dcc13ea9f4f376a76a2b" prot="private" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>is_member_fn</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1adfee88ec5b53e41bb93491204e4247d0" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>m_Factory</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a7384ea17874f7bdc024bf0c74d03a708" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>serialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a665b88a637f5aa86baafc0016b744569" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>serialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a095a7fd2f78eed7e2ca1f8411dc847ec" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>serialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1aa29ffeedfb036a757691e6163641a9a6" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>serialize</name></member>
+      <member refid="classpsl_1_1serialization_1_1serializer_1a744e35d08e3ada052d5d64f7e4ccc702" prot="public" virt="non-virtual"><scope>psl::serialization::serializer</scope><name>~serializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

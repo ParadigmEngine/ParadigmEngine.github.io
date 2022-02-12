@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stdafx_8cpp" kind="file" language="C++">
+    <compoundname>stdafx.cpp</compoundname>
+    <includes local="yes">stdafx.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdafx.h</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/src/stdafx.cpp</label>
+        <link refid="stdafx_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>stdafx.cpp<sp/>:<sp/>source<sp/>file<sp/>that<sp/>includes<sp/>just<sp/>the<sp/>standard<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>core.pch<sp/>will<sp/>be<sp/>the<sp/>pre-compiled<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>stdafx.obj<sp/>will<sp/>contain<sp/>the<sp/>pre-compiled<sp/>type<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdafx.h&quot;</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/stdafx.cpp"/>
+  </compounddef>
+</doxygen>

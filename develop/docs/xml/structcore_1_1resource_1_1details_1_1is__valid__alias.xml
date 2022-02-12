@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource_1_1details_1_1is__valid__alias" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource::details::is_valid_alias</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">false_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename C</type>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="56" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="55" bodyend="56"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

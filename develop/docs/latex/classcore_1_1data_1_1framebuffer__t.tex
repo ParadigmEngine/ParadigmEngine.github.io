@@ -1,0 +1,195 @@
+\hypertarget{classcore_1_1data_1_1framebuffer__t}{}\doxysection{core\+::data\+::framebuffer\+\_\+t Class Reference}
+\label{classcore_1_1data_1_1framebuffer__t}\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+
+
+container class that describes the data to create a set of rendertargets.  
+
+
+
+
+{\ttfamily \#include $<$framebuffer.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment}{attachment}}
+\begin{DoxyCompactList}\small\item\em describes a single rendertarget in a framebuffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a6726c157c40c73f1ca64c87645e6ab6e}{framebuffer\+\_\+t}} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a04595a5dcba7711f87bae6c9acdad76f}{width}}, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_aa8810e829a3d61977f96d0f79367ab99}{height}}, uint32\+\_\+t layers=1u) noexcept
+\begin{DoxyCompactList}\small\item\em basic constructor that sets up the rough outlines of an instance \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \& \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a8e7b1547309688df00a850820a516c94}{add}} (uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a04595a5dcba7711f87bae6c9acdad76f}{width}}, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_aa8810e829a3d61977f96d0f79367ab99}{height}}, uint32\+\_\+t layer\+Count, core\+::gfx\+::image\+::usage usage, core\+::gfx\+::clear\+\_\+value clear\+Value, core\+::gfx\+::attachment descr)
+\begin{DoxyCompactList}\small\item\em adds a \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment}{core\+::data\+::framebuffer\+\_\+t\+::attachment}} to the current framebuffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_ae2b412d2784bd5dff3afdf0b883f4cb6}{remove}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid)
+\begin{DoxyCompactList}\small\item\em removes the attachment that is using this \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} for its texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a06276d01cedae82f845c6cbcc4611e9a}{set}} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::sampler\+\_\+t $>$ \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a04a18b31bf3e63b5282a93835758e4ac}{sampler}})
+\begin{DoxyCompactList}\small\item\em sets the sampler associated with this framebuffer \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment}{attachment}} $>$ \& \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_aec57b627563cbca509ff6356ed26e992}{attachments}} () const
+\begin{DoxyCompactList}\small\item\em gets all attachments currently assigned to this framebuffer. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_ad21798e3e5fb23e971ba484bdbb3b6fb}{framebuffers}} () const
+\begin{DoxyCompactList}\small\item\em returns the framebuffer count (layers). \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} $>$ \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a04a18b31bf3e63b5282a93835758e4ac}{sampler}} () const
+\begin{DoxyCompactList}\small\item\em returns the sampler associated with this framebuffer (if it has been set). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_a04595a5dcba7711f87bae6c9acdad76f}\label{classcore_1_1data_1_1framebuffer__t_a04595a5dcba7711f87bae6c9acdad76f}} 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_a04595a5dcba7711f87bae6c9acdad76f}{width}} () const
+\begin{DoxyCompactList}\small\item\em returns the width of the framebuffer object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_aa8810e829a3d61977f96d0f79367ab99}\label{classcore_1_1data_1_1framebuffer__t_aa8810e829a3d61977f96d0f79367ab99}} 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_aa8810e829a3d61977f96d0f79367ab99}{height}} () const
+\begin{DoxyCompactList}\small\item\em returns the height of the framebuffer object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1framebuffer__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file framebuffer.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_a6726c157c40c73f1ca64c87645e6ab6e}\label{classcore_1_1data_1_1framebuffer__t_a6726c157c40c73f1ca64c87645e6ab6e}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!framebuffer\_t@{framebuffer\_t}}
+\index{framebuffer\_t@{framebuffer\_t}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{framebuffer\_t()}{framebuffer\_t()}}
+{\footnotesize\ttfamily framebuffer\+\_\+t\+::framebuffer\+\_\+t (\begin{DoxyParamCaption}\item[{core\+::resource\+::cache\+\_\+t \&}]{cache,  }\item[{const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&}]{meta\+Data,  }\item[{\mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$}]{meta\+File,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{layers = {\ttfamily 1u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyNote}{Note}
+you will still need to set up attachments, etc.. later on. The constructor makes a \char`\"{}valid\char`\"{} instance in the sense that manipulating it will not cause undefined behaviour, but you cannot create a \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} just yet with this after calling the constructor. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cache} & signifies in which cache I will be constructed in. \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+Data} & the metadata that is assigned to this object \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+File} & the metafile associated with this instance \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & the width in pixels of this framebuffer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & the height in pixels of this framebuffer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em layers} & the amount of layers this framebuffer will have (often referred to as the framebuffer count in the documentation). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file framebuffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_a8e7b1547309688df00a850820a516c94}\label{classcore_1_1data_1_1framebuffer__t_a8e7b1547309688df00a850820a516c94}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!add@{add}}
+\index{add@{add}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} \& framebuffer\+\_\+t\+::add (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{layer\+Count,  }\item[{core\+::gfx\+::image\+::usage}]{usage,  }\item[{core\+::gfx\+::clear\+\_\+value}]{clear\+Value,  }\item[{core\+::gfx\+::attachment}]{descr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em width} & the width of the attachment in pixels. \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & the height of the attachment in pixels. \\
+\hline
+\mbox{\texttt{ in}}  & {\em layer\+Count} & the depth layers of the attachment. \\
+\hline
+\mbox{\texttt{ in}}  & {\em usage} & signifies how the image will be used. \\
+\hline
+\mbox{\texttt{ in}}  & {\em clear\+Value} & the value to clear the image with at the start of rendering. \\
+\hline
+\mbox{\texttt{ in}}  & {\em descr} & how the image load op\textquotesingle{}s etc... will be handled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment}{core\+::data\+::framebuffer\+\_\+t\+::attachment}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 25 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_ae2b412d2784bd5dff3afdf0b883f4cb6}\label{classcore_1_1data_1_1framebuffer__t_ae2b412d2784bd5dff3afdf0b883f4cb6}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!remove@{remove}}
+\index{remove@{remove}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool framebuffer\+\_\+t\+::remove (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true in case it found and removed atleast one attachment with the given U\+ID. 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_a06276d01cedae82f845c6cbcc4611e9a}\label{classcore_1_1data_1_1framebuffer__t_a06276d01cedae82f845c6cbcc4611e9a}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!set@{set}}
+\index{set@{set}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void framebuffer\+\_\+t\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::sampler\+\_\+t $>$}]{sampler }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sampler} & a valid sampler resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the sampler does not need to be loaded, we will only store the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, but if the framebuffer is used for rendering, and the sampler is invalid, then what follows is undefined behaviour. 
+\end{DoxyNote}
+
+
+Definition at line 77 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_aec57b627563cbca509ff6356ed26e992}\label{classcore_1_1data_1_1framebuffer__t_aec57b627563cbca509ff6356ed26e992}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!attachments@{attachments}}
+\index{attachments@{attachments}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{attachments()}{attachments()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment}{attachment}}$>$\& core\+::data\+::framebuffer\+\_\+t\+::attachments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+all attachments currently assigned to this framebuffer. 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file framebuffer.\+hpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_ad21798e3e5fb23e971ba484bdbb3b6fb}\label{classcore_1_1data_1_1framebuffer__t_ad21798e3e5fb23e971ba484bdbb3b6fb}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!framebuffers@{framebuffers}}
+\index{framebuffers@{framebuffers}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{framebuffers()}{framebuffers()}}
+{\footnotesize\ttfamily uint32\+\_\+t framebuffer\+\_\+t\+::framebuffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the framebuffer count (layers). 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_a04a18b31bf3e63b5282a93835758e4ac}\label{classcore_1_1data_1_1framebuffer__t_a04a18b31bf3e63b5282a93835758e4ac}} 
+\index{core::data::framebuffer\_t@{core::data::framebuffer\_t}!sampler@{sampler}}
+\index{sampler@{sampler}!core::data::framebuffer\_t@{core::data::framebuffer\_t}}
+\doxysubsubsection{\texorpdfstring{sampler()}{sampler()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} $>$ framebuffer\+\_\+t\+::sampler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the sampler associated with this framebuffer (if it has been set). 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file framebuffer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/framebuffer.\+cpp\end{DoxyCompactItemize}

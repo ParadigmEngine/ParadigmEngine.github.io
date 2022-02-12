@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_85b4caaf05d913d893bb32184274c3ef" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/src/systems</compoundname>
+    <innerfile refid="input_8cpp">input.cpp</innerfile>
+    <innerfile refid="input__win32_8cpp">input_win32.cpp</innerfile>
+    <innerfile refid="input__xcb_8cpp">input_xcb.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/systems/"/>
+  </compounddef>
+</doxygen>

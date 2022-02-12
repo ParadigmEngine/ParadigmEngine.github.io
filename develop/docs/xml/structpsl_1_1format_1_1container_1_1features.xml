@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1container_1_1features" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::container::features</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1features_1a0a340e80e8bf6e8049734a8bf92ac7f0" prot="public" static="no" mutable="no">
+        <type>version_t</type>
+        <definition>version_t psl::format::container::features::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="252" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1features_1a535bf30c1472f296631248a1992f0584" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::container::features::recover_from_error</definition>
+        <argsstring></argsstring>
+        <name>recover_from_error</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="253" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1features_1aca5fb53ed8bfa8791c7ea35428c2de84" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::container::features::verify_checksum</definition>
+        <argsstring></argsstring>
+        <name>verify_checksum</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="254" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1features_1ad6fd112b5d6ac3b8f7d9aca38ba264ae" prot="public" static="no" mutable="no">
+        <type>encoding_t</type>
+        <definition>encoding_t psl::format::container::features::encoding</definition>
+        <argsstring></argsstring>
+        <name>encoding</name>
+        <initializer>{encoding_t::string}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="255" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1container_1_1features_1a9e7024d37a91313f7520c6155d910a57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::container::features::features</definition>
+        <argsstring>()</argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="250" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1container_1_1features_1aebd9029a6e35433f82a291db0c11cf9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::container::features::~features</definition>
+        <argsstring>()=default</argsstring>
+        <name>~features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="251" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="249" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="248" bodyend="256"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1ad6fd112b5d6ac3b8f7d9aca38ba264ae" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>encoding</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1a9e7024d37a91313f7520c6155d910a57" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>features</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1a535bf30c1472f296631248a1992f0584" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>recover_from_error</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1aca5fb53ed8bfa8791c7ea35428c2de84" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>verify_checksum</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1a0a340e80e8bf6e8049734a8bf92ac7f0" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>version</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1features_1aebd9029a6e35433f82a291db0c11cf9c" prot="public" virt="non-virtual"><scope>psl::format::container::features</scope><name>~features</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

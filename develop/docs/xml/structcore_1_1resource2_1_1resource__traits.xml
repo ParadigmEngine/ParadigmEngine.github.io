@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource2_1_1resource__traits" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource2::resource_traits</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structcore_1_1resource2_1_1resource__traits_1a4c3c4d6fb7f58b3e1b32f965726386bf" prot="public" static="no">
+        <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref></type>
+        <definition>using core::resource2::resource_traits&lt; T &gt;::meta_type =  psl::meta::file</definition>
+        <argsstring></argsstring>
+        <name>meta_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/fwd/resource/resource.hpp" line="86" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/fwd/resource/resource.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/fwd/resource/resource.hpp" line="85" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/fwd/resource/resource.hpp" bodystart="84" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structcore_1_1resource2_1_1resource__traits_1a4c3c4d6fb7f58b3e1b32f965726386bf" prot="public" virt="non-virtual"><scope>core::resource2::resource_traits</scope><name>meta_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

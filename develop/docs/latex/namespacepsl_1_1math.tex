@@ -1,0 +1,307 @@
+\hypertarget{namespacepsl_1_1math}{}\doxysection{psl\+::math Namespace Reference}
+\label{namespacepsl_1_1math}\index{psl::math@{psl::math}}
+
+
+conversions  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ace2abbb201e48ad44faa73b39e285c0e}\label{namespacepsl_1_1math_ace2abbb201e48ad44faa73b39e285c0e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries sin} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ae3505b14531c72f496893113b5c9a819}\label{namespacepsl_1_1math_ae3505b14531c72f496893113b5c9a819}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries cos} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a2f2aea9cf06a464fd1f1486279a3322b}\label{namespacepsl_1_1math_a2f2aea9cf06a464fd1f1486279a3322b}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries tan} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a5a9f5eb12f8d020a2af01e985ad02676}\label{namespacepsl_1_1math_a5a9f5eb12f8d020a2af01e985ad02676}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries acos} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a8fc85569b6179dd65822ab05a9bdf7e4}\label{namespacepsl_1_1math_a8fc85569b6179dd65822ab05a9bdf7e4}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries asin} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a0793686f7f27c4ffe7cb8c8ffc53c82c}\label{namespacepsl_1_1math_a0793686f7f27c4ffe7cb8c8ffc53c82c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries atan} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a142f923ad1d23d921e1fd9e5bd9e4732}\label{namespacepsl_1_1math_a142f923ad1d23d921e1fd9e5bd9e4732}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries sqrt} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ac8bc36555d2850bcc0e0d08e6069a726}\label{namespacepsl_1_1math_ac8bc36555d2850bcc0e0d08e6069a726}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries angle\+\_\+axis} (const precision\+\_\+t \&angle, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ac498a132d0113f9c8a1af4cd2f90a6a8}\label{namespacepsl_1_1math_ac498a132d0113f9c8a1af4cd2f90a6a8}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries rotate} (const psl\+::tquat$<$ precision\+\_\+t $>$ \&quat, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ae6334beba4f88d54610e069ac7351053}\label{namespacepsl_1_1math_ae6334beba4f88d54610e069ac7351053}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr precision\+\_\+t {\bfseries fade} (precision\+\_\+t t) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a6117fee8f2287de65afb0181710c2a8f}\label{namespacepsl_1_1math_a6117fee8f2287de65afb0181710c2a8f}} 
+{\footnotesize template$<$typename hash\+\_\+t , typename precision\+\_\+t $>$ }\\constexpr precision\+\_\+t {\bfseries grad} (hash\+\_\+t hash, precision\+\_\+t x, precision\+\_\+t y, precision\+\_\+t z)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ae98382120ec6de45b723939617b31ad5}\label{namespacepsl_1_1math_ae98382120ec6de45b723939617b31ad5}} 
+{\footnotesize template$<$typename hash\+\_\+t , typename precision\+\_\+t $>$ }\\constexpr precision\+\_\+t {\bfseries grad} (hash\+\_\+t hash, precision\+\_\+t x, precision\+\_\+t y)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a37119e8fd1892f03c6233213b03257b3}\label{namespacepsl_1_1math_a37119e8fd1892f03c6233213b03257b3}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr precision\+\_\+t {\bfseries lerp} (precision\+\_\+t t, precision\+\_\+t a, precision\+\_\+t b) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_aa903d9700842c4900be463df8d095f5e}\label{namespacepsl_1_1math_aa903d9700842c4900be463df8d095f5e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr psl\+::tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries lerp} (precision\+\_\+t t, psl\+::tvec$<$ precision\+\_\+t, 1 $>$ a, psl\+::tvec$<$ precision\+\_\+t, 1 $>$ b) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a4b2579b7f1a76751779288df938f4b33}\label{namespacepsl_1_1math_a4b2579b7f1a76751779288df938f4b33}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr psl\+::tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries lerp} (precision\+\_\+t t, psl\+::tvec$<$ precision\+\_\+t, 2 $>$ a, psl\+::tvec$<$ precision\+\_\+t, 2 $>$ b) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ac61ee32c865f0fc28007f7563d1042a3}\label{namespacepsl_1_1math_ac61ee32c865f0fc28007f7563d1042a3}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr psl\+::tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries lerp} (precision\+\_\+t t, psl\+::tvec$<$ precision\+\_\+t, 3 $>$ a, psl\+::tvec$<$ precision\+\_\+t, 3 $>$ b) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a8c551efe5f95ef87494dff1899d2c359}\label{namespacepsl_1_1math_a8c551efe5f95ef87494dff1899d2c359}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr psl\+::tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries lerp} (precision\+\_\+t t, psl\+::tvec$<$ precision\+\_\+t, 4 $>$ a, psl\+::tvec$<$ precision\+\_\+t, 4 $>$ b) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_afa36f7d9a590e3f5c6d1b239fbaf4f76}\label{namespacepsl_1_1math_afa36f7d9a590e3f5c6d1b239fbaf4f76}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries saturate} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a5dc929dc8e33d5d75be6f6c02748f2c7}\label{namespacepsl_1_1math_a5dc929dc8e33d5d75be6f6c02748f2c7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries clamp} (precision\+\_\+t value, precision\+\_\+t min=0, precision\+\_\+t max=1) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a446fe158eebc06c680b3a477e08d217e}\label{namespacepsl_1_1math_a446fe158eebc06c680b3a477e08d217e}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries distance} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec1, const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec2) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a9f0a78ff17ad14042756f9b34f52cf2e}\label{namespacepsl_1_1math_a9f0a78ff17ad14042756f9b34f52cf2e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries floor} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a47c4b94bfae074de439d39e801d50a71}\label{namespacepsl_1_1math_a47c4b94bfae074de439d39e801d50a71}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries floor} (psl\+::tvec$<$ precision\+\_\+t, 1 $>$ value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a9b3259363228d8c9064a6d0d65f38247}\label{namespacepsl_1_1math_a9b3259363228d8c9064a6d0d65f38247}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries floor} (psl\+::tvec$<$ precision\+\_\+t, 2 $>$ value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7ab7d498691a968618799727f5923db1}\label{namespacepsl_1_1math_a7ab7d498691a968618799727f5923db1}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries floor} (psl\+::tvec$<$ precision\+\_\+t, 3 $>$ value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a933d803ffa048c11af5e39c3827e6385}\label{namespacepsl_1_1math_a933d803ffa048c11af5e39c3827e6385}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries floor} (psl\+::tvec$<$ precision\+\_\+t, 4 $>$ value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a0be92ee28c006fb9ece3632dec243fd6}\label{namespacepsl_1_1math_a0be92ee28c006fb9ece3632dec243fd6}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries exp} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7b7f9b635b09a4dcd87b45e62d971e37}\label{namespacepsl_1_1math_a7b7f9b635b09a4dcd87b45e62d971e37}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries fract} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_aab654186308c80ddf893d0040f43c303}\label{namespacepsl_1_1math_aab654186308c80ddf893d0040f43c303}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static auto {\bfseries log} (precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_afa5bf9541c8f847cd4b1686f6a07c7b2}\label{namespacepsl_1_1math_afa5bf9541c8f847cd4b1686f6a07c7b2}} 
+{\footnotesize template$<$typename precision\+\_\+t , typename precision\+\_\+\+N\+\_\+t $>$ }\\constexpr static long double {\bfseries log\+\_\+n} (precision\+\_\+\+N\+\_\+t N, precision\+\_\+t value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a44f9480972df5c3d1bd57889fd8f5d94}\label{namespacepsl_1_1math_a44f9480972df5c3d1bd57889fd8f5d94}} 
+{\footnotesize template$<$typename precision\+\_\+t , typename precision\+\_\+\+N\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries next\+\_\+pow\+\_\+of} (precision\+\_\+\+N\+\_\+t N, precision\+\_\+t value) noexcept
+\item 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t \mbox{\hyperlink{namespacepsl_1_1math_afc5b1e0fb6b64fbe9a1f4f3e439f2e3e}{round\+\_\+to}} (precision\+\_\+t N, precision\+\_\+t value) noexcept
+\begin{DoxyCompactList}\small\item\em round to nearest multiple of N \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t \mbox{\hyperlink{namespacepsl_1_1math_adad9776e83b305ce262afbbb4347741e}{ceil\+\_\+to}} (precision\+\_\+t N, precision\+\_\+t value) noexcept
+\begin{DoxyCompactList}\small\item\em ceil to nearest multiple of N \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t \mbox{\hyperlink{namespacepsl_1_1math_a836b151ef1fdf6e5b2c676f06109cbd9}{floor\+\_\+to}} (precision\+\_\+t N, precision\+\_\+t value) noexcept
+\begin{DoxyCompactList}\small\item\em floor to nearest multiple of N \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7c0f24d8ba51bfcc3678a9c9d28a379e}\label{namespacepsl_1_1math_a7c0f24d8ba51bfcc3678a9c9d28a379e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries min} (const precision\+\_\+t \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_add70c6e5e5409a15499dad8593893b55}\label{namespacepsl_1_1math_add70c6e5e5409a15499dad8593893b55}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t N$>$ }\\constexpr static tvec$<$ precision\+\_\+t, N $>$ {\bfseries min} (const tvec$<$ precision\+\_\+t, N $>$ \&left, const tvec$<$ precision\+\_\+t, N $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_acbf7485b366cc50aabb834792760e2fe}\label{namespacepsl_1_1math_acbf7485b366cc50aabb834792760e2fe}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries max} (const precision\+\_\+t \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a43acbad6575f239359a2ccb843d3b587}\label{namespacepsl_1_1math_a43acbad6575f239359a2ccb843d3b587}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t N$>$ }\\constexpr static tvec$<$ precision\+\_\+t, N $>$ {\bfseries max} (const tvec$<$ precision\+\_\+t, N $>$ \&left, const tvec$<$ precision\+\_\+t, N $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7558e41f59152c0926c1463514bf0125}\label{namespacepsl_1_1math_a7558e41f59152c0926c1463514bf0125}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries abs} (const precision\+\_\+t \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a69409c64052a21a31d425d7cdbe0ad14}\label{namespacepsl_1_1math_a69409c64052a21a31d425d7cdbe0ad14}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t N$>$ }\\constexpr static tvec$<$ precision\+\_\+t, N $>$ {\bfseries abs} (const tvec$<$ precision\+\_\+t, N $>$ \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_af5239f8e54ea42be8b52ae4f5ad6af52}\label{namespacepsl_1_1math_af5239f8e54ea42be8b52ae4f5ad6af52}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries difference} (const precision\+\_\+t \&lhs, const precision\+\_\+t \&rhs) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a6c116f98958f045af151a04be9e2294d}\label{namespacepsl_1_1math_a6c116f98958f045af151a04be9e2294d}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t N$>$ }\\constexpr static tvec$<$ precision\+\_\+t, N $>$ {\bfseries difference} (const tvec$<$ precision\+\_\+t, N $>$ \&lhs, const tvec$<$ precision\+\_\+t, N $>$ \&rhs) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_af5da48087e1a33b32e67bdf7c9de6f5e}\label{namespacepsl_1_1math_af5da48087e1a33b32e67bdf7c9de6f5e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries from\+\_\+euler} (precision\+\_\+t pitch, precision\+\_\+t yaw, precision\+\_\+t roll) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_acf3baa4570656fb1b8a148b8d393ac44}\label{namespacepsl_1_1math_acf3baa4570656fb1b8a148b8d393ac44}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries from\+\_\+euler} (const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_aa65daf2efc2303aede8ff91d42fd1b30}\label{namespacepsl_1_1math_aa65daf2efc2303aede8ff91d42fd1b30}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries to\+\_\+euler} (const tquat$<$ precision\+\_\+t $>$ \&q) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a4059c77859a6547790448def22145d46}\label{namespacepsl_1_1math_a4059c77859a6547790448def22145d46}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries perspective\+\_\+projection} (precision\+\_\+t vertical\+\_\+fov, precision\+\_\+t aspect\+\_\+ratio, precision\+\_\+t near, precision\+\_\+t far) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ad641b1f31f85ba6e912f0890a6588252}\label{namespacepsl_1_1math_ad641b1f31f85ba6e912f0890a6588252}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries look\+\_\+at} (const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&eye, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&center, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&up) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7fd8e1fdb613fdeeddf8162ee981e9e8}\label{namespacepsl_1_1math_a7fd8e1fdb613fdeeddf8162ee981e9e8}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries scale} (const psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ \&mat, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ad672cc0d61adc59bbf9e0dbf1e5cd53f}\label{namespacepsl_1_1math_ad672cc0d61adc59bbf9e0dbf1e5cd53f}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries scale} (const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a9f30b1cbcd38f4d8d79e8f8bc679462c}\label{namespacepsl_1_1math_a9f30b1cbcd38f4d8d79e8f8bc679462c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries translate} (const psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ \&mat, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a0e7b5637103a80aa9a12305b3353b330}\label{namespacepsl_1_1math_a0e7b5637103a80aa9a12305b3353b330}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries translate} (const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_aa575999e52e6d2a30efe5fba42ceba02}\label{namespacepsl_1_1math_aa575999e52e6d2a30efe5fba42ceba02}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ {\bfseries rotate} (const psl\+::tmat$<$ precision\+\_\+t, 4, 4 $>$ \&tmat, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&tvec, precision\+\_\+t angle) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a466d33dacd338542fb564aae96e33bf7}\label{namespacepsl_1_1math_a466d33dacd338542fb564aae96e33bf7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tmat$<$ precision\+\_\+t, 3, 3 $>$ {\bfseries to\+\_\+matrix} (const psl\+::tquat$<$ precision\+\_\+t $>$ \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a92d0f35216efcb338b65d7312d8025d3}\label{namespacepsl_1_1math_a92d0f35216efcb338b65d7312d8025d3}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\static constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries to\+\_\+quat} (tmat$<$ precision\+\_\+t, 3, 3 $>$ const \&mat) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ae61970710b5dbdd83c1ea399219ab306}\label{namespacepsl_1_1math_ae61970710b5dbdd83c1ea399219ab306}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries look\+\_\+at\+\_\+q} (const tvec$<$ precision\+\_\+t, 3 $>$ \&direction, const tvec$<$ precision\+\_\+t, 3 $>$ \&up) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a09898de4587e3111ce7ea7b95111f63e}\label{namespacepsl_1_1math_a09898de4587e3111ce7ea7b95111f63e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries look\+\_\+at\+\_\+q} (const tvec$<$ precision\+\_\+t, 3 $>$ \&origin, const tvec$<$ precision\+\_\+t, 3 $>$ \&target, const tvec$<$ precision\+\_\+t, 3 $>$ \&up) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a232cb90beb8b17bbec81b06530a1aca9}\label{namespacepsl_1_1math_a232cb90beb8b17bbec81b06530a1aca9}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries mix} (const precision\+\_\+t \&x, const precision\+\_\+t \&y, precision\+\_\+t a) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a60d387007eb882e3b2be678cfad5f871}\label{namespacepsl_1_1math_a60d387007eb882e3b2be678cfad5f871}} 
+{\footnotesize template$<$typename element1\+\_\+t , typename element2\+\_\+t , typename precision\+\_\+t , typename return\+\_\+t  = element1\+\_\+t, size\+\_\+t N$>$ }\\constexpr static psl\+::tvec$<$ return\+\_\+t, N $>$ {\bfseries mix} (const std\+::array$<$ element1\+\_\+t, N $>$ \&x, const std\+::array$<$ element2\+\_\+t, N $>$ \&y, precision\+\_\+t a) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a155157ec6d3d9f7e455f7004e3c139b5}\label{namespacepsl_1_1math_a155157ec6d3d9f7e455f7004e3c139b5}} 
+{\footnotesize template$<$typename element1\+\_\+t , typename element2\+\_\+t , typename precision\+\_\+t , typename return\+\_\+t  = element1\+\_\+t, size\+\_\+t N$>$ }\\constexpr static psl\+::tvec$<$ return\+\_\+t, N $>$ {\bfseries mix} (const psl\+::tvec$<$ element1\+\_\+t, N $>$ \&x, const psl\+::tvec$<$ element2\+\_\+t, N $>$ \&y, precision\+\_\+t a) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a202c33aa2673a83acf0635e7b3e3ea80}\label{namespacepsl_1_1math_a202c33aa2673a83acf0635e7b3e3ea80}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries dot} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ad1d45ae8c5f17bf7fd1ab34c3072b7fb}\label{namespacepsl_1_1math_ad1d45ae8c5f17bf7fd1ab34c3072b7fb}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries square\+\_\+magnitude} (const tquat$<$ precision\+\_\+t $>$ \&quat) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a0eb21b609e812a8d6d7f3b1bf257c094}\label{namespacepsl_1_1math_a0eb21b609e812a8d6d7f3b1bf257c094}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static precision\+\_\+t {\bfseries magnitude} (const tquat$<$ precision\+\_\+t $>$ \&quat) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_abfd0d950472a7f3319c6eaf27605b8f7}\label{namespacepsl_1_1math_abfd0d950472a7f3319c6eaf27605b8f7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries pow} (const tquat$<$ precision\+\_\+t $>$ \&quat, precision\+\_\+t pow\+\_\+value=precision\+\_\+t \{2\}) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a521a430faf487d1923c94d3809d77de5}\label{namespacepsl_1_1math_a521a430faf487d1923c94d3809d77de5}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries sqrt} (const tquat$<$ precision\+\_\+t $>$ \&quat) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a87cd2d4066e14516eb5d6f67677b540c}\label{namespacepsl_1_1math_a87cd2d4066e14516eb5d6f67677b540c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries normalize} (const tquat$<$ precision\+\_\+t $>$ \&quat)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a451446683524f11d0cf65884a383858d}\label{namespacepsl_1_1math_a451446683524f11d0cf65884a383858d}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries conjugate} (const tquat$<$ precision\+\_\+t $>$ \&quat)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a20a98295d8bbeb4c3968f5b27dc20dd7}\label{namespacepsl_1_1math_a20a98295d8bbeb4c3968f5b27dc20dd7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tquat$<$ precision\+\_\+t $>$ {\bfseries inverse} (const tquat$<$ precision\+\_\+t $>$ \&quat)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7a12b57f2bb18724a17a7c44be4daa79}\label{namespacepsl_1_1math_a7a12b57f2bb18724a17a7c44be4daa79}} 
+{\footnotesize template$<$typename T $>$ }\\static constexpr T {\bfseries radians} (const T \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_aaf482b5417e27c18d9815b69cf480ade}\label{namespacepsl_1_1math_aaf482b5417e27c18d9815b69cf480ade}} 
+{\footnotesize template$<$typename T , size\+\_\+t dimensions$>$ }\\static constexpr T {\bfseries radians} (const tvec$<$ T, dimensions $>$ \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a40bb9b5bd3f5976ca2f619efee3a41be}\label{namespacepsl_1_1math_a40bb9b5bd3f5976ca2f619efee3a41be}} 
+{\footnotesize template$<$typename T $>$ }\\static constexpr T {\bfseries degrees} (const T \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a0ab278ab648210d93faf224904c45f20}\label{namespacepsl_1_1math_a0ab278ab648210d93faf224904c45f20}} 
+{\footnotesize template$<$typename T , size\+\_\+t dimensions$>$ }\\static constexpr T {\bfseries degrees} (const tvec$<$ T, dimensions $>$ \&value) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a7ade485924f27eae3eda157d960d3a7c}\label{namespacepsl_1_1math_a7ade485924f27eae3eda157d960d3a7c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\static constexpr bool {\bfseries compare\+\_\+to} (const precision\+\_\+t \&left, const precision\+\_\+t \&right, uint8\+\_\+t decimals) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_af0dfda1b1c3c5d9710fd001964ca54db}\label{namespacepsl_1_1math_af0dfda1b1c3c5d9710fd001964ca54db}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries dot} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a63789eb86b6dc8244166ce829e58292c}\label{namespacepsl_1_1math_a63789eb86b6dc8244166ce829e58292c}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries compound} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a841d13cd152cbef26811f38e3380e1b4}\label{namespacepsl_1_1math_a841d13cd152cbef26811f38e3380e1b4}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries compound\+\_\+mul} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_afcc4d6ea2777845ffe80b11f1fbfcd34}\label{namespacepsl_1_1math_afcc4d6ea2777845ffe80b11f1fbfcd34}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries square\+\_\+magnitude} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_acc3339f8d93c54127b399b4ca5a03a1b}\label{namespacepsl_1_1math_acc3339f8d93c54127b399b4ca5a03a1b}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries magnitude} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ac9cf4910b487c58412cd44119d806e12}\label{namespacepsl_1_1math_ac9cf4910b487c58412cd44119d806e12}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static precision\+\_\+t {\bfseries length} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_ae1a7fcf5decf14af4915034d7d2c0188}\label{namespacepsl_1_1math_ae1a7fcf5decf14af4915034d7d2c0188}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries sqrt} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a946404369ee1c6f81e4d9a2b290ad732}\label{namespacepsl_1_1math_a946404369ee1c6f81e4d9a2b290ad732}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries pow} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec, precision\+\_\+t pow\+\_\+value=precision\+\_\+t \{2\}) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_adc370f83a77f72d13b24cfb7b9ed5273}\label{namespacepsl_1_1math_adc370f83a77f72d13b24cfb7b9ed5273}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr static tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries normalize} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1math_a63664a606fb19c327e2d178fc4741465}\label{namespacepsl_1_1math_a63664a606fb19c327e2d178fc4741465}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr static tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries cross} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepsl_1_1math_afc5b1e0fb6b64fbe9a1f4f3e439f2e3e}\label{namespacepsl_1_1math_afc5b1e0fb6b64fbe9a1f4f3e439f2e3e}} 
+\index{psl::math@{psl::math}!round\_to@{round\_to}}
+\index{round\_to@{round\_to}!psl::math@{psl::math}}
+\doxysubsubsection{\texorpdfstring{round\_to()}{round\_to()}}
+{\footnotesize\ttfamily template$<$typename precision\+\_\+t $>$ \\
+constexpr static precision\+\_\+t psl\+::math\+::round\+\_\+to (\begin{DoxyParamCaption}\item[{precision\+\_\+t}]{N,  }\item[{precision\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em N} & the multiple to round to \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & the value to round \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 233 of file math.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_1_1math_adad9776e83b305ce262afbbb4347741e}\label{namespacepsl_1_1math_adad9776e83b305ce262afbbb4347741e}} 
+\index{psl::math@{psl::math}!ceil\_to@{ceil\_to}}
+\index{ceil\_to@{ceil\_to}!psl::math@{psl::math}}
+\doxysubsubsection{\texorpdfstring{ceil\_to()}{ceil\_to()}}
+{\footnotesize\ttfamily template$<$typename precision\+\_\+t $>$ \\
+constexpr static precision\+\_\+t psl\+::math\+::ceil\+\_\+to (\begin{DoxyParamCaption}\item[{precision\+\_\+t}]{N,  }\item[{precision\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em N} & the multiple to ceil to \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & the value to ceil \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 249 of file math.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_1_1math_a836b151ef1fdf6e5b2c676f06109cbd9}\label{namespacepsl_1_1math_a836b151ef1fdf6e5b2c676f06109cbd9}} 
+\index{psl::math@{psl::math}!floor\_to@{floor\_to}}
+\index{floor\_to@{floor\_to}!psl::math@{psl::math}}
+\doxysubsubsection{\texorpdfstring{floor\_to()}{floor\_to()}}
+{\footnotesize\ttfamily template$<$typename precision\+\_\+t $>$ \\
+constexpr static precision\+\_\+t psl\+::math\+::floor\+\_\+to (\begin{DoxyParamCaption}\item[{precision\+\_\+t}]{N,  }\item[{precision\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em N} & the multiple to floor to \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & the value to floor \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 259 of file math.\+hpp.
+

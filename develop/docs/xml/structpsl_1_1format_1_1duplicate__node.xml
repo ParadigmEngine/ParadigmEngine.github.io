@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1duplicate__node" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::duplicate_node</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1duplicate__node_1af8caf847e1e23f2012f163eb498ab265" prot="private" static="no" mutable="no">
+        <type>psl::string8::view</type>
+        <definition>psl::string8::view psl::format::duplicate_node::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="401" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1duplicate__node_1a258e15fa213e05da7eb3d145354c4443" prot="private" static="no" mutable="yes">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::format::duplicate_node::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="402" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1duplicate__node_1a0aab5b6055b0976f9a90b0f0ca967756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::duplicate_node::duplicate_node</definition>
+        <argsstring>(psl::string8::view name)</argsstring>
+        <name>duplicate_node</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="392" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="392" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1duplicate__node_1a4800937b02c3caab79a74722f5a012f1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>char const  *</type>
+        <definition>char const* psl::format::duplicate_node::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="393" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="393" bodyend="398"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="391" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="390" bodyend="403"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1duplicate__node_1a0aab5b6055b0976f9a90b0f0ca967756" prot="public" virt="non-virtual"><scope>psl::format::duplicate_node</scope><name>duplicate_node</name></member>
+      <member refid="structpsl_1_1format_1_1duplicate__node_1a258e15fa213e05da7eb3d145354c4443" prot="private" virt="non-virtual"><scope>psl::format::duplicate_node</scope><name>message</name></member>
+      <member refid="structpsl_1_1format_1_1duplicate__node_1af8caf847e1e23f2012f163eb498ab265" prot="private" virt="non-virtual"><scope>psl::format::duplicate_node</scope><name>name</name></member>
+      <member refid="structpsl_1_1format_1_1duplicate__node_1a4800937b02c3caab79a74722f5a012f1" prot="public" virt="non-virtual"><scope>psl::format::duplicate_node</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

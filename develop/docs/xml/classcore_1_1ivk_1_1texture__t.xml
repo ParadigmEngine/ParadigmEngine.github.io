@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ivk_1_1texture__t" kind="class" language="C++" prot="public">
+    <compoundname>core::ivk::texture_t</compoundname>
+    <includes refid="vk_2texture_8hpp" local="no">texture.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a43cb83a117de9c02a44dee266506efc0" prot="private" static="no" mutable="no">
+        <type>gli::texture *</type>
+        <definition>gli::texture* core::ivk::texture_t::m_TextureData</definition>
+        <argsstring></argsstring>
+        <name>m_TextureData</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="66" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a01a6e2ce97f148308663a3e8a6df0ef6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::buffer_t&gt; core::ivk::texture_t::m_StagingBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_StagingBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="67" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a97681346e5462ce756fe94ad0e08afa7" prot="private" static="no" mutable="no">
+        <type>vk::Image</type>
+        <definition>vk::Image core::ivk::texture_t::m_Image</definition>
+        <argsstring></argsstring>
+        <name>m_Image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="68" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a92e801fc740bc94925dc03509b400a41" prot="private" static="no" mutable="no">
+        <type>vk::ImageView</type>
+        <definition>vk::ImageView core::ivk::texture_t::m_View</definition>
+        <argsstring></argsstring>
+        <name>m_View</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="69" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1ae70b7bf22c22cd59cffb04a01dc43975" prot="private" static="no" mutable="no">
+        <type>vk::DeviceMemory</type>
+        <definition>vk::DeviceMemory core::ivk::texture_t::m_DeviceMemory</definition>
+        <argsstring></argsstring>
+        <name>m_DeviceMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="70" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1afc62944f2798d996752c2f383acd8f43" prot="private" static="no" mutable="no">
+        <type>vk::ImageLayout</type>
+        <definition>vk::ImageLayout core::ivk::texture_t::m_ImageLayout</definition>
+        <argsstring></argsstring>
+        <name>m_ImageLayout</name>
+        <initializer>{vk::ImageLayout::eGeneral}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="71" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1aa79dafd947cc1b0c09295ab69f4080a7" prot="private" static="no" mutable="no">
+        <type>vk::ImageSubresourceRange</type>
+        <definition>vk::ImageSubresourceRange core::ivk::texture_t::m_SubresourceRange</definition>
+        <argsstring></argsstring>
+        <name>m_SubresourceRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="72" column="27" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a77fd3b5bc8d5bbacb8319c69d415c6b7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core::ivk::texture_t::m_MipLevels</definition>
+        <argsstring></argsstring>
+        <name>m_MipLevels</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="73" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a266354a3ed682b31db12051bcc5d75b4" prot="private" static="no" mutable="no">
+        <type>core::resource::cache_t &amp;</type>
+        <definition>core::resource::cache_t&amp; core::ivk::texture_t::m_Cache</definition>
+        <argsstring></argsstring>
+        <name>m_Cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="75" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1abca3f2fb7552b8cb1857e8f1c4bfd8c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::context&gt; core::ivk::texture_t::m_Context</definition>
+        <argsstring></argsstring>
+        <name>m_Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="76" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a95b1b5884d029925693fd2a9b5e130df" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref> *</type>
+        <definition>core::meta::texture_t* core::ivk::texture_t::m_Meta</definition>
+        <argsstring></argsstring>
+        <name>m_Meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="77" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1texture__t_1a6dd95369c0368e6d74a5b01aa40c20a7" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref>, vk::DescriptorImageInfo * &gt;</type>
+        <definition>std::unordered_map&lt;psl::UID, vk::DescriptorImageInfo*&gt; core::ivk::texture_t::m_Descriptors</definition>
+        <argsstring></argsstring>
+        <name>m_Descriptors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="79" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a9dd8e60e7d6c33b84f9864cf9724d535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>texture_t::texture_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, core::meta::texture_t *metaFile, core::resource::handle&lt; core::ivk::context &gt; context)</argsstring>
+        <name>texture_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="32" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1aac3278122be76968e4362c070f715b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>texture_t::texture_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, core::meta::texture_t *metaFile, core::resource::handle&lt; core::ivk::context &gt; context, core::resource::handle&lt; core::ivk::buffer_t &gt; stagingBuffer)</argsstring>
+        <name>texture_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+          <declname>stagingBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="36" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="41" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a752c0772d9c2a8a89d917046fdd362e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>texture_t::~texture_t</definition>
+        <argsstring>()</argsstring>
+        <name>~texture_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="41" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a4d6a2eb98eaab8f5eb176f103fb1a198" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const vk::Image &amp;</type>
+        <definition>const vk::Image &amp; texture_t::image</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the vk::Image associated with this instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="44" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a01e7482e82ff479c43cfed7605757d7e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const vk::ImageView &amp;</type>
+        <definition>const vk::ImageView &amp; texture_t::view</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the view into the vk::Image of this instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="46" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a264df712c0b900f8e0299fb7059a11cc" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const vk::ImageLayout &amp;</type>
+        <definition>const vk::ImageLayout &amp; texture_t::layout</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the layout specifications. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="48" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a21d8ded5bce7d25f190994940ab0568a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const vk::DeviceMemory &amp;</type>
+        <definition>const vk::DeviceMemory &amp; texture_t::memory</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the vulkan handle to the device memory location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="50" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a0bbcfa2c57129dd3e897f8d03779c193" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const vk::ImageSubresourceRange &amp;</type>
+        <definition>const vk::ImageSubresourceRange &amp; texture_t::subResourceRange</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>subResourceRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the ImageSubresourceRange </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="52" column="33" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a12c687ce515032ac6dd3b3f489b70eda" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref> &amp;</type>
+        <definition>const core::meta::texture_t &amp; texture_t::meta</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the meta data that describes this texture object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="54" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a384ad3a6d6b23bcf8aebbed82a1553a0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t texture_t::mip_levels</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>mip_levels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>how many mip levels are present in this object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="56" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a5d309205cd527be1303027dbb35a12dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vk::DescriptorImageInfo &amp;</type>
+        <definition>vk::DescriptorImageInfo &amp; texture_t::descriptor</definition>
+        <argsstring>(const psl::UID &amp;sampler)</argsstring>
+        <name>descriptor</name>
+        <param>
+          <type>const <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref> &amp;</type>
+          <declname>sampler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a descriptor image info for the given sampler, if none are present one is generated. </para>
+</simplesect>
+<simplesect kind="note"><para>these are maintained by the texture object itself and will live as long as the texture does. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="59" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="115" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a25b7e5eb1a349c7d5bd6faf7aa8aafec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void texture_t::load_2D</definition>
+        <argsstring>()</argsstring>
+        <name>load_2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="62" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="278" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1a3d8bdd2e31446014fe5dd5b5eacc3535" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void texture_t::create_2D</definition>
+        <argsstring>(void *data=nullptr)</argsstring>
+        <name>create_2D</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="63" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp" bodystart="135" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1texture__t_1abbba332f437d5380c5629813b55f74be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::texture_t::load_cube</definition>
+        <argsstring>()</argsstring>
+        <name>load_cube</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="64" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a texture resource used for rendering, either as target, or as input resource. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>textures are vital in a graphics application, and this class abstracts 2D, 3D, etc.. into one &quot;texture object&quot; as it is used by the renderer, and not to be used as a container directly. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" line="30" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp" bodystart="29" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a3d8bdd2e31446014fe5dd5b5eacc3535" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>create_2D</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a5d309205cd527be1303027dbb35a12dc" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>descriptor</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a4d6a2eb98eaab8f5eb176f103fb1a198" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>image</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a264df712c0b900f8e0299fb7059a11cc" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>layout</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a25b7e5eb1a349c7d5bd6faf7aa8aafec" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>load_2D</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1abbba332f437d5380c5629813b55f74be" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>load_cube</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a266354a3ed682b31db12051bcc5d75b4" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_Cache</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1abca3f2fb7552b8cb1857e8f1c4bfd8c4" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_Context</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a6dd95369c0368e6d74a5b01aa40c20a7" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_Descriptors</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1ae70b7bf22c22cd59cffb04a01dc43975" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_DeviceMemory</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a97681346e5462ce756fe94ad0e08afa7" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_Image</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1afc62944f2798d996752c2f383acd8f43" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_ImageLayout</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a95b1b5884d029925693fd2a9b5e130df" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_Meta</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a77fd3b5bc8d5bbacb8319c69d415c6b7" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_MipLevels</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a01a6e2ce97f148308663a3e8a6df0ef6" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_StagingBuffer</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1aa79dafd947cc1b0c09295ab69f4080a7" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_SubresourceRange</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a43cb83a117de9c02a44dee266506efc0" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_TextureData</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a92e801fc740bc94925dc03509b400a41" prot="private" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>m_View</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a21d8ded5bce7d25f190994940ab0568a" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>memory</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a12c687ce515032ac6dd3b3f489b70eda" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>meta</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a384ad3a6d6b23bcf8aebbed82a1553a0" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>mip_levels</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a0bbcfa2c57129dd3e897f8d03779c193" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>subResourceRange</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a9dd8e60e7d6c33b84f9864cf9724d535" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>texture_t</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1aac3278122be76968e4362c070f715b40" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>texture_t</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a01e7482e82ff479c43cfed7605757d7e" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>view</name></member>
+      <member refid="classcore_1_1ivk_1_1texture__t_1a752c0772d9c2a8a89d917046fdd362e1" prot="public" virt="non-virtual"><scope>core::ivk::texture_t</scope><name>~texture_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

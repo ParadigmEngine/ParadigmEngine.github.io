@@ -1,0 +1,1048 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stdafx_8hpp" kind="file" language="C++">
+    <compoundname>stdafx.hpp</compoundname>
+    <includes refid="stdafx__psl_8hpp" local="yes">psl/stdafx_psl.hpp</includes>
+    <includes refid="targetver_8hpp" local="yes">targetver.hpp</includes>
+    <includes refid="platform__def_8hpp" local="yes">psl/platform_def.hpp</includes>
+    <includes refid="core_2inc_2logging_8hpp" local="yes">logging.hpp</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="string__utils_8hpp" local="yes">psl/string_utils.hpp</includes>
+    <includes refid="ustring_8hpp" local="yes">psl/ustring.hpp</includes>
+    <includes refid="gfx_2stdafx_8hpp" local="yes">gfx/stdafx.hpp</includes>
+    <includes refid="array__view_8hpp" local="yes">psl/array_view.hpp</includes>
+    <includes refid="enumerate_8hpp" local="yes">psl/enumerate.hpp</includes>
+    <includes local="no">array</includes>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">unordered_set</includes>
+    <includes local="no">vector</includes>
+    <includes refid="application__utils_8hpp" local="yes">psl/application_utils.hpp</includes>
+    <includes refid="conversion__utils_8hpp" local="yes">conversion_utils.hpp</includes>
+    <includes refid="library_8hpp" local="yes">psl/library.hpp</includes>
+    <includes refid="math_8hpp" local="yes">psl/math/math.hpp</includes>
+    <includes refid="meta_8hpp" local="yes">psl/meta.hpp</includes>
+    <includes refid="serializer_8hpp" local="yes">psl/serialization/serializer.hpp</includes>
+    <includes refid="resource_2resource_8hpp" local="yes">resource/resource.hpp</includes>
+    <includes refid="stream_8hpp" local="yes">data/stream.hpp</includes>
+    <includes local="no">malloc.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="43">
+        <label>iomanip</label>
+      </node>
+      <node id="25">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>psl/stdafx_psl.hpp</label>
+        <link refid="stdafx__psl_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>limits</label>
+      </node>
+      <node id="52">
+        <label>conversion_utils.hpp</label>
+        <link refid="conversion__utils_8hpp_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>iterator</label>
+      </node>
+      <node id="29">
+        <label>psl/array_view.hpp</label>
+        <link refid="array__view_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>resource/resource.hpp</label>
+        <link refid="resource_2resource_8hpp_source"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>cstdint</label>
+      </node>
+      <node id="71">
+        <label>psl/library.hpp</label>
+        <link refid="library_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>variant</label>
+      </node>
+      <node id="22">
+        <label>psl/timer.hpp</label>
+        <link refid="timer_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>gfx/stdafx.hpp</label>
+        <link refid="gfx_2stdafx_8hpp_source"/>
+      </node>
+      <node id="55">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="44">
+        <label>numeric</label>
+      </node>
+      <node id="98">
+        <label>malloc.h</label>
+      </node>
+      <node id="70">
+        <label>psl/math/fallback/quaternion.hpp</label>
+        <link refid="fallback_2quaternion_8hpp_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>utility.hpp</label>
+        <link refid="utility_8hpp_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>string</label>
+      </node>
+      <node id="24">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>psl/math/math.hpp</label>
+        <link refid="math_8hpp_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>psl/math/AVX2/matrix.hpp</label>
+        <link refid="_a_v_x2_2matrix_8hpp_source"/>
+      </node>
+      <node id="33">
+        <label>psl/pack_view.hpp</label>
+        <link refid="pack__view_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>targetver.hpp</label>
+        <link refid="targetver_8hpp_source"/>
+      </node>
+      <node id="48">
+        <label>map</label>
+      </node>
+      <node id="67">
+        <label>psl/math/AVX/quaternion.hpp</label>
+        <link refid="_a_v_x_2quaternion_8hpp_source"/>
+      </node>
+      <node id="27">
+        <label>unordered_set</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="12">
+        <label>fstream</label>
+      </node>
+      <node id="64">
+        <label>psl/math/SSE/matrix.hpp</label>
+        <link refid="_s_s_e_2matrix_8hpp_source"/>
+      </node>
+      <node id="95">
+        <label>handle.hpp</label>
+        <link refid="handle_8hpp_source"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>psl/bytell_map.hpp</label>
+        <link refid="bytell__map_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>psl/view_ptr.hpp</label>
+        <link refid="view__ptr_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="46">
+        <label>string_view</label>
+      </node>
+      <node id="65">
+        <label>psl/math/fallback/matrix.hpp</label>
+        <link refid="fallback_2matrix_8hpp_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>data/stream.hpp</label>
+        <link refid="stream_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>bitset</label>
+      </node>
+      <node id="51">
+        <label>psl/application_utils.hpp</label>
+        <link refid="application__utils_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>optional</label>
+      </node>
+      <node id="74">
+        <label>stack</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="17">
+        <label>signal.h</label>
+      </node>
+      <node id="90">
+        <label>cache.hpp</label>
+        <link refid="cache_8hpp_source"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp</label>
+        <link refid="stdafx_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>spdlog/sinks/stdout_color_sinks.h</label>
+      </node>
+      <node id="76">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="45">
+        <label>sstream</label>
+      </node>
+      <node id="96">
+        <label>tag.hpp</label>
+        <link refid="tag_8hpp_source"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>psl/literals.hpp</label>
+        <link refid="literals_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="61">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="79">
+        <label>clocale</label>
+      </node>
+      <node id="78">
+        <label>cctype</label>
+      </node>
+      <node id="69">
+        <label>psl/math/SSE/quaternion.hpp</label>
+        <link refid="_s_s_e_2quaternion_8hpp_source"/>
+      </node>
+      <node id="62">
+        <label>psl/math/AVX/matrix.hpp</label>
+        <link refid="_a_v_x_2matrix_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="19">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unordered_map</label>
+      </node>
+      <node id="30">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>chrono</label>
+      </node>
+      <node id="82">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>logging.hpp</label>
+      </node>
+      <node id="72">
+        <label>psl/meta.hpp</label>
+        <link refid="meta_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>concepts</label>
+      </node>
+      <node id="58">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="81">
+        <label>thread</label>
+      </node>
+      <node id="93">
+        <label>psl/unique_ptr.hpp</label>
+        <link refid="unique__ptr_8hpp_source"/>
+      </node>
+      <node id="37">
+        <label>logging.hpp</label>
+        <link refid="core_2inc_2logging_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>type_traits</label>
+      </node>
+      <node id="41">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>psl/profiling/profiler.hpp</label>
+        <link refid="profiler_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>cstring</label>
+      </node>
+      <node id="66">
+        <label>psl/math/quaternion.hpp</label>
+        <link refid="quaternion_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/math/matrix.hpp</label>
+        <link refid="matrix_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>memory</label>
+      </node>
+      <node id="73">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>psl/enumerate.hpp</label>
+        <link refid="enumerate_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>psl/math/AVX2/quaternion.hpp</label>
+        <link refid="_a_v_x2_2quaternion_8hpp_source"/>
+      </node>
+      <node id="80">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="9">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1gfx">core::gfx</innernamespace>
+    <innernamespace refid="namespacecore_1_1ivk">core::ivk</innernamespace>
+    <innernamespace refid="namespacecore_1_1resource">core::resource</innernamespace>
+    <innernamespace refid="namespacecore_1_1meta">core::meta</innernamespace>
+    <innernamespace refid="namespacecore_1_1os">core::os</innernamespace>
+    <innernamespace refid="namespacecore_1_1systems">core::systems</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stdafx_8hpp_1af08ec37a8c99d747fb60fa15bc28678b" prot="public" static="no">
+        <name>_CRT_SECURE_NO_WARNINGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="9" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a928fa72e37335928dc26010e2a67f4f9" prot="public" static="no">
+        <name>_CRT_DISABLE_PERFCRIT_LOCKS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="10" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1ad0dbf61f46fe5359b9cad9950840dd44" prot="public" static="no">
+        <name>STRINGIZE_HELPER</name>
+        <param><defname>x</defname></param>
+        <initializer>#x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="77" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a3428692efe6051ef30016ffde1a9f7bb" prot="public" static="no">
+        <name>STRINGIZE</name>
+        <param><defname>x</defname></param>
+        <initializer>STRINGIZE_HELPER(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="78" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a3089da9a17017b47c661a8b6db9240a8" prot="public" static="no">
+        <name>CMP_ISSUE</name>
+        <param><defname>number</defname></param>
+        <param><defname>desc</defname></param>
+        <initializer>__pragma(message(&quot;ISSUE: &quot; #number &quot;\nDescription: &quot; #desc &quot;\n&quot; __FILE__ &quot;(&quot; STRINGIZE(__LINE__) &quot;)&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="79" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a109b5d21ab035d232bea3cf99563036e" prot="public" static="no">
+        <name>CMP_ERROR</name>
+        <param><defname>number</defname></param>
+        <param><defname>desc</defname></param>
+        <initializer>__pragma(message(&quot;error: &quot; #number &quot;\nDescription: &quot; #desc &quot;\n&quot; __FILE__ &quot;(&quot; STRINGIZE(__LINE__) &quot;)&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="81" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a42159c8ad47760544e4be31335ebaa4c" prot="public" static="no">
+        <name>CMP_WARNING</name>
+        <param><defname>number</defname></param>
+        <param><defname>desc</defname></param>
+        <initializer>__pragma(message(&quot;warning: &quot; #number &quot;\nDescription: &quot; #desc &quot;\n&quot; __FILE__ &quot;(&quot; STRINGIZE(__LINE__) &quot;)&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="83" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdafx_8hpp_1a8cbb15137c987a35e69a506eea538f66" prot="public" static="no">
+        <name>CMP_TODO</name>
+        <param><defname>number</defname></param>
+        <param><defname>desc</defname></param>
+        <initializer>__pragma(message(&quot;TODO: &quot; #number &quot;\nDescription: &quot; #desc &quot;\n&quot; __FILE__ &quot;(&quot; STRINGIZE(__LINE__) &quot;)&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" line="85" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>stdafx.h<sp/>:<sp/>include<sp/>file<sp/>for<sp/>standard<sp/>system<sp/>include<sp/>files,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>or<sp/>project<sp/>specific<sp/>include<sp/>files<sp/>that<sp/>are<sp/>used<sp/>frequently,<sp/>but</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>are<sp/>changed<sp/>infrequently</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>WIN32_LEAN_AND_MEAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRT_DISABLE_PERFCRIT_LOCKS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/stdafx_psl.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;targetver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/platform_def.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;logging.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/string_utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/ustring.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/stdafx.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/array_view.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/enumerate.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PLATFORM_LINUX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://bugzilla.redhat.com/show_bug.cgi?id=130601<sp/>not<sp/>a<sp/>bug<sp/>my<sp/>ass,<sp/>it&apos;s<sp/>like<sp/>the<sp/>windows<sp/>min/max..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>minor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>major</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/application_utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;conversion_utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/library.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/math/math.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/meta.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/serialization/serializer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;resource/resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/stream.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PLATFORM_WINDOWS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRTDBG_MAP_ALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;crtdbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//#ifndef<sp/>DBG_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>DBG_NEW<sp/>new(_NORMAL_BLOCK,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>new<sp/>DBG_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RELEASE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>assert<sp/>()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STRINGIZE_HELPER(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STRINGIZE(x)<sp/>STRINGIZE_HELPER(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMP_ISSUE(number,<sp/>desc)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__pragma(message(&quot;ISSUE:<sp/>&quot;<sp/>#number<sp/>&quot;\nDescription:<sp/>&quot;<sp/>#desc<sp/>&quot;\n&quot;<sp/>__FILE__<sp/>&quot;(&quot;<sp/>STRINGIZE(__LINE__)<sp/>&quot;)&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMP_ERROR(number,<sp/>desc)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__pragma(message(&quot;error:<sp/>&quot;<sp/>#number<sp/>&quot;\nDescription:<sp/>&quot;<sp/>#desc<sp/>&quot;\n&quot;<sp/>__FILE__<sp/>&quot;(&quot;<sp/>STRINGIZE(__LINE__)<sp/>&quot;)&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMP_WARNING(number,<sp/>desc)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__pragma(message(&quot;warning:<sp/>&quot;<sp/>#number<sp/>&quot;\nDescription:<sp/>&quot;<sp/>#desc<sp/>&quot;\n&quot;<sp/>__FILE__<sp/>&quot;(&quot;<sp/>STRINGIZE(__LINE__)<sp/>&quot;)&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMP_TODO(number,<sp/>desc)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__pragma(message(&quot;TODO:<sp/>&quot;<sp/>#number<sp/>&quot;\nDescription:<sp/>&quot;<sp/>#desc<sp/>&quot;\n&quot;<sp/>__FILE__<sp/>&quot;(&quot;<sp/>STRINGIZE(__LINE__)<sp/>&quot;)&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;malloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PLATFORM_WINDOWS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHKHEAP()<sp/>(chk_heap(__FILE__,<sp/>__LINE__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>chk_heap(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>lastOkFile<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;here&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastOkLine<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>heapOK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!heapOK)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_heapchk()<sp/>==<sp/>_HEAPOK)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastOkFile<sp/>=<sp/>file;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastOkLine<sp/>=<sp/>line;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>heapOK<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepsl_1a81f2ba09a1584614ebcb512e4d509687" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;Heap<sp/>corruption<sp/>detected<sp/>at<sp/>%s<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>file,<sp/>line);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacepsl_1a81f2ba09a1584614ebcb512e4d509687" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;Last<sp/>OK<sp/>at<sp/>%s<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>lastOkFile,<sp/>lastOkLine);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">void*<sp/>operator<sp/>new[](size_t<sp/>size,<sp/>const<sp/>char*<sp/>pName,<sp/>int<sp/>flags,<sp/>unsigned<sp/>debugFlags,<sp/>const<sp/>char*<sp/>file,<sp/>int<sp/>line)</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="121"><highlight class="comment">return<sp/>malloc(size);</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment">void*<sp/>operator<sp/>new[](size_t<sp/>size,<sp/>size_t<sp/>alignment,<sp/>size_t<sp/>alignmentOffset,<sp/>const<sp/>char*<sp/>pName,<sp/>int<sp/>flags,<sp/>unsigned</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">debugFlags,<sp/>const<sp/>char*<sp/>file,<sp/>int<sp/>line)</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">return<sp/>malloc(size);</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp"/>
+  </compounddef>
+</doxygen>

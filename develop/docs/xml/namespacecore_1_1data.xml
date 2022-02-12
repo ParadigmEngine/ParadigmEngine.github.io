@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1data" kind="namespace" language="C++">
+    <compoundname>core::data</compoundname>
+    <innerclass refid="classcore_1_1data_1_1application" prot="public">core::data::application</innerclass>
+    <innerclass refid="classcore_1_1data_1_1buffer__t" prot="public">core::data::buffer_t</innerclass>
+    <innerclass refid="classcore_1_1data_1_1bundle" prot="public">core::data::bundle</innerclass>
+    <innerclass refid="classcore_1_1data_1_1clear__value" prot="public">core::data::clear_value</innerclass>
+    <innerclass refid="classcore_1_1data_1_1framebuffer__t" prot="public">core::data::framebuffer_t</innerclass>
+    <innerclass refid="classcore_1_1data_1_1geometry__t" prot="public">core::data::geometry_t</innerclass>
+    <innerclass refid="classcore_1_1data_1_1material__t" prot="public">core::data::material_t</innerclass>
+    <innerclass refid="classcore_1_1data_1_1sampler__t" prot="public">core::data::sampler_t</innerclass>
+    <innerclass refid="classcore_1_1data_1_1window" prot="public">core::data::window</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecore_1_1data_1a8d7586e29a1d9939ce5b3783ce5f7ba3" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; core::data::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="28" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/src/logging.cpp" bodystart="13" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" declline="28" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains all data types that can be serialized to/from disk. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/application.hpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

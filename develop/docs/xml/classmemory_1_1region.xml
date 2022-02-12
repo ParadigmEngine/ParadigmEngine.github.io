@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classmemory_1_1region" kind="class" language="C++" prot="public">
+    <compoundname>memory::region</compoundname>
+    <includes refid="region_8hpp" local="no">region.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classmemory_1_1region_1a5f92738931f74867c754a5009e70329a" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>state</name>
+        <enumvalue id="classmemory_1_1region_1a5f92738931f74867c754a5009e70329aa83c7f2aa8c3ac10ed8beb75cad162827" prot="private">
+          <name>RESERVED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmemory_1_1region_1a5f92738931f74867c754a5009e70329aabaeee43d39a9f6e9cfc4cbdcf52a3e12" prot="private">
+          <name>COMMITED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmemory_1_1region_1a5f92738931f74867c754a5009e70329aae3d9a2ed4146353ae729818f8bcc329d" prot="private">
+          <name>DEFERRED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmemory_1_1region_1a5f92738931f74867c754a5009e70329aa109d54efbb64d71f9a6ab18d0fb8add8" prot="private">
+          <name>RELEASED</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>describes the various states memory can be in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="25" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmemory_1_1region_1a746725ee9976f777cd43f2e9aa4f5f0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class allocator_base</definition>
+        <argsstring></argsstring>
+        <name>allocator_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="21" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmemory_1_1region_1ace6527bb547f03f4ab34ac897b94ba77" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* memory::region::m_Base</definition>
+        <argsstring></argsstring>
+        <name>m_Base</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="136" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1a72bd6a5c6c82392f1172de165d7d4e8f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> *</type>
+        <definition>memory::region* memory::region::m_Parent</definition>
+        <argsstring></argsstring>
+        <name>m_Parent</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="137" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1aa833787a82677945e5f3594cfec87018" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> * &gt;</type>
+        <definition>std::vector&lt;memory::region*&gt; memory::region::m_Children</definition>
+        <argsstring></argsstring>
+        <name>m_Children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="138" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1a772010f08542654fa0cd4460ee99a753" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t memory::region::m_Size</definition>
+        <argsstring></argsstring>
+        <name>m_Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="139" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1afc918f7438c96d5e61deedfa593ac28c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t memory::region::m_Alignment</definition>
+        <argsstring></argsstring>
+        <name>m_Alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="140" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1a98a47acff9cf0764d7fe8b5bbe4ef3e7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref> *</type>
+        <definition>allocator_base* memory::region::m_Allocator</definition>
+        <argsstring></argsstring>
+        <name>m_Allocator</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="143" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1region_1ae33aac5b5704b6be0c4eb774aa308023" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t memory::region::m_PageSize</definition>
+        <argsstring></argsstring>
+        <name>m_PageSize</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="149" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmemory_1_1region_1aba14855cef0855f21278ec924fc9618b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>region::region</definition>
+        <argsstring>(region &amp;parent, memory::segment &amp;segment, uint64_t pageSize, uint64_t alignment, allocator_base *allocator=new default_allocator())</argsstring>
+        <name>region</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>pageSize</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref> *</type>
+          <declname>allocator</declname>
+          <defval>new <ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>specialized constructor used for internal usage </para>
+        </briefdescription>
+        <detaileddescription>
+<para>we keep this one private as it relies on certain conditions on the size of the segment (being aligned to pages, and starting at a page). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="15" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a28c07a39a73a0a2f8ca470d4a74e6d1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool region::erase_region</definition>
+        <argsstring>(memory::region &amp;child)</argsstring>
+        <name>erase_region</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> &amp;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="133" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="231" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1aff25da9e8e44786be5980b98dddc42d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool region::commit</definition>
+        <argsstring>(const memory::range_t &amp;range)</argsstring>
+        <name>commit</name>
+        <param>
+          <type>const <ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="142" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="253" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmemory_1_1region_1ac3e73ac0084d309d3b155e2bef9185de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>region::region</definition>
+        <argsstring>(uint64_t size, uint64_t alignment, allocator_base *allocator=new default_allocator())</argsstring>
+        <name>region</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref> *</type>
+          <declname>allocator</declname>
+          <defval>new <ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>constructs a region of atleast the given <emphasis>size</emphasis>, using the <emphasis>alignment</emphasis> value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum size you wish to create a virtual region for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the alignment value of the region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allocator that should be used internally. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para><emphasis>allocators</emphasis> should not be shared unless the allocator itself supports such a behaviour. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="47" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="38" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a21c21d2652916afe4eabf33d6b0ddd5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>region::~region</definition>
+        <argsstring>()</argsstring>
+        <name>~region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="49" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="149" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a0b169ab395424a97978d5ab6c568409f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>memory::region::region</definition>
+        <argsstring>(const region &amp;other)=delete</argsstring>
+        <name>region</name>
+        <param>
+          <type>const <ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a38061520021590555b7ac55fa815c2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>region::region</definition>
+        <argsstring>(region &amp;&amp;other)</argsstring>
+        <name>region</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="51" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="87" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1af40d226533401158ec5ed25682d879ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;</type>
+        <definition>region&amp; memory::region::operator=</definition>
+        <argsstring>(const region &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a86c5b092d36811440ea0fa8387a1f112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;</type>
+        <definition>region &amp; region::operator=</definition>
+        <argsstring>(region &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="53" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="114" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a90ba0332ac1296fc17d2eccf56ee8a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &gt;</type>
+        <definition>std::optional&lt; segment &gt; region::allocate</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>tries to allocate a segment of atleast the given <emphasis>size</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> on success. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum size of the segment (will be aligned to the alignment rules). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="58" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a03bbcdef381f14b1ec6e1c5073dae80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> &gt;</type>
+        <definition>std::optional&lt; memory::region &gt; region::create_region</definition>
+        <argsstring>(size_t size, std::optional&lt; size_t &gt; alignment, allocator_base *allocator=new default_allocator())</argsstring>
+        <name>create_region</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; size_t &gt;</type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref> *</type>
+          <declname>allocator</declname>
+          <defval>new <ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>creates a sub-region of atleast that size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a sub region of atleast the given size. The region could be bigger depending on certain factors such as alignment, etc.. Destruction/cleanup happens automatically through the destructor of the created region. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="65" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="184" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a4523d8aaf6983a05dd431f58a82e717e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; <ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &gt;</type>
+        <definition>std::optional&lt;segment&gt; memory::region::allocate</definition>
+        <argsstring>()</argsstring>
+        <name>allocate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="71" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a2d3759f4252807840e4dce4d0f47b176" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool memory::region::owns</definition>
+        <argsstring>(const memory::segment &amp;segment) const noexcept</argsstring>
+        <name>owns</name>
+        <param>
+          <type>const <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="76" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a431f5ae3319c41d7ba7cbc1e0201f809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; std::reference_wrapper&lt; T &gt; &gt;</type>
+        <definition>std::optional&lt;std::reference_wrapper&lt;T&gt; &gt; memory::region::create</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>create</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="83" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="83" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1ab3473e61c0917de32bd450099ba42cfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool memory::region::destroy</definition>
+        <argsstring>(T &amp;target)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="101" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="101" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a0330a7273ca083f76f1b2c5e18aa0303" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool memory::region::destroy</definition>
+        <argsstring>(std::optional&lt; T &gt; &amp;target)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>std::optional&lt; T &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="114" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1ae75ce3748e5ce7fb5460c69db204b164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool region::deallocate</definition>
+        <argsstring>(segment &amp;segment)</argsstring>
+        <name>deallocate</name>
+        <param>
+          <type><ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="119" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="317" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a491f445ff92b1fb43320d3ed3d7feb13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool region::deallocate</definition>
+        <argsstring>(std::optional&lt; segment &gt; &amp;segment)</argsstring>
+        <name>deallocate</name>
+        <param>
+          <type>std::optional&lt; <ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &gt; &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="120" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="319" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1af80e0aaedd07c681415d781daad4e87d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref> *</type>
+        <definition>allocator_base* memory::region::allocator</definition>
+        <argsstring>() const</argsstring>
+        <name>allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="121" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a64fc76caed6a6d4aae1092c31a8a8074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void region::compact</definition>
+        <argsstring>()</argsstring>
+        <name>compact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="122" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="324" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a49c9a445c8ed1b94ac22834310de6c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void region::decommit_unused</definition>
+        <argsstring>()</argsstring>
+        <name>decommit_unused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="123" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp" bodystart="326" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1abf418d57baeb83b49be0eb09eb24acc3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* memory::region::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="124" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a0730dd4d1b5b4cd834746cddbb026e20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t memory::region::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="125" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a943cc216dac7e38d0671745cf9f447f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t memory::region::alignment</definition>
+        <argsstring>() const</argsstring>
+        <name>alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="126" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1region_1a338fcc4d39d2666bc157c47918b911dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref></type>
+        <definition>memory::range_t memory::region::range</definition>
+        <argsstring>() const</argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="127" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>defines a region of memory that <emphasis>might</emphasis> be physically backed depending on the allocator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>memory regions allow for easy managing of virtual memory in a platform abstract way. it provides some helper utilities to allocate correctly sized segments for the given type and even allows constructor/destructors to be called (using the memory::region::create()/memory::region::destroy() methods). Memory regions do not allocate memory in one go, they reserve and &quot;grow to&quot; the specified size (like how virtual memory behaves). How they do this is platform specific however, but should not be of concern for the end-user. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp" bodystart="19" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classmemory_1_1region_1a943cc216dac7e38d0671745cf9f447f2" prot="public" virt="non-virtual"><scope>memory::region</scope><name>alignment</name></member>
+      <member refid="classmemory_1_1region_1a90ba0332ac1296fc17d2eccf56ee8a24" prot="public" virt="non-virtual"><scope>memory::region</scope><name>allocate</name></member>
+      <member refid="classmemory_1_1region_1a4523d8aaf6983a05dd431f58a82e717e" prot="public" virt="non-virtual"><scope>memory::region</scope><name>allocate</name></member>
+      <member refid="classmemory_1_1region_1af80e0aaedd07c681415d781daad4e87d" prot="public" virt="non-virtual"><scope>memory::region</scope><name>allocator</name></member>
+      <member refid="classmemory_1_1region_1a746725ee9976f777cd43f2e9aa4f5f0a" prot="private" virt="non-virtual"><scope>memory::region</scope><name>allocator_base</name></member>
+      <member refid="classmemory_1_1region_1aff25da9e8e44786be5980b98dddc42d7" prot="private" virt="non-virtual"><scope>memory::region</scope><name>commit</name></member>
+      <member refid="classmemory_1_1region_1a64fc76caed6a6d4aae1092c31a8a8074" prot="public" virt="non-virtual"><scope>memory::region</scope><name>compact</name></member>
+      <member refid="classmemory_1_1region_1a431f5ae3319c41d7ba7cbc1e0201f809" prot="public" virt="non-virtual"><scope>memory::region</scope><name>create</name></member>
+      <member refid="classmemory_1_1region_1a03bbcdef381f14b1ec6e1c5073dae80a" prot="public" virt="non-virtual"><scope>memory::region</scope><name>create_region</name></member>
+      <member refid="classmemory_1_1region_1abf418d57baeb83b49be0eb09eb24acc3" prot="public" virt="non-virtual"><scope>memory::region</scope><name>data</name></member>
+      <member refid="classmemory_1_1region_1ae75ce3748e5ce7fb5460c69db204b164" prot="public" virt="non-virtual"><scope>memory::region</scope><name>deallocate</name></member>
+      <member refid="classmemory_1_1region_1a491f445ff92b1fb43320d3ed3d7feb13" prot="public" virt="non-virtual"><scope>memory::region</scope><name>deallocate</name></member>
+      <member refid="classmemory_1_1region_1a49c9a445c8ed1b94ac22834310de6c73" prot="public" virt="non-virtual"><scope>memory::region</scope><name>decommit_unused</name></member>
+      <member refid="classmemory_1_1region_1ab3473e61c0917de32bd450099ba42cfa" prot="public" virt="non-virtual"><scope>memory::region</scope><name>destroy</name></member>
+      <member refid="classmemory_1_1region_1a0330a7273ca083f76f1b2c5e18aa0303" prot="public" virt="non-virtual"><scope>memory::region</scope><name>destroy</name></member>
+      <member refid="classmemory_1_1region_1a28c07a39a73a0a2f8ca470d4a74e6d1c" prot="private" virt="non-virtual"><scope>memory::region</scope><name>erase_region</name></member>
+      <member refid="classmemory_1_1region_1afc918f7438c96d5e61deedfa593ac28c" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Alignment</name></member>
+      <member refid="classmemory_1_1region_1a98a47acff9cf0764d7fe8b5bbe4ef3e7" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Allocator</name></member>
+      <member refid="classmemory_1_1region_1ace6527bb547f03f4ab34ac897b94ba77" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Base</name></member>
+      <member refid="classmemory_1_1region_1aa833787a82677945e5f3594cfec87018" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Children</name></member>
+      <member refid="classmemory_1_1region_1ae33aac5b5704b6be0c4eb774aa308023" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_PageSize</name></member>
+      <member refid="classmemory_1_1region_1a72bd6a5c6c82392f1172de165d7d4e8f" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Parent</name></member>
+      <member refid="classmemory_1_1region_1a772010f08542654fa0cd4460ee99a753" prot="private" virt="non-virtual"><scope>memory::region</scope><name>m_Size</name></member>
+      <member refid="classmemory_1_1region_1af40d226533401158ec5ed25682d879ff" prot="public" virt="non-virtual"><scope>memory::region</scope><name>operator=</name></member>
+      <member refid="classmemory_1_1region_1a86c5b092d36811440ea0fa8387a1f112" prot="public" virt="non-virtual"><scope>memory::region</scope><name>operator=</name></member>
+      <member refid="classmemory_1_1region_1a2d3759f4252807840e4dce4d0f47b176" prot="public" virt="non-virtual"><scope>memory::region</scope><name>owns</name></member>
+      <member refid="classmemory_1_1region_1a338fcc4d39d2666bc157c47918b911dd" prot="public" virt="non-virtual"><scope>memory::region</scope><name>range</name></member>
+      <member refid="classmemory_1_1region_1aba14855cef0855f21278ec924fc9618b" prot="private" virt="non-virtual"><scope>memory::region</scope><name>region</name></member>
+      <member refid="classmemory_1_1region_1ac3e73ac0084d309d3b155e2bef9185de" prot="public" virt="non-virtual"><scope>memory::region</scope><name>region</name></member>
+      <member refid="classmemory_1_1region_1a0b169ab395424a97978d5ab6c568409f" prot="public" virt="non-virtual"><scope>memory::region</scope><name>region</name></member>
+      <member refid="classmemory_1_1region_1a38061520021590555b7ac55fa815c2c9" prot="public" virt="non-virtual"><scope>memory::region</scope><name>region</name></member>
+      <member refid="classmemory_1_1region_1a0730dd4d1b5b4cd834746cddbb026e20" prot="public" virt="non-virtual"><scope>memory::region</scope><name>size</name></member>
+      <member refid="classmemory_1_1region_1a5f92738931f74867c754a5009e70329a" prot="private" virt="non-virtual"><scope>memory::region</scope><name>state</name></member>
+      <member refid="classmemory_1_1region_1a21c21d2652916afe4eabf33d6b0ddd5b" prot="public" virt="non-virtual"><scope>memory::region</scope><name>~region</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

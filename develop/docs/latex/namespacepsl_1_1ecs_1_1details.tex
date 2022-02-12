@@ -1,0 +1,62 @@
+\hypertarget{namespacepsl_1_1ecs_1_1details}{}\doxysection{psl\+::ecs\+::details Namespace Reference}
+\label{namespacepsl_1_1ecs_1_1details}\index{psl::ecs::details@{psl::ecs::details}}
+
+
+specialized implementation of \mbox{\hyperlink{classpsl_1_1sparse__array}{psl\+::sparse\+\_\+array}}  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1component__info}{component\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em implementation detail that stores the component information \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}}
+\begin{DoxyCompactList}\small\item\em describes a set of dependencies for a given system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_aa89e25591d7352ff9b883a983f3f3ca0}\label{namespacepsl_1_1ecs_1_1details_aa89e25591d7352ff9b883a983f3f3ca0}} 
+using {\bfseries component\+\_\+key\+\_\+t} = const std\+::uintptr\+\_\+t $\ast$($\ast$)()
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a0184b326ccfa540b50b99aa870d87530}\label{namespacepsl_1_1ecs_1_1details_a0184b326ccfa540b50b99aa870d87530}} 
+{\footnotesize template$<$typename T , typename Tuple $>$ }\\using {\bfseries tuple\+\_\+contains\+\_\+type} = typename has\+\_\+type$<$ T, Tuple $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a094c8d19a9c8b6787fe2f3dba9143e78}\label{namespacepsl_1_1ecs_1_1details_a094c8d19a9c8b6787fe2f3dba9143e78}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr const std\+::uintptr\+\_\+t $\ast$ {\bfseries component\+\_\+key} () noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_ad6db323a79282ca3933342fed3cef213}\label{namespacepsl_1_1ecs_1_1details_ad6db323a79282ca3933342fed3cef213}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr component\+\_\+key\+\_\+t {\bfseries key\+\_\+for} ()
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a55e4dc1d361248892331929f0318a7cc}\label{namespacepsl_1_1ecs_1_1details_a55e4dc1d361248892331929f0318a7cc}} 
+{\footnotesize template$<$std\+::size\+\_\+t... Is, typename T $>$ }\\std\+::vector$<$ \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} $>$ {\bfseries expand\+\_\+to\+\_\+dependency\+\_\+pack} (std\+::index\+\_\+sequence$<$ Is... $>$, psl\+::templates\+::type\+\_\+container$<$ T $>$, bool seed\+With\+Previous=false)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_aff70b56c309f9de8d56eb45e9ef9613c}\label{namespacepsl_1_1ecs_1_1details_aff70b56c309f9de8d56eb45e9ef9613c}} 
+{\footnotesize template$<$std\+::size\+\_\+t... Is, typename... Ts$>$ }\\std\+::tuple$<$ Ts... $>$ {\bfseries compress\+\_\+from\+\_\+dependency\+\_\+pack} (std\+::index\+\_\+sequence$<$ Is... $>$, psl\+::templates\+::type\+\_\+container$<$ std\+::tuple$<$ Ts... $>$$>$, std\+::vector$<$ \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} $>$ \&\mbox{\hyperlink{classpsl_1_1ecs_1_1pack}{pack}})
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_ae1b3f38be072e3b276b058ff6e01962c}\label{namespacepsl_1_1ecs_1_1details_ae1b3f38be072e3b276b058ff6e01962c}} 
+{\footnotesize template$<$typename... Ts$>$ }\\auto {\bfseries make\+\_\+filter\+\_\+group} (psl\+::templates\+::type\+\_\+container$<$ \mbox{\hyperlink{classpsl_1_1ecs_1_1pack}{psl\+::ecs\+::pack}}$<$ Ts... $>$$>$)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a069bfea63da3f113af7be1a0c9f29ab6}\label{namespacepsl_1_1ecs_1_1details_a069bfea63da3f113af7be1a0c9f29ab6}} 
+{\footnotesize template$<$typename... Ts$>$ }\\auto {\bfseries make\+\_\+filter\+\_\+group} (psl\+::templates\+::type\+\_\+container$<$ std\+::tuple$<$ Ts... $>$$>$)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a510ee782b5e13c480b6a5d532c15e9c4}\label{namespacepsl_1_1ecs_1_1details_a510ee782b5e13c480b6a5d532c15e9c4}} 
+{\footnotesize template$<$typename... Ts$>$ }\\auto {\bfseries make\+\_\+transform\+\_\+group} (psl\+::templates\+::type\+\_\+container$<$ \mbox{\hyperlink{classpsl_1_1ecs_1_1pack}{psl\+::ecs\+::pack}}$<$ Ts... $>$$>$)
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_a82228124937fba42b92727073287a70d}\label{namespacepsl_1_1ecs_1_1details_a82228124937fba42b92727073287a70d}} 
+{\footnotesize template$<$typename... Ts$>$ }\\auto {\bfseries make\+\_\+transform\+\_\+group} (psl\+::templates\+::type\+\_\+container$<$ std\+::tuple$<$ Ts... $>$$>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1ecs_1_1details_acb8f3c3b5770b4003171b9c51bd54f96}\label{namespacepsl_1_1ecs_1_1details_acb8f3c3b5770b4003171b9c51bd54f96}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr const std\+::uintptr\+\_\+t {\bfseries component\+\_\+key\+\_\+var} \{0u\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unlike normal \mbox{\hyperlink{classpsl_1_1sparse__array}{sparse\+\_\+array}}, this variation is implemented as a cascading stage, where stage 0 is the \char`\"{}stale\char`\"{} data, stage 1 is the recently added data, and stage 2 is the removed data. This is catered towards usage within the psl\+::ecs solution, which is why it is part of its namespace.
+
+In general it can be unwieldy and unsafe to use without knowing the internal workings, so avoid using this unless you know what you need it for and are sure you understand its internals. 

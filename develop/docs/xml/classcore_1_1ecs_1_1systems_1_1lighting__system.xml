@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ecs_1_1systems_1_1lighting__system" kind="class" language="C++" prot="public">
+    <compoundname>core::ecs::systems::lighting_system</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1ae9cff3dd3371d9e16bb965ccb99ef234" prot="private" static="no" mutable="no">
+        <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::resource::cache_t &gt;</type>
+        <definition>psl::view_ptr&lt;core::resource::cache_t&gt; core::ecs::systems::lighting_system::m_Cache</definition>
+        <argsstring></argsstring>
+        <name>m_Cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="61" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1ab4f2c5c1f519eec7a94128c3193f2dd7" prot="private" static="no" mutable="no">
+        <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::render_graph &gt;</type>
+        <definition>psl::view_ptr&lt;core::gfx::render_graph&gt; core::ecs::systems::lighting_system::m_RenderGraph</definition>
+        <argsstring></argsstring>
+        <name>m_RenderGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="62" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1afe0d62cdd85311b2bafffb0b696e8fc4" prot="private" static="no" mutable="no">
+        <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+        <definition>psl::view_ptr&lt;core::gfx::drawpass&gt; core::ecs::systems::lighting_system::m_DependsPass</definition>
+        <argsstring></argsstring>
+        <name>m_DependsPass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="63" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1af65e9dcc5731c6b46254955a8969b7e1" prot="private" static="no" mutable="no">
+        <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; psl::ecs::state_t &gt;</type>
+        <definition>psl::view_ptr&lt;psl::ecs::state_t&gt; core::ecs::systems::lighting_system::m_State</definition>
+        <argsstring></argsstring>
+        <name>m_State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="64" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1a4a24fdac1e51de47e0508a81f75a3c6e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::context &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::context&gt; core::ecs::systems::lighting_system::m_Context</definition>
+        <argsstring></argsstring>
+        <name>m_Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="65" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1a0a94d802978aad97f614ac0b4a7c9aab" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1os_1_1surface" kindref="compound">core::os::surface</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::os::surface&gt; core::ecs::systems::lighting_system::m_Surface</definition>
+        <argsstring></argsstring>
+        <name>m_Surface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="66" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1a7e6a5c231df687b31db09203fbe7cee3" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::buffer_t&gt; core::ecs::systems::lighting_system::m_LightDataBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_LightDataBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="67" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1a58641292555ad3402fd539a380e745ab" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::ecs::systems::lighting_system::m_LightSegment</definition>
+        <argsstring></argsstring>
+        <name>m_LightSegment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="68" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1abe1091bbe51320fa507531ddaa4ec821" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; psl::ecs::entity, psl::unique_ptr&lt; core::ecs::systems::render &gt; &gt;</type>
+        <definition>std::unordered_map&lt;psl::ecs::entity, psl::unique_ptr&lt;core::ecs::systems::render&gt; &gt; core::ecs::systems::lighting_system::m_Systems</definition>
+        <argsstring></argsstring>
+        <name>m_Systems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="71" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1ab7fc5a476df219869c86a87ba97cd1fb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>lighting_system::lighting_system</definition>
+        <argsstring>(psl::view_ptr&lt; psl::ecs::state_t &gt; state, psl::view_ptr&lt; core::resource::cache_t &gt; cache, memory::region &amp;resource_region, psl::view_ptr&lt; core::gfx::render_graph &gt; renderGraph, psl::view_ptr&lt; core::gfx::drawpass &gt; pass, core::resource::handle&lt; core::gfx::context &gt; context, core::resource::handle&lt; core::os::surface &gt; surface) noexcept</argsstring>
+        <name>lighting_system</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; psl::ecs::state_t &gt;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::resource::cache_t &gt;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> &amp;</type>
+          <declname>resource_region</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::render_graph &gt;</type>
+          <declname>renderGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::context &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1os_1_1surface" kindref="compound">core::os::surface</ref> &gt;</type>
+          <declname>surface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="44" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp" bodystart="23" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1af8c6e846aa78def3610a78cbcf326e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::systems::lighting_system::~lighting_system</definition>
+        <argsstring>()=default</argsstring>
+        <name>~lighting_system</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1lighting__system_1af9b1cdd739f189f2877d4f2e305c0588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lighting_system::create_dir</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; psl::ecs::entity, core::ecs::components::light, psl::ecs::on_combine&lt; core::ecs::components::light, core::ecs::components::transform &gt;&gt; pack)</argsstring>
+        <name>create_dir</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; psl::ecs::entity, core::ecs::components::light, <ref refid="structpsl_1_1ecs_1_1on__combine" kindref="compound">psl::ecs::on_combine</ref>&lt; core::ecs::components::light, core::ecs::components::transform &gt;&gt;</type>
+          <declname>pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="54" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp" bodystart="47" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="42" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" bodystart="41" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1af9b1cdd739f189f2877d4f2e305c0588" prot="public" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>create_dir</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1ab7fc5a476df219869c86a87ba97cd1fb" prot="public" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>lighting_system</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1ae9cff3dd3371d9e16bb965ccb99ef234" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_Cache</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1a4a24fdac1e51de47e0508a81f75a3c6e" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_Context</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1afe0d62cdd85311b2bafffb0b696e8fc4" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_DependsPass</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1a7e6a5c231df687b31db09203fbe7cee3" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_LightDataBuffer</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1a58641292555ad3402fd539a380e745ab" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_LightSegment</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1ab4f2c5c1f519eec7a94128c3193f2dd7" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_RenderGraph</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1af65e9dcc5731c6b46254955a8969b7e1" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_State</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1a0a94d802978aad97f614ac0b4a7c9aab" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_Surface</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1abe1091bbe51320fa507531ddaa4ec821" prot="private" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>m_Systems</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1lighting__system_1af8c6e846aa78def3610a78cbcf326e5c" prot="public" virt="non-virtual"><scope>core::ecs::systems::lighting_system</scope><name>~lighting_system</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1data_1_1geometry__t_1_1constants" kind="struct" language="C++" prot="public">
+    <compoundname>core::data::geometry_t::constants</compoundname>
+    <includes refid="data_2geometry_8hpp" local="no">geometry.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::POSITION</definition>
+        <argsstring></argsstring>
+        <name>POSITION</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_POSITION&quot;</initializer>
+        <briefdescription>
+<para>vertex position data key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="58" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a1c4b0cde8118701c83f9f8a81e108dc0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::COLOR</definition>
+        <argsstring></argsstring>
+        <name>COLOR</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_COLOR&quot;</initializer>
+        <briefdescription>
+<para>vertex color data key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="60" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a73935e02729c581242b4b75d61654b9a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::NORMAL</definition>
+        <argsstring></argsstring>
+        <name>NORMAL</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_NORMAL&quot;</initializer>
+        <briefdescription>
+<para>vertex normal information key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="62" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a45dd736551a031ec6554ac10e7d9adb1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::TANGENT</definition>
+        <argsstring></argsstring>
+        <name>TANGENT</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_TANGENT&quot;</initializer>
+        <briefdescription>
+<para>vertex tangent information key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="64" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a5691a4e68eb214f2d803e65e6aa7acdc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::BITANGENT</definition>
+        <argsstring></argsstring>
+        <name>BITANGENT</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_BITANGENT&quot;</initializer>
+        <briefdescription>
+<para>vertex bitangent information key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="66" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1ae545b2553d63543a9f89eafacdad91d5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::TEX</definition>
+        <argsstring></argsstring>
+        <name>TEX</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_TEX&quot;</initializer>
+        <briefdescription>
+<para>vertex uv-coordinate key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="68" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1ab48e659209fa828ab5d40c8392e6890c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::VERTEX_BONES</definition>
+        <argsstring></argsstring>
+        <name>VERTEX_BONES</name>
+        <initializer>= &quot;GEOMETRY_VERTEX_BONES&quot;</initializer>
+        <briefdescription>
+<para>vertex bone weight key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="70" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1data_1_1geometry__t_1_1constants_1a0147134b7325fc15c327769d68fc6aa4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::geometry_t::constants::BONES</definition>
+        <argsstring></argsstring>
+        <name>BONES</name>
+        <initializer>= &quot;GEOMETRY_BONES&quot;</initializer>
+        <briefdescription>
+<para>geometry bones key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="72" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains globally pre-defined keys for common streams that most engines have. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="56" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="55" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5691a4e68eb214f2d803e65e6aa7acdc" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>BITANGENT</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a0147134b7325fc15c327769d68fc6aa4" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>BONES</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a1c4b0cde8118701c83f9f8a81e108dc0" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>COLOR</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a73935e02729c581242b4b75d61654b9a" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>NORMAL</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>POSITION</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1a45dd736551a031ec6554ac10e7d9adb1" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>TANGENT</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1ae545b2553d63543a9f89eafacdad91d5" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>TEX</name></member>
+      <member refid="structcore_1_1data_1_1geometry__t_1_1constants_1ab48e659209fa828ab5d40c8392e6890c" prot="public" virt="non-virtual"><scope>core::data::geometry_t::constants</scope><name>VERTEX_BONES</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

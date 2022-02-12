@@ -1,0 +1,2838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1gfx" kind="namespace" language="C++">
+    <compoundname>core::gfx</compoundname>
+    <innerclass refid="structcore_1_1gfx_1_1attachment" prot="public">core::gfx::attachment</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1backend__type" prot="public">core::gfx::backend_type</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1buffer__t" prot="public">core::gfx::buffer_t</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1bundle" prot="public">core::gfx::bundle</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1commit__instruction" prot="public">core::gfx::commit_instruction</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1compute" prot="public">core::gfx::compute</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1computecall" prot="public">core::gfx::computecall</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1computepass" prot="public">core::gfx::computepass</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1context" prot="public">core::gfx::context</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1depth__stencil" prot="public">core::gfx::depth_stencil</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1drawcall" prot="public">core::gfx::drawcall</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1drawgroup" prot="public">core::gfx::drawgroup</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1drawlayer" prot="public">core::gfx::drawlayer</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1drawpass" prot="public">core::gfx::drawpass</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1enum__flag" prot="public">core::gfx::enum_flag</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1framebuffer__t" prot="public">core::gfx::framebuffer_t</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1geometry__t" prot="public">core::gfx::geometry_t</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1limits" prot="public">core::gfx::limits</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1material__t" prot="public">core::gfx::material_t</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1memory__copy" prot="public">core::gfx::memory_copy</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1pipeline__cache" prot="public">core::gfx::pipeline_cache</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1render__graph" prot="public">core::gfx::render_graph</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1sampler__t" prot="public">core::gfx::sampler_t</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1shader" prot="public">core::gfx::shader</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1shader__buffer__binding" prot="public">core::gfx::shader_buffer_binding</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1swapchain" prot="public">core::gfx::swapchain</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1texture__t" prot="public">core::gfx::texture_t</innerclass>
+    <innernamespace refid="namespacecore_1_1gfx_1_1constants">core::gfx::constants</innernamespace>
+    <innernamespace refid="namespacecore_1_1gfx_1_1conversion">core::gfx::conversion</innernamespace>
+    <innernamespace refid="namespacecore_1_1gfx_1_1details">core::gfx::details</innernamespace>
+    <innernamespace refid="namespacecore_1_1gfx_1_1image">core::gfx::image</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>buffering</name>
+        <enumvalue id="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990a0679273e201afd0bf57af3961f8a23b8" prot="public">
+          <name>SINGLE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990afd3e4ece78a7d422280d5ed379482229" prot="public">
+          <name>DOUBLE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990a81f18392c720d918275315ef2869422b" prot="public">
+          <name>TRIPLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990a4905ac9d6a22bdfc1ae096094ce6248d" prot="public">
+          <name>COUNT</name>
+          <initializer>= TRIPLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>how many render buffers should there be. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>surface_mode</name>
+        <enumvalue id="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465ab89c3d897b196ffff1537331bc659a97" prot="public">
+          <name>FULLSCREEN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465adaa43822b2c6abbb5d4eaf867ff6e4a4" prot="public">
+          <name>WINDOWED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465a8d91efb01e00f55c2b6817a2bafa8e59" prot="public">
+          <name>FULLSCREEN_WINDOW</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>how should the surface be rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>depending on the platform, fullscreen could be the only option and all others ignored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1aec9cbe859936b1be635cd4032a9cf8cb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>geometry_type</name>
+        <enumvalue id="namespacecore_1_1gfx_1aec9cbe859936b1be635cd4032a9cf8cbafe6f99ef1ec99efbdc19a9786cf1facc" prot="public">
+          <name>STATIC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1aec9cbe859936b1be635cd4032a9cf8cba0fcc90da4811c877ba9f9c12f7d60bc9" prot="public">
+          <name>DYNAMIC</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" line="30" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a7bd308bdf6353f949a04b2339e7cc074" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>graphics_backend</name>
+        <enumvalue id="namespacecore_1_1gfx_1a7bd308bdf6353f949a04b2339e7cc074a5e543256c480ac577d30f76f9120eb74" prot="public">
+          <name>undefined</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a7bd308bdf6353f949a04b2339e7cc074a8473f19e6529e22157459e75b4cbf485" prot="public">
+          <name>vulkan</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a7bd308bdf6353f949a04b2339e7cc074ae439d02235197830f8781ba42e4f1e44" prot="public">
+          <name>gles</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="12" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>shader_stage</name>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5a2b5bc093b09bd81f51de433bde9d202a" prot="public">
+          <name>vertex</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5a7dd430baa39d2873520d0338acb98741" prot="public">
+          <name>tesselation_control</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5ad711cc63370ae664a464b9efd08f6248" prot="public">
+          <name>tesselation_evaluation</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5aed7daeb157cd9b31e53896ad3c771a26" prot="public">
+          <name>geometry</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5a02e918fc72837d7c2689be88684dceb1" prot="public">
+          <name>fragment</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5a77e73f3a185e16d1f08ca5e057710b9d" prot="public">
+          <name>compute</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><zwj/>*** [format:enum </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="150" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="149" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1ab215384fac7d3866b4dff44a406fc223" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>vertex_input_rate</name>
+        <enumvalue id="namespacecore_1_1gfx_1ab215384fac7d3866b4dff44a406fc223a2b5bc093b09bd81f51de433bde9d202a" prot="public">
+          <name>vertex</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ab215384fac7d3866b4dff44a406fc223a7123a699d77db6479a1d8ece2c4f1c16" prot="public">
+          <name>instance</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="160" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a4236d6f4dbb74243fa9f2448ae387c16" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>memory_write_frequency</name>
+        <enumvalue id="namespacecore_1_1gfx_1a4236d6f4dbb74243fa9f2448ae387c16ac828b86fd620f0a0413285e768788f00" prot="public">
+          <name>per_frame</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4236d6f4dbb74243fa9f2448ae387c16a0b8e35d8162a89f5aca0614e784683bb" prot="public">
+          <name>sometimes</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4236d6f4dbb74243fa9f2448ae387c16a551412746c8beaa67f69978d83f0c521" prot="public">
+          <name>almost_never</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="166" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="165" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2dde" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>memory_usage</name>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea7f72326b02bde0ad61f5057da7e85622" prot="public">
+          <name>transfer_source</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddead0dfa4d63bc0b8f390dfa43c046c770a" prot="public">
+          <name>transfer_destination</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea08f174e01324d335483ad23af73e6db1" prot="public">
+          <name>uniform_texel_buffer</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea39f80e2e6fa688a66592fad65b167087" prot="public">
+          <name>storage_texel_buffer</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea9e3ed97709be98ed347af4bbf765daec" prot="public">
+          <name>uniform_buffer</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea136244bd619e9c2c518b1405e7b68599" prot="public">
+          <name>storage_buffer</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddeaab150dddbaa3966d354cc6dcd7418ea9" prot="public">
+          <name>index_buffer</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea9a89a832efcc2557585b289cc295f7f5" prot="public">
+          <name>vertex_buffer</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea6c1d372277c0e5dbef946d0f5a7fb1ee" prot="public">
+          <name>indirect_buffer</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a3ba86abb213bad6379cc64bf251f2ddea485ca36462ea20ed6d35d03fd27c5991" prot="public">
+          <name>conditional_rendering</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="178" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="177" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>memory_property</name>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80acb9f11a42ff8844846432f21ab793bc0" prot="public">
+          <name>device_local</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80a167577edb84f743341e51843546c4ec7" prot="public">
+          <name>host_visible</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80a02eacf8361ff4501eb866dc72a279778" prot="public">
+          <name>host_coherent</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80a64a6814f6897daed9a593e8c29e51262" prot="public">
+          <name>host_cached</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80aa6a8a874ad4080b5ae9209139df18b06" prot="public">
+          <name>lazily_allocated</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a0f29935c45bb23260985c11ad3389b80aa8858df464566cae4661be2a8a00e215" prot="public">
+          <name>protected_memory</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="204" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="203" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9a" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>image_type</name>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aa53e979c56deed6fe26b77a4ef8f06db5" prot="public">
+          <name>planar_1D</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aace62b870c0b45b04c801c9346cfaa48b" prot="public">
+          <name>planar_2D</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aab8ed5f538b59003a2904d9aceb953d93" prot="public">
+          <name>planar_3D</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aae818ef8962f0a5791e9abd52e0662d0c" prot="public">
+          <name>cube_2D</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aa6c10f28deca8b402e0f18d8eabb03310" prot="public">
+          <name>array_1D</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aa9281d037672d12efb9b40c4a5042b9bc" prot="public">
+          <name>array_2D</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1af60fece59e95e21918750cb982c26e9aacff3f4a0f83cd98a2710ffdfd583047f" prot="public">
+          <name>array_cube</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="226" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="225" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1ad417359bf9653807e31830eaabe30cd3" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>image_aspect</name>
+        <enumvalue id="namespacecore_1_1gfx_1ad417359bf9653807e31830eaabe30cd3a70dda5dfb8053dc6d1c492574bce9bfd" prot="public">
+          <name>color</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ad417359bf9653807e31830eaabe30cd3a12a055bf01a31369fe81ac35d85c7bc1" prot="public">
+          <name>depth</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ad417359bf9653807e31830eaabe30cd3a667f218c5ed2c9cf25734500472e7c4a" prot="public">
+          <name>stencil</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="237" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>image_usage</name>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257a7f72326b02bde0ad61f5057da7e85622" prot="public">
+          <name>transfer_source</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257ad0dfa4d63bc0b8f390dfa43c046c770a" prot="public">
+          <name>transfer_destination</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257a1e44d801f1e021c1d11bab71e06e86dd" prot="public">
+          <name>sampled</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257addecebdea58b5f264d27f1f7909bab74" prot="public">
+          <name>storage</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257a53e7889711e460d08eca0e6e3579951f" prot="public">
+          <name>color_attachment</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257aafd7d85185218e9f244fe5249e4b57da" prot="public">
+          <name>dept_stencil_attachment</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257a4d3dd64dc00e4e343539378b092e7f04" prot="public">
+          <name>transient_attachment</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a109173d4fc871dbb4c67bef9490fd257a01f4f0ce93fd33a0d91b6a73d1473d0c" prot="public">
+          <name>input_attachment</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="251" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="250" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>component_bits</name>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4a4b43b0aee35624cd95b910189b3dc231" prot="public">
+          <name>r</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4ab2f5ff47436671b6e533d8dc3614845d" prot="public">
+          <name>g</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4a92eb5ffee6ae2fec3ad71c777531578f" prot="public">
+          <name>b</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4a0cc175b9c0f1b6a831c399e269772661" prot="public">
+          <name>a</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4a9dd4e461268c8034f5c8564e155c67a6" prot="public">
+          <name>x</name>
+          <initializer>= r</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4a415290769594460e2e485922904f345d" prot="public">
+          <name>y</name>
+          <initializer>= g</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4afbade9e36a3f36d3d676c1b808451dd7" prot="public">
+          <name>z</name>
+          <initializer>= b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a4273606a46e96f9d8813b0eb75ee43f4af1290186a5d0b1ceab27f4e77c0c5d68" prot="public">
+          <name>w</name>
+          <initializer>= a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="276" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="275" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>format_t</name>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5e543256c480ac577d30f76f9120eb74" prot="public">
+          <name>undefined</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad8449cdea1307d784332993fcdc94090" prot="public">
+          <name>r4g4_unorm_pack8</name>
+          <initializer>= 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10af2a145d98896cac7e99a0576524e8fd4" prot="public">
+          <name>r4g4b4a4_unorm_pack16</name>
+          <initializer>= 143</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a2b6648c0f35af213f945ce1328ed0014" prot="public">
+          <name>b4g4r4a4_unorm_pack16</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad266f559493bae8149a702a1ece27fd1" prot="public">
+          <name>r5g6b5_unorm_pack16</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ac86d9638398f135164d925643caa84ca" prot="public">
+          <name>b5g6r5_unorm_pack16</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a97fe0ecf23c89f96585ff21882fb0ca6" prot="public">
+          <name>r5g5b5a1_unorm_pack16</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a3abb69fd4620eee3a7957532988c7b5e" prot="public">
+          <name>b5g5r5a1_unorm_pack16</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a11f64aef01699288412ed5c31fbb1577" prot="public">
+          <name>a1r5g5b5_unorm_pack16</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a18cb52b2cae3cdc3c65dea6ee91f0944" prot="public">
+          <name>r8_unorm</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a29019c9737116550a940597aeca95304" prot="public">
+          <name>r8_snorm</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0637f01aa3ab713221edeb10a7bb24e1" prot="public">
+          <name>r8_uint</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a492a75b651546650f0d607c6b78354bf" prot="public">
+          <name>r8_sint</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10af301eeb5ccc33f63fed16a4f6eba5a90" prot="public">
+          <name>r8_srgb</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a00d96acec71e399d0cd8bd625813cc8b" prot="public">
+          <name>r8g8_unorm</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10abf4d0493f204cf20d8aa9bb3eb3efef9" prot="public">
+          <name>r8g8_snorm</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ae44e777515e9e4d13ea8e4e67746716e" prot="public">
+          <name>r8g8_uint</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a32df978a28a2a2d11fc2a9bf86eb26a9" prot="public">
+          <name>r8g8_sint</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a146b25ab5a1be09aa63eb8329d8657b6" prot="public">
+          <name>r8g8_srgb</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aed72ab95358f2ff2a6c2a7272163a71c" prot="public">
+          <name>r8g8b8_unorm</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a9d1857f951d52895afc7b5016bc1f79f" prot="public">
+          <name>r8g8b8_snorm</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a28123ea922702f24b73765a2902115a5" prot="public">
+          <name>r8g8b8_uint</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aebc35624b7f6bc4017056c6a7755acbb" prot="public">
+          <name>r8g8b8_sint</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a2fe5e424f95a7d5fcbd087e11aef7694" prot="public">
+          <name>r8g8b8_srgb</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a6e63505802b74ab61024cdeb53f89b6e" prot="public">
+          <name>b8g8r8_unorm</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a945bcee1daebef69330cca880bcf750f" prot="public">
+          <name>b8g8r8_snorm</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a021d039043dec8bdb7d44a4f3922c604" prot="public">
+          <name>b8g8r8_uint</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a6ae9b7c4612cb4e882df71d8ca2c8951" prot="public">
+          <name>b8g8r8_sint</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad4b63029445e3c602814fb13ca024dab" prot="public">
+          <name>b8g8r8_srgb</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a165761d8df0cf06f59f2db7b2445d833" prot="public">
+          <name>r8g8b8a8_unorm</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a16529a6913ac352664da56e7157a5acb" prot="public">
+          <name>r8g8b8a8_snorm</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a08cb47223fd313ca019c2264e6898572" prot="public">
+          <name>r8g8b8a8_uint</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad9f14ae5a352e2d30cf4d14e06da5821" prot="public">
+          <name>r8g8b8a8_sint</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a636304a9c0e6f6e71baaddf1c6c6a2e3" prot="public">
+          <name>r8g8b8a8_srgb</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a411d89856c541aff75e9e818fe79020c" prot="public">
+          <name>b8g8r8a8_unorm</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5112cad701a57e7820b6298cf31809ec" prot="public">
+          <name>b8g8r8a8_snorm</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0e66c41e355c58d2c8f070a1d5169f79" prot="public">
+          <name>b8g8r8a8_uint</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a71b31e276554ce4d7bb8abf096b9a1e4" prot="public">
+          <name>b8g8r8a8_sint</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a87cef65a9ed82530516664d028039521" prot="public">
+          <name>b8g8r8a8_srgb</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a9e3f9685ea03499688206aa552574548" prot="public">
+          <name>a2r10g10b10_unorm_pack32</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aa7ca89ccb8ad8a36e1b984d5c515afe2" prot="public">
+          <name>a2r10g10b10_uint_pack32</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ae6a33e339d7fd55c4f82e453ce357e34" prot="public">
+          <name>a2b10g10r10_unorm_pack32</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5dc4dab09b687520c0fcf21224e170e4" prot="public">
+          <name>a2b10g10r10_uint_pack32</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a4a4bab63c1551583499c38efd95b3c5c" prot="public">
+          <name>r16_unorm</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aea251d6d9a45ff5db6a239484a924e3d" prot="public">
+          <name>r16_snorm</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aa66d666e1b4dee61ca017c7a99f4790d" prot="public">
+          <name>r16_uint</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a03dfcd1ce02200055bb621702bf4d185" prot="public">
+          <name>r16_sint</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a105724f699f0efcb5bc2ee30a91069b5" prot="public">
+          <name>r16_sfloat</name>
+          <initializer>= 45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a572e919e65e9042cf37cc66566661ba7" prot="public">
+          <name>r16g16_unorm</name>
+          <initializer>= 46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a62daaeeec7d2f280e43e7128d872a2b4" prot="public">
+          <name>r16g16_snorm</name>
+          <initializer>= 47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a34d1e0a3ddf90c4ec61f3507bd32814a" prot="public">
+          <name>r16g16_uint</name>
+          <initializer>= 48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a7bc24686d6cd41777d6aad419e3d1fcd" prot="public">
+          <name>r16g16_sint</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a964414480568c6a90a4aee60ce99b0a5" prot="public">
+          <name>r16g16_sfloat</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ada1c1537ce8920622de6fff131e8195f" prot="public">
+          <name>r16g16b16_unorm</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a78a5a951282a94fd4d0adf0d3d843e5d" prot="public">
+          <name>r16g16b16_snorm</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ab817be85d882879e70e1b1362bfb0869" prot="public">
+          <name>r16g16b16_uint</name>
+          <initializer>= 53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a9618d80cec9207d73a433955f3b40d26" prot="public">
+          <name>r16g16b16_sint</name>
+          <initializer>= 54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a06d93a2a6337ff3bbf427832b078936e" prot="public">
+          <name>r16g16b16_sfloat</name>
+          <initializer>= 55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ace76e6c44c4e0a294e402a5ce7712494" prot="public">
+          <name>r16g16b16a16_unorm</name>
+          <initializer>= 56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ac47d44b806c98c250544006a6ce7524b" prot="public">
+          <name>r16g16b16a16_snorm</name>
+          <initializer>= 57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a83cd620c47de89bd8f01d1a6b1f0126b" prot="public">
+          <name>r16g16b16a16_uint</name>
+          <initializer>= 58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10af62dbb4e5ffd16c2c04cc84c059ea9fa" prot="public">
+          <name>r16g16b16a16_sint</name>
+          <initializer>= 59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a9cb7fa63ce7ed45cddb2d90566da0399" prot="public">
+          <name>r16g16b16a16_sfloat</name>
+          <initializer>= 60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a4043abe866c7cdc5890272d973252260" prot="public">
+          <name>r32_uint</name>
+          <initializer>= 61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5a7411145548d565ce638f7515984c81" prot="public">
+          <name>r32_sint</name>
+          <initializer>= 62</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ac18eb69e34484d89662163be82155e58" prot="public">
+          <name>r32_sfloat</name>
+          <initializer>= 63</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a8bf997a3cafeeb1e771aa465caebb3a2" prot="public">
+          <name>r32g32_uint</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a36b03db13a1ac0d1cccb673785cfb1e8" prot="public">
+          <name>r32g32_sint</name>
+          <initializer>= 65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5ec3c7f48e761e140f4437aaacb5fd25" prot="public">
+          <name>r32g32_sfloat</name>
+          <initializer>= 66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a9d2b5db207978cc1c76ec3d03993a767" prot="public">
+          <name>r32g32b32_uint</name>
+          <initializer>= 67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a1d94b0356e18eeeaee56aa5058242ece" prot="public">
+          <name>r32g32b32_sint</name>
+          <initializer>= 68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a7d0ba0c35963b2399d58c426da91d3d1" prot="public">
+          <name>r32g32b32_sfloat</name>
+          <initializer>= 69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0404136be2fe75cd32092f992523a4a1" prot="public">
+          <name>r32g32b32a32_uint</name>
+          <initializer>= 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a1927aad106f21997435ba1e2187154fa" prot="public">
+          <name>r32g32b32a32_sint</name>
+          <initializer>= 71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a68b0a06cc2a7d669d2d706de07bd7eb2" prot="public">
+          <name>r32g32b32a32_sfloat</name>
+          <initializer>= 72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a7b4f6564d09b529e10712a59af7b4d2e" prot="public">
+          <name>b10g11r11_ufloat_pack32</name>
+          <initializer>= 73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a6289c5bffebf635246d1250491b5624b" prot="public">
+          <name>e5b9g9r9_ufloat_pack32</name>
+          <initializer>= 74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a6e18774d7d3b9c49cd9b9abe55dd202b" prot="public">
+          <name>d16_unorm</name>
+          <initializer>= 75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a04d76ac544c54d2471882ce3fec537aa" prot="public">
+          <name>x8_d24_unorm_pack32</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a43e267c10f5ded3aa6e1408f876e7cc8" prot="public">
+          <name>d32_sfloat</name>
+          <initializer>= 77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a1371424663eff9685a458973e0e3c6ea" prot="public">
+          <name>s8_uint</name>
+          <initializer>= 78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a108bf1337852631632166e0f9b9d8547" prot="public">
+          <name>d24_unorm_s8_uint</name>
+          <initializer>= 79</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a380363983c27295d62f3cddd1a2d5b64" prot="public">
+          <name>d32_sfloat_s8_uint</name>
+          <initializer>= 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a2ddc5865df716a2d8cb8f7b705f2f734" prot="public">
+          <name>bc1_rgb_unorm_block</name>
+          <initializer>= 81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a621860a469bd4a7c73919c217c71e22c" prot="public">
+          <name>bc1_rgb_srgb_block</name>
+          <initializer>= 82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a088b0ee5cdd3ba76c77b5905157ad73c" prot="public">
+          <name>bc1_rgba_unorm_block</name>
+          <initializer>= 83</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a473b946533cf46c0bb3399e7e59cc53c" prot="public">
+          <name>bc1_rgba_srgb_block</name>
+          <initializer>= 84</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a6339a3a0cab28e598b562c53da82a3db" prot="public">
+          <name>bc2_unorm_block</name>
+          <initializer>= 85</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a3a557f1fd2a6b3dd9617ac65e1d2616d" prot="public">
+          <name>bc2_srgb_block</name>
+          <initializer>= 86</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a3a02b1497b3736668f998ede670032fb" prot="public">
+          <name>bc3_unorm_block</name>
+          <initializer>= 87</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ab74af1b7a40a3cfcba9045526fc9c1c2" prot="public">
+          <name>bc3_srgb_block</name>
+          <initializer>= 88</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a4c69ff8a8735d8a8b397022feb3063fd" prot="public">
+          <name>bc4_unorm_block</name>
+          <initializer>= 89</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10abee561731c4ee863a3f880a17b93faa2" prot="public">
+          <name>bc4_snorm_block</name>
+          <initializer>= 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a4256cf8f21d037c28538c17dee3fadcf" prot="public">
+          <name>bc5_unorm_block</name>
+          <initializer>= 91</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0511ee72931ee602921f30c946bde241" prot="public">
+          <name>bc5_snorm_block</name>
+          <initializer>= 92</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aeab1aef25b9ac39c33602135b5c2634a" prot="public">
+          <name>bc6h_ufloat_block</name>
+          <initializer>= 93</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a95f4899ec7cad02bc786e5700611bb00" prot="public">
+          <name>bc6h_sfloat_block</name>
+          <initializer>= 94</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a547984f2622dd14762a51e357f85aef9" prot="public">
+          <name>bc7_unorm_block</name>
+          <initializer>= 95</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aaead07fb4639d4a3cc0a5cca61780195" prot="public">
+          <name>bc7_srgb_block</name>
+          <initializer>= 96</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aa369430397d852211416f928e39b825f" prot="public">
+          <name>etc2_r8g8b8_unorm_block</name>
+          <initializer>= 97</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10af9a6ba7e7ae79cef6d59799702d3f354" prot="public">
+          <name>etc2_r8g8b8_srgb_block</name>
+          <initializer>= 98</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a53d894ea4e0419df5796332873e162da" prot="public">
+          <name>etc2_r8g8b8a1_unorm_block</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a511fbde8fd4d3889521233be13838bdb" prot="public">
+          <name>etc2_r8g8b8a1_srgb_block</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a46af42ed96f299cbd9c8393859e74543" prot="public">
+          <name>etc2_r8g8b8a8_unorm_block</name>
+          <initializer>= 101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5b9db86a43fdf26f51433dd059f02ccb" prot="public">
+          <name>etc2_r8g8b8a8_srgb_block</name>
+          <initializer>= 102</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0b56e9bef80a4681c102fd45217cf897" prot="public">
+          <name>eac_r11_unorm_block</name>
+          <initializer>= 103</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5d72d11ef8f6ffa69bf45b791d3658e6" prot="public">
+          <name>eac_r11_snorm_block</name>
+          <initializer>= 104</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ace54b3a4446b12195f4a798fc48b8b00" prot="public">
+          <name>eac_r11g11_unorm_block</name>
+          <initializer>= 105</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a30636cde8da513bc787687150cf7b16a" prot="public">
+          <name>eac_r11g11_snorm_block</name>
+          <initializer>= 106</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a34350df7139bdf7ec28176b313fd339e" prot="public">
+          <name>astc_4x4_unorm_block</name>
+          <initializer>= 107</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a4d99938e5eea8786491d4586c8cc4190" prot="public">
+          <name>astc_4x4_srgb_block</name>
+          <initializer>= 108</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a08b5a45cecd8bce7acc403e3e5d9e798" prot="public">
+          <name>astc_5x4_unorm_block</name>
+          <initializer>= 109</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a297b10719f2f733711079b7557fefea3" prot="public">
+          <name>astc_5x4_srgb_block</name>
+          <initializer>= 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a8007afc576670b03016552ad24bfbab2" prot="public">
+          <name>astc_5x5_unorm_block</name>
+          <initializer>= 111</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a69194158552c35878797635926062a08" prot="public">
+          <name>astc_5x5_srgb_block</name>
+          <initializer>= 112</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a341c4f789a4cece87512b4e817a537c1" prot="public">
+          <name>astc_6x5_unorm_block</name>
+          <initializer>= 113</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ae1b44c0342cdf7ca580eef5d67acf3f1" prot="public">
+          <name>astc_6x5_srgb_block</name>
+          <initializer>= 114</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad3c4adcac8dae599cf648b6cc0c28ae3" prot="public">
+          <name>astc_6x6_unorm_block</name>
+          <initializer>= 115</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad64558b871825aa14156a3a28cb9bea6" prot="public">
+          <name>astc_6x6_srgb_block</name>
+          <initializer>= 116</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a69a77d905072573e7dd7f7b80acf08d9" prot="public">
+          <name>astc_8x5_unorm_block</name>
+          <initializer>= 117</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a0e6636196d09d4942bf1d8e0556037e5" prot="public">
+          <name>astc_8x5_srgb_block</name>
+          <initializer>= 118</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a89d870d0ff82b9220e73c3f0a2ce34ed" prot="public">
+          <name>astc_8x6_unorm_block</name>
+          <initializer>= 119</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aaddf2de9d1d9848b1d5ead6808f700b8" prot="public">
+          <name>astc_8x6_srgb_block</name>
+          <initializer>= 120</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a2d2c1a5770a780a792202aa9cafad955" prot="public">
+          <name>astc_8x8_unorm_block</name>
+          <initializer>= 121</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a07b743025b2e7adde1efa7311e640f4b" prot="public">
+          <name>astc_8x8_srgb_block</name>
+          <initializer>= 122</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a28e7bb82bff3b7a1296abb3a6bd12482" prot="public">
+          <name>astc_10x5_unorm_block</name>
+          <initializer>= 123</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a51aefe55cf9062c82a475b9681bfcf99" prot="public">
+          <name>astc_10x5_srgb_block</name>
+          <initializer>= 124</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad6e4bfb4cc6480972786243abb5d5363" prot="public">
+          <name>astc_10x6_unorm_block</name>
+          <initializer>= 125</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a248395da6fc81a2762a2ef4df38d036a" prot="public">
+          <name>astc_10x6_srgb_block</name>
+          <initializer>= 126</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aad8ee37ec971e69674832c6b1f1bdaac" prot="public">
+          <name>astc_10x8_unorm_block</name>
+          <initializer>= 127</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a5e59a7f348de56003a87dee68f06f635" prot="public">
+          <name>astc_10x8_srgb_block</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad98815770d3d1485121cbc9feabbeb3d" prot="public">
+          <name>astc_10x10_unorm_block</name>
+          <initializer>= 129</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a342e048b7ce7dd14c74a5110dc554848" prot="public">
+          <name>astc_10x10_srgb_block</name>
+          <initializer>= 130</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a964436edc8bb04168a549256d23edf0f" prot="public">
+          <name>astc_12x10_unorm_block</name>
+          <initializer>= 131</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a838775f3f4cdb38953575babcafeb5d7" prot="public">
+          <name>astc_12x10_srgb_block</name>
+          <initializer>= 132</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10adad817ec696bf84e09ab3403ac883dfd" prot="public">
+          <name>astc_12x12_unorm_block</name>
+          <initializer>= 133</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10af6d7ac32ebb4d72344d3bf39148c5418" prot="public">
+          <name>astc_12x12_srgb_block</name>
+          <initializer>= 134</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a196a9ad1f375e7fb907b3417c7431cae" prot="public">
+          <name>pvrtc1_2bpp_unorm_block_img</name>
+          <initializer>= 135</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a83f8b20a8339138d507435197005874c" prot="public">
+          <name>pvrtc1_4bpp_unorm_block_img</name>
+          <initializer>= 136</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a48d04e545a5dcf1920d17b77ab8c7dc0" prot="public">
+          <name>pvrtc2_2bpp_unorm_block_img</name>
+          <initializer>= 137</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a1d834fd3aa84b5f943d2150ea98a11d9" prot="public">
+          <name>pvrtc2_4bpp_unorm_block_img</name>
+          <initializer>= 138</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10aee95ff219fcdbca66531571eae0b19d4" prot="public">
+          <name>pvrtc1_2bpp_srgb_block_img</name>
+          <initializer>= 139</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a972e4528e43bd464b01fc2d8e5fe96b0" prot="public">
+          <name>pvrtc1_4bpp_srgb_block_img</name>
+          <initializer>= 140</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10ad78cb841a08562b04b2b4bb3cb983d71" prot="public">
+          <name>pvrtc2_2bpp_srgb_block_img</name>
+          <initializer>= 141</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a5f2ad8f255dd889b842adea152a5fd10a7e6a29838d9c1d9170083cc7603b9aff" prot="public">
+          <name>pvrtc2_4bpp_srgb_block_img</name>
+          <initializer>= 142</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="295" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="294" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1aed4ecae98e0bfbd106628120a165d9a8" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>sampler_mipmap_mode</name>
+        <enumvalue id="namespacecore_1_1gfx_1aed4ecae98e0bfbd106628120a165d9a8ad879c351426770bc0b13c3628db1e636" prot="public">
+          <name>nearest</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1aed4ecae98e0bfbd106628120a165d9a8a9a932b3cb396238423eb2f33ec17d6aa" prot="public">
+          <name>linear</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="449" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="448" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943b" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>sampler_address_mode</name>
+        <enumvalue id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943ba32cf6da134a8b268cf4ab6b79a9a5ad9" prot="public">
+          <name>repeat</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943ba301defc6e7425fc63ef35c7827d43b44" prot="public">
+          <name>mirrored_repeat</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943ba7ff5ead6fef18ca5f63119754ac76c3e" prot="public">
+          <name>clamp_to_edge</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943ba80cff00baefbb1ac2ae3f57d71c8b758" prot="public">
+          <name>clamp_to_border</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ae3afb190d93ff19b04358befbf73943baa23b809c3d43ddbd7fa4bcbd00d91066" prot="public">
+          <name>mirror_clamp_to_edge</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="455" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="454" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>border_color</name>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7a391dcb0e58adcb6330306a8ed37bb614" prot="public">
+          <name>float_transparent_black</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7a8a3894932b67348600919593abb7d4bb" prot="public">
+          <name>int_transparent_black</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7a5993c3edbb7d63e5eec3769c604e36a1" prot="public">
+          <name>float_opaque_black</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7a29aa31a2d80758f32e1f00cd8a1ba587" prot="public">
+          <name>int_opaque_black</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7a4a1fd49d70830ae0b1696f52fdfccf86" prot="public">
+          <name>float_opaque_white</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ada9246b9968c9b2b547313c1ed29e5e7ae1c5dedca9991fd4add2e12d81d5c033" prot="public">
+          <name>int_opaque_white</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="463" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="462" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1ad2b94be6e833c87918ab88a9724d6a68" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>cullmode</name>
+        <enumvalue id="namespacecore_1_1gfx_1ad2b94be6e833c87918ab88a9724d6a68a334c4a4c42fdb79d7ebc3e73b517e6f8" prot="public">
+          <name>none</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ad2b94be6e833c87918ab88a9724d6a68ae6ec529ba185279aa0adcf93e645c7cd" prot="public">
+          <name>front</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ad2b94be6e833c87918ab88a9724d6a68a469bba0a564235dfceede42db14f17b0" prot="public">
+          <name>back</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1ad2b94be6e833c87918ab88a9724d6a68aa181a603769c1f98ad927e7367c7aa51" prot="public">
+          <name>all</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="473" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="472" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13e" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>compare_op</name>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13eac7561db7a418dd39b2201dfe110ab4a4" prot="public">
+          <name>never</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13eae37e8d912e8f7b8f9b5ef9452ba47ff1" prot="public">
+          <name>less</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13ea465289687a70db7aa7217cc240c29f0f" prot="public">
+          <name>equal</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13ea77932225fb35fc4b74dc8fabf0992dac" prot="public">
+          <name>less_equal</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13ea7b8dc4fb0fb55fc8eb69ff080c45ed7e" prot="public">
+          <name>greater</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13ea96ee5c0e2a7149613e7fd0b83316486e" prot="public">
+          <name>not_equal</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13ea5675102b0e596d9d43bbb0e0f8ea07e2" prot="public">
+          <name>greater_equal</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a8866821c51fbf21e872fdb10244da13eaf9f90eeaf400d228facde6bc48da5cfb" prot="public">
+          <name>always</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="482" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="481" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a58684ed66f227dc0225fe10aced5a7e1" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>filter</name>
+        <enumvalue id="namespacecore_1_1gfx_1a58684ed66f227dc0225fe10aced5a7e1ad879c351426770bc0b13c3628db1e636" prot="public">
+          <name>nearest</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a58684ed66f227dc0225fe10aced5a7e1a9a932b3cb396238423eb2f33ec17d6aa" prot="public">
+          <name>linear</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a58684ed66f227dc0225fe10aced5a7e1a7ab93feeb36d98e584d10de2e2f68843" prot="public">
+          <name>cubic</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="495" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="494" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>binding_type</name>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da2b06a2251d39e28f8220696766dcd136" prot="public">
+          <name>sampler</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0dad7c8b8ae5dd768731ff16569dad97857" prot="public">
+          <name>combined_image_sampler</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0dadc62eb3f8689a0cebb64a8031ac2ff22" prot="public">
+          <name>sampled_image</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da1c9ba522b0392b0fa109689aa7f5d750" prot="public">
+          <name>storage_image</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da08f174e01324d335483ad23af73e6db1" prot="public">
+          <name>uniform_texel_buffer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da39f80e2e6fa688a66592fad65b167087" prot="public">
+          <name>storage_texel_buffer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da9e3ed97709be98ed347af4bbf765daec" prot="public">
+          <name>uniform_buffer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da136244bd619e9c2c518b1405e7b68599" prot="public">
+          <name>storage_buffer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da13a4a1c22f78cd528d0c33d6615cdac6" prot="public">
+          <name>uniform_buffer_dynamic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da76bb9d9599092984a23ccb23192079e0" prot="public">
+          <name>storage_buffer_dynamic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0da01f4f0ce93fd33a0d91b6a73d1473d0c" prot="public">
+          <name>input_attachment</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>these signify the binding type in the shader </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="503" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="502" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>blend_op</name>
+        <enumvalue id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219a34ec78fcc91ffb1e54cd85e4a0924332" prot="public">
+          <name>add</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219a97f415c180230ce76bafa74bc058ef5f" prot="public">
+          <name>subtract</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219ae6f7f3d18ec49e9285059f6f75d8e436" prot="public">
+          <name>reverse_subtract</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219ad8bd79cc131920d5de426f914d17405a" prot="public">
+          <name>min</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a6fcf0b6448b20cde2d75d709d963c219a2ffe4e77325d9a7152f7086ea7aa5114" prot="public">
+          <name>max</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="524" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="523" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>blend_factor</name>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228ad02c4c4cde7ae76252540d116a40f23a" prot="public">
+          <name>zero</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228af97c5d29941bfb1b2fdab0874906ab82" prot="public">
+          <name>one</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228a599799f13de2ef7e15b3b5906a290056" prot="public">
+          <name>source_color</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228acdb19d37daa201a6a612c9e86c9cdf91" prot="public">
+          <name>one_minus_source_color</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228aeadd61e269579f1d602a06d9ae0972e3" prot="public">
+          <name>dst_color</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228ac380f0aca12a314d71cc83205475375b" prot="public">
+          <name>one_minus_destination_color</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228adc8356ed55775eff67dc9c86d2cd2013" prot="public">
+          <name>source_alpha</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228aee6b2259ed63164f711d020b1e6c0334" prot="public">
+          <name>one_minus_source_alpha</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228ab71b79d6bf971b9dd2ee1d43565ab344" prot="public">
+          <name>dst_alpha</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228a175542e2a688b6cfb26cf11ca4c20565" prot="public">
+          <name>one_minus_destination_alpha</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228aec5574dc954581793a5dcbdf0e358ae1" prot="public">
+          <name>constant_color</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228a645421b2fe9a762542bf70220d9eae9c" prot="public">
+          <name>one_minus_constant_color</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228a9831f8a00f48f451286ea6c16cd2f55e" prot="public">
+          <name>constant_alpha</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228ae984532432604da975ecbe092f88091c" prot="public">
+          <name>one_minus_constant_alpha</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacecore_1_1gfx_1a321357bb9bf91a80b0e1dd956cde3228a7929aae674ec63f08cffb08bd92e7020" prot="public">
+          <name>source_alpha_saturate</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="533" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="532" bodyend="549"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacecore_1_1gfx_1a7e523d78c4ac84503478c4803863b9ba" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>graphics_backend</type>
+            <declname>backend</declname>
+            <defname>backend</defname>
+          </param>
+        </templateparamlist>
+        <type>typename backend_type&lt; T, backend &gt;::type</type>
+        <definition>using core::gfx::backend_type_t = typedef typename backend_type&lt;T, backend&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>backend_type_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="23" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacecore_1_1gfx_1af956ec954d0182121b6b94a7fa4b6c0f" prot="public" static="no">
+        <type>std::variant&lt; psl::vec4, psl::ivec4, psl::tvec&lt; uint32_t, 4 &gt;, depth_stencil &gt;</type>
+        <definition>using core::gfx::clear_value = typedef std::variant&lt;psl::vec4, psl::ivec4, psl::tvec&lt;uint32_t, 4&gt;, depth_stencil&gt;</definition>
+        <argsstring></argsstring>
+        <name>clear_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="630" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecore_1_1gfx_1ab27fa2780c3d08a76dae35a1225482dc" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; core::gfx::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="12" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/src/logging.cpp" bodystart="6" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" declline="12" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a6e9a0f42963ee3a69a9dec74cc6025f9" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr limits::buffer</type>
+        <definition>constexpr limits::buffer core::gfx::min</definition>
+        <argsstring>(const limits::buffer &amp;l, const limits::buffer &amp;r) noexcept</argsstring>
+        <name>min</name>
+        <param>
+          <type>const limits::buffer &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const limits::buffer &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/limits.hpp" line="33" column="33" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/limits.hpp" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1ae27ad16705c3bf69cb377d7d4d1f14b0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr limits</type>
+        <definition>constexpr limits core::gfx::min</definition>
+        <argsstring>(const limits &amp;l, const limits &amp;r) noexcept</argsstring>
+        <name>min</name>
+        <param>
+          <type>const limits &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const limits &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/limits.hpp" line="41" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/limits.hpp" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a4af5055e0edbdf6ad7653561cf9db09c" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>graphics_backend</type>
+            <declname>backend</declname>
+            <defname>backend</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>constexpr bool core::gfx::is_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>is_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="26" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="26" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a93054ed62720af4c8fa143d6183cfb94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>memory_usage</type>
+        <definition>memory_usage core::gfx::operator|</definition>
+        <argsstring>(memory_usage bit0, memory_usage bit1)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>memory_usage</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>memory_usage</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="191" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="191" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a7e9193e505da10dde7f8e4cd8e3a2fd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::operator&amp;</definition>
+        <argsstring>(memory_usage bit0, memory_usage bit1)</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>memory_usage</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>memory_usage</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="197" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="197" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a3152a227e3d9bafc0a52ec6cde28caf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>memory_property</type>
+        <definition>memory_property core::gfx::operator|</definition>
+        <argsstring>(memory_property bit0, memory_property bit1)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>memory_property</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>memory_property</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="214" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1ad9c9c0b7c76f96f92c1fe155cff7e155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::operator&amp;</definition>
+        <argsstring>(memory_property bit0, memory_property bit1)</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>memory_property</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>memory_property</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="220" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1abf4276bfce3cad9531f8758accaa604b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>image_aspect</type>
+        <definition>image_aspect core::gfx::operator|</definition>
+        <argsstring>(image_aspect bit0, image_aspect bit1)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>image_aspect</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>image_aspect</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="244" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="244" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1af704eb024412f0a53b4b5616a0b4420b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>image_usage</type>
+        <definition>image_usage core::gfx::operator|</definition>
+        <argsstring>(image_usage bit0, image_usage bit1)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>image_usage</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>image_usage</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="263" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a7a5337f4d0bf46847f902e28b582f8c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::operator&amp;</definition>
+        <argsstring>(image_usage bit0, image_usage bit1)</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>image_usage</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>image_usage</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="269" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a499d6025ccf73683398a246d300d9962" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>component_bits</type>
+        <definition>component_bits core::gfx::operator|</definition>
+        <argsstring>(component_bits bit0, component_bits bit1)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>component_bits</type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type>component_bits</type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="287" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="287" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a9c1f5f0cd617765e0450544b067acfe4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::is_texture_format</definition>
+        <argsstring>(format_t value) noexcept</argsstring>
+        <name>is_texture_format</name>
+        <param>
+          <type>format_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="443" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="443" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a9feac5025e4b146c0568184730baff55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::operator&amp;</definition>
+        <argsstring>(binding_type bit0, binding_type bit1)</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0d" kindref="member">binding_type</ref></type>
+          <declname>bit0</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0d" kindref="member">binding_type</ref></type>
+          <declname>bit1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="517" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="517" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a66d7349584f1dd2123e5ba6286f13a14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::has_depth</definition>
+        <argsstring>(core::gfx::format_t format)</argsstring>
+        <name>has_depth</name>
+        <param>
+          <type>core::gfx::format_t</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="551" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="551" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1ad1baba6e850367778d11750f0457c77a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::has_stencil</definition>
+        <argsstring>(core::gfx::format_t format)</argsstring>
+        <name>has_stencil</name>
+        <param>
+          <type>core::gfx::format_t</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="563" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="563" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1a15e78dfb54a7fff0553e683eb2ab4d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::is_depthstencil</definition>
+        <argsstring>(core::gfx::format_t format)</argsstring>
+        <name>is_depthstencil</name>
+        <param>
+          <type>core::gfx::format_t</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="573" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="573" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecore_1_1gfx_1adf826ae80a58343e3f03947b15e91945" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t core::gfx::packing_size</definition>
+        <argsstring>(format_t value) noexcept</argsstring>
+        <name>packing_size</name>
+        <param>
+          <type>format_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="632" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="632" bodyend="1019"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>namespace that deals with the abstract render objects </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>currently this namespace is shared with <ref refid="namespacecore_1_1ivk" kindref="compound">core::ivk</ref>, this will change in the future however. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

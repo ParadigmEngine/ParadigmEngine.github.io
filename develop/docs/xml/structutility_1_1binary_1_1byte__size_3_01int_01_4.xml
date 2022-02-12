@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1binary_1_1byte__size_3_01int_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::binary::byte_size&lt; int &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1binary_1_1byte__size_3_01int_01_4_1addefb44a4daf5afd7569dd476eff320d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t utility::binary::byte_size&lt; int &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>{4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" line="42" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" line="41" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" bodystart="40" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structutility_1_1binary_1_1byte__size_3_01int_01_4_1addefb44a4daf5afd7569dd476eff320d" prot="public" virt="non-virtual"><scope>utility::binary::byte_size&lt; int &gt;</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

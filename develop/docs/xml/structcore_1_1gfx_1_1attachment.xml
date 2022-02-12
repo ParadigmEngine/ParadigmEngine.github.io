@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1attachment" kind="struct" language="C++" prot="public">
+    <compoundname>core::gfx::attachment</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structcore_1_1gfx_1_1attachment_1a030538d1f6505c62f0694d5cc95f3fa0" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>load_op</name>
+        <enumvalue id="structcore_1_1gfx_1_1attachment_1a030538d1f6505c62f0694d5cc95f3fa0aec4d1eb36b22d19728e9d1d23ca84d1c" prot="public">
+          <name>load</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structcore_1_1gfx_1_1attachment_1a030538d1f6505c62f0694d5cc95f3fa0a01bc6f8efa4202821e95f4fdf6298b30" prot="public">
+          <name>clear</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structcore_1_1gfx_1_1attachment_1a030538d1f6505c62f0694d5cc95f3fa0abe7bbe0cf3947e795861f1fa966bab58" prot="public">
+          <name>dont_care</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="602" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="601" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="enum" id="structcore_1_1gfx_1_1attachment_1a56a8ceb3a961678acfcdd6e053415a8c" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>store_op</name>
+        <enumvalue id="structcore_1_1gfx_1_1attachment_1a56a8ceb3a961678acfcdd6e053415a8ca8cd892b7b97ef9489ae4479d3f4ef0fc" prot="public">
+          <name>store</name>
+          <initializer>= (uint8_t)load_op::load</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structcore_1_1gfx_1_1attachment_1a56a8ceb3a961678acfcdd6e053415a8cabe7bbe0cf3947e795861f1fa966bab58" prot="public">
+          <name>dont_care</name>
+          <initializer>= (uint8_t)load_op::dont_care</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="609" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="608" bodyend="612"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1aa22ad1de58798919c5f797d24e3eb3e8" prot="public" static="no" mutable="no">
+        <type>format_t</type>
+        <definition>format_t core::gfx::attachment::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="614" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1a4f9e83e9167e9bf6cc62725736a5a204" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core::gfx::attachment::sample_bits</definition>
+        <argsstring></argsstring>
+        <name>sample_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="615" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1a15ba9f7daf18b26ef6e17faa61b6da18" prot="public" static="no" mutable="no">
+        <type>load_op</type>
+        <definition>load_op core::gfx::attachment::image_load</definition>
+        <argsstring></argsstring>
+        <name>image_load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="616" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1ab5963d6f2d73757097379e68382c7651" prot="public" static="no" mutable="no">
+        <type>store_op</type>
+        <definition>store_op core::gfx::attachment::image_store</definition>
+        <argsstring></argsstring>
+        <name>image_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="617" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1aa461328b476b94180f28feee3e190b43" prot="public" static="no" mutable="no">
+        <type>load_op</type>
+        <definition>load_op core::gfx::attachment::stencil_load</definition>
+        <argsstring></argsstring>
+        <name>stencil_load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="618" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1ae8657c2da5c4190de2df945c9fd35a16" prot="public" static="no" mutable="no">
+        <type>store_op</type>
+        <definition>store_op core::gfx::attachment::stencil_store</definition>
+        <argsstring></argsstring>
+        <name>stencil_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="619" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1afd1d82ae912784828beaa80d3de7ab48" prot="public" static="no" mutable="no">
+        <type>image::layout</type>
+        <definition>image::layout core::gfx::attachment::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="620" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1attachment_1a96e98a64bf9eb537bcfaadd00dac94eb" prot="public" static="no" mutable="no">
+        <type>image::layout</type>
+        <definition>image::layout core::gfx::attachment::final</definition>
+        <argsstring></argsstring>
+        <name>final</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="621" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="600" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="599" bodyend="622"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1attachment_1a96e98a64bf9eb537bcfaadd00dac94eb" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>final</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1aa22ad1de58798919c5f797d24e3eb3e8" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>format</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1a15ba9f7daf18b26ef6e17faa61b6da18" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>image_load</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1ab5963d6f2d73757097379e68382c7651" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>image_store</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1afd1d82ae912784828beaa80d3de7ab48" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>initial</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1a030538d1f6505c62f0694d5cc95f3fa0" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>load_op</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1a4f9e83e9167e9bf6cc62725736a5a204" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>sample_bits</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1aa461328b476b94180f28feee3e190b43" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>stencil_load</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1ae8657c2da5c4190de2df945c9fd35a16" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>stencil_store</name></member>
+      <member refid="structcore_1_1gfx_1_1attachment_1a56a8ceb3a961678acfcdd6e053415a8c" prot="public" virt="non-virtual"><scope>core::gfx::attachment</scope><name>store_op</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

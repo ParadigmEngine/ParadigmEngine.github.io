@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1enumerator_1_1iterator" kind="class" language="C++" prot="public">
+    <compoundname>psl::enumerator::iterator</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1enumerator_1_1iterator_1a5aec9d3374478ed0a93fc18c545e8e7a" prot="private" static="no" mutable="no">
+        <type>index_type</type>
+        <definition>index_type psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="60" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1enumerator_1_1iterator_1a6ee7701dba55e1aaa0a1c2231a5e98a3" prot="private" static="no" mutable="no">
+        <type>TIterator</type>
+        <definition>TIterator psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::it</definition>
+        <argsstring></argsstring>
+        <name>it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="61" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1ab5497413694fa472b5fe0eceefad4470" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::iterator</definition>
+        <argsstring>(index_type index, TIterator iterator) noexcept</argsstring>
+        <name>iterator</name>
+        <param>
+          <type>index_type</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TIterator</type>
+          <declname>iterator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1aa29d07693384f9c0dd77dbcdd4daf045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::~iterator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a22beaf5d619f335504c5914e7e6684be" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::iterator</definition>
+        <argsstring>(const iterator &amp;other) noexcept=default</argsstring>
+        <name>iterator</name>
+        <param>
+          <type>const iterator &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a8890a31f701df2f7f413000aaed3a340" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::iterator</definition>
+        <argsstring>(iterator &amp;&amp;other) noexcept=default</argsstring>
+        <name>iterator</name>
+        <param>
+          <type>iterator &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a43d220acc82f8f09f53ce2c01cd21aed" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>iterator &amp;</type>
+        <definition>iterator&amp; psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator=</definition>
+        <argsstring>(const iterator &amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const iterator &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="17" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a70969d60241b38a02b89027d60e7fa77" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>iterator &amp;</type>
+        <definition>iterator&amp; psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator=</definition>
+        <argsstring>(iterator &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>iterator &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="18" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1adbe22eb90105cfed4f529cba1559dc7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator &amp;</type>
+        <definition>iterator&amp; psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="20" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a17f47de0e75198f9a8dfb9e0aca07e33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator &amp;</type>
+        <definition>iterator&amp; psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="27" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a69e11a32a3ff4788bcaa3f884bec8b61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator++</definition>
+        <argsstring>() const</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="34" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a21dd64793989a0de3434099d0515c330" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator--</definition>
+        <argsstring>() const</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="40" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a286b4a55b962f48394e817b25859898c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator!=</definition>
+        <argsstring>(const iterator &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const iterator &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="47" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a0097503218eeb6f6c6dbe52bfdc3ddf4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const iterator &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="49" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1a03a7db44018f57daeac43d2c683c0b10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator*</definition>
+        <argsstring>() -&gt; std::pair&lt; index_type, decltype(*std::declval&lt; TIterator &gt;())&gt;</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="51" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1enumerator_1_1iterator_1afb61fa9145488c615b7c45f7673e88e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::enumerator&lt; T, index_type, TIterator &gt;::iterator::operator*</definition>
+        <argsstring>() const -&gt; std::pair&lt; index_type, const decltype(*std::declval&lt; TIterator &gt;())&gt;</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="54" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/enumerate.hpp" bodystart="10" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a5aec9d3374478ed0a93fc18c545e8e7a" prot="private" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>index</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a6ee7701dba55e1aaa0a1c2231a5e98a3" prot="private" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>it</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1ab5497413694fa472b5fe0eceefad4470" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>iterator</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a22beaf5d619f335504c5914e7e6684be" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>iterator</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a8890a31f701df2f7f413000aaed3a340" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>iterator</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a286b4a55b962f48394e817b25859898c" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator!=</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a03a7db44018f57daeac43d2c683c0b10" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator*</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1afb61fa9145488c615b7c45f7673e88e3" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator*</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1adbe22eb90105cfed4f529cba1559dc7a" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a69e11a32a3ff4788bcaa3f884bec8b61" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a17f47de0e75198f9a8dfb9e0aca07e33" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a21dd64793989a0de3434099d0515c330" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a43d220acc82f8f09f53ce2c01cd21aed" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a70969d60241b38a02b89027d60e7fa77" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1a0097503218eeb6f6c6dbe52bfdc3ddf4" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>operator==</name></member>
+      <member refid="classpsl_1_1enumerator_1_1iterator_1aa29d07693384f9c0dd77dbcdd4daf045" prot="public" virt="non-virtual"><scope>psl::enumerator::iterator</scope><name>~iterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

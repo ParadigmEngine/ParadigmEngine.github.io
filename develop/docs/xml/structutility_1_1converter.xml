@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1converter" kind="struct" language="C++" prot="public">
+    <compoundname>utility::converter</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename X</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1converter_1a9dc23c2f324a4f18ee4f05b4bc164ff8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Y</type>
+            <defval>X</defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!std::is_enum&lt; Y &gt;::value, psl::string8_t &gt;</type>
+        <definition>static std::enable_if_t&lt;!std::is_enum&lt;Y&gt;::value, psl::string8_t&gt; utility::converter&lt; X &gt;::to_string</definition>
+        <argsstring>(const X &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const X &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="750" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="750" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_1a7122407a2f9faf48d7fe1671073ce9d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Y</type>
+            <defval>X</defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; std::is_enum&lt; Y &gt;::value, psl::string8_t &gt;</type>
+        <definition>static std::enable_if_t&lt;std::is_enum&lt;Y&gt;::value, psl::string8_t&gt; utility::converter&lt; X &gt;::to_string</definition>
+        <argsstring>(const X &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const X &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="770" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="770" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_1ae6dd41e903dbd748dcfe653ab755f0bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Y</type>
+            <defval>X</defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!std::is_enum&lt; Y &gt;::value, X &gt;</type>
+        <definition>static std::enable_if_t&lt;!std::is_enum&lt;Y&gt;::value, X&gt; utility::converter&lt; X &gt;::from_string</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="777" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="777" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_1a0af0dca4a0a04894fc0f46099adee4a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Y</type>
+            <defval>X</defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!std::is_enum&lt; Y &gt;::value, void &gt;</type>
+        <definition>static std::enable_if_t&lt;!std::is_enum&lt;Y&gt;::value, void&gt; utility::converter&lt; X &gt;::from_string</definition>
+        <argsstring>(X &amp;x, psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>X &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="792" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="792" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_1a6e71b8a413d1f1594494847fa85364e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Y</type>
+            <defval>X</defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; std::is_enum&lt; Y &gt;::value, X &gt;</type>
+        <definition>static std::enable_if_t&lt;std::is_enum&lt;Y&gt;::value, X&gt; utility::converter&lt; X &gt;::from_string</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="811" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="811" bodyend="815"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="748" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="747" bodyend="816"/>
+    <listofallmembers>
+      <member refid="structutility_1_1converter_1ae6dd41e903dbd748dcfe653ab755f0bb" prot="public" virt="non-virtual"><scope>utility::converter</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_1a0af0dca4a0a04894fc0f46099adee4a1" prot="public" virt="non-virtual"><scope>utility::converter</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_1a6e71b8a413d1f1594494847fa85364e3" prot="public" virt="non-virtual"><scope>utility::converter</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_1a9dc23c2f324a4f18ee4f05b4bc164ff8" prot="public" virt="non-virtual"><scope>utility::converter</scope><name>to_string</name></member>
+      <member refid="structutility_1_1converter_1a7122407a2f9faf48d7fe1671073ce9d2" prot="public" virt="non-virtual"><scope>utility::converter</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

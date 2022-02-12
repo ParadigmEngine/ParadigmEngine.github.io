@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1container_1_1compact__header_1_1entry" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::container::compact_header::entry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a177dca423c708327efe744ace62535d5" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t psl::format::container::compact_header::entry::name_start</definition>
+        <argsstring></argsstring>
+        <name>name_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="203" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a03b740cd1dfda49f16b9c4c21cb23a3f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t psl::format::container::compact_header::entry::name_size</definition>
+        <argsstring></argsstring>
+        <name>name_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="204" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a7b2e7410353ce0100493549a7d0a2f26" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t psl::format::container::compact_header::entry::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="205" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1aa9aaf31abd3a9406944eb884a8f6a2b7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t psl::format::container::compact_header::entry::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="206" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="202" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="201" bodyend="207"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a7b2e7410353ce0100493549a7d0a2f26" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header::entry</scope><name>depth</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a03b740cd1dfda49f16b9c4c21cb23a3f" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header::entry</scope><name>name_size</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1a177dca423c708327efe744ace62535d5" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header::entry</scope><name>name_start</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1_1entry_1aa9aaf31abd3a9406944eb884a8f6a2b7" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header::entry</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

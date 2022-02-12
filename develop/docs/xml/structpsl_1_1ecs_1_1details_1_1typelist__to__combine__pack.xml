@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1details_1_1typelist__to__combine__pack" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::details::typelist_to_combine_pack</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structpsl_1_1ecs_1_1details_1_1typelist__to__combine__pack_1a71c7e32f8667e2bc6782e15d1201107a" prot="public" static="no">
+        <type>decltype(std::tuple_cat(std::declval&lt; typename details::extract_combine&lt; Ts &gt;::type &gt;()...))</type>
+        <definition>using psl::ecs::details::typelist_to_combine_pack&lt; Ts &gt;::type =  decltype(std::tuple_cat(std::declval&lt;typename details::extract_combine&lt;Ts&gt;::type&gt;()...))</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" line="314" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" line="313" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" bodystart="312" bodyend="315"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1ecs_1_1details_1_1typelist__to__combine__pack_1a71c7e32f8667e2bc6782e15d1201107a" prot="public" virt="non-virtual"><scope>psl::ecs::details::typelist_to_combine_pack</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

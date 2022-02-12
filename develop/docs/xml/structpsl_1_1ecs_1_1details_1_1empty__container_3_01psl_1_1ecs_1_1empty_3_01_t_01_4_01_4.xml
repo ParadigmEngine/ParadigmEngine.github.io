@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1details_1_1empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::details::empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structpsl_1_1ecs_1_1details_1_1empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4_1a4b609a8387d3fb0bdce2de12a0c4b6bf" prot="public" static="no">
+        <type>T</type>
+        <definition>using psl::ecs::details::empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;::type =  T</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" line="32" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" line="31" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" bodystart="30" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1ecs_1_1details_1_1empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4_1a4b609a8387d3fb0bdce2de12a0c4b6bf" prot="public" virt="non-virtual"><scope>psl::ecs::details::empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

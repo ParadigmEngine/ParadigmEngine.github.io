@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::get_type_qualifier&lt; T * &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01_5_01_4_1a258c2104c5b3dd0003bc80ce1f36e44b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr type_qualifier</type>
+        <definition>constexpr type_qualifier utility::templates::get_type_qualifier&lt; T * &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{type_qualifier::IS_POINTER}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="50" column="33" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="49" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="48" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01_5_01_4_1a258c2104c5b3dd0003bc80ce1f36e44b" prot="public" virt="non-virtual"><scope>utility::templates::get_type_qualifier&lt; T * &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

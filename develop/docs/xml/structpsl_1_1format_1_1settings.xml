@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1settings" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::settings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1aacaed2ce9dddd893d7864c9100546cc5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::pretty_write</definition>
+        <argsstring></argsstring>
+        <name>pretty_write</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="104" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1aea64cc76edc3e3854be7fdc03c509884" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::write_header</definition>
+        <argsstring></argsstring>
+        <name>write_header</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="105" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1ac4659ce51a11e1f8cf17544d2e6f9d01" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::binary_value</definition>
+        <argsstring></argsstring>
+        <name>binary_value</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="106" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1abdf7a52ebc66a0d8a5657a84dbefd663" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::compact_string</definition>
+        <argsstring></argsstring>
+        <name>compact_string</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="107" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1af096372b8c2a1cf859e5265cadf71cec" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t psl::format::settings::major</definition>
+        <argsstring></argsstring>
+        <name>major</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="79" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1a03983e27efdd1d9800fbcc4644435748" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t psl::format::settings::minor</definition>
+        <argsstring></argsstring>
+        <name>minor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="80" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1acece654aead1f0ace95dbab50a65c21d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t psl::format::settings::patch</definition>
+        <argsstring></argsstring>
+        <name>patch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="81" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1aab8d12afd9349b9754426892ae02a66d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::validation_required</definition>
+        <argsstring></argsstring>
+        <name>validation_required</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="83" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1a7153d45388104629557da6a1983a12b9" prot="public" static="no" mutable="no">
+        <type>response</type>
+        <definition>response psl::format::settings::dynamic_objects</definition>
+        <argsstring></argsstring>
+        <name>dynamic_objects</name>
+        <initializer>{response::ALLOW}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="84" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1ad32953e43f53df041e40734b1db10856" prot="public" static="no" mutable="no">
+        <type>response</type>
+        <definition>response psl::format::settings::dynamic_fields</definition>
+        <argsstring></argsstring>
+        <name>dynamic_fields</name>
+        <initializer>{response::ERROR}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="87" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1a33244baff8bf2e67e504f7f20f3c8dbd" prot="public" static="no" mutable="no">
+        <type>attribute</type>
+        <definition>attribute psl::format::settings::field_default</definition>
+        <argsstring></argsstring>
+        <name>field_default</name>
+        <initializer>{attribute::optional}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="89" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1aa2f261c23dc464b6747c98a4e7d620fb" prot="public" static="no" mutable="no">
+        <type>attribute</type>
+        <definition>attribute psl::format::settings::type_default</definition>
+        <argsstring></argsstring>
+        <name>type_default</name>
+        <initializer>{attribute::optional}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="91" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1settings_1a0d045b3eb4f195413f698caeadc2ae63" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool psl::format::settings::nullable_references</definition>
+        <argsstring></argsstring>
+        <name>nullable_references</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="92" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="103" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="102" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1settings_1ac4659ce51a11e1f8cf17544d2e6f9d01" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>binary_value</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1abdf7a52ebc66a0d8a5657a84dbefd663" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>compact_string</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1ad32953e43f53df041e40734b1db10856" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>dynamic_fields</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1a7153d45388104629557da6a1983a12b9" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>dynamic_objects</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1a33244baff8bf2e67e504f7f20f3c8dbd" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>field_default</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1af096372b8c2a1cf859e5265cadf71cec" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>major</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1a03983e27efdd1d9800fbcc4644435748" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>minor</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1a0d045b3eb4f195413f698caeadc2ae63" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>nullable_references</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1acece654aead1f0ace95dbab50a65c21d" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>patch</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1aacaed2ce9dddd893d7864c9100546cc5" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>pretty_write</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1aa2f261c23dc464b6747c98a4e7d620fb" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>type_default</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1aab8d12afd9349b9754426892ae02a66d" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>validation_required</name></member>
+      <member refid="structpsl_1_1format_1_1settings_1aea64cc76edc3e3854be7fdc03c509884" prot="public" virt="non-virtual"><scope>psl::format::settings</scope><name>write_header</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

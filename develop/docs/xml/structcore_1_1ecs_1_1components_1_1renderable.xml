@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1renderable" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::renderable</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1renderable_1a7ee327e7951a85a88559325100acb407" prot="public" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1gfx_1_1bundle" kindref="compound">core::gfx::bundle</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::bundle&gt; core::ecs::components::renderable::bundle</definition>
+        <argsstring></argsstring>
+        <name>bundle</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" line="20" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1renderable_1a8dd90b488fa4e8687d9604ac19df2f41" prot="public" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::geometry_t &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::geometry_t&gt; core::ecs::components::renderable::geometry</definition>
+        <argsstring></argsstring>
+        <name>geometry</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" line="21" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1renderable_1aefbeaaf38a2a63fc89a7068dbaab7f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::renderable::renderable</definition>
+        <argsstring>()=default</argsstring>
+        <name>renderable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1renderable_1ab49a9704c87dcf5452177d747de6f2bb" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::renderable::renderable</definition>
+        <argsstring>(const core::resource::handle&lt; core::gfx::bundle &gt; &amp;bundle, const core::resource::handle&lt; core::gfx::geometry_t &gt; &amp;geometry) noexcept</argsstring>
+        <name>renderable</name>
+        <param>
+          <type>const <ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1gfx_1_1bundle" kindref="compound">core::gfx::bundle</ref> &gt; &amp;</type>
+          <declname>bundle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::geometry_t &gt; &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" line="15" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>core::resource::handle&lt; core::gfx::geometry_t &gt;</label>
+        <link refid="classcore_1_1resource_1_1handle"/>
+      </node>
+      <node id="3">
+        <label>core::resource::handle&lt; core::gfx::bundle &gt;</label>
+        <link refid="classcore_1_1resource_1_1handle"/>
+      </node>
+      <node id="1">
+        <label>core::ecs::components::renderable</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>geometry</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bundle</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp" bodystart="12" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1renderable_1a7ee327e7951a85a88559325100acb407" prot="public" virt="non-virtual"><scope>core::ecs::components::renderable</scope><name>bundle</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1renderable_1a8dd90b488fa4e8687d9604ac19df2f41" prot="public" virt="non-virtual"><scope>core::ecs::components::renderable</scope><name>geometry</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1renderable_1aefbeaaf38a2a63fc89a7068dbaab7f84" prot="public" virt="non-virtual"><scope>core::ecs::components::renderable</scope><name>renderable</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1renderable_1ab49a9704c87dcf5452177d747de6f2bb" prot="public" virt="non-virtual"><scope>core::ecs::components::renderable</scope><name>renderable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1details" kind="namespace" language="C++">
+    <compoundname>utility::details</compoundname>
+    <innerclass refid="structutility_1_1details_1_1crc32" prot="public">utility::details::crc32</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc32_3_01size_00_01size_00_01dummy_01_4" prot="public">utility::details::crc32&lt; size, size, dummy &gt;</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc64" prot="public">utility::details::crc64</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc64_3_01size_00_01size_00_01dummy_01_4" prot="public">utility::details::crc64&lt; size, size, dummy &gt;</innerclass>
+    <innerclass refid="structutility_1_1details_1_1member__function__from__string" prot="public">utility::details::member_function_from_string</innerclass>
+    <innerclass refid="structutility_1_1details_1_1member__function__from__string_3_01_x_00_01std_1_1void__t_3_01declty05e7bfbf400b4f0f3aac5bc669dc577d" prot="public">utility::details::member_function_from_string&lt; X, std::void_t&lt; decltype(std::declval&lt; X &amp; &gt;().from_string(std::declval&lt; psl::string8::view &gt;()))&gt; &gt;</innerclass>
+    <innerclass refid="structutility_1_1details_1_1member__function__to__string" prot="public">utility::details::member_function_to_string</innerclass>
+    <innerclass refid="structutility_1_1details_1_1member__function__to__string_3_01_x_00_01std_1_1void__t_3_01decltype650a46aa2f221cfcb83b597ae1ad61ef" prot="public">utility::details::member_function_to_string&lt; X, std::void_t&lt; decltype(std::declval&lt; X &amp; &gt;().to_string())&gt; &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp" line="100" column="1"/>
+  </compounddef>
+</doxygen>

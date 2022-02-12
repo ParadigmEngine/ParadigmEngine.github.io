@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1detail_1_1is__detected_3_01_trait_00_01std_1_1void__t_3_01_trait_383569b7c35ce9a7f0b939dbc9fd03633" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::detail::is_detected&lt; Trait, std::void_t&lt; Trait&lt; Args... &gt; &gt;, Args... &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>template&lt; class... &gt; class</type>
+        <declname>Trait</declname>
+        <defname>Trait</defname>
+      </param>
+      <param>
+        <type>class...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="117" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="116" bodyend="117"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

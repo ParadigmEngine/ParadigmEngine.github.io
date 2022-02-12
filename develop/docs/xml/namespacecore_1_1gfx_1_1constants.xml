@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1gfx_1_1constants" kind="namespace" language="C++">
+    <compoundname>core::gfx::constants</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gfx_2bundle_8hpp_1a339e97eb5359b8fa27ff72f30cd79c64" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::gfx::constants::INSTANCE_MODELMATRIX</definition>
+        <argsstring></argsstring>
+        <name>INSTANCE_MODELMATRIX</name>
+        <initializer>= &quot;INSTANCE_TRANSFORM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" line="36" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gfx_2bundle_8hpp_1a4a464d81f18cb89a31908464312e450a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::gfx::constants::INSTANCE_LEGACY_MODELMATRIX</definition>
+        <argsstring></argsstring>
+        <name>INSTANCE_LEGACY_MODELMATRIX</name>
+        <initializer>= &quot;iModelMat&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" line="37" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp" line="35" column="1"/>
+  </compounddef>
+</doxygen>

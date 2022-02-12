@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1binary_1_1has__contained__type_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::binary::has_contained_type&lt; std::vector&lt; T, A &gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" line="69" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" bodystart="68" bodyend="69"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

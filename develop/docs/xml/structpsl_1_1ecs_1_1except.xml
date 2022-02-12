@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1except" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::except</compoundname>
+    <includes refid="selectors_8hpp" local="no">selectors.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>tag that disallows a certain component to be present on the given entity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sometimes you want to filter on all items, except a subgroup. This tag can aid in this. For example, if you had a debug system that would log an error for all entities that are renderable, but lacked a transform, then you could use the <computeroutput>except</computeroutput> tag to denote the filter what to do as a hint. Except directives are always executed last, regardless of order in the parameter pack. \warn tags do not mean this component will be present in the pack, they are considered filter directives (or specialized filter directives). </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp" line="65" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp" bodystart="64" bodyend="65"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

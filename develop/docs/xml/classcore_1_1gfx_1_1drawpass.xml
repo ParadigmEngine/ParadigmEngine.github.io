@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1gfx_1_1drawpass" kind="class" language="C++" prot="public">
+    <compoundname>core::gfx::drawpass</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1drawpass_1a25be9a89f56a31ce2cb7f97cf8cd41fe" prot="private" static="no" mutable="no">
+        <type>core::gfx::graphics_backend</type>
+        <definition>core::gfx::graphics_backend core::gfx::drawpass::m_Backend</definition>
+        <argsstring></argsstring>
+        <name>m_Backend</name>
+        <initializer>{graphics_backend::undefined}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="92" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1drawpass_1a5738f6a930a089c249c204fda6c937cd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::gfx::drawpass::m_Dirty</definition>
+        <argsstring></argsstring>
+        <name>m_Dirty</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="99" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a3fe2bc135802c34bc6e826ed75f57a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; context &gt; context, core::resource::handle&lt; framebuffer_t &gt; framebuffer)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; context &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; framebuffer_t &gt;</type>
+          <declname>framebuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>todo: passes cannot describe resources in both API&apos;s at the same time, we need to decide if we want a feature like it, or if we would prefer to keep only one API going </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="55" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="28" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a76ef3eb47a8abf363d7d7901c8f958e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; context &gt; context, core::resource::handle&lt; swapchain &gt; swapchain)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; context &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; swapchain &gt;</type>
+          <declname>swapchain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="56" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="47" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a2e4b70e3e675d98c564e00d01230e28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawpass::~drawpass</definition>
+        <argsstring>()</argsstring>
+        <name>~drawpass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="57" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1aa04d490715513771da5939c4577a8939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::drawpass::drawpass</definition>
+        <argsstring>(const drawpass &amp;other)=delete</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type>const drawpass &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a86c417af7d5bf6302df24b34720acc60" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::drawpass::drawpass</definition>
+        <argsstring>(drawpass &amp;&amp;other) noexcept=delete</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type>drawpass &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1ae7353f5736f4146a01d95a3c13dd98f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>drawpass &amp;</type>
+        <definition>drawpass&amp; core::gfx::drawpass::operator=</definition>
+        <argsstring>(const drawpass &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const drawpass &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a3934ca73f5ca86a0ac65dc207188ce1d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>drawpass &amp;</type>
+        <definition>drawpass&amp; core::gfx::drawpass::operator=</definition>
+        <argsstring>(drawpass &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>drawpass &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1aee7db703da21ab713850847793b2a3b9" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawpass::is_swapchain</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_swapchain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="64" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="77" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1ad627987b7d656f541bb27294ecaf5a44" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="67" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a9c2f3c5bfce49bed8e5245477942ff15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::prepare</definition>
+        <argsstring>()</argsstring>
+        <name>prepare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="68" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="89" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1ae2f5d32387e415ed593b3dc3ccb54b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawpass::build</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>build</name>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="69" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a37036932f66ae247e491884ed1ee0202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::present</definition>
+        <argsstring>()</argsstring>
+        <name>present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="70" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a5d314ed07f010c28171caca4f0c4d00b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>void drawpass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::drawpass &gt; child) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="72" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="132" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a659b8b7eafa6ae2e4dacc5b6472cf159" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::drawpass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::computepass &gt; child) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">core::gfx::computepass</ref> &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="73" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1ac0651a0c56b494336bd681c434ad1ccb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>void drawpass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::drawpass &gt; child) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="74" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="150" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a8a9d95ed3bd05d7619fe29f65e3ef11f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::drawpass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::computepass &gt; child) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">core::gfx::computepass</ref> &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="75" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a78df34e9189fb9d984de4831a9e53c27" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::add</definition>
+        <argsstring>(core::gfx::drawgroup &amp;group) noexcept</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="76" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp" bodystart="170" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a078f61846870da9fcd948c3efd116079" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::gfx::drawpass::dirty</definition>
+        <argsstring>(bool value) noexcept</argsstring>
+        <name>dirty</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="78" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a8ae67c4ce0619901bed850ca077319d7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::drawpass::dirty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>dirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="79" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1drawpass_1a8398ac1596104fd96625621d0692f4d6" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>core::gfx::graphics_backend</type>
+            <declname>backend</declname>
+            <defname>backend</defname>
+          </param>
+        </templateparamlist>
+        <type>backend_type_t&lt; drawpass, backend &gt; *</type>
+        <definition>backend_type_t&lt;drawpass, backend&gt;* core::gfx::drawpass::resource</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="81" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" line="46" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp" bodystart="45" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a78df34e9189fb9d984de4831a9e53c27" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>add</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1ae2f5d32387e415ed593b3dc3ccb54b2f" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>build</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1ad627987b7d656f541bb27294ecaf5a44" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>clear</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a5d314ed07f010c28171caca4f0c4d00b" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>connect</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a659b8b7eafa6ae2e4dacc5b6472cf159" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>connect</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a078f61846870da9fcd948c3efd116079" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a8ae67c4ce0619901bed850ca077319d7" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1ac0651a0c56b494336bd681c434ad1ccb" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a8a9d95ed3bd05d7619fe29f65e3ef11f" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a3fe2bc135802c34bc6e826ed75f57a61" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a76ef3eb47a8abf363d7d7901c8f958e7" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1aa04d490715513771da5939c4577a8939" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a86c417af7d5bf6302df24b34720acc60" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1aee7db703da21ab713850847793b2a3b9" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>is_swapchain</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a25be9a89f56a31ce2cb7f97cf8cd41fe" prot="private" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>m_Backend</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a5738f6a930a089c249c204fda6c937cd" prot="private" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>m_Dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1ae7353f5736f4146a01d95a3c13dd98f7" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a3934ca73f5ca86a0ac65dc207188ce1d" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a9c2f3c5bfce49bed8e5245477942ff15" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>prepare</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a37036932f66ae247e491884ed1ee0202" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>present</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a8398ac1596104fd96625621d0692f4d6" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>resource</name></member>
+      <member refid="classcore_1_1gfx_1_1drawpass_1a2e4b70e3e675d98c564e00d01230e28c" prot="public" virt="non-virtual"><scope>core::gfx::drawpass</scope><name>~drawpass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

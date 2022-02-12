@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_104893bfb4b0f47ddf451624d3f8a2bd" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc</compoundname>
+    <innerfile refid="consumer_8hpp">consumer.hpp</innerfile>
+    <innerfile refid="producer_8hpp">producer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1polymorphic__base" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>psl::serialization::polymorphic_base</compoundname>
+    <derivedcompoundref refid="classpsl_1_1serialization_1_1polymorphic" prot="public" virt="non-virtual">psl::serialization::polymorphic&lt; T &gt;</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1serialization_1_1polymorphic__base_1ada518ead960ab32464578296cbc7fbe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual psl::serialization::polymorphic_base::~polymorphic_base</definition>
+        <argsstring>()</argsstring>
+        <name>~polymorphic_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="37" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1serialization_1_1polymorphic__base_1a174c56621ffe1efcb0b4be0289147081" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t psl::serialization::polymorphic_base::PolymorphicID</definition>
+        <argsstring>() const =0</argsstring>
+        <name>PolymorphicID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="38" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>psl::serialization::polymorphic_base</label>
+      </node>
+      <node id="2">
+        <label>psl::serialization::polymorphic&lt; T &gt;</label>
+        <link refid="classpsl_1_1serialization_1_1polymorphic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="36" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="35" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__base_1a174c56621ffe1efcb0b4be0289147081" prot="public" virt="pure-virtual"><scope>psl::serialization::polymorphic_base</scope><name>PolymorphicID</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__base_1ada518ead960ab32464578296cbc7fbe0" prot="public" virt="virtual"><scope>psl::serialization::polymorphic_base</scope><name>~polymorphic_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

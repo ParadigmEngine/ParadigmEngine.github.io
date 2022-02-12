@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1gfx_1_1framebuffer__t" kind="class" language="C++" prot="public">
+    <compoundname>core::gfx::framebuffer_t</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1framebuffer__t_1affed65a156fe0910f9382503efc15aa7" prot="private" static="no" mutable="no">
+        <type>core::gfx::graphics_backend</type>
+        <definition>core::gfx::graphics_backend core::gfx::framebuffer_t::m_Backend</definition>
+        <argsstring></argsstring>
+        <name>m_Backend</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="51" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1a02e80aa96aac9700cb56956b7333bbc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>framebuffer_t::framebuffer_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, core::resource::handle&lt; core::gfx::context &gt; context, core::resource::handle&lt; data::framebuffer_t &gt; data)</argsstring>
+        <name>framebuffer_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::context &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1framebuffer__t" kindref="compound">data::framebuffer_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="25" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/framebuffer.cpp" bodystart="29" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1ab0e51b1e411cc6646f8bc33015648b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::framebuffer_t::~framebuffer_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>~framebuffer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1a2fe9bce6744fcc23d047f32dd494ba85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::framebuffer_t::framebuffer_t</definition>
+        <argsstring>(const framebuffer_t &amp;other)=delete</argsstring>
+        <name>framebuffer_t</name>
+        <param>
+          <type>const framebuffer_t &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1ac7776f35c5e3e478975532a9e219499e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::framebuffer_t::framebuffer_t</definition>
+        <argsstring>(framebuffer_t &amp;&amp;other) noexcept=delete</argsstring>
+        <name>framebuffer_t</name>
+        <param>
+          <type>framebuffer_t &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1a83eee214e840b902b0f9eb7ba97b8622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>framebuffer_t &amp;</type>
+        <definition>framebuffer_t&amp; core::gfx::framebuffer_t::operator=</definition>
+        <argsstring>(const framebuffer_t &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const framebuffer_t &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="34" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1a242791e61e9c3aad8ab3d6260affc7e9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>framebuffer_t &amp;</type>
+        <definition>framebuffer_t&amp; core::gfx::framebuffer_t::operator=</definition>
+        <argsstring>(framebuffer_t &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>framebuffer_t &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="35" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1a14c69ff4cea5a363429b84eac2f58898" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>core::gfx::graphics_backend</type>
+            <declname>backend</declname>
+            <defname>backend</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; backend_type_t&lt; framebuffer_t, backend &gt; &gt;</type>
+        <definition>core::resource::handle&lt;backend_type_t&lt;framebuffer_t, backend&gt; &gt; core::gfx::framebuffer_t::resource</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="38" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1framebuffer__t_1aa1613611bb8a9e335b0be1c78a3c8cce" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>texture_t</type>
+        <definition>texture_t framebuffer_t::texture</definition>
+        <argsstring>(size_t index) const noexcept</argsstring>
+        <name>texture</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="48" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/framebuffer.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" line="16" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp" bodystart="15" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1a02e80aa96aac9700cb56956b7333bbc8" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>framebuffer_t</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1a2fe9bce6744fcc23d047f32dd494ba85" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>framebuffer_t</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1ac7776f35c5e3e478975532a9e219499e" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>framebuffer_t</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1affed65a156fe0910f9382503efc15aa7" prot="private" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>m_Backend</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1a83eee214e840b902b0f9eb7ba97b8622" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1a242791e61e9c3aad8ab3d6260affc7e9" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1a14c69ff4cea5a363429b84eac2f58898" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>resource</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1aa1613611bb8a9e335b0be1c78a3c8cce" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>texture</name></member>
+      <member refid="classcore_1_1gfx_1_1framebuffer__t_1ab0e51b1e411cc6646f8bc33015648b3a" prot="public" virt="non-virtual"><scope>core::gfx::framebuffer_t</scope><name>~framebuffer_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

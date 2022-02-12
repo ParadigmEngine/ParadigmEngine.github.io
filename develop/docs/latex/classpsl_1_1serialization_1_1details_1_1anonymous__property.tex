@@ -1,0 +1,191 @@
+\hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property}{}\doxysection{psl\+::serialization\+::details\+::anonymous\+\_\+property$<$ T $>$ Class Template Reference}
+\label{classpsl_1_1serialization_1_1details_1_1anonymous__property}\index{psl::serialization::details::anonymous\_property$<$ T $>$@{psl::serialization::details::anonymous\_property$<$ T $>$}}
+
+
+{\ttfamily \#include $<$property.\+hpp$>$}
+
+
+
+Inherited by psl\+::serialization\+::property$<$ Name, T $>$.
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4c73b779d3a71b1a685ecd15711fd2ef}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4c73b779d3a71b1a685ecd15711fd2ef}} 
+using {\bfseries value\+\_\+type} = T
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad91e9e8e379eee912ea324e21ed9f614}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad91e9e8e379eee912ea324e21ed9f614}} 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr {\bfseries anonymous\+\_\+property} (Args \&\&... args) noexcept(std\+::is\+\_\+nothrow\+\_\+constructible\+\_\+v$<$ value\+\_\+type, Args... $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad99fcc9c82d0e448a608f63300de15ff}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad99fcc9c82d0e448a608f63300de15ff}} 
+constexpr {\bfseries anonymous\+\_\+property} (const \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&rhs) noexcept(std\+::is\+\_\+nothrow\+\_\+copy\+\_\+constructible\+\_\+v$<$ value\+\_\+type $>$) requires(std
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7fb84871d9b08f294e62d11ca3561be5}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7fb84871d9b08f294e62d11ca3561be5}} 
+constexpr {\bfseries anonymous\+\_\+property} (\mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&\&rhs) noexcept(std\+::is\+\_\+nothrow\+\_\+move\+\_\+constructible\+\_\+v$<$ value\+\_\+type $>$) requires(std
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6f3d109fa7a7f74ed136561f3f590bcc}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6f3d109fa7a7f74ed136561f3f590bcc}} 
+constexpr auto {\bfseries operator=} (const \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&rhs) noexcept(std\+::is\+\_\+nothrow\+\_\+copy\+\_\+assignable\+\_\+v$<$ value\+\_\+type $>$) -\/$>$ \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&requires(std\+::is\+\_\+copy\+\_\+assignable\+\_\+v$<$ value\+\_\+type $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ae16b89ff7029e684372e2a99bd406536}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ae16b89ff7029e684372e2a99bd406536}} 
+constexpr auto {\bfseries operator=} (\mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&\&rhs) noexcept(std\+::is\+\_\+nothrow\+\_\+move\+\_\+assignable\+\_\+v$<$ T $>$) -\/$>$ \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} \&requires(std\+::is\+\_\+move\+\_\+assignable\+\_\+v$<$ value\+\_\+type $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a0173a457c9e3d1598ee1311694c30b04}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a0173a457c9e3d1598ee1311694c30b04}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_aff9e6816b86ef91ef36826e104031e2b}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_aff9e6816b86ef91ef36826e104031e2b}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator+=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Addition\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a229570d49424b41e8daa9723553695f1}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a229570d49424b41e8daa9723553695f1}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator-\/=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Subtraction\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_af53e91a06e5cda99ec20382a72f7e3af}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_af53e91a06e5cda99ec20382a72f7e3af}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$\ast$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Multiplication\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a2bc15ed55da0ba9d7dd753174e9bb9fc}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a2bc15ed55da0ba9d7dd753174e9bb9fc}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator/=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Division\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a84cc4cd383a8962504866a49b1456bff}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a84cc4cd383a8962504866a49b1456bff}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\%=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Modulo\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_aed8ce054cab4af871fc4aa15fc21bb77}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_aed8ce054cab4af871fc4aa15fc21bb77}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\&=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Bit\+And\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a5d33bd0ff93702773bf096a3baf6e53f}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a5d33bd0ff93702773bf096a3baf6e53f}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$\vert$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Bit\+Or\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a1153d6f0cef3fb26b3ce24a20b1200e5}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a1153d6f0cef3fb26b3ce24a20b1200e5}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$^\wedge$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Bit\+Xor\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_abef375e482f39e3243dca3a93c2ab4ec}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_abef375e482f39e3243dca3a93c2ab4ec}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$<$$<$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Shift\+Left\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac8220399b516c524cc56bc04d281a482}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac8220399b516c524cc56bc04d281a482}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$>$$>$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Is\+Shift\+Right\+Assignable\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7774258bbcf0e38a2c8c14f1da755382}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7774258bbcf0e38a2c8c14f1da755382}} 
+constexpr force\+\_\+inline auto {\bfseries operator++} () noexcept(concepts\+::\+Is\+Incrementable\+Pre\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a03bb929e5bb7b631c050ba41e79868f8}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a03bb929e5bb7b631c050ba41e79868f8}} 
+constexpr force\+\_\+inline auto {\bfseries operator++} (int) noexcept(concepts\+::\+Is\+Incrementable\+Post\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_af55451a84b6202e0e3de5bc2bf668543}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_af55451a84b6202e0e3de5bc2bf668543}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/-\/} () noexcept(concepts\+::\+Is\+Decrementable\+Pre\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_aa3a3d47b3c0564e2e79c2aa1f8151639}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_aa3a3d47b3c0564e2e79c2aa1f8151639}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/-\/} (int) noexcept(concepts\+::\+Is\+Decrementable\+Post\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad576f46bbbe54a118561ebd7f984c975}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ad576f46bbbe54a118561ebd7f984c975}} 
+constexpr force\+\_\+inline auto {\bfseries operator+} () const noexcept(concepts\+::\+Has\+Unary\+Add\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ab276ecdb42e96947d9e9b9956ac0fbfe}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ab276ecdb42e96947d9e9b9956ac0fbfe}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/} () const noexcept(concepts\+::\+Has\+Unary\+Subtract\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ab42caaee3ef892d1518a540fd2cdefb6}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ab42caaee3ef892d1518a540fd2cdefb6}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator+} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Addition\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ace038a3f5e8ef25019ea3a187b022302}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ace038a3f5e8ef25019ea3a187b022302}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator-\/} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Subtraction\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6e70dfb4abdb4afb2316f1de8cbb1d0f}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6e70dfb4abdb4afb2316f1de8cbb1d0f}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$\ast$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Multiplication\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a42c9221a412e35c4a9a6ee2e622f9d0a}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a42c9221a412e35c4a9a6ee2e622f9d0a}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator/} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Division\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a1ebfcd0f5f715d525e73fad036731071}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a1ebfcd0f5f715d525e73fad036731071}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\%} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Modulo\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6e78ac1a23c1cf341e0d05b1919b937e}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6e78ac1a23c1cf341e0d05b1919b937e}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/} () const noexcept(concepts\+::\+Has\+Bit\+Not\+Nothrow$<$ value\+\_\+type $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ace311c59da6be319c0e5cd269f2d0b04}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ace311c59da6be319c0e5cd269f2d0b04}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\&} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Bit\+And\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a13f6796b2c2421add0373afcf72c647b}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a13f6796b2c2421add0373afcf72c647b}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$\vert$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Bit\+Or\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a518c0c9adb03b15264310491c995e061}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a518c0c9adb03b15264310491c995e061}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$^\wedge$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Bit\+Xor\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6c2ae9ca2d2f894b934a8e8e9f777431}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6c2ae9ca2d2f894b934a8e8e9f777431}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$<$$<$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Bit\+Left\+Shift\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a8dc167a4e35716b80ebdb74694ed7457}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a8dc167a4e35716b80ebdb74694ed7457}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$>$$>$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Bit\+Right\+Shift\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_abade0a92b9d3e4fd7487e210921f4a59}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_abade0a92b9d3e4fd7487e210921f4a59}} 
+constexpr force\+\_\+inline auto {\bfseries operator!} () const noexcept(concepts\+::\+Has\+Logical\+Not\+Nothrow$<$ value\+\_\+type $>$) -\/$>$ bool requires(concepts\+::\+Has\+Logical\+Not$<$ value\+\_\+type $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a41754be180b641f74dfd19a9b745e801}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a41754be180b641f74dfd19a9b745e801}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\&\&} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Logical\+And\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) -\/$>$ bool requires(concepts\+::\+Has\+Logical\+And$<$ value\+\_\+type, rhs\+\_\+t $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a94d24e71b3622d322efebf1f13e1f6c2}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a94d24e71b3622d322efebf1f13e1f6c2}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$\vert$$\vert$} (const rhs\+\_\+t \&rhs) const noexcept(concepts\+::\+Has\+Logical\+Or\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) -\/$>$ bool requires(concepts\+::\+Has\+Logical\+Or$<$ value\+\_\+type, rhs\+\_\+t $>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4a04f0a8a3bca57907a49a504e189b77}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4a04f0a8a3bca57907a49a504e189b77}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator==} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Equality\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6bc7cad02949febdd067ca161fed3940}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a6bc7cad02949febdd067ca161fed3940}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator!=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Inequality\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a23a3791f714ff1223a34a8653bd96229}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a23a3791f714ff1223a34a8653bd96229}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$<$} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Less\+Than\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a500d3ef217efe7530eada5bceb644944}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a500d3ef217efe7530eada5bceb644944}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$>$} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Greater\+Than\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac05bb6e9d2ab8fc6ae68e92557983c70}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac05bb6e9d2ab8fc6ae68e92557983c70}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$<$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Less\+Equal\+Than\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a243e3210b16f175803b8aa02793ccbdf}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a243e3210b16f175803b8aa02793ccbdf}} 
+{\footnotesize template$<$typename rhs\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator$>$=} (const rhs\+\_\+t \&rhs) noexcept(concepts\+::\+Has\+Greater\+Equal\+Than\+Nothrow$<$ value\+\_\+type, rhs\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac120f351556b844c85f69010594466d9}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ac120f351556b844c85f69010594466d9}} 
+{\footnotesize template$<$typename index\+\_\+t $>$ }\\constexpr force\+\_\+inline auto {\bfseries operator\mbox{[}$\,$\mbox{]}} (const index\+\_\+t \&index) const noexcept(concepts\+::\+Has\+Operator\+Subscript\+Nothrow$<$ value\+\_\+type, index\+\_\+t $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a27898e9a71d01e9ac6c32361e7ff2d2b}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a27898e9a71d01e9ac6c32361e7ff2d2b}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/$>$} () -\/$>$ value\+\_\+type $\ast$
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a9ada74fdd65b691ec66e57cf08bb404f}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a9ada74fdd65b691ec66e57cf08bb404f}} 
+constexpr force\+\_\+inline auto {\bfseries operator-\/$>$} () const -\/$>$ const value\+\_\+type $\ast$
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_ae2d2c494255ea2b8b4053326b96e139d}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_ae2d2c494255ea2b8b4053326b96e139d}} 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr force\+\_\+inline auto {\bfseries operator()} (Args \&\&... args) const noexcept(concepts\+::\+Has\+Operator\+Invoke\+Nothrow$<$ value\+\_\+type, Args... $>$) requires(concepts
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4db49b65ca7ffe42c3cd44fdff4c2a1e}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a4db49b65ca7ffe42c3cd44fdff4c2a1e}} 
+{\bfseries operator const value\+\_\+type \&} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7ecebb0cd421d7a6b30cc5eab98c170a}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a7ecebb0cd421d7a6b30cc5eab98c170a}} 
+{\bfseries operator value\+\_\+type \&} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1serialization_1_1details_1_1anonymous__property_a027c4baf8b1989f7f134c99d97c7afc7}\label{classpsl_1_1serialization_1_1details_1_1anonymous__property_a027c4baf8b1989f7f134c99d97c7afc7}} 
+value\+\_\+type {\bfseries value} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class psl\+::serialization\+::details\+::anonymous\+\_\+property$<$ T $>$}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]add overloads for \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}} interacting with other \mbox{\hyperlink{classpsl_1_1serialization_1_1details_1_1anonymous__property}{anonymous\+\_\+property}}\textquotesingle{}s \end{DoxyRefDesc}
+
+
+Definition at line 18 of file property.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.\+hpp\end{DoxyCompactItemize}

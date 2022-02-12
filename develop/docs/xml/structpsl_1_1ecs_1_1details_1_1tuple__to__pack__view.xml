@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1details_1_1tuple__to__pack__view" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::details::tuple_to_pack_view</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structpsl_1_1ecs_1_1details_1_1tuple__to__pack__view_1a09e0f16e1ed32a31b2b8c090b082910b" prot="public" static="no">
+        <type>void</type>
+        <definition>using psl::ecs::details::tuple_to_pack_view&lt; Ts &gt;::type =  void</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" line="276" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" line="275" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" bodystart="274" bodyend="277"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1ecs_1_1details_1_1tuple__to__pack__view_1a09e0f16e1ed32a31b2b8c090b082910b" prot="public" virt="non-virtual"><scope>psl::ecs::details::tuple_to_pack_view</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

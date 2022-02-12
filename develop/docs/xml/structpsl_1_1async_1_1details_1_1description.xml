@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1async_1_1details_1_1description" kind="struct" language="C++" prot="public">
+    <compoundname>psl::async::details::description</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structpsl_1_1async_1_1details_1_1description_1a545d2878fee18381a4e2ffe8cb624ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ::psl::async::scheduler</definition>
+        <argsstring></argsstring>
+        <name>::psl::async::scheduler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="15" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1async_1_1details_1_1description_1a648efcc6b99d59d5f11cbcb592f58269" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; barrier &gt;</type>
+        <definition>psl::array&lt;barrier&gt; psl::async::details::description::m_Barriers</definition>
+        <argsstring></argsstring>
+        <name>m_Barriers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="92" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1async_1_1details_1_1description_1a452e7fe6bd47e39e5de80dca1dae1d10" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::future&lt; barrier &gt; &gt;</type>
+        <definition>psl::array&lt;std::future&lt;barrier&gt; &gt; psl::async::details::description::m_DynamicBarriers</definition>
+        <argsstring></argsstring>
+        <name>m_DynamicBarriers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="93" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1async_1_1details_1_1description_1a1d6fdc83ae45c73489cf3093350a5105" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::shared_future&lt; barrier &gt; &gt;</type>
+        <definition>psl::array&lt;std::shared_future&lt;barrier&gt; &gt; psl::async::details::description::m_SharedDynamicBarriers</definition>
+        <argsstring></argsstring>
+        <name>m_SharedDynamicBarriers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="94" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1async_1_1details_1_1description_1a45571324c72a41efe9578b96db6942bd" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; size_t &gt;</type>
+        <definition>psl::array&lt;size_t&gt; psl::async::details::description::m_Blocking</definition>
+        <argsstring></argsstring>
+        <name>m_Blocking</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="95" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1async_1_1details_1_1description_1a4f98008c4da3d3f78b688728011d7b8e" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; size_t &gt;</type>
+        <definition>psl::array&lt;size_t&gt; psl::async::details::description::m_Blockers</definition>
+        <argsstring></argsstring>
+        <name>m_Blockers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="96" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a3d2e74b4c4286e3bcc42f958cca5b7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::async::details::description::description</definition>
+        <argsstring>()=default</argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a945b64b558b9dc9e0642f5440c655be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::async::details::description::description</definition>
+        <argsstring>(const description &amp;)=delete</argsstring>
+        <name>description</name>
+        <param>
+          <type>const description &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1ab7088562491589b7cdb7374768704a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>description &amp;</type>
+        <definition>description&amp; psl::async::details::description::operator=</definition>
+        <argsstring>(const description &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const description &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="20" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a81a8a7f57f11c6e410f17cd5888740aa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::async::details::description::description</definition>
+        <argsstring>(description &amp;&amp;other) noexcept=default</argsstring>
+        <name>description</name>
+        <param>
+          <type>description &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1ab14952b2c3039f8968e6fa7a6fbbdd35" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>description &amp;</type>
+        <definition>description&amp; psl::async::details::description::operator=</definition>
+        <argsstring>(description &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>description &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="22" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a9633e6143575a60704ffd6377c9d92d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::blockers</definition>
+        <argsstring>(token token)</argsstring>
+        <name>blockers</name>
+        <param>
+          <type>token</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="24" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a5fafb0337aa4f81570e942ba7971c30a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::blockers</definition>
+        <argsstring>(const psl::array&lt; token &gt; &amp;tokens)</argsstring>
+        <name>blockers</name>
+        <param>
+          <type>const psl::array&lt; token &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="25" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a2e6f4579284cf1dea7781b913fd26a4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::barriers</definition>
+        <argsstring>(barrier barrier)</argsstring>
+        <name>barriers</name>
+        <param>
+          <type>barrier</type>
+          <declname>barrier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="30" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a3ed9007d0652da1cc8699948424e00a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::barriers</definition>
+        <argsstring>(const psl::array&lt; barrier &gt; &amp;barriers)</argsstring>
+        <name>barriers</name>
+        <param>
+          <type>const psl::array&lt; barrier &gt; &amp;</type>
+          <declname>barriers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="31" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1aaa10871341bc7626d6010051c9d8df8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::dynamic_barriers</definition>
+        <argsstring>(std::future&lt; barrier &gt; &amp;&amp;barrier)</argsstring>
+        <name>dynamic_barriers</name>
+        <param>
+          <type>std::future&lt; barrier &gt; &amp;&amp;</type>
+          <declname>barrier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="36" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1aac55e6842e04f78ed4a7f0a941c19d8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::dynamic_barriers</definition>
+        <argsstring>(std::shared_future&lt; barrier &gt; &amp;barrier)</argsstring>
+        <name>dynamic_barriers</name>
+        <param>
+          <type>std::shared_future&lt; barrier &gt; &amp;</type>
+          <declname>barrier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="37" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1ae8d4fe9586039f994df941167174809b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::dynamic_barriers</definition>
+        <argsstring>(psl::array&lt; std::future&lt; barrier &gt;&gt; &amp;&amp;barriers)</argsstring>
+        <name>dynamic_barriers</name>
+        <param>
+          <type>psl::array&lt; std::future&lt; barrier &gt;&gt; &amp;&amp;</type>
+          <declname>barriers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="38" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a372b31d04bd4196647a3523ca3a6ecbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::dynamic_barriers</definition>
+        <argsstring>(const psl::array&lt; std::shared_future&lt; barrier &gt;&gt; &amp;barriers)</argsstring>
+        <name>dynamic_barriers</name>
+        <param>
+          <type>const psl::array&lt; std::shared_future&lt; barrier &gt;&gt; &amp;</type>
+          <declname>barriers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="45" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a2868dad65efae889b138f09c07920358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::blocking</definition>
+        <argsstring>(token token)</argsstring>
+        <name>blocking</name>
+        <param>
+          <type>token</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="50" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1af151346d628e43d4c1f8de508e43d1e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::blocking</definition>
+        <argsstring>(const psl::array&lt; token &gt; &amp;tokens)</argsstring>
+        <name>blocking</name>
+        <param>
+          <type>const psl::array&lt; token &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="51" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a8f25c3867d831b49a0d60f0f3f7c0325" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; size_t &gt;</type>
+        <definition>psl::array_view&lt;size_t&gt; psl::async::details::description::blockers</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>blockers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="57" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1add3bca33e9683bd0b2e610dfbf2f4bc1" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; barrier &gt;</type>
+        <definition>psl::array_view&lt;barrier&gt; psl::async::details::description::barriers</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>barriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="58" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1a03e8b4940bf06c916c6a8ae9c94e9c61" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; size_t &gt;</type>
+        <definition>psl::array_view&lt;size_t&gt; psl::async::details::description::blocking</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>blocking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="59" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1ac82d3e7eea72d0cf475ffb365a5ff048" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::async::details::description::dynamic_barriers_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>dynamic_barriers_ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="61" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="61" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1async_1_1details_1_1description_1ae56ea53577f6b32b318ccdbe3eb39a04" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::async::details::description::merge_dynamic_barriers</definition>
+        <argsstring>()</argsstring>
+        <name>merge_dynamic_barriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="71" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="71" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/description.hpp" bodystart="13" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a545d2878fee18381a4e2ffe8cb624ed2" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>::psl::async::scheduler</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a2e6f4579284cf1dea7781b913fd26a4b" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a3ed9007d0652da1cc8699948424e00a1" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1add3bca33e9683bd0b2e610dfbf2f4bc1" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a9633e6143575a60704ffd6377c9d92d0" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>blockers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a5fafb0337aa4f81570e942ba7971c30a" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>blockers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a8f25c3867d831b49a0d60f0f3f7c0325" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>blockers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a2868dad65efae889b138f09c07920358" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>blocking</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1af151346d628e43d4c1f8de508e43d1e6" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>blocking</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a03e8b4940bf06c916c6a8ae9c94e9c61" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>blocking</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a3d2e74b4c4286e3bcc42f958cca5b7b7" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>description</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a945b64b558b9dc9e0642f5440c655be5" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>description</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a81a8a7f57f11c6e410f17cd5888740aa" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>description</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1aaa10871341bc7626d6010051c9d8df8c" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>dynamic_barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1aac55e6842e04f78ed4a7f0a941c19d8d" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>dynamic_barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1ae8d4fe9586039f994df941167174809b" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>dynamic_barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a372b31d04bd4196647a3523ca3a6ecbf" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>dynamic_barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1ac82d3e7eea72d0cf475ffb365a5ff048" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>dynamic_barriers_ready</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a648efcc6b99d59d5f11cbcb592f58269" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>m_Barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a4f98008c4da3d3f78b688728011d7b8e" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>m_Blockers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a45571324c72a41efe9578b96db6942bd" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>m_Blocking</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a452e7fe6bd47e39e5de80dca1dae1d10" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>m_DynamicBarriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1a1d6fdc83ae45c73489cf3093350a5105" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>m_SharedDynamicBarriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1ae56ea53577f6b32b318ccdbe3eb39a04" prot="private" virt="non-virtual"><scope>psl::async::details::description</scope><name>merge_dynamic_barriers</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1ab7088562491589b7cdb7374768704a01" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1async_1_1details_1_1description_1ab14952b2c3039f8968e6fa7a6fbbdd35" prot="public" virt="non-virtual"><scope>psl::async::details::description</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

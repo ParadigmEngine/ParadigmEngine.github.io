@@ -1,0 +1,149 @@
+\hypertarget{classmemory_1_1region}{}\doxysection{memory\+::region Class Reference}
+\label{classmemory_1_1region}\index{memory::region@{memory::region}}
+
+
+defines a region of memory that {\itshape might} be physically backed depending on the allocator.  
+
+
+
+
+{\ttfamily \#include $<$region.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmemory_1_1region_ac3e73ac0084d309d3b155e2bef9185de}{region}} (uint64\+\_\+t size, uint64\+\_\+t alignment, \mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} $\ast$allocator=new \mbox{\hyperlink{classmemory_1_1default__allocator}{default\+\_\+allocator}}())
+\begin{DoxyCompactList}\small\item\em constructs a region of atleast the given {\itshape size}, using the {\itshape alignment} value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmemory_1_1region_a0b169ab395424a97978d5ab6c568409f}\label{classmemory_1_1region_a0b169ab395424a97978d5ab6c568409f}} 
+{\bfseries region} (const \mbox{\hyperlink{classmemory_1_1region}{region}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a38061520021590555b7ac55fa815c2c9}\label{classmemory_1_1region_a38061520021590555b7ac55fa815c2c9}} 
+{\bfseries region} (\mbox{\hyperlink{classmemory_1_1region}{region}} \&\&other)
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_af40d226533401158ec5ed25682d879ff}\label{classmemory_1_1region_af40d226533401158ec5ed25682d879ff}} 
+\mbox{\hyperlink{classmemory_1_1region}{region}} \& {\bfseries operator=} (const \mbox{\hyperlink{classmemory_1_1region}{region}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a86c5b092d36811440ea0fa8387a1f112}\label{classmemory_1_1region_a86c5b092d36811440ea0fa8387a1f112}} 
+\mbox{\hyperlink{classmemory_1_1region}{region}} \& {\bfseries operator=} (\mbox{\hyperlink{classmemory_1_1region}{region}} \&\&other)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{segment}} $>$ \mbox{\hyperlink{classmemory_1_1region_a90ba0332ac1296fc17d2eccf56ee8a24}{allocate}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em tries to allocate a segment of atleast the given {\itshape size}. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} $>$ \mbox{\hyperlink{classmemory_1_1region_a03bbcdef381f14b1ec6e1c5073dae80a}{create\+\_\+region}} (size\+\_\+t size, std\+::optional$<$ size\+\_\+t $>$ alignment, \mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} $\ast$allocator=new \mbox{\hyperlink{classmemory_1_1default__allocator}{default\+\_\+allocator}}())
+\begin{DoxyCompactList}\small\item\em creates a sub-\/region of atleast that size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmemory_1_1region_a4523d8aaf6983a05dd431f58a82e717e}\label{classmemory_1_1region_a4523d8aaf6983a05dd431f58a82e717e}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{segment}} $>$ {\bfseries allocate} ()
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a2d3759f4252807840e4dce4d0f47b176}\label{classmemory_1_1region_a2d3759f4252807840e4dce4d0f47b176}} 
+bool {\bfseries owns} (const \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \&\mbox{\hyperlink{classmemory_1_1segment}{segment}}) const noexcept
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a431f5ae3319c41d7ba7cbc1e0201f809}\label{classmemory_1_1region_a431f5ae3319c41d7ba7cbc1e0201f809}} 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ T $>$ $>$ {\bfseries create} (Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_ab3473e61c0917de32bd450099ba42cfa}\label{classmemory_1_1region_ab3473e61c0917de32bd450099ba42cfa}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries destroy} (T \&target)
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a0330a7273ca083f76f1b2c5e18aa0303}\label{classmemory_1_1region_a0330a7273ca083f76f1b2c5e18aa0303}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries destroy} (std\+::optional$<$ T $>$ \&target)
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_ae75ce3748e5ce7fb5460c69db204b164}\label{classmemory_1_1region_ae75ce3748e5ce7fb5460c69db204b164}} 
+bool {\bfseries deallocate} (\mbox{\hyperlink{classmemory_1_1segment}{segment}} \&\mbox{\hyperlink{classmemory_1_1segment}{segment}})
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a491f445ff92b1fb43320d3ed3d7feb13}\label{classmemory_1_1region_a491f445ff92b1fb43320d3ed3d7feb13}} 
+bool {\bfseries deallocate} (std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{segment}} $>$ \&\mbox{\hyperlink{classmemory_1_1segment}{segment}})
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_af80e0aaedd07c681415d781daad4e87d}\label{classmemory_1_1region_af80e0aaedd07c681415d781daad4e87d}} 
+\mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} $\ast$ {\bfseries allocator} () const
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a64fc76caed6a6d4aae1092c31a8a8074}\label{classmemory_1_1region_a64fc76caed6a6d4aae1092c31a8a8074}} 
+void {\bfseries compact} ()
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a49c9a445c8ed1b94ac22834310de6c73}\label{classmemory_1_1region_a49c9a445c8ed1b94ac22834310de6c73}} 
+void {\bfseries decommit\+\_\+unused} ()
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_abf418d57baeb83b49be0eb09eb24acc3}\label{classmemory_1_1region_abf418d57baeb83b49be0eb09eb24acc3}} 
+void $\ast$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a0730dd4d1b5b4cd834746cddbb026e20}\label{classmemory_1_1region_a0730dd4d1b5b4cd834746cddbb026e20}} 
+uint64\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a943cc216dac7e38d0671745cf9f447f2}\label{classmemory_1_1region_a943cc216dac7e38d0671745cf9f447f2}} 
+size\+\_\+t {\bfseries alignment} () const
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a338fcc4d39d2666bc157c47918b911dd}\label{classmemory_1_1region_a338fcc4d39d2666bc157c47918b911dd}} 
+\mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} {\bfseries range} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmemory_1_1region_a746725ee9976f777cd43f2e9aa4f5f0a}\label{classmemory_1_1region_a746725ee9976f777cd43f2e9aa4f5f0a}} 
+class {\bfseries allocator\+\_\+base}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+memory regions allow for easy managing of virtual memory in a platform abstract way. it provides some helper utilities to allocate correctly sized segments for the given type and even allows constructor/destructors to be called (using the memory\+::region\+::create()/memory\+::region\+::destroy() methods). Memory regions do not allocate memory in one go, they reserve and \char`\"{}grow to\char`\"{} the specified size (like how virtual memory behaves). How they do this is platform specific however, but should not be of concern for the end-\/user. 
+
+Definition at line 19 of file region.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmemory_1_1region_ac3e73ac0084d309d3b155e2bef9185de}\label{classmemory_1_1region_ac3e73ac0084d309d3b155e2bef9185de}} 
+\index{memory::region@{memory::region}!region@{region}}
+\index{region@{region}!memory::region@{memory::region}}
+\doxysubsubsection{\texorpdfstring{region()}{region()}}
+{\footnotesize\ttfamily region\+::region (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{size,  }\item[{uint64\+\_\+t}]{alignment,  }\item[{\mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} $\ast$}]{allocator = {\ttfamily new~\mbox{\hyperlink{classmemory_1_1default__allocator}{default\+\_\+allocator}}()} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & the minimum size you wish to create a virtual region for. \\
+\hline
+\mbox{\texttt{ in}}  & {\em alignment} & the alignment value of the region. \\
+\hline
+\mbox{\texttt{ in}}  & {\em allocator} & the allocator that should be used internally. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+{\itshape allocators} should not be shared unless the allocator itself supports such a behaviour. 
+\end{DoxyWarning}
+
+
+Definition at line 38 of file region.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmemory_1_1region_a90ba0332ac1296fc17d2eccf56ee8a24}\label{classmemory_1_1region_a90ba0332ac1296fc17d2eccf56ee8a24}} 
+\index{memory::region@{memory::region}!allocate@{allocate}}
+\index{allocate@{allocate}!memory::region@{memory::region}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{segment}} $>$ region\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} on success. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & the minimum size of the segment (will be aligned to the alignment rules). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file region.\+cpp.
+
+\mbox{\Hypertarget{classmemory_1_1region_a03bbcdef381f14b1ec6e1c5073dae80a}\label{classmemory_1_1region_a03bbcdef381f14b1ec6e1c5073dae80a}} 
+\index{memory::region@{memory::region}!create\_region@{create\_region}}
+\index{create\_region@{create\_region}!memory::region@{memory::region}}
+\doxysubsubsection{\texorpdfstring{create\_region()}{create\_region()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} $>$ region\+::create\+\_\+region (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{std\+::optional$<$ size\+\_\+t $>$}]{alignment,  }\item[{\mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} $\ast$}]{allocator = {\ttfamily new~\mbox{\hyperlink{classmemory_1_1default__allocator}{default\+\_\+allocator}}()} }\end{DoxyParamCaption})}
+
+Creates a sub region of atleast the given size. The region could be bigger depending on certain factors such as alignment, etc.. Destruction/cleanup happens automatically through the destructor of the created region. 
+
+Definition at line 184 of file region.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/src/memory/region.\+cpp\end{DoxyCompactItemize}

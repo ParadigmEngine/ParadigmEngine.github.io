@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource_1_1details_1_1alias__type" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource::details::alias_type</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">false_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename SFINAE</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structcore_1_1resource_1_1details_1_1alias__type_1a07ad48ddc4b53f0060f8032e0db4ab81" prot="public" static="no">
+        <type>void</type>
+        <definition>using core::resource::details::alias_type&lt; T, SFINAE &gt;::type =  void</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="67" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="66" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="65" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structcore_1_1resource_1_1details_1_1alias__type_1a07ad48ddc4b53f0060f8032e0db4ab81" prot="public" virt="non-virtual"><scope>core::resource::details::alias_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

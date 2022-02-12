@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_3421900d5962502ca3d70b335e9239f8" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/data</compoundname>
+    <innerfile refid="application_8hpp">application.hpp</innerfile>
+    <innerfile refid="core_2inc_2data_2buffer_8hpp">buffer.hpp</innerfile>
+    <innerfile refid="data_2bundle_8hpp">bundle.hpp</innerfile>
+    <innerfile refid="clear__value_8hpp">clear_value.hpp</innerfile>
+    <innerfile refid="data_2framebuffer_8hpp">framebuffer.hpp</innerfile>
+    <innerfile refid="data_2geometry_8hpp">geometry.hpp</innerfile>
+    <innerfile refid="data_2material_8hpp">material.hpp</innerfile>
+    <innerfile refid="data_2sampler_8hpp">sampler.hpp</innerfile>
+    <innerfile refid="stream_8hpp">stream.hpp</innerfile>
+    <innerfile refid="window_8hpp">window.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/"/>
+  </compounddef>
+</doxygen>

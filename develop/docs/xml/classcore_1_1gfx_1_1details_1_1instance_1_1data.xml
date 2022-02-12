@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1gfx_1_1details_1_1instance_1_1data" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>core::gfx::details::instance::data</compoundname>
+    <includes refid="instance_8hpp" local="no">instance.hpp</includes>
+    <innerclass refid="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data" prot="private">core::gfx::details::instance::data::material_instance_data</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ad04b491ecf3267a65fa8d1030543f6c3" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref>, psl::array&lt; binding &gt; &gt;</type>
+        <definition>std::unordered_map&lt;psl::UID, psl::array&lt;binding&gt; &gt; core::gfx::details::instance::data::m_Bindings</definition>
+        <argsstring></argsstring>
+        <name>m_Bindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="161" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a503bbb79ad865d537733663fbd3b068e" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::pair&lt; binding::header, uint32_t &gt; &gt;</type>
+        <definition>psl::array&lt;std::pair&lt;binding::header, uint32_t&gt; &gt; core::gfx::details::instance::data::m_UniqueBindings</definition>
+        <argsstring></argsstring>
+        <name>m_UniqueBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="162" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aaed2312afcb395e0e690159d4455b171" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref>, object &gt;</type>
+        <definition>std::unordered_map&lt;psl::UID, object&gt; core::gfx::details::instance::data::m_InstanceData</definition>
+        <argsstring></argsstring>
+        <name>m_InstanceData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="163" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a741f9f8c8fc51ab7f860751eea157f95" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref>, material_instance_data &gt;</type>
+        <definition>std::unordered_map&lt;psl::UID, material_instance_data&gt; core::gfx::details::instance::data::m_MaterialInstanceData</definition>
+        <argsstring></argsstring>
+        <name>m_MaterialInstanceData</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="164" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ac6d7638caf554b1acf81b77753df8f54" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; size_t &gt;</type>
+        <definition>psl::array&lt;size_t&gt; core::gfx::details::instance::data::m_MaterialDataSizes</definition>
+        <argsstring></argsstring>
+        <name>m_MaterialDataSizes</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="165" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3a61af0e20ac8ca3a0410cf7279e6e0c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::buffer_t&gt; core::gfx::details::instance::data::m_VertexInstanceBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_VertexInstanceBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="166" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a5d42d116986095a7b9b2a0ccd9a13f99" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::shader_buffer_binding &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::shader_buffer_binding&gt; core::gfx::details::instance::data::m_MaterialInstanceBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_MaterialInstanceBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="167" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ae51e94b87a78d55d58ec59d877ad41a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::details::instance::data::data</definition>
+        <argsstring>()=default</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aceb9af8e21c24c3441ffabba324cf865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::details::instance::data::~data</definition>
+        <argsstring>()</argsstring>
+        <name>~data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a1aeb91f552844b06e06613c900302f53" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::details::instance::data::data</definition>
+        <argsstring>(core::resource::handle&lt; core::gfx::buffer_t &gt; vertexBuffer, core::resource::handle&lt; core::gfx::shader_buffer_binding &gt; materialBuffer) noexcept</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::buffer_t &gt;</type>
+          <declname>vertexBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::shader_buffer_binding &gt;</type>
+          <declname>materialBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3bd413189e158b221cf983015707e44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::gfx::details::instance::data::add</definition>
+        <argsstring>(core::resource::handle&lt; core::gfx::material_t &gt; material)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="116" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a7551562bea3d73c5dcd1597428328398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; uint32_t, uint32_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;uint32_t, uint32_t&gt; &gt; core::gfx::details::instance::data::add</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; uid, uint32_t count=1)</argsstring>
+        <name>add</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="117" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a0cd8b3c3778ba6b5c5062b0a5445c8f5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::remove</definition>
+        <argsstring>(core::resource::handle&lt; core::gfx::material_t &gt; material) noexcept</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="120" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a2bc4dc0465e5c699aa55d0dd347e846e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::has_element</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; geometry, psl::string_view name) const noexcept</argsstring>
+        <name>has_element</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="123" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3eac8ecfeb0c4298a13a1997c36bfbfb" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::optional&lt; std::pair&lt; <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref>, uint32_t &gt; &gt;</type>
+        <definition>std::optional&lt;std::pair&lt;memory::segment, uint32_t&gt; &gt; core::gfx::details::instance::data::segment</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; geometry, psl::string_view name) const noexcept</argsstring>
+        <name>segment</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="124" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a72eeb92628bbdd78f4e64857972c8bce" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t core::gfx::details::instance::data::count</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; uid) const noexcept</argsstring>
+        <name>count</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a07ff17e43fb906027970e10bd80ba60d" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>psl::array&lt; std::pair&lt; size_t, std::uintptr_t &gt; &gt;</type>
+        <definition>psl::array&lt;std::pair&lt;size_t, std::uintptr_t&gt; &gt; core::gfx::details::instance::data::bindings</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::material_t &gt; material, core::resource::tag&lt; core::gfx::geometry_t &gt; geometry) const noexcept</argsstring>
+        <name>bindings</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ae2878875e7795ed55c3d6962da9fbb81" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::buffer_t&gt; core::gfx::details::instance::data::vertex_buffer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>vertex_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="132" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aa848ea5d740f06ae4e8a4545e4073523" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::gfx::buffer_t&gt; core::gfx::details::instance::data::material_buffer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>material_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="133" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1accdf6d05ae76beb6501937ae763a28fa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::erase</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; geometry, uint32_t id) noexcept</argsstring>
+        <name>erase</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="135" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aed406f2b138f4082d97375f0da3ff804" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::clear</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::geometry_t &gt; geometry) noexcept</argsstring>
+        <name>clear</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::geometry_t &gt;</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="136" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aa6fc77c62385080a2eab66990808fc85" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="137" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3b150a85d5c4cb0aacebebebe12faf8d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::set</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::material_t &gt; material, const void *data, size_t size, size_t offset) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a75471bf9b8160d7e3181a68481a2f7d7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t core::gfx::details::instance::data::offset_of</definition>
+        <argsstring>(core::resource::tag&lt; core::gfx::material_t &gt; material, psl::string_view name) const noexcept</argsstring>
+        <name>offset_of</name>
+        <param>
+          <type>core::resource::tag&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the offset of the material data&apos;s member. </para>
+</simplesect>
+<simplesect kind="remark"><para>nested declarations (like struct within binding), must be seperated by a &apos;.&apos;, so that the chain is respected and looks like this &quot;data.player.rotation&quot;. </para>
+</simplesect>
+<simplesect kind="remark"><para>array based declarations must be indexed with the bracket operator &apos;[i]&apos;, otherwise it will default to &apos;[0]&apos; implicitly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="146" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aeb212e84fe39c7dc470706348d8b1040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::bind_material</definition>
+        <argsstring>(core::resource::handle&lt; core::gfx::material_t &gt; material)</argsstring>
+        <name>bind_material</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>bind the given material&apos;s instance data (if present). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if there was instance data found, otherwise propogates lower failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="153" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a8123dc3c92eb3f46561314eab2581994" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::data::has_data</definition>
+        <argsstring>(core::resource::handle&lt; core::gfx::material_t &gt; material) const noexcept</argsstring>
+        <name>has_data</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::gfx::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="158" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>handles instance data associated to materials/geometry combinations </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages instance data related to materials-geometry, both the geometry specific data (such as instance position, etc...), as well as material-wide instance data (shared with all drawcalls using this specific instance set). The latter could be visualised as all pieces of foliage sharing the same &quot;wind intensity&quot; value. This is not to be confused as &quot;global data&quot;, such as all pieces of geometry knowing about &quot;fog&quot;, it is still duplicated over every instance of a bundle. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="103" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="102" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3bd413189e158b221cf983015707e44e" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>add</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a7551562bea3d73c5dcd1597428328398" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>add</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aeb212e84fe39c7dc470706348d8b1040" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>bind_material</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a07ff17e43fb906027970e10bd80ba60d" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>bindings</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aed406f2b138f4082d97375f0da3ff804" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>clear</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aa6fc77c62385080a2eab66990808fc85" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>clear</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a72eeb92628bbdd78f4e64857972c8bce" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>count</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ae51e94b87a78d55d58ec59d877ad41a4" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>data</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a1aeb91f552844b06e06613c900302f53" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>data</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1accdf6d05ae76beb6501937ae763a28fa" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>erase</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a8123dc3c92eb3f46561314eab2581994" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>has_data</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a2bc4dc0465e5c699aa55d0dd347e846e" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>has_element</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ad04b491ecf3267a65fa8d1030543f6c3" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_Bindings</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aaed2312afcb395e0e690159d4455b171" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_InstanceData</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ac6d7638caf554b1acf81b77753df8f54" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_MaterialDataSizes</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a5d42d116986095a7b9b2a0ccd9a13f99" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_MaterialInstanceBuffer</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a741f9f8c8fc51ab7f860751eea157f95" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_MaterialInstanceData</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a503bbb79ad865d537733663fbd3b068e" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_UniqueBindings</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3a61af0e20ac8ca3a0410cf7279e6e0c" prot="private" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>m_VertexInstanceBuffer</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aa848ea5d740f06ae4e8a4545e4073523" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>material_buffer</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a75471bf9b8160d7e3181a68481a2f7d7" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>offset_of</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a0cd8b3c3778ba6b5c5062b0a5445c8f5" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>remove</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3eac8ecfeb0c4298a13a1997c36bfbfb" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>segment</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1a3b150a85d5c4cb0aacebebebe12faf8d" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>set</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1ae2878875e7795ed55c3d6962da9fbb81" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>vertex_buffer</name></member>
+      <member refid="classcore_1_1gfx_1_1details_1_1instance_1_1data_1aceb9af8e21c24c3441ffabba324cf865" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data</scope><name>~data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

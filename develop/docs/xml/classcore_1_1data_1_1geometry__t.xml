@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1data_1_1geometry__t" kind="class" language="C++" prot="public">
+    <compoundname>core::data::geometry_t</compoundname>
+    <includes refid="data_2geometry_8hpp" local="no">geometry.hpp</includes>
+    <innerclass refid="structcore_1_1data_1_1geometry__t_1_1constants" prot="public">core::data::geometry_t::constants</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcore_1_1data_1_1geometry__t_1ab20e0ffce44f41f7254446f5b707da6a" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using core::data::geometry_t::index_size_t =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>index_size_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="51" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcore_1_1data_1_1geometry__t_1a0aea2d2d677cf3a11fbea34e622a97b6" prot="public" static="no">
+        <type>psl::mat4x4</type>
+        <definition>using core::data::geometry_t::bone_t =  psl::mat4x4</definition>
+        <argsstring></argsstring>
+        <name>bone_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcore_1_1data_1_1geometry__t_1ae6e4002148765f114da9fe1b5c64547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class psl::serialization::accessor</definition>
+        <argsstring></argsstring>
+        <name>psl::serialization::accessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="48" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1geometry__t_1a411ab8762d37ef65ac77efea4e21f504" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view core::data::geometry_t::serialization_name</definition>
+        <argsstring></argsstring>
+        <name>serialization_name</name>
+        <initializer>{&quot;GEOMETRY&quot;}</initializer>
+        <briefdescription>
+<para>serialization name to be used by the serializer when writing and reading this container to and from disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="144" column="37" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1geometry__t_1a1d882979c5f40d54b1d1a89e40a9c013" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;INDICES&quot;, std::vector&lt; index_size_t &gt; &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;INDICES&quot;, std::vector&lt;index_size_t&gt; &gt; core::data::geometry_t::m_Indices</definition>
+        <argsstring></argsstring>
+        <name>m_Indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="146" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1geometry__t_1ab0ab6ec9c966b9170fc7a5a379d1ce74" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;STREAMS&quot;, std::unordered_map&lt; psl::string, <ref refid="classcore_1_1stream" kindref="compound">core::stream</ref> &gt; &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;STREAMS&quot;, std::unordered_map&lt;psl::string, core::stream&gt; &gt; core::data::geometry_t::m_VertexStreams</definition>
+        <argsstring></argsstring>
+        <name>m_VertexStreams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="147" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1abac224e77357407e03c4e9540220913e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::geometry_t::geometry_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>geometry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a48d5f60442b04a3aea4545ae4e8ccc37" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>geometry_t::geometry_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile) noexcept</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="75" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1acd9967e0907ebc3cea844e1ab080807a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::geometry_t::~geometry_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>~geometry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1ad77311d6bc1e61a7ec6f383bad3b4374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::geometry_t::geometry_t</definition>
+        <argsstring>(const geometry_t &amp;)=delete</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1af08dc875bc04595a6687b59f53651c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::geometry_t::geometry_t</definition>
+        <argsstring>(geometry_t &amp;&amp;)=delete</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a99e17a91e32ff7ab5ec50575d7c30887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        <definition>geometry_t&amp; core::data::geometry_t::operator=</definition>
+        <argsstring>(const geometry_t &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="81" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a17bc8007c263c083a8833e639be8ec53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        <definition>geometry_t&amp; core::data::geometry_t::operator=</definition>
+        <argsstring>(geometry_t &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="82" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1aac22e920c0acae59008e2d531e728863" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; std::reference_wrapper&lt; const <ref refid="classcore_1_1stream" kindref="compound">core::stream</ref> &gt; &gt;</type>
+        <definition>std::optional&lt; std::reference_wrapper&lt; const core::stream &gt; &gt; geometry_t::vertices</definition>
+        <argsstring>(const psl::string_view name=constants::POSITION) const</argsstring>
+        <name>vertices</name>
+        <param>
+          <type>const psl::string_view</type>
+          <declname>name</declname>
+          <defval><ref refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" kindref="member">constants::POSITION</ref></defval>
+        </param>
+        <briefdescription>
+<para>returns the stream reference (if any found) for the given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the stream reference (if any found) for the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="87" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="15" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a8507837aad4c23991daf5d565cf20029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::vertices</definition>
+        <argsstring>(const psl::string_view name, const core::stream &amp;stream)</argsstring>
+        <name>vertices</name>
+        <param>
+          <type>const psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcore_1_1stream" kindref="compound">core::stream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>sets the stream data for the given key. If data was already present, then it gets replaced. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>be sure that the stream has the correct amount of vertices as is expected by the index buffer. As you might be replacing/resizing the internal model data, we cannot error check this condition for you here. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="92" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1af9539fefdcfe565477b7a254e3041eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::geometry_t::vertices</definition>
+        <argsstring>(const psl::string_view name, psl::array&lt; T &gt; stream)</argsstring>
+        <name>vertices</name>
+        <param>
+          <type>const psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>psl::array&lt; T &gt;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="94" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a681dd32c5d822cc865d9a95bd0c5f1b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; index_size_t &gt; &amp;</type>
+        <definition>const std::vector&lt; geometry_t::index_size_t &gt; &amp; geometry_t::indices</definition>
+        <argsstring>() const</argsstring>
+        <name>indices</name>
+        <briefdescription>
+<para>gets all indices that are currently assigned to this model data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>all indices that are currently assigned to this model data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="100" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1aca8d8be2731f5da1422a5cda3a48d40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::indices</definition>
+        <argsstring>(psl::array_view&lt; index_size_t &gt; indices)</argsstring>
+        <name>indices</name>
+        <param>
+          <type>psl::array_view&lt; index_size_t &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>sets the indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>be sure to check that the indices do not reffer to out of index locations in the position buffer. Seeing you might be replacing/resizing the model data, we cannot error check this condition for you here. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="104" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1aff9072507331956c9a9a81c50f8b3105" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::unordered_map&lt; psl::string, <ref refid="classcore_1_1stream" kindref="compound">core::stream</ref> &gt; &amp;</type>
+        <definition>const std::unordered_map&lt; psl::string, core::stream &gt; &amp; geometry_t::vertex_streams</definition>
+        <argsstring>() const</argsstring>
+        <name>vertex_streams</name>
+        <briefdescription>
+<para>returns all the streams of data and their keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>all the streams of data and their keys. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="108" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a2f811ccdf09796bc502418f2490fc0a1" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool geometry_t::is_valid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_valid</name>
+        <briefdescription>
+<para>helper method to check for validity of the model data in its current state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the data passes all checks. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="112" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1ab27f0a75fa05b0618f01b1d06fbed86a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>index_size_t</type>
+        <definition>geometry_t::index_size_t geometry_t::vertex_count</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>vertex_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="114" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a69a2c0fb0c5e1292de5cecde5150454f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>index_size_t</type>
+        <definition>geometry_t::index_size_t geometry_t::index_count</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>index_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="115" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1ae61f8605d6725895def234d72da4fbfa" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>index_size_t</type>
+        <definition>geometry_t::index_size_t geometry_t::triangles</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>triangles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="116" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a2ed2d933847287cf2f7e2036d4557e8a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::bytesize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>bytesize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="117" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a05fdeb3807054af0f990fe4a4acb910a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::elements</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="118" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a602e5f44fc04934a9bf9d714cb069238" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool geometry_t::erase</definition>
+        <argsstring>(psl::string_view name) noexcept</argsstring>
+        <name>erase</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>erases the given stream if found </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="121" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a66791c44e6d8069529b260598f24cae0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool core::data::geometry_t::transform</definition>
+        <argsstring>(psl::string_view name, F &amp;&amp;transformation)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>transformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="124" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1geometry__t_1a84f4431d33be02ad1abef4a4b566a6db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::geometry_t::serialize</definition>
+        <argsstring>(S &amp;serializer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>S &amp;</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+<para>serialization method to be used by the serializer when writing this container to the disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the serialization object, consult the serialization namespace for more information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="137" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>describes a stream of data that will be uploaded to the GPU as geometry data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Unlike most engines, geometry data in paradigm is considered a collection of undescribed data, that has been keyed. There are some globally accepted keys defined for convenience at the <ref refid="structcore_1_1data_1_1geometry__t_1_1constants" kindref="compound">core::data::geometry_t::constants</ref> namespace. Only 2 streams are mandatory (<ref refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" kindref="member">core::data::geometry_t::constants::POSITION</ref> and the indices stream), if those are not present, the data is considered invalid. All streams (except the index buffer stream) should have equally as many entries as the position buffer stream has. The index buffer stream should not reffer to positions larger than the size of the position buffer stream. <simplesect kind="note"><para>these data streams can be anything, as long as atleast a position buffer and a index buffer is present. It&apos;s up to you to make sure your geometry object has all the required streams to correctly bind it to a <ref refid="classcore_1_1ivk_1_1material__t" kindref="compound">core::ivk::material_t</ref>. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>write an example of a custom stream. </para>
+<para>support numbered streams (i.e. UV0, UV1, etc..). </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" line="47" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp" bodystart="46" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classcore_1_1data_1_1geometry__t_1a0aea2d2d677cf3a11fbea34e622a97b6" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>bone_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a2ed2d933847287cf2f7e2036d4557e8a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>bytesize</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a05fdeb3807054af0f990fe4a4acb910a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>elements</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a602e5f44fc04934a9bf9d714cb069238" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>erase</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1abac224e77357407e03c4e9540220913e" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a48d5f60442b04a3aea4545ae4e8ccc37" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ad77311d6bc1e61a7ec6f383bad3b4374" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1af08dc875bc04595a6687b59f53651c01" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a69a2c0fb0c5e1292de5cecde5150454f" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>index_count</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ab20e0ffce44f41f7254446f5b707da6a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>index_size_t</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a681dd32c5d822cc865d9a95bd0c5f1b1" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>indices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1aca8d8be2731f5da1422a5cda3a48d40a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>indices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a2f811ccdf09796bc502418f2490fc0a1" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>is_valid</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a1d882979c5f40d54b1d1a89e40a9c013" prot="private" virt="non-virtual"><scope>core::data::geometry_t</scope><name>m_Indices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ab0ab6ec9c966b9170fc7a5a379d1ce74" prot="private" virt="non-virtual"><scope>core::data::geometry_t</scope><name>m_VertexStreams</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a99e17a91e32ff7ab5ec50575d7c30887" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a17bc8007c263c083a8833e639be8ec53" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ae6e4002148765f114da9fe1b5c64547d" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>psl::serialization::accessor</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a411ab8762d37ef65ac77efea4e21f504" prot="private" virt="non-virtual"><scope>core::data::geometry_t</scope><name>serialization_name</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a84f4431d33be02ad1abef4a4b566a6db" prot="private" virt="non-virtual"><scope>core::data::geometry_t</scope><name>serialize</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a66791c44e6d8069529b260598f24cae0" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>transform</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ae61f8605d6725895def234d72da4fbfa" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>triangles</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1ab27f0a75fa05b0618f01b1d06fbed86a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>vertex_count</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1aff9072507331956c9a9a81c50f8b3105" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>vertex_streams</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1aac22e920c0acae59008e2d531e728863" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>vertices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1a8507837aad4c23991daf5d565cf20029" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>vertices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1af9539fefdcfe565477b7a254e3041eff" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>vertices</name></member>
+      <member refid="classcore_1_1data_1_1geometry__t_1acd9967e0907ebc3cea844e1ab080807a" prot="public" virt="non-virtual"><scope>core::data::geometry_t</scope><name>~geometry_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

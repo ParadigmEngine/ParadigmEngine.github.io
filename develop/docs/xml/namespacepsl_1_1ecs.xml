@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1ecs" kind="namespace" language="C++">
+    <compoundname>psl::ecs</compoundname>
+    <innerclass refid="classpsl_1_1ecs_1_1command__buffer__t" prot="public">psl::ecs::command_buffer_t</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1empty" prot="public">psl::ecs::empty</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1except" prot="public">psl::ecs::except</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1filter" prot="public">psl::ecs::filter</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1full" prot="public">psl::ecs::full</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1info__t" prot="public">psl::ecs::info_t</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__add" prot="public">psl::ecs::on_add</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__break" prot="public">psl::ecs::on_break</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__combine" prot="public">psl::ecs::on_combine</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__condition" prot="public">psl::ecs::on_condition</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__remove" prot="public">psl::ecs::on_remove</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1order__by" prot="public">psl::ecs::order_by</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1pack" prot="public">psl::ecs::pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1partial" prot="public">psl::ecs::partial</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1state__t" prot="public">psl::ecs::state_t</innerclass>
+    <innernamespace refid="namespacepsl_1_1ecs_1_1details">psl::ecs::details</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>threading</name>
+        <enumvalue id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cbae068c2de26d760f20cf10afc4b87ef0f" prot="public">
+          <name>seq</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cba6ec7489017b25b5fff20d353b6d2162e" prot="public">
+          <name>sequential</name>
+          <initializer>= seq</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cbad018268506e2868537a478629b59e7c1" prot="public">
+          <name>par</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cba48920c071f6a5c97ae3739be64630697" prot="public">
+          <name>parallel</name>
+          <initializer>= par</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="system__information_8hpp_1a5bda3b151ea81f1670698727c058c0cbafad58de7366495db4650cfefac2fcd61" prot="public">
+          <name>main</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="entity_8hpp_1af17242c0e907153143d867af38365ff9" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using psl::ecs::entity = typedef uint32_t</definition>
+        <argsstring></argsstring>
+        <name>entity</name>
+        <briefdescription>
+<para>entity points to a collection of components </para>
+        </briefdescription>
+        <detaileddescription>
+<para><hruler/>
+ <heading level="2">Entity </heading>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="entity_8hpp_1abfe4b1639f3fa5a2c870ddc5187289a6" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::ecs::valid</definition>
+        <argsstring>(entity e) noexcept</argsstring>
+        <name>valid</name>
+        <param>
+          <type>entity</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>checks if an entity is valid or not </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the entity to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" line="56" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/grid.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

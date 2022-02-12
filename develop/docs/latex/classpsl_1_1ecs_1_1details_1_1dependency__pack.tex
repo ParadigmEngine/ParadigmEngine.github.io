@@ -1,0 +1,69 @@
+\hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack}{}\doxysection{psl\+::ecs\+::details\+::dependency\+\_\+pack Class Reference}
+\label{classpsl_1_1ecs_1_1details_1_1dependency__pack}\index{psl::ecs::details::dependency\_pack@{psl::ecs::details::dependency\_pack}}
+
+
+describes a set of dependencies for a given system  
+
+
+
+
+{\ttfamily \#include $<$system\+\_\+information.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a4ecef555f91914b52d1c362751bb2ebe}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a4ecef555f91914b52d1c362751bb2ebe}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries dependency\+\_\+pack} (psl\+::templates\+::type\+\_\+container$<$ T $>$, bool seed\+With\+Previous=false)
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_af0816621b33eb4f6e621b14672b9d4e1}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_af0816621b33eb4f6e621b14672b9d4e1}} 
+{\bfseries dependency\+\_\+pack} (const \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \&other)=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a8915b6d538af7f8684c2e408b7452eec}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a8915b6d538af7f8684c2e408b7452eec}} 
+{\bfseries dependency\+\_\+pack} (\mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a215ee815ca0d07aff7c08a98670d22f0}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a215ee815ca0d07aff7c08a98670d22f0}} 
+\mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \& {\bfseries operator=} (const \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \&)=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a4e77d86237a31c96b2451e56093d97ef}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a4e77d86237a31c96b2451e56093d97ef}} 
+\mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \& {\bfseries operator=} (\mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} \&\&) noexcept=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_ad60301de648fb470642e8f7b4fde8565}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_ad60301de648fb470642e8f7b4fde8565}} 
+{\footnotesize template$<$typename... Ts$>$ }\\\mbox{\hyperlink{classpsl_1_1ecs_1_1pack}{psl\+::ecs\+::pack}}$<$ Ts... $>$ {\bfseries to\+\_\+pack} (psl\+::templates\+::type\+\_\+container$<$ \mbox{\hyperlink{classpsl_1_1ecs_1_1pack}{psl\+::ecs\+::pack}}$<$ Ts... $>$$>$)
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_af089a6c0995462d7f232dbd738024220}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_af089a6c0995462d7f232dbd738024220}} 
+bool {\bfseries allow\+\_\+partial} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a041c1ee66af2f4d398c2668c3e3a2c79}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a041c1ee66af2f4d398c2668c3e3a2c79}} 
+size\+\_\+t {\bfseries size\+\_\+per\+\_\+element} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a24b0d35775c87afb01d7e44437b9f19b}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a24b0d35775c87afb01d7e44437b9f19b}} 
+{\footnotesize template$<$typename T $>$ }\\size\+\_\+t {\bfseries size\+\_\+of} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a6f07f8b3e4929a0ceedb929fb50cca41}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a6f07f8b3e4929a0ceedb929fb50cca41}} 
+size\+\_\+t {\bfseries size\+\_\+of} (component\+\_\+key\+\_\+t key) const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_a573c61c1e5ec8441f18c65b03d5a9a11}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_a573c61c1e5ec8441f18c65b03d5a9a11}} 
+size\+\_\+t {\bfseries entities} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_af5f7c8323ec19115ece610b7ea995a14}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_af5f7c8323ec19115ece610b7ea995a14}} 
+\mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}} {\bfseries slice} (size\+\_\+t begin, size\+\_\+t end) const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1details_1_1dependency__pack_ae633127ef3e7fdba794bed7559a73dd2}\label{classpsl_1_1ecs_1_1details_1_1dependency__pack_ae633127ef3e7fdba794bed7559a73dd2}} 
+class {\bfseries psl\+::ecs\+::state\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+systems can have various dependencies, for example a movement system could have dependencies on both a psl\+::ecs\+::components\+::transform component and a psl\+::ecs\+::components\+::renderable component. This dependency will output a set of psl\+::ecs\+::entity\textquotesingle{}s that have all required psl\+::ecs\+::components present. Certain systems could have sets of dependencies, for example the render system requires knowing about both all {\ttfamily psl\+::ecs\+::components\+::renderable} that have a {\ttfamily psl\+::ecs\+::components\+::transform}, but also needs to know all {\ttfamily psl\+::ecs\+::components\+::camera\textquotesingle{}s}. So that system would require several \mbox{\hyperlink{classpsl_1_1ecs_1_1details_1_1dependency__pack}{dependency\+\_\+pack}}\textquotesingle{}s. 
+
+Definition at line 53 of file system\+\_\+information.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system\+\_\+information.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.\+hpp\end{DoxyCompactItemize}

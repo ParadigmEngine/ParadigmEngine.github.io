@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1accessor_1_1is__polymorphic_3_01_t_00_01std_1_1void__t_3_01decltypf455af72fab7b46683cbb97df4f2211c" kind="struct" language="C++" prot="private">
+    <compoundname>psl::serialization::accessor::is_polymorphic&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().polymorphic_id())&gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structpsl_1_1serialization_1_1accessor_1_1is__polymorphic_3_01_t_00_01std_1_1void__t_3_01decltypf455af72fab7b46683cbb97df4f2211c_1a07bda2abd00e406569cf17470963956b" prot="public" static="no">
+        <type>std::true_type</type>
+        <definition>using psl::serialization::accessor::is_polymorphic&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().polymorphic_id())&gt; &gt;::type =  std::true_type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="91" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="90" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="89" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1accessor_1_1is__polymorphic_3_01_t_00_01std_1_1void__t_3_01decltypf455af72fab7b46683cbb97df4f2211c_1a07bda2abd00e406569cf17470963956b" prot="public" virt="non-virtual"><scope>psl::serialization::accessor::is_polymorphic&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().polymorphic_id())&gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8187f6e149452a69b0427ea9f88a73f6" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/ecs</compoundname>
+    <innerdir refid="dir_d5b7c971586ba64a8b976f0cc22e79ae">/home/runner/work/paradigm/paradigm/core/inc/ecs/components</innerdir>
+    <innerdir refid="dir_1e300742ae92ad7878e286ee584aa9d2">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/"/>
+  </compounddef>
+</doxygen>

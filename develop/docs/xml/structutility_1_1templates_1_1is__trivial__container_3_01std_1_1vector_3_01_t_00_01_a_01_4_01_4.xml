@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1is__trivial__container_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::is_trivial_container&lt; std::vector&lt; T, A &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1is__trivial__container_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a16e7866411a1a9cbfeffcda95b023d94" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool utility::templates::is_trivial_container&lt; std::vector&lt; T, A &gt; &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="214" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="213" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="212" bodyend="215"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1is__trivial__container_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a16e7866411a1a9cbfeffcda95b023d94" prot="public" virt="non-virtual"><scope>utility::templates::is_trivial_container&lt; std::vector&lt; T, A &gt; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

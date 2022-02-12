@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1geometry" kind="namespace" language="C++">
+    <compoundname>utility::geometry</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1ae66e362257c10c36e17c5b7c8b257142" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; psl::vec3 &gt;</type>
+        <definition>static std::vector&lt;psl::vec3&gt; utility::geometry::generate_tangents</definition>
+        <argsstring>(const std::vector&lt; psl::vec3 &gt; &amp;positions, const std::vector&lt; psl::vec2 &gt; &amp;uvs, const std::vector&lt; uint32_t &gt; &amp;indices)</argsstring>
+        <name>generate_tangents</name>
+        <param>
+          <type>const std::vector&lt; psl::vec3 &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; psl::vec2 &gt; &amp;</type>
+          <declname>uvs</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>generates tangent information for the geometry data </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the generated tangent information. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vertex position info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uvs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vertex UVs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>triangle indices. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>it is expected this is valid geometry data, only minimal to no data validation is done. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="18" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="18" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a2a5f96dd8117504383f3620b532902bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::geometry::generate_tangents</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; geometry_data)</argsstring>
+        <name>generate_tangents</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>geometry_data</declname>
+        </param>
+        <briefdescription>
+<para>generates tangent information for the geometry data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>generates tangent information for the given geometry data, which, on success, is injected into the input handle. <simplesect kind="return"><para>if the operation was successful (true) or not (false). </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">geometry_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the geometry data container. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>it is expected this is valid geometry data, only minimal to no data validation is done. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="64" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="64" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1aa48d48bf9e504bec8cf17573963cbc85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_quad</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, float top, float bottom, float left, float right)</argsstring>
+        <name>create_quad</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>generates a quad primitive with the bounds coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the principal difference between this function and <ref refid="namespaceutility_1_1geometry_1abd39083d08922ebcf7e3f56259c2ff02" kindref="member">utility::geometry::create_plane()</ref> is that this method allows fine control of the extents. This can be handy for generating UI elements. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cache to store the generated geometry information on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extent in the +Y axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bottom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extent in the -Y axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extent in the +X axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extent in the -X axis. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the handle to the generated geometry data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="97" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="97" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1abd39083d08922ebcf7e3f56259c2ff02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_plane</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec2 size=psl::vec2::one, psl::ivec2 subdivisions=psl::ivec2(1, 1), psl::vec2 uvScale=psl::vec2::one)</argsstring>
+        <name>create_plane</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec2</type>
+          <declname>size</declname>
+          <defval>psl::vec2::one</defval>
+        </param>
+        <param>
+          <type>psl::ivec2</type>
+          <declname>subdivisions</declname>
+          <defval>psl::ivec2(1, 1)</defval>
+        </param>
+        <param>
+          <type>psl::vec2</type>
+          <declname>uvScale</declname>
+          <defval>psl::vec2::one</defval>
+        </param>
+        <briefdescription>
+<para>generates a plane primitive with the bounds coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the principal differences between this method and <ref refid="namespaceutility_1_1geometry_1aa48d48bf9e504bec8cf17573963cbc85" kindref="member">utility::geometry::create_quad()</ref> is that the plane can be subdivided, and has finer control over the UV&apos;s, making it better suited for 3D geometry. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cache to store the generated geometry information on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the extent in the XZ axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">subdivisions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of times to subdivide the mesh in the XZ axis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uvScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>multiplier on the UV scale, where {1, 1} is the normalized coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the handle to the generated geometry data. </para>
+</simplesect>
+<simplesect kind="note"><para>the final size of the object is always 2x the extents. This means that a size {2, 1} results into a min-coordinate {-2, -1} and max-coordinate {2, 1}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="147" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="147" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a50832f2dd9831bf4ef46b9a26065d08e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_line</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 pos1, psl::vec3 pos2)</argsstring>
+        <name>create_line</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="205" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="205" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a421eb0477579e25f9398d01e961f5055" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_line_quad</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one)</argsstring>
+        <name>create_line_quad</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="224" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="224" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a1cd9c60d1c956dd2e353337f6f301f40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_line_cube</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one)</argsstring>
+        <name>create_line_cube</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="264" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="264" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a2cad1acf10ad75297286015854b56183" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_box</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one)</argsstring>
+        <name>create_box</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <briefdescription>
+<para>generates a box primitive with a pivot of {0,0,0}. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cache to store the generated geometry information on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scale of the object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the handle to the generated geometry data. </para>
+</simplesect>
+<simplesect kind="note"><para>unlike extent, scale implies that the final size is equal to the scale (i.e. an object of 1 unit at a scale of 1 is equal to 1unit). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="336" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="336" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a99302bbbcbbfbc2e4a35a684cf4a839f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_spherified_cube</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one, uint32_t divisions=4)</argsstring>
+        <name>create_spherified_cube</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>divisions</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="425" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="425" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a3c1230c3fada69d13d23802fcb6afb81" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_cone</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, float height=1.0f, float topRadius=1.0f, float bottomRadius=1.0f, uint32_t sides=18)</argsstring>
+        <name>create_cone</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>topRadius</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottomRadius</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>sides</declname>
+          <defval>18</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="525" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="525" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a7728ce808ec3c87edde567e1aba7ed6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_sphere</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one, uint16_t longitude=24, uint16_t latitude=16)</argsstring>
+        <name>create_sphere</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>longitude</declname>
+          <defval>24</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>latitude</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="727" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="727" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a74fc2f9c00f4d02529ce6e6ce6ee3f2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::create_icosphere</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, psl::vec3 scale=psl::vec3::one, size_t subdivisions=2)</argsstring>
+        <name>create_icosphere</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+          <defval>psl::vec3::one</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>subdivisions</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="890" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="890" bodyend="1202"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a44a8d11822188fc05725202d891f311d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::copy</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, core::resource::handle&lt; core::data::geometry_t &gt; target)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1204" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1204" bodyend="1216"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a2fbf7d76d317b26ec370ab26da699da8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::merge</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const psl::array&lt; core::resource::handle&lt; core::data::geometry_t &gt;&gt; &amp;geometry)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const psl::array&lt; <ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;&gt; &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1219" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1219" bodyend="1265"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a202c9d90c5bce33908ff642d869b9dad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::replicate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; source, const psl::array&lt; psl::vec3 &gt; &amp;positions)</argsstring>
+        <name>replicate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const psl::array&lt; psl::vec3 &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1267" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1267" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a997b1478ec98283d74656a84c696e558" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>static core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::replicate</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, core::resource::handle&lt; core::data::geometry_t &gt; source, const psl::array&lt; psl::vec3 &gt; &amp;positions)</argsstring>
+        <name>replicate</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const psl::array&lt; psl::vec3 &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1318" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1318" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1af092d12357b3cc9efdee3ea0af25d8a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::rotate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; source, psl::quat rotation, psl::string_view channel=core::data::geometry_t::constants::POSITION)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>psl::quat</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>channel</declname>
+          <defval><ref refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" kindref="member">core::data::geometry_t::constants::POSITION</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1326" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1326" bodyend="1334"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a5d941994f23475d94bb56f3bf095c5b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::scale</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; source, T scale, psl::string_view channel=core::data::geometry_t::constants::POSITION)</argsstring>
+        <name>scale</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>channel</declname>
+          <defval><ref refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" kindref="member">core::data::geometry_t::constants::POSITION</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1338" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1338" bodyend="1345"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1ae2e781ae573f972ca958cfae12b1bb18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::translate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; source, T translation, psl::string_view channel=core::data::geometry_t::constants::POSITION)</argsstring>
+        <name>translate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>translation</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>channel</declname>
+          <defval><ref refid="structcore_1_1data_1_1geometry__t_1_1constants_1a5385d72e7cd1e7f01f1d8124d0a48ed1" kindref="member">core::data::geometry_t::constants::POSITION</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1349" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1349" bodyend="1356"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a4f4562bdfb29169c375a46fdbd28da7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::copy_channel</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; geom, psl::string_view source, psl::string_view destination)</argsstring>
+        <name>copy_channel</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>geom</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1358" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1358" bodyend="1365"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1geometry_1a4c4c7e80758fa2318fca50efd25a10a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; utility::geometry::set_channel</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; source, psl::string_view channel, T value)</argsstring>
+        <name>set_channel</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="1369" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" bodystart="1369" bodyend="1384"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>various geometry and geometry related operation utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

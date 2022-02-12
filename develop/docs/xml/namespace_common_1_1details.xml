@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_common_1_1details" kind="namespace" language="C++">
+    <compoundname>Common::details</compoundname>
+    <innerclass refid="struct_common_1_1details_1_1transform__moveable" prot="public">Common::details::transform_moveable</innerclass>
+    <innerclass refid="struct_common_1_1details_1_1transform__moveable_3_01_t_01_6_6_01_4" prot="public">Common::details::transform_moveable&lt; T &amp;&amp; &gt;</innerclass>
+    <innerclass refid="struct_common_1_1details_1_1transform__moveables" prot="public">Common::details::transform_moveables</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="115" column="1"/>
+  </compounddef>
+</doxygen>

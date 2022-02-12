@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_common_1_1details_1_1transform__moveables" kind="struct" language="C++" prot="public">
+    <compoundname>Common::details::transform_moveables</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_common_1_1details_1_1transform__moveables_1a7639959644c6356e96795f584ab57d2b" prot="public" static="no">
+        <type>std::tuple&lt; typename transform_moveable&lt; T &gt;::type... &gt;</type>
+        <definition>using Common::details::transform_moveables&lt; T &gt;::tuple_type =  std::tuple&lt;typename transform_moveable&lt;T&gt;::type...&gt;</definition>
+        <argsstring></argsstring>
+        <name>tuple_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="131" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="130" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="129" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_common_1_1details_1_1transform__moveables_1a7639959644c6356e96795f584ab57d2b" prot="public" virt="non-virtual"><scope>Common::details::transform_moveables</scope><name>tuple_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

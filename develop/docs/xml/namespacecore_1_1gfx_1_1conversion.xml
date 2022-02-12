@@ -1,0 +1,928 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1gfx_1_1conversion" kind="namespace" language="C++">
+    <compoundname>core::gfx::conversion</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a51ec3155b66d8fbd599e0509d5e7ef15" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>decltype(GL_VERTEX_SHADER)</type>
+        <definition>decltype(GL_VERTEX_SHADER) core::gfx::conversion::to_gles</definition>
+        <argsstring>(shader_stage stage) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5" kindref="member">shader_stage</ref></type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="9" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="9" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a59f5006b78ae713d49393368794812cd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5" kindref="member">shader_stage</ref></type>
+        <definition>shader_stage core::gfx::conversion::to_shader_stage</definition>
+        <argsstring>(GLint value) noexcept</argsstring>
+        <name>to_shader_stage</name>
+        <param>
+          <type>GLint</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="36" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="36" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a633fcacb5a3c649dc9273afbb99313a4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLint</type>
+        <definition>GLint core::gfx::conversion::to_gles</definition>
+        <argsstring>(vertex_input_rate value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>vertex_input_rate</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="63" column="14" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1add476a330183c7ce6562ef1d44a341d3" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vertex_input_rate</type>
+        <definition>vertex_input_rate core::gfx::conversion::to_vertex_input_rate</definition>
+        <argsstring>(GLint value) noexcept</argsstring>
+        <name>to_vertex_input_rate</name>
+        <param>
+          <type>GLint</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="68" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a99453ffe9d7b474f989abb19c7a871b8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>decltype(GL_ARRAY_BUFFER)</type>
+        <definition>decltype(GL_ARRAY_BUFFER) core::gfx::conversion::to_gles</definition>
+        <argsstring>(memory_usage memory) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>memory_usage</type>
+          <declname>memory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>gles does not have a concept of transfer_source/transfer_destination, all buffers are &quot;valid&quot; as either </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="71" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="71" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a27dfb874c670a0c197e90a835125ca2c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::conversion::to_gles</definition>
+        <argsstring>(format_t value, GLint &amp;internalFormat, GLint &amp;format, GLint &amp;type) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>format_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>GLint &amp;</type>
+          <declname>internalFormat</declname>
+        </param>
+        <param>
+          <type>GLint &amp;</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>GLint &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="105" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="105" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a9e7cf55da39fa42e2bcb3c5df4984417" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>core::gfx::format_t</type>
+        <definition>core::gfx::format_t core::gfx::conversion::to_format</definition>
+        <argsstring>(GLint internalFormat, GLint format, GLint type) noexcept</argsstring>
+        <name>to_format</name>
+        <param>
+          <type>GLint</type>
+          <declname>internalFormat</declname>
+        </param>
+        <param>
+          <type>GLint</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>GLint</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="749" column="28" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="749" bodyend="1269"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a1b98c01768c7213d7d3f1665475e9fcf" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(sampler_address_mode value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>sampler_address_mode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1271" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1271" bodyend="1300"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a31ae1016c1dbf907c17c1afcff385ddb" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::gfx::conversion::to_gles</definition>
+        <argsstring>(border_color value, GLint sampler) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>border_color</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>GLint</type>
+          <declname>sampler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1302" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1302" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1aecc7df34886477f7af8f44567c66e511" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(cullmode value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>cullmode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1333" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1333" bodyend="1352"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1ad222b8f9bd798cb5bae2be74e3c4cd45" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(compare_op value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>compare_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1354" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1354" bodyend="1385"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1ab73ab89800722efabd95a1e1d951cf6a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(filter value, sampler_mipmap_mode mode) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>filter</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>sampler_mipmap_mode</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1387" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1387" bodyend="1419"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1a6507806cb568333152dc604d0bc39648" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(blend_op value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>blend_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1421" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1421" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="gles_2conversion_8hpp_1afb6c57be138a45e4dc27eeecbf4869bf" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint core::gfx::conversion::to_gles</definition>
+        <argsstring>(blend_factor value) noexcept</argsstring>
+        <name>to_gles</name>
+        <param>
+          <type>blend_factor</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="1445" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" bodystart="1445" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a4bb458e834f9b33b6dc25dbb47151dd1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ShaderStageFlags</type>
+        <definition>vk::ShaderStageFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(shader_stage stage) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5" kindref="member">shader_stage</ref></type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="7" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="7" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1aefe171b034ab7e9980a80ead4ae87465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacecore_1_1gfx_1a217cb4e725d207cca042f2b79b1142b5" kindref="member">shader_stage</ref></type>
+        <definition>shader_stage core::gfx::conversion::to_shader_stage</definition>
+        <argsstring>(vk::ShaderStageFlags flags)</argsstring>
+        <name>to_shader_stage</name>
+        <param>
+          <type>vk::ShaderStageFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="34" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="34" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a14028bb4f4561360c3edefe328399f8c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::VertexInputRate</type>
+        <definition>vk::VertexInputRate core::gfx::conversion::to_vk</definition>
+        <argsstring>(vertex_input_rate value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>vertex_input_rate</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="52" column="28" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="52" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1abc6443b2a68f17d17fc6acc58220666d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vertex_input_rate</type>
+        <definition>vertex_input_rate core::gfx::conversion::to_vertex_input_rate</definition>
+        <argsstring>(vk::VertexInputRate value) noexcept</argsstring>
+        <name>to_vertex_input_rate</name>
+        <param>
+          <type>vk::VertexInputRate</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="67" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ade55cccbd21f8bccf282f0e52004bffa" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::BufferUsageFlags</type>
+        <definition>vk::BufferUsageFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(memory_usage memory) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>memory_usage</type>
+          <declname>memory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="81" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="81" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a34c5e5fb67c1e72b3f99fa6da037206a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>memory_usage</type>
+        <definition>memory_usage core::gfx::conversion::to_memory_usage</definition>
+        <argsstring>(vk::BufferUsageFlags flags) noexcept</argsstring>
+        <name>to_memory_usage</name>
+        <param>
+          <type>vk::BufferUsageFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="120" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="120" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a4d9966b62f5b2a8dcc9a2dd00cc00a97" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::MemoryPropertyFlags</type>
+        <definition>vk::MemoryPropertyFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(memory_property memory) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>memory_property</type>
+          <declname>memory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="160" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="160" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a702d997d659cfd575ddb3044b024139e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>memory_property</type>
+        <definition>memory_property core::gfx::conversion::to_memory_property</definition>
+        <argsstring>(vk::MemoryPropertyFlags flags) noexcept</argsstring>
+        <name>to_memory_property</name>
+        <param>
+          <type>vk::MemoryPropertyFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="187" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="187" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a83b0a465ff60beb9021546f01e9797bd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ImageViewType</type>
+        <definition>vk::ImageViewType core::gfx::conversion::to_vk</definition>
+        <argsstring>(image_type value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>image_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="216" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="216" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a6f3a77f3fbc91ca7cfb8a65fe5a31a1f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>image_type</type>
+        <definition>image_type core::gfx::conversion::to_image_type</definition>
+        <argsstring>(vk::ImageViewType value) noexcept</argsstring>
+        <name>to_image_type</name>
+        <param>
+          <type>vk::ImageViewType</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="247" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="247" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1af8e6e2bfb4497f1523f176f209e58ba2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ImageType</type>
+        <definition>vk::ImageType core::gfx::conversion::to_type</definition>
+        <argsstring>(image_type value) noexcept</argsstring>
+        <name>to_type</name>
+        <param>
+          <type>image_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="278" column="22" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="278" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a2d0c8f949bd6eaed6b0b78c48540d202" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ImageAspectFlags</type>
+        <definition>vk::ImageAspectFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(image_aspect value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>image_aspect</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="308" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a6bab1a7ce82f66d400b4ce7039d5c9d9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>image_aspect</type>
+        <definition>image_aspect core::gfx::conversion::to_image_aspect</definition>
+        <argsstring>(vk::ImageAspectFlags value) noexcept</argsstring>
+        <name>to_image_aspect</name>
+        <param>
+          <type>vk::ImageAspectFlags</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="313" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="313" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a5a40b0d2edf67b23ab014d007049f745" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ImageUsageFlags</type>
+        <definition>vk::ImageUsageFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(image_usage value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>image_usage</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="318" column="28" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ab1739f935276dc91029e97b5a012d4f1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>image_usage</type>
+        <definition>image_usage core::gfx::conversion::to_image_usage</definition>
+        <argsstring>(vk::ImageUsageFlags value) noexcept</argsstring>
+        <name>to_image_usage</name>
+        <param>
+          <type>vk::ImageUsageFlags</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="323" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a52d3e81aaa60099fb1dc573941d3c669" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ColorComponentFlags</type>
+        <definition>vk::ColorComponentFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(component_bits value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>component_bits</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="328" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="328" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ae3e368bd3c824cd2f797615976761a56" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>component_bits</type>
+        <definition>component_bits core::gfx::conversion::to_component_bits</definition>
+        <argsstring>(vk::ColorComponentFlags value) noexcept</argsstring>
+        <name>to_component_bits</name>
+        <param>
+          <type>vk::ColorComponentFlags</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="333" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a201b98ced1b71a845a89c1862c3d851c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>format_t</type>
+        <definition>format_t core::gfx::conversion::to_format</definition>
+        <argsstring>(vk::Format value) noexcept</argsstring>
+        <name>to_format</name>
+        <param>
+          <type>vk::Format</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="339" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="339" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a02aedadd7efcc49708edeea522c51d55" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::Format</type>
+        <definition>vk::Format core::gfx::conversion::to_vk</definition>
+        <argsstring>(format_t value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>format_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="783" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="783" bodyend="1238"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a73b0698af981bac707aea33277e4a7b3" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::SamplerMipmapMode</type>
+        <definition>vk::SamplerMipmapMode core::gfx::conversion::to_vk</definition>
+        <argsstring>(sampler_mipmap_mode value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>sampler_mipmap_mode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1239" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1239" bodyend="1242"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a90c2d428393595d8e81904dccfc4ec6a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::SamplerAddressMode</type>
+        <definition>vk::SamplerAddressMode core::gfx::conversion::to_vk</definition>
+        <argsstring>(sampler_address_mode value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>sampler_address_mode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1244" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1244" bodyend="1247"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a48b94533a52bacc6718fa86d32cd50b9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::BorderColor</type>
+        <definition>vk::BorderColor core::gfx::conversion::to_vk</definition>
+        <argsstring>(border_color value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>border_color</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1249" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1249" bodyend="1252"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a7e2611d1aef5ab8f6ecc752ea57412a2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::CullModeFlags</type>
+        <definition>vk::CullModeFlags core::gfx::conversion::to_vk</definition>
+        <argsstring>(cullmode value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>cullmode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1254" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1254" bodyend="1257"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ab02c321d645e6905a0fffecdcd223b99" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>cullmode</type>
+        <definition>cullmode core::gfx::conversion::to_cullmode</definition>
+        <argsstring>(vk::CullModeFlags value) noexcept</argsstring>
+        <name>to_cullmode</name>
+        <param>
+          <type>vk::CullModeFlags</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1259" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1259" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a77e7ad4a77fc00437d6a25ca9febaa9a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::CompareOp</type>
+        <definition>vk::CompareOp core::gfx::conversion::to_vk</definition>
+        <argsstring>(compare_op value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>compare_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1265" column="22" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1265" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a025735d85c2bcc5b7aa544350e9dc82f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>compare_op</type>
+        <definition>compare_op core::gfx::conversion::to_compare_op</definition>
+        <argsstring>(vk::CompareOp value) noexcept</argsstring>
+        <name>to_compare_op</name>
+        <param>
+          <type>vk::CompareOp</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1270" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1270" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a25e1f572806f485ce1c55013fa036607" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::Filter</type>
+        <definition>vk::Filter core::gfx::conversion::to_vk</definition>
+        <argsstring>(filter value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>filter</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1275" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1275" bodyend="1278"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a39478bc847e60f8c0f6891eb306bb985" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::DescriptorType</type>
+        <definition>vk::DescriptorType core::gfx::conversion::to_vk</definition>
+        <argsstring>(binding_type value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0d" kindref="member">binding_type</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1280" column="27" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1280" bodyend="1320"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1af08457a125e5f390049d279027e07211" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacecore_1_1gfx_1a9fcccb41f69111c6c1c029013c2ffa0d" kindref="member">binding_type</ref></type>
+        <definition>binding_type core::gfx::conversion::to_binding_type</definition>
+        <argsstring>(vk::DescriptorType value) noexcept</argsstring>
+        <name>to_binding_type</name>
+        <param>
+          <type>vk::DescriptorType</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1322" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1322" bodyend="1362"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a77d24987b2bb2bc6de49e1c18fd03f61" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::BlendOp</type>
+        <definition>vk::BlendOp core::gfx::conversion::to_vk</definition>
+        <argsstring>(blend_op value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>blend_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1363" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1363" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a85bdb391e027d9904be9ca2ed8f2a8f2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>blend_op</type>
+        <definition>blend_op core::gfx::conversion::to_blend_op</definition>
+        <argsstring>(vk::BlendOp value) noexcept</argsstring>
+        <name>to_blend_op</name>
+        <param>
+          <type>vk::BlendOp</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1368" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1368" bodyend="1371"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ae466996c3ba6c7772b2c0e4a5d736be9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::BlendFactor</type>
+        <definition>vk::BlendFactor core::gfx::conversion::to_vk</definition>
+        <argsstring>(blend_factor value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>blend_factor</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1373" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1373" bodyend="1376"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1af5f11e4730a1797ae72a4d5eef39771f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>blend_factor</type>
+        <definition>blend_factor core::gfx::conversion::to_blend_factor</definition>
+        <argsstring>(vk::BlendFactor value) noexcept</argsstring>
+        <name>to_blend_factor</name>
+        <param>
+          <type>vk::BlendFactor</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1378" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1378" bodyend="1381"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a7c1631fe2e51b763617a37bda9ee5723" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::AttachmentLoadOp</type>
+        <definition>vk::AttachmentLoadOp core::gfx::conversion::to_vk</definition>
+        <argsstring>(core::gfx::attachment::load_op value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>core::gfx::attachment::load_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1383" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1383" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1ac90353bb3d96f577a448c7525fe4a106" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::AttachmentStoreOp</type>
+        <definition>vk::AttachmentStoreOp core::gfx::conversion::to_vk</definition>
+        <argsstring>(core::gfx::attachment::store_op value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>core::gfx::attachment::store_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1396" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1396" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1aa87f56d529b18df1b0d974c4c0be4253" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ImageLayout</type>
+        <definition>vk::ImageLayout core::gfx::conversion::to_vk</definition>
+        <argsstring>(core::gfx::image::layout layout) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>core::gfx::image::layout</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1412" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1412" bodyend="1448"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1acbd45296c378486b376c04fbada675e6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::AttachmentDescription</type>
+        <definition>vk::AttachmentDescription core::gfx::conversion::to_vk</definition>
+        <argsstring>(const core::gfx::attachment &amp;attachment) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>const core::gfx::attachment &amp;</type>
+          <declname>attachment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1450" column="34" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1450" bodyend="1461"/>
+      </memberdef>
+      <memberdef kind="function" id="vk_2conversion_8hpp_1a748e9cf09b05cd5f3f03b0cc82655a7d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vk::ClearValue</type>
+        <definition>vk::ClearValue core::gfx::conversion::to_vk</definition>
+        <argsstring>(const core::gfx::clear_value &amp;clear_value) noexcept</argsstring>
+        <name>to_vk</name>
+        <param>
+          <type>const core::gfx::clear_value &amp;</type>
+          <declname>clear_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" line="1463" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/conversion.hpp" bodystart="1463" bodyend="1476"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/conversion.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

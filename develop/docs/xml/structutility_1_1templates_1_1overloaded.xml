@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1overloaded" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::overloaded</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Ts</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="62" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="61" bodyend="64"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

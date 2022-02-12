@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1graph" kind="class" language="C++" prot="public">
+    <compoundname>psl::graph</compoundname>
+    <innerclass refid="structpsl_1_1graph_1_1node" prot="private">psl::graph::node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1graph_1a2864be3f9fd75de5d16d10a821926446" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; T * &gt;</type>
+        <definition>psl::array&lt;T*&gt; psl::graph&lt; T &gt;::m_Heads</definition>
+        <argsstring></argsstring>
+        <name>m_Heads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="202" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1graph_1af2a1287da4d6e7155e87fb39faf2f79c" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::pair&lt; node *, psl::array&lt; node * &gt; &gt; &gt;</type>
+        <definition>psl::array&lt;std::pair&lt;node*, psl::array&lt;node*&gt; &gt; &gt; psl::graph&lt; T &gt;::m_Edges</definition>
+        <argsstring></argsstring>
+        <name>m_Edges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="203" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1graph_1a0bec46972de0feb4d2ae3ee656a41ac8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::graph&lt; T &gt;::~graph</definition>
+        <argsstring>()</argsstring>
+        <name>~graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="30" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1a8de80e36d6e8190bdf40fd8382598eb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* psl::graph&lt; T &gt;::emplace</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>emplace</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="38" column="3" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1ac234afd347147413d30a5379cc96177b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Key</type>
+          </param>
+          <param>
+            <type>typename Fn</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* psl::graph&lt; T &gt;::find_if</definition>
+        <argsstring>(const Key &amp;value, Fn &amp;&amp;fn) const noexcept</argsstring>
+        <name>find_if</name>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Fn &amp;&amp;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="46" column="3" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1a5363e7b50e3d544cae5f78dac93dfd75" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Key</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* psl::graph&lt; T &gt;::find</definition>
+        <argsstring>(const Key &amp;value) const noexcept</argsstring>
+        <name>find</name>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="56" column="3" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1ae6a4afa88071bb3e5a56dca58fabdfdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::graph&lt; T &gt;::connect</definition>
+        <argsstring>(T *source, T *target)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="65" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="65" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1aa758cd525d280bef9e278e4eb969efc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::graph&lt; T &gt;::disconnect</definition>
+        <argsstring>(T *source, T *target)</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="90" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="90" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1ab7bc1c5a4c9eef3f496387d5168d6b2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::graph&lt; T &gt;::disconnect</definition>
+        <argsstring>(T *source)</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="116" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="116" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1aaeac78fa922592d015659bc2af9bd813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::graph&lt; T &gt;::erase</definition>
+        <argsstring>(T *source)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="146" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="146" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1a6374251b11b2f96c2fd15e4ad5501291" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool psl::graph&lt; T &gt;::is_head</definition>
+        <argsstring>(T *value) const noexcept</argsstring>
+        <name>is_head</name>
+        <param>
+          <type>T *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="162" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1graph_1ad49656d0dec8255a48b447fddabfd5ea" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array&lt; T * &gt;</type>
+        <definition>psl::array&lt;T*&gt; psl::graph&lt; T &gt;::to_array</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>to_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="167" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="167" bodyend="199"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp" bodystart="21" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1graph_1ae6a4afa88071bb3e5a56dca58fabdfdf" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>connect</name></member>
+      <member refid="classpsl_1_1graph_1aa758cd525d280bef9e278e4eb969efc7" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>disconnect</name></member>
+      <member refid="classpsl_1_1graph_1ab7bc1c5a4c9eef3f496387d5168d6b2f" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>disconnect</name></member>
+      <member refid="classpsl_1_1graph_1a8de80e36d6e8190bdf40fd8382598eb2" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>emplace</name></member>
+      <member refid="classpsl_1_1graph_1aaeac78fa922592d015659bc2af9bd813" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>erase</name></member>
+      <member refid="classpsl_1_1graph_1a5363e7b50e3d544cae5f78dac93dfd75" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>find</name></member>
+      <member refid="classpsl_1_1graph_1ac234afd347147413d30a5379cc96177b" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>find_if</name></member>
+      <member refid="classpsl_1_1graph_1a6374251b11b2f96c2fd15e4ad5501291" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>is_head</name></member>
+      <member refid="classpsl_1_1graph_1af2a1287da4d6e7155e87fb39faf2f79c" prot="private" virt="non-virtual"><scope>psl::graph</scope><name>m_Edges</name></member>
+      <member refid="classpsl_1_1graph_1a2864be3f9fd75de5d16d10a821926446" prot="private" virt="non-virtual"><scope>psl::graph</scope><name>m_Heads</name></member>
+      <member refid="classpsl_1_1graph_1ad49656d0dec8255a48b447fddabfd5ea" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>to_array</name></member>
+      <member refid="classpsl_1_1graph_1a0bec46972de0feb4d2ae3ee656a41ac8" prot="public" virt="non-virtual"><scope>psl::graph</scope><name>~graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

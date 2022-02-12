@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1is__invocable" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::is_invocable</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1is__invocable_1a0705af67b2802abb745083c7dbd35a7b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool utility::templates::is_invocable&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= sizeof(test(std::declval&lt;T&gt;())) == sizeof(long)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="625" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1templates_1_1is__invocable_1a9cc871bfa3bb012e1287c49cb7f4bc36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>decltype(&amp;T::operator())</defval>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long utility::templates::is_invocable&lt; T &gt;::test</definition>
+        <argsstring>(const U &amp;&amp;)</argsstring>
+        <name>test</name>
+        <param>
+          <type>const U &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="622" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1templates_1_1is__invocable_1ab7a29a9fe9924dd7546d27a8ca84ee2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char utility::templates::is_invocable&lt; T &gt;::test</definition>
+        <argsstring>(...)</argsstring>
+        <name>test</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="623" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="620" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="619" bodyend="626"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1is__invocable_1a9cc871bfa3bb012e1287c49cb7f4bc36" prot="public" virt="non-virtual"><scope>utility::templates::is_invocable</scope><name>test</name></member>
+      <member refid="structutility_1_1templates_1_1is__invocable_1ab7a29a9fe9924dd7546d27a8ca84ee2f" prot="public" virt="non-virtual"><scope>utility::templates::is_invocable</scope><name>test</name></member>
+      <member refid="structutility_1_1templates_1_1is__invocable_1a0705af67b2802abb745083c7dbd35a7b" prot="public" virt="non-virtual"><scope>utility::templates::is_invocable</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

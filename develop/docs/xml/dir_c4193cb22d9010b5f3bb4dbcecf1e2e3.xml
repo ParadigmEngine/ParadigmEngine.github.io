@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c4193cb22d9010b5f3bb4dbcecf1e2e3" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/math/AVX2</compoundname>
+    <innerfile refid="_a_v_x2_2matrix_8hpp">matrix.hpp</innerfile>
+    <innerfile refid="_a_v_x2_2quaternion_8hpp">quaternion.hpp</innerfile>
+    <innerfile refid="_a_v_x2_2vec_8hpp">vec.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/AVX2/"/>
+  </compounddef>
+</doxygen>

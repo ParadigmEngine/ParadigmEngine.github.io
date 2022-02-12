@@ -1,0 +1,126 @@
+\hypertarget{classcore_1_1resource_1_1handle}{}\doxysection{core\+::resource\+::handle$<$ T $>$ Class Template Reference}
+\label{classcore_1_1resource_1_1handle}\index{core::resource::handle$<$ T $>$@{core::resource::handle$<$ T $>$}}
+
+
+wraps around a resource for sharing and management purposes.  
+
+
+
+
+{\ttfamily \#include $<$handle.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aacf4cfb1413686d0c97d3ecf792fc9a3}\label{classcore_1_1resource_1_1handle_aacf4cfb1413686d0c97d3ecf792fc9a3}} 
+using {\bfseries value\+\_\+type} = std\+::remove\+\_\+cv\+\_\+t$<$ std\+::remove\+\_\+const\+\_\+t$<$ T $>$ $>$
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a18d3587a0882e8391a4604d60292b75b}\label{classcore_1_1resource_1_1handle_a18d3587a0882e8391a4604d60292b75b}} 
+using {\bfseries meta\+\_\+type} = typename resource\+\_\+traits$<$ value\+\_\+type $>$\+::meta\+\_\+type
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a1815d9f93712f03ec3f6dea86919aff1}\label{classcore_1_1resource_1_1handle_a1815d9f93712f03ec3f6dea86919aff1}} 
+using {\bfseries alias\+\_\+type} = typename details\+::alias\+\_\+type$<$ value\+\_\+type $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_afa3b83edad0ce031760d8408c860cc1b}\label{classcore_1_1resource_1_1handle_afa3b83edad0ce031760d8408c860cc1b}} 
+{\footnotesize template$<$typename... Ts$>$ }\\{\bfseries handle} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}}$<$ alias$<$ Ts... $>$$>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_ad114aaa9ae89c74707bbda8fa54ab8dc}\label{classcore_1_1resource_1_1handle_ad114aaa9ae89c74707bbda8fa54ab8dc}} 
+{\footnotesize template$<$typename Y $>$ }\\{\bfseries handle} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}}$<$ Y $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a8e1364b6a755dd8fed225b74c6330c28}\label{classcore_1_1resource_1_1handle_a8e1364b6a755dd8fed225b74c6330c28}} 
+{\bfseries handle} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \&other) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_af1f032c944fd958e0b5b90ed69aa67ee}\label{classcore_1_1resource_1_1handle_af1f032c944fd958e0b5b90ed69aa67ee}} 
+{\bfseries handle} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aa078209b727b8537655cf5c4c1eb2577}\label{classcore_1_1resource_1_1handle_aa078209b727b8537655cf5c4c1eb2577}} 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \&other)
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_ab51bfeb5164a46c6345e898abf835dc2}\label{classcore_1_1resource_1_1handle_ab51bfeb5164a46c6345e898abf835dc2}} 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a6816fd39deb241ca64b92d18d7328844}\label{classcore_1_1resource_1_1handle_a6816fd39deb241ca64b92d18d7328844}} 
+\mbox{\hyperlink{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bf}{status}} {\bfseries state} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a12bcbd7140cdbaab9f90377ca99d361c}\label{classcore_1_1resource_1_1handle_a12bcbd7140cdbaab9f90377ca99d361c}} 
+value\+\_\+type \& {\bfseries value} () noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_ac39d8fb8bebaf28b9b4eab79c14802fe}\label{classcore_1_1resource_1_1handle_ac39d8fb8bebaf28b9b4eab79c14802fe}} 
+const value\+\_\+type \& {\bfseries value} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a948f61cfec306dc810a2ed7e7b721e92}\label{classcore_1_1resource_1_1handle_a948f61cfec306dc810a2ed7e7b721e92}} 
+bool {\bfseries try\+\_\+get} (value\+\_\+type \&out) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a2661705463eac2c82c174575ed735f83}\label{classcore_1_1resource_1_1handle_a2661705463eac2c82c174575ed735f83}} 
+{\footnotesize template$<$typename Y $>$ }\\bool {\bfseries operator==} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}}$<$ Y $>$ \&other) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_af88868117926006f48a7f0b44a9db7eb}\label{classcore_1_1resource_1_1handle_af88868117926006f48a7f0b44a9db7eb}} 
+{\footnotesize template$<$typename Y $>$ }\\bool {\bfseries operator!=} (const \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}}$<$ Y $>$ \&other) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_ab7a24df13efccad29983af92f79b0a63}\label{classcore_1_1resource_1_1handle_ab7a24df13efccad29983af92f79b0a63}} 
+{\footnotesize template$<$typename Y $>$ }\\bool {\bfseries operator==} (const weak\+\_\+handle$<$ Y $>$ \&other) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a7f44dde41408053686d7205345de4d41}\label{classcore_1_1resource_1_1handle_a7f44dde41408053686d7205345de4d41}} 
+{\footnotesize template$<$typename Y $>$ }\\bool {\bfseries operator!=} (const weak\+\_\+handle$<$ Y $>$ \&other) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_acf00fcc01ba145c31c2163ee647be256}\label{classcore_1_1resource_1_1handle_acf00fcc01ba145c31c2163ee647be256}} 
+{\bfseries operator bool} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_abba42e0728189be8544132157cf27db1}\label{classcore_1_1resource_1_1handle_abba42e0728189be8544132157cf27db1}} 
+meta\+\_\+type $\ast$ {\bfseries meta} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a97cb020df4356b3e44ef2f5829fdd6b1}\label{classcore_1_1resource_1_1handle_a97cb020df4356b3e44ef2f5829fdd6b1}} 
+\mbox{\hyperlink{structcore_1_1resource_1_1metadata}{metadata}} const  $\ast$ {\bfseries resource\+\_\+metadata} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a2b7e496c28aaa6b8521f2c9f52e6bdd3}\label{classcore_1_1resource_1_1handle_a2b7e496c28aaa6b8521f2c9f52e6bdd3}} 
+cache\+\_\+t $\ast$ {\bfseries cache} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_afc8bc22ed03125fa820b2b4b557f5d33}\label{classcore_1_1resource_1_1handle_afc8bc22ed03125fa820b2b4b557f5d33}} 
+value\+\_\+type const  $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a054d60ef3420777f2c0b70fb16a4d9ea}\label{classcore_1_1resource_1_1handle_a054d60ef3420777f2c0b70fb16a4d9ea}} 
+value\+\_\+type $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aece1af7d18e0455246122fc85033e4c6}\label{classcore_1_1resource_1_1handle_aece1af7d18e0455246122fc85033e4c6}} 
+\mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} {\bfseries uid} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aa2415d85296662c0d7c18e36c5ce1e0f}\label{classcore_1_1resource_1_1handle_aa2415d85296662c0d7c18e36c5ce1e0f}} 
+const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \& {\bfseries uid} () noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aacaea9f656731fc83050aa996772fcfd}\label{classcore_1_1resource_1_1handle_aacaea9f656731fc83050aa996772fcfd}} 
+{\bfseries operator const psl\+::\+U\+I\+D \&} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a625b602feb1ef9cd2419153dbbdf3383}\label{classcore_1_1resource_1_1handle_a625b602feb1ef9cd2419153dbbdf3383}} 
+{\bfseries operator psl\+::view\+\_\+ptr$<$ meta\+\_\+type $>$} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aba4cf065279eed39b837dafdd1fadb02}\label{classcore_1_1resource_1_1handle_aba4cf065279eed39b837dafdd1fadb02}} 
+{\bfseries operator tag$<$ T $>$} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_a248bd0c4cead53c420012a02066927fd}\label{classcore_1_1resource_1_1handle_a248bd0c4cead53c420012a02066927fd}} 
+class {\bfseries cache\+\_\+t}
+\item 
+\mbox{\Hypertarget{classcore_1_1resource_1_1handle_aad9607d7305b118fb8da77768b5c20bc}\label{classcore_1_1resource_1_1handle_aad9607d7305b118fb8da77768b5c20bc}} 
+class {\bfseries weak\+\_\+handle$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class core\+::resource\+::handle$<$ T $>$}
+
+resource handles are used to manage the lifetime of resources, and tracking dependencies (i.\+e. who uses what). It is supposed to be used with a core\+::resource\+::cache\+\_\+t. 
+
+Definition at line 31 of file resource.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/fwd/resource/resource.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/inc/resource/handle.\+hpp\end{DoxyCompactItemize}

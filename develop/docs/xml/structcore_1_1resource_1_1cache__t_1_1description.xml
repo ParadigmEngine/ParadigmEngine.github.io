@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource_1_1cache__t_1_1description" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource::cache_t::description</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1resource_1_1cache__t_1_1description_1a409b917e911d3d16fe55b061f8f07b48" prot="public" static="no" mutable="no">
+        <type><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">metadata</ref></type>
+        <definition>metadata core::resource::cache_t::description::metaData</definition>
+        <argsstring></argsstring>
+        <name>metaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="118" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1cache__t_1_1description_1abd0f60ab0bb2056af97495c91e5392bd" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* core::resource::cache_t::description::resource</definition>
+        <argsstring></argsstring>
+        <name>resource</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="119" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1cache__t_1_1description_1ae642dd053a2bcc69d90e2d33c3790491" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::resource::cache_t::description::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="120" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>core::resource::metadata</label>
+        <link refid="structcore_1_1resource_1_1metadata"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>resource_uid</edgelabel>
+          <edgelabel>uid</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>psl::UID</label>
+        <link refid="structpsl_1_1_u_i_d"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>invalid_uid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>core::resource::cache_t::description</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>metaData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="117" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="116" bodyend="121"/>
+    <listofallmembers>
+      <member refid="structcore_1_1resource_1_1cache__t_1_1description_1ae642dd053a2bcc69d90e2d33c3790491" prot="public" virt="non-virtual"><scope>core::resource::cache_t::description</scope><name>age</name></member>
+      <member refid="structcore_1_1resource_1_1cache__t_1_1description_1a409b917e911d3d16fe55b061f8f07b48" prot="public" virt="non-virtual"><scope>core::resource::cache_t::description</scope><name>metaData</name></member>
+      <member refid="structcore_1_1resource_1_1cache__t_1_1description_1abd0f60ab0bb2056af97495c91e5392bd" prot="public" virt="non-virtual"><scope>core::resource::cache_t::description</scope><name>resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

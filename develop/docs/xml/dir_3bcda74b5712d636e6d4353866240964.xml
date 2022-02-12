@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_3bcda74b5712d636e6d4353866240964" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/gles</compoundname>
+    <innerdir refid="dir_6a938249ad2720c7dd6031e701c92004">/home/runner/work/paradigm/paradigm/core/inc/gles/details</innerdir>
+    <innerfile refid="core_2inc_2gles_2buffer_8hpp">buffer.hpp</innerfile>
+    <innerfile refid="gles_2compute_8hpp">compute.hpp</innerfile>
+    <innerfile refid="gles_2computepass_8hpp">computepass.hpp</innerfile>
+    <innerfile refid="gles_2context_8hpp">context.hpp</innerfile>
+    <innerfile refid="gles_2conversion_8hpp">conversion.hpp</innerfile>
+    <innerfile refid="gles_2drawpass_8hpp">drawpass.hpp</innerfile>
+    <innerfile refid="gles_2framebuffer_8hpp">framebuffer.hpp</innerfile>
+    <innerfile refid="gles_2geometry_8hpp">geometry.hpp</innerfile>
+    <innerfile refid="igles_8hpp">igles.hpp</innerfile>
+    <innerfile refid="gles_2material_8hpp">material.hpp</innerfile>
+    <innerfile refid="program_8hpp">program.hpp</innerfile>
+    <innerfile refid="program__cache_8hpp">program_cache.hpp</innerfile>
+    <innerfile refid="gles_2sampler_8hpp">sampler.hpp</innerfile>
+    <innerfile refid="gles_2shader_8hpp">shader.hpp</innerfile>
+    <innerfile refid="gles_2swapchain_8hpp">swapchain.hpp</innerfile>
+    <innerfile refid="gles_2texture_8hpp">texture.hpp</innerfile>
+    <innerfile refid="gles_2types_8hpp">types.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/"/>
+  </compounddef>
+</doxygen>

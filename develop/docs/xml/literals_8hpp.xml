@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="literals_8hpp" kind="file" language="C++">
+    <compoundname>literals.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="stdafx__psl_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp</label>
+        <link refid="literals_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp</label>
+        <link refid="stdafx__psl_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp</label>
+        <link refid="stdafx_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp</label>
+        <link refid="literals_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/stdafx_psl.cpp</label>
+        <link refid="stdafx__psl_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="literals_8hpp_1a98ac6f75f55875dbcf6731666ca8fb03" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr std::uint8_t</type>
+        <definition>constexpr std::uint8_t operator&quot;&quot;_ui8</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_ui8</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>compile-time uint8_t literal operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to convert to uint8_t. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the uint8_t value based on the input value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="7" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a41ab77b2497b77d62c997dd5bd229116" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr std::uint16_t</type>
+        <definition>constexpr std::uint16_t operator&quot;&quot;_ui16</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_ui16</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>compile-time uint16_t literal operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to convert to uint16_t. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the uint16_t value based on the input value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="12" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1ab90e45ef3ad2c591065eee7fbcec0d44" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr std::uint32_t</type>
+        <definition>constexpr std::uint32_t operator&quot;&quot;_ui32</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_ui32</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>compile-time uint32_t literal operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to convert to uint32_t. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the uint32_t value based on the input value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="17" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a279bc4454fc9bf54b3005463790aaf97" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr std::uint64_t</type>
+        <definition>constexpr std::uint64_t operator&quot;&quot;_ui64</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_ui64</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>compile-time uint64_t literal operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to convert to uint64_t. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the uint64_t value based on the input value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="22" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a32ef4ffac6bf971cc3dd8c49c18b37ec" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr long double</type>
+        <definition>constexpr long double operator&quot;&quot;_deg_to_rad</definition>
+        <argsstring>(long double deg)</argsstring>
+        <name>operator&quot;&quot;_deg_to_rad</name>
+        <param>
+          <type>long double</type>
+          <declname>deg</declname>
+        </param>
+        <briefdescription>
+<para>compile-time degree to radians literal operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">deg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to convert to radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the radians value based on the input value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="27" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1ac03fe1030e895ef4760231f78b9c4612" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_gb</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_gb</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="29" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a7b5d96ab358aaba72ef31bb189f88caa" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_gbit</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_gbit</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="31" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a4473b6d90d9907ba1e0df02917bee0f0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_mb</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_mb</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="33" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a93fb3dd1933dfd5b58b36e9674466619" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_mbit</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_mbit</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="35" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1a2c144b30ded39606f5d67b06f449b691" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_kb</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_kb</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="37" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="literals_8hpp_1adbc24bd7fe15911bff7748fac4fb502d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t operator&quot;&quot;_kbit</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>operator&quot;&quot;_kbit</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" line="39" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">constexpr<sp/>std::uint8_t<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>_ui8(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value);<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">constexpr<sp/>std::uint16_t<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>_ui16(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value);<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">constexpr<sp/>std::uint32_t<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>_ui32(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value);<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">constexpr<sp/>std::uint64_t<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>_ui64(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::uint64_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value);<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>_deg_to_rad(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deg)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>deg<sp/>*<sp/>3.141592<sp/>/<sp/>180;<sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_gb(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>1073741824;<sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_gbit(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>8589934592;<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_mb(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>1048576;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_mbit(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>8388608;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_kb(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>1024;<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">_kbit(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>*<sp/>8192;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/literals.hpp"/>
+  </compounddef>
+</doxygen>

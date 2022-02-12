@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classformatted__string__buffer" kind="class" language="C++" prot="public">
+    <compoundname>formatted_string_buffer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classformatted__string__buffer_1ab35cfb11351ecf728c14277b00dd2e9d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; psl::string8_t &gt;</type>
+        <definition>std::vector&lt;psl::string8_t&gt; formatted_string_buffer::m_Buffer</definition>
+        <argsstring></argsstring>
+        <name>m_Buffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="19" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classformatted__string__buffer_1a0e8724bf89b873cb8adef719feb49788" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int formatted_string_buffer::m_IndentLevel</definition>
+        <argsstring></argsstring>
+        <name>m_IndentLevel</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="20" column="14" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classformatted__string__buffer_1a1e7df5482729a2caf61ea3198fb0b8fd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool formatted_string_buffer::hasDivider</definition>
+        <argsstring></argsstring>
+        <name>hasDivider</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="21" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classformatted__string__buffer_1a8520b79ba15b40202e6a0683e59d91bd" prot="private" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t formatted_string_buffer::dividerOpen</definition>
+        <argsstring></argsstring>
+        <name>dividerOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="22" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classformatted__string__buffer_1a92f2dce32a81ab63785cddf3f6063b58" prot="private" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t formatted_string_buffer::dividerClose</definition>
+        <argsstring></argsstring>
+        <name>dividerClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="23" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classformatted__string__buffer_1a87558c7261999ae90e084c616c377e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>formatted_string_buffer::formatted_string_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>formatted_string_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="8" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1a967d07cdb729bb0ede0b9f1ca69abb03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>formatted_string_buffer::formatted_string_buffer</definition>
+        <argsstring>(const psl::string8_t &amp;dividerOpen, const psl::string8_t &amp;dividerClose)</argsstring>
+        <name>formatted_string_buffer</name>
+        <param>
+          <type>const psl::string8_t &amp;</type>
+          <declname>dividerOpen</declname>
+        </param>
+        <param>
+          <type>const psl::string8_t &amp;</type>
+          <declname>dividerClose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="9" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1a43c2311d6f850b145788b312504f5ec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>formatted_string_buffer::~formatted_string_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~formatted_string_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1adfc874032a91067ca8279b665774347e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void formatted_string_buffer::emplace_back</definition>
+        <argsstring>(const psl::string8_t &amp;text)</argsstring>
+        <name>emplace_back</name>
+        <param>
+          <type>const psl::string8_t &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="12" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1af7f54c97adb0515f0b0481b9589241ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void formatted_string_buffer::IncreaseIndent</definition>
+        <argsstring>()</argsstring>
+        <name>IncreaseIndent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="13" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="21" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1a3cc3f6941bac60594eae6c8db6cb8baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void formatted_string_buffer::DecreaseIndent</definition>
+        <argsstring>()</argsstring>
+        <name>DecreaseIndent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="14" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="32" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classformatted__string__buffer_1a5ffca9fb0f41caaa3a6f8c8a5e336075" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t formatted_string_buffer::ToString</definition>
+        <argsstring>() const</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="15" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/formatted_string_buffer.cpp" bodystart="43" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" line="6" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/formatted_string_buffer.hpp" bodystart="5" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classformatted__string__buffer_1a3cc3f6941bac60594eae6c8db6cb8baf" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>DecreaseIndent</name></member>
+      <member refid="classformatted__string__buffer_1a92f2dce32a81ab63785cddf3f6063b58" prot="private" virt="non-virtual"><scope>formatted_string_buffer</scope><name>dividerClose</name></member>
+      <member refid="classformatted__string__buffer_1a8520b79ba15b40202e6a0683e59d91bd" prot="private" virt="non-virtual"><scope>formatted_string_buffer</scope><name>dividerOpen</name></member>
+      <member refid="classformatted__string__buffer_1adfc874032a91067ca8279b665774347e" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>emplace_back</name></member>
+      <member refid="classformatted__string__buffer_1a87558c7261999ae90e084c616c377e8d" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>formatted_string_buffer</name></member>
+      <member refid="classformatted__string__buffer_1a967d07cdb729bb0ede0b9f1ca69abb03" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>formatted_string_buffer</name></member>
+      <member refid="classformatted__string__buffer_1a1e7df5482729a2caf61ea3198fb0b8fd" prot="private" virt="non-virtual"><scope>formatted_string_buffer</scope><name>hasDivider</name></member>
+      <member refid="classformatted__string__buffer_1af7f54c97adb0515f0b0481b9589241ae" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>IncreaseIndent</name></member>
+      <member refid="classformatted__string__buffer_1ab35cfb11351ecf728c14277b00dd2e9d" prot="private" virt="non-virtual"><scope>formatted_string_buffer</scope><name>m_Buffer</name></member>
+      <member refid="classformatted__string__buffer_1a0e8724bf89b873cb8adef719feb49788" prot="private" virt="non-virtual"><scope>formatted_string_buffer</scope><name>m_IndentLevel</name></member>
+      <member refid="classformatted__string__buffer_1a5ffca9fb0f41caaa3a6f8c8a5e336075" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>ToString</name></member>
+      <member refid="classformatted__string__buffer_1a43c2311d6f850b145788b312504f5ec1" prot="public" virt="non-virtual"><scope>formatted_string_buffer</scope><name>~formatted_string_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

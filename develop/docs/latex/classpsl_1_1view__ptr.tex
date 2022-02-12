@@ -1,0 +1,83 @@
+\hypertarget{classpsl_1_1view__ptr}{}\doxysection{psl\+::view\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{classpsl_1_1view__ptr}\index{psl::view\_ptr$<$ T $>$@{psl::view\_ptr$<$ T $>$}}
+
+
+a non-\/owning \textquotesingle{}smart\textquotesingle{} pointer type  
+
+
+
+
+{\ttfamily \#include $<$view\+\_\+ptr.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a1afc43ccc407d423fcab2f474ac83de9}\label{classpsl_1_1view__ptr_a1afc43ccc407d423fcab2f474ac83de9}} 
+using {\bfseries element\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a6a59149f2ff99ea29a0fc2c51b873f67}\label{classpsl_1_1view__ptr_a6a59149f2ff99ea29a0fc2c51b873f67}} 
+using {\bfseries pointer} = T $\ast$
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a6f81706b94281c5de61e625c99efc8fd}\label{classpsl_1_1view__ptr_a6f81706b94281c5de61e625c99efc8fd}} 
+using {\bfseries reference} = T \&
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a62de55a767d0c129faa8d89c885091aa}\label{classpsl_1_1view__ptr_a62de55a767d0c129faa8d89c885091aa}} 
+constexpr {\bfseries view\+\_\+ptr} (pointer value) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a25b18f21b66874fb4037496116d3555c}\label{classpsl_1_1view__ptr_a25b18f21b66874fb4037496116d3555c}} 
+{\footnotesize template$<$typename T2 $>$ }\\constexpr {\bfseries view\+\_\+ptr} (const psl\+::unique\+\_\+ptr$<$ T2 $>$ \&value) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a4d935507471f5df68b7b28adcc0ebf1b}\label{classpsl_1_1view__ptr_a4d935507471f5df68b7b28adcc0ebf1b}} 
+{\bfseries view\+\_\+ptr} (const \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_afd78dcad49e826d8bf11653e8f4ec418}\label{classpsl_1_1view__ptr_afd78dcad49e826d8bf11653e8f4ec418}} 
+{\bfseries view\+\_\+ptr} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a452c7e4b04f571d602ba97b1c282f565}\label{classpsl_1_1view__ptr_a452c7e4b04f571d602ba97b1c282f565}} 
+\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \& {\bfseries operator=} (const \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a9517c30bef609726824d6dbdf207f6af}\label{classpsl_1_1view__ptr_a9517c30bef609726824d6dbdf207f6af}} 
+\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a3dd30c18b1a7c2a139f69737c6e186db}\label{classpsl_1_1view__ptr_a3dd30c18b1a7c2a139f69737c6e186db}} 
+constexpr reference {\bfseries get} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_add1545cf38999cf18325c0e12c995db3}\label{classpsl_1_1view__ptr_add1545cf38999cf18325c0e12c995db3}} 
+constexpr reference {\bfseries operator$\ast$} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a96631738566095d8a4cfc14021e374ca}\label{classpsl_1_1view__ptr_a96631738566095d8a4cfc14021e374ca}} 
+constexpr pointer {\bfseries operator-\/$>$} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a3ff09999fb7a578047a2bb61258b7e84}\label{classpsl_1_1view__ptr_a3ff09999fb7a578047a2bb61258b7e84}} 
+constexpr {\bfseries operator bool} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a2739678849f96e56fd1beb0fe7836370}\label{classpsl_1_1view__ptr_a2739678849f96e56fd1beb0fe7836370}} 
+constexpr {\bfseries operator pointer} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_aa4d4e758d6421f17f6d7116c9530cb07}\label{classpsl_1_1view__ptr_aa4d4e758d6421f17f6d7116c9530cb07}} 
+constexpr pointer {\bfseries release} () noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a9226603fd4cea65c9b31377106c78b77}\label{classpsl_1_1view__ptr_a9226603fd4cea65c9b31377106c78b77}} 
+constexpr void {\bfseries reset} (pointer p=nullptr) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1view__ptr_a4bcf63527873c1bfb615b480895b3177}\label{classpsl_1_1view__ptr_a4bcf63527873c1bfb615b480895b3177}} 
+constexpr void {\bfseries swap} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}} \&other) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class psl\+::view\+\_\+ptr$<$ T $>$}
+
+A wrapper object that can contain a pointer to either null, or any type. It will not do any operations on the pointer that would imply ownership (such as cleaning up). 
+
+Definition at line 14 of file view\+\_\+ptr.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/view\+\_\+ptr.\+hpp\end{DoxyCompactItemize}

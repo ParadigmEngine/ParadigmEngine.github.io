@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource_1_1details_1_1is__valid__alias_3_01_c_00_01alias_3_01_ts_8_8_8_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource::details::is_valid_alias&lt; C, alias&lt; Ts... &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename C</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structcore_1_1resource_1_1details_1_1is__valid__alias_3_01_c_00_01alias_3_01_ts_8_8_8_01_4_01_4_1aa02dc33b751ef9b4c724ad5c68591592" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool core::resource::details::is_valid_alias&lt; C, alias&lt; Ts... &gt; &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{std::is_constructible_v&lt;C, <ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle</ref>&lt;alias&lt;Ts...&gt;&gt;&amp;&gt;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="61" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="60" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structcore_1_1resource_1_1details_1_1is__valid__alias_3_01_c_00_01alias_3_01_ts_8_8_8_01_4_01_4_1aa02dc33b751ef9b4c724ad5c68591592" prot="public" virt="non-virtual"><scope>core::resource::details::is_valid_alias&lt; C, alias&lt; Ts... &gt; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

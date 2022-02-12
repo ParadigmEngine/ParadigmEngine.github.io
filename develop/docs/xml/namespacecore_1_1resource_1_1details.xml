@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1resource_1_1details" kind="namespace" language="C++">
+    <compoundname>core::resource::details</compoundname>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1alias__has__type" prot="public">core::resource::details::alias_has_type</innerclass>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1alias__has__type_3_01_t_00_01alias_3_01_ts_8_8_8_01_4_01_4" prot="public">core::resource::details::alias_has_type&lt; T, alias&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1alias__type" prot="public">core::resource::details::alias_type</innerclass>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1alias__type_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1alias__type_01_4_01_4" prot="public">core::resource::details::alias_type&lt; T, std::void_t&lt; typename T::alias_type &gt; &gt;</innerclass>
+    <innerclass refid="classcore_1_1resource_1_1details_1_1container" prot="public">core::resource::details::container</innerclass>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1is__valid__alias" prot="public">core::resource::details::is_valid_alias</innerclass>
+    <innerclass refid="structcore_1_1resource_1_1details_1_1is__valid__alias_3_01_c_00_01alias_3_01_ts_8_8_8_01_4_01_4" prot="public">core::resource::details::is_valid_alias&lt; C, alias&lt; Ts... &gt; &gt;</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cache_8hpp_1a1cdb675f0f8cca0c416652d46a007c28" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr const std::uintptr_t</type>
+        <definition>constexpr const std::uintptr_t core::resource::details::resource_key_var</definition>
+        <argsstring></argsstring>
+        <name>resource_key_var</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="37" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cache_8hpp_1add44d1ff2ef1b62e1994de1e2ea6b972" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr const std::uintptr_t *</type>
+        <definition>constexpr const std::uintptr_t* core::resource::details::resource_key</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>resource_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="40" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="cache_8hpp_1a8b9a689c5156ba7dbc9c7a20ba9703fd" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr resource_key_t</type>
+        <definition>constexpr resource_key_t core::resource::details::key_for</definition>
+        <argsstring>()</argsstring>
+        <name>key_for</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="46" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="cache_8hpp_1a1da33bc877ee22ca880b1dc7a28be6be" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr psl::static_array&lt; resource_key_t, sizeof...(Ts)&gt;</type>
+        <definition>constexpr psl::static_array&lt;resource_key_t, sizeof...(Ts)&gt; core::resource::details::keys_for</definition>
+        <argsstring>(handle&lt; alias&lt; Ts... &gt;&gt; *)</argsstring>
+        <name>keys_for</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle</ref>&lt; alias&lt; Ts... &gt;&gt; *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="79" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="34" column="1"/>
+  </compounddef>
+</doxygen>

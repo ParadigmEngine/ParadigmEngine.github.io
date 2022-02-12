@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_a1556dadab30d217fbfc78bbc628eb33" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl</compoundname>
+    <innerdir refid="dir_e52b4d66bdf46265e4d1ecc7f504bc09">/home/runner/work/paradigm/paradigm/psl/inc</innerdir>
+    <innerdir refid="dir_ce95505a4f9a35434236e25ef01d7805">/home/runner/work/paradigm/paradigm/psl/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/"/>
+  </compounddef>
+</doxygen>

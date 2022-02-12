@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1member__function__serialize_3_01_s_00_01_t_00_01std_1_1c82366e7d9815b03e55403bbebab8c34" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::member_function_serialize&lt; S, T, std::void_t&lt; decltype(::psl::serialization::accessor::serialize(std::declval&lt; S &amp; &gt;(), std::declval&lt; T &amp; &gt;()))&gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename S</type>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="241" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="236" bodyend="241"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

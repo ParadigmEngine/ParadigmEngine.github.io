@@ -1,0 +1,101 @@
+\hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data}{}\doxysection{core\+::gfx\+::details\+::instance\+::data Class Reference}
+\label{classcore_1_1gfx_1_1details_1_1instance_1_1data}\index{core::gfx::details::instance::data@{core::gfx::details::instance::data}}
+
+
+handles instance data associated to materials/geometry combinations  
+
+
+
+
+{\ttfamily \#include $<$instance.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a1aeb91f552844b06e06613c900302f53}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a1aeb91f552844b06e06613c900302f53}} 
+{\bfseries data} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::buffer\+\_\+t $>$ vertex\+Buffer, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::shader\+\_\+buffer\+\_\+binding $>$ material\+Buffer) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3bd413189e158b221cf983015707e44e}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3bd413189e158b221cf983015707e44e}} 
+void {\bfseries add} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::material\+\_\+t $>$ material)
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a7551562bea3d73c5dcd1597428328398}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a7551562bea3d73c5dcd1597428328398}} 
+std\+::vector$<$ std\+::pair$<$ uint32\+\_\+t, uint32\+\_\+t $>$ $>$ {\bfseries add} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ uid, uint32\+\_\+t count=1)
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a0cd8b3c3778ba6b5c5062b0a5445c8f5}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a0cd8b3c3778ba6b5c5062b0a5445c8f5}} 
+bool {\bfseries remove} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::material\+\_\+t $>$ material) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a2bc4dc0465e5c699aa55d0dd347e846e}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a2bc4dc0465e5c699aa55d0dd347e846e}} 
+bool {\bfseries has\+\_\+element} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ geometry, psl\+::string\+\_\+view name) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3eac8ecfeb0c4298a13a1997c36bfbfb}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3eac8ecfeb0c4298a13a1997c36bfbfb}} 
+std\+::optional$<$ std\+::pair$<$ \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}}, uint32\+\_\+t $>$ $>$ {\bfseries segment} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ geometry, psl\+::string\+\_\+view name) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a72eeb92628bbdd78f4e64857972c8bce}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a72eeb92628bbdd78f4e64857972c8bce}} 
+uint32\+\_\+t {\bfseries count} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ uid) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a07ff17e43fb906027970e10bd80ba60d}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a07ff17e43fb906027970e10bd80ba60d}} 
+psl\+::array$<$ std\+::pair$<$ size\+\_\+t, std\+::uintptr\+\_\+t $>$ $>$ {\bfseries bindings} (core\+::resource\+::tag$<$ core\+::gfx\+::material\+\_\+t $>$ material, core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ geometry) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_ae2878875e7795ed55c3d6962da9fbb81}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_ae2878875e7795ed55c3d6962da9fbb81}} 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::buffer\+\_\+t $>$ {\bfseries vertex\+\_\+buffer} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_aa848ea5d740f06ae4e8a4545e4073523}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_aa848ea5d740f06ae4e8a4545e4073523}} 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::buffer\+\_\+t $>$ {\bfseries material\+\_\+buffer} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_accdf6d05ae76beb6501937ae763a28fa}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_accdf6d05ae76beb6501937ae763a28fa}} 
+bool {\bfseries erase} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ geometry, uint32\+\_\+t id) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_aed406f2b138f4082d97375f0da3ff804}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_aed406f2b138f4082d97375f0da3ff804}} 
+bool {\bfseries clear} (core\+::resource\+::tag$<$ core\+::gfx\+::geometry\+\_\+t $>$ geometry) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_aa6fc77c62385080a2eab66990808fc85}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_aa6fc77c62385080a2eab66990808fc85}} 
+bool {\bfseries clear} () noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3b150a85d5c4cb0aacebebebe12faf8d}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a3b150a85d5c4cb0aacebebebe12faf8d}} 
+bool {\bfseries set} (core\+::resource\+::tag$<$ core\+::gfx\+::material\+\_\+t $>$ material, const void $\ast$\mbox{\hyperlink{classcore_1_1gfx_1_1details_1_1instance_1_1data}{data}}, size\+\_\+t size, size\+\_\+t offset) noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classcore_1_1gfx_1_1details_1_1instance_1_1data_a75471bf9b8160d7e3181a68481a2f7d7}{offset\+\_\+of}} (core\+::resource\+::tag$<$ core\+::gfx\+::material\+\_\+t $>$ material, psl\+::string\+\_\+view name) const noexcept
+\item 
+bool \mbox{\hyperlink{classcore_1_1gfx_1_1details_1_1instance_1_1data_aeb212e84fe39c7dc470706348d8b1040}{bind\+\_\+material}} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::material\+\_\+t $>$ material)
+\begin{DoxyCompactList}\small\item\em bind the given material\textquotesingle{}s instance data (if present). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a8123dc3c92eb3f46561314eab2581994}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a8123dc3c92eb3f46561314eab2581994}} 
+bool {\bfseries has\+\_\+data} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::material\+\_\+t $>$ material) const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages instance data related to materials-\/geometry, both the geometry specific data (such as instance position, etc...), as well as material-\/wide instance data (shared with all drawcalls using this specific instance set). The latter could be visualised as all pieces of foliage sharing the same \char`\"{}wind intensity\char`\"{} value. This is not to be confused as \char`\"{}global data\char`\"{}, such as all pieces of geometry knowing about \char`\"{}fog\char`\"{}, it is still duplicated over every instance of a bundle. 
+
+Definition at line 102 of file instance.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_a75471bf9b8160d7e3181a68481a2f7d7}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_a75471bf9b8160d7e3181a68481a2f7d7}} 
+\index{core::gfx::details::instance::data@{core::gfx::details::instance::data}!offset\_of@{offset\_of}}
+\index{offset\_of@{offset\_of}!core::gfx::details::instance::data@{core::gfx::details::instance::data}}
+\doxysubsubsection{\texorpdfstring{offset\_of()}{offset\_of()}}
+{\footnotesize\ttfamily size\+\_\+t core\+::gfx\+::details\+::instance\+::data\+::offset\+\_\+of (\begin{DoxyParamCaption}\item[{core\+::resource\+::tag$<$ core\+::gfx\+::material\+\_\+t $>$}]{material,  }\item[{psl\+::string\+\_\+view}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the offset of the material data\textquotesingle{}s member. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+nested declarations (like struct within binding), must be seperated by a \textquotesingle{}.\textquotesingle{}, so that the chain is respected and looks like this \char`\"{}data.\+player.\+rotation\char`\"{}. 
+
+array based declarations must be indexed with the bracket operator \textquotesingle{}\mbox{[}i\mbox{]}\textquotesingle{}, otherwise it will default to \textquotesingle{}\mbox{[}0\mbox{]}\textquotesingle{} implicitly. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classcore_1_1gfx_1_1details_1_1instance_1_1data_aeb212e84fe39c7dc470706348d8b1040}\label{classcore_1_1gfx_1_1details_1_1instance_1_1data_aeb212e84fe39c7dc470706348d8b1040}} 
+\index{core::gfx::details::instance::data@{core::gfx::details::instance::data}!bind\_material@{bind\_material}}
+\index{bind\_material@{bind\_material}!core::gfx::details::instance::data@{core::gfx::details::instance::data}}
+\doxysubsubsection{\texorpdfstring{bind\_material()}{bind\_material()}}
+{\footnotesize\ttfamily bool core\+::gfx\+::details\+::instance\+::data\+::bind\+\_\+material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ core\+::gfx\+::material\+\_\+t $>$}]{material }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if there was instance data found, otherwise propogates lower failure. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.\+hpp\end{DoxyCompactItemize}

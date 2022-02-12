@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1binary_1_1get__contained__type" kind="struct" language="C++" prot="public">
+    <compoundname>utility::binary::get_contained_type</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structutility_1_1binary_1_1get__contained__type_1a80ae2ad2ad6f5509c19b7a21c0093f0b" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T utility::binary::get_contained_type&lt; T &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" line="53" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/binary_utils.hpp" bodystart="51" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structutility_1_1binary_1_1get__contained__type_1a80ae2ad2ad6f5509c19b7a21c0093f0b" prot="public" virt="non-virtual"><scope>utility::binary::get_contained_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,249 @@
+\hypertarget{classcore_1_1ivk_1_1swapchain}{}\doxysection{core\+::ivk\+::swapchain Class Reference}
+\label{classcore_1_1ivk_1_1swapchain}\index{core::ivk::swapchain@{core::ivk::swapchain}}
+
+
+describes a framebuffer that is specially handled and created by the driver  
+
+
+
+
+{\ttfamily \#include $<$swapchain.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a7db0c21494355f33835c1ad7269e0aba}\label{classcore_1_1ivk_1_1swapchain_a7db0c21494355f33835c1ad7269e0aba}} 
+{\bfseries swapchain} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1os_1_1surface}{core\+::os\+::surface}} $>$ surface, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}}, bool use\+\_\+depth=true)
+\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_ade61b6d3ba58649d4483e6adbe6d4172}{next}} (vk\+::\+Semaphore present\+Complete, uint32\+\_\+t \&out\+\_\+image\+\_\+index)
+\item 
+vk\+::\+Result \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_adeeb2e4c049c1d899522d35acf5f0e39}{present}} (vk\+::\+Semaphore wait)
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a96aca58695fe522bba6178a23c98bdcb}\label{classcore_1_1ivk_1_1swapchain_a96aca58695fe522bba6178a23c98bdcb}} 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a96aca58695fe522bba6178a23c98bdcb}{size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em returns the amount of images in the swapchain \end{DoxyCompactList}\item 
+vk\+::\+Render\+Pass \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a72629a1ec605133f65f16ac6a8293208}{renderpass}} () const noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a42c50d5c0dc7d06c58bce058fa814df6}{width}} () const noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_abf6b9ebef765cd559c40ec4a4ba212d9}{height}} () const noexcept
+\item 
+const std\+::vector$<$ vk\+::\+Framebuffer $>$ \& \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_aa6be9f4bfba1ea437333250ce0ee09df}{framebuffers}} () const noexcept
+\item 
+const std\+::vector$<$ vk\+::\+Image $>$ \& \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a50cc3b8932f5428a4f1db0b1ebd3f521}{images}} () const noexcept
+\item 
+const std\+::vector$<$ vk\+::\+Image\+View $>$ \& \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_ae018f11e33320556b15c4ee7ccf48007}{views}} () const noexcept
+\item 
+const vk\+::\+Clear\+Color\+Value \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a612f715485009b4656f95d1fac0e8643}{clear\+\_\+color}} () const noexcept
+\item 
+const vk\+::\+Clear\+Depth\+Stencil\+Value \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_aa70aba3dee880982089bfa55b14073a8}{clear\+\_\+depth}} () const noexcept
+\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_a271898802ad040eb02b30ecc24406cd9}{has\+\_\+depth}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_af0d00dfa60d2cec89693633cc8a28ae2}{clear\+\_\+color}} (vk\+::\+Clear\+Color\+Value color) noexcept
+\begin{DoxyCompactList}\small\item\em sets the clear color \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain_af490a715688d063358b78059300e79d4}{is\+\_\+ready}} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a6201fe98e6992b252cec36ddaba9ec40}\label{classcore_1_1ivk_1_1swapchain_a6201fe98e6992b252cec36ddaba9ec40}} 
+class {\bfseries core\+::os\+::surface}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+swpachains can be considered special \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}}\textquotesingle{}s, with some special pecularities. For example, unlike framebuffer\textquotesingle{}s, you have to request the next image from the driver for a swapchain, and there are many more restrictions on both format and size imposed on swapchains. 
+
+Definition at line 31 of file swapchain.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_ade61b6d3ba58649d4483e6adbe6d4172}\label{classcore_1_1ivk_1_1swapchain_ade61b6d3ba58649d4483e6adbe6d4172}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!next@{next}}
+\index{next@{next}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily bool swapchain\+::next (\begin{DoxyParamCaption}\item[{vk\+::\+Semaphore}]{present\+Complete,  }\item[{uint32\+\_\+t \&}]{out\+\_\+image\+\_\+index }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true in case it managed to get the next image in the swapchain from the driver. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em present\+Complete} & the semaphore to flag once ready. \\
+\hline
+\mbox{\texttt{ out}}  & {\em out\+\_\+image\+\_\+index} & the image index of the next image in the swapchain.\\
+\hline
+\end{DoxyParams}
+when invoking this method it will request the next image in the swapchain, and return. the semaphore will be flaged once the resource is ready on the G\+PU. (and so should be used as a sync point before using the image in the swapchain. 
+
+Definition at line 510 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_adeeb2e4c049c1d899522d35acf5f0e39}\label{classcore_1_1ivk_1_1swapchain_adeeb2e4c049c1d899522d35acf5f0e39}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!present@{present}}
+\index{present@{present}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{present()}{present()}}
+{\footnotesize\ttfamily vk\+::\+Result swapchain\+::present (\begin{DoxyParamCaption}\item[{vk\+::\+Semaphore}]{wait }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+success in case presenting went well. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wait} & the semaphore to wait on when presenting. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 541 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a72629a1ec605133f65f16ac6a8293208}\label{classcore_1_1ivk_1_1swapchain_a72629a1ec605133f65f16ac6a8293208}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!renderpass@{renderpass}}
+\index{renderpass@{renderpass}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{renderpass()}{renderpass()}}
+{\footnotesize\ttfamily vk\+::\+Render\+Pass swapchain\+::renderpass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the renderpass associated with the swapchain. 
+\end{DoxyReturn}
+
+
+Definition at line 604 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a42c50d5c0dc7d06c58bce058fa814df6}\label{classcore_1_1ivk_1_1swapchain_a42c50d5c0dc7d06c58bce058fa814df6}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!width@{width}}
+\index{width@{width}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily uint32\+\_\+t swapchain\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the width of the swapchain image 
+\end{DoxyReturn}
+
+
+Definition at line 606 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_abf6b9ebef765cd559c40ec4a4ba212d9}\label{classcore_1_1ivk_1_1swapchain_abf6b9ebef765cd559c40ec4a4ba212d9}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!height@{height}}
+\index{height@{height}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily uint32\+\_\+t swapchain\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the height of the swapchainimage. 
+\end{DoxyReturn}
+
+
+Definition at line 607 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_aa6be9f4bfba1ea437333250ce0ee09df}\label{classcore_1_1ivk_1_1swapchain_aa6be9f4bfba1ea437333250ce0ee09df}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!framebuffers@{framebuffers}}
+\index{framebuffers@{framebuffers}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{framebuffers()}{framebuffers()}}
+{\footnotesize\ttfamily const std\+::vector$<$ vk\+::\+Framebuffer $>$ \& swapchain\+::framebuffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the vulkan framebuffers for the swapchain (one for each buffer). 
+\end{DoxyReturn}
+
+
+Definition at line 609 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a50cc3b8932f5428a4f1db0b1ebd3f521}\label{classcore_1_1ivk_1_1swapchain_a50cc3b8932f5428a4f1db0b1ebd3f521}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!images@{images}}
+\index{images@{images}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{images()}{images()}}
+{\footnotesize\ttfamily const std\+::vector$<$ vk\+::\+Image $>$ \& swapchain\+::images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the images for the swapchain (one for each buffer). 
+\end{DoxyReturn}
+
+
+Definition at line 610 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_ae018f11e33320556b15c4ee7ccf48007}\label{classcore_1_1ivk_1_1swapchain_ae018f11e33320556b15c4ee7ccf48007}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!views@{views}}
+\index{views@{views}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{views()}{views()}}
+{\footnotesize\ttfamily const std\+::vector$<$ vk\+::\+Image\+View $>$ \& swapchain\+::views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the image views for the swapchain (one for each buffer). 
+\end{DoxyReturn}
+
+
+Definition at line 611 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a612f715485009b4656f95d1fac0e8643}\label{classcore_1_1ivk_1_1swapchain_a612f715485009b4656f95d1fac0e8643}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!clear\_color@{clear\_color}}
+\index{clear\_color@{clear\_color}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{clear\_color()}{clear\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const vk\+::\+Clear\+Color\+Value core\+::ivk\+::swapchain\+::clear\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the clear color value assigned to the swapchain. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_aa70aba3dee880982089bfa55b14073a8}\label{classcore_1_1ivk_1_1swapchain_aa70aba3dee880982089bfa55b14073a8}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!clear\_depth@{clear\_depth}}
+\index{clear\_depth@{clear\_depth}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{clear\_depth()}{clear\_depth()}}
+{\footnotesize\ttfamily const vk\+::\+Clear\+Depth\+Stencil\+Value swapchain\+::clear\+\_\+depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the clear depth color of the swapchain 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+will return default value in case there is no depth texture. 
+\end{DoxyWarning}
+
+
+Definition at line 613 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_a271898802ad040eb02b30ecc24406cd9}\label{classcore_1_1ivk_1_1swapchain_a271898802ad040eb02b30ecc24406cd9}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!has\_depth@{has\_depth}}
+\index{has\_depth@{has\_depth}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{has\_depth()}{has\_depth()}}
+{\footnotesize\ttfamily bool swapchain\+::has\+\_\+depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+if the swapchain uses a depth texture or not. 
+\end{DoxyReturn}
+
+
+Definition at line 614 of file swapchain.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_af0d00dfa60d2cec89693633cc8a28ae2}\label{classcore_1_1ivk_1_1swapchain_af0d00dfa60d2cec89693633cc8a28ae2}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!clear\_color@{clear\_color}}
+\index{clear\_color@{clear\_color}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{clear\_color()}{clear\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void core\+::ivk\+::swapchain\+::clear\+\_\+color (\begin{DoxyParamCaption}\item[{vk\+::\+Clear\+Color\+Value}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & the new clear color value to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1swapchain_af490a715688d063358b78059300e79d4}\label{classcore_1_1ivk_1_1swapchain_af490a715688d063358b78059300e79d4}} 
+\index{core::ivk::swapchain@{core::ivk::swapchain}!is\_ready@{is\_ready}}
+\index{is\_ready@{is\_ready}!core::ivk::swapchain@{core::ivk::swapchain}}
+\doxysubsubsection{\texorpdfstring{is\_ready()}{is\_ready()}}
+{\footnotesize\ttfamily bool swapchain\+::is\+\_\+ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+false in case the window might be resizing. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+calls to getting the next swapchain image and presenting will fail in that scenario. 
+\end{DoxyWarning}
+
+
+Definition at line 600 of file swapchain.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/swapchain.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/swapchain.\+cpp\end{DoxyCompactItemize}

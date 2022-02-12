@@ -1,0 +1,66 @@
+\hypertarget{structcore_1_1ivk_1_1pipeline__key}{}\doxysection{core\+::ivk\+::pipeline\+\_\+key Struct Reference}
+\label{structcore_1_1ivk_1_1pipeline__key}\index{core::ivk::pipeline\_key@{core::ivk::pipeline\_key}}
+
+
+the pipeline key creates a hash of the important elements of a vk\+::\+Pipeline  
+
+
+
+
+{\ttfamily \#include $<$pipeline\+\_\+cache.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key_a6dfe740390c772c3131a5fa92278ab2c}{pipeline\+\_\+key}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ data, vk\+::\+Render\+Pass pass)
+\begin{DoxyCompactList}\small\item\em constructor based on the data you wish to store. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_a92a116941c11a01d0679945d79ed2b1c}\label{structcore_1_1ivk_1_1pipeline__key_a92a116941c11a01d0679945d79ed2b1c}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key}{pipeline\+\_\+key}} \&other) const noexcept
+\item 
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_a8657102ba2ec609ab9628510d6a33827}\label{structcore_1_1ivk_1_1pipeline__key_a8657102ba2ec609ab9628510d6a33827}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key}{pipeline\+\_\+key}} \&other) const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_adfa46ecc94775203dbbd0d00b1727f96}\label{structcore_1_1ivk_1_1pipeline__key_adfa46ecc94775203dbbd0d00b1727f96}} 
+const std\+::vector$<$ std\+::pair$<$ vk\+::\+Descriptor\+Type, uint32\+\_\+t $>$ $>$ \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key_adfa46ecc94775203dbbd0d00b1727f96}{descriptors}}
+\begin{DoxyCompactList}\small\item\em the contained descriptors that describe this key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_ae6edadff4f8065089cc94dc616bb31a6}\label{structcore_1_1ivk_1_1pipeline__key_ae6edadff4f8065089cc94dc616bb31a6}} 
+const vk\+::\+Render\+Pass \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key_ae6edadff4f8065089cc94dc616bb31a6}{render\+Pass}}
+\begin{DoxyCompactList}\small\item\em the bound renderpass of this key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_aa79474132651d2c5242ba30ccef5bb1f}\label{structcore_1_1ivk_1_1pipeline__key_aa79474132651d2c5242ba30ccef5bb1f}} 
+\mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} {\bfseries uid}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+when you want to store, and lookup pipelines based on their properties, then \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key}{pipeline\+\_\+key}} is the way to go. the pipeline key allows you to calculate a hash based on the identifying properties that make it unique (for the G\+PU), and easily retrieve it. to see this being used, check \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{core\+::ivk\+::pipeline\+\_\+cache}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{core\+::ivk\+::pipeline\+\_\+cache}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 33 of file pipeline\+\_\+cache.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structcore_1_1ivk_1_1pipeline__key_a6dfe740390c772c3131a5fa92278ab2c}\label{structcore_1_1ivk_1_1pipeline__key_a6dfe740390c772c3131a5fa92278ab2c}} 
+\index{core::ivk::pipeline\_key@{core::ivk::pipeline\_key}!pipeline\_key@{pipeline\_key}}
+\index{pipeline\_key@{pipeline\_key}!core::ivk::pipeline\_key@{core::ivk::pipeline\_key}}
+\doxysubsubsection{\texorpdfstring{pipeline\_key()}{pipeline\_key()}}
+{\footnotesize\ttfamily pipeline\+\_\+key\+::pipeline\+\_\+key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$}]{data,  }\item[{vk\+::\+Render\+Pass}]{pass }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+the \mbox{\hyperlink{structcore_1_1ivk_1_1pipeline__key}{pipeline\+\_\+key}} does not update when the material data has been updated. the material will no longer be able to use this key when it changes its properties. 
+\end{DoxyWarning}
+
+
+Definition at line 80 of file pipeline\+\_\+cache.\+cpp.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/pipeline\+\_\+cache.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/pipeline\+\_\+cache.\+cpp\end{DoxyCompactItemize}

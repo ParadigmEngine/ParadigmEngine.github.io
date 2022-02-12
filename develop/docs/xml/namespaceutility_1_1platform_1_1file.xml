@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1platform_1_1file" kind="namespace" language="C++">
+    <compoundname>utility::platform::file</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1ae1b9987030fbc4be85c4832f69b5f16f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::platform::file::exists</definition>
+        <argsstring>(psl::string_view filename)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>checks if the given path points to a file or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>checks if the given path points to a file or not. This path can be relative to the current working directory, usually the app root is the working directory, or an absolute path.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the file to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true in case the target is indeed a file, otherwise in all scenarios it returns false. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000015"><xreftitle>Todo</xreftitle><xrefdescription><para>android lacks an implementation. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="346" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="346" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1a5f0b946c4c9580a4c4871488de4945db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::platform::file::erase</definition>
+        <argsstring>(psl::string_view filename)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>erases the file ath the given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true in case the file was successfuly erased. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000016"><xreftitle>Todo</xreftitle><xrefdescription><para>android lacks an implementation. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="359" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="359" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1ae78dea07cc6d0782d8939fa9a81c8103" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::platform::file::read</definition>
+        <argsstring>(psl::string_view filename, std::vector&lt; psl::char_t &gt; &amp;out, size_t count=std::numeric_limits&lt; size_t &gt;::max())</argsstring>
+        <name>read</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; psl::char_t &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+          <defval>std::numeric_limits&lt; size_t &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>reads the given filepath&apos;s contents into a psl::char_t container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output container to read into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on successfuly reading the file. This can be false in case something went wrong. </para>
+</simplesect>
+<simplesect kind="note"><para>this function might not work in all scenarios on non-desktop platforms that have sandboxed away the interaction with the filesystem. Please verify that your target platform actually supports this function for the file you wish to load. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="375" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="375" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1af57f7e5d4f63831bf8f6a2da668a403d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::platform::file::read</definition>
+        <argsstring>(psl::string_view filename, psl::string &amp;out, size_t count=std::numeric_limits&lt; size_t &gt;::max())</argsstring>
+        <name>read</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>psl::string &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+          <defval>std::numeric_limits&lt; size_t &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>reads the given filepath&apos;s contents into a psl::string container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output container to read into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on successfuly reading the file. This can be false in case something went wrong. </para>
+</simplesect>
+<simplesect kind="note"><para>this function might not work in all scenarios on non-desktop platforms that have sandboxed away the interaction with the filesystem. Please verify that your target platform actually supports this function for the file you wish to load. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="401" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="401" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1ad7bf4862a4b0422914f1dbf46dcea641" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; psl::string &gt;</type>
+        <definition>static std::optional&lt;psl::string&gt; utility::platform::file::read</definition>
+        <argsstring>(psl::string_view filename, size_t count=std::numeric_limits&lt; size_t &gt;::max())</argsstring>
+        <name>read</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+          <defval>std::numeric_limits&lt; size_t &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>reads the given filepath&apos;s contents into a psl::string container on success. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string on success, and a std::nullopt on failure. </para>
+</simplesect>
+<simplesect kind="note"><para>this function might not work in all scenarios on non-desktop platforms that have sandboxed away the interaction with the filesystem. Please verify that your target platform actually supports this function for the file you wish to load. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="424" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="424" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1aef3e5b6b184ef28209180771bc5d5830" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::platform::file::write</definition>
+        <argsstring>(psl::string_view filename, psl::string_view content)</argsstring>
+        <name>write</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>psl::string_view</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>write the contents to the given location on the filesystem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to the target location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content to write at the given location. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true when the content has successfully been written at the target location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="436" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="436" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1afe0c8863cbb89fa28af8037af8b9747a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string</type>
+        <definition>static psl::string utility::platform::file::to_unix</definition>
+        <argsstring>(psl::string_view path)</argsstring>
+        <name>to_unix</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>transforms the given path to the unix format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the transformed path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="463" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="463" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1a9f415fa47af3f15d6490f8d7a3c67c7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string</type>
+        <definition>static psl::string utility::platform::file::to_windows</definition>
+        <argsstring>(psl::string_view path)</argsstring>
+        <name>to_windows</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>transforms the given path to the windows format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the transformed path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="468" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="468" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1a65a5bcb9b7fe91c807f5867c8bd1646c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string</type>
+        <definition>static psl::string utility::platform::file::to_platform</definition>
+        <argsstring>(psl::string_view path)</argsstring>
+        <name>to_platform</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>transforms the given path to the current platforms format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the transformed path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="473" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="473" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1platform_1_1file_1a736e99cce910b1a70167cbb1dd48934b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string</type>
+        <definition>static psl::string utility::platform::file::to_generic</definition>
+        <argsstring>(psl::string_view path)</argsstring>
+        <name>to_generic</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>transforms the given path to the application wide standard format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the path to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the transformed path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="485" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" bodystart="485" bodyend="485"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>file i/o and manpulations utilities namespace </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/platform_utils.hpp" line="339" column="1"/>
+  </compounddef>
+</doxygen>

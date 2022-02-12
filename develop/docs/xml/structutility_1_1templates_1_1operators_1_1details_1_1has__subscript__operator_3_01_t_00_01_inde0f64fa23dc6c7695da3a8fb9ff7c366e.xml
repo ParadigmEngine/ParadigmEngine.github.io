@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1operators_1_1details_1_1has__subscript__operator_3_01_t_00_01_inde0f64fa23dc6c7695da3a8fb9ff7c366e" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::operators::details::has_subscript_operator&lt; T, Index, std::void_t&lt; decltype(std::declval&lt; T &gt;()[std::declval&lt; Index &gt;()])&gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Index</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="335" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="333" bodyend="335"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

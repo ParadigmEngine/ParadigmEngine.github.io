@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1details_1_1entity__info" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::details::entity_info</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1ecs_1_1details_1_1entity__info_1aa08978d9ffeb4a69de801fde9c2be119" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; component_key_t &gt;</type>
+        <definition>psl::array&lt;component_key_t&gt; psl::ecs::details::entity_info::m_Components</definition>
+        <argsstring></argsstring>
+        <name>m_Components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="91" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1ecs_1_1details_1_1entity__info_1ae7196013677b50ddc3d9b6c2f7f8df87" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; size_t &gt;</type>
+        <definition>psl::array&lt;size_t&gt; psl::ecs::details::entity_info::m_Indices</definition>
+        <argsstring></argsstring>
+        <name>m_Indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="92" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a3207d7c33bdd198cda44f8319f9631b1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::entity_info::entity_info</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>entity_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a31d3345891ec4e5ad12c49abcc6f8bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::entity_info::~entity_info</definition>
+        <argsstring>()=default</argsstring>
+        <name>~entity_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1acd2bc285f0b1bdbf640af3e8e960ece7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::entity_info::entity_info</definition>
+        <argsstring>(const entity_info &amp;)=default</argsstring>
+        <name>entity_info</name>
+        <param>
+          <type>const entity_info &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1abb3d7464ec48058e0083199a5e43f2af" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::entity_info::entity_info</definition>
+        <argsstring>(entity_info &amp;&amp;) noexcept=default</argsstring>
+        <name>entity_info</name>
+        <param>
+          <type>entity_info &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a949412188f2fd70267fd0020d8a96849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>entity_info &amp;</type>
+        <definition>entity_info&amp; psl::ecs::details::entity_info::operator=</definition>
+        <argsstring>(const entity_info &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const entity_info &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="15" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1ad598648e2f0e90a36a145f3dcf60f87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>entity_info &amp;</type>
+        <definition>entity_info&amp; psl::ecs::details::entity_info::operator=</definition>
+        <argsstring>(entity_info &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>entity_info &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="16" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a685d3af8664454d9beb51fc1aa605fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::emplace_back</definition>
+        <argsstring>(component_key_t key, size_t indice)</argsstring>
+        <name>emplace_back</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="18" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1afb3830415de1446393a18c63e1ee4001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::emplace_back</definition>
+        <argsstring>(std::pair&lt; component_key_t, size_t &gt; pair)</argsstring>
+        <name>emplace_back</name>
+        <param>
+          <type>std::pair&lt; component_key_t, size_t &gt;</type>
+          <declname>pair</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="23" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1ad75f890a9fdee81ae4310ecbf0cb7cd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::erase</definition>
+        <argsstring>(component_key_t key, size_t likely_index)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>likely_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="29" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="29" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1acfbe26a10d49d9bc56d2e6b2801ddaf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::erase</definition>
+        <argsstring>(component_key_t key)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="42" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="42" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a744a6da06a925ca6e71b851d268449c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="50" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a39f417913ae71186e40f0be1ab188e83" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::ecs::details::entity_info::unsafe_index</definition>
+        <argsstring>(component_key_t key) const noexcept</argsstring>
+        <name>unsafe_index</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="56" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a9f9c27854e760b90dddccb5d6a68c0bf" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::entity_info::index</definition>
+        <argsstring>(component_key_t key, size_t &amp;out) const noexcept</argsstring>
+        <name>index</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="62" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a2d57760b4d00cd285897f84fe810bf80" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::pack_view&lt; component_key_t, size_t &gt;</type>
+        <definition>psl::pack_view&lt;component_key_t, size_t&gt; psl::ecs::details::entity_info::zip</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>zip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="70" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1aabd49bef199b4cc0f5c6317fa9d57276" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::entity_info::has</definition>
+        <argsstring>(component_key_t key) const noexcept</argsstring>
+        <name>has</name>
+        <param>
+          <type>component_key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="75" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1acb37d6cc20a0b133ba0f174e916c34ec" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::entity_info::orphan</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>orphan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="80" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a4e2335ecbad2a83c2f7702fb2ea810ed" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; component_key_t &gt;</type>
+        <definition>psl::array_view&lt;component_key_t&gt; psl::ecs::details::entity_info::components</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="82" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1ecs_1_1details_1_1entity__info_1a9d379bc1d0661416ff4ef7e06a5ee8fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::entity_info::append</definition>
+        <argsstring>(entity_info &amp;&amp;info)</argsstring>
+        <name>append</name>
+        <param>
+          <type>entity_info &amp;&amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="84" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp" bodystart="9" bodyend="93"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a9d379bc1d0661416ff4ef7e06a5ee8fa" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>append</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a744a6da06a925ca6e71b851d268449c0" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>clear</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a4e2335ecbad2a83c2f7702fb2ea810ed" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>components</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a685d3af8664454d9beb51fc1aa605fe2" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>emplace_back</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1afb3830415de1446393a18c63e1ee4001" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>emplace_back</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a3207d7c33bdd198cda44f8319f9631b1" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>entity_info</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1acd2bc285f0b1bdbf640af3e8e960ece7" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>entity_info</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1abb3d7464ec48058e0083199a5e43f2af" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>entity_info</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1ad75f890a9fdee81ae4310ecbf0cb7cd8" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>erase</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1acfbe26a10d49d9bc56d2e6b2801ddaf0" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>erase</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1aabd49bef199b4cc0f5c6317fa9d57276" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>has</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a9f9c27854e760b90dddccb5d6a68c0bf" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>index</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1aa08978d9ffeb4a69de801fde9c2be119" prot="private" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>m_Components</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1ae7196013677b50ddc3d9b6c2f7f8df87" prot="private" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>m_Indices</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a949412188f2fd70267fd0020d8a96849" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1ad598648e2f0e90a36a145f3dcf60f87e" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1acb37d6cc20a0b133ba0f174e916c34ec" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>orphan</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a39f417913ae71186e40f0be1ab188e83" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>unsafe_index</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a2d57760b4d00cd285897f84fe810bf80" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>zip</name></member>
+      <member refid="structpsl_1_1ecs_1_1details_1_1entity__info_1a31d3345891ec4e5ad12c49abcc6f8bde" prot="public" virt="non-virtual"><scope>psl::ecs::details::entity_info</scope><name>~entity_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

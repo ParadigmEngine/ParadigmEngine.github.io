@@ -1,0 +1,81 @@
+\hypertarget{classcore_1_1ivk_1_1pipeline__cache}{}\doxysection{core\+::ivk\+::pipeline\+\_\+cache Class Reference}
+\label{classcore_1_1ivk_1_1pipeline__cache}\index{core::ivk::pipeline\_cache@{core::ivk::pipeline\_cache}}
+
+
+the pipeline cache allows sharing of pipelines between various materials.  
+
+
+
+
+{\ttfamily \#include $<$pipeline\+\_\+cache.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_a2387ee1a5db7623e71edc166f648de4e}\label{classcore_1_1ivk_1_1pipeline__cache_a2387ee1a5db7623e71edc166f648de4e}} 
+{\bfseries pipeline\+\_\+cache} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}})
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_a42d2c1ae7e08ab4021ec8037333bf2e8}\label{classcore_1_1ivk_1_1pipeline__cache_a42d2c1ae7e08ab4021ec8037333bf2e8}} 
+{\bfseries pipeline\+\_\+cache} (const \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_adb98824497b3b98b4dcf170216d03ac5}\label{classcore_1_1ivk_1_1pipeline__cache_adb98824497b3b98b4dcf170216d03ac5}} 
+{\bfseries pipeline\+\_\+cache} (\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_a5fd189e2223e1a60d5e08ea6ca343215}\label{classcore_1_1ivk_1_1pipeline__cache_a5fd189e2223e1a60d5e08ea6ca343215}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_ad58e96f21cd4a7680ccd9a2ac6725026}\label{classcore_1_1ivk_1_1pipeline__cache_ad58e96f21cd4a7680ccd9a2ac6725026}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{pipeline\+\_\+cache}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline}{core\+::ivk\+::pipeline}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache_a25d14449ec619f9588066d7aa671a81a}{get}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ data, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$ framebuffer)
+\begin{DoxyCompactList}\small\item\em allows you to get a pipeline that satisfy the material requirements and is bound to the given framebuffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline}{core\+::ivk\+::pipeline}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache_a6413cc4930dc417788f920549eb5b8e8}{get}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ data, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{swapchain}})
+\begin{DoxyCompactList}\small\item\em allows you to get a pipeline that satisfy the material requirements and is bound to the given swapchain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the pipeline cache allows sharing of pipelines between various materials. it is responsible for the creation and destruction of all pipeline objects, as well as providing easy facilities to get pipelines based on material descriptions. 
+
+Definition at line 94 of file pipeline\+\_\+cache.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_a25d14449ec619f9588066d7aa671a81a}\label{classcore_1_1ivk_1_1pipeline__cache_a25d14449ec619f9588066d7aa671a81a}} 
+\index{core::ivk::pipeline\_cache@{core::ivk::pipeline\_cache}!get@{get}}
+\index{get@{get}!core::ivk::pipeline\_cache@{core::ivk::pipeline\_cache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline}{core\+::ivk\+::pipeline}}$>$ core\+::ivk\+::pipeline\+\_\+cache\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$}]{data,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$}]{framebuffer }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a handle to a pipeline object. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & the material containing the description of all bindings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em framebuffer} & the framebuffer that will be bound to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1pipeline__cache_a6413cc4930dc417788f920549eb5b8e8}\label{classcore_1_1ivk_1_1pipeline__cache_a6413cc4930dc417788f920549eb5b8e8}} 
+\index{core::ivk::pipeline\_cache@{core::ivk::pipeline\_cache}!get@{get}}
+\index{get@{get}!core::ivk::pipeline\_cache@{core::ivk::pipeline\_cache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$\mbox{\hyperlink{classcore_1_1ivk_1_1pipeline}{core\+::ivk\+::pipeline}}$>$ core\+::ivk\+::pipeline\+\_\+cache\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$}]{data,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$}]{swapchain }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a handle to a pipeline object. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & the material containing the description of all bindings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em swapchain} & the swapchain that will be bound to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/pipeline\+\_\+cache.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/pipeline\+\_\+cache.\+cpp\end{DoxyCompactItemize}

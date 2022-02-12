@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1gfx_1_1computepass" kind="class" language="C++" prot="public">
+    <compoundname>core::gfx::computepass</compoundname>
+    <includes refid="gfx_2computepass_8hpp" local="no">computepass.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1computepass_1ab0ed1064720b8173672f91c02c76153c" prot="private" static="no" mutable="no">
+        <type>core::gfx::graphics_backend</type>
+        <definition>core::gfx::graphics_backend core::gfx::computepass::m_Backend</definition>
+        <argsstring></argsstring>
+        <name>m_Backend</name>
+        <initializer>{graphics_backend::undefined}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="78" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1computepass_1a06584294854f8c5fd4aa8275f9b1c681" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::gfx::computepass::m_Dirty</definition>
+        <argsstring></argsstring>
+        <name>m_Dirty</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="85" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a886237a761157710750335078c867e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>computepass::computepass</definition>
+        <argsstring>(core::resource::handle&lt; context &gt; context)</argsstring>
+        <name>computepass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; context &gt;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="53" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="24" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1af27eebd4f740d13130c46496971f0455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>computepass::~computepass</definition>
+        <argsstring>()</argsstring>
+        <name>~computepass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="54" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a51270f7ba18a5797896427694b3af461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::computepass::computepass</definition>
+        <argsstring>(const computepass &amp;other)=delete</argsstring>
+        <name>computepass</name>
+        <param>
+          <type>const <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a7e90a0e3cfe0429eeb68ff1154ae83d8" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::computepass::computepass</definition>
+        <argsstring>(computepass &amp;&amp;other) noexcept=delete</argsstring>
+        <name>computepass</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1adc3f6e325815a957c3ee30db902a55cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;</type>
+        <definition>computepass&amp; core::gfx::computepass::operator=</definition>
+        <argsstring>(const computepass &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="58" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1ab74f2a9ec0b7040e99fa1a7d2c81e4f7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;</type>
+        <definition>computepass&amp; core::gfx::computepass::operator=</definition>
+        <argsstring>(computepass &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">computepass</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="59" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1aa272fc0f9f912dcc3cf5cc6aa7025aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void computepass::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="62" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1ae2dd302fbad3f1ad8e5f48f1df4d08a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void computepass::prepare</definition>
+        <argsstring>()</argsstring>
+        <name>prepare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="63" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a7d546134ecf9045b498b73143e2808c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool computepass::build</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>build</name>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="64" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="61" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a55642c90545db450e2d1af7c05ce8a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void computepass::present</definition>
+        <argsstring>()</argsstring>
+        <name>present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="65" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="85" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1ad23881262ee0d9af7ad736c7780c77c0" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::computepass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::drawpass &gt; child) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="67" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a852b3ea1bd2ab6ec0940355e1262a297" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool computepass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::computepass &gt; child) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">core::gfx::computepass</ref> &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="68" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="96" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1aab82c239fbc77823e175a0049b4c1d71" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::computepass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::drawpass &gt; child) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; core::gfx::drawpass &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="69" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a51409c55def196a3e1b009eeb7b23859" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool computepass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; core::gfx::computepass &gt; child) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1gfx_1_1computepass" kindref="compound">core::gfx::computepass</ref> &gt;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="70" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="114" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1aa508202d18fecb16611f41a1cf8185fe" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void computepass::add</definition>
+        <argsstring>(const core::gfx::computecall &amp;call) noexcept</argsstring>
+        <name>add</name>
+        <param>
+          <type>const core::gfx::computecall &amp;</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="72" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp" bodystart="134" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a85c48d5a8204c6957a275f1cdc91e56b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::gfx::computepass::dirty</definition>
+        <argsstring>(bool value) noexcept</argsstring>
+        <name>dirty</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="74" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1computepass_1a54216cde2f75505143cd7d539f1f1a11" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::computepass::dirty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>dirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="75" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>describes a compute stage in the render_graph </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" line="45" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp" bodystart="44" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classcore_1_1gfx_1_1computepass_1aa508202d18fecb16611f41a1cf8185fe" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>add</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a7d546134ecf9045b498b73143e2808c0" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>build</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1aa272fc0f9f912dcc3cf5cc6aa7025aa8" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>clear</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a886237a761157710750335078c867e7f" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>computepass</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a51270f7ba18a5797896427694b3af461" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>computepass</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a7e90a0e3cfe0429eeb68ff1154ae83d8" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>computepass</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1ad23881262ee0d9af7ad736c7780c77c0" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>connect</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a852b3ea1bd2ab6ec0940355e1262a297" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>connect</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a85c48d5a8204c6957a275f1cdc91e56b" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a54216cde2f75505143cd7d539f1f1a11" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1aab82c239fbc77823e175a0049b4c1d71" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a51409c55def196a3e1b009eeb7b23859" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1ab0ed1064720b8173672f91c02c76153c" prot="private" virt="non-virtual"><scope>core::gfx::computepass</scope><name>m_Backend</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a06584294854f8c5fd4aa8275f9b1c681" prot="private" virt="non-virtual"><scope>core::gfx::computepass</scope><name>m_Dirty</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1adc3f6e325815a957c3ee30db902a55cd" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1ab74f2a9ec0b7040e99fa1a7d2c81e4f7" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1ae2dd302fbad3f1ad8e5f48f1df4d08a8" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>prepare</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1a55642c90545db450e2d1af7c05ce8a4f" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>present</name></member>
+      <member refid="classcore_1_1gfx_1_1computepass_1af27eebd4f740d13130c46496971f0455" prot="public" virt="non-virtual"><scope>core::gfx::computepass</scope><name>~computepass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

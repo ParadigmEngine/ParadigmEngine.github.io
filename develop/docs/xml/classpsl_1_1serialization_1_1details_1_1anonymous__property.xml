@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1serialization_1_1details_1_1anonymous__property" kind="class" language="C++" prot="public">
+    <compoundname>psl::serialization::details::anonymous_property</compoundname>
+    <derivedcompoundref refid="classpsl_1_1serialization_1_1property" prot="public" virt="non-virtual">psl::serialization::property&lt; Name, T &gt;</derivedcompoundref>
+    <includes refid="property_8hpp" local="no">property.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4c73b779d3a71b1a685ecd15711fd2ef" prot="public" static="no">
+        <type>T</type>
+        <definition>using psl::serialization::details::anonymous_property&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="21" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a027c4baf8b1989f7f134c99d97c7afc7" prot="public" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type psl::serialization::details::anonymous_property&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="358" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad91e9e8e379eee912ea324e21ed9f614" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr psl::serialization::details::anonymous_property&lt; T &gt;::anonymous_property</definition>
+        <argsstring>(Args &amp;&amp;... args) noexcept(std::is_nothrow_constructible_v&lt; value_type, Args... &gt;)</argsstring>
+        <name>anonymous_property</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="25" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad99fcc9c82d0e448a608f63300de15ff" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr psl::serialization::details::anonymous_property&lt; T &gt;::anonymous_property</definition>
+        <argsstring>(const anonymous_property &amp;rhs) noexcept(std::is_nothrow_copy_constructible_v&lt; value_type &gt;) requires(std</argsstring>
+        <name>anonymous_property</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="29" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7fb84871d9b08f294e62d11ca3561be5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr psl::serialization::details::anonymous_property&lt; T &gt;::anonymous_property</definition>
+        <argsstring>(anonymous_property &amp;&amp;rhs) noexcept(std::is_nothrow_move_constructible_v&lt; value_type &gt;) requires(std</argsstring>
+        <name>anonymous_property</name>
+        <param>
+          <type><ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="34" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6f3d109fa7a7f74ed136561f3f590bcc" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::serialization::details::anonymous_property&lt; T &gt;::operator=</definition>
+        <argsstring>(const anonymous_property &amp;rhs) noexcept(std::is_nothrow_copy_assignable_v&lt; value_type &gt;) -&gt; anonymous_property &amp;requires(std::is_copy_assignable_v&lt; value_type &gt;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="40" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae16b89ff7029e684372e2a99bd406536" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::serialization::details::anonymous_property&lt; T &gt;::operator=</definition>
+        <argsstring>(anonymous_property &amp;&amp;rhs) noexcept(std::is_nothrow_move_assignable_v&lt; T &gt;) -&gt; anonymous_property &amp;requires(std::is_move_assignable_v&lt; value_type &gt;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="50" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a0173a457c9e3d1598ee1311694c30b04" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="63" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aff9e6816b86ef91ef36826e104031e2b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator+=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsAdditionAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="71" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a229570d49424b41e8daa9723553695f1" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsSubtractionAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="79" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af53e91a06e5cda99ec20382a72f7e3af" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator*=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsMultiplicationAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="86" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a2bc15ed55da0ba9d7dd753174e9bb9fc" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator/=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsDivisionAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="96" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a84cc4cd383a8962504866a49b1456bff" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator%=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsModuloAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator%=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="104" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aed8ce054cab4af871fc4aa15fc21bb77" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&amp;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsBitAndAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&amp;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="112" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a5d33bd0ff93702773bf096a3baf6e53f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator|=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsBitOrAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator|=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="120" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1153d6f0cef3fb26b3ce24a20b1200e5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator^=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsBitXorAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="128" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abef375e482f39e3243dca3a93c2ab4ec" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;&lt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsShiftLeftAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;&lt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="135" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac8220399b516c524cc56bc04d281a482" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;&gt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::IsShiftRightAssignableNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;&gt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="144" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7774258bbcf0e38a2c8c14f1da755382" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator++</definition>
+        <argsstring>() noexcept(concepts::IsIncrementablePreNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="151" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a03bb929e5bb7b631c050ba41e79868f8" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator++</definition>
+        <argsstring>(int) noexcept(concepts::IsIncrementablePostNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="156" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af55451a84b6202e0e3de5bc2bf668543" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator--</definition>
+        <argsstring>() noexcept(concepts::IsDecrementablePreNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="161" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aa3a3d47b3c0564e2e79c2aa1f8151639" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator--</definition>
+        <argsstring>(int) noexcept(concepts::IsDecrementablePostNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator--</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="166" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad576f46bbbe54a118561ebd7f984c975" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator+</definition>
+        <argsstring>() const noexcept(concepts::HasUnaryAddNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="173" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab276ecdb42e96947d9e9b9956ac0fbfe" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-</definition>
+        <argsstring>() const noexcept(concepts::HasUnarySubtractNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="179" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab42caaee3ef892d1518a540fd2cdefb6" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator+</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasAdditionNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="186" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="186" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace038a3f5e8ef25019ea3a187b022302" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasSubtractionNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="193" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="193" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e70dfb4abdb4afb2316f1de8cbb1d0f" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator*</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasMultiplicationNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="200" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="200" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a42c9221a412e35c4a9a6ee2e622f9d0a" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator/</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasDivisionNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="208" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1ebfcd0f5f715d525e73fad036731071" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator%</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasModuloNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator%</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="215" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e78ac1a23c1cf341e0d05b1919b937e" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-</definition>
+        <argsstring>() const noexcept(concepts::HasBitNotNothrow&lt; value_type &gt;) requires(concepts</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="221" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace311c59da6be319c0e5cd269f2d0b04" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&amp;</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasBitAndNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="228" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a13f6796b2c2421add0373afcf72c647b" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator|</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasBitOrNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="235" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="235" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a518c0c9adb03b15264310491c995e061" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator^</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasBitXorNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="242" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="242" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6c2ae9ca2d2f894b934a8e8e9f777431" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;&lt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasBitLeftShiftNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="249" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="249" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a8dc167a4e35716b80ebdb74694ed7457" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;&gt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasBitRightShiftNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="257" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="257" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abade0a92b9d3e4fd7487e210921f4a59" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator!</definition>
+        <argsstring>() const noexcept(concepts::HasLogicalNotNothrow&lt; value_type &gt;) -&gt; bool requires(concepts::HasLogicalNot&lt; value_type &gt;)</argsstring>
+        <name>operator!</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="265" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="265" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a41754be180b641f74dfd19a9b745e801" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&amp;&amp;</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasLogicalAndNothrow&lt; value_type, rhs_t &gt;) -&gt; bool requires(concepts::HasLogicalAnd&lt; value_type, rhs_t &gt;)</argsstring>
+        <name>operator&amp;&amp;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="272" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a94d24e71b3622d322efebf1f13e1f6c2" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator||</definition>
+        <argsstring>(const rhs_t &amp;rhs) const noexcept(concepts::HasLogicalOrNothrow&lt; value_type, rhs_t &gt;) -&gt; bool requires(concepts::HasLogicalOr&lt; value_type, rhs_t &gt;)</argsstring>
+        <name>operator||</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="280" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="280" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4a04f0a8a3bca57907a49a504e189b77" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator==</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasEqualityNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="292" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="292" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6bc7cad02949febdd067ca161fed3940" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator!=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasInequalityNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="298" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="298" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a23a3791f714ff1223a34a8653bd96229" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasLessThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="304" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="304" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a500d3ef217efe7530eada5bceb644944" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasGreaterThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="310" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="310" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac05bb6e9d2ab8fc6ae68e92557983c70" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasLessEqualThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="316" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a243e3210b16f175803b8aa02793ccbdf" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasGreaterEqualThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="324" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="324" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac120f351556b844c85f69010594466d9" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename index_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator[]</definition>
+        <argsstring>(const index_t &amp;index) const noexcept(concepts::HasOperatorSubscriptNothrow&lt; value_type, index_t &gt;) requires(concepts</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const index_t &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="333" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="333" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a27898e9a71d01e9ac6c32361e7ff2d2b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() -&gt; value_type *</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="340" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="340" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a9ada74fdd65b691ec66e57cf08bb404f" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const -&gt; const value_type *</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="341" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="341" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae2d2c494255ea2b8b4053326b96e139d" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator()</definition>
+        <argsstring>(Args &amp;&amp;... args) const noexcept(concepts::HasOperatorInvokeNothrow&lt; value_type, Args... &gt;) requires(concepts</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="346" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="346" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4db49b65ca7ffe42c3cd44fdff4c2a1e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::serialization::details::anonymous_property&lt; T &gt;::operator const value_type &amp;</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator const value_type &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="355" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="355" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7ecebb0cd421d7a6b30cc5eab98c170a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::serialization::details::anonymous_property&lt; T &gt;::operator value_type &amp;</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator value_type &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="356" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="356" bodyend="356"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000017"><xreftitle>Todo</xreftitle><xrefdescription><para>add overloads for <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> interacting with other <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref>&apos;s </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="19" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="18" bodyend="359"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad91e9e8e379eee912ea324e21ed9f614" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad99fcc9c82d0e448a608f63300de15ff" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7fb84871d9b08f294e62d11ca3561be5" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4db49b65ca7ffe42c3cd44fdff4c2a1e" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator const value_type &amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7ecebb0cd421d7a6b30cc5eab98c170a" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator value_type &amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abade0a92b9d3e4fd7487e210921f4a59" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator!</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6bc7cad02949febdd067ca161fed3940" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator!=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1ebfcd0f5f715d525e73fad036731071" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator%</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a84cc4cd383a8962504866a49b1456bff" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator%=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace311c59da6be319c0e5cd269f2d0b04" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a41754be180b641f74dfd19a9b745e801" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&amp;&amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aed8ce054cab4af871fc4aa15fc21bb77" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&amp;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae2d2c494255ea2b8b4053326b96e139d" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator()</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e70dfb4abdb4afb2316f1de8cbb1d0f" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator*</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af53e91a06e5cda99ec20382a72f7e3af" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator*=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad576f46bbbe54a118561ebd7f984c975" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator+</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab42caaee3ef892d1518a540fd2cdefb6" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator+</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7774258bbcf0e38a2c8c14f1da755382" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a03bb929e5bb7b631c050ba41e79868f8" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aff9e6816b86ef91ef36826e104031e2b" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator+=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab276ecdb42e96947d9e9b9956ac0fbfe" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace038a3f5e8ef25019ea3a187b022302" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e78ac1a23c1cf341e0d05b1919b937e" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af55451a84b6202e0e3de5bc2bf668543" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aa3a3d47b3c0564e2e79c2aa1f8151639" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a229570d49424b41e8daa9723553695f1" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a27898e9a71d01e9ac6c32361e7ff2d2b" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a9ada74fdd65b691ec66e57cf08bb404f" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator-&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a42c9221a412e35c4a9a6ee2e622f9d0a" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator/</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a2bc15ed55da0ba9d7dd753174e9bb9fc" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator/=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a23a3791f714ff1223a34a8653bd96229" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&lt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6c2ae9ca2d2f894b934a8e8e9f777431" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abef375e482f39e3243dca3a93c2ab4ec" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&lt;&lt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac05bb6e9d2ab8fc6ae68e92557983c70" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&lt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6f3d109fa7a7f74ed136561f3f590bcc" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae16b89ff7029e684372e2a99bd406536" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a0173a457c9e3d1598ee1311694c30b04" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4a04f0a8a3bca57907a49a504e189b77" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator==</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a500d3ef217efe7530eada5bceb644944" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a243e3210b16f175803b8aa02793ccbdf" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&gt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a8dc167a4e35716b80ebdb74694ed7457" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac8220399b516c524cc56bc04d281a482" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator&gt;&gt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac120f351556b844c85f69010594466d9" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a518c0c9adb03b15264310491c995e061" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator^</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1153d6f0cef3fb26b3ce24a20b1200e5" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator^=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a13f6796b2c2421add0373afcf72c647b" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator|</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a5d33bd0ff93702773bf096a3baf6e53f" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator|=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a94d24e71b3622d322efebf1f13e1f6c2" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>operator||</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a027c4baf8b1989f7f134c99d97c7afc7" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>value</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4c73b779d3a71b1a685ecd15711fd2ef" prot="public" virt="non-virtual"><scope>psl::serialization::details::anonymous_property</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

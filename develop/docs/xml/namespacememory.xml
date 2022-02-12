@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacememory" kind="namespace" language="C++">
+    <compoundname>memory</compoundname>
+    <innerclass refid="classmemory_1_1allocator__base" prot="public">memory::allocator_base</innerclass>
+    <innerclass refid="classmemory_1_1block__allocator" prot="public">memory::block_allocator</innerclass>
+    <innerclass refid="classmemory_1_1default__allocator" prot="public">memory::default_allocator</innerclass>
+    <innerclass refid="classmemory_1_1range__t" prot="public">memory::range_t</innerclass>
+    <innerclass refid="classmemory_1_1raw__region" prot="public">memory::raw_region</innerclass>
+    <innerclass refid="classmemory_1_1region" prot="public">memory::region</innerclass>
+    <innerclass refid="classmemory_1_1segment" prot="public">memory::segment</innerclass>
+    <innerclass refid="classmemory_1_1sparse__array" prot="public">memory::sparse_array</innerclass>
+    <briefdescription>
+<para>this namespace contains types and utilities for managing regions of memory </para>
+    </briefdescription>
+    <detaileddescription>
+<para>due to the potential constrained environments that this app might run in, there are some helper classes provided to track and manage memory (both physically backed and non-physically backed). You can find more information in <ref refid="classmemory_1_1region" kindref="compound">memory::region</ref> about this. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp" line="32" column="1"/>
+  </compounddef>
+</doxygen>

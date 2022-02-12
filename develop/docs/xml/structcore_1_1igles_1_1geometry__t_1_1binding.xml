@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1igles_1_1geometry__t_1_1binding" kind="struct" language="C++" prot="private">
+    <compoundname>core::igles::geometry_t::binding</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1igles_1_1geometry__t_1_1binding_1a9329f9c2eecf310e0f7f577a1c68fdc9" prot="public" static="no" mutable="no">
+        <type>psl::string</type>
+        <definition>psl::string core::igles::geometry_t::binding::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="23" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1igles_1_1geometry__t_1_1binding_1a589b0f8525482b30e19d440e032a1f67" prot="public" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::igles::geometry_t::binding::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="24" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1igles_1_1geometry__t_1_1binding_1ac53b7852d3ea042053c6720884c40825" prot="public" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref></type>
+        <definition>memory::range_t core::igles::geometry_t::binding::sub_range</definition>
+        <argsstring></argsstring>
+        <name>sub_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="25" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>memory::range_t</label>
+        <link refid="classmemory_1_1range__t"/>
+      </node>
+      <node id="1">
+        <label>core::igles::geometry_t::binding</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>segment</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sub_range</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory::segment</label>
+        <link refid="classmemory_1_1segment"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="21" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structcore_1_1igles_1_1geometry__t_1_1binding_1a9329f9c2eecf310e0f7f577a1c68fdc9" prot="public" virt="non-virtual"><scope>core::igles::geometry_t::binding</scope><name>name</name></member>
+      <member refid="structcore_1_1igles_1_1geometry__t_1_1binding_1a589b0f8525482b30e19d440e032a1f67" prot="public" virt="non-virtual"><scope>core::igles::geometry_t::binding</scope><name>segment</name></member>
+      <member refid="structcore_1_1igles_1_1geometry__t_1_1binding_1ac53b7852d3ea042053c6720884c40825" prot="public" virt="non-virtual"><scope>core::igles::geometry_t::binding</scope><name>sub_range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1noise" kind="namespace" language="C++">
+    <compoundname>psl::noise</compoundname>
+    <innerclass refid="classpsl_1_1noise_1_1perlin" prot="public">psl::noise::perlin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/noise/perlin.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

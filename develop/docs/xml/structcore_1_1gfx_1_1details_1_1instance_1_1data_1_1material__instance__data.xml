@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data" kind="struct" language="C++" prot="private">
+    <compoundname>core::gfx::details::instance::data::material_instance_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1aafc4b2e97c66573bc64e11712bc2bb8a" prot="public" static="no" mutable="no">
+        <type>core::meta::shader::descriptor</type>
+        <definition>core::meta::shader::descriptor core::gfx::details::instance::data::material_instance_data::descriptor</definition>
+        <argsstring></argsstring>
+        <name>descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="106" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1ab9a878934fdb7bab733246bcf92dc81a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::gfx::details::instance::data::material_instance_data::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="107" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1a9682eca14f40476970bb141ae67bf3ec" prot="public" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::gfx::details::instance::data::material_instance_data::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="108" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>core::gfx::details::instance::data::material_instance_data</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>segment</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory::segment</label>
+        <link refid="classmemory_1_1segment"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="105" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="104" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1aafc4b2e97c66573bc64e11712bc2bb8a" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data::material_instance_data</scope><name>descriptor</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1a9682eca14f40476970bb141ae67bf3ec" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data::material_instance_data</scope><name>segment</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1data_1_1material__instance__data_1ab9a878934fdb7bab733246bcf92dc81a" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::data::material_instance_data</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

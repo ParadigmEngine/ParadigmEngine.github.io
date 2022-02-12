@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1handle" kind="struct" language="C++" prot="public">
+    <compoundname>psl::handle</compoundname>
+    <innerclass refid="structpsl_1_1handle_1_1generator" prot="public">psl::handle::generator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class precision</type>
+        <defval>uint32_t</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structpsl_1_1handle_1a8ddef9778761aea7e6eb898a76f64a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct generator</definition>
+        <argsstring></argsstring>
+        <name>generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="9" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1handle_1aa3f040624e57b149de73d3143da2cc86" prot="private" static="no" mutable="no">
+        <type>precision</type>
+        <definition>precision psl::handle&lt; T, precision &gt;::m_ID</definition>
+        <argsstring></argsstring>
+        <name>m_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="67" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1handle_1ab9b38a98676e4adf6ca959314189a82b" prot="private" static="no" mutable="no">
+        <type>generator *</type>
+        <definition>generator* psl::handle&lt; T, precision &gt;::m_Generator</definition>
+        <argsstring></argsstring>
+        <name>m_Generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="68" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1handle_1a847766c2db1e002ded27c61ec3fcaa32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::handle&lt; T, precision &gt;::handle</definition>
+        <argsstring>()</argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1a71020720de57c2d038d945aca2dd2232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::handle&lt; T, precision &gt;::handle</definition>
+        <argsstring>(const precision &amp;id, Generator *generator)</argsstring>
+        <name>handle</name>
+        <param>
+          <type>const precision &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Generator *</type>
+          <declname>generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="53" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1abdf47e7613c7f88d157759c2448ce532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::handle&lt; T, precision &gt;::operator==</definition>
+        <argsstring>(const handle &amp;other)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="55" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1adf8a3cab95bb50de5b3d1e86dd17ba76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::handle&lt; T, precision &gt;::operator!=</definition>
+        <argsstring>(const handle &amp;other)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="57" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1a591b0eb719fba712d8adec26f96c4924" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>precision</type>
+        <definition>precision psl::handle&lt; T, precision &gt;::ID</definition>
+        <argsstring>() const</argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="59" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1ac5ab4a3d5f6dc43f89933a63ae8a124a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::handle&lt; T, precision &gt;::IsValid</definition>
+        <argsstring>()</argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="60" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1ab7bb45945fbc08a3ce3bb54d4d31d719" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; psl::handle&lt; T, precision &gt;::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="62" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1handle_1adf21454c9d4f4643d2a9d4f5155dfe2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* psl::handle&lt; T, precision &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="64" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" line="8" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/HandleGenerator.hpp" bodystart="7" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1handle_1a8ddef9778761aea7e6eb898a76f64a2b" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>generator</name></member>
+      <member refid="structpsl_1_1handle_1a847766c2db1e002ded27c61ec3fcaa32" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>handle</name></member>
+      <member refid="structpsl_1_1handle_1a71020720de57c2d038d945aca2dd2232" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>handle</name></member>
+      <member refid="structpsl_1_1handle_1a591b0eb719fba712d8adec26f96c4924" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>ID</name></member>
+      <member refid="structpsl_1_1handle_1ac5ab4a3d5f6dc43f89933a63ae8a124a" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>IsValid</name></member>
+      <member refid="structpsl_1_1handle_1ab9b38a98676e4adf6ca959314189a82b" prot="private" virt="non-virtual"><scope>psl::handle</scope><name>m_Generator</name></member>
+      <member refid="structpsl_1_1handle_1aa3f040624e57b149de73d3143da2cc86" prot="private" virt="non-virtual"><scope>psl::handle</scope><name>m_ID</name></member>
+      <member refid="structpsl_1_1handle_1adf8a3cab95bb50de5b3d1e86dd17ba76" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>operator!=</name></member>
+      <member refid="structpsl_1_1handle_1adf21454c9d4f4643d2a9d4f5155dfe2a" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>operator-&gt;</name></member>
+      <member refid="structpsl_1_1handle_1abdf47e7613c7f88d157759c2448ce532" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>operator==</name></member>
+      <member refid="structpsl_1_1handle_1ab7bb45945fbc08a3ce3bb54d4d31d719" prot="public" virt="non-virtual"><scope>psl::handle</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1ecs_1_1pack" kind="class" language="C++" prot="public">
+    <compoundname>psl::ecs::pack</compoundname>
+    <includes refid="pack_8hpp" local="no">pack.hpp</includes>
+    <innerclass refid="structpsl_1_1ecs_1_1pack_1_1type__pack" prot="private">psl::ecs::pack::type_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1pack_1_1type__pack_3_01psl_1_1ecs_1_1full_00_01_ys_8_8_8_01_4" prot="private">psl::ecs::pack::type_pack&lt; psl::ecs::full, Ys... &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1pack_1_1type__pack_3_01psl_1_1ecs_1_1partial_00_01_ys_8_8_8_01_4" prot="private">psl::ecs::pack::type_pack&lt; psl::ecs::partial, Ys... &gt;</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1aad85f0af4bbed47944556e9190be69d6" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::pack_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::pack_t =  typename type_pack&lt;Ts...&gt;::pack_t</definition>
+        <argsstring></argsstring>
+        <name>pack_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="74" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1afe0e999051246ff6389edcfb2a7a5695" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::filter_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::filter_t =  typename type_pack&lt;Ts...&gt;::filter_t</definition>
+        <argsstring></argsstring>
+        <name>filter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="75" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1ae6aee8a01f8a94cc9537d04b1d7efe16" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::combine_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::combine_t =  typename type_pack&lt;Ts...&gt;::combine_t</definition>
+        <argsstring></argsstring>
+        <name>combine_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="76" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1aaaf98fd1d050f1a3ed90192faa000338" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::break_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::break_t =  typename type_pack&lt;Ts...&gt;::break_t</definition>
+        <argsstring></argsstring>
+        <name>break_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="77" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1a4345dc796b3a7a414224fa93e40d372e" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::add_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::add_t =  typename type_pack&lt;Ts...&gt;::add_t</definition>
+        <argsstring></argsstring>
+        <name>add_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="78" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1a917601863ed608f63ba4082594fe8c7a" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::remove_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::remove_t =  typename type_pack&lt;Ts...&gt;::remove_t</definition>
+        <argsstring></argsstring>
+        <name>remove_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="79" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1abcf7f18f29945a8e4806b1eedfb435f9" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::except_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::except_t =  typename type_pack&lt;Ts...&gt;::except_t</definition>
+        <argsstring></argsstring>
+        <name>except_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="80" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1a995273e8d09b5e1c9aa599f6b62cf745" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::conditional_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::conditional_t =  typename type_pack&lt;Ts...&gt;::conditional_t</definition>
+        <argsstring></argsstring>
+        <name>conditional_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="81" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1abe12d5171c4380d85b4e18063cc1c240" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::order_by_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::order_by_t =  typename type_pack&lt;Ts...&gt;::order_by_t</definition>
+        <argsstring></argsstring>
+        <name>order_by_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="82" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1pack_1a2977b78ca766b0148927ba5fc1e02f57" prot="public" static="no">
+        <type>typename type_pack&lt; Ts... &gt;::policy_t</type>
+        <definition>using psl::ecs::pack&lt; Ts &gt;::policy_t =  typename type_pack&lt;Ts...&gt;::policy_t</definition>
+        <argsstring></argsstring>
+        <name>policy_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="83" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classpsl_1_1ecs_1_1pack_1ae633127ef3e7fdba794bed7559a73dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class psl::ecs::state_t</definition>
+        <argsstring></argsstring>
+        <name>psl::ecs::state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="15" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1pack_1a42f3da8d077cf67c4cba60f35bd04ca5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::ecs::pack&lt; Ts &gt;::has_entities</definition>
+        <argsstring></argsstring>
+        <name>has_entities</name>
+        <initializer>{std::disjunction&lt;std::is_same&lt;psl::ecs::entity, Ts&gt;...&gt;::value}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="72" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1pack_1ade638e1fc1b95bf8b5505b33008ddd7f" prot="private" static="no" mutable="no">
+        <type>pack_t</type>
+        <definition>pack_t psl::ecs::pack&lt; Ts &gt;::m_Pack</definition>
+        <argsstring></argsstring>
+        <name>m_Pack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="118" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a279cf89bf3e3670d5b0061cc2ad36a68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ys</declname>
+            <defname>Ys</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::ecs::pack&lt; Ts &gt;::check_policy</definition>
+        <argsstring>()</argsstring>
+        <name>check_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="64" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="64" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a656ba0685a1095e6f7190ee7fef68de8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::pack&lt; Ts &gt;::pack</definition>
+        <argsstring>()</argsstring>
+        <name>pack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="88" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1abc11c31f10d52c0c5fd0ab04fda0d26f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::pack&lt; Ts &gt;::pack</definition>
+        <argsstring>(pack_t views)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>pack_t</type>
+          <declname>views</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="90" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1abb184c93e5b21fdcc394117994959fff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pack_t</type>
+        <definition>pack_t psl::ecs::pack&lt; Ts &gt;::view</definition>
+        <argsstring>()</argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="92" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1ad1945959212fca2a69fb726ceab2636f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>psl::array_view&lt; T &gt;</type>
+        <definition>psl::array_view&lt;T&gt; psl::ecs::pack&lt; Ts &gt;::get</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="95" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a7d932b41b702820e12f60524d6eb4901" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::ecs::pack&lt; Ts &gt;::get</definition>
+        <argsstring>() const noexcept -&gt; decltype(std::declval&lt; pack_t &gt;().template get&lt; N &gt;())</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="101" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1af96284d42fe732b54cfae0840b491e32" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::pack&lt; Ts &gt;::operator[]</definition>
+        <argsstring>(size_t index) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="106" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1aed4942dd2969277d98a46c7becc6db01" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::pack&lt; Ts &gt;::operator[]</definition>
+        <argsstring>(size_t index) noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="108" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a75a50b0a02f4f3ec26e81520c26406c4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::pack&lt; Ts &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="110" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a3dcefbfa0b36a3dc413bb3710a1774f4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::pack&lt; Ts &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="112" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a87fdc48f8c9d026ced088f14e8b43b36" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::ecs::pack&lt; Ts &gt;::size</definition>
+        <argsstring>() const noexcept -&gt; size_t</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="114" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1pack_1a6e77bc7f72b3f70034de7524685d2827" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::ecs::pack&lt; Ts &gt;::empty</definition>
+        <argsstring>() const noexcept -&gt; bool</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" line="115" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>an iterable container to work with components and entities. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/gpu_camera.hpp" line="30" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/gpu_camera.hpp" bodystart="30" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1ecs_1_1pack_1a4345dc796b3a7a414224fa93e40d372e" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>add_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a75a50b0a02f4f3ec26e81520c26406c4" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>begin</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1aaaf98fd1d050f1a3ed90192faa000338" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>break_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a279cf89bf3e3670d5b0061cc2ad36a68" prot="private" virt="non-virtual"><scope>psl::ecs::pack</scope><name>check_policy</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1ae6aee8a01f8a94cc9537d04b1d7efe16" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>combine_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a995273e8d09b5e1c9aa599f6b62cf745" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>conditional_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a6e77bc7f72b3f70034de7524685d2827" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>empty</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a3dcefbfa0b36a3dc413bb3710a1774f4" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>end</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1abcf7f18f29945a8e4806b1eedfb435f9" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>except_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1afe0e999051246ff6389edcfb2a7a5695" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>filter_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1ad1945959212fca2a69fb726ceab2636f" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>get</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a7d932b41b702820e12f60524d6eb4901" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>get</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a42f3da8d077cf67c4cba60f35bd04ca5" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>has_entities</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1ade638e1fc1b95bf8b5505b33008ddd7f" prot="private" virt="non-virtual"><scope>psl::ecs::pack</scope><name>m_Pack</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1af96284d42fe732b54cfae0840b491e32" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1aed4942dd2969277d98a46c7becc6db01" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1abe12d5171c4380d85b4e18063cc1c240" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>order_by_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a656ba0685a1095e6f7190ee7fef68de8" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>pack</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1abc11c31f10d52c0c5fd0ab04fda0d26f" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>pack</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1aad85f0af4bbed47944556e9190be69d6" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>pack_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a2977b78ca766b0148927ba5fc1e02f57" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>policy_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1ae633127ef3e7fdba794bed7559a73dd2" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>psl::ecs::state_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a917601863ed608f63ba4082594fe8c7a" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>remove_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1a87fdc48f8c9d026ced088f14e8b43b36" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>size</name></member>
+      <member refid="classpsl_1_1ecs_1_1pack_1abb184c93e5b21fdcc394117994959fff" prot="public" virt="non-virtual"><scope>psl::ecs::pack</scope><name>view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

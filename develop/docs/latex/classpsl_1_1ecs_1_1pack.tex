@@ -1,0 +1,105 @@
+\hypertarget{classpsl_1_1ecs_1_1pack}{}\doxysection{psl\+::ecs\+::pack$<$ Ts $>$ Class Template Reference}
+\label{classpsl_1_1ecs_1_1pack}\index{psl::ecs::pack$<$ Ts $>$@{psl::ecs::pack$<$ Ts $>$}}
+
+
+an iterable container to work with components and entities.  
+
+
+
+
+{\ttfamily \#include $<$pack.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_aad85f0af4bbed47944556e9190be69d6}\label{classpsl_1_1ecs_1_1pack_aad85f0af4bbed47944556e9190be69d6}} 
+using {\bfseries pack\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::pack\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_afe0e999051246ff6389edcfb2a7a5695}\label{classpsl_1_1ecs_1_1pack_afe0e999051246ff6389edcfb2a7a5695}} 
+using {\bfseries filter\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::filter\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_ae6aee8a01f8a94cc9537d04b1d7efe16}\label{classpsl_1_1ecs_1_1pack_ae6aee8a01f8a94cc9537d04b1d7efe16}} 
+using {\bfseries combine\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::combine\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_aaaf98fd1d050f1a3ed90192faa000338}\label{classpsl_1_1ecs_1_1pack_aaaf98fd1d050f1a3ed90192faa000338}} 
+using {\bfseries break\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::break\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a4345dc796b3a7a414224fa93e40d372e}\label{classpsl_1_1ecs_1_1pack_a4345dc796b3a7a414224fa93e40d372e}} 
+using {\bfseries add\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::add\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a917601863ed608f63ba4082594fe8c7a}\label{classpsl_1_1ecs_1_1pack_a917601863ed608f63ba4082594fe8c7a}} 
+using {\bfseries remove\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::remove\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_abcf7f18f29945a8e4806b1eedfb435f9}\label{classpsl_1_1ecs_1_1pack_abcf7f18f29945a8e4806b1eedfb435f9}} 
+using {\bfseries except\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::except\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a995273e8d09b5e1c9aa599f6b62cf745}\label{classpsl_1_1ecs_1_1pack_a995273e8d09b5e1c9aa599f6b62cf745}} 
+using {\bfseries conditional\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::conditional\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_abe12d5171c4380d85b4e18063cc1c240}\label{classpsl_1_1ecs_1_1pack_abe12d5171c4380d85b4e18063cc1c240}} 
+using {\bfseries order\+\_\+by\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::order\+\_\+by\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a2977b78ca766b0148927ba5fc1e02f57}\label{classpsl_1_1ecs_1_1pack_a2977b78ca766b0148927ba5fc1e02f57}} 
+using {\bfseries policy\+\_\+t} = typename type\+\_\+pack$<$ Ts... $>$\+::policy\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_abc11c31f10d52c0c5fd0ab04fda0d26f}\label{classpsl_1_1ecs_1_1pack_abc11c31f10d52c0c5fd0ab04fda0d26f}} 
+{\bfseries pack} (pack\+\_\+t views)
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_abb184c93e5b21fdcc394117994959fff}\label{classpsl_1_1ecs_1_1pack_abb184c93e5b21fdcc394117994959fff}} 
+pack\+\_\+t {\bfseries view} ()
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_ad1945959212fca2a69fb726ceab2636f}\label{classpsl_1_1ecs_1_1pack_ad1945959212fca2a69fb726ceab2636f}} 
+{\footnotesize template$<$typename T $>$ }\\psl\+::array\+\_\+view$<$ T $>$ {\bfseries get} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a7d932b41b702820e12f60524d6eb4901}\label{classpsl_1_1ecs_1_1pack_a7d932b41b702820e12f60524d6eb4901}} 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\auto {\bfseries get} () const noexcept -\/$>$ decltype(std\+::declval$<$ pack\+\_\+t $>$().template get$<$ N $>$())
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_af96284d42fe732b54cfae0840b491e32}\label{classpsl_1_1ecs_1_1pack_af96284d42fe732b54cfae0840b491e32}} 
+auto {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_aed4942dd2969277d98a46c7becc6db01}\label{classpsl_1_1ecs_1_1pack_aed4942dd2969277d98a46c7becc6db01}} 
+auto {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a75a50b0a02f4f3ec26e81520c26406c4}\label{classpsl_1_1ecs_1_1pack_a75a50b0a02f4f3ec26e81520c26406c4}} 
+auto {\bfseries begin} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a3dcefbfa0b36a3dc413bb3710a1774f4}\label{classpsl_1_1ecs_1_1pack_a3dcefbfa0b36a3dc413bb3710a1774f4}} 
+auto {\bfseries end} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a87fdc48f8c9d026ced088f14e8b43b36}\label{classpsl_1_1ecs_1_1pack_a87fdc48f8c9d026ced088f14e8b43b36}} 
+constexpr auto {\bfseries size} () const noexcept -\/$>$ size\+\_\+t
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a6e77bc7f72b3f70034de7524685d2827}\label{classpsl_1_1ecs_1_1pack_a6e77bc7f72b3f70034de7524685d2827}} 
+constexpr auto {\bfseries empty} () const noexcept -\/$>$ bool
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_a42f3da8d077cf67c4cba60f35bd04ca5}\label{classpsl_1_1ecs_1_1pack_a42f3da8d077cf67c4cba60f35bd04ca5}} 
+static constexpr bool {\bfseries has\+\_\+entities} \{std\+::disjunction$<$std\+::is\+\_\+same$<$psl\+::ecs\+::entity, Ts$>$...$>$\+::value\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1ecs_1_1pack_ae633127ef3e7fdba794bed7559a73dd2}\label{classpsl_1_1ecs_1_1pack_ae633127ef3e7fdba794bed7559a73dd2}} 
+class {\bfseries psl\+::ecs\+::state\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename... Ts$>$\newline
+class psl\+::ecs\+::pack$<$ Ts $>$}
+
+
+
+Definition at line 30 of file gpu\+\_\+camera.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/gpu\+\_\+camera.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.\+hpp\end{DoxyCompactItemize}

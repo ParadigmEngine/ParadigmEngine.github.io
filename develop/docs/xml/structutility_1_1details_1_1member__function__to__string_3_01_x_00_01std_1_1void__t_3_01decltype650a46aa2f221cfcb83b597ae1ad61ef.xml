@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1details_1_1member__function__to__string_3_01_x_00_01std_1_1void__t_3_01decltype650a46aa2f221cfcb83b597ae1ad61ef" kind="struct" language="C++" prot="public">
+    <compoundname>utility::details::member_function_to_string&lt; X, std::void_t&lt; decltype(std::declval&lt; X &amp; &gt;().to_string())&gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename X</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="734" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="733" bodyend="734"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

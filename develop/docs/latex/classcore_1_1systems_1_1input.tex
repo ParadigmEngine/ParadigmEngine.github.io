@@ -1,0 +1,252 @@
+\hypertarget{classcore_1_1systems_1_1input}{}\doxysection{core\+::systems\+::input Class Reference}
+\label{classcore_1_1systems_1_1input}\index{core::systems::input@{core::systems::input}}
+
+
+handles all inputs and sends out generic events that can be subscribed to.  
+
+
+
+
+{\ttfamily \#include $<$input.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1mouse__coordinate}{mouse\+\_\+coordinate}}
+\begin{DoxyCompactList}\small\item\em absolute mouse coordinates that also contain the surface width/height. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1mouse__delta}{mouse\+\_\+delta}}
+\begin{DoxyCompactList}\small\item\em contains the mouse delta coordinates in respect to the last message tick. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1scroll__delta}{scroll\+\_\+delta}}
+\begin{DoxyCompactList}\small\item\em delta information for the mouse scroll wheel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_afe2b03021701ce7c0c0f269a0e54c244}\label{classcore_1_1systems_1_1input_afe2b03021701ce7c0c0f269a0e54c244}} 
+enum \mbox{\hyperlink{classcore_1_1systems_1_1input_afe2b03021701ce7c0c0f269a0e54c244}{mousecode}} \{ \newline
+{\bfseries L\+E\+FT} = 1, 
+{\bfseries R\+I\+G\+HT} = 2, 
+{\bfseries M\+I\+D\+D\+LE} = 3, 
+{\bfseries E\+X\+T\+R\+A\+\_\+1} = 4, 
+\newline
+{\bfseries E\+X\+T\+R\+A\+\_\+2} = 5, 
+{\bfseries B\+T\+N\+\_\+1} = L\+E\+FT, 
+{\bfseries B\+T\+N\+\_\+2} = R\+I\+G\+HT, 
+{\bfseries B\+T\+N\+\_\+3} = M\+I\+D\+D\+LE, 
+\newline
+{\bfseries B\+T\+N\+\_\+4} = E\+X\+T\+R\+A\+\_\+1, 
+{\bfseries B\+T\+N\+\_\+5} = E\+X\+T\+R\+A\+\_\+2
+ \}
+\begin{DoxyCompactList}\small\item\em codes for the various mouse buttons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_ae53b5000e2500becf5f1e6f67bda4e4a}\label{classcore_1_1systems_1_1input_ae53b5000e2500becf5f1e6f67bda4e4a}} 
+enum \mbox{\hyperlink{classcore_1_1systems_1_1input_ae53b5000e2500becf5f1e6f67bda4e4a}{keycode}} \+: uint8\+\_\+t \{ \newline
+{\bfseries A} = 4, 
+{\bfseries B} = 5, 
+{\bfseries C} = 6, 
+{\bfseries D} = 7, 
+\newline
+{\bfseries E} = 8, 
+{\bfseries F} = 9, 
+{\bfseries G} = 10, 
+{\bfseries H} = 11, 
+\newline
+{\bfseries I} = 12, 
+{\bfseries J} = 13, 
+{\bfseries K} = 14, 
+{\bfseries L} = 15, 
+\newline
+{\bfseries M} = 16, 
+{\bfseries N} = 17, 
+{\bfseries O} = 18, 
+{\bfseries P} = 19, 
+\newline
+{\bfseries Q} = 20, 
+{\bfseries R} = 21, 
+{\bfseries S} = 22, 
+{\bfseries T} = 23, 
+\newline
+{\bfseries U} = 24, 
+{\bfseries V} = 25, 
+{\bfseries W} = 26, 
+{\bfseries X} = 27, 
+\newline
+{\bfseries Y} = 28, 
+{\bfseries Z} = 29, 
+{\bfseries K\+B\+\_\+1} = 30, 
+{\bfseries K\+B\+\_\+2} = 31, 
+\newline
+{\bfseries K\+B\+\_\+3} = 32, 
+{\bfseries K\+B\+\_\+4} = 33, 
+{\bfseries K\+B\+\_\+5} = 34, 
+{\bfseries K\+B\+\_\+6} = 35, 
+\newline
+{\bfseries K\+B\+\_\+7} = 36, 
+{\bfseries K\+B\+\_\+8} = 37, 
+{\bfseries K\+B\+\_\+9} = 38, 
+{\bfseries K\+B\+\_\+0} = 39, 
+\newline
+{\bfseries E\+N\+T\+ER} = 40, 
+{\bfseries E\+SC} = 41, 
+{\bfseries D\+EL} = 42, 
+{\bfseries T\+AB} = 43, 
+\newline
+{\bfseries S\+P\+A\+CE} = 44, 
+{\bfseries M\+I\+N\+US} = 45, 
+{\bfseries E\+Q\+U\+A\+LS} = 46, 
+{\bfseries L\+E\+F\+T\+\_\+\+B\+R\+A\+C\+K\+ET} = 47, 
+\newline
+{\bfseries R\+I\+G\+H\+T\+\_\+\+B\+R\+A\+C\+K\+ET} = 48, 
+{\bfseries B\+A\+C\+K\+\_\+\+S\+L\+A\+SH} = 49, 
+{\bfseries S\+E\+M\+I\+C\+O\+L\+ON} = 51, 
+{\bfseries Q\+U\+O\+TE} = 52, 
+\newline
+{\bfseries G\+R\+A\+VE} = 53, 
+{\bfseries C\+O\+M\+MA} = 54, 
+{\bfseries P\+E\+R\+I\+OD} = 55, 
+{\bfseries S\+L\+A\+SH} = 56, 
+\newline
+{\bfseries C\+A\+P\+S\+L\+O\+CK} = 57, 
+{\bfseries F1} = 58, 
+{\bfseries F2} = 59, 
+{\bfseries F3} = 60, 
+\newline
+{\bfseries F4} = 61, 
+{\bfseries F5} = 62, 
+{\bfseries F6} = 63, 
+{\bfseries F7} = 64, 
+\newline
+{\bfseries F8} = 65, 
+{\bfseries F9} = 66, 
+{\bfseries F10} = 67, 
+{\bfseries F11} = 68, 
+\newline
+{\bfseries F12} = 69, 
+{\bfseries P\+R\+I\+N\+T\+\_\+\+S\+C\+R\+E\+EN} = 70, 
+{\bfseries S\+C\+R\+O\+L\+L\+\_\+\+L\+O\+CK} = 71, 
+{\bfseries P\+A\+U\+SE} = 72, 
+\newline
+{\bfseries I\+N\+S\+E\+RT} = 73, 
+{\bfseries H\+O\+ME} = 74, 
+{\bfseries P\+A\+G\+E\+\_\+\+UP} = 75, 
+{\bfseries D\+E\+L\+E\+T\+E\+\_\+\+F\+O\+R\+W\+A\+RD} = 76, 
+\newline
+{\bfseries E\+ND} = 77, 
+{\bfseries P\+A\+G\+E\+\_\+\+D\+O\+WN} = 78, 
+{\bfseries R\+I\+G\+HT} = 79, 
+{\bfseries L\+E\+FT} = 80, 
+\newline
+{\bfseries D\+O\+WN} = 81, 
+{\bfseries UP} = 82, 
+{\bfseries K\+P\+\_\+\+N\+U\+M\+\_\+\+L\+O\+CK} = 83, 
+{\bfseries K\+P\+\_\+\+D\+I\+V\+I\+DE} = 84, 
+\newline
+{\bfseries K\+P\+\_\+\+M\+U\+L\+T\+I\+P\+LY} = 85, 
+{\bfseries K\+P\+\_\+\+S\+U\+B\+T\+R\+A\+CT} = 86, 
+{\bfseries K\+P\+\_\+\+A\+DD} = 87, 
+{\bfseries K\+P\+\_\+\+E\+N\+T\+ER} = 88, 
+\newline
+{\bfseries K\+P\+\_\+1} = 89, 
+{\bfseries K\+P\+\_\+2} = 90, 
+{\bfseries K\+P\+\_\+3} = 91, 
+{\bfseries K\+P\+\_\+4} = 92, 
+\newline
+{\bfseries K\+P\+\_\+5} = 93, 
+{\bfseries K\+P\+\_\+6} = 94, 
+{\bfseries K\+P\+\_\+7} = 95, 
+{\bfseries K\+P\+\_\+8} = 96, 
+\newline
+{\bfseries K\+P\+\_\+9} = 97, 
+{\bfseries K\+P\+\_\+0} = 98, 
+{\bfseries K\+P\+\_\+\+P\+O\+I\+NT} = 99, 
+{\bfseries N\+O\+N\+\_\+\+U\+S\+\_\+\+B\+A\+C\+K\+S\+L\+A\+SH} = 100, 
+\newline
+{\bfseries K\+P\+\_\+\+E\+Q\+U\+A\+LS} = 103, 
+{\bfseries F13} = 104, 
+{\bfseries F14} = 105, 
+{\bfseries F15} = 106, 
+\newline
+{\bfseries F16} = 107, 
+{\bfseries F17} = 108, 
+{\bfseries F18} = 109, 
+{\bfseries F19} = 110, 
+\newline
+{\bfseries F20} = 111, 
+{\bfseries F21} = 112, 
+{\bfseries F22} = 113, 
+{\bfseries F23} = 114, 
+\newline
+{\bfseries F24} = 115, 
+{\bfseries H\+E\+LP} = 117, 
+{\bfseries M\+E\+NU} = 118, 
+{\bfseries L\+E\+F\+T\+\_\+\+C\+O\+N\+T\+R\+OL} = 224, 
+\newline
+{\bfseries L\+E\+F\+T\+\_\+\+S\+H\+I\+FT} = 225, 
+{\bfseries L\+E\+F\+T\+\_\+\+A\+LT} = 226, 
+{\bfseries L\+E\+F\+T\+\_\+\+G\+UI} = 227, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+C\+O\+N\+T\+R\+OL} = 228, 
+\newline
+{\bfseries R\+I\+G\+H\+T\+\_\+\+S\+H\+I\+FT} = 229, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+A\+LT} = 230, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+G\+UI} = 231, 
+{\bfseries U\+N\+D\+E\+F\+I\+N\+ED} = 255
+ \}
+\begin{DoxyCompactList}\small\item\em contains the generic keycodes that platform specific key codes get translated to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_a0fc0d635f1cf0442d9bd500a54cdb6bc}\label{classcore_1_1systems_1_1input_a0fc0d635f1cf0442d9bd500a54cdb6bc}} 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classcore_1_1systems_1_1input_a0fc0d635f1cf0442d9bd500a54cdb6bc}{subscribe}} (T \&target)
+\begin{DoxyCompactList}\small\item\em automatically subscribes to all the events the target has method signatures for. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_a138e63e721304108ab6f2f87cda4d32d}\label{classcore_1_1systems_1_1input_a138e63e721304108ab6f2f87cda4d32d}} 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classcore_1_1systems_1_1input_a138e63e721304108ab6f2f87cda4d32d}{subscribe}} (T $\ast$target)
+\begin{DoxyCompactList}\small\item\em automatically subscribes to all the events the target has method signatures for. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_a0c3b8d537541138ea83975e36b4afbd1}\label{classcore_1_1systems_1_1input_a0c3b8d537541138ea83975e36b4afbd1}} 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classcore_1_1systems_1_1input_a0c3b8d537541138ea83975e36b4afbd1}{unsubscribe}} (T \&target)
+\begin{DoxyCompactList}\small\item\em automatically unsubscribes to all the events the target has method signatures for. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_af633b8abecb12b7a950fa4b2881dd43b}\label{classcore_1_1systems_1_1input_af633b8abecb12b7a950fa4b2881dd43b}} 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classcore_1_1systems_1_1input_af633b8abecb12b7a950fa4b2881dd43b}{unsubscribe}} (T $\ast$target)
+\begin{DoxyCompactList}\small\item\em automatically unsubscribes to all the events the target has method signatures for. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1mouse__coordinate}{mouse\+\_\+coordinate}} \& \mbox{\hyperlink{classcore_1_1systems_1_1input_ac8a9245db626921a8c56e936d696b6da}{cursor}} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_aae6dc2cd24a6272fddc1fbb2c629bd25}\label{classcore_1_1systems_1_1input_aae6dc2cd24a6272fddc1fbb2c629bd25}} 
+static constexpr psl\+::string\+\_\+view \mbox{\hyperlink{classcore_1_1systems_1_1input_aae6dc2cd24a6272fddc1fbb2c629bd25}{keycode\+\_\+names}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em array that maps keyboard keycodes to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_a6201fe98e6992b252cec36ddaba9ec40}\label{classcore_1_1systems_1_1input_a6201fe98e6992b252cec36ddaba9ec40}} 
+class {\bfseries core\+::os\+::surface}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the input class is responsible for translating platform specific input events to a more generalised format, and sending out events that have been subscribed to. for example it will translate all keyboard input messages into a generic key message that remains the same for all platforms. You can however reverse-\/translate back into the platform specific key messages. Every input instance is tied to a \mbox{\hyperlink{classcore_1_1os_1_1surface}{core\+::os\+::surface}}, and all its data (such as mouse coordinates) is invariably tied to that regardless if the actual platform only has a singleton input system. \begin{DoxyWarning}{Warning}
+all input state persists till the next platform specific message loop. this means that the \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1mouse__delta}{mouse\+\_\+delta}} can be the same for several frames untill the input system gets an update. that\textquotesingle{}s why you should prefer listening to the events rather than iterating the input system itself. 
+\end{DoxyWarning}
+
+
+Definition at line 31 of file input.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1systems_1_1input_ac8a9245db626921a8c56e936d696b6da}\label{classcore_1_1systems_1_1input_ac8a9245db626921a8c56e936d696b6da}} 
+\index{core::systems::input@{core::systems::input}!cursor@{cursor}}
+\index{cursor@{cursor}!core::systems::input@{core::systems::input}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structcore_1_1systems_1_1input_1_1mouse__coordinate}{mouse\+\_\+coordinate}}\& core\+::systems\+::input\+::cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the current mouse coordinate information 
+\end{DoxyReturn}
+
+
+Definition at line 644 of file input.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/systems/input.\+hpp\end{DoxyCompactItemize}

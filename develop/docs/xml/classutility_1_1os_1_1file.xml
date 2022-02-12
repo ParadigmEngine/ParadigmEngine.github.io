@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classutility_1_1os_1_1file" kind="class" language="C++" prot="public">
+    <compoundname>utility::os::file</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mode</name>
+        <enumvalue id="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a5f3e338f359142d759c43cb1f33f6d19" prot="public">
+          <name>READ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a2894ff08812d54519ff1fe7059f1fda2" prot="public">
+          <name>WRITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a8a6af39d57503091ef1d82d6e4356a88" prot="public">
+          <name>READ_AND_WRITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="enum" id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>method</name>
+        <enumvalue id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fade0e5f284969712aa768c27334a82e83" prot="public">
+          <name>CREATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa49793f5182a8f713084209f6c1d50d39" prot="public">
+          <name>TRUNCATE_OR_CREATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa9e686326b8101c94024dcebde5f74fd5" prot="public">
+          <name>OPEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa04a9d96abfbc4a86977d5a2984c6ba9f" prot="public">
+          <name>OPEN_OR_CREATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa6f400a78f895d60415cacc9476e670fb" prot="public">
+          <name>TRUNCATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="18" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="17" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classutility_1_1os_1_1file_1a2f082575d059109dd52cfddfc2d7543e" prot="private" static="no" mutable="no">
+        <type>psl::char_t *</type>
+        <definition>psl::char_t* utility::os::file::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="61" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classutility_1_1os_1_1file_1afa4f4803bc678b78954b1b91f1ecac13" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t utility::os::file::m_Size</definition>
+        <argsstring></argsstring>
+        <name>m_Size</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="62" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classutility_1_1os_1_1file_1a976b1a1a1614d7d05d0cd28c3b24b634" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t utility::os::file::m_ContentSize</definition>
+        <argsstring></argsstring>
+        <name>m_ContentSize</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="63" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1a2eced1447a171c1c2206ec956e575883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>file::file</definition>
+        <argsstring>(psl::string_view filename, mode mode=mode::READ_AND_WRITE, method method=method::OPEN_OR_CREATE, std::optional&lt; size_t &gt; offset={}, std::optional&lt; size_t &gt; length={})</argsstring>
+        <name>file</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>mode</type>
+          <declname>mode</declname>
+          <defval>mode::READ_AND_WRITE</defval>
+        </param>
+        <param>
+          <type>method</type>
+          <declname>method</declname>
+          <defval>method::OPEN_OR_CREATE</defval>
+        </param>
+        <param>
+          <type>std::optional&lt; size_t &gt;</type>
+          <declname>offset</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>std::optional&lt; size_t &gt;</type>
+          <declname>length</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="36" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/file.cpp" bodystart="11" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1a7174566303bcda6dc7d47cc0997c8c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>file::~file</definition>
+        <argsstring>()</argsstring>
+        <name>~file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="41" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/file.cpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1afff01388fe70bdf89adcfa67c240a088" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>utility::os::file::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="44" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1afbec147b864e6d79ac352f784af96829" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; psl::string_view &gt;</type>
+        <definition>std::optional&lt;psl::string_view&gt; utility::os::file::view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="46" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1a784156a8a30f600188f31fe37a24f9c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; psl::char_t * &gt;</type>
+        <definition>std::optional&lt;psl::char_t*&gt; utility::os::file::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="52" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classutility_1_1os_1_1file_1a776fe9a8ce2dcfbef7ab969b01648cd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool file::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="59" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/file.cpp" bodystart="127" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" line="8" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/file.hpp" bodystart="7" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classutility_1_1os_1_1file_1a776fe9a8ce2dcfbef7ab969b01648cd1" prot="private" virt="non-virtual"><scope>utility::os::file</scope><name>close</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fade0e5f284969712aa768c27334a82e83" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>CREATE</name></member>
+      <member refid="classutility_1_1os_1_1file_1a784156a8a30f600188f31fe37a24f9c8" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>data</name></member>
+      <member refid="classutility_1_1os_1_1file_1a2eced1447a171c1c2206ec956e575883" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>file</name></member>
+      <member refid="classutility_1_1os_1_1file_1a976b1a1a1614d7d05d0cd28c3b24b634" prot="private" virt="non-virtual"><scope>utility::os::file</scope><name>m_ContentSize</name></member>
+      <member refid="classutility_1_1os_1_1file_1a2f082575d059109dd52cfddfc2d7543e" prot="private" virt="non-virtual"><scope>utility::os::file</scope><name>m_Data</name></member>
+      <member refid="classutility_1_1os_1_1file_1afa4f4803bc678b78954b1b91f1ecac13" prot="private" virt="non-virtual"><scope>utility::os::file</scope><name>m_Size</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544f" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>method</name></member>
+      <member refid="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>mode</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa9e686326b8101c94024dcebde5f74fd5" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>OPEN</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa04a9d96abfbc4a86977d5a2984c6ba9f" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>OPEN_OR_CREATE</name></member>
+      <member refid="classutility_1_1os_1_1file_1afff01388fe70bdf89adcfa67c240a088" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>operator bool</name></member>
+      <member refid="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a5f3e338f359142d759c43cb1f33f6d19" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>READ</name></member>
+      <member refid="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a8a6af39d57503091ef1d82d6e4356a88" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>READ_AND_WRITE</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa6f400a78f895d60415cacc9476e670fb" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>TRUNCATE</name></member>
+      <member refid="classutility_1_1os_1_1file_1a81767258c11593a884822c47ea57544fa49793f5182a8f713084209f6c1d50d39" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>TRUNCATE_OR_CREATE</name></member>
+      <member refid="classutility_1_1os_1_1file_1afbec147b864e6d79ac352f784af96829" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>view</name></member>
+      <member refid="classutility_1_1os_1_1file_1a949d89680d8c16310245f974bcd6cb69a2894ff08812d54519ff1fe7059f1fda2" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>WRITE</name></member>
+      <member refid="classutility_1_1os_1_1file_1a7174566303bcda6dc7d47cc0997c8c42" prot="public" virt="non-virtual"><scope>utility::os::file</scope><name>~file</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1container_1_1compact__header" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::container::compact_header</compoundname>
+    <innerclass refid="structpsl_1_1format_1_1container_1_1compact__header_1_1content__info" prot="public">psl::format::container::compact_header::content_info</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1container_1_1compact__header_1_1entry" prot="public">psl::format::container::compact_header::entry</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1a78f2915d3c930314cacdba7ac2e4655f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view psl::format::container::compact_header::string_identifier</definition>
+        <argsstring></argsstring>
+        <name>string_identifier</name>
+        <initializer>= &quot;PCMPDATA&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="220" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1a0d506c5dd49bb14f13ac3bf5710fbe28" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view psl::format::container::compact_header::bin_identifier</definition>
+        <argsstring></argsstring>
+        <name>bin_identifier</name>
+        <initializer>= &quot;PBINDATA&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="221" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1a8d879d397d7bfbf1d88e37897088b29b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; entry &gt;</type>
+        <definition>std::vector&lt;entry&gt; psl::format::container::compact_header::entries</definition>
+        <argsstring></argsstring>
+        <name>entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="222" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1aeff379148583c033a7f9dddeb556a1ff" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; content_info &gt;</type>
+        <definition>std::vector&lt;content_info&gt; psl::format::container::compact_header::content_header</definition>
+        <argsstring></argsstring>
+        <name>content_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="223" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1ad394c3f7c1b13b259dccf949e00b04f6" prot="public" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::format::container::compact_header::names</definition>
+        <argsstring></argsstring>
+        <name>names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="224" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1container_1_1compact__header_1a51bf3d809dfc216ae7f7204a69b2c88d" prot="public" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::format::container::compact_header::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="225" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1container_1_1compact__header_1ac10245d292d72f67e29f4028fee4f7cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t container::compact_header::build</definition>
+        <argsstring>(const container &amp;container)</argsstring>
+        <name>build</name>
+        <param>
+          <type>const container &amp;</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="217" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="1257" bodyend="1369"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1container_1_1compact__header_1ab27d9901d96f47b9db019c85bd2c61ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool container::compact_header::try_decode</definition>
+        <argsstring>(psl::string8::view source, format::container &amp;target)</argsstring>
+        <name>try_decode</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>format::container &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="218" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="1371" bodyend="1482"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="200" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="199" bodyend="226"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1a0d506c5dd49bb14f13ac3bf5710fbe28" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>bin_identifier</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1ac10245d292d72f67e29f4028fee4f7cd" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>build</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1a51bf3d809dfc216ae7f7204a69b2c88d" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>content</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1aeff379148583c033a7f9dddeb556a1ff" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>content_header</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1a8d879d397d7bfbf1d88e37897088b29b" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>entries</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1ad394c3f7c1b13b259dccf949e00b04f6" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>names</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1a78f2915d3c930314cacdba7ac2e4655f" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>string_identifier</name></member>
+      <member refid="structpsl_1_1format_1_1container_1_1compact__header_1ab27d9901d96f47b9db019c85bd2c61ef" prot="public" virt="non-virtual"><scope>psl::format::container::compact_header</scope><name>try_decode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

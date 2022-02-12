@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1data_1_1clear__value" kind="class" language="C++" prot="public">
+    <compoundname>core::data::clear_value</compoundname>
+    <includes refid="clear__value_8hpp" local="no">clear_value.hpp</includes>
+    <innerclass refid="structcore_1_1data_1_1clear__value_1_1depth__stencil" prot="private">core::data::clear_value::depth_stencil</innerclass>
+    <innerclass refid="structcore_1_1data_1_1clear__value_1_1overloaded" prot="private">core::data::clear_value::overloaded</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1clear__value_1ace8c52067e07b87384148a0bda4a7df8" prot="private" static="no" mutable="no">
+        <type>std::variant&lt; psl::static_array&lt; float, 4 &gt;, psl::static_array&lt; uint32_t, 4 &gt;, psl::static_array&lt; int32_t, 4 &gt;, depth_stencil &gt;</type>
+        <definition>std::variant&lt;psl::static_array&lt;float, 4&gt;, psl::static_array&lt;uint32_t, 4&gt;, psl::static_array&lt;int32_t, 4&gt;, depth_stencil&gt; core::data::clear_value::m_ClearValue</definition>
+        <argsstring></argsstring>
+        <name>m_ClearValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="98" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1clear__value_1acb046deeff1a101dbb7d34b7465a036a" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt; int, const_str(&quot;MODE&quot;, 4)&gt;</type>
+        <definition>psl::serialization::property&lt;int, const_str(&quot;MODE&quot;, 4)&gt; core::data::clear_value::m_Mode</definition>
+        <argsstring></argsstring>
+        <name>m_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="99" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1ade667d7b30343f38ec9ccc6311178c54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>core::data::clear_value::overloaded</definition>
+        <argsstring>(Ts...) -&gt; overloaded&lt; Ts... &gt;</argsstring>
+        <name>overloaded</name>
+        <param>
+          <type>Ts...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="19" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1ad5d69cd76ba2aa8fb5b6ad588612889c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::data::clear_value::clear_value</definition>
+        <argsstring>(psl::static_array&lt; float, 4 &gt; colorValue)</argsstring>
+        <name>clear_value</name>
+        <param>
+          <type>psl::static_array&lt; float, 4 &gt;</type>
+          <declname>colorValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1a750843af70c9ef9b2220dc83a85d962a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::data::clear_value::clear_value</definition>
+        <argsstring>(psl::static_array&lt; uint32_t, 4 &gt; colorValue)</argsstring>
+        <name>clear_value</name>
+        <param>
+          <type>psl::static_array&lt; uint32_t, 4 &gt;</type>
+          <declname>colorValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="23" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1ae073d4e664cf9b95a251c640415372c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::data::clear_value::clear_value</definition>
+        <argsstring>(psl::static_array&lt; int32_t, 4 &gt; colorValue)</argsstring>
+        <name>clear_value</name>
+        <param>
+          <type>psl::static_array&lt; int32_t, 4 &gt;</type>
+          <declname>colorValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="24" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1a630698d2f3551d67a035ada99044b399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::data::clear_value::clear_value</definition>
+        <argsstring>(float depth, uint32_t stencil)</argsstring>
+        <name>clear_value</name>
+        <param>
+          <type>float</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>stencil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="25" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1a6dd78e9d42a24fea46eefa7311937148" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::data::clear_value::operator vk::ClearValue</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator vk::ClearValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="27" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1clear__value_1a8ac574a378256f34d83316edd4845756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::clear_value::serialize</definition>
+        <argsstring>(S &amp;serializer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>S &amp;</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="33" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="33" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>typesafe alternative to vk::ClearValue </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="9" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classcore_1_1data_1_1clear__value_1ad5d69cd76ba2aa8fb5b6ad588612889c" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>clear_value</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1a750843af70c9ef9b2220dc83a85d962a" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>clear_value</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1ae073d4e664cf9b95a251c640415372c0" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>clear_value</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1a630698d2f3551d67a035ada99044b399" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>clear_value</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1ace8c52067e07b87384148a0bda4a7df8" prot="private" virt="non-virtual"><scope>core::data::clear_value</scope><name>m_ClearValue</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1acb046deeff1a101dbb7d34b7465a036a" prot="private" virt="non-virtual"><scope>core::data::clear_value</scope><name>m_Mode</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1a6dd78e9d42a24fea46eefa7311937148" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>operator vk::ClearValue</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1ade667d7b30343f38ec9ccc6311178c54" prot="private" virt="non-virtual"><scope>core::data::clear_value</scope><name>overloaded</name></member>
+      <member refid="classcore_1_1data_1_1clear__value_1a8ac574a378256f34d83316edd4845756" prot="public" virt="non-virtual"><scope>core::data::clear_value</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

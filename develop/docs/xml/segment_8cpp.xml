@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="segment_8cpp" kind="file" language="C++">
+    <compoundname>segment.cpp</compoundname>
+    <includes refid="segment_8hpp" local="yes">psl/memory/segment.hpp</includes>
+    <includes refid="range_8hpp" local="yes">psl/memory/range.hpp</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/memory/segment.cpp</label>
+        <link refid="segment_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>optional</label>
+      </node>
+      <node id="10">
+        <label>signal.h</label>
+      </node>
+      <node id="2">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>cstring</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="segment_8cpp_1a7f2c0d814371c2ab127d8aca815ad87b" prot="public" static="yes" mutable="no">
+        <type><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref></type>
+        <definition>memory::range_t def_range</definition>
+        <argsstring></argsstring>
+        <name>def_range</name>
+        <initializer>{0u, 0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/src/memory/segment.cpp" line="5" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/segment.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;psl/memory/segment.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/memory/range.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacememory" kindref="compound">memory</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref><sp/>def_range<sp/>{0u,<sp/>0u};</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">segment::segment()<sp/>:<sp/>m_Range(&amp;def_range),<sp/>m_IsVirtual(true)<sp/>{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">segment::segment(<ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref>&amp;<sp/>_range,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>physically_backed)<sp/>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Range(&amp;_range),<sp/>m_IsVirtual(!physically_backed)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1range__t" kindref="compound">range_t</ref>&amp;<sp/>segment::range()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*m_Range;<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>segment::is_virtual()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_IsVirtual;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>segment::is_valid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Range<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>m_Range<sp/>!=<sp/>&amp;def_range;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/src/memory/segment.cpp"/>
+  </compounddef>
+</doxygen>

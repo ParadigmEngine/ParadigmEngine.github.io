@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_25d30cef3f3af62078a681d2a4bf9e83" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/gfx/details</compoundname>
+    <innerfile refid="instance_8hpp">instance.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/"/>
+  </compounddef>
+</doxygen>

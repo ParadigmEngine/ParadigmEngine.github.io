@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1lifetime" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::lifetime</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1lifetime_1a1592c83dafe3aeadf4659098683ff81a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::lifetime::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" line="9" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1lifetime_1ab7dfae1587efeb380d09befc2d71f4a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::lifetime::lifetime</definition>
+        <argsstring>(float value=10.0f)</argsstring>
+        <name>lifetime</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+          <defval>10.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" line="7" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" line="6" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1lifetime_1ab7dfae1587efeb380d09befc2d71f4a3" prot="public" virt="non-virtual"><scope>core::ecs::components::lifetime</scope><name>lifetime</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1lifetime_1a1592c83dafe3aeadf4659098683ff81a" prot="public" virt="non-virtual"><scope>core::ecs::components::lifetime</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

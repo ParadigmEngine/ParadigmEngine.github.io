@@ -1,0 +1,139 @@
+\hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment}{}\doxysection{core\+::data\+::framebuffer\+\_\+t\+::attachment Class Reference}
+\label{classcore_1_1data_1_1framebuffer__t_1_1attachment}\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+
+
+describes a single rendertarget in a framebuffer.  
+
+
+
+
+{\ttfamily \#include $<$framebuffer.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description}{description}}
+\begin{DoxyCompactList}\small\item\em describes how the rendertarget should be loaded, stored, it\textquotesingle{}s sample count, and what transition layouts it should go through. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_a8317857a9d086185f8f88d462ca87778}{attachment}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_ac4903b64040a439c1f346863e7c429f6}{texture}}, const core\+::gfx\+::clear\+\_\+value \&clear\+\_\+col, core\+::gfx\+::attachment descr, bool \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_ad74ad94a80e87c312248195b3be0a391}{shared}}=false)
+\begin{DoxyCompactList}\small\item\em constructs an attachment based on the given texture and values. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \& \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_ac4903b64040a439c1f346863e7c429f6}{texture}} () const
+\begin{DoxyCompactList}\small\item\em returns the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} assigned to this render attachment. \end{DoxyCompactList}\item 
+const core\+::gfx\+::clear\+\_\+value \& \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_a22feced3c9abd7d14b0821e3244a881b}{clear\+\_\+value}} () const
+\begin{DoxyCompactList}\small\item\em returns the clear value assigned to this attachment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_abbf995507b976dc874d05f5b51c3d744}{operator core\+::gfx\+::attachment}} () const noexcept
+\begin{DoxyCompactList}\small\item\em returns a core\+::gfx\+::attachment based on the internal settings. This is a passthrough method to the \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description}{core\+::data\+::framebuffer\+\_\+t\+::attachment\+::description}} instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_ad74ad94a80e87c312248195b3be0a391}{shared}} () const
+\begin{DoxyCompactList}\small\item\em signifies if this specific attachment duplicated when the framebuffer\textquotesingle{}s image count is larger than 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_a36aedf165c70437b2ad687eafea0b331}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_a36aedf165c70437b2ad687eafea0b331}} 
+class {\bfseries framebuffer\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+all data contained within this object is not guaranteed to be loaded, this includes the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} of the core\+::gfx\+::texture\+\_\+t. You should take caution when calling methods that manipulate the contained resources for this reason. 
+
+Definition at line 25 of file framebuffer.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_a8317857a9d086185f8f88d462ca87778}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_a8317857a9d086185f8f88d462ca87778}} 
+\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}!attachment@{attachment}}
+\index{attachment@{attachment}!core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+\doxysubsubsection{\texorpdfstring{attachment()}{attachment()}}
+{\footnotesize\ttfamily framebuffer\+\_\+t\+::attachment\+::attachment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{texture,  }\item[{const core\+::gfx\+::clear\+\_\+value \&}]{clear\+\_\+col,  }\item[{core\+::gfx\+::attachment}]{descr,  }\item[{bool}]{shared = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+that the texture should be valid (not pointing to a non-\/texture), otherwise you might run into issues further down. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em texture} & a \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} pointing to a valid (known or constructed), \mbox{\hyperlink{classcore_1_1ivk_1_1texture__t}{core\+::ivk\+::texture\+\_\+t}} object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em clear\+\_\+col} & the clear value to assign to this render texture. \\
+\hline
+\mbox{\texttt{ in}}  & {\em descr} & the attachment description that will be used to construct the \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description}{core\+::data\+::framebuffer\+\_\+t\+::attachment\+::description}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em shared} & value indicating if this render attachment is shared within this framebuffer (see \mbox{\hyperlink{classcore_1_1data_1_1framebuffer__t_1_1attachment_ad74ad94a80e87c312248195b3be0a391}{core\+::data\+::framebuffer\+\_\+t\+::attachment\+::shared()}} for more info). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file framebuffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_ac4903b64040a439c1f346863e7c429f6}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_ac4903b64040a439c1f346863e7c429f6}} 
+\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}!texture@{texture}}
+\index{texture@{texture}!core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+\doxysubsubsection{\texorpdfstring{texture()}{texture()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} \& framebuffer\+\_\+t\+::attachment\+::texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} assigned to this render attachment. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+the texture resource assigned to the U\+ID is not guaranteed to be loaded (or even constructed), as it can have just been parsed from disk. 
+\end{DoxyNote}
+
+
+Definition at line 96 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_a22feced3c9abd7d14b0821e3244a881b}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_a22feced3c9abd7d14b0821e3244a881b}} 
+\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}!clear\_value@{clear\_value}}
+\index{clear\_value@{clear\_value}!core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+\doxysubsubsection{\texorpdfstring{clear\_value()}{clear\_value()}}
+{\footnotesize\ttfamily const core\+::gfx\+::clear\+\_\+value \& framebuffer\+\_\+t\+::attachment\+::clear\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the clear value assigned to this attachment. 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_abbf995507b976dc874d05f5b51c3d744}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_abbf995507b976dc874d05f5b51c3d744}} 
+\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}!operator core::gfx::attachment@{operator core::gfx::attachment}}
+\index{operator core::gfx::attachment@{operator core::gfx::attachment}!core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+\doxysubsubsection{\texorpdfstring{operator core::gfx::attachment()}{operator core::gfx::attachment()}}
+{\footnotesize\ttfamily framebuffer\+\_\+t\+::attachment\+::operator core\+::gfx\+::attachment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+a core\+::gfx\+::attachment based on the internal settings. 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1framebuffer__t_1_1attachment_ad74ad94a80e87c312248195b3be0a391}\label{classcore_1_1data_1_1framebuffer__t_1_1attachment_ad74ad94a80e87c312248195b3be0a391}} 
+\index{core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}!shared@{shared}}
+\index{shared@{shared}!core::data::framebuffer\_t::attachment@{core::data::framebuffer\_t::attachment}}
+\doxysubsubsection{\texorpdfstring{shared()}{shared()}}
+{\footnotesize\ttfamily bool framebuffer\+\_\+t\+::attachment\+::shared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sometimes you don\textquotesingle{}t need a render attachment to have a unique instance per framebuffer entry (for example depth testing/texture in a double buffer scenario). in this case you can set this render attachment to be \char`\"{}shared\char`\"{}, a flag that will tell the implementation that rather than creating a new instance for when the framebuffer count is larger than 1, it should instead reuse the current one. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} for the application of this flag. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+true if this attachment is duplicated (true) or not (false). 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file framebuffer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/framebuffer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1spmc_1_1producer_1_1buffer" kind="struct" language="C++" prot="private">
+    <compoundname>psl::spmc::producer::buffer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1spmc_1_1producer_1_1buffer_1a3808f0eeffab6185224ab93646239153" prot="private" static="no" mutable="no">
+        <type>ring_array&lt; T &gt;</type>
+        <definition>ring_array&lt;T&gt; psl::spmc::producer&lt; T &gt;::buffer::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="67" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1spmc_1_1producer_1_1buffer_1ae0cefeda662a30bbfec9c45857d97bbb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t psl::spmc::producer&lt; T &gt;::buffer::m_Offset</definition>
+        <argsstring></argsstring>
+        <name>m_Offset</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="68" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1a3cfe5cf69acf3259c295231fbe0f350c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::buffer::buffer</definition>
+        <argsstring>(size_t capacity)</argsstring>
+        <name>buffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="34" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1a54921698bc032cb96cc695a89b6f49d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::buffer::~buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1a1b9a4686144cff4bad086e5e88c20339" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::spmc::producer&lt; T &gt;::buffer::set</definition>
+        <argsstring>(int64_t index, T &amp;&amp;value) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>int64_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="36" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1acc835b807f2b4fa1202a94e2c7d3634e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::spmc::producer&lt; T &gt;::buffer::at</definition>
+        <argsstring>(int64_t index) const noexcept</argsstring>
+        <name>at</name>
+        <param>
+          <type>int64_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="41" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1aacc387543a3bc70d8e1fdae5d1ba39af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>buffer *</type>
+        <definition>buffer* psl::spmc::producer&lt; T &gt;::buffer::copy</definition>
+        <argsstring>(size_t begin, size_t end, size_t capacity=0)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>size_t</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns a logical continuation buffer based on this buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the current buffer into a new one of &apos;at least&apos; the given capacity. It will grow to the next logical power of 2 that can also contain the begin-end items. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="50" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="50" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1spmc_1_1producer_1_1buffer_1a2c74ef87f40fdad26b35f846dd3584a0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::spmc::producer&lt; T &gt;::buffer::capacity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Max continuous range of items in the buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="64" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper over ring_array&lt;T&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This wrapper class over a ring_array keeps track of its internal offset. That will be used by the producer as it schedules more and more items. The ring_array can only be resized by invoking the buffer::copy method. Internally you can keep incrementing your access indices, as long as you never exceed the range being used (range &lt;= buffer::capacity(), where range == begin to end indices). When you exceed the capacity, you need to buffer::copy a new one. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="32" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="31" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1acc835b807f2b4fa1202a94e2c7d3634e" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>at</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1a3cfe5cf69acf3259c295231fbe0f350c" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>buffer</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1a2c74ef87f40fdad26b35f846dd3584a0" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>capacity</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1aacc387543a3bc70d8e1fdae5d1ba39af" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>copy</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1a3808f0eeffab6185224ab93646239153" prot="private" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>m_Data</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1ae0cefeda662a30bbfec9c45857d97bbb" prot="private" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>m_Offset</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1a1b9a4686144cff4bad086e5e88c20339" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>set</name></member>
+      <member refid="structpsl_1_1spmc_1_1producer_1_1buffer_1a54921698bc032cb96cc695a89b6f49d0" prot="public" virt="non-virtual"><scope>psl::spmc::producer::buffer</scope><name>~buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1is__collection" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::is_collection</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Encoder</type>
+        <defval>encode_to_format</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1details_1_1is__collection_1a70e3ebf376e86085506ac8429a133750" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::serialization::details::is_collection&lt; T, Encoder &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{function_serialize&lt;Encoder, T&gt;::value ||
+										 member_function_serialize&lt;Encoder, T&gt;::value}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="267" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="266" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="265" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1details_1_1is__collection_1a70e3ebf376e86085506ac8429a133750" prot="public" virt="non-virtual"><scope>psl::serialization::details::is_collection</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

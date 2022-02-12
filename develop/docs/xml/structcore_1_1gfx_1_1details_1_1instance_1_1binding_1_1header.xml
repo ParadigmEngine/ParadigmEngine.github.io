@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>core::gfx::details::instance::binding::header</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1ac8139472a70e753039c830b35c11c685" prot="public" static="no" mutable="no">
+        <type>psl::string</type>
+        <definition>psl::string core::gfx::details::instance::binding::header::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="36" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1a460931295ce8e3ac77ee6ff1c048f23e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core::gfx::details::instance::binding::header::size_of_element</definition>
+        <argsstring></argsstring>
+        <name>size_of_element</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="37" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1a3ab58cfa63237f6e5cafd357b3e58f8f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::binding::header::operator==</definition>
+        <argsstring>(const header &amp;b) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const header &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="32" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="31" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="30" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1ac8139472a70e753039c830b35c11c685" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::binding::header</scope><name>name</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1a3ab58cfa63237f6e5cafd357b3e58f8f" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::binding::header</scope><name>operator==</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1binding_1_1header_1a460931295ce8e3ac77ee6ff1c048f23e" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::binding::header</scope><name>size_of_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

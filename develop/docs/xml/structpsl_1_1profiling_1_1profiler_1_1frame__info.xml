@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1profiling_1_1profiler_1_1frame__info" kind="struct" language="C++" prot="private">
+    <compoundname>psl::profiling::profiler::frame_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a2c7320bbd78791b16e5cf22885b20902" prot="public" static="no" mutable="no">
+        <type>psl::vector&lt; scope_info &gt;</type>
+        <definition>psl::vector&lt;scope_info&gt; psl::profiling::profiler::frame_info::m_Scopes</definition>
+        <argsstring></argsstring>
+        <name>m_Scopes</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="64" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a90fc903af584fb3eb62faa0fc0928303" prot="public" static="no" mutable="no">
+        <type>psl::timer</type>
+        <definition>psl::timer psl::profiling::profiler::frame_info::m_Timer</definition>
+        <argsstring></argsstring>
+        <name>m_Timer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="65" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a9bdfce8dce0f46c0bae0bb372e6ec90a" prot="public" static="no" mutable="no">
+        <type>std::chrono::microseconds</type>
+        <definition>std::chrono::microseconds psl::profiling::profiler::frame_info::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="66" column="27" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a754bc6eeeea203705390aa294fa94ff2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t psl::profiling::profiler::frame_info::m_Stack</definition>
+        <argsstring></argsstring>
+        <name>m_Stack</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="67" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ad0e04f03bbf311fff81f162b62d8e164" prot="public" static="no" mutable="no">
+        <type>psl::bytell_map&lt; psl::string, uint64_t &gt;</type>
+        <definition>psl::bytell_map&lt;psl::string, uint64_t&gt; psl::profiling::profiler::frame_info::m_NameMap</definition>
+        <argsstring></argsstring>
+        <name>m_NameMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="68" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ac5aeff33a4a8d0e873f61e2b4b446d74" prot="public" static="no" mutable="no">
+        <type>psl::bytell_map&lt; uint64_t, psl::string &gt;</type>
+        <definition>psl::bytell_map&lt;uint64_t, psl::string&gt; psl::profiling::profiler::frame_info::m_IDMap</definition>
+        <argsstring></argsstring>
+        <name>m_IDMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="69" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a64122e1f4138dd933f369c4441f8136a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t psl::profiling::profiler::frame_info::IDCounter</definition>
+        <argsstring></argsstring>
+        <name>IDCounter</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="70" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a266d38a33da98f53397c5780ba9ad41f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void profiler::frame_info::push</definition>
+        <argsstring>(const psl::string &amp;name) noexcept</argsstring>
+        <name>push</name>
+        <param>
+          <type>const psl::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="59" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/profiling/profiler.cpp" bodystart="22" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1aabb31e265c07110bf03587a842a3657c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void profiler::frame_info::push</definition>
+        <argsstring>(uint64_t name) noexcept</argsstring>
+        <name>push</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="60" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/profiling/profiler.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a598082cb0f5536de5aece5258e8143c2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void profiler::frame_info::pop</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="61" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/profiling/profiler.cpp" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ab665f21020313f9ccec390d433e8b641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void profiler::frame_info::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="62" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/profiling/profiler.cpp" bodystart="57" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a591ac2a9f35be8cb9049fc379420504d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void profiler::frame_info::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="63" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/profiling/profiler.cpp" bodystart="66" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" line="58" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/profiling/profiler.hpp" bodystart="57" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ab665f21020313f9ccec390d433e8b641" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>clear</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a9bdfce8dce0f46c0bae0bb372e6ec90a" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>duration</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a591ac2a9f35be8cb9049fc379420504d" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>end</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a64122e1f4138dd933f369c4441f8136a" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>IDCounter</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ac5aeff33a4a8d0e873f61e2b4b446d74" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>m_IDMap</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1ad0e04f03bbf311fff81f162b62d8e164" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>m_NameMap</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a2c7320bbd78791b16e5cf22885b20902" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>m_Scopes</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a754bc6eeeea203705390aa294fa94ff2" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>m_Stack</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a90fc903af584fb3eb62faa0fc0928303" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>m_Timer</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a598082cb0f5536de5aece5258e8143c2" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>pop</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1a266d38a33da98f53397c5780ba9ad41f" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>push</name></member>
+      <member refid="structpsl_1_1profiling_1_1profiler_1_1frame__info_1aabb31e265c07110bf03587a842a3657c" prot="public" virt="non-virtual"><scope>psl::profiling::profiler::frame_info</scope><name>push</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

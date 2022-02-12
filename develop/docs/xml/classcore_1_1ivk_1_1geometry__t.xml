@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ivk_1_1geometry__t" kind="class" language="C++" prot="public">
+    <compoundname>core::ivk::geometry_t</compoundname>
+    <includes refid="vk_2geometry_8hpp" local="no">geometry.hpp</includes>
+    <innerclass refid="structcore_1_1ivk_1_1geometry__t_1_1binding" prot="private">core::ivk::geometry_t::binding</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1ac02182b163c718a496448c383e90c49d" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::context&gt; core::ivk::geometry_t::m_Context</definition>
+        <argsstring></argsstring>
+        <name>m_Context</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="73" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a582ee937d88ac4ba07b173fb4441871d" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; core::ivk::geometry_t::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="74" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1af38f61a03342254600f96fd6e2fe67b6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::buffer_t&gt; core::ivk::geometry_t::m_GeometryBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_GeometryBuffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="75" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a9747adbbe2ea7e60d1e2c36a718a4aa8" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::buffer_t&gt; core::ivk::geometry_t::m_IndicesBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesBuffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="76" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a50ac646cca4c08febd7aab79554258b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::ivk::geometry_t::m_IndicesSegment</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesSegment</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="77" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1acdca4cee498813448a1339273f5235bb" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref></type>
+        <definition>memory::range_t core::ivk::geometry_t::m_IndicesSubRange</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesSubRange</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="78" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a18b4de834bf979e51dc24b686b6fd77d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; binding &gt;</type>
+        <definition>std::vector&lt;binding&gt; core::ivk::geometry_t::m_Bindings</definition>
+        <argsstring></argsstring>
+        <name>m_Bindings</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="79" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1ab92f5e18ed96a476d8b80cbfb4a6cc4e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref> &amp;</type>
+        <definition>const psl::UID&amp; core::ivk::geometry_t::m_UID</definition>
+        <argsstring></argsstring>
+        <name>m_UID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="80" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a808816e2e8ffeb79dd157ed831620e2c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::ivk::geometry_t::m_Vertices</definition>
+        <argsstring></argsstring>
+        <name>m_Vertices</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="81" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1geometry__t_1a42ae4f9dc5f66525274d26957d6ed78f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::ivk::geometry_t::m_Triangles</definition>
+        <argsstring></argsstring>
+        <name>m_Triangles</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="82" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1ae04c926f9676756b5cdf72f614b72791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>geometry_t::geometry_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, core::resource::handle&lt; core::ivk::context &gt; context, core::resource::handle&lt; core::data::geometry_t &gt; data, core::resource::handle&lt; core::ivk::buffer_t &gt; geometryBuffer, core::resource::handle&lt; core::ivk::buffer_t &gt; indicesBuffer)</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+          <declname>geometryBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+          <declname>indicesBuffer</declname>
+        </param>
+        <briefdescription>
+<para>constructs, and uploads the geometry data to the buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the geometry source data for this instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">geometryBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer that the mesh data will be uploaded to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indicesBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer that the indices data will be uploaded to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="36" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="21" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a22f392a6614cafc3e8fe277bf934d9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>geometry_t::~geometry_t</definition>
+        <argsstring>()</argsstring>
+        <name>~geometry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="43" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a3143227685ab0cca6cb504b82888b921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::geometry_t::geometry_t</definition>
+        <argsstring>(const geometry_t &amp;)=delete</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1afcd6b65680ff2e7f7289dc971658b996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::geometry_t::geometry_t</definition>
+        <argsstring>(geometry_t &amp;&amp;)=delete</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1afdc6ad6fb4b89fd9be97d346868db3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        <definition>geometry_t&amp; core::ivk::geometry_t::operator=</definition>
+        <argsstring>(const geometry_t &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="46" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1aaf0e120a353caa935bc1f80c63fde74d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;</type>
+        <definition>geometry_t&amp; core::ivk::geometry_t::operator=</definition>
+        <argsstring>(geometry_t &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">geometry_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="47" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1ad2bb1d850043e6f022cc0b83a0e0b966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::recreate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; data)</argsstring>
+        <name>recreate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="49" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="57" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a88851b6f9b6f43493dd5aef76af4e9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::recreate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; data, core::resource::handle&lt; core::ivk::buffer_t &gt; geometryBuffer, core::resource::handle&lt; core::ivk::buffer_t &gt; indicesBuffer)</argsstring>
+        <name>recreate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+          <declname>geometryBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1buffer__t" kindref="compound">core::ivk::buffer_t</ref> &gt;</type>
+          <declname>indicesBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="50" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1add50ca4c415f04dd841cf3bd27cb3f5c" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool geometry_t::compatible</definition>
+        <argsstring>(const core::ivk::material_t &amp;material) const noexcept</argsstring>
+        <name>compatible</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1material__t" kindref="compound">core::ivk::material_t</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether this geometry can be combined with the given material (i.e. it has all the required channels that the material needs). </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the material to check against. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="56" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="151" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a5243b6bd1d230f6909dcb09b642ed9bb" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::bind</definition>
+        <argsstring>(vk::CommandBuffer &amp;buffer, const core::ivk::material_t &amp;material) const noexcept</argsstring>
+        <name>bind</name>
+        <param>
+          <type>vk::CommandBuffer &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1material__t" kindref="compound">core::ivk::material_t</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>binds the geometry to the given material for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the command buffer to upload the commands to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the material to bind with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>only invoke this method in the context of recording draw instructions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="62" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="180" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1ae80f4ae36a39252896cb7c27dcf5e450" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::data::geometry_t&gt; core::ivk::geometry_t::data</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the geometry data used by this instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="65" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a071d3957f8f524de70e95b0764c0478b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::vertices</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="67" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1abbdb31e605a59839f1eaad1e3c4bd297" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::triangles</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>triangles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="68" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a8c0c393eb6de4b28732ebe16115ca350" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::indices</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="69" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="205" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1geometry__t_1a85929630fac58943e483971cf576b40f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="72" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp" bodystart="41" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>describes the driver visible concept of geometry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" line="23" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp" bodystart="22" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a5243b6bd1d230f6909dcb09b642ed9bb" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>bind</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a85929630fac58943e483971cf576b40f" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>clear</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1add50ca4c415f04dd841cf3bd27cb3f5c" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>compatible</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1ae80f4ae36a39252896cb7c27dcf5e450" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>data</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1ae04c926f9676756b5cdf72f614b72791" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a3143227685ab0cca6cb504b82888b921" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1afcd6b65680ff2e7f7289dc971658b996" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a8c0c393eb6de4b28732ebe16115ca350" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>indices</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a18b4de834bf979e51dc24b686b6fd77d" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_Bindings</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1ac02182b163c718a496448c383e90c49d" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_Context</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a582ee937d88ac4ba07b173fb4441871d" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_Data</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1af38f61a03342254600f96fd6e2fe67b6" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_GeometryBuffer</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a9747adbbe2ea7e60d1e2c36a718a4aa8" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_IndicesBuffer</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a50ac646cca4c08febd7aab79554258b7" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_IndicesSegment</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1acdca4cee498813448a1339273f5235bb" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_IndicesSubRange</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a42ae4f9dc5f66525274d26957d6ed78f" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_Triangles</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1ab92f5e18ed96a476d8b80cbfb4a6cc4e" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_UID</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a808816e2e8ffeb79dd157ed831620e2c" prot="private" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>m_Vertices</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1afdc6ad6fb4b89fd9be97d346868db3bf" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1aaf0e120a353caa935bc1f80c63fde74d" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1ad2bb1d850043e6f022cc0b83a0e0b966" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>recreate</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a88851b6f9b6f43493dd5aef76af4e9e5" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>recreate</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1abbdb31e605a59839f1eaad1e3c4bd297" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>triangles</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a071d3957f8f524de70e95b0764c0478b" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>vertices</name></member>
+      <member refid="classcore_1_1ivk_1_1geometry__t_1a22f392a6614cafc3e8fe277bf934d9cb" prot="public" virt="non-virtual"><scope>core::ivk::geometry_t</scope><name>~geometry_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

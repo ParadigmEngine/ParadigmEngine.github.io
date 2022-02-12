@@ -1,0 +1,2212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1math" kind="namespace" language="C++">
+    <compoundname>psl::math</compoundname>
+    <innerclass refid="classpsl_1_1math_1_1constants" prot="public">psl::math::constants</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepsl_1_1math_1ace2abbb201e48ad44faa73b39e285c0e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::sin</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>sin</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="33" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ae3505b14531c72f496893113b5c9a819" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::cos</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>cos</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="38" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a2f2aea9cf06a464fd1f1486279a3322b" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::tan</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>tan</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="43" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a5a9f5eb12f8d020a2af01e985ad02676" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::acos</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>acos</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="48" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a8fc85569b6179dd65822ab05a9bdf7e4" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::asin</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>asin</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="53" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a0793686f7f27c4ffe7cb8c8ffc53c82c" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::atan</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>atan</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="58" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a142f923ad1d23d921e1fd9e5bd9e4732" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::sqrt</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="64" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ac8bc36555d2850bcc0e0d08e6069a726" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::angle_axis</definition>
+        <argsstring>(const precision_t &amp;angle, const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>angle_axis</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="70" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="70" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ac498a132d0113f9c8a1af4cd2f90a6a8" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; precision_t, 3 &gt;</type>
+        <definition>constexpr static psl::tvec&lt;precision_t, 3&gt; psl::math::rotate</definition>
+        <argsstring>(const psl::tquat&lt; precision_t &gt; &amp;quat, const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>const psl::tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="78" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ae6334beba4f88d54610e069ac7351053" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::fade</definition>
+        <argsstring>(precision_t t) noexcept</argsstring>
+        <name>fade</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="85" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a6117fee8f2287de65afb0181710c2a8f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename hash_t</type>
+          </param>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::grad</definition>
+        <argsstring>(hash_t hash, precision_t x, precision_t y, precision_t z)</argsstring>
+        <name>grad</name>
+        <param>
+          <type>hash_t</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="91" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ae98382120ec6de45b723939617b31ad5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename hash_t</type>
+          </param>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::grad</definition>
+        <argsstring>(hash_t hash, precision_t x, precision_t y)</argsstring>
+        <name>grad</name>
+        <param>
+          <type>hash_t</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="100" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a37119e8fd1892f03c6233213b03257b3" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::lerp</definition>
+        <argsstring>(precision_t t, precision_t a, precision_t b) noexcept</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="109" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1aa903d9700842c4900be463df8d095f5e" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr psl::tvec&lt; precision_t, 1 &gt;</type>
+        <definition>constexpr psl::tvec&lt;precision_t, 1&gt; psl::math::lerp</definition>
+        <argsstring>(precision_t t, psl::tvec&lt; precision_t, 1 &gt; a, psl::tvec&lt; precision_t, 1 &gt; b) noexcept</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 1 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 1 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="115" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a4b2579b7f1a76751779288df938f4b33" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr psl::tvec&lt; precision_t, 2 &gt;</type>
+        <definition>constexpr psl::tvec&lt;precision_t, 2&gt; psl::math::lerp</definition>
+        <argsstring>(precision_t t, psl::tvec&lt; precision_t, 2 &gt; a, psl::tvec&lt; precision_t, 2 &gt; b) noexcept</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 2 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 2 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="122" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ac61ee32c865f0fc28007f7563d1042a3" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr psl::tvec&lt; precision_t, 3 &gt;</type>
+        <definition>constexpr psl::tvec&lt;precision_t, 3&gt; psl::math::lerp</definition>
+        <argsstring>(precision_t t, psl::tvec&lt; precision_t, 3 &gt; a, psl::tvec&lt; precision_t, 3 &gt; b) noexcept</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 3 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 3 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="129" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a8c551efe5f95ef87494dff1899d2c359" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr psl::tvec&lt; precision_t, 4 &gt;</type>
+        <definition>constexpr psl::tvec&lt;precision_t, 4&gt; psl::math::lerp</definition>
+        <argsstring>(precision_t t, psl::tvec&lt; precision_t, 4 &gt; a, psl::tvec&lt; precision_t, 4 &gt; b) noexcept</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 4 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>psl::tvec&lt; precision_t, 4 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="136" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1afa36f7d9a590e3f5c6d1b239fbaf4f76" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::saturate</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>saturate</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="141" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a5dc929dc8e33d5d75be6f6c02748f2c7" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::clamp</definition>
+        <argsstring>(precision_t value, precision_t min=0, precision_t max=1) noexcept</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>max</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="147" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a446fe158eebc06c680b3a477e08d217e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::distance</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec1, const tvec&lt; precision_t, dimensions &gt; &amp;vec2) noexcept</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="153" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="153" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a9f0a78ff17ad14042756f9b34f52cf2e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::floor</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>floor</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="161" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a47c4b94bfae074de439d39e801d50a71" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; precision_t, 1 &gt;</type>
+        <definition>constexpr static psl::tvec&lt;precision_t, 1&gt; psl::math::floor</definition>
+        <argsstring>(psl::tvec&lt; precision_t, 1 &gt; value) noexcept</argsstring>
+        <name>floor</name>
+        <param>
+          <type>psl::tvec&lt; precision_t, 1 &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="167" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a9b3259363228d8c9064a6d0d65f38247" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; precision_t, 2 &gt;</type>
+        <definition>constexpr static psl::tvec&lt;precision_t, 2&gt; psl::math::floor</definition>
+        <argsstring>(psl::tvec&lt; precision_t, 2 &gt; value) noexcept</argsstring>
+        <name>floor</name>
+        <param>
+          <type>psl::tvec&lt; precision_t, 2 &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="173" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7ab7d498691a968618799727f5923db1" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; precision_t, 3 &gt;</type>
+        <definition>constexpr static psl::tvec&lt;precision_t, 3&gt; psl::math::floor</definition>
+        <argsstring>(psl::tvec&lt; precision_t, 3 &gt; value) noexcept</argsstring>
+        <name>floor</name>
+        <param>
+          <type>psl::tvec&lt; precision_t, 3 &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="179" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a933d803ffa048c11af5e39c3827e6385" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; precision_t, 4 &gt;</type>
+        <definition>constexpr static psl::tvec&lt;precision_t, 4&gt; psl::math::floor</definition>
+        <argsstring>(psl::tvec&lt; precision_t, 4 &gt; value) noexcept</argsstring>
+        <name>floor</name>
+        <param>
+          <type>psl::tvec&lt; precision_t, 4 &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="185" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a0be92ee28c006fb9ece3632dec243fd6" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::exp</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>exp</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="191" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7b7f9b635b09a4dcd87b45e62d971e37" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::fract</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>fract</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="197" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1aab654186308c80ddf893d0040f43c303" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static auto</type>
+        <definition>constexpr static auto psl::math::log</definition>
+        <argsstring>(precision_t value) noexcept</argsstring>
+        <name>log</name>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="203" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1afa5bf9541c8f847cd4b1686f6a07c7b2" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>typename precision_N_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static long double</type>
+        <definition>constexpr static long double psl::math::log_n</definition>
+        <argsstring>(precision_N_t N, precision_t value) noexcept</argsstring>
+        <name>log_n</name>
+        <param>
+          <type>precision_N_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="209" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="209" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a44f9480972df5c3d1bd57889fd8f5d94" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>typename precision_N_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::next_pow_of</definition>
+        <argsstring>(precision_N_t N, precision_t value) noexcept</argsstring>
+        <name>next_pow_of</name>
+        <param>
+          <type>precision_N_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="220" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="220" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1afc5b1e0fb6b64fbe9a1f4f3e439f2e3e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::round_to</definition>
+        <argsstring>(precision_t N, precision_t value) noexcept</argsstring>
+        <name>round_to</name>
+        <param>
+          <type>precision_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>round to nearest multiple of N </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the multiple to round to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to round </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="233" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="233" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1adad9776e83b305ce262afbbb4347741e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::ceil_to</definition>
+        <argsstring>(precision_t N, precision_t value) noexcept</argsstring>
+        <name>ceil_to</name>
+        <param>
+          <type>precision_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>ceil to nearest multiple of N </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the multiple to ceil to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to ceil </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="249" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a836b151ef1fdf6e5b2c676f06109cbd9" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::floor_to</definition>
+        <argsstring>(precision_t N, precision_t value) noexcept</argsstring>
+        <name>floor_to</name>
+        <param>
+          <type>precision_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>floor to nearest multiple of N </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the multiple to floor to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to floor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="259" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="259" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7c0f24d8ba51bfcc3678a9c9d28a379e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::min</definition>
+        <argsstring>(const precision_t &amp;left, const precision_t &amp;right) noexcept</argsstring>
+        <name>min</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="266" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1add70c6e5e5409a15499dad8593893b55" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, N &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, N&gt; psl::math::min</definition>
+        <argsstring>(const tvec&lt; precision_t, N &gt; &amp;left, const tvec&lt; precision_t, N &gt; &amp;right) noexcept</argsstring>
+        <name>min</name>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="272" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="272" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1acbf7485b366cc50aabb834792760e2fe" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::max</definition>
+        <argsstring>(const precision_t &amp;left, const precision_t &amp;right) noexcept</argsstring>
+        <name>max</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="281" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a43acbad6575f239359a2ccb843d3b587" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, N &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, N&gt; psl::math::max</definition>
+        <argsstring>(const tvec&lt; precision_t, N &gt; &amp;left, const tvec&lt; precision_t, N &gt; &amp;right) noexcept</argsstring>
+        <name>max</name>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="287" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="287" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7558e41f59152c0926c1463514bf0125" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::abs</definition>
+        <argsstring>(const precision_t &amp;value) noexcept</argsstring>
+        <name>abs</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="296" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a69409c64052a21a31d425d7cdbe0ad14" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, N &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, N&gt; psl::math::abs</definition>
+        <argsstring>(const tvec&lt; precision_t, N &gt; &amp;value) noexcept</argsstring>
+        <name>abs</name>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="302" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="302" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1af5239f8e54ea42be8b52ae4f5ad6af52" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::difference</definition>
+        <argsstring>(const precision_t &amp;lhs, const precision_t &amp;rhs) noexcept</argsstring>
+        <name>difference</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="310" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a6c116f98958f045af151a04be9e2294d" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, N &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, N&gt; psl::math::difference</definition>
+        <argsstring>(const tvec&lt; precision_t, N &gt; &amp;lhs, const tvec&lt; precision_t, N &gt; &amp;rhs) noexcept</argsstring>
+        <name>difference</name>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, N &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="316" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="316" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1af5da48087e1a33b32e67bdf7c9de6f5e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::from_euler</definition>
+        <argsstring>(precision_t pitch, precision_t yaw, precision_t roll) noexcept</argsstring>
+        <name>from_euler</name>
+        <param>
+          <type>precision_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>yaw</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>roll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="331" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="331" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1acf3baa4570656fb1b8a148b8d393ac44" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::from_euler</definition>
+        <argsstring>(const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>from_euler</name>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="350" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1aa65daf2efc2303aede8ff91d42fd1b30" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, 3 &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, 3&gt; psl::math::to_euler</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;q) noexcept</argsstring>
+        <name>to_euler</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="356" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="356" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a4059c77859a6547790448def22145d46" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::perspective_projection</definition>
+        <argsstring>(precision_t vertical_fov, precision_t aspect_ratio, precision_t near, precision_t far) noexcept</argsstring>
+        <name>perspective_projection</name>
+        <param>
+          <type>precision_t</type>
+          <declname>vertical_fov</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>aspect_ratio</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>near</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>far</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="391" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="391" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ad641b1f31f85ba6e912f0890a6588252" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::look_at</definition>
+        <argsstring>(const psl::tvec&lt; precision_t, 3 &gt; &amp;eye, const psl::tvec&lt; precision_t, 3 &gt; &amp;center, const psl::tvec&lt; precision_t, 3 &gt; &amp;up) noexcept</argsstring>
+        <name>look_at</name>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>eye</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="407" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="407" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7fd8e1fdb613fdeeddf8162ee981e9e8" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::scale</definition>
+        <argsstring>(const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;mat, const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>scale</name>
+        <param>
+          <type>const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="436" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="436" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ad672cc0d61adc59bbf9e0dbf1e5cd53f" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::scale</definition>
+        <argsstring>(const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>scale</name>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="448" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="448" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a9f30b1cbcd38f4d8d79e8f8bc679462c" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::translate</definition>
+        <argsstring>(const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;mat, const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>translate</name>
+        <param>
+          <type>const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="460" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="460" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a0e7b5637103a80aa9a12305b3353b330" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::translate</definition>
+        <argsstring>(const psl::tvec&lt; precision_t, 3 &gt; &amp;vec) noexcept</argsstring>
+        <name>translate</name>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="469" column="28" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="469" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1aa575999e52e6d2a30efe5fba42ceba02" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tmat&lt; precision_t, 4, 4 &gt;</type>
+        <definition>constexpr static psl::tmat&lt;precision_t, 4, 4&gt; psl::math::rotate</definition>
+        <argsstring>(const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;tmat, const psl::tvec&lt; precision_t, 3 &gt; &amp;tvec, precision_t angle) noexcept</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>const psl::tmat&lt; precision_t, 4, 4 &gt; &amp;</type>
+          <declname>tmat</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>tvec</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="479" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="479" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a466d33dacd338542fb564aae96e33bf7" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tmat&lt; precision_t, 3, 3 &gt;</type>
+        <definition>constexpr static tmat&lt;precision_t, 3, 3&gt; psl::math::to_matrix</definition>
+        <argsstring>(const psl::tquat&lt; precision_t &gt; &amp;value) noexcept</argsstring>
+        <name>to_matrix</name>
+        <param>
+          <type>const psl::tquat&lt; precision_t &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="510" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="510" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a92d0f35216efcb338b65d7312d8025d3" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr tquat&lt; precision_t &gt;</type>
+        <definition>static constexpr tquat&lt;precision_t&gt; psl::math::to_quat</definition>
+        <argsstring>(tmat&lt; precision_t, 3, 3 &gt; const &amp;mat) noexcept</argsstring>
+        <name>to_quat</name>
+        <param>
+          <type>tmat&lt; precision_t, 3, 3 &gt; const &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="538" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="538" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ae61970710b5dbdd83c1ea399219ab306" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::look_at_q</definition>
+        <argsstring>(const tvec&lt; precision_t, 3 &gt; &amp;direction, const tvec&lt; precision_t, 3 &gt; &amp;up) noexcept</argsstring>
+        <name>look_at_q</name>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="597" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="597" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a09898de4587e3111ce7ea7b95111f63e" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::look_at_q</definition>
+        <argsstring>(const tvec&lt; precision_t, 3 &gt; &amp;origin, const tvec&lt; precision_t, 3 &gt; &amp;target, const tvec&lt; precision_t, 3 &gt; &amp;up) noexcept</argsstring>
+        <name>look_at_q</name>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="609" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="609" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a232cb90beb8b17bbec81b06530a1aca9" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::mix</definition>
+        <argsstring>(const precision_t &amp;x, const precision_t &amp;y, precision_t a) noexcept</argsstring>
+        <name>mix</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="618" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="618" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a60d387007eb882e3b2be678cfad5f871" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename element1_t</type>
+          </param>
+          <param>
+            <type>typename element2_t</type>
+          </param>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>typename return_t</type>
+            <defval>element1_t</defval>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; return_t, N &gt;</type>
+        <definition>constexpr static psl::tvec&lt;return_t, N&gt; psl::math::mix</definition>
+        <argsstring>(const std::array&lt; element1_t, N &gt; &amp;x, const std::array&lt; element2_t, N &gt; &amp;y, precision_t a) noexcept</argsstring>
+        <name>mix</name>
+        <param>
+          <type>const std::array&lt; element1_t, N &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; element2_t, N &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="625" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="625" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a155157ec6d3d9f7e455f7004e3c139b5" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename element1_t</type>
+          </param>
+          <param>
+            <type>typename element2_t</type>
+          </param>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>typename return_t</type>
+            <defval>element1_t</defval>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static psl::tvec&lt; return_t, N &gt;</type>
+        <definition>constexpr static psl::tvec&lt;return_t, N&gt; psl::math::mix</definition>
+        <argsstring>(const psl::tvec&lt; element1_t, N &gt; &amp;x, const psl::tvec&lt; element2_t, N &gt; &amp;y, precision_t a) noexcept</argsstring>
+        <name>mix</name>
+        <param>
+          <type>const psl::tvec&lt; element1_t, N &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const psl::tvec&lt; element2_t, N &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="632" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" bodystart="632" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a202c33aa2673a83acf0635e7b3e3ea80" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::dot</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;left, const tquat&lt; precision_t &gt; &amp;right) noexcept</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="160" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ad1d45ae8c5f17bf7fd1ab34c3072b7fb" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::square_magnitude</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat) noexcept</argsstring>
+        <name>square_magnitude</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="166" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a0eb21b609e812a8d6d7f3b1bf257c094" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::magnitude</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat) noexcept</argsstring>
+        <name>magnitude</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="172" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1abfd0d950472a7f3319c6eaf27605b8f7" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::pow</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat, precision_t pow_value=precision_t {2}) noexcept</argsstring>
+        <name>pow</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>pow_value</declname>
+          <defval>precision_t {2}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="179" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="179" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a521a430faf487d1923c94d3809d77de5" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::sqrt</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat) noexcept</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="189" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a87cd2d4066e14516eb5d6f67677b540c" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::normalize</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat)</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="195" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a451446683524f11d0cf65884a383858d" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::conjugate</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat)</argsstring>
+        <name>conjugate</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="200" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a20a98295d8bbeb4c3968f5b27dc20dd7" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tquat&lt; precision_t &gt;</type>
+        <definition>constexpr static tquat&lt;precision_t&gt; psl::math::inverse</definition>
+        <argsstring>(const tquat&lt; precision_t &gt; &amp;quat)</argsstring>
+        <name>inverse</name>
+        <param>
+          <type>const tquat&lt; precision_t &gt; &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" line="206" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/quaternion.hpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7a12b57f2bb18724a17a7c44be4daa79" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>static constexpr T psl::math::radians</definition>
+        <argsstring>(const T &amp;value) noexcept</argsstring>
+        <name>radians</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="17" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1aaf482b5417e27c18d9815b69cf480ade" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>static constexpr T psl::math::radians</definition>
+        <argsstring>(const tvec&lt; T, dimensions &gt; &amp;value) noexcept</argsstring>
+        <name>radians</name>
+        <param>
+          <type>const tvec&lt; T, dimensions &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="26" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a40bb9b5bd3f5976ca2f619efee3a41be" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>static constexpr T psl::math::degrees</definition>
+        <argsstring>(const T &amp;value) noexcept</argsstring>
+        <name>degrees</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="36" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a0ab278ab648210d93faf224904c45f20" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>static constexpr T psl::math::degrees</definition>
+        <argsstring>(const tvec&lt; T, dimensions &gt; &amp;value) noexcept</argsstring>
+        <name>degrees</name>
+        <param>
+          <type>const tvec&lt; T, dimensions &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="45" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a7ade485924f27eae3eda157d960d3a7c" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr bool</type>
+        <definition>static constexpr bool psl::math::compare_to</definition>
+        <argsstring>(const precision_t &amp;left, const precision_t &amp;right, uint8_t decimals) noexcept</argsstring>
+        <name>compare_to</name>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const precision_t &amp;</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>decimals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="54" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1af0dfda1b1c3c5d9710fd001964ca54db" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::dot</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;left, const tvec&lt; precision_t, dimensions &gt; &amp;right) noexcept</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1371" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1371" bodyend="1377"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a63789eb86b6dc8244166ce829e58292c" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::compound</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>compound</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1380" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1380" bodyend="1385"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a841d13cd152cbef26811f38e3380e1b4" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::compound_mul</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>compound_mul</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1388" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1388" bodyend="1393"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1afcc4d6ea2777845ffe80b11f1fbfcd34" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::square_magnitude</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>square_magnitude</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1396" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1396" bodyend="1401"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1acc3339f8d93c54127b399b4ca5a03a1b" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::magnitude</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>magnitude</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1404" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1404" bodyend="1409"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ac9cf4910b487c58412cd44119d806e12" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static precision_t</type>
+        <definition>constexpr static precision_t psl::math::length</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>length</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1412" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1412" bodyend="1415"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1ae1a7fcf5decf14af4915034d7d2c0188" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, dimensions &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, dimensions&gt; psl::math::sqrt</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1418" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1418" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a946404369ee1c6f81e4d9a2b290ad732" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, dimensions &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, dimensions&gt; psl::math::pow</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec, precision_t pow_value=precision_t {2}) noexcept</argsstring>
+        <name>pow</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>precision_t</type>
+          <declname>pow_value</declname>
+          <defval>precision_t {2}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1429" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1429" bodyend="1439"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1adc370f83a77f72d13b24cfb7b9ed5273" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>dimensions</declname>
+            <defname>dimensions</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, dimensions &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, dimensions&gt; psl::math::normalize</definition>
+        <argsstring>(const tvec&lt; precision_t, dimensions &gt; &amp;vec) noexcept</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>const tvec&lt; precision_t, dimensions &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1442" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1442" bodyend="1445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1math_1a63664a606fb19c327e2d178fc4741465" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename precision_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr static tvec&lt; precision_t, 3 &gt;</type>
+        <definition>constexpr static tvec&lt;precision_t, 3&gt; psl::math::cross</definition>
+        <argsstring>(const tvec&lt; precision_t, 3 &gt; &amp;left, const tvec&lt; precision_t, 3 &gt; &amp;right) noexcept</argsstring>
+        <name>cross</name>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const tvec&lt; precision_t, 3 &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" line="1448" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/vec.hpp" bodystart="1448" bodyend="1454"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>conversions </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/math.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

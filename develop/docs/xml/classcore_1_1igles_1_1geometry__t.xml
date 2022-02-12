@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1igles_1_1geometry__t" kind="class" language="C++" prot="public">
+    <compoundname>core::igles::geometry_t</compoundname>
+    <innerclass refid="structcore_1_1igles_1_1geometry__t_1_1binding" prot="private">core::igles::geometry_t::binding</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a3a0e893f1e48abf898420e8998f1ce1d" prot="private" static="no" mutable="no">
+        <type><ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+        <definition>psl::UID core::igles::geometry_t::m_UID</definition>
+        <argsstring></argsstring>
+        <name>m_UID</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="60" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1ad6bc4bd8cc472480819a810413f1c492" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::igles::geometry_t::m_IndicesSegment</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesSegment</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="61" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a60a99d35ee0df5b07f207f3c1b43d133" prot="private" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref></type>
+        <definition>memory::range_t core::igles::geometry_t::m_IndicesSubRange</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesSubRange</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="62" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1aa902e6f123e34b47302c6af1ce3de28e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::igles::buffer_t&gt; core::igles::geometry_t::m_GeometryBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_GeometryBuffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="63" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a329197a76a93bc372ee63adc93440ca6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+        <definition>core::resource::handle&lt;core::igles::buffer_t&gt; core::igles::geometry_t::m_IndicesBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_IndicesBuffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="64" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1ad72e0bee97b3366d8211cdb16d7dbfad" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref>, unsigned int &gt;</type>
+        <definition>std::unordered_map&lt;psl::UID, unsigned int&gt; core::igles::geometry_t::m_VAOs</definition>
+        <argsstring></argsstring>
+        <name>m_VAOs</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="66" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a30c41847cc55b73d7dea3150521013db" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; binding &gt;</type>
+        <definition>psl::array&lt;binding&gt; core::igles::geometry_t::m_Bindings</definition>
+        <argsstring></argsstring>
+        <name>m_Bindings</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="67" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a6f231b4f1ed5d51f69439699fb118f94" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::igles::geometry_t::m_Vertices</definition>
+        <argsstring></argsstring>
+        <name>m_Vertices</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="69" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1geometry__t_1a39fbce1c85eb24ecf475abb625f2de13" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::igles::geometry_t::m_Triangles</definition>
+        <argsstring></argsstring>
+        <name>m_Triangles</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="70" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a33268aac1886fc8d4abc09dfeab89eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>geometry_t::geometry_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, core::resource::handle&lt; core::data::geometry_t &gt; data, core::resource::handle&lt; core::igles::buffer_t &gt; vertexBuffer, core::resource::handle&lt; core::igles::buffer_t &gt; indexBuffer)</argsstring>
+        <name>geometry_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+          <declname>vertexBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+          <declname>indexBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="29" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a22f392a6614cafc3e8fe277bf934d9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>geometry_t::~geometry_t</definition>
+        <argsstring>()</argsstring>
+        <name>~geometry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1ad2bb1d850043e6f022cc0b83a0e0b966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::recreate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; data)</argsstring>
+        <name>recreate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="37" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="60" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a06b9bc45a376eaee0dc8155fed6e08e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::recreate</definition>
+        <argsstring>(core::resource::handle&lt; core::data::geometry_t &gt; data, core::resource::handle&lt; core::igles::buffer_t &gt; vertexBuffer, core::resource::handle&lt; core::igles::buffer_t &gt; indexBuffer)</argsstring>
+        <name>recreate</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+          <declname>vertexBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+          <declname>indexBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="38" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="139" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a20f7e7181bd54120e88c48321a7f93f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::create_vao</definition>
+        <argsstring>(core::resource::handle&lt; core::igles::material_t &gt; material, core::resource::handle&lt; core::igles::buffer_t &gt; instanceBuffer, psl::array&lt; std::pair&lt; size_t, size_t &gt;&gt; bindings)</argsstring>
+        <name>create_vao</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::buffer_t &gt;</type>
+          <declname>instanceBuffer</declname>
+        </param>
+        <param>
+          <type>psl::array&lt; std::pair&lt; size_t, size_t &gt;&gt;</type>
+          <declname>bindings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether this geometry can be combined with the given material (i.e. it has all the required channels that the material needs). </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the material to check against. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="46" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="150" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a71cd2086d275b857a2adf070c38fb056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::bind</definition>
+        <argsstring>(core::resource::handle&lt; core::igles::material_t &gt; material, uint32_t instanceCount=0)</argsstring>
+        <name>bind</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; core::igles::material_t &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>instanceCount</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="50" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="213" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a0d5d6183fec820462bab1de2fda04477" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool geometry_t::compatible</definition>
+        <argsstring>(const core::igles::material_t &amp;material) const noexcept</argsstring>
+        <name>compatible</name>
+        <param>
+          <type>const core::igles::material_t &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="51" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="242" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a071d3957f8f524de70e95b0764c0478b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::vertices</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="54" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="272" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a8c0c393eb6de4b28732ebe16115ca350" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::indices</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="55" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="273" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1abbdb31e605a59839f1eaad1e3c4bd297" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t geometry_t::triangles</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>triangles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="56" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="274" bodyend="274"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1igles_1_1geometry__t_1a07aa39decc5882b5dd8aea7afd3eb6c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_t::clear</definition>
+        <argsstring>(bool including_vao=true)</argsstring>
+        <name>clear</name>
+        <param>
+          <type>bool</type>
+          <declname>including_vao</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="59" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp" bodystart="37" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp" bodystart="19" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a71cd2086d275b857a2adf070c38fb056" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>bind</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a07aa39decc5882b5dd8aea7afd3eb6c8" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>clear</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a0d5d6183fec820462bab1de2fda04477" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>compatible</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a20f7e7181bd54120e88c48321a7f93f7" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>create_vao</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a33268aac1886fc8d4abc09dfeab89eb7" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>geometry_t</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a8c0c393eb6de4b28732ebe16115ca350" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>indices</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a30c41847cc55b73d7dea3150521013db" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_Bindings</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1aa902e6f123e34b47302c6af1ce3de28e" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_GeometryBuffer</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a329197a76a93bc372ee63adc93440ca6" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_IndicesBuffer</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1ad6bc4bd8cc472480819a810413f1c492" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_IndicesSegment</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a60a99d35ee0df5b07f207f3c1b43d133" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_IndicesSubRange</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a39fbce1c85eb24ecf475abb625f2de13" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_Triangles</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a3a0e893f1e48abf898420e8998f1ce1d" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_UID</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1ad72e0bee97b3366d8211cdb16d7dbfad" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_VAOs</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a6f231b4f1ed5d51f69439699fb118f94" prot="private" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>m_Vertices</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1ad2bb1d850043e6f022cc0b83a0e0b966" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>recreate</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a06b9bc45a376eaee0dc8155fed6e08e9" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>recreate</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1abbdb31e605a59839f1eaad1e3c4bd297" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>triangles</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a071d3957f8f524de70e95b0764c0478b" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>vertices</name></member>
+      <member refid="classcore_1_1igles_1_1geometry__t_1a22f392a6614cafc3e8fe277bf934d9cb" prot="public" virt="non-virtual"><scope>core::igles::geometry_t</scope><name>~geometry_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

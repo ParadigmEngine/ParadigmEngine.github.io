@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstd_1_1hash_3_01psl_1_1ecs_1_1details_1_1component__info_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::hash&lt; psl::ecs::details::component_info &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1hash_3_01psl_1_1ecs_1_1details_1_1component__info_01_4_1aa39752335c5dd235e5c507e4e16cb991" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t std::hash&lt; psl::ecs::details::component_info &gt;::operator()</definition>
+        <argsstring>(psl::ecs::details::component_info const &amp;ci) const noexcept</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1details_1_1component__info" kindref="compound">psl::ecs::details::component_info</ref> const &amp;</type>
+          <declname>ci</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="352" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="352" bodyend="356"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="351" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="350" bodyend="357"/>
+    <listofallmembers>
+      <member refid="structstd_1_1hash_3_01psl_1_1ecs_1_1details_1_1component__info_01_4_1aa39752335c5dd235e5c507e4e16cb991" prot="public" virt="non-virtual"><scope>std::hash&lt; psl::ecs::details::component_info &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

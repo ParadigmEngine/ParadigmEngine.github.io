@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1velocity" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::velocity</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1velocity_1a97dc9ad467b0b46a2d5ca7c7ce76d7a7" prot="public" static="no" mutable="no">
+        <type>psl::vec3</type>
+        <definition>psl::vec3 core::ecs::components::velocity::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="11" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1velocity_1a82a6dbfc2964d76f3293e999d5ce2aed" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::velocity::force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="12" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1velocity_1a5e3772a8be4c402eab42eecc852c0547" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::velocity::inertia</definition>
+        <argsstring></argsstring>
+        <name>inertia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="13" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1velocity_1afddf0cbe0ddad3c58af79963ff01ff81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::velocity::velocity</definition>
+        <argsstring>()=default</argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1velocity_1a58a8448596422fc6432f8f83e1e7bb46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::velocity::velocity</definition>
+        <argsstring>(psl::vec3 direction, float force, float inertia)</argsstring>
+        <name>velocity</name>
+        <param>
+          <type>psl::vec3</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>inertia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="9" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" line="7" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/velocity.hpp" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1velocity_1a97dc9ad467b0b46a2d5ca7c7ce76d7a7" prot="public" virt="non-virtual"><scope>core::ecs::components::velocity</scope><name>direction</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1velocity_1a82a6dbfc2964d76f3293e999d5ce2aed" prot="public" virt="non-virtual"><scope>core::ecs::components::velocity</scope><name>force</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1velocity_1a5e3772a8be4c402eab42eecc852c0547" prot="public" virt="non-virtual"><scope>core::ecs::components::velocity</scope><name>inertia</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1velocity_1afddf0cbe0ddad3c58af79963ff01ff81" prot="public" virt="non-virtual"><scope>core::ecs::components::velocity</scope><name>velocity</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1velocity_1a58a8448596422fc6432f8f83e1e7bb46" prot="public" virt="non-virtual"><scope>core::ecs::components::velocity</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

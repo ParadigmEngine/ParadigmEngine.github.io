@@ -1,0 +1,56 @@
+\hypertarget{namespacecore_1_1resource}{}\doxysection{core\+::resource Namespace Reference}
+\label{namespacecore_1_1resource}\index{core::resource@{core::resource}}
+
+
+deals with resource creation, tracking, and managing.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcore_1_1resource_1_1handle}{handle}}
+\begin{DoxyCompactList}\small\item\em wraps around a resource for sharing and management purposes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{metadata}}
+\begin{DoxyCompactList}\small\item\em represents a container of resources and their U\+ID mappings \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecore_1_1resource_a31a688f9c450435d4d6c62b5acc6d50a}\label{namespacecore_1_1resource_a31a688f9c450435d4d6c62b5acc6d50a}} 
+using {\bfseries resource\+\_\+key\+\_\+t} = const std\+::uintptr\+\_\+t $\ast$($\ast$)()
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bf}{status}} \{ \newline
+{\bfseries initial} = 0, 
+{\bfseries loading} = 1, 
+{\bfseries loaded} = 2, 
+{\bfseries unloading} = 3, 
+\newline
+{\bfseries unloaded} = 4, 
+{\bfseries missing} = -\/1, 
+\mbox{\hyperlink{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bfafedb2d84cafe20862cb4399751a8a7e3}{status\+::invalid}} = -\/2
+ \}
+\begin{DoxyCompactList}\small\item\em represents the various states a resource can be in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bf}\label{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bf}} 
+\index{core::resource@{core::resource}!status@{status}}
+\index{status@{status}!core::resource@{core::resource}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bf}{core\+::resource\+::status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{invalid@{invalid}!core::resource@{core::resource}}\index{core::resource@{core::resource}!invalid@{invalid}}}\mbox{\Hypertarget{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bfafedb2d84cafe20862cb4399751a8a7e3}\label{namespacecore_1_1resource_a8726bf09cf08e4532f29a70dd14400bfafedb2d84cafe20862cb4399751a8a7e3}} 
+invalid&special sentinel state in case something disastrous has happened, like O\+OM \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 15 of file resource.\+hpp.
+

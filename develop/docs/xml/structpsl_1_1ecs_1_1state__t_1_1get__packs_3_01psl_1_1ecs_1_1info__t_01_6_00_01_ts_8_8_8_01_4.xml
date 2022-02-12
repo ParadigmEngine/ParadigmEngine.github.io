@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1state__t_1_1get__packs_3_01psl_1_1ecs_1_1info__t_01_6_00_01_ts_8_8_8_01_4" kind="struct" language="C++" prot="private">
+    <compoundname>psl::ecs::state_t::get_packs&lt; psl::ecs::info_t &amp;, Ts... &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">psl::ecs::state_t::get_packs&lt; Ts... &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp" line="747" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp" bodystart="746" bodyend="747"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1ecs_1_1state__t_1_1get__packs_1a3f06cb31b6cab2a28a74a6aee2acb881" prot="public" virt="non-virtual"><scope>psl::ecs::state_t::get_packs&lt; psl::ecs::info_t &amp;, Ts... &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

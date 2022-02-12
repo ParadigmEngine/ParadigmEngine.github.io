@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1ecs_1_1details_1_1transform__group" kind="class" language="C++" prot="public">
+    <compoundname>psl::ecs::details::transform_group</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a6c43641e6a2775f0359338e23445a68b" prot="private" static="no">
+        <type>void(psl::array&lt; entity &gt;::iterator, psl::array&lt; entity &gt;::iterator, const psl::ecs::state_t &amp;)</type>
+        <definition>using psl::ecs::details::transform_group::ordering_pred_t =  void(psl::array&lt;entity&gt;::iterator, psl::array&lt;entity&gt;::iterator, const psl::ecs::state_t&amp;)</definition>
+        <argsstring></argsstring>
+        <name>ordering_pred_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="17" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a955192405f95fa6ff4f978e2f377d2c2" prot="private" static="no">
+        <type>psl::array&lt; entity &gt;::iterator(psl::array&lt; entity &gt;::iterator, psl::array&lt; entity &gt;::iterator, const psl::ecs::state_t &amp;)</type>
+        <definition>using psl::ecs::details::transform_group::conditional_pred_t =  psl::array&lt;entity&gt;::iterator(psl::array&lt;entity&gt;::iterator, psl::array&lt;entity&gt;::iterator, const psl::ecs::state_t&amp;)</definition>
+        <argsstring></argsstring>
+        <name>conditional_pred_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classpsl_1_1ecs_1_1details_1_1transform__group_1abd181985f0a8a54cd0661c7a4a479aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ::psl::ecs::state_t</definition>
+        <argsstring></argsstring>
+        <name>::psl::ecs::state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="72" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1transform__group_1ae323da194b823a1b37dc156736a3522b" prot="private" static="no" mutable="no">
+        <type>std::function&lt; ordering_pred_t &gt;</type>
+        <definition>std::function&lt;ordering_pred_t&gt; psl::ecs::details::transform_group::order_by</definition>
+        <argsstring></argsstring>
+        <name>order_by</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="74" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1transform__group_1ad36a8e347f9fd4015aebfafef20a4fe8" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::function&lt; conditional_pred_t &gt; &gt;</type>
+        <definition>psl::array&lt;std::function&lt;conditional_pred_t&gt; &gt; psl::ecs::details::transform_group::on_condition</definition>
+        <argsstring></argsstring>
+        <name>on_condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="76" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1transform__group_1ab95d4608e0f00fb7d4a6f97e64c6c7c5" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; psl::string_view &gt;</type>
+        <definition>psl::array&lt;psl::string_view&gt; psl::ecs::details::transform_group::m_SystemsDebugNames</definition>
+        <argsstring></argsstring>
+        <name>m_SystemsDebugNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="77" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1ac6a23f51d8a524fac5b049ca9e8266c6" prot="private" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr void</type>
+        <definition>constexpr void psl::ecs::details::transform_group::selector</definition>
+        <argsstring>(psl::templates::type_container&lt; T &gt;) noexcept</argsstring>
+        <name>selector</name>
+        <param>
+          <type>psl::templates::type_container&lt; T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="24" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1af87746e528e8bbf78f9fc09b252b6bc2" prot="private" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr void</type>
+        <definition>constexpr void psl::ecs::details::transform_group::selector</definition>
+        <argsstring>(psl::templates::type_container&lt; order_by&lt; Pred, T &gt;&gt;) noexcept</argsstring>
+        <name>selector</name>
+        <param>
+          <type>psl::templates::type_container&lt; order_by&lt; Pred, T &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="28" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a1f77901e2b42ebf4ffee60ab4c76fc98" prot="private" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr void</type>
+        <definition>constexpr void psl::ecs::details::transform_group::selector</definition>
+        <argsstring>(psl::templates::type_container&lt; on_condition&lt; Pred, T &gt;&gt;) noexcept</argsstring>
+        <name>selector</name>
+        <param>
+          <type>psl::templates::type_container&lt; on_condition&lt; Pred, T &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="37" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a1949811095d585e776c046e61050d573" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::transform_group::add_debug_system_name</definition>
+        <argsstring>(psl::string_view name)</argsstring>
+        <name>add_debug_system_name</name>
+        <param>
+          <type>psl::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="73" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1af3c5a499cf7200f2a8554f2ef20643d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>psl::ecs::details::transform_group::transform_group</definition>
+        <argsstring>(psl::templates::type_container&lt; Ts &gt;...)</argsstring>
+        <name>transform_group</name>
+        <param>
+          <type>psl::templates::type_container&lt; Ts &gt;</type>
+          <declname>...</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="48" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1acee29fcd2b77d6b8125e6121415c58f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::transform_group::~transform_group</definition>
+        <argsstring>()=default</argsstring>
+        <name>~transform_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a299bba5fba256144724a110a83f88eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::transform_group::transform_group</definition>
+        <argsstring>(const transform_group &amp;other)=default</argsstring>
+        <name>transform_group</name>
+        <param>
+          <type>const transform_group &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a43190fbce23f652023bad549dcfb1720" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::transform_group::transform_group</definition>
+        <argsstring>(transform_group &amp;&amp;other) noexcept=default</argsstring>
+        <name>transform_group</name>
+        <param>
+          <type>transform_group &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1adab1246d8496bf2ff8aea1fdb3c330f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>transform_group &amp;</type>
+        <definition>transform_group&amp; psl::ecs::details::transform_group::operator=</definition>
+        <argsstring>(const transform_group &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const transform_group &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="56" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1abe775b7e62214781dbf8626f167c062d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>transform_group &amp;</type>
+        <definition>transform_group&amp; psl::ecs::details::transform_group::operator=</definition>
+        <argsstring>(transform_group &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>transform_group &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="57" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a609d53815a71e1cf937de128f0e2d85d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array&lt; entity &gt;::iterator</type>
+        <definition>psl::array&lt;entity&gt;::iterator psl::ecs::details::transform_group::transform</definition>
+        <argsstring>(psl::array&lt; entity &gt;::iterator begin, psl::array&lt; entity &gt;::iterator end, const state_t &amp;state) const noexcept</argsstring>
+        <name>transform</name>
+        <param>
+          <type>psl::array&lt; entity &gt;::iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>psl::array&lt; entity &gt;::iterator</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const state_t &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="59" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="59" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1transform__group_1a29f37934afb303659e6d90c904e6bb1e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::transform_group::operator bool</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="69" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="16" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="15" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1abd181985f0a8a54cd0661c7a4a479aa6" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>::psl::ecs::state_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a1949811095d585e776c046e61050d573" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>add_debug_system_name</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a955192405f95fa6ff4f978e2f377d2c2" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>conditional_pred_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1ab95d4608e0f00fb7d4a6f97e64c6c7c5" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>m_SystemsDebugNames</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1ad36a8e347f9fd4015aebfafef20a4fe8" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>on_condition</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a29f37934afb303659e6d90c904e6bb1e" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>operator bool</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1adab1246d8496bf2ff8aea1fdb3c330f1" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1abe775b7e62214781dbf8626f167c062d" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1ae323da194b823a1b37dc156736a3522b" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>order_by</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a6c43641e6a2775f0359338e23445a68b" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>ordering_pred_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1ac6a23f51d8a524fac5b049ca9e8266c6" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>selector</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1af87746e528e8bbf78f9fc09b252b6bc2" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>selector</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a1f77901e2b42ebf4ffee60ab4c76fc98" prot="private" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>selector</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a609d53815a71e1cf937de128f0e2d85d" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>transform</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1af3c5a499cf7200f2a8554f2ef20643d7" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>transform_group</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a299bba5fba256144724a110a83f88eb9" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>transform_group</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1a43190fbce23f652023bad549dcfb1720" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>transform_group</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1transform__group_1acee29fcd2b77d6b8125e6121415c58f3" prot="public" virt="non-virtual"><scope>psl::ecs::details::transform_group</scope><name>~transform_group</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

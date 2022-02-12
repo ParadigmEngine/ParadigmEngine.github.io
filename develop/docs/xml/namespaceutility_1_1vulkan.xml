@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1vulkan" kind="namespace" language="C++">
+    <compoundname>utility::vulkan</compoundname>
+    <innernamespace refid="namespaceutility_1_1vulkan_1_1defaults">utility::vulkan::defaults</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ivk_8hpp_1ab7404734ec216ec4e9bc87062a3062bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool utility::vulkan::check</definition>
+        <argsstring>(const vk::Result &amp;value)</argsstring>
+        <name>check</name>
+        <param>
+          <type>const vk::Result &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="519" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="519" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a2c34168bac231891628e66d0193c6bc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool utility::vulkan::check</definition>
+        <argsstring>(const VkResult &amp;value)</argsstring>
+        <name>check</name>
+        <param>
+          <type>const VkResult &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="531" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="531" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1acf13f24249b02dd59095bccd2b8d51fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool utility::vulkan::check</definition>
+        <argsstring>(const vk::ResultValue&lt; T &gt; &amp;value)</argsstring>
+        <name>check</name>
+        <param>
+          <type>const vk::ResultValue&lt; T &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="543" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="543" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1af86b5ec86dd9d649f6667a62b710113b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::CommandBuffer</type>
+        <definition>vk::CommandBuffer utility::vulkan::create_cmd_buffer</definition>
+        <argsstring>(vk::Device device, vk::CommandPool pool, vk::CommandBufferLevel level, bool begin, uint32_t bufferCount)</argsstring>
+        <name>create_cmd_buffer</name>
+        <param>
+          <type>vk::Device</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>vk::CommandPool</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>vk::CommandBufferLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bufferCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="548" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="548" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a09c5efb1e86024c201e3eff8692fd4b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::Bool32</type>
+        <definition>vk::Bool32 utility::vulkan::supported_depthformat</definition>
+        <argsstring>(const vk::PhysicalDevice &amp;physicalDevice, std::vector&lt; vk::Format &gt; depthFormats, vk::Format *depthFormat)</argsstring>
+        <name>supported_depthformat</name>
+        <param>
+          <type>const vk::PhysicalDevice &amp;</type>
+          <declname>physicalDevice</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; vk::Format &gt;</type>
+          <declname>depthFormats</declname>
+        </param>
+        <param>
+          <type>vk::Format *</type>
+          <declname>depthFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="573" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="573" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1af6ec0004acfbd5fe497e07c889b9c410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::Bool32</type>
+        <definition>vk::Bool32 utility::vulkan::supported_depthformat</definition>
+        <argsstring>(const vk::PhysicalDevice &amp;physicalDevice, vk::Format *depthFormat)</argsstring>
+        <name>supported_depthformat</name>
+        <param>
+          <type>const vk::PhysicalDevice &amp;</type>
+          <declname>physicalDevice</declname>
+        </param>
+        <param>
+          <type>vk::Format *</type>
+          <declname>depthFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="592" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="592" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a6068e313f7d042c3d1209947e4f6fc42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::ImageMemoryBarrier</type>
+        <definition>vk::ImageMemoryBarrier utility::vulkan::image_memory_barrier_for</definition>
+        <argsstring>(vk::ImageLayout oldImageLayout, vk::ImageLayout newImageLayout)</argsstring>
+        <name>image_memory_barrier_for</name>
+        <param>
+          <type>vk::ImageLayout</type>
+          <declname>oldImageLayout</declname>
+        </param>
+        <param>
+          <type>vk::ImageLayout</type>
+          <declname>newImageLayout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="609" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="609" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a70f8d9ebcba56749f7bfb0b33cfec5dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void utility::vulkan::set_image_layout</definition>
+        <argsstring>(vk::CommandBuffer cmdbuffer, vk::Image image, vk::ImageLayout oldImageLayout, vk::ImageLayout newImageLayout, vk::ImageSubresourceRange subresourceRange, vk::PipelineStageFlags srcStageMask, vk::PipelineStageFlags dstStageMask)</argsstring>
+        <name>set_image_layout</name>
+        <param>
+          <type>vk::CommandBuffer</type>
+          <declname>cmdbuffer</declname>
+        </param>
+        <param>
+          <type>vk::Image</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>vk::ImageLayout</type>
+          <declname>oldImageLayout</declname>
+        </param>
+        <param>
+          <type>vk::ImageLayout</type>
+          <declname>newImageLayout</declname>
+        </param>
+        <param>
+          <type>vk::ImageSubresourceRange</type>
+          <declname>subresourceRange</declname>
+        </param>
+        <param>
+          <type>vk::PipelineStageFlags</type>
+          <declname>srcStageMask</declname>
+        </param>
+        <param>
+          <type>vk::PipelineStageFlags</type>
+          <declname>dstStageMask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="716" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="716" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a912949db1a72cec495723e97688a92dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void utility::vulkan::set_image_layout</definition>
+        <argsstring>(vk::CommandBuffer &amp;cmdbuffer, vk::Image &amp;image, const vk::ImageLayout &amp;oldImageLayout, const vk::ImageLayout &amp;newImageLayout, vk::ImageSubresourceRange &amp;subresourceRange)</argsstring>
+        <name>set_image_layout</name>
+        <param>
+          <type>vk::CommandBuffer &amp;</type>
+          <declname>cmdbuffer</declname>
+        </param>
+        <param>
+          <type>vk::Image &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>const vk::ImageLayout &amp;</type>
+          <declname>oldImageLayout</declname>
+        </param>
+        <param>
+          <type>const vk::ImageLayout &amp;</type>
+          <declname>newImageLayout</declname>
+        </param>
+        <param>
+          <type>vk::ImageSubresourceRange &amp;</type>
+          <declname>subresourceRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="735" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="735" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a13c766425c504398d7bf492a08c89280" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::CommandBuffer</type>
+        <definition>vk::CommandBuffer utility::vulkan::CreateCommandBuffer</definition>
+        <argsstring>(vk::Device device, vk::CommandPool pool, vk::CommandBufferLevel level, bool begin, uint32_t bufferCount)</argsstring>
+        <name>CreateCommandBuffer</name>
+        <param>
+          <type>vk::Device</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>vk::CommandPool</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>vk::CommandBufferLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bufferCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="752" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="752" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1aa5dc7d88c7b6bbda8807efc7c8108137" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool utility::vulkan::has_depth</definition>
+        <argsstring>(vk::Format format)</argsstring>
+        <name>has_depth</name>
+        <param>
+          <type>vk::Format</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the attachment has a depth component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="781" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="781" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1af1766b22ada022918d120c4e6e212983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool utility::vulkan::has_stencil</definition>
+        <argsstring>(vk::Format format)</argsstring>
+        <name>has_stencil</name>
+        <param>
+          <type>vk::Format</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the attachment has a stencil component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="797" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="797" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="ivk_8hpp_1a3eb04e5790fa997638816dd3fe163e0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool utility::vulkan::is_depthstencil</definition>
+        <argsstring>(vk::Format format)</argsstring>
+        <name>is_depthstencil</name>
+        <param>
+          <type>vk::Format</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the attachment is a depth and/or stencil attachment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="810" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="810" bodyend="810"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="90" column="1"/>
+  </compounddef>
+</doxygen>

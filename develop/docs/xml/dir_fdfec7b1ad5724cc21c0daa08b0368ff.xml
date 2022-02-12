@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_fdfec7b1ad5724cc21c0daa08b0368ff" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/src/ecs/systems</compoundname>
+    <innerdir refid="dir_ccd0b4c3daa52c3c563de7c5ae1c9cdd">/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug</innerdir>
+    <innerfile refid="fly_8cpp">fly.cpp</innerfile>
+    <innerfile refid="geometry__instance_8cpp">geometry_instance.cpp</innerfile>
+    <innerfile refid="gpu__camera_8cpp">gpu_camera.cpp</innerfile>
+    <innerfile refid="lighting_8cpp">lighting.cpp</innerfile>
+    <innerfile refid="render_8cpp">render.cpp</innerfile>
+    <innerfile refid="text_8cpp">text.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/"/>
+  </compounddef>
+</doxygen>

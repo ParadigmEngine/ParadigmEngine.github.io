@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1is__collection_3_01_t_01_5_00_01_encoder_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::is_collection&lt; T *, Encoder &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Encoder</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1details_1_1is__collection_3_01_t_01_5_00_01_encoder_01_4_1a711264207e63864bea1a647cfdcb1311" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::serialization::details::is_collection&lt; T *, Encoder &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{function_serialize&lt;Encoder, T&gt;::value ||
+										 member_function_serialize&lt;Encoder, T&gt;::value}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="274" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="273" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="272" bodyend="276"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1details_1_1is__collection_3_01_t_01_5_00_01_encoder_01_4_1a711264207e63864bea1a647cfdcb1311" prot="public" virt="non-virtual"><scope>psl::serialization::details::is_collection&lt; T *, Encoder &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,487 @@
+\hypertarget{classpsl_1_1meta_1_1library}{}\doxysection{psl\+::meta\+::library Class Reference}
+\label{classpsl_1_1meta_1_1library}\index{psl::meta::library@{psl::meta::library}}
+
+
+container class for \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}\textquotesingle{}s  
+
+
+
+
+{\ttfamily \#include $<$library.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpsl_1_1meta_1_1library_a6229350f2c3579b9cdf09a36fd329aee}{library}} (psl\+::string8\+::view lib, std\+::vector$<$ psl\+::string8\+\_\+t $>$ environment=\{\})
+\begin{DoxyCompactList}\small\item\em location on disk where the library can be found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a88837a8a757c68032c132f122f0ed014}\label{classpsl_1_1meta_1_1library_a88837a8a757c68032c132f122f0ed014}} 
+{\bfseries library} (const \mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_adafdc22f21e42c36b5214c4eb1133875}\label{classpsl_1_1meta_1_1library_adafdc22f21e42c36b5214c4eb1133875}} 
+{\bfseries library} (\mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a84294ded9abf834136f67694f9c87e21}\label{classpsl_1_1meta_1_1library_a84294ded9abf834136f67694f9c87e21}} 
+\mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \& {\bfseries operator=} (const \mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a315c8ceb312484a903200c5808fefd95}\label{classpsl_1_1meta_1_1library_a315c8ceb312484a903200c5808fefd95}} 
+\mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \& {\bfseries operator=} (\mbox{\hyperlink{classpsl_1_1meta_1_1library}{library}} \&\&other) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a811f7c93973a56d03225efd5a2bf5b73}\label{classpsl_1_1meta_1_1library_a811f7c93973a56d03225efd5a2bf5b73}} 
+{\footnotesize template$<$typename MF  = file$>$ }\\std\+::pair$<$ const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&, MF \& $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_a811f7c93973a56d03225efd5a2bf5b73}{create}} ()
+\begin{DoxyCompactList}\small\item\em creates a new entry with a unique \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} and a given type that is either, or derived of \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a05acd4ed185b67a3efc1da456462fd79}\label{classpsl_1_1meta_1_1library_a05acd4ed185b67a3efc1da456462fd79}} 
+{\footnotesize template$<$typename MF  = file$>$ }\\std\+::pair$<$ const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&, MF \& $>$ {\bfseries create} (psl\+::string8\+\_\+t content)
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_ae0bc675542b66f8452295a4d92378e6f}\label{classpsl_1_1meta_1_1library_ae0bc675542b66f8452295a4d92378e6f}} 
+{\footnotesize template$<$typename MF  = file$>$ }\\std\+::pair$<$ const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&, MF \& $>$ {\bfseries add} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, std\+::unique\+\_\+ptr$<$ MF $>$ meta\+Data)
+\item 
+{\footnotesize template$<$typename MF  = file$>$ }\\std\+::pair$<$ const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&, MF \& $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_ad48f871466b440d7617161f0d10783bc}{create}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid)
+\begin{DoxyCompactList}\small\item\em creates a new entry with the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} and a given type that is either, or derived of \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a22695a7f4cfa8cfbc8bae75558dccf48}\label{classpsl_1_1meta_1_1library_a22695a7f4cfa8cfbc8bae75558dccf48}} 
+{\footnotesize template$<$typename MF  = file$>$ }\\std\+::pair$<$ const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&, MF \& $>$ {\bfseries create} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, psl\+::string8\+\_\+t content)
+\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_a5b7ea7cdb8261d1b5616db6e3bf99690}{serialize}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid)
+\begin{DoxyCompactList}\small\item\em serializes the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to disk in case it is present, and an on-\/disk file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_a3929be0a3af743fa0169f6602304b168}{remove}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, bool safe\+\_\+mode=true)
+\begin{DoxyCompactList}\small\item\em tries to remove the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} from the library. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_ab706fec8ce425d3343b872a2a96f4d83}{contains}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em searches the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} if it has an entry that corresponds to the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_af33866bae007a7b693ee44ac4856f48f}{find}} (psl\+::string8\+::view tag) const
+\begin{DoxyCompactList}\small\item\em searches for the first \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} that is associated with the given tag. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_ac94429d6420c9a54c6171e453d48e244}{find\+\_\+all}} (psl\+::string8\+::view tag) const
+\begin{DoxyCompactList}\small\item\em advanced version of \mbox{\hyperlink{classpsl_1_1meta_1_1library_af33866bae007a7b693ee44ac4856f48f}{find()}} that finds all instances of the given tag. \end{DoxyCompactList}\item 
+const std\+::vector$<$ psl\+::string8\+\_\+t $>$ \& \mbox{\hyperlink{classpsl_1_1meta_1_1library_aa6f273697ac74887e1b30624c3397c6a}{tags}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em get all tags (if any) associated with the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_afe942660d07c99617af92ce89e4f807c}{has\+\_\+tag}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, psl\+::string8\+::view tag) const
+\begin{DoxyCompactList}\small\item\em checks if the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} has the specific tag associated to it. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_a3f6cfb7e8b3b4e927be163fbcdd68473}{set}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, psl\+::string8\+::view tag)
+\begin{DoxyCompactList}\small\item\em associates the tag with this specific \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_aee7c93cb86c477d300d3f9adc9ef9f3d}{set}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid, std\+::vector$<$ psl\+::string8\+::view $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_aa6f273697ac74887e1b30624c3397c6a}{tags}})
+\begin{DoxyCompactList}\small\item\em advanced version of \mbox{\hyperlink{classpsl_1_1meta_1_1library_a3f6cfb7e8b3b4e927be163fbcdd68473}{set()}} that allows a list of tags. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_a05b36ad8b5bf7df6357c6cf5fd9df00b}{referencing}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em gets a list of all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} might be referencing. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_ae878be8f2dd25e41318582aae5d5a114}{referenced\+By}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em gets a list of all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} might be referenced by. \end{DoxyCompactList}\item 
+std\+::optional$<$ psl\+::string8\+::view $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_a667f5b9b1544433ad7a8a94403d6afa3}{load}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid)
+\begin{DoxyCompactList}\small\item\em loads the specific \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s content. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_a27e240bd3b3cb65018db5ec58f7178f4}{unload}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid)
+\begin{DoxyCompactList}\small\item\em purges the specific \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s cachec content. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T  = file$>$ }\\std\+::optional$<$ T $\ast$ $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_abf1a7cb98dc581dc2db8e5698458ca7d}{get}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em get the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s associated \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} from the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} and tries to cast to the templated type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}{is\+\_\+physical\+\_\+file}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em checks if the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is associated with a physical/persistent file, or dynamically created during the runtime. \end{DoxyCompactList}\item 
+std\+::optional$<$ psl\+::string8\+\_\+t $>$ \mbox{\hyperlink{classpsl_1_1meta_1_1library_a992171900bd57998b5721cfdd2c23ab5}{get\+\_\+physical\+\_\+location}} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&uid) const
+\begin{DoxyCompactList}\small\item\em gets the relative location (to the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}\textquotesingle{}s location) of the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classpsl_1_1meta_1_1library_a2b1243cd199b4accef5215d898dc305c}{size}} () const
+\begin{DoxyCompactList}\small\item\em returns the count of \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a543ced6f44b1e7286546f6510bb38ce6}\label{classpsl_1_1meta_1_1library_a543ced6f44b1e7286546f6510bb38ce6}} 
+void {\bfseries replace\+\_\+content} (\mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} uid, psl\+::string8\+\_\+t content) noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a48d4df208da232b1717166669f56c329}\label{classpsl_1_1meta_1_1library_a48d4df208da232b1717166669f56c329}} 
+const std\+::vector$<$ psl\+::string8\+\_\+t $>$ \& {\bfseries environment} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} is a collection of \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} instances. The library will do the basic bookkeeping, allowing you to search and retrieve \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} instances based on their \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, or tags and narrow it down depending on the \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} type as well.
+
+There are also facilities to have \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s reference other \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s, and do bi-\/directional lookups for these relations. As well as the ability to load the persistent companion file that the \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} describes (in case the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} satisfies \mbox{\hyperlink{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}{is\+\_\+physical\+\_\+file()}} ), and to have that companion file cached for faster reloads. 
+
+Definition at line 92 of file library.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a6229350f2c3579b9cdf09a36fd329aee}\label{classpsl_1_1meta_1_1library_a6229350f2c3579b9cdf09a36fd329aee}} 
+\index{psl::meta::library@{psl::meta::library}!library@{library}}
+\index{library@{library}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{library()}{library()}}
+{\footnotesize\ttfamily library\+::library (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{lib,  }\item[{std\+::vector$<$ psl\+::string8\+\_\+t $>$}]{environment = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+The constructor will try to load the given filepath, and then parse it. It will also create the minimal representation of each \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} entry in the given file, with its tags, etc..
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lib} & The filepath to which file should be loaded. This path can either be absolute or relative. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file library.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_ad48f871466b440d7617161f0d10783bc}\label{classpsl_1_1meta_1_1library_ad48f871466b440d7617161f0d10783bc}} 
+\index{psl::meta::library@{psl::meta::library}!create@{create}}
+\index{create@{create}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$typename MF  = file$>$ \\
+std\+::pair$<$const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\&, MF\&$>$ psl\+::meta\+::library\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & The \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} that should be associated with this entry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+giving an already present \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} will result in an error log, and you will be given back the instance that is already present. 
+\end{DoxyWarning}
+
+
+Definition at line 149 of file library.\+hpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a5b7ea7cdb8261d1b5616db6e3bf99690}\label{classpsl_1_1meta_1_1library_a5b7ea7cdb8261d1b5616db6e3bf99690}} 
+\index{psl::meta::library@{psl::meta::library}!serialize@{serialize}}
+\index{serialize@{serialize}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool library\+::serialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption})}
+
+When you send a \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to this method, the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} will verify that it has an entry with the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, and that it is linked to an on-\/disk location. When it satisfies those two requirements, it will then proceed to serialize the file to disk using the current values that are present.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & The \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} you wish to serialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is both present in the library, and it is linked to an on-\/disk file. 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a3929be0a3af743fa0169f6602304b168}\label{classpsl_1_1meta_1_1library_a3929be0a3af743fa0169f6602304b168}} 
+\index{psl::meta::library@{psl::meta::library}!remove@{remove}}
+\index{remove@{remove}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool library\+::remove (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{bool}]{safe\+\_\+mode = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Will try to remove the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} from the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. On success it will notify all other \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}\textquotesingle{}s that it references, that they no longer are being referenced by this instance.
+
+{\itshape safe\+\_\+mode} controls wether you should avoid deleting this instance if others are still referencing this \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} (true), or forcibly delete this instance regardless (false).
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & The \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} you wish to remove.\\
+\hline
+\mbox{\texttt{ in}}  & {\em safe\+\_\+mode} & when true (default), will disallow removing as long as this item is being referenced by others. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the instance was removed or not. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_ab706fec8ce425d3343b872a2a96f4d83}\label{classpsl_1_1meta_1_1library_ab706fec8ce425d3343b872a2a96f4d83}} 
+\index{psl::meta::library@{psl::meta::library}!contains@{contains}}
+\index{contains@{contains}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool library\+::contains (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & The \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if found. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_af33866bae007a7b693ee44ac4856f48f}\label{classpsl_1_1meta_1_1library_af33866bae007a7b693ee44ac4856f48f}} 
+\index{psl::meta::library@{psl::meta::library}!find@{find}}
+\index{find@{find}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} $>$ library\+::find (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{tag }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tag} & The tag to look for, it is case-\/sensetive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+optionally the first found \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_ac94429d6420c9a54c6171e453d48e244}\label{classpsl_1_1meta_1_1library_ac94429d6420c9a54c6171e453d48e244}} 
+\index{psl::meta::library@{psl::meta::library}!find\_all@{find\_all}}
+\index{find\_all@{find\_all}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{find\_all()}{find\_all()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} $>$ library\+::find\+\_\+all (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{tag }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tag} & The tag to look for, it is case-\/sensetive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an unordered\+\_\+set of all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s that have this tag. 
+\end{DoxyReturn}
+
+
+Definition at line 137 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_aa6f273697ac74887e1b30624c3397c6a}\label{classpsl_1_1meta_1_1library_aa6f273697ac74887e1b30624c3397c6a}} 
+\index{psl::meta::library@{psl::meta::library}!tags@{tags}}
+\index{tags@{tags}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{tags()}{tags()}}
+{\footnotesize\ttfamily const std\+::vector$<$ psl\+::string8\+\_\+t $>$ \& library\+::tags (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to get all tags for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of all found tags. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+even if the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}, this method will not fail, it will just find 0 tags. 
+\end{DoxyNote}
+
+
+Definition at line 144 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_afe942660d07c99617af92ce89e4f807c}\label{classpsl_1_1meta_1_1library_afe942660d07c99617af92ce89e4f807c}} 
+\index{psl::meta::library@{psl::meta::library}!has\_tag@{has\_tag}}
+\index{has\_tag@{has\_tag}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{has\_tag()}{has\_tag()}}
+{\footnotesize\ttfamily bool library\+::has\+\_\+tag (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{psl\+::string8\+::view}]{tag }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to check. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tag} & the associated tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the tag is present on the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}, then this method always returns false. 
+\end{DoxyNote}
+
+
+Definition at line 153 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a3f6cfb7e8b3b4e927be163fbcdd68473}\label{classpsl_1_1meta_1_1library_a3f6cfb7e8b3b4e927be163fbcdd68473}} 
+\index{psl::meta::library@{psl::meta::library}!set@{set}}
+\index{set@{set}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool library\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{psl\+::string8\+::view}]{tag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to associate with the tag. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tag} & the tag to apply to the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if this was successful or not. It could return false in case the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not part of the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+it is possible to set the same tag multiple times on the same \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\end{DoxyWarning}
+
+
+Definition at line 161 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_aee7c93cb86c477d300d3f9adc9ef9f3d}\label{classpsl_1_1meta_1_1library_aee7c93cb86c477d300d3f9adc9ef9f3d}} 
+\index{psl::meta::library@{psl::meta::library}!set@{set}}
+\index{set@{set}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool library\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid,  }\item[{std\+::vector$<$ psl\+::string8\+::view $>$}]{tags }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to associate with the tags. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tags} & the tags to apply to the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if this was successful or not. It could return false in case the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not part of the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+it is possible to set the same tag multiple times on the same \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\end{DoxyWarning}
+
+
+Definition at line 170 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a05b36ad8b5bf7df6357c6cf5fd9df00b}\label{classpsl_1_1meta_1_1library_a05b36ad8b5bf7df6357c6cf5fd9df00b}} 
+\index{psl::meta::library@{psl::meta::library}!referencing@{referencing}}
+\index{referencing@{referencing}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{referencing()}{referencing()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} $>$ library\+::referencing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+as an example, a \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}} could be referencing a \mbox{\hyperlink{classcore_1_1ivk_1_1texture__t}{core\+::ivk\+::texture\+\_\+t}}, this means that if you call this method using the \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}}\textquotesingle{}s \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, then you will get a list back that atleast contains the \mbox{\hyperlink{classcore_1_1ivk_1_1texture__t}{core\+::ivk\+::texture\+\_\+t}} \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to find all references for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is referencing. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+will return an empty list in case the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyNote}
+
+
+Definition at line 183 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_ae878be8f2dd25e41318582aae5d5a114}\label{classpsl_1_1meta_1_1library_ae878be8f2dd25e41318582aae5d5a114}} 
+\index{psl::meta::library@{psl::meta::library}!referencedBy@{referencedBy}}
+\index{referencedBy@{referencedBy}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{referencedBy()}{referencedBy()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}} $>$ library\+::referenced\+By (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+as an example, a \mbox{\hyperlink{classcore_1_1ivk_1_1texture__t}{core\+::ivk\+::texture\+\_\+t}} could be referenced by a \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}}, this means that if you call this method using the \mbox{\hyperlink{classcore_1_1ivk_1_1texture__t}{core\+::ivk\+::texture\+\_\+t}}\textquotesingle{}s \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, then you will get a list back that atleast contains the \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}} \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} for which to find all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s that might be referencing this \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of all \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is being referenced by. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+will return an empty list in case the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} is not present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyNote}
+
+
+Definition at line 190 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a667f5b9b1544433ad7a8a94403d6afa3}\label{classpsl_1_1meta_1_1library_a667f5b9b1544433ad7a8a94403d6afa3}} 
+\index{psl::meta::library@{psl::meta::library}!load@{load}}
+\index{load@{load}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily std\+::optional$<$ psl\+::string8\+::view $>$ library\+::load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption})}
+
+Loads the specified \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s associated file, {\bfseries{not}} \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}, and returns it (if found). The associated file is the companion file for which the \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} was generated, for example a shader will have a \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} file on disk, but also the actual shader file (S\+P\+I\+R-\/V for Vulkan). This returns the S\+P\+I\+R-\/V file. The file content will get cached into the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} to make subsequent \mbox{\hyperlink{classpsl_1_1meta_1_1library_a667f5b9b1544433ad7a8a94403d6afa3}{load()}} calls faster.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to optionally find the content for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resulting content in U\+T\+F-\/8 format if found. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method requires the file to satisfy \mbox{\hyperlink{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}{is\+\_\+physical\+\_\+file()}}, otherwise it will silently fail. 
+\end{DoxyWarning}
+
+
+Definition at line 217 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a27e240bd3b3cb65018db5ec58f7178f4}\label{classpsl_1_1meta_1_1library_a27e240bd3b3cb65018db5ec58f7178f4}} 
+\index{psl::meta::library@{psl::meta::library}!unload@{unload}}
+\index{unload@{unload}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily bool library\+::unload (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption})}
+
+Unloads the specified \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s associated file, {\bfseries{not}} \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}, and returns true if it was in the cache and purged. The associated file is the companion file for which the \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} was generated, for example a shader will have a \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} file on disk, but also the actual shader file (S\+P\+I\+R-\/V for Vulkan). This returns the S\+P\+I\+R-\/V file. You can reload the file into the cache by calling \mbox{\hyperlink{classpsl_1_1meta_1_1library_a667f5b9b1544433ad7a8a94403d6afa3}{load()}} with the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} as parameter.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to purge from the cache. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it was found on the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}, and had cached contents. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method requires the file to satisfy \mbox{\hyperlink{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}{is\+\_\+physical\+\_\+file()}}, otherwise it will silently fail. 
+\end{DoxyWarning}
+
+
+Definition at line 235 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_abf1a7cb98dc581dc2db8e5698458ca7d}\label{classpsl_1_1meta_1_1library_abf1a7cb98dc581dc2db8e5698458ca7d}} 
+\index{psl::meta::library@{psl::meta::library}!get@{get}}
+\index{get@{get}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::optional$<$ T $\ast$ $>$ psl\+::meta\+::library\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+Searches the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} for the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}, and then tries to satisfy the templated type given. If successful it will return the given template type (default \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}), otherwise it returns an std\+::nullopt in case the conversion is not possible at runtime, and will give a compile error when the template type does not satisfy the type constraint. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & should satisfy at least being either \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}} or being derived from \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the given \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classpsl_1_1meta_1_1file}{meta\+::file}}, or derived class associated with the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method cannot downcast, it has to satisfy the type perfectly. 
+\end{DoxyWarning}
+
+
+Definition at line 349 of file library.\+hpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}\label{classpsl_1_1meta_1_1library_a30001692a65acadf17d3b1315566aebd}} 
+\index{psl::meta::library@{psl::meta::library}!is\_physical\_file@{is\_physical\_file}}
+\index{is\_physical\_file@{is\_physical\_file}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{is\_physical\_file()}{is\_physical\_file()}}
+{\footnotesize\ttfamily bool library\+::is\+\_\+physical\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true in case it has a persistent backing (that will survive a reboot). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+that the physical backing might be out of sync with the current version that is being used by the runtime. 
+\end{DoxyNote}
+
+
+Definition at line 198 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a992171900bd57998b5721cfdd2c23ab5}\label{classpsl_1_1meta_1_1library_a992171900bd57998b5721cfdd2c23ab5}} 
+\index{psl::meta::library@{psl::meta::library}!get\_physical\_location@{get\_physical\_location}}
+\index{get\_physical\_location@{get\_physical\_location}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{get\_physical\_location()}{get\_physical\_location()}}
+{\footnotesize\ttfamily std\+::optional$<$ psl\+::string8\+\_\+t $>$ library\+::get\+\_\+physical\+\_\+location (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&}]{uid }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uid} & the \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the relative location to the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}} if found. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+silently fails for \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s that are not present in the \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyNote}
+
+
+Definition at line 205 of file library.\+cpp.
+
+\mbox{\Hypertarget{classpsl_1_1meta_1_1library_a2b1243cd199b4accef5215d898dc305c}\label{classpsl_1_1meta_1_1library_a2b1243cd199b4accef5215d898dc305c}} 
+\index{psl::meta::library@{psl::meta::library}!size@{size}}
+\index{size@{size}!psl::meta::library@{psl::meta::library}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t library\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the amount of unique \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}}\textquotesingle{}s in the current \mbox{\hyperlink{classpsl_1_1meta_1_1library}{meta\+::library}}. 
+\end{DoxyReturn}
+
+
+Definition at line 214 of file library.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/library.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/src/library.\+cpp\end{DoxyCompactItemize}

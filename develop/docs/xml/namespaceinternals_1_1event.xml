@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceinternals_1_1event" kind="namespace" language="C++">
+    <compoundname>internals::event</compoundname>
+    <innerclass refid="structinternals_1_1event_1_1event__signature__t" prot="public">internals::event::event_signature_t</innerclass>
+    <innerclass refid="unioninternals_1_1event_1_1_horrible_union" prot="public">internals::event::HorribleUnion</innerclass>
+    <innerclass refid="structinternals_1_1event_1_1placeholder" prot="public">internals::event::placeholder</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="event_8hpp_1aabfef81208b0e7c506f924a81418460e" prot="public" static="no">
+        <type>AnyClass *</type>
+        <definition>using internals::event::AnyPtrThis = typedef AnyClass*</definition>
+        <argsstring></argsstring>
+        <name>AnyPtrThis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="event_8hpp_1af74713612017d5a5c52c765e35fbe31e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TOut</type>
+          </param>
+          <param>
+            <type>class TIn</type>
+          </param>
+        </templateparamlist>
+        <type>TOut</type>
+        <definition>TOut internals::event::horrible_cast</definition>
+        <argsstring>(TIn mIn) noexcept</argsstring>
+        <name>horrible_cast</name>
+        <param>
+          <type>TIn</type>
+          <declname>mIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="29" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a9e4ef432abc7fb69b67c3812a19cf543" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TOut</type>
+          </param>
+          <param>
+            <type>class TIn</type>
+          </param>
+        </templateparamlist>
+        <type>TOut</type>
+        <definition>TOut internals::event::unsafe_horrible_cast</definition>
+        <argsstring>(TIn mIn) noexcept</argsstring>
+        <name>unsafe_horrible_cast</name>
+        <param>
+          <type>TIn</type>
+          <declname>mIn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="37" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

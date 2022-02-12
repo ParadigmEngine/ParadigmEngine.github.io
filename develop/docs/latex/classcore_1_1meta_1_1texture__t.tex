@@ -1,0 +1,367 @@
+\hypertarget{classcore_1_1meta_1_1texture__t}{}\doxysection{core\+::meta\+::texture\+\_\+t Class Reference}
+\label{classcore_1_1meta_1_1texture__t}\index{core::meta::texture\_t@{core::meta::texture\_t}}
+
+
+Custom meta data that describes a texture. i.\+e. width, height, format, etc..  
+
+
+
+
+{\ttfamily \#include $<$texture.\+hpp$>$}
+
+Inheritance diagram for core\+::meta\+::texture\+\_\+t\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcore_1_1meta_1_1texture__t}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a241a78d5475fb5e81939ab87ce864a63}\label{classcore_1_1meta_1_1texture__t_a241a78d5475fb5e81939ab87ce864a63}} 
+{\bfseries texture\+\_\+t} (const \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} \&key) noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a61ddb04e5964c8323d7bbc215f9ee6a5}{width}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a2e8b54b4ec70c1b35e955a4b04c91cb1}{width}} (uint32\+\_\+t width)
+\begin{DoxyCompactList}\small\item\em sets the width in pixels of the given texture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_ac12d948f02566deb2684654220bdc620}{height}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a2681592fc725550243c28c5f0e1889ad}{height}} (uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em sets the height in pixels of the given texture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_abc4bfa13c2b96d4644fbdf25814e783a}{depth}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a02add36fddf6ca010d627cbd02ae2059}{depth}} (uint32\+\_\+t depth)
+\begin{DoxyCompactList}\small\item\em sets the depth in pixels of the given texture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a384ad3a6d6b23bcf8aebbed82a1553a0}{mip\+\_\+levels}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a1ed6159087852d99c655384051d4eda7}{mip\+\_\+levels}} (uint32\+\_\+t mip\+\_\+levels)
+\begin{DoxyCompactList}\small\item\em sets the used mip levels of the texture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a1648f5eb622d6f2d869c10fad483cd79}{layers}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_ac88ff762bc4a4c7c9abe9d45a025383b}{layers}} (uint32\+\_\+t layers)
+\begin{DoxyCompactList}\small\item\em sets the amount of layers this texture exists out of (think array textures). \end{DoxyCompactList}\item 
+core\+::gfx\+::format\+\_\+t \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a3f56172b1f716331e94708de553fd56b}{format}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a76529e5acbfd529795bacf57aae6ad75}{format}} (core\+::gfx\+::format\+\_\+t format)
+\begin{DoxyCompactList}\small\item\em the format of the texture resource. \end{DoxyCompactList}\item 
+core\+::gfx\+::image\+\_\+type \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_ab5bcae30f313572a094f9d6a440e2012}{image\+\_\+type}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a59f9bfe61eef9bbbfb62e463223434cf}{image\+\_\+type}} (core\+::gfx\+::image\+\_\+type type)
+\begin{DoxyCompactList}\small\item\em sets the type of texture (2D, 3D, 2D\+Array, etc...). \end{DoxyCompactList}\item 
+core\+::gfx\+::image\+\_\+usage \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_acc30d161c5d62a026f7140e15e74da26}{usage}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a2670f2fd1e4441715399b34ceb1b143d}{usage}} (core\+::gfx\+::image\+\_\+usage usage)
+\begin{DoxyCompactList}\small\item\em suggests the usage flags of this texture. \end{DoxyCompactList}\item 
+core\+::gfx\+::image\+\_\+aspect \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a96f3487b94974cab0efd992e2661cddc}{aspect\+\_\+mask}} () const noexcept
+\item 
+void \mbox{\hyperlink{classcore_1_1meta_1_1texture__t_a3497526de6024ad0c688326fd1388817}{aspect\+\_\+mask}} (core\+::gfx\+::image\+\_\+aspect aspect)
+\begin{DoxyCompactList}\small\item\em suggests the aspect masks this texture exists out of. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1meta_1_1texture__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+does not contain any actual texture data, just describes it. This aids the engine in setting up the correct resources for rendering the associated texture file. \begin{DoxyWarning}{Warning}
+The description is assumed to be correct, otherwise undefined behaviour happens. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+although this class allows runtime editing, it\textquotesingle{}s unlikely you\textquotesingle{}d need it unless you generate textures. and wish to serialize them to disk. 
+\end{DoxyNote}
+
+
+Definition at line 21 of file texture.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a61ddb04e5964c8323d7bbc215f9ee6a5}\label{classcore_1_1meta_1_1texture__t_a61ddb04e5964c8323d7bbc215f9ee6a5}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!width@{width}}
+\index{width@{width}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t texture\+\_\+t\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the width of the texture in pixels. 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a2e8b54b4ec70c1b35e955a4b04c91cb1}\label{classcore_1_1meta_1_1texture__t_a2e8b54b4ec70c1b35e955a4b04c91cb1}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!width@{width}}
+\index{width@{width}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::width (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+even though setting this to less than the actual resolution should be fine, setting it to more will result in accessing outside of the actual memory leading to a crash. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em width} & the width in pixels \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_ac12d948f02566deb2684654220bdc620}\label{classcore_1_1meta_1_1texture__t_ac12d948f02566deb2684654220bdc620}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!height@{height}}
+\index{height@{height}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t texture\+\_\+t\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the height of the texture in pixels. 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a2681592fc725550243c28c5f0e1889ad}\label{classcore_1_1meta_1_1texture__t_a2681592fc725550243c28c5f0e1889ad}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!height@{height}}
+\index{height@{height}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::height (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+even though setting this to less than the actual resolution should be fine, setting it to more will result in accessing outside of the actual memory leading to a crash. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em height} & the height in pixels. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_abc4bfa13c2b96d4644fbdf25814e783a}\label{classcore_1_1meta_1_1texture__t_abc4bfa13c2b96d4644fbdf25814e783a}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!depth@{depth}}
+\index{depth@{depth}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{depth()}{depth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t texture\+\_\+t\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the depth of the texture in pixels. 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a02add36fddf6ca010d627cbd02ae2059}\label{classcore_1_1meta_1_1texture__t_a02add36fddf6ca010d627cbd02ae2059}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!depth@{depth}}
+\index{depth@{depth}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{depth()}{depth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::depth (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{depth }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+even though setting this to less than the actual resolution should be fine, setting it to more will result in accessing outside of the actual memory leading to a crash. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em depth} & the depth in pixels. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a384ad3a6d6b23bcf8aebbed82a1553a0}\label{classcore_1_1meta_1_1texture__t_a384ad3a6d6b23bcf8aebbed82a1553a0}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!mip\_levels@{mip\_levels}}
+\index{mip\_levels@{mip\_levels}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_levels()}{mip\_levels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t texture\+\_\+t\+::mip\+\_\+levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the used mip levels of the texture. 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a1ed6159087852d99c655384051d4eda7}\label{classcore_1_1meta_1_1texture__t_a1ed6159087852d99c655384051d4eda7}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!mip\_levels@{mip\_levels}}
+\index{mip\_levels@{mip\_levels}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_levels()}{mip\_levels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::mip\+\_\+levels (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mip\+\_\+levels }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+although setting less than the actual available mip\+\_\+levels is possible (but leads to undefined behaviour), setting more than the available will definitely lead to a crash. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mip\+\_\+levels} & the amount of mip levels present in the resource. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a1648f5eb622d6f2d869c10fad483cd79}\label{classcore_1_1meta_1_1texture__t_a1648f5eb622d6f2d869c10fad483cd79}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!layers@{layers}}
+\index{layers@{layers}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{layers()}{layers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t texture\+\_\+t\+::layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the layers of the texture. 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_ac88ff762bc4a4c7c9abe9d45a025383b}\label{classcore_1_1meta_1_1texture__t_ac88ff762bc4a4c7c9abe9d45a025383b}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!layers@{layers}}
+\index{layers@{layers}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{layers()}{layers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::layers (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{layers }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em layers} & the amount of layers contained in this instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+even though setting this to less than the actual layers should be fine, setting it to more will result in accessing outside of the actual memory leading to a crash. 
+\end{DoxyNote}
+
+
+Definition at line 23 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a3f56172b1f716331e94708de553fd56b}\label{classcore_1_1meta_1_1texture__t_a3f56172b1f716331e94708de553fd56b}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!format@{format}}
+\index{format@{format}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily core\+::gfx\+::format\+\_\+t texture\+\_\+t\+::format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the format that the texture is in. 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a76529e5acbfd529795bacf57aae6ad75}\label{classcore_1_1meta_1_1texture__t_a76529e5acbfd529795bacf57aae6ad75}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!format@{format}}
+\index{format@{format}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::format (\begin{DoxyParamCaption}\item[{core\+::gfx\+::format\+\_\+t}]{format }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em format} & the expected format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+invalid formats will, in best case lead to render artifacts, and in worst cause segmentation fault for reading outside of the memory that was expected to be present for the given format. 
+\end{DoxyWarning}
+
+
+Definition at line 26 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_ab5bcae30f313572a094f9d6a440e2012}\label{classcore_1_1meta_1_1texture__t_ab5bcae30f313572a094f9d6a440e2012}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!image\_type@{image\_type}}
+\index{image\_type@{image\_type}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{image\_type()}{image\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily core\+::gfx\+::image\+\_\+type texture\+\_\+t\+::image\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the type of texture this is (2D, 3D, etc..). 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a59f9bfe61eef9bbbfb62e463223434cf}\label{classcore_1_1meta_1_1texture__t_a59f9bfe61eef9bbbfb62e463223434cf}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!image\_type@{image\_type}}
+\index{image\_type@{image\_type}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{image\_type()}{image\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::image\+\_\+type (\begin{DoxyParamCaption}\item[{core\+::gfx\+::image\+\_\+type}]{type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & the type of image to expect. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_acc30d161c5d62a026f7140e15e74da26}\label{classcore_1_1meta_1_1texture__t_acc30d161c5d62a026f7140e15e74da26}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!usage@{usage}}
+\index{usage@{usage}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{usage()}{usage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily core\+::gfx\+::image\+\_\+usage texture\+\_\+t\+::usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the expected usage of this texture 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this can be changed, it is a suggestion. 
+\end{DoxyNote}
+
+
+Definition at line 31 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a2670f2fd1e4441715399b34ceb1b143d}\label{classcore_1_1meta_1_1texture__t_a2670f2fd1e4441715399b34ceb1b143d}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!usage@{usage}}
+\index{usage@{usage}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{usage()}{usage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::usage (\begin{DoxyParamCaption}\item[{core\+::gfx\+::image\+\_\+usage}]{usage }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em usage} & the usage flags to expect. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a96f3487b94974cab0efd992e2661cddc}\label{classcore_1_1meta_1_1texture__t_a96f3487b94974cab0efd992e2661cddc}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!aspect\_mask@{aspect\_mask}}
+\index{aspect\_mask@{aspect\_mask}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{aspect\_mask()}{aspect\_mask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily core\+::gfx\+::image\+\_\+aspect texture\+\_\+t\+::aspect\+\_\+mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+what type of aspects to expect (color, depth, stencil, etc..) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this can be changed, it is a suggestion. 
+\end{DoxyNote}
+
+
+Definition at line 34 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1meta_1_1texture__t_a3497526de6024ad0c688326fd1388817}\label{classcore_1_1meta_1_1texture__t_a3497526de6024ad0c688326fd1388817}} 
+\index{core::meta::texture\_t@{core::meta::texture\_t}!aspect\_mask@{aspect\_mask}}
+\index{aspect\_mask@{aspect\_mask}!core::meta::texture\_t@{core::meta::texture\_t}}
+\doxysubsubsection{\texorpdfstring{aspect\_mask()}{aspect\_mask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void texture\+\_\+t\+::aspect\+\_\+mask (\begin{DoxyParamCaption}\item[{core\+::gfx\+::image\+\_\+aspect}]{aspect }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+invalid aspect masks lead to undefined behaviour. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em aspect} & the aspect mask flag to expect. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file texture.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/meta/texture.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/meta/texture.\+cpp\end{DoxyCompactItemize}

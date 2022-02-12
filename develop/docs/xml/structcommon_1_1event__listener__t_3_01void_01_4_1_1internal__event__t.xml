@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t" kind="struct" language="C++" prot="protected">
+    <compoundname>common::event_listener_t&lt; void &gt;::internal_event_t</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ab055221807ef1321faef031d375d36b6" prot="public" static="no">
+        <type>psl::delegate&lt; void()&gt;</type>
+        <definition>typedef psl::delegate&lt;void()&gt; common::event_listener_t&lt; void &gt;::internal_event_t::functype</definition>
+        <argsstring></argsstring>
+        <name>functype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="217" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ae47bee53bbe13cdd09a2a3752b48c0cc" prot="public" static="no" mutable="no">
+        <type>internals::event::event_signature_t</type>
+        <definition>internals::event::event_signature_t common::event_listener_t&lt; void &gt;::internal_event_t::signature</definition>
+        <argsstring></argsstring>
+        <name>signature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="229" column="37" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1aaff2469d44813c25ac2b68776ce7fe90" prot="public" static="no" mutable="no">
+        <type>functype</type>
+        <definition>functype common::event_listener_t&lt; void &gt;::internal_event_t::function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="230" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ac0895ba80fa766eabbb5e4ae211d9af4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>common::event_listener_t&lt; void &gt;::internal_event_t::internal_event_t</definition>
+        <argsstring>(const internals::event::event_signature_t &amp;signature)</argsstring>
+        <name>internal_event_t</name>
+        <param>
+          <type>const internals::event::event_signature_t &amp;</type>
+          <declname>signature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="219" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1a55c6b7a54120959dcf1f72ee72b73b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>common::event_listener_t&lt; void &gt;::internal_event_t::internal_event_t</definition>
+        <argsstring>(const internals::event::event_signature_t &amp;signature, functype &amp;&amp;func)</argsstring>
+        <name>internal_event_t</name>
+        <param>
+          <type>const internals::event::event_signature_t &amp;</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>functype &amp;&amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="221" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="221" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1a66950f71cfa88c767f64fa5d0fc6bbab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Function</type>
+          </param>
+          <param>
+            <type>typename Class</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void common::event_listener_t&lt; void &gt;::internal_event_t::SetFunction</definition>
+        <argsstring>(Class *mThis, Function &amp;&amp;func)</argsstring>
+        <name>SetFunction</name>
+        <param>
+          <type>Class *</type>
+          <declname>mThis</declname>
+        </param>
+        <param>
+          <type>Function &amp;&amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="225" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="216" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="215" bodyend="231"/>
+    <listofallmembers>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1aaff2469d44813c25ac2b68776ce7fe90" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>function</name></member>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ab055221807ef1321faef031d375d36b6" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>functype</name></member>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ac0895ba80fa766eabbb5e4ae211d9af4" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>internal_event_t</name></member>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1a55c6b7a54120959dcf1f72ee72b73b6c" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>internal_event_t</name></member>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1a66950f71cfa88c767f64fa5d0fc6bbab" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>SetFunction</name></member>
+      <member refid="structcommon_1_1event__listener__t_3_01void_01_4_1_1internal__event__t_1ae47bee53bbe13cdd09a2a3752b48c0cc" prot="public" virt="non-virtual"><scope>common::event_listener_t&lt; void &gt;::internal_event_t</scope><name>signature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

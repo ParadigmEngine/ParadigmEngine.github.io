@@ -1,0 +1,863 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4" kind="class" language="C++" prot="public">
+    <compoundname>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Key</type>
+      </param>
+      <param>
+        <type>Key</type>
+        <declname>chunks_size</declname>
+        <defname>chunks_size</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a8a3d546e1155393e080509741660ed7a" prot="private" static="no">
+        <type>Key</type>
+        <definition>using psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::index_t =  Key</definition>
+        <argsstring></argsstring>
+        <name>index_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="657" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a088d905b34a6fb995b632d3052ad9dd3" prot="private" static="no">
+        <type>psl::static_array&lt; index_t, chunks_size &gt;</type>
+        <definition>using psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::chunk_t =  psl::static_array&lt;index_t, chunks_size&gt;</definition>
+        <argsstring></argsstring>
+        <name>chunk_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="658" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af2d1452b475041cd69a770417b68eeb2" prot="public" static="no">
+        <type>typename psl::array&lt; index_t &gt;::size_type</type>
+        <definition>using psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::size_type =  typename psl::array&lt;index_t&gt;::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="664" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ae48c255342666c99a6453fa5c98ff875" prot="public" static="no">
+        <type>typename psl::array&lt; index_t &gt;::difference_type</type>
+        <definition>using psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::difference_type =  typename psl::array&lt;index_t&gt;::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="665" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ad67e9e3142313b606568b36552d9ec63" prot="public" static="no">
+        <type>std::random_access_iterator_tag</type>
+        <definition>using psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::iterator_category =  std::random_access_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="666" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a5dfe31282d85a96203bde5236a0d94c8" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::is_power_of_two</definition>
+        <argsstring></argsstring>
+        <name>is_power_of_two</name>
+        <initializer>{chunks_size &amp;&amp; ((chunks_size &amp; (chunks_size - 1)) == 0)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="660" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a955b952a02549dc9fd84df708882d00d" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr index_t</type>
+        <definition>constexpr index_t psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::mod_val</definition>
+        <argsstring></argsstring>
+        <name>mod_val</name>
+        <initializer>{(is_power_of_two) ? chunks_size - 1 : chunks_size}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="661" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af86bae5b1f7e301aae9baa681946a4d3" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; index_t &gt;</type>
+        <definition>psl::array&lt;index_t&gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_Reverse</definition>
+        <argsstring></argsstring>
+        <name>m_Reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1004" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a668f975146cf35e8a93d080158a900b5" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; std::optional&lt; chunk_t &gt; &gt;</type>
+        <definition>psl::array&lt;std::optional&lt;chunk_t&gt; &gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_Sparse</definition>
+        <argsstring></argsstring>
+        <name>m_Sparse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1005" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a201b11fb861475d302d5a55d36ae1634" prot="private" static="no" mutable="no">
+        <type>psl::static_array&lt; index_t, 4 &gt;</type>
+        <definition>psl::static_array&lt;index_t, 4&gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_StageStart</definition>
+        <argsstring></argsstring>
+        <name>m_StageStart</name>
+        <initializer>{0, 0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1008" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1afb89038e30202e8d083c38f672bee2cb" prot="private" static="no" mutable="no">
+        <type>psl::static_array&lt; index_t, 3 &gt;</type>
+        <definition>psl::static_array&lt;index_t, 3&gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_StageSize</definition>
+        <argsstring></argsstring>
+        <name>m_StageSize</name>
+        <initializer>{0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1009" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1afb1decdce4121b4ad2308785024c71fc" prot="private" static="no" mutable="yes">
+        <type>chunk_t *</type>
+        <definition>chunk_t* psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_CachedChunk</definition>
+        <argsstring></argsstring>
+        <name>m_CachedChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1010" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ade4807299522358d06efa64ca6795351" prot="private" static="no" mutable="yes">
+        <type>index_t</type>
+        <definition>index_t psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::m_CachedChunkUserIndex</definition>
+        <argsstring></argsstring>
+        <name>m_CachedChunkUserIndex</name>
+        <initializer>= std::numeric_limits&lt;index_t&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="1011" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a8dbbb0e711f06311e829b1612b747ce5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::staged_sparse_array</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>staged_sparse_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="668" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="668" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ac949aac70661016b002d3ae22202da15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::~staged_sparse_array</definition>
+        <argsstring>()=default</argsstring>
+        <name>~staged_sparse_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="669" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a15d9a14e5087a5c6b24284c52d12506f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::staged_sparse_array</definition>
+        <argsstring>(const staged_sparse_array &amp;other)=default</argsstring>
+        <name>staged_sparse_array</name>
+        <param>
+          <type>const staged_sparse_array &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="671" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a572a1d6a573ded0f59447d5e14a28923" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::staged_sparse_array</definition>
+        <argsstring>(staged_sparse_array &amp;&amp;other) noexcept=default</argsstring>
+        <name>staged_sparse_array</name>
+        <param>
+          <type>staged_sparse_array &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="672" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a1943e7b976b3d4a0b28a7085d9131986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>staged_sparse_array &amp;</type>
+        <definition>staged_sparse_array&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::operator=</definition>
+        <argsstring>(const staged_sparse_array &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const staged_sparse_array &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="673" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1abc10c4b99b1a6f3ae6366a2f7a5a130d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>staged_sparse_array &amp;</type>
+        <definition>staged_sparse_array&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::operator=</definition>
+        <argsstring>(staged_sparse_array &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>staged_sparse_array &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="674" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acba1113f495bfece6aa934cf8ccc5f8d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::operator[]</definition>
+        <argsstring>(index_t index) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="676" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="676" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab81beb29fa996e9e5cd069293e477bb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::reserve</definition>
+        <argsstring>(size_t capacity)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="678" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="678" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af8185803573e754f5f37a730cb119649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::resize</definition>
+        <argsstring>(index_t size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>index_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="685" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="685" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a25106327136b3d24d8adde28e6364534" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::erase</definition>
+        <argsstring>(index_t first, index_t last) noexcept</argsstring>
+        <name>erase</name>
+        <param>
+          <type>index_t</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="699" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="699" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a0f9e075777cb5a5c17e6dd4e08ac6091" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::erase</definition>
+        <argsstring>(index_t index) noexcept</argsstring>
+        <name>erase</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="707" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="707" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a7aaee83c13c7ab9db5522d0aeab8860d" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::has</definition>
+        <argsstring>(index_t index) const noexcept</argsstring>
+        <name>has</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="717" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="717" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ac5bada1aed0d136ad1da081d3ff5d903" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::has</definition>
+        <argsstring>(index_t index, size_t startStage, size_t endStage) const noexcept</argsstring>
+        <name>has</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>startStage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endStage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="719" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="719" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1aebadd179b3a71fa95461e976b021f452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ItF</type>
+          </param>
+          <param>
+            <type>typename ItL</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::insert</definition>
+        <argsstring>(index_t index, ItF &amp;&amp;first, ItL &amp;&amp;last)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>ItF &amp;&amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ItL &amp;&amp;</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="746" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="746" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acea2e73e552ec163c90fdd54c884d39e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::insert</definition>
+        <argsstring>(index_t index)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="757" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="757" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab5f69834b7c846a2205217b57d17b8c3" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; index_t &gt;</type>
+        <definition>psl::array_view&lt;index_t&gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::indices</definition>
+        <argsstring>(size_t stage=0) const noexcept</argsstring>
+        <name>indices</name>
+        <param>
+          <type>size_t</type>
+          <declname>stage</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="765" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1adf492a669d55f0274fe860ec1060ee04" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; index_t &gt;</type>
+        <definition>psl::array_view&lt;index_t&gt; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::indices</definition>
+        <argsstring>(size_t startStage, size_t endStage) const noexcept</argsstring>
+        <name>indices</name>
+        <param>
+          <type>size_t</type>
+          <declname>startStage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endStage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="770" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="770" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ade5348e9fd97f7fed9c7eccaef9f3e80" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::promote</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>promote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="776" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="776" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acdc49aebcfe43091c65bd974fff08f56" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::size</definition>
+        <argsstring>(index_t stage=0) const noexcept</argsstring>
+        <name>size</name>
+        <param>
+          <type>index_t</type>
+          <declname>stage</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="793" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="793" bodyend="793"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a222f4dd5148b47649caa5a7d1974b811" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::size</definition>
+        <argsstring>(index_t startStage, index_t endStage) const noexcept</argsstring>
+        <name>size</name>
+        <param>
+          <type>index_t</type>
+          <declname>startStage</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>endStage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="794" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="794" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1adda43d8175e41be603842683fea7032e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_type</type>
+        <definition>size_type psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::capacity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="798" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="798" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a90835e6fe644d84833981d74f7d01f27" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="800" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="800" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a265ebe7fab4fea623cad988e260c1f66" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="802" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="802" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab955a20a03d8f19b474d49f3a5e6d53d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Fn</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::remap</definition>
+        <argsstring>(const psl::sparse_array&lt; index_t &gt; &amp;mapping, Fn &amp;&amp;predicate)</argsstring>
+        <name>remap</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1sparse__array" kindref="compound">psl::sparse_array</ref>&lt; index_t &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <param>
+          <type>Fn &amp;&amp;</type>
+          <declname>predicate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="812" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="812" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a2130deb9e7851d95c50bb7ee92df60a4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::merge</definition>
+        <argsstring>(const staged_sparse_array &amp;other) noexcept</argsstring>
+        <name>merge</name>
+        <param>
+          <type>const staged_sparse_array &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="837" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="837" bodyend="850"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a051cf32e4510d2fe694d695ce16c6957" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::insert_impl</definition>
+        <argsstring>(chunk_t &amp;chunk, index_t offset, index_t user_index)</argsstring>
+        <name>insert_impl</name>
+        <param>
+          <type>chunk_t &amp;</type>
+          <declname>chunk</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>user_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="853" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="853" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a6fc332611f0503f1d932dd5680a3c4f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::erase_impl</definition>
+        <argsstring>(chunk_t &amp;chunk, index_t offset, index_t user_index)</argsstring>
+        <name>erase_impl</name>
+        <param>
+          <type>chunk_t &amp;</type>
+          <declname>chunk</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>index_t</type>
+          <declname>user_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="870" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="870" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a9fc3d185cb284171bbb571342b5d4d02" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>chunk_t &amp;</type>
+        <definition>chunk_t&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::chunk_for</definition>
+        <argsstring>(index_t &amp;index) noexcept</argsstring>
+        <name>chunk_for</name>
+        <param>
+          <type>index_t &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="908" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="908" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a28de6e684643e586dcee6ba5df95b08c" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const chunk_t &amp;</type>
+        <definition>const chunk_t&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::get_chunk_from_user_index</definition>
+        <argsstring>(index_t index) const noexcept</argsstring>
+        <name>get_chunk_from_user_index</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="950" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="950" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a751649e54d3726272e2cdecd0fcfd218" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>chunk_t &amp;</type>
+        <definition>chunk_t&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::get_chunk_from_user_index</definition>
+        <argsstring>(index_t index) noexcept</argsstring>
+        <name>get_chunk_from_user_index</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="967" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="967" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab07b4664a1f65be870d24148661b486d" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const chunk_t &amp;</type>
+        <definition>const chunk_t&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::get_chunk_from_index</definition>
+        <argsstring>(index_t index) const noexcept</argsstring>
+        <name>get_chunk_from_index</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="985" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="985" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a5d71372e90adddb386c6580e37b2834f" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>chunk_t &amp;</type>
+        <definition>chunk_t&amp; psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::get_chunk_from_index</definition>
+        <argsstring>(index_t index) noexcept</argsstring>
+        <name>get_chunk_from_index</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="988" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="988" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a0d029472dec04b9a7054ad0b38e46026" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;::chunk_info_for</definition>
+        <argsstring>(index_t index, index_t &amp;element_index, index_t &amp;chunk_index) const noexcept</argsstring>
+        <name>chunk_info_for</name>
+        <param>
+          <type>index_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>index_t &amp;</type>
+          <declname>element_index</declname>
+        </param>
+        <param>
+          <type>index_t &amp;</type>
+          <declname>chunk_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="990" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="990" bodyend="1002"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" line="656" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp" bodystart="655" bodyend="1012"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1adda43d8175e41be603842683fea7032e" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>capacity</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a9fc3d185cb284171bbb571342b5d4d02" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>chunk_for</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a0d029472dec04b9a7054ad0b38e46026" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>chunk_info_for</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a088d905b34a6fb995b632d3052ad9dd3" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>chunk_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a265ebe7fab4fea623cad988e260c1f66" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>clear</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ae48c255342666c99a6453fa5c98ff875" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>difference_type</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a90835e6fe644d84833981d74f7d01f27" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>empty</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a25106327136b3d24d8adde28e6364534" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>erase</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a0f9e075777cb5a5c17e6dd4e08ac6091" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>erase</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a6fc332611f0503f1d932dd5680a3c4f8" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>erase_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab07b4664a1f65be870d24148661b486d" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>get_chunk_from_index</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a5d71372e90adddb386c6580e37b2834f" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>get_chunk_from_index</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a28de6e684643e586dcee6ba5df95b08c" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>get_chunk_from_user_index</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a751649e54d3726272e2cdecd0fcfd218" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>get_chunk_from_user_index</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a7aaee83c13c7ab9db5522d0aeab8860d" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>has</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ac5bada1aed0d136ad1da081d3ff5d903" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>has</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a8a3d546e1155393e080509741660ed7a" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>index_t</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab5f69834b7c846a2205217b57d17b8c3" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>indices</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1adf492a669d55f0274fe860ec1060ee04" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>indices</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1aebadd179b3a71fa95461e976b021f452" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>insert</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acea2e73e552ec163c90fdd54c884d39e" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>insert</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a051cf32e4510d2fe694d695ce16c6957" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>insert_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a5dfe31282d85a96203bde5236a0d94c8" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>is_power_of_two</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ad67e9e3142313b606568b36552d9ec63" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>iterator_category</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1afb1decdce4121b4ad2308785024c71fc" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_CachedChunk</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ade4807299522358d06efa64ca6795351" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_CachedChunkUserIndex</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af86bae5b1f7e301aae9baa681946a4d3" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_Reverse</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a668f975146cf35e8a93d080158a900b5" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_Sparse</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1afb89038e30202e8d083c38f672bee2cb" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_StageSize</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a201b11fb861475d302d5a55d36ae1634" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>m_StageStart</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a2130deb9e7851d95c50bb7ee92df60a4" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>merge</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a955b952a02549dc9fd84df708882d00d" prot="private" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>mod_val</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a1943e7b976b3d4a0b28a7085d9131986" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1abc10c4b99b1a6f3ae6366a2f7a5a130d" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acba1113f495bfece6aa934cf8ccc5f8d" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ade5348e9fd97f7fed9c7eccaef9f3e80" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>promote</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab955a20a03d8f19b474d49f3a5e6d53d" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>remap</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ab81beb29fa996e9e5cd069293e477bb6" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>reserve</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af8185803573e754f5f37a730cb119649" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>resize</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1acdc49aebcfe43091c65bd974fff08f56" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>size</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a222f4dd5148b47649caa5a7d1974b811" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>size</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1af2d1452b475041cd69a770417b68eeb2" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>size_type</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a8dbbb0e711f06311e829b1612b747ce5" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>staged_sparse_array</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a15d9a14e5087a5c6b24284c52d12506f" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>staged_sparse_array</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1a572a1d6a573ded0f59447d5e14a28923" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>staged_sparse_array</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4_1ac949aac70661016b002d3ae22202da15" prot="public" virt="non-virtual"><scope>psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</scope><name>~staged_sparse_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

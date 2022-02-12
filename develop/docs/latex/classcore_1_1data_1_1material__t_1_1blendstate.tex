@@ -1,0 +1,162 @@
+\hypertarget{classcore_1_1data_1_1material__t_1_1blendstate}{}\doxysection{core\+::data\+::material\+\_\+t\+::blendstate Class Reference}
+\label{classcore_1_1data_1_1material__t_1_1blendstate}\index{core::data::material\_t::blendstate@{core::data::material\_t::blendstate}}
+
+
+describes the blend operation (source/destination) per color component in the render operation.  
+
+
+
+
+{\ttfamily \#include $<$material.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate_a34b39ddf1260907d6c968b3696f93f56}{blendstate}} (bool enabled, uint32\+\_\+t binding, core\+::gfx\+::blend\+\_\+factor src\+Color\+Blend, core\+::gfx\+::blend\+\_\+factor dst\+Color\+Blend, core\+::gfx\+::blend\+\_\+op color\+Blend\+Op, core\+::gfx\+::blend\+\_\+factor src\+Alpha\+Blend, core\+::gfx\+::blend\+\_\+factor dst\+Alpha\+Blend, core\+::gfx\+::blend\+\_\+op alpha\+Blend\+Op, core\+::gfx\+::component\+\_\+bits color\+Flags=(core\+::gfx\+::component\+\_\+bits\+::r$\vert$core\+::gfx\+::component\+\_\+bits\+::g$\vert$core\+::gfx\+::component\+\_\+bits\+::b$\vert$core\+::gfx\+::component\+\_\+bits\+::a))
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a93c8a8390880bec725890adc654edf8d}\label{classcore_1_1data_1_1material__t_1_1blendstate_a93c8a8390880bec725890adc654edf8d}} 
+{\bfseries blendstate} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a401a45894f05ac3234ec5127b13e8570}\label{classcore_1_1data_1_1material__t_1_1blendstate_a401a45894f05ac3234ec5127b13e8570}} 
+{\bfseries blendstate} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_aee29517e8930b013ae14d9058156d0e6}\label{classcore_1_1data_1_1material__t_1_1blendstate_aee29517e8930b013ae14d9058156d0e6}} 
+{\bfseries blendstate} (\mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a110448932722e7f5e2cce1f4db75e282}\label{classcore_1_1data_1_1material__t_1_1blendstate_a110448932722e7f5e2cce1f4db75e282}} 
+\mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a69e353d322ca6d72f4c385a9b1188871}\label{classcore_1_1data_1_1material__t_1_1blendstate_a69e353d322ca6d72f4c385a9b1188871}} 
+\mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ae29f83fab22963a87de8b19ad62f12d4}\label{classcore_1_1data_1_1material__t_1_1blendstate_ae29f83fab22963a87de8b19ad62f12d4}} 
+bool {\bfseries enabled} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ab84c87995ad3c2ea1c588b661a06e67c}\label{classcore_1_1data_1_1material__t_1_1blendstate_ab84c87995ad3c2ea1c588b661a06e67c}} 
+uint32\+\_\+t {\bfseries binding} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ac0e442d97bf4bc3c3928196f70877916}\label{classcore_1_1data_1_1material__t_1_1blendstate_ac0e442d97bf4bc3c3928196f70877916}} 
+core\+::gfx\+::blend\+\_\+factor {\bfseries color\+\_\+blend\+\_\+src} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a74a02e30091cb483e98abb52c361d66f}\label{classcore_1_1data_1_1material__t_1_1blendstate_a74a02e30091cb483e98abb52c361d66f}} 
+core\+::gfx\+::blend\+\_\+factor {\bfseries color\+\_\+blend\+\_\+dst} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_af7759891c15fdae542c3187a82a474a5}\label{classcore_1_1data_1_1material__t_1_1blendstate_af7759891c15fdae542c3187a82a474a5}} 
+core\+::gfx\+::blend\+\_\+op {\bfseries color\+\_\+blend\+\_\+op} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_acd3ece67a7e14508f33afe536e6dcaa4}\label{classcore_1_1data_1_1material__t_1_1blendstate_acd3ece67a7e14508f33afe536e6dcaa4}} 
+core\+::gfx\+::blend\+\_\+factor {\bfseries alpha\+\_\+blend\+\_\+src} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a43b87bf958e157abb881075ee95cebed}\label{classcore_1_1data_1_1material__t_1_1blendstate_a43b87bf958e157abb881075ee95cebed}} 
+core\+::gfx\+::blend\+\_\+factor {\bfseries alpha\+\_\+blend\+\_\+dst} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a0ca14c207c8e487535b3d4f699733197}\label{classcore_1_1data_1_1material__t_1_1blendstate_a0ca14c207c8e487535b3d4f699733197}} 
+core\+::gfx\+::blend\+\_\+op {\bfseries alpha\+\_\+blend\+\_\+op} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a39726ab46e7919108b17eee862fcac22}\label{classcore_1_1data_1_1material__t_1_1blendstate_a39726ab46e7919108b17eee862fcac22}} 
+core\+::gfx\+::component\+\_\+bits {\bfseries color\+\_\+components} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a878255d8a3feb4b2303156ab3c397766}\label{classcore_1_1data_1_1material__t_1_1blendstate_a878255d8a3feb4b2303156ab3c397766}} 
+void {\bfseries enabled} (bool value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a296293a15e4e36ba1dd4f4796efb28c8}\label{classcore_1_1data_1_1material__t_1_1blendstate_a296293a15e4e36ba1dd4f4796efb28c8}} 
+void {\bfseries binding} (uint32\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ac0dac1587a6337b5976067fb8cdf9936}\label{classcore_1_1data_1_1material__t_1_1blendstate_ac0dac1587a6337b5976067fb8cdf9936}} 
+void {\bfseries color\+\_\+blend\+\_\+src} (core\+::gfx\+::blend\+\_\+factor value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ab228f93a7f1a2b8b8b37e462ace8a292}\label{classcore_1_1data_1_1material__t_1_1blendstate_ab228f93a7f1a2b8b8b37e462ace8a292}} 
+void {\bfseries color\+\_\+blend\+\_\+dst} (core\+::gfx\+::blend\+\_\+factor value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a60d833081ef9ee5673ceee704fce50b5}\label{classcore_1_1data_1_1material__t_1_1blendstate_a60d833081ef9ee5673ceee704fce50b5}} 
+void {\bfseries color\+\_\+blend\+\_\+op} (core\+::gfx\+::blend\+\_\+op value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a63d6e5a86d1bf9eb795ce70f80c549ea}\label{classcore_1_1data_1_1material__t_1_1blendstate_a63d6e5a86d1bf9eb795ce70f80c549ea}} 
+void {\bfseries alpha\+\_\+blend\+\_\+src} (core\+::gfx\+::blend\+\_\+factor value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_aee50848b4fe958f8b138e572a0154508}\label{classcore_1_1data_1_1material__t_1_1blendstate_aee50848b4fe958f8b138e572a0154508}} 
+void {\bfseries alpha\+\_\+blend\+\_\+dst} (core\+::gfx\+::blend\+\_\+factor value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a5fdc6a683a9d6b25b62c07e6d68e48f9}\label{classcore_1_1data_1_1material__t_1_1blendstate_a5fdc6a683a9d6b25b62c07e6d68e48f9}} 
+void {\bfseries alpha\+\_\+blend\+\_\+op} (core\+::gfx\+::blend\+\_\+op value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a241efb395001d075c84a900b261cc927}\label{classcore_1_1data_1_1material__t_1_1blendstate_a241efb395001d075c84a900b261cc927}} 
+void {\bfseries color\+\_\+components} (core\+::gfx\+::component\+\_\+bits value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a6f085922b2a6c379acfafdd9e28ff7bc}\label{classcore_1_1data_1_1material__t_1_1blendstate_a6f085922b2a6c379acfafdd9e28ff7bc}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries opaque} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a76adc2153f2365555e4cbb3cc074bb43}\label{classcore_1_1data_1_1material__t_1_1blendstate_a76adc2153f2365555e4cbb3cc074bb43}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries transparent} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_acb2fa1debfeff47572e4c6f4ffdfd65d}\label{classcore_1_1data_1_1material__t_1_1blendstate_acb2fa1debfeff47572e4c6f4ffdfd65d}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries pre\+\_\+multiplied\+\_\+transparent} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_abf0f2d1ed57b1f4ee24195ec1c1b0321}\label{classcore_1_1data_1_1material__t_1_1blendstate_abf0f2d1ed57b1f4ee24195ec1c1b0321}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries additive} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_abb75cd5dccf61c3cbaca4c003877e73a}\label{classcore_1_1data_1_1material__t_1_1blendstate_abb75cd5dccf61c3cbaca4c003877e73a}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries soft\+\_\+additive} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a98b531d9d7bab8128224d0c9d05e6274}\label{classcore_1_1data_1_1material__t_1_1blendstate_a98b531d9d7bab8128224d0c9d05e6274}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries multiplicative} (uint32\+\_\+t binding)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a5ead1f62f74cedf713e9ee992f4592e8}\label{classcore_1_1data_1_1material__t_1_1blendstate_a5ead1f62f74cedf713e9ee992f4592e8}} 
+static const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} {\bfseries double\+\_\+multiplicative} (uint32\+\_\+t binding)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1material__t_1_1blendstate_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 36 of file material.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_1_1blendstate_a34b39ddf1260907d6c968b3696f93f56}\label{classcore_1_1data_1_1material__t_1_1blendstate_a34b39ddf1260907d6c968b3696f93f56}} 
+\index{core::data::material\_t::blendstate@{core::data::material\_t::blendstate}!blendstate@{blendstate}}
+\index{blendstate@{blendstate}!core::data::material\_t::blendstate@{core::data::material\_t::blendstate}}
+\doxysubsubsection{\texorpdfstring{blendstate()}{blendstate()}}
+{\footnotesize\ttfamily core\+::data\+::material\+\_\+t\+::blendstate\+::blendstate (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{uint32\+\_\+t}]{binding,  }\item[{core\+::gfx\+::blend\+\_\+factor}]{src\+Color\+Blend,  }\item[{core\+::gfx\+::blend\+\_\+factor}]{dst\+Color\+Blend,  }\item[{core\+::gfx\+::blend\+\_\+op}]{color\+Blend\+Op,  }\item[{core\+::gfx\+::blend\+\_\+factor}]{src\+Alpha\+Blend,  }\item[{core\+::gfx\+::blend\+\_\+factor}]{dst\+Alpha\+Blend,  }\item[{core\+::gfx\+::blend\+\_\+op}]{alpha\+Blend\+Op,  }\item[{core\+::gfx\+::component\+\_\+bits}]{color\+Flags = {\ttfamily (core\+:\+:gfx\+:\+:component\+\_\+bits\+:\+:r~$\vert$															~~~core\+:\+:gfx\+:\+:component\+\_\+bits\+:\+:g~$\vert$															~~~core\+:\+:gfx\+:\+:component\+\_\+bits\+:\+:b~$\vert$															~~~core\+:\+:gfx\+:\+:component\+\_\+bits\+:\+:a)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em enabled} & is the blendstate active (true) or not (false). \\
+\hline
+\mbox{\texttt{ in}}  & {\em binding} & the binding location of the blend state. \\
+\hline
+\mbox{\texttt{ in}}  & {\em src\+Color\+Blend} & the operation to apply to the R\+GB components when loading. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dst\+Color\+Blend} & the operation to apply to the R\+GB components with our newly created color data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em color\+Blend\+Op} & the blend operation to apply to the R\+GB components. \\
+\hline
+\mbox{\texttt{ in}}  & {\em src\+Alpha\+Blend} & the operation to apply to the A component when loading. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dst\+Alpha\+Blend} & the operation to apply to the A component with our newly created alpha data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em alpha\+Blend\+Op} & the blend operation to apply to the A component. \\
+\hline
+\mbox{\texttt{ in}}  & {\em color\+Flags} & the color component masking flags to use. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file material.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/material.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/material.\+cpp\end{DoxyCompactItemize}

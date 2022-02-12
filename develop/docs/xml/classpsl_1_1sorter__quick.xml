@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1sorter__quick" kind="class" language="C++" prot="public">
+    <compoundname>psl::sorter_quick</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="16" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="15" bodyend="16"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

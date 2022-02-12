@@ -1,0 +1,89 @@
+\hypertarget{structcore_1_1gfx_1_1commit__instruction}{}\doxysection{core\+::gfx\+::commit\+\_\+instruction Struct Reference}
+\label{structcore_1_1gfx_1_1commit__instruction}\index{core::gfx::commit\_instruction@{core::gfx::commit\_instruction}}
+
+
+description of a memory commit instruction. Tries to offer some safer mechanisms.  
+
+
+
+
+{\ttfamily \#include $<$types.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a20b6fd33cb03a3a6ca2c7c46e14134fe}{commit\+\_\+instruction}} (T $\ast$\mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_ae4a9bb2d1864f00916e25d867ce45f5d}{source}}, \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a7f1f1fa56e849d8f1962a8717b95da46}{segment}}, std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} $>$ \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a0e31e7fdd90196dc94a61d7e29cc7895}{sub\+\_\+range}}=std\+::nullopt)
+\begin{DoxyCompactList}\small\item\em automatically construct the information from the type information of the source. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_a5998b0caaa95dd017057450104015a73}\label{structcore_1_1gfx_1_1commit__instruction_a5998b0caaa95dd017057450104015a73}} 
+{\bfseries commit\+\_\+instruction} (void $\ast$\mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_ae4a9bb2d1864f00916e25d867ce45f5d}{source}}, size\+\_\+t \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_adbf728d7a790a4b913ac402655eac6dc}{size}}, \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a7f1f1fa56e849d8f1962a8717b95da46}{segment}}, std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} $>$ \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a0e31e7fdd90196dc94a61d7e29cc7895}{sub\+\_\+range}}=std\+::nullopt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_a7f1f1fa56e849d8f1962a8717b95da46}\label{structcore_1_1gfx_1_1commit__instruction_a7f1f1fa56e849d8f1962a8717b95da46}} 
+\mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a7f1f1fa56e849d8f1962a8717b95da46}{segment}} \{\}
+\begin{DoxyCompactList}\small\item\em target segment in the buffer \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} $>$ \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_a0e31e7fdd90196dc94a61d7e29cc7895}{sub\+\_\+range}}
+\begin{DoxyCompactList}\small\item\em possible sub range within the segment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_ae4a9bb2d1864f00916e25d867ce45f5d}\label{structcore_1_1gfx_1_1commit__instruction_ae4a9bb2d1864f00916e25d867ce45f5d}} 
+std\+::uintptr\+\_\+t \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_ae4a9bb2d1864f00916e25d867ce45f5d}{source}} \{0\}
+\begin{DoxyCompactList}\small\item\em source to copy from \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_adbf728d7a790a4b913ac402655eac6dc}\label{structcore_1_1gfx_1_1commit__instruction_adbf728d7a790a4b913ac402655eac6dc}} 
+uint64\+\_\+t \mbox{\hyperlink{structcore_1_1gfx_1_1commit__instruction_adbf728d7a790a4b913ac402655eac6dc}{size}} \{0\}
+\begin{DoxyCompactList}\small\item\em sizeof source \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 115 of file types.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_a20b6fd33cb03a3a6ca2c7c46e14134fe}\label{structcore_1_1gfx_1_1commit__instruction_a20b6fd33cb03a3a6ca2c7c46e14134fe}} 
+\index{core::gfx::commit\_instruction@{core::gfx::commit\_instruction}!commit\_instruction@{commit\_instruction}}
+\index{commit\_instruction@{commit\_instruction}!core::gfx::commit\_instruction@{core::gfx::commit\_instruction}}
+\doxysubsubsection{\texorpdfstring{commit\_instruction()}{commit\_instruction()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+core\+::gfx\+::commit\+\_\+instruction\+::commit\+\_\+instruction (\begin{DoxyParamCaption}\item[{T $\ast$}]{source,  }\item[{\mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}}}]{segment,  }\item[{std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} $>$}]{sub\+\_\+range = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type you wish to commit in this instruction. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & the source we will copy from. \\
+\hline
+\mbox{\texttt{ in}}  & {\em segment} & the \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} we will copy to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sub\+\_\+range} & optional sub\+\_\+range offset in the \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}}, where a sub\+\_\+range.\+begin() is equal to the head of the segment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+make sure the source outlives the commit instruction. 
+\end{DoxyWarning}
+
+
+Definition at line 124 of file types.\+hpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structcore_1_1gfx_1_1commit__instruction_a0e31e7fdd90196dc94a61d7e29cc7895}\label{structcore_1_1gfx_1_1commit__instruction_a0e31e7fdd90196dc94a61d7e29cc7895}} 
+\index{core::gfx::commit\_instruction@{core::gfx::commit\_instruction}!sub\_range@{sub\_range}}
+\index{sub\_range@{sub\_range}!core::gfx::commit\_instruction@{core::gfx::commit\_instruction}}
+\doxysubsubsection{\texorpdfstring{sub\_range}{sub\_range}}
+{\footnotesize\ttfamily std\+::optional$<$\mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}}$>$ core\+::gfx\+::commit\+\_\+instruction\+::sub\+\_\+range}
+
+this is local offsets from the point of view of the segment (i.\+e. the sub\+\_\+range.\+begin \&\& sub\+\_\+range.\+end can never be bigger than the segment.\+size() ) 
+
+Definition at line 140 of file types.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/gfx/types.\+hpp\end{DoxyCompactItemize}

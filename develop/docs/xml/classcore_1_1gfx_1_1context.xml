@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1gfx_1_1context" kind="class" language="C++" prot="public">
+    <compoundname>core::gfx::context</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1gfx_1_1context_1a7f8560fc714aa3052e29b26891003902" prot="private" static="no" mutable="no">
+        <type>core::gfx::graphics_backend</type>
+        <definition>core::gfx::graphics_backend core::gfx::context::m_Backend</definition>
+        <argsstring></argsstring>
+        <name>m_Backend</name>
+        <initializer>{graphics_backend::undefined}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="55" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1ac4ef38b5c2c57308a8a02fb6ea809c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>context::context</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, graphics_backend backend, const psl::string8_t &amp;name)</argsstring>
+        <name>context</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type>graphics_backend</type>
+          <declname>backend</declname>
+        </param>
+        <param>
+          <type>const psl::string8_t &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="26" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/context.cpp" bodystart="26" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1ab4a6a016809847cb00ba2a3d9d44d0d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::context::~context</definition>
+        <argsstring>()</argsstring>
+        <name>~context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="32" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1a92280556a78d252358928ff065b85d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::context::context</definition>
+        <argsstring>(const context &amp;other)=delete</argsstring>
+        <name>context</name>
+        <param>
+          <type>const context &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1ad96f09a762597383856572676088d939" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::context::context</definition>
+        <argsstring>(context &amp;&amp;other) noexcept=delete</argsstring>
+        <name>context</name>
+        <param>
+          <type>context &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1aef3fdb299ba65ea88ab776150a2f50bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>context &amp;</type>
+        <definition>context&amp; core::gfx::context::operator=</definition>
+        <argsstring>(const context &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const context &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="36" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1acf7f679827bf3ea1c2ff482438f8c37b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>context &amp;</type>
+        <definition>context&amp; core::gfx::context::operator=</definition>
+        <argsstring>(context &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>context &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="37" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1a19b89191deda019f66802f13f64f64da" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>graphics_backend</type>
+        <definition>graphics_backend core::gfx::context::backend</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>backend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="39" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1ad8b8c53112e33fa9ae9d53f1612bfc05" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const core::gfx::limits &amp;</type>
+        <definition>const core::gfx::limits &amp; context::limits</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="41" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/context.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1a84e6bfd829ed5a104b007516dd7fc3ef" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>core::gfx::graphics_backend</type>
+            <declname>backend</declname>
+            <defname>backend</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; backend_type_t&lt; context, backend &gt; &gt;</type>
+        <definition>core::resource::handle&lt;backend_type_t&lt;context, backend&gt; &gt; core::gfx::context::resource</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="43" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1gfx_1_1context_1ad206ab0a645ba0f6de167c99d6e5041a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void context::wait_idle</definition>
+        <argsstring>()</argsstring>
+        <name>wait_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="52" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gfx/context.cpp" bodystart="67" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" line="17" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp" bodystart="16" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classcore_1_1gfx_1_1context_1a19b89191deda019f66802f13f64f64da" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>backend</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1ac4ef38b5c2c57308a8a02fb6ea809c67" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>context</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1a92280556a78d252358928ff065b85d2e" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>context</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1ad96f09a762597383856572676088d939" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>context</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1ad8b8c53112e33fa9ae9d53f1612bfc05" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>limits</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1a7f8560fc714aa3052e29b26891003902" prot="private" virt="non-virtual"><scope>core::gfx::context</scope><name>m_Backend</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1aef3fdb299ba65ea88ab776150a2f50bb" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1acf7f679827bf3ea1c2ff482438f8c37b" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>operator=</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1a84e6bfd829ed5a104b007516dd7fc3ef" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>resource</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1ad206ab0a645ba0f6de167c99d6e5041a" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>wait_idle</name></member>
+      <member refid="classcore_1_1gfx_1_1context_1ab4a6a016809847cb00ba2a3d9d44d0d8" prot="public" virt="non-virtual"><scope>core::gfx::context</scope><name>~context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

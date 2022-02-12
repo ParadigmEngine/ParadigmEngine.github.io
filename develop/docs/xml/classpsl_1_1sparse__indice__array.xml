@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1sparse__indice__array" kind="class" language="C++" prot="public">
+    <compoundname>psl::sparse_indice_array</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>T</type>
+        <declname>chunks_size</declname>
+        <defname>chunks_size</defname>
+        <defval>4096</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1aad665daaa4b983b34618f16207b6189b" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::sparse_indice_array&lt; T, chunks_size &gt;::is_power_of_two</definition>
+        <argsstring></argsstring>
+        <name>is_power_of_two</name>
+        <initializer>{chunks_size &amp;&amp; ((chunks_size &amp; (chunks_size - 1)) == 0)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="11" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1a936584c1281c74f71b994b254a915d0b" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr T</type>
+        <definition>constexpr T psl::sparse_indice_array&lt; T, chunks_size &gt;::mod_val</definition>
+        <argsstring></argsstring>
+        <name>mod_val</name>
+        <initializer>{(is_power_of_two) ? chunks_size - 1 : chunks_size}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="12" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1a6c60153eeefa4e8f1d226602bb27430e" prot="private" static="yes" mutable="no">
+        <type>const T</type>
+        <definition>const T psl::sparse_indice_array&lt; T, chunks_size &gt;::OFFSET_START</definition>
+        <argsstring></argsstring>
+        <name>OFFSET_START</name>
+        <initializer>{chunk_aligned_index(std::numeric_limits&lt;T&gt;::max())}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="232" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1abac231449c4e94e2c3a15b9ee5260b21" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T psl::sparse_indice_array&lt; T, chunks_size &gt;::m_Offset</definition>
+        <argsstring></argsstring>
+        <name>m_Offset</name>
+        <initializer>{OFFSET_START}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="234" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1aefafae6729eee814392baa1904d85f56" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; T &gt;</type>
+        <definition>psl::array&lt;T&gt; psl::sparse_indice_array&lt; T, chunks_size &gt;::m_Reverse</definition>
+        <argsstring></argsstring>
+        <name>m_Reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="235" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1sparse__indice__array_1a9aa0ef8340f3e96a47df3f2632923ec5" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; psl::array&lt; T &gt; &gt;</type>
+        <definition>psl::array&lt;psl::array&lt;T&gt; &gt; psl::sparse_indice_array&lt; T, chunks_size &gt;::m_Sparse</definition>
+        <argsstring></argsstring>
+        <name>m_Sparse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="236" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a4b9f5db53f0eee815c3df57722eadb04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::sparse_indice_array&lt; T, chunks_size &gt;::sparse_indice_array</definition>
+        <argsstring>()=default</argsstring>
+        <name>sparse_indice_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1aad42a231ea45bdf437c9bfec0191fb72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::sparse_indice_array&lt; T, chunks_size &gt;::~sparse_indice_array</definition>
+        <argsstring>()=default</argsstring>
+        <name>~sparse_indice_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1ae166f7db2c7445e436990c228703568d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::sparse_indice_array&lt; T, chunks_size &gt;::sparse_indice_array</definition>
+        <argsstring>(const sparse_indice_array &amp;)=default</argsstring>
+        <name>sparse_indice_array</name>
+        <param>
+          <type>const sparse_indice_array &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a2f545bcfc70995f80040e4e237b2d68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::sparse_indice_array&lt; T, chunks_size &gt;::sparse_indice_array</definition>
+        <argsstring>(sparse_indice_array &amp;&amp;)=default</argsstring>
+        <name>sparse_indice_array</name>
+        <param>
+          <type>sparse_indice_array &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a946ae954faaa3ee70770f63a7d505902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sparse_indice_array &amp;</type>
+        <definition>sparse_indice_array&amp; psl::sparse_indice_array&lt; T, chunks_size &gt;::operator=</definition>
+        <argsstring>(const sparse_indice_array &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const sparse_indice_array &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="21" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a0309ccda9e7387dc45af9cd0b6d6a4aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sparse_indice_array &amp;</type>
+        <definition>sparse_indice_array&amp; psl::sparse_indice_array&lt; T, chunks_size &gt;::operator=</definition>
+        <argsstring>(sparse_indice_array &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>sparse_indice_array &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="22" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a8a541eb5e1119841058ac3e7cbad5f24" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::sparse_indice_array&lt; T, chunks_size &gt;::capacity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="24" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a61de71952eff878d920fdd29cd54691a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::sparse_indice_array&lt; T, chunks_size &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="25" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a58c55f40de365ea486124a75e3a792ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; psl::sparse_indice_array&lt; T, chunks_size &gt;::operator[]</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="27" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="27" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a507c138c874d777094a648333aa08996" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; psl::sparse_indice_array&lt; T, chunks_size &gt;::at</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="45" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="45" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1aaa07e1ee6b924033fecf3bdd579b5077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::resize</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="63" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="63" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1ae49fae6549aca4977c97005c72ac8d6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::insert</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="76" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="76" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a00413635d172f1b588c5124f1d2fd2b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::sparse_indice_array&lt; T, chunks_size &gt;::try_insert</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>try_insert</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="93" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="93" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1aac043c666d598eb32ff902e3e10dbf6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::emplace</definition>
+        <argsstring>(T &amp;&amp;index)</argsstring>
+        <name>emplace</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="115" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="115" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1ac3b674a974d4b6da88f58e58d9382aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::erase</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="132" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="132" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a27e772e8d02bf5a0adbdd38ad689848d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::erase</definition>
+        <argsstring>(const T &amp;first, const T &amp;last)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="151" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a4a146db57d49a90cb9f6f391932a8866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="156" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a488eab0aa5f2c2e4cd718b4b443ee423" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::sparse_indice_array&lt; T, chunks_size &gt;::has</definition>
+        <argsstring>(const T &amp;index) const noexcept</argsstring>
+        <name>has</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="163" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a5d14b76aae05c9913fc92782905de06d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::reserve</definition>
+        <argsstring>(size_t capacity)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="171" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1ad1736cb4790ed7374b0981a9004a8482" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; T &gt;</type>
+        <definition>psl::array_view&lt;T&gt; psl::sparse_indice_array&lt; T, chunks_size &gt;::indices</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="173" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="173" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a78d0b27c653db74744370a53106072d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::pad_front</definition>
+        <argsstring>(size_t count)</argsstring>
+        <name>pad_front</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="176" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1ab8e8bd3ce0e1e5fa403ad5872d45f9d3" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr T</type>
+        <definition>constexpr T psl::sparse_indice_array&lt; T, chunks_size &gt;::chunk_index_for</definition>
+        <argsstring>(const T &amp;index) const noexcept</argsstring>
+        <name>chunk_index_for</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="182" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="182" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a22b710471923117ab5223c174171e411" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::array&lt; T &gt; &amp;</type>
+        <definition>psl::array&lt;T&gt;&amp; psl::sparse_indice_array&lt; T, chunks_size &gt;::chunk_for</definition>
+        <argsstring>(T &amp;index)</argsstring>
+        <name>chunk_for</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="193" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="193" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a627969263bb3d04a127c1baf29c0755b" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::sparse_indice_array&lt; T, chunks_size &gt;::chunk_info_for</definition>
+        <argsstring>(T index, T &amp;element_index, T &amp;chunk_index) const noexcept</argsstring>
+        <name>chunk_info_for</name>
+        <param>
+          <type>T</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>element_index</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>chunk_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="218" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="218" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classpsl_1_1sparse__indice__array_1a8352e51b678053b88228bca0f5fe43a7" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr T</type>
+        <definition>static constexpr T psl::sparse_indice_array&lt; T, chunks_size &gt;::chunk_aligned_index</definition>
+        <argsstring>(const T &amp;index)</argsstring>
+        <name>chunk_aligned_index</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="181" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="181" bodyend="181"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/sparse_indice_array.hpp" bodystart="9" bodyend="237"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1sparse__indice__array_1a507c138c874d777094a648333aa08996" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>at</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a8a541eb5e1119841058ac3e7cbad5f24" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>capacity</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a8352e51b678053b88228bca0f5fe43a7" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>chunk_aligned_index</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a22b710471923117ab5223c174171e411" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>chunk_for</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1ab8e8bd3ce0e1e5fa403ad5872d45f9d3" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>chunk_index_for</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a627969263bb3d04a127c1baf29c0755b" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>chunk_info_for</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a4a146db57d49a90cb9f6f391932a8866" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>clear</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1aac043c666d598eb32ff902e3e10dbf6d" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>emplace</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1ac3b674a974d4b6da88f58e58d9382aa7" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>erase</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a27e772e8d02bf5a0adbdd38ad689848d" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>erase</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a488eab0aa5f2c2e4cd718b4b443ee423" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>has</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1ad1736cb4790ed7374b0981a9004a8482" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>indices</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1ae49fae6549aca4977c97005c72ac8d6d" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>insert</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1aad665daaa4b983b34618f16207b6189b" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>is_power_of_two</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1abac231449c4e94e2c3a15b9ee5260b21" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>m_Offset</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1aefafae6729eee814392baa1904d85f56" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>m_Reverse</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a9aa0ef8340f3e96a47df3f2632923ec5" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>m_Sparse</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a936584c1281c74f71b994b254a915d0b" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>mod_val</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a6c60153eeefa4e8f1d226602bb27430e" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>OFFSET_START</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a946ae954faaa3ee70770f63a7d505902" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a0309ccda9e7387dc45af9cd0b6d6a4aa" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a58c55f40de365ea486124a75e3a792ce" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a78d0b27c653db74744370a53106072d6" prot="private" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>pad_front</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a5d14b76aae05c9913fc92782905de06d" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>reserve</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1aaa07e1ee6b924033fecf3bdd579b5077" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>resize</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a61de71952eff878d920fdd29cd54691a" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>size</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a4b9f5db53f0eee815c3df57722eadb04" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>sparse_indice_array</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1ae166f7db2c7445e436990c228703568d" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>sparse_indice_array</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a2f545bcfc70995f80040e4e237b2d68a" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>sparse_indice_array</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1a00413635d172f1b588c5124f1d2fd2b2" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>try_insert</name></member>
+      <member refid="classpsl_1_1sparse__indice__array_1aad42a231ea45bdf437c9bfec0191fb72" prot="public" virt="non-virtual"><scope>psl::sparse_indice_array</scope><name>~sparse_indice_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

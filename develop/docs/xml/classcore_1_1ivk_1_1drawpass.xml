@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ivk_1_1drawpass" kind="class" language="C++" prot="public">
+    <compoundname>core::ivk::drawpass</compoundname>
+    <includes refid="vk_2drawpass_8hpp" local="no">drawpass.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a78d33f1d4c4b02e1a38f9fe6e5ae97f7" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::context&gt; core::ivk::drawpass::m_Context</definition>
+        <argsstring></argsstring>
+        <name>m_Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="114" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1aedc7d98643672925f083515e3001df99" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1framebuffer__t" kindref="compound">core::ivk::framebuffer_t</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::framebuffer_t&gt; core::ivk::drawpass::m_Framebuffer</definition>
+        <argsstring></argsstring>
+        <name>m_Framebuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="115" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1ad790d1b04557d1dd07da7940558b2b0d" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1swapchain" kindref="compound">core::ivk::swapchain</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::swapchain&gt; core::ivk::drawpass::m_Swapchain</definition>
+        <argsstring></argsstring>
+        <name>m_Swapchain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="116" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1aa48bfa4c2e8595db7c21305bd5841b71" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool core::ivk::drawpass::m_UsingSwap</definition>
+        <argsstring></argsstring>
+        <name>m_UsingSwap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="117" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a12bf4692490aa67d6cc63c99c529350f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &gt;</type>
+        <definition>std::vector&lt;core::gfx::drawgroup&gt; core::ivk::drawpass::m_AllGroups</definition>
+        <argsstring></argsstring>
+        <name>m_AllGroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="118" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1abcc91c398481695b7bed4fc644a81185" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; vk::Semaphore &gt;</type>
+        <definition>std::vector&lt;vk::Semaphore&gt; core::ivk::drawpass::m_WaitFor</definition>
+        <argsstring></argsstring>
+        <name>m_WaitFor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="120" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1af330b21a92b9f63a1d5ab83d73796dab" prot="private" static="no" mutable="no">
+        <type>vk::Semaphore</type>
+        <definition>vk::Semaphore core::ivk::drawpass::m_PresentComplete</definition>
+        <argsstring></argsstring>
+        <name>m_PresentComplete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="121" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a37cca0df5a4b44cd3ef8b9b9136f20f3" prot="private" static="no" mutable="no">
+        <type>vk::Semaphore</type>
+        <definition>vk::Semaphore core::ivk::drawpass::m_RenderComplete</definition>
+        <argsstring></argsstring>
+        <name>m_RenderComplete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="122" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a7267c390e0476e5ffcd5196879c9f893" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; vk::Fence &gt;</type>
+        <definition>std::vector&lt;vk::Fence&gt; core::ivk::drawpass::m_WaitFences</definition>
+        <argsstring></argsstring>
+        <name>m_WaitFences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="123" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a66b23a96a8b4b4017dc907b340a482ae" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; vk::CommandBuffer &gt;</type>
+        <definition>std::vector&lt;vk::CommandBuffer&gt; core::ivk::drawpass::m_DrawCommandBuffers</definition>
+        <argsstring></argsstring>
+        <name>m_DrawCommandBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="125" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1aae015cdec605bbc69a5a59957e23e65d" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core::ivk::drawpass::m_Buffers</definition>
+        <argsstring></argsstring>
+        <name>m_Buffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="126" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1a26ee84ca3da24cac72f4ff39748c8aeb" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core::ivk::drawpass::m_CurrentBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_CurrentBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="127" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1aa4b19f72f0bfe308414462ce4498308e" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t core::ivk::drawpass::m_FrameCount</definition>
+        <argsstring></argsstring>
+        <name>m_FrameCount</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="128" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1acc883b02b232e08fa2ca31fbe0fce5c5" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t core::ivk::drawpass::m_LastBuildFrame</definition>
+        <argsstring></argsstring>
+        <name>m_LastBuildFrame</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="129" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1abbc28c1d95002b64702e36ccb1916d70" prot="private" static="no" mutable="no">
+        <type>core::ivk::depth_bias</type>
+        <definition>core::ivk::depth_bias core::ivk::drawpass::m_DepthBias</definition>
+        <argsstring></argsstring>
+        <name>m_DepthBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="131" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1ae2e095bdc5c482b6cedc3e7940eeb24e" prot="private" static="no" mutable="no">
+        <type>vk::SubmitInfo</type>
+        <definition>vk::SubmitInfo core::ivk::drawpass::m_SubmitInfo</definition>
+        <argsstring></argsstring>
+        <name>m_SubmitInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="134" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1drawpass_1aaeb148b060ee3f66c6dbf07d91394c4a" prot="private" static="no" mutable="no">
+        <type>vk::PipelineStageFlags</type>
+        <definition>vk::PipelineStageFlags core::ivk::drawpass::m_SubmitPipelineStages</definition>
+        <argsstring></argsstring>
+        <name>m_SubmitPipelineStages</name>
+        <initializer>{vk::PipelineStageFlagBits::eColorAttachmentOutput}</initializer>
+        <briefdescription>
+<para>Pipeline stages used to wait at for graphics queue submissions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="136" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a0162a577587b0359a36a62cdf1d677e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; core::ivk::context &gt; context, core::resource::handle&lt; core::ivk::framebuffer_t &gt; framebuffer)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1framebuffer__t" kindref="compound">core::ivk::framebuffer_t</ref> &gt;</type>
+          <declname>framebuffer</declname>
+        </param>
+        <briefdescription>
+<para>creates a pass that targets a framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the valid and loaded context to bind this pass to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">framebuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the valid and loaded framebuffer that this pass will output to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a5ae41fa34c68a93a3f79b4539b3363c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; core::ivk::context &gt; context, core::resource::handle&lt; core::ivk::swapchain &gt; swapchain)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1swapchain" kindref="compound">core::ivk::swapchain</ref> &gt;</type>
+          <declname>swapchain</declname>
+        </param>
+        <briefdescription>
+<para>creates a pass that targets a swapchain image set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the valid and loaded context to bind this pass to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">swapchain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the valid and loaded swapchain that this pass will output to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1ab30222f451b1261868b8fa0d9f512426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::drawpass::~drawpass</definition>
+        <argsstring>()</argsstring>
+        <name>~drawpass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a9e71989765d83f3703a1ac081b9d89ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::drawpass::drawpass</definition>
+        <argsstring>(const drawpass &amp;)=delete</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1aa9ad6f2c5f28e6849714f0b066184a57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::drawpass::drawpass</definition>
+        <argsstring>(drawpass &amp;&amp;)=delete</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1aa85be7438bff8a7d194584896d88f936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;</type>
+        <definition>drawpass&amp; core::ivk::drawpass::operator=</definition>
+        <argsstring>(const drawpass &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1acfec0311198cf461b7871ea86ccc6e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;</type>
+        <definition>drawpass&amp; core::ivk::drawpass::operator=</definition>
+        <argsstring>(drawpass &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1af24327f51d0ba22225756feaf05729ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::prepare</definition>
+        <argsstring>()</argsstring>
+        <name>prepare</name>
+        <briefdescription>
+<para>prepares the pass for presenting (i.e. it does some basic housekeeping such as fetching the swapchain image if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="67" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a822cdd0001a0326b016699443e0e3094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::present</definition>
+        <argsstring>()</argsstring>
+        <name>present</name>
+        <briefdescription>
+<para>submits the recorded instructions to the GPU, handling the dependencies accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="70" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a4e0902e29cee9b762e7d0a0201e63db9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::bias</definition>
+        <argsstring>(const core::ivk::depth_bias &amp;bias) noexcept</argsstring>
+        <name>bias</name>
+        <param>
+          <type>const core::ivk::depth_bias &amp;</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>set the depth bias on the current pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="73" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1abab6faca284428e11c43881e3c5aa7db" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>core::ivk::depth_bias</type>
+        <definition>core::ivk::depth_bias core::ivk::drawpass::bias</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>bias</name>
+        <briefdescription>
+<para>returns the current dept bias on this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the current dept bias on this instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="77" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a2de0c68dc0d628ba953df461ce82212e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawpass::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <briefdescription>
+<para>build, and records the draw, and other instructions associated with this pass. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true on success, false if submitting the instructions to the GPU failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="81" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp" bodystart="100" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a3b8b2cb9d0af90956d0858df19d1cff8" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::add</definition>
+        <argsstring>(core::gfx::drawgroup &amp;group) noexcept</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>add an additional drawgroup to be included in this pass&apos; draw instructions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="84" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a852d928f47ec70451e4149305e333ea1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; drawpass &gt; pass) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+<para>makes the current pass wait for the given pass to complete </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="87" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1ad73faa9d83d6f177ca949e88c39f3ba2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; drawpass &gt; pass) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classcore_1_1ivk_1_1drawpass" kindref="compound">drawpass</ref> &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="89" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a4a0893120bd8e8a1aa0ed6e70af45fc9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::remove</definition>
+        <argsstring>(const core::gfx::drawgroup &amp;group) noexcept</argsstring>
+        <name>remove</name>
+        <param>
+          <type>const <ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>removes an existing drawgroup from this pass&apos; draw instructions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="92" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp" bodystart="349" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1af7f3bd2d59b42491093dd66324d497d0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>removes all drawgroups from this pass&apos; draw instructions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="95" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a355ea2764b4086e3582835631a98dfd0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::ivk::drawpass::is_swapchain</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_swapchain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="97" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a9ef5dafa2807bb742f556836005f08bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::build_drawgroup</definition>
+        <argsstring>(core::gfx::drawgroup &amp;group, vk::CommandBuffer cmdBuffer, core::resource::handle&lt; core::ivk::framebuffer_t &gt; framebuffer, uint32_t index)</argsstring>
+        <name>build_drawgroup</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>vk::CommandBuffer</type>
+          <declname>cmdBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1framebuffer__t" kindref="compound">core::ivk::framebuffer_t</ref> &gt;</type>
+          <declname>framebuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="100" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a1f477601ecba8a66e09a8d2a04ef8b4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core::ivk::drawpass::build_drawgroup</definition>
+        <argsstring>(core::gfx::drawgroup &amp;group, vk::CommandBuffer cmdBuffer, core::resource::handle&lt; core::ivk::swapchain &gt; swapchain, uint32_t index)</argsstring>
+        <name>build_drawgroup</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>vk::CommandBuffer</type>
+          <declname>cmdBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1swapchain" kindref="compound">core::ivk::swapchain</ref> &gt;</type>
+          <declname>swapchain</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="104" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a450218e567f1eb7c0b1ec0bfab1f1042" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::create_fences</definition>
+        <argsstring>(const size_t size=1u)</argsstring>
+        <name>create_fences</name>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+          <defval>1u</defval>
+        </param>
+        <briefdescription>
+<para>creates the vk::Fence&apos;s that will be used to sync access to this pass. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of fences to create. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="110" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp" bodystart="245" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1drawpass_1a02720d42f1e4d89f26633baed73d1127" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::destroy_fences</definition>
+        <argsstring>()</argsstring>
+        <name>destroy_fences</name>
+        <briefdescription>
+<para>cleans up the created vk::Fence&apos;s of the core::ivk::pass::create_fences() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="112" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp" bodystart="257" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a pass describes a start-to-finish sequence of commands to render into a set of rendertargets. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A pass is a collection of drawcalls, grouped into sets of drawgroups, and a target framebuffer or swapchain. This describes a full pipeline (synced) to get something into a set of rendertargets and to either use it in subsequent passes, or present it to a core::gfx::surface. Passes also make sure that they don&apos;t create race conditions with other passes that have been assigned as its dependencies. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" line="47" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp" bodystart="46" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a3b8b2cb9d0af90956d0858df19d1cff8" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>add</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a4e0902e29cee9b762e7d0a0201e63db9" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>bias</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1abab6faca284428e11c43881e3c5aa7db" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>bias</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a2de0c68dc0d628ba953df461ce82212e" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>build</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a9ef5dafa2807bb742f556836005f08bb" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>build_drawgroup</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a1f477601ecba8a66e09a8d2a04ef8b4f" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>build_drawgroup</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1af7f3bd2d59b42491093dd66324d497d0" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>clear</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a852d928f47ec70451e4149305e333ea1" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>connect</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a450218e567f1eb7c0b1ec0bfab1f1042" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>create_fences</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a02720d42f1e4d89f26633baed73d1127" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>destroy_fences</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1ad73faa9d83d6f177ca949e88c39f3ba2" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a0162a577587b0359a36a62cdf1d677e2" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a5ae41fa34c68a93a3f79b4539b3363c1" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a9e71989765d83f3703a1ac081b9d89ea" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aa9ad6f2c5f28e6849714f0b066184a57" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a355ea2764b4086e3582835631a98dfd0" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>is_swapchain</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a12bf4692490aa67d6cc63c99c529350f" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_AllGroups</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aae015cdec605bbc69a5a59957e23e65d" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_Buffers</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a78d33f1d4c4b02e1a38f9fe6e5ae97f7" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_Context</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a26ee84ca3da24cac72f4ff39748c8aeb" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_CurrentBuffer</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1abbc28c1d95002b64702e36ccb1916d70" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_DepthBias</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a66b23a96a8b4b4017dc907b340a482ae" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_DrawCommandBuffers</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aedc7d98643672925f083515e3001df99" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_Framebuffer</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aa4b19f72f0bfe308414462ce4498308e" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_FrameCount</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1acc883b02b232e08fa2ca31fbe0fce5c5" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_LastBuildFrame</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1af330b21a92b9f63a1d5ab83d73796dab" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_PresentComplete</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a37cca0df5a4b44cd3ef8b9b9136f20f3" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_RenderComplete</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1ae2e095bdc5c482b6cedc3e7940eeb24e" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_SubmitInfo</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aaeb148b060ee3f66c6dbf07d91394c4a" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_SubmitPipelineStages</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1ad790d1b04557d1dd07da7940558b2b0d" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_Swapchain</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aa48bfa4c2e8595db7c21305bd5841b71" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_UsingSwap</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a7267c390e0476e5ffcd5196879c9f893" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_WaitFences</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1abcc91c398481695b7bed4fc644a81185" prot="private" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>m_WaitFor</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1aa85be7438bff8a7d194584896d88f936" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1acfec0311198cf461b7871ea86ccc6e1b" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1af24327f51d0ba22225756feaf05729ec" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>prepare</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a822cdd0001a0326b016699443e0e3094" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>present</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1a4a0893120bd8e8a1aa0ed6e70af45fc9" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>remove</name></member>
+      <member refid="classcore_1_1ivk_1_1drawpass_1ab30222f451b1261868b8fa0d9f512426" prot="public" virt="non-virtual"><scope>core::ivk::drawpass</scope><name>~drawpass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

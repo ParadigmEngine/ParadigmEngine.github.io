@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ecs_1_1systems_1_1fly" kind="class" language="C++" prot="public">
+    <compoundname>core::ecs::systems::fly</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcore_1_1ecs_1_1systems_1_1fly_1ad0080993940433f0fd53bdc3dcfb06a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class core::systems::input</definition>
+        <argsstring></argsstring>
+        <name>core::systems::input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a0f05bbd07765c26b86436e6cc75bb8d7" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1systems_1_1input" kindref="compound">core::systems::input</ref> &amp;</type>
+        <definition>core::systems::input&amp; core::ecs::systems::fly::m_InputSystem</definition>
+        <argsstring></argsstring>
+        <name>m_InputSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="32" column="22" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a2cde36769ce3546ef9666e6826b587ea" prot="private" static="no" mutable="no">
+        <type>std::array&lt; bool, 4 &gt;</type>
+        <definition>std::array&lt;bool, 4&gt; core::ecs::systems::fly::m_Moving</definition>
+        <argsstring></argsstring>
+        <name>m_Moving</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="34" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1aedca1ddf9594e72178c3e61fcf4ffff1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::ecs::systems::fly::m_Up</definition>
+        <argsstring></argsstring>
+        <name>m_Up</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="35" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a9057112800e1f96b5131d7fd5215aaf3" prot="private" static="no" mutable="no">
+        <type>psl::vec3</type>
+        <definition>psl::vec3 core::ecs::systems::fly::m_MoveVector</definition>
+        <argsstring></argsstring>
+        <name>m_MoveVector</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="36" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a8011a4457aa07b8259e8604ef9a2a668" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::ecs::systems::fly::m_MouseX</definition>
+        <argsstring></argsstring>
+        <name>m_MouseX</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="38" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a619f9e4419719b1c9df44f98764a44a0" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::ecs::systems::fly::m_MouseY</definition>
+        <argsstring></argsstring>
+        <name>m_MouseY</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="39" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a93c103ce4b14850bc35808288d08ee0f" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::ecs::systems::fly::m_MouseTargetX</definition>
+        <argsstring></argsstring>
+        <name>m_MouseTargetX</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="41" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a73099a302706885894c10ce2e47d63d1" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::ecs::systems::fly::m_MouseTargetY</definition>
+        <argsstring></argsstring>
+        <name>m_MouseTargetY</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="42" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a7d03d59253f938389af1ded7f8393e28" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::systems::fly::m_Pitch</definition>
+        <argsstring></argsstring>
+        <name>m_Pitch</name>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="44" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a1fecd6e7a7b7b3839f05278f7e7a659b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::systems::fly::m_Heading</definition>
+        <argsstring></argsstring>
+        <name>m_Heading</name>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="45" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a18808e76fceb65f5acc929d1639870b6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::systems::fly::m_AngleH</definition>
+        <argsstring></argsstring>
+        <name>m_AngleH</name>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="46" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1ac3c2810aef83374398075b41fd9f263f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::systems::fly::m_AngleV</definition>
+        <argsstring></argsstring>
+        <name>m_AngleV</name>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="47" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1abf8e10d4ef7e7620ad7253cd2c526196" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::systems::fly::m_MoveSpeed</definition>
+        <argsstring></argsstring>
+        <name>m_MoveSpeed</name>
+        <initializer>{1.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="49" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1abb73a6e8ca17fa2e7d0917ddfeb9194a" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float core::ecs::systems::fly::m_MoveStepIncrease</definition>
+        <argsstring></argsstring>
+        <name>m_MoveStepIncrease</name>
+        <initializer>{0.035f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="50" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a2d7564f98b4a7b3cb574564c17f27401" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::ecs::systems::fly::m_AllowRotating</definition>
+        <argsstring></argsstring>
+        <name>m_AllowRotating</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="51" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ecs_1_1systems_1_1fly_1a5a39da47a8961468bcf072ff2787ab51" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::ecs::systems::fly::m_Boost</definition>
+        <argsstring></argsstring>
+        <name>m_Boost</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="52" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1aa19bebc03d3f860becbbd3ac0d9e8610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fly::fly</definition>
+        <argsstring>(psl::ecs::state_t &amp;state, core::systems::input &amp;inputSystem)</argsstring>
+        <name>fly</name>
+        <param>
+          <type>psl::ecs::state_t &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1systems_1_1input" kindref="compound">core::systems::input</ref> &amp;</type>
+          <declname>inputSystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a99f1be2fc7067eb81da46cc65473169b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fly::~fly</definition>
+        <argsstring>()</argsstring>
+        <name>~fly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="15" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a9e2c49023c32e5835b4b4b03bedb1d15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::tick</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; core::ecs::components::transform, psl::ecs::filter&lt; core::ecs::components::input_tag &gt;&gt; movables)</argsstring>
+        <name>tick</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; core::ecs::components::transform, <ref refid="structpsl_1_1ecs_1_1filter" kindref="compound">psl::ecs::filter</ref>&lt; core::ecs::components::input_tag &gt;&gt;</type>
+          <declname>movables</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="19" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="17" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a29020b0709fe663e5278747348569de2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_key_pressed</definition>
+        <argsstring>(core::systems::input::keycode keyCode)</argsstring>
+        <name>on_key_pressed</name>
+        <param>
+          <type><ref refid="classcore_1_1systems_1_1input_1ae53b5000e2500becf5f1e6f67bda4e4a" kindref="member">core::systems::input::keycode</ref></type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="23" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="113" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1ab02dbc2f6b49d5215a1bf1205c746a0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_key_released</definition>
+        <argsstring>(core::systems::input::keycode keyCode)</argsstring>
+        <name>on_key_released</name>
+        <param>
+          <type><ref refid="classcore_1_1systems_1_1input_1ae53b5000e2500becf5f1e6f67bda4e4a" kindref="member">core::systems::input::keycode</ref></type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="24" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="153" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a06785875413fe54b699489839b89eb5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_mouse_move</definition>
+        <argsstring>(core::systems::input::mouse_delta delta)</argsstring>
+        <name>on_mouse_move</name>
+        <param>
+          <type><ref refid="structcore_1_1systems_1_1input_1_1mouse__delta" kindref="compound">core::systems::input::mouse_delta</ref></type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="25" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="193" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a1762c87d690bc26f3ecd54c7236f271f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_scroll</definition>
+        <argsstring>(core::systems::input::scroll_delta delta)</argsstring>
+        <name>on_scroll</name>
+        <param>
+          <type><ref refid="structcore_1_1systems_1_1input_1_1scroll__delta" kindref="compound">core::systems::input::scroll_delta</ref></type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="26" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a62ce1132773e0705b914823b71efeb4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_mouse_pressed</definition>
+        <argsstring>(core::systems::input::mousecode mCode)</argsstring>
+        <name>on_mouse_pressed</name>
+        <param>
+          <type><ref refid="classcore_1_1systems_1_1input_1afe2b03021701ce7c0c0f269a0e54c244" kindref="member">core::systems::input::mousecode</ref></type>
+          <declname>mCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="27" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a86fea6debdb281bc5cbd5f3f9aa0beda" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::on_mouse_released</definition>
+        <argsstring>(core::systems::input::mousecode mCode)</argsstring>
+        <name>on_mouse_released</name>
+        <param>
+          <type><ref refid="classcore_1_1systems_1_1input_1afe2b03021701ce7c0c0f269a0e54c244" kindref="member">core::systems::input::mousecode</ref></type>
+          <declname>mCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="28" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1a08c5d7d7e02bc12feb50c031e747fa66" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::pitch_to</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>pitch_to</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="29" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="216" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1fly_1af0de417ce8783a221aafa96aac0b411a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fly::head_to</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>head_to</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="30" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp" bodystart="231" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp" bodystart="9" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1ad0080993940433f0fd53bdc3dcfb06a5" prot="public" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>core::systems::input</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1aa19bebc03d3f860becbbd3ac0d9e8610" prot="public" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>fly</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1af0de417ce8783a221aafa96aac0b411a" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>head_to</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a2d7564f98b4a7b3cb574564c17f27401" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_AllowRotating</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a18808e76fceb65f5acc929d1639870b6" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_AngleH</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1ac3c2810aef83374398075b41fd9f263f" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_AngleV</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a5a39da47a8961468bcf072ff2787ab51" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_Boost</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a1fecd6e7a7b7b3839f05278f7e7a659b" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_Heading</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a0f05bbd07765c26b86436e6cc75bb8d7" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_InputSystem</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a93c103ce4b14850bc35808288d08ee0f" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MouseTargetX</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a73099a302706885894c10ce2e47d63d1" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MouseTargetY</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a8011a4457aa07b8259e8604ef9a2a668" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MouseX</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a619f9e4419719b1c9df44f98764a44a0" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MouseY</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1abf8e10d4ef7e7620ad7253cd2c526196" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MoveSpeed</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1abb73a6e8ca17fa2e7d0917ddfeb9194a" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MoveStepIncrease</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a9057112800e1f96b5131d7fd5215aaf3" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_MoveVector</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a2cde36769ce3546ef9666e6826b587ea" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_Moving</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a7d03d59253f938389af1ded7f8393e28" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_Pitch</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1aedca1ddf9594e72178c3e61fcf4ffff1" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>m_Up</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a29020b0709fe663e5278747348569de2" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_key_pressed</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1ab02dbc2f6b49d5215a1bf1205c746a0c" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_key_released</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a06785875413fe54b699489839b89eb5e" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_mouse_move</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a62ce1132773e0705b914823b71efeb4d" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_mouse_pressed</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a86fea6debdb281bc5cbd5f3f9aa0beda" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_mouse_released</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a1762c87d690bc26f3ecd54c7236f271f" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>on_scroll</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a08c5d7d7e02bc12feb50c031e747fa66" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>pitch_to</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a9e2c49023c32e5835b4b4b03bedb1d15" prot="private" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>tick</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1fly_1a99f1be2fc7067eb81da46cc65473169b" prot="public" virt="non-virtual"><scope>core::ecs::systems::fly</scope><name>~fly</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

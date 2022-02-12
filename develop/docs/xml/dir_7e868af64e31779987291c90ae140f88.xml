@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_7e868af64e31779987291c90ae140f88" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc</compoundname>
+    <innerdir refid="dir_3421900d5962502ca3d70b335e9239f8">/home/runner/work/paradigm/paradigm/core/inc/data</innerdir>
+    <innerdir refid="dir_8187f6e149452a69b0427ea9f88a73f6">/home/runner/work/paradigm/paradigm/core/inc/ecs</innerdir>
+    <innerdir refid="dir_51c5a84e5cc33824201ac13630aa9bdf">/home/runner/work/paradigm/paradigm/core/inc/fwd</innerdir>
+    <innerdir refid="dir_2656102bfaf9d40704fa4309a1ebccdb">/home/runner/work/paradigm/paradigm/core/inc/gfx</innerdir>
+    <innerdir refid="dir_3bcda74b5712d636e6d4353866240964">/home/runner/work/paradigm/paradigm/core/inc/gles</innerdir>
+    <innerdir refid="dir_0d506432f1035794799f3b7a0b689556">/home/runner/work/paradigm/paradigm/core/inc/meta</innerdir>
+    <innerdir refid="dir_5cf4f8c9bc7be82e96718cb726ae8b19">/home/runner/work/paradigm/paradigm/core/inc/os</innerdir>
+    <innerdir refid="dir_45003a622d7d4b1452af5bf0da404161">/home/runner/work/paradigm/paradigm/core/inc/resource</innerdir>
+    <innerdir refid="dir_ef04f6cbe85f60ba657a173c35c55823">/home/runner/work/paradigm/paradigm/core/inc/systems</innerdir>
+    <innerdir refid="dir_75292742beac21bacbd64d574b08527d">/home/runner/work/paradigm/paradigm/core/inc/utility</innerdir>
+    <innerdir refid="dir_cd44e822d053ffa9b53e4c4ac0dd0549">/home/runner/work/paradigm/paradigm/core/inc/vk</innerdir>
+    <innerfile refid="conversion__utils_8hpp">conversion_utils.hpp</innerfile>
+    <innerfile refid="defines_8hpp">defines.hpp</innerfile>
+    <innerfile refid="core_2inc_2logging_8hpp">logging.hpp</innerfile>
+    <innerfile refid="stdafx_8hpp">stdafx.hpp</innerfile>
+    <innerfile refid="stdb__truetype_8hpp">stdb_truetype.hpp</innerfile>
+    <innerfile refid="targetver_8hpp">targetver.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/"/>
+  </compounddef>
+</doxygen>

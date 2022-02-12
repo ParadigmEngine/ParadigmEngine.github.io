@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>core::data::framebuffer_t::attachment::description</compoundname>
+    <includes refid="data_2framebuffer_8hpp" local="no">framebuffer.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ae6e4002148765f114da9fe1b5c64547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class psl::serialization::accessor</definition>
+        <argsstring></argsstring>
+        <name>psl::serialization::accessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a9b67d8073c981873d3af68493807093d" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view core::data::framebuffer_t::attachment::description::serialization_name</definition>
+        <argsstring></argsstring>
+        <name>serialization_name</name>
+        <initializer>{&quot;DESCRIPTION&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="53" column="37" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a41f9868c838ab0fd193254c19c19693e" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;SAMPLE_COUNT_BITS&quot;, uint8_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;SAMPLE_COUNT_BITS&quot;, uint8_t&gt; core::data::framebuffer_t::attachment::description::m_SampleCountFlags</definition>
+        <argsstring></argsstring>
+        <name>m_SampleCountFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="54" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ade58ead70bbba1e3aff3d81bacff9abb" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;LOAD_OP&quot;, core::gfx::attachment::load_op &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;LOAD_OP&quot;, core::gfx::attachment::load_op&gt; core::data::framebuffer_t::attachment::description::m_LoadOp</definition>
+        <argsstring></argsstring>
+        <name>m_LoadOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="55" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a13172afd0603e781e8c564595db40dd4" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;STORE_OP&quot;, core::gfx::attachment::store_op &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;STORE_OP&quot;, core::gfx::attachment::store_op&gt; core::data::framebuffer_t::attachment::description::m_StoreOp</definition>
+        <argsstring></argsstring>
+        <name>m_StoreOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="56" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a3a7dae1417bbc1d63aeade29add0c3d9" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;STENCIl_LOAD_OP&quot;, core::gfx::attachment::load_op &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;STENCIl_LOAD_OP&quot;, core::gfx::attachment::load_op&gt; core::data::framebuffer_t::attachment::description::m_StencilLoadOp</definition>
+        <argsstring></argsstring>
+        <name>m_StencilLoadOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="57" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a197a4687cc276b5ceefac515b57a5491" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;STENCIl_STORE_OP&quot;, core::gfx::attachment::store_op &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;STENCIl_STORE_OP&quot;, core::gfx::attachment::store_op&gt; core::data::framebuffer_t::attachment::description::m_StencilStoreOp</definition>
+        <argsstring></argsstring>
+        <name>m_StencilStoreOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="58" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a96eeccac50ab5cc5ed0276bc952bbeb4" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;INITIAL_LAYOUT&quot;, core::gfx::image::layout &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;INITIAL_LAYOUT&quot;, core::gfx::image::layout&gt; core::data::framebuffer_t::attachment::description::m_InitialLayout</definition>
+        <argsstring></argsstring>
+        <name>m_InitialLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="59" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a8f554a057d0d2fd682bc1650823a5027" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;FINAL_LAYOUT&quot;, core::gfx::image::layout &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;FINAL_LAYOUT&quot;, core::gfx::image::layout&gt; core::data::framebuffer_t::attachment::description::m_FinalLayout</definition>
+        <argsstring></argsstring>
+        <name>m_FinalLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="60" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a4497ee3aee1f6e24aac31fe810ccedb3" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;FORMAT&quot;, core::gfx::format_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;FORMAT&quot;, core::gfx::format_t&gt; core::data::framebuffer_t::attachment::description::m_Format</definition>
+        <argsstring></argsstring>
+        <name>m_Format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="61" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a8f1b31f93b560b47d5061d03dff8cab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::framebuffer_t::attachment::description::description</definition>
+        <argsstring>()=default</argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>defaulted constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ae633b6bfe5f1a5043c95ba7328a42172" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>framebuffer_t::attachment::description::description</definition>
+        <argsstring>(core::gfx::attachment descr) noexcept</argsstring>
+        <name>description</name>
+        <param>
+          <type>core::gfx::attachment</type>
+          <declname>descr</declname>
+        </param>
+        <briefdescription>
+<para>construction based on a core::gfx::attachment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="41" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/framebuffer.cpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a568093dd93ee4758fbd55ce070ad37e3" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>framebuffer_t::attachment::description::operator core::gfx::attachment</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator core::gfx::attachment</name>
+        <briefdescription>
+<para>returns a core::gfx::attachment based on the internal settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a core::gfx::attachment based on the internal settings. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="44" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/framebuffer.cpp" bodystart="107" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a9b2c1fe795e10f96fda38584e19dbf92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::framebuffer_t::attachment::description::serialize</definition>
+        <argsstring>(S &amp;serializer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>S &amp;</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="48" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>describes how the rendertarget should be loaded, stored, it&apos;s sample count, and what transition layouts it should go through. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" line="34" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp" bodystart="33" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a8f1b31f93b560b47d5061d03dff8cab3" prot="public" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>description</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ae633b6bfe5f1a5043c95ba7328a42172" prot="public" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>description</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a8f554a057d0d2fd682bc1650823a5027" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_FinalLayout</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a4497ee3aee1f6e24aac31fe810ccedb3" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_Format</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a96eeccac50ab5cc5ed0276bc952bbeb4" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_InitialLayout</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ade58ead70bbba1e3aff3d81bacff9abb" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_LoadOp</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a41f9868c838ab0fd193254c19c19693e" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_SampleCountFlags</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a3a7dae1417bbc1d63aeade29add0c3d9" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_StencilLoadOp</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a197a4687cc276b5ceefac515b57a5491" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_StencilStoreOp</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a13172afd0603e781e8c564595db40dd4" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>m_StoreOp</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a568093dd93ee4758fbd55ce070ad37e3" prot="public" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>operator core::gfx::attachment</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1ae6e4002148765f114da9fe1b5c64547d" prot="public" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>psl::serialization::accessor</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a9b67d8073c981873d3af68493807093d" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>serialization_name</name></member>
+      <member refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description_1a9b2c1fe795e10f96fda38584e19dbf92" prot="private" virt="non-virtual"><scope>core::data::framebuffer_t::attachment::description</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

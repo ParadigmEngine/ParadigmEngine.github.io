@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1details_1_1fixed__astring" kind="struct" language="C++" prot="public">
+    <compoundname>psl::details::fixed_astring</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1details_1_1fixed__astring_1a73938b0a25eb0eb553be32723f48c078" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char psl::details::fixed_astring&lt; N &gt;::buf[N+1]</definition>
+        <argsstring>[N+1]</argsstring>
+        <name>buf</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="25" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1afdba674449c0a736f5402dc029623701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>consteval</type>
+        <definition>consteval psl::details::fixed_astring&lt; N &gt;::fixed_astring</definition>
+        <argsstring>(char const *s)</argsstring>
+        <name>fixed_astring</name>
+        <param>
+          <type>char const *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="26" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1a81937b1947f2ad93806ea8c0bee06755" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::details::fixed_astring&lt; N &gt;::operator</definition>
+        <argsstring>(const fixed_astring &amp;) const =default</argsstring>
+        <name>operator</name>
+        <param>
+          <type>const fixed_astring &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1a392c93c0e114e0522b0a05322d933f5e" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr char</type>
+        <definition>constexpr char psl::details::fixed_astring&lt; N &gt;::operator[]</definition>
+        <argsstring>(size_t index) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="32" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1af35c12b2388cbe3c78ab9bcaebc563d1" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr psl::details::fixed_astring&lt; N &gt;::operator std::string_view</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator std::string_view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="34" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1aea2c050cafa4c37c43516283721bd4a3" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr psl::details::fixed_astring&lt; N &gt;::operator char const *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator char const *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="35" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1a36aa7b7c72b5bbf4c4bf10302b1bdfa4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t psl::details::fixed_astring&lt; N &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="37" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1details_1_1fixed__astring_1aeec3c7555d91037c35635fe3f3436368" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>start</declname>
+            <defname>start</defname>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>end</declname>
+            <defname>end</defname>
+          </param>
+        </templateparamlist>
+        <type>consteval fixed_astring&lt; end - start &gt;</type>
+        <definition>consteval fixed_astring&lt;end - start&gt; psl::details::fixed_astring&lt; N &gt;::substr</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>substr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="40" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/details/fixed_astring.hpp" bodystart="10" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1a73938b0a25eb0eb553be32723f48c078" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>buf</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1afdba674449c0a736f5402dc029623701" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>fixed_astring</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1a81937b1947f2ad93806ea8c0bee06755" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>operator</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1aea2c050cafa4c37c43516283721bd4a3" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>operator char const *</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1af35c12b2388cbe3c78ab9bcaebc563d1" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>operator std::string_view</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1a392c93c0e114e0522b0a05322d933f5e" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>operator[]</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1a36aa7b7c72b5bbf4c4bf10302b1bdfa4" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>size</name></member>
+      <member refid="structpsl_1_1details_1_1fixed__astring_1aeec3c7555d91037c35635fe3f3436368" prot="public" virt="non-virtual"><scope>psl::details::fixed_astring</scope><name>substr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

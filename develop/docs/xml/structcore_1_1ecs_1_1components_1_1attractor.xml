@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1attractor" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::attractor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1attractor_1acfa56d08247030572140850d3bf4b1ce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::attractor::force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" line="15" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1attractor_1af9791f8ec1d2a54c370fde1e4f8ea102" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::attractor::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" line="16" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1attractor_1ac816b324363919baaa2f4607785ad81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::attractor::attractor</definition>
+        <argsstring>()=default</argsstring>
+        <name>attractor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1attractor_1ab1c6390714763af26a581159c8fde077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::attractor::attractor</definition>
+        <argsstring>(float force, float radius)</argsstring>
+        <name>attractor</name>
+        <param>
+          <type>float</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" line="12" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp" bodystart="11" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1attractor_1ac816b324363919baaa2f4607785ad81a" prot="public" virt="non-virtual"><scope>core::ecs::components::attractor</scope><name>attractor</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1attractor_1ab1c6390714763af26a581159c8fde077" prot="public" virt="non-virtual"><scope>core::ecs::components::attractor</scope><name>attractor</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1attractor_1acfa56d08247030572140850d3bf4b1ce" prot="public" virt="non-virtual"><scope>core::ecs::components::attractor</scope><name>force</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1attractor_1af9791f8ec1d2a54c370fde1e4f8ea102" prot="public" virt="non-virtual"><scope>core::ecs::components::attractor</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

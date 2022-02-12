@@ -1,0 +1,322 @@
+\hypertarget{classcore_1_1ivk_1_1context}{}\doxysection{core\+::ivk\+::context Class Reference}
+\label{classcore_1_1ivk_1_1context}\index{core::ivk::context@{core::ivk::context}}
+
+
+encapsulated a graphics context.  
+
+
+
+
+{\ttfamily \#include $<$context.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a5c0305c2da21ab2344390e77616f6e37}\label{classcore_1_1ivk_1_1context_a5c0305c2da21ab2344390e77616f6e37}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries optional\+\_\+ref} = std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_adde9367b6ae9121584739b80137c1c00}\label{classcore_1_1ivk_1_1context_adde9367b6ae9121584739b80137c1c00}} 
+{\bfseries context} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, psl\+::string8\+::view name, uint32\+\_\+t device\+Index=std\+::numeric\+\_\+limits$<$ uint32\+\_\+t $>$\+::max())
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ac15e347629a8ccabcf437b6f4de6dfc4}\label{classcore_1_1ivk_1_1context_ac15e347629a8ccabcf437b6f4de6dfc4}} 
+{\bfseries context} (const \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a259b7704884d09e441d31861529951ed}\label{classcore_1_1ivk_1_1context_a259b7704884d09e441d31861529951ed}} 
+{\bfseries context} (\mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a6f5c1c9692f5d9876630d96fd6ab702c}\label{classcore_1_1ivk_1_1context_a6f5c1c9692f5d9876630d96fd6ab702c}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a31d3d38ae8517dfbbe4b97c7c8899692}\label{classcore_1_1ivk_1_1context_a31d3d38ae8517dfbbe4b97c7c8899692}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}} \&\&)=delete
+\item 
+const vk\+::\+Instance \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_a7833eeee7c4d1c62684286f97452e990}{instance}} () const noexcept
+\item 
+const vk\+::\+Device \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_abec09333ef3bd9573c43e050085452be}{device}} () const noexcept
+\item 
+const vk\+::\+Physical\+Device \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_a5771ae336d86f87c4e76f67cc4c3cbfb}{physical\+\_\+device}} () const noexcept
+\item 
+const vk\+::\+Physical\+Device\+Properties \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_ab35e395ebb72abd85e03420836ac6068}{properties}} () const noexcept
+\item 
+const vk\+::\+Physical\+Device\+Features \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_afb68579b54e70612a1efaa7ba3209e73}{features}} () const noexcept
+\item 
+const vk\+::\+Physical\+Device\+Memory\+Properties \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_a2ee91cf9aa96cad4297a3f21dd704e7e}{memory\+\_\+properties}} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a513a16bb2f7ec1aeba7a45080db38104}\label{classcore_1_1ivk_1_1context_a513a16bb2f7ec1aeba7a45080db38104}} 
+const core\+::gfx\+::limits \& {\bfseries limits} () const noexcept
+\item 
+const vk\+::\+Command\+Pool \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_ab76c30b774f07eb2661f9c1b00f72837}{command\+\_\+pool}} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a5658e0ff2ed2c4f27fd4ebb3d18d4d77}\label{classcore_1_1ivk_1_1context_a5658e0ff2ed2c4f27fd4ebb3d18d4d77}} 
+const vk\+::\+Command\+Pool \& {\bfseries transfer\+\_\+command\+\_\+pool} () const noexcept
+\item 
+const vk\+::\+Descriptor\+Pool \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_a3246465b2821ca362a8468cbcb0d0a3d}{descriptor\+\_\+pool}} () const noexcept
+\item 
+const vk\+::\+Queue \& \mbox{\hyperlink{classcore_1_1ivk_1_1context_acea5a860f5bb2cd72f6f493417afa74c}{queue}} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ab9153af8b9c19af166d583dfab952dd9}\label{classcore_1_1ivk_1_1context_ab9153af8b9c19af166d583dfab952dd9}} 
+const vk\+::\+Queue \& {\bfseries transfer\+\_\+queue} () const noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1context_a09e6fed6df145580c75e475f56894c67}{graphics\+\_\+queue\+\_\+index}} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a5ac846ad2391c291f580176187c9e224}\label{classcore_1_1ivk_1_1context_a5ac846ad2391c291f580176187c9e224}} 
+uint32\+\_\+t {\bfseries transfer\+\_\+que\+\_\+index} () const noexcept
+\item 
+vk\+::\+Bool32 \mbox{\hyperlink{classcore_1_1ivk_1_1context_abe153e21db8015a866c39b2b6b993d13}{memory\+\_\+type}} (uint32\+\_\+t type\+Bits, const vk\+::\+Memory\+Property\+Flags \&\mbox{\hyperlink{classcore_1_1ivk_1_1context_ab35e395ebb72abd85e03420836ac6068}{properties}}, uint32\+\_\+t $\ast$type\+Index) const noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1context_a31449ef4eb24c559f8fdd7ed33888a57}{memory\+\_\+type}} (uint32\+\_\+t type\+Bits, const vk\+::\+Memory\+Property\+Flags \&\mbox{\hyperlink{classcore_1_1ivk_1_1context_ab35e395ebb72abd85e03420836ac6068}{properties}}) const
+\item 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1context_af078770ab9f0bbde2ec186fe4dc3e7f8}{flush}} (vk\+::\+Command\+Buffer command\+Buffer, bool free)
+\begin{DoxyCompactList}\small\item\em flushes all operations on the given commandbuffer and potentially free it at the end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ab0f2efddc2cc75d3dfcc230f483667e1}\label{classcore_1_1ivk_1_1context_ab0f2efddc2cc75d3dfcc230f483667e1}} 
+bool {\bfseries consume} (vk\+::\+Memory\+Heap\+Flag\+Bits type, vk\+::\+Device\+Size amount)
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_aee9d8a0cc5a403539cdaea753f0bb77c}\label{classcore_1_1ivk_1_1context_aee9d8a0cc5a403539cdaea753f0bb77c}} 
+bool {\bfseries release} (vk\+::\+Memory\+Heap\+Flag\+Bits type, vk\+::\+Device\+Size amount)
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ac03c1c8de55eb1636fafe2bad432d32f}\label{classcore_1_1ivk_1_1context_ac03c1c8de55eb1636fafe2bad432d32f}} 
+vk\+::\+Device\+Size {\bfseries remaining} (vk\+::\+Memory\+Heap\+Flag\+Bits type)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1ivk_1_1context_a288f64c03536185aade44c37033157ab}{device\+\_\+index}} () const noexcept
+\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1context_aae9a6ec400c391a1a4a776885bd8d38a}{acquire\+Next\+Image2\+K\+HR}} (optional\+\_\+ref$<$ uint64\+\_\+t $>$ out\+\_\+version=std\+::nullopt) const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a context encapsulated a physical device (G\+PU), as well as a instance of the graphics context on the driver. it is the single point of information that many operations need in Vulkan, so that those operations know who will be executing them. As such, the context class is fundamental, and will be passed around a lot. It is often one of the first objects to be created, and one of the last to be destroyed in a most applications. 
+
+Definition at line 123 of file context.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a7833eeee7c4d1c62684286f97452e990}\label{classcore_1_1ivk_1_1context_a7833eeee7c4d1c62684286f97452e990}} 
+\index{core::ivk::context@{core::ivk::context}!instance@{instance}}
+\index{instance@{instance}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily const vk\+::\+Instance \& context\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the vk\+::\+Instance of this context. 
+\end{DoxyReturn}
+
+
+Definition at line 920 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_abec09333ef3bd9573c43e050085452be}\label{classcore_1_1ivk_1_1context_abec09333ef3bd9573c43e050085452be}} 
+\index{core::ivk::context@{core::ivk::context}!device@{device}}
+\index{device@{device}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{device()}{device()}}
+{\footnotesize\ttfamily const vk\+::\+Device \& context\+::device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the vk\+::\+Device of this context. 
+\end{DoxyReturn}
+
+
+Definition at line 922 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a5771ae336d86f87c4e76f67cc4c3cbfb}\label{classcore_1_1ivk_1_1context_a5771ae336d86f87c4e76f67cc4c3cbfb}} 
+\index{core::ivk::context@{core::ivk::context}!physical\_device@{physical\_device}}
+\index{physical\_device@{physical\_device}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{physical\_device()}{physical\_device()}}
+{\footnotesize\ttfamily const vk\+::\+Physical\+Device \& context\+::physical\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the vk\+::\+Physical\+Device of this context. 
+\end{DoxyReturn}
+
+
+Definition at line 924 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ab35e395ebb72abd85e03420836ac6068}\label{classcore_1_1ivk_1_1context_ab35e395ebb72abd85e03420836ac6068}} 
+\index{core::ivk::context@{core::ivk::context}!properties@{properties}}
+\index{properties@{properties}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{properties()}{properties()}}
+{\footnotesize\ttfamily const vk\+::\+Physical\+Device\+Properties \& context\+::properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the physical device properties (for e.\+g. checking device limits) 
+\end{DoxyReturn}
+
+
+Definition at line 926 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_afb68579b54e70612a1efaa7ba3209e73}\label{classcore_1_1ivk_1_1context_afb68579b54e70612a1efaa7ba3209e73}} 
+\index{core::ivk::context@{core::ivk::context}!features@{features}}
+\index{features@{features}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{features()}{features()}}
+{\footnotesize\ttfamily const vk\+::\+Physical\+Device\+Features \& context\+::features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the physical device features (for e.\+g. checking if a feature is available) 
+\end{DoxyReturn}
+
+
+Definition at line 928 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a2ee91cf9aa96cad4297a3f21dd704e7e}\label{classcore_1_1ivk_1_1context_a2ee91cf9aa96cad4297a3f21dd704e7e}} 
+\index{core::ivk::context@{core::ivk::context}!memory\_properties@{memory\_properties}}
+\index{memory\_properties@{memory\_properties}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{memory\_properties()}{memory\_properties()}}
+{\footnotesize\ttfamily const vk\+::\+Physical\+Device\+Memory\+Properties \& context\+::memory\+\_\+properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the available memory (type) properties for the physical device 
+\end{DoxyReturn}
+
+
+Definition at line 930 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_ab76c30b774f07eb2661f9c1b00f72837}\label{classcore_1_1ivk_1_1context_ab76c30b774f07eb2661f9c1b00f72837}} 
+\index{core::ivk::context@{core::ivk::context}!command\_pool@{command\_pool}}
+\index{command\_pool@{command\_pool}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{command\_pool()}{command\_pool()}}
+{\footnotesize\ttfamily const vk\+::\+Command\+Pool \& context\+::command\+\_\+pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the command\+\_\+pool that commands can be enqueued on. 
+\end{DoxyReturn}
+
+
+Definition at line 935 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a3246465b2821ca362a8468cbcb0d0a3d}\label{classcore_1_1ivk_1_1context_a3246465b2821ca362a8468cbcb0d0a3d}} 
+\index{core::ivk::context@{core::ivk::context}!descriptor\_pool@{descriptor\_pool}}
+\index{descriptor\_pool@{descriptor\_pool}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{descriptor\_pool()}{descriptor\_pool()}}
+{\footnotesize\ttfamily const vk\+::\+Descriptor\+Pool \& context\+::descriptor\+\_\+pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the descriptor pool for allocating various pipeline descriptors. 
+\end{DoxyReturn}
+
+
+Definition at line 939 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_acea5a860f5bb2cd72f6f493417afa74c}\label{classcore_1_1ivk_1_1context_acea5a860f5bb2cd72f6f493417afa74c}} 
+\index{core::ivk::context@{core::ivk::context}!queue@{queue}}
+\index{queue@{queue}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily const vk\+::\+Queue \& context\+::queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the device queue for enqueuing commands. 
+\end{DoxyReturn}
+
+
+Definition at line 941 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a09e6fed6df145580c75e475f56894c67}\label{classcore_1_1ivk_1_1context_a09e6fed6df145580c75e475f56894c67}} 
+\index{core::ivk::context@{core::ivk::context}!graphics\_queue\_index@{graphics\_queue\_index}}
+\index{graphics\_queue\_index@{graphics\_queue\_index}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{graphics\_queue\_index()}{graphics\_queue\_index()}}
+{\footnotesize\ttfamily uint32\+\_\+t context\+::graphics\+\_\+queue\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the queue index the graphics pipeline is running on. 
+\end{DoxyReturn}
+
+
+Definition at line 945 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_abe153e21db8015a866c39b2b6b993d13}\label{classcore_1_1ivk_1_1context_abe153e21db8015a866c39b2b6b993d13}} 
+\index{core::ivk::context@{core::ivk::context}!memory\_type@{memory\_type}}
+\index{memory\_type@{memory\_type}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{memory\_type()}{memory\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vk\+::\+Bool32 context\+::memory\+\_\+type (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{type\+Bits,  }\item[{const vk\+::\+Memory\+Property\+Flags \&}]{properties,  }\item[{uint32\+\_\+t $\ast$}]{type\+Index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type\+Bits} & the Memory\+Requirements you get back from vulkan query operations that resquest the requirements for resources (like textures and buffers).\\
+\hline
+\mbox{\texttt{ in}}  & {\em properties} & the Memory\+Property\+Flags of the requested memory type (i.\+e. should it be device local, or host, etc...).\\
+\hline
+\mbox{\texttt{ in,out}}  & {\em type\+Index} & the location to store the memory\+\_\+type index in (on success). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the current context supports a memory type with the specific properties. 
+\end{DoxyReturn}
+
+
+Definition at line 814 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a31449ef4eb24c559f8fdd7ed33888a57}\label{classcore_1_1ivk_1_1context_a31449ef4eb24c559f8fdd7ed33888a57}} 
+\index{core::ivk::context@{core::ivk::context}!memory\_type@{memory\_type}}
+\index{memory\_type@{memory\_type}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{memory\_type()}{memory\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t context\+::memory\+\_\+type (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{type\+Bits,  }\item[{const vk\+::\+Memory\+Property\+Flags \&}]{properties }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type\+Bits} & the Memory\+Requirements you get back from vulkan query operations that resquest the requirements for resources (like textures and buffers). \\
+\hline
+\mbox{\texttt{ in}}  & {\em properties} & the Memory\+Property\+Flags of the requested memory type (i.\+e. should it be device local, or host, etc...). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a memory type index that supports the given properties. 
+\end{DoxyReturn}
+
+
+Definition at line 831 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_af078770ab9f0bbde2ec186fe4dc3e7f8}\label{classcore_1_1ivk_1_1context_af078770ab9f0bbde2ec186fe4dc3e7f8}} 
+\index{core::ivk::context@{core::ivk::context}!flush@{flush}}
+\index{flush@{flush}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void context\+::flush (\begin{DoxyParamCaption}\item[{vk\+::\+Command\+Buffer}]{command\+Buffer,  }\item[{bool}]{free }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em command\+Buffer} & the command buffer to execute the operations on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em free} & defines if we should free the command buffer at the end (true) or not (false). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 848 of file context.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_a288f64c03536185aade44c37033157ab}\label{classcore_1_1ivk_1_1context_a288f64c03536185aade44c37033157ab}} 
+\index{core::ivk::context@{core::ivk::context}!device\_index@{device\_index}}
+\index{device\_index@{device\_index}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{device\_index()}{device\_index()}}
+{\footnotesize\ttfamily uint32\+\_\+t core\+::ivk\+::context\+::device\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the device index of the current physical graphics device. 
+\end{DoxyReturn}
+
+
+Definition at line 196 of file context.\+hpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1context_aae9a6ec400c391a1a4a776885bd8d38a}\label{classcore_1_1ivk_1_1context_aae9a6ec400c391a1a4a776885bd8d38a}} 
+\index{core::ivk::context@{core::ivk::context}!acquireNextImage2KHR@{acquireNextImage2KHR}}
+\index{acquireNextImage2KHR@{acquireNextImage2KHR}!core::ivk::context@{core::ivk::context}}
+\doxysubsubsection{\texorpdfstring{acquireNextImage2KHR()}{acquireNextImage2KHR()}}
+{\footnotesize\ttfamily bool context\+::acquire\+Next\+Image2\+K\+HR (\begin{DoxyParamCaption}\item[{optional\+\_\+ref$<$ uint64\+\_\+t $>$}]{out\+\_\+version = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+true in case the given extension is supported. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em out\+\_\+version} & optionally returns the revision version number. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 949 of file context.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/context.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/context.\+cpp\end{DoxyCompactItemize}

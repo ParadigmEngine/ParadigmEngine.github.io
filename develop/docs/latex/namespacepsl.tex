@@ -1,0 +1,989 @@
+\hypertarget{namespacepsl}{}\doxysection{psl Namespace Reference}
+\label{namespacepsl}\index{psl@{psl}}
+
+
+paradigm standard library  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepsl_1_1math}{math}}
+\begin{DoxyCompactList}\small\item\em conversions \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepsl_1_1meta}{meta}}
+\begin{DoxyCompactList}\small\item\em contains utilities to identify types and instances at runtime and on disk. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepsl_1_1string16}{string16}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 class namespace that contains the typedefs for the string objects, as well as helper methods. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepsl_1_1string32}{string32}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 class namespace that contains the typedefs for the string objects, as well as helper methods. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepsl_1_1string8}{string8}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/8 class namespace that contains the typedefs for the string objects, as well as helper methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpsl_1_1sparse__array}{sparse\+\_\+array}}
+\begin{DoxyCompactList}\small\item\em container type that is fast to iterate, but has non-\/continuous interface \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpsl_1_1static__ring__array}{static\+\_\+ring\+\_\+array}}
+\begin{DoxyCompactList}\small\item\em a deque-\/like interface implemented as an std\+::array$<$\+T, N$>$ under the hood \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}}
+\begin{DoxyCompactList}\small\item\em is an object holding a Unique I\+Dentifier (\mbox{\hyperlink{structpsl_1_1_u_i_d}{U\+ID}}) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em a non-\/owning \textquotesingle{}smart\textquotesingle{} pointer type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_a3e2fc4acb09dca49847bb24372bc85dd}\label{namespacepsl_a3e2fc4acb09dca49847bb24372bc85dd}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries vector} = std\+::vector$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a609e5ab943426dc775d70f8136eccd7f}\label{namespacepsl_a609e5ab943426dc775d70f8136eccd7f}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries array} = psl\+::vector$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a2fa85f3ee83ae5b6deae7374a25041c5}\label{namespacepsl_a2fa85f3ee83ae5b6deae7374a25041c5}} 
+{\footnotesize template$<$typename KT , typename VT $>$ }\\using {\bfseries bytell\+\_\+map} = std\+::unordered\+\_\+map$<$ KT, VT $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a774fc727a9654f449234fc652b8a6336}\label{namespacepsl_a774fc727a9654f449234fc652b8a6336}} 
+using {\bfseries mat4x4} = tmat$<$ float, 4, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a0305d0d2bc2273ad15c8a5df4207a84a}\label{namespacepsl_a0305d0d2bc2273ad15c8a5df4207a84a}} 
+using {\bfseries dmat4x4} = tmat$<$ double, 4, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a998a7a5f1c1dfac4e52b2275998d4a2c}\label{namespacepsl_a998a7a5f1c1dfac4e52b2275998d4a2c}} 
+using {\bfseries imat4x4} = tmat$<$ int, 4, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a1ed232fd9109e59b91cb7c3c49f24fd8}\label{namespacepsl_a1ed232fd9109e59b91cb7c3c49f24fd8}} 
+using {\bfseries mat4x4\+\_\+sz} = tmat$<$ size\+\_\+t, 4, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a470810b70a6346016f9686b1d1f6dd01}\label{namespacepsl_a470810b70a6346016f9686b1d1f6dd01}} 
+using {\bfseries mat4x3} = tmat$<$ float, 4, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a7baa7c1004b57dd92c86e275ea91cfac}\label{namespacepsl_a7baa7c1004b57dd92c86e275ea91cfac}} 
+using {\bfseries dmat4x3} = tmat$<$ double, 4, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a3ef5aa07201b7858254cdf448f7cb157}\label{namespacepsl_a3ef5aa07201b7858254cdf448f7cb157}} 
+using {\bfseries imat4x3} = tmat$<$ int, 4, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a479a03e2ef8eeaa2be02399573a570a3}\label{namespacepsl_a479a03e2ef8eeaa2be02399573a570a3}} 
+using {\bfseries mat4x3\+\_\+sz} = tmat$<$ size\+\_\+t, 4, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a6041c4fab98c9184fff9967ef5604216}\label{namespacepsl_a6041c4fab98c9184fff9967ef5604216}} 
+using {\bfseries mat4x2} = tmat$<$ float, 4, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a094d784f84ba0aebff49d37305c054fb}\label{namespacepsl_a094d784f84ba0aebff49d37305c054fb}} 
+using {\bfseries dmat4x2} = tmat$<$ double, 4, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a8b7357b7bc00a9dc87b57b90e47fe589}\label{namespacepsl_a8b7357b7bc00a9dc87b57b90e47fe589}} 
+using {\bfseries imat4x2} = tmat$<$ int, 4, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a23584cdb1d27999aa752105519573f4c}\label{namespacepsl_a23584cdb1d27999aa752105519573f4c}} 
+using {\bfseries mat4x2\+\_\+sz} = tmat$<$ size\+\_\+t, 4, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a288cdd5b016e91c2978276d203b3a362}\label{namespacepsl_a288cdd5b016e91c2978276d203b3a362}} 
+using {\bfseries mat4x1} = tmat$<$ float, 4, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ad735bddd8b819bad057575ea665bdce8}\label{namespacepsl_ad735bddd8b819bad057575ea665bdce8}} 
+using {\bfseries dmat4x1} = tmat$<$ double, 4, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a5923c408518d6aace9cfccde544b8f65}\label{namespacepsl_a5923c408518d6aace9cfccde544b8f65}} 
+using {\bfseries imat4x1} = tmat$<$ int, 4, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ad1375f55135a255fcbb00853ba78749d}\label{namespacepsl_ad1375f55135a255fcbb00853ba78749d}} 
+using {\bfseries mat4x1\+\_\+sz} = tmat$<$ size\+\_\+t, 4, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aa6e2cc826d2bcfc2d8dadab92265b513}\label{namespacepsl_aa6e2cc826d2bcfc2d8dadab92265b513}} 
+using {\bfseries mat3x4} = tmat$<$ float, 3, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ac0beee23a278642d20d2f3fb0c818e54}\label{namespacepsl_ac0beee23a278642d20d2f3fb0c818e54}} 
+using {\bfseries dmat3x4} = tmat$<$ double, 3, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a56b503dc212d7cf4ffd0b54481fa8068}\label{namespacepsl_a56b503dc212d7cf4ffd0b54481fa8068}} 
+using {\bfseries imat3x4} = tmat$<$ int, 3, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ab63e2b2f760dddb864e23c5e232d3ecf}\label{namespacepsl_ab63e2b2f760dddb864e23c5e232d3ecf}} 
+using {\bfseries mat3x4\+\_\+sz} = tmat$<$ size\+\_\+t, 3, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_af2298145127037af0c5af724e322686b}\label{namespacepsl_af2298145127037af0c5af724e322686b}} 
+using {\bfseries mat3x3} = tmat$<$ float, 3, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a59d30e9ee9e78e953209ccb5172716dc}\label{namespacepsl_a59d30e9ee9e78e953209ccb5172716dc}} 
+using {\bfseries dmat3x3} = tmat$<$ double, 3, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ae417268e76d9288cb12b4943cef1a0ae}\label{namespacepsl_ae417268e76d9288cb12b4943cef1a0ae}} 
+using {\bfseries imat3x3} = tmat$<$ int, 3, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a25296e36ada9e8093c71adf18301f3c5}\label{namespacepsl_a25296e36ada9e8093c71adf18301f3c5}} 
+using {\bfseries mat3x3\+\_\+sz} = tmat$<$ size\+\_\+t, 3, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a9d970ccbe4ea33a3cf115f7c9da81122}\label{namespacepsl_a9d970ccbe4ea33a3cf115f7c9da81122}} 
+using {\bfseries mat3x2} = tmat$<$ float, 3, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a5164b60f6efaac3da9cf7942febde9ce}\label{namespacepsl_a5164b60f6efaac3da9cf7942febde9ce}} 
+using {\bfseries dmat3x2} = tmat$<$ double, 3, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a5dae9c7191eec085ccbb276095d4fafc}\label{namespacepsl_a5dae9c7191eec085ccbb276095d4fafc}} 
+using {\bfseries imat3x2} = tmat$<$ int, 3, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a630e1e0ed6eec09c73a3c34c8b5b8bd8}\label{namespacepsl_a630e1e0ed6eec09c73a3c34c8b5b8bd8}} 
+using {\bfseries mat3x2\+\_\+sz} = tmat$<$ size\+\_\+t, 3, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ad5e25cf52a9017ac0a00f969f116a5f9}\label{namespacepsl_ad5e25cf52a9017ac0a00f969f116a5f9}} 
+using {\bfseries mat3x1} = tmat$<$ float, 3, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a9e68af35a669304b5f1a83b5281eec86}\label{namespacepsl_a9e68af35a669304b5f1a83b5281eec86}} 
+using {\bfseries dmat3x1} = tmat$<$ double, 3, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ab51f118b0cd3279cfd6d2f4fee67ed47}\label{namespacepsl_ab51f118b0cd3279cfd6d2f4fee67ed47}} 
+using {\bfseries imat3x1} = tmat$<$ int, 3, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_afad43a47675b7981f7d30b5136bf14f7}\label{namespacepsl_afad43a47675b7981f7d30b5136bf14f7}} 
+using {\bfseries mat3x1\+\_\+sz} = tmat$<$ size\+\_\+t, 3, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ac6e6b9392dbf38b036323f3360e3cdc5}\label{namespacepsl_ac6e6b9392dbf38b036323f3360e3cdc5}} 
+using {\bfseries mat2x4} = tmat$<$ float, 2, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a6ccb53c9fc53fcd7b4cdc675859ef612}\label{namespacepsl_a6ccb53c9fc53fcd7b4cdc675859ef612}} 
+using {\bfseries dmat2x4} = tmat$<$ double, 2, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a7c50918d4894fdda6518f75af1ca12d7}\label{namespacepsl_a7c50918d4894fdda6518f75af1ca12d7}} 
+using {\bfseries imat2x4} = tmat$<$ int, 2, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a55fa28ddf274c63c6682788b8c4c86c2}\label{namespacepsl_a55fa28ddf274c63c6682788b8c4c86c2}} 
+using {\bfseries mat2x4\+\_\+sz} = tmat$<$ size\+\_\+t, 2, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a8435c70bb404a2ba41138086f899e450}\label{namespacepsl_a8435c70bb404a2ba41138086f899e450}} 
+using {\bfseries mat2x3} = tmat$<$ float, 2, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ab07c0e2bb5b533eafc8a09fb82fd5ef4}\label{namespacepsl_ab07c0e2bb5b533eafc8a09fb82fd5ef4}} 
+using {\bfseries dmat2x3} = tmat$<$ double, 2, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a957453933caa7e7cc063f77009c4a19a}\label{namespacepsl_a957453933caa7e7cc063f77009c4a19a}} 
+using {\bfseries imat2x3} = tmat$<$ int, 2, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aced8fbdcd5cf5f786bffae8c489405fa}\label{namespacepsl_aced8fbdcd5cf5f786bffae8c489405fa}} 
+using {\bfseries mat2x3\+\_\+sz} = tmat$<$ size\+\_\+t, 2, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a2da10079b7423df1523e5df4ff8c6e43}\label{namespacepsl_a2da10079b7423df1523e5df4ff8c6e43}} 
+using {\bfseries mat2x2} = tmat$<$ float, 2, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a852d16da4e0892c954c9cb3ed45f01d9}\label{namespacepsl_a852d16da4e0892c954c9cb3ed45f01d9}} 
+using {\bfseries dmat2x2} = tmat$<$ double, 2, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a6fe652e10dcdd675ec1a99b5fecb2eb8}\label{namespacepsl_a6fe652e10dcdd675ec1a99b5fecb2eb8}} 
+using {\bfseries imat2x2} = tmat$<$ int, 2, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a3c5ee6fffcb8c98600154fb46891c3e2}\label{namespacepsl_a3c5ee6fffcb8c98600154fb46891c3e2}} 
+using {\bfseries mat2x2\+\_\+sz} = tmat$<$ size\+\_\+t, 2, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a5922eef3b875fbcf3633f95a4862d3b3}\label{namespacepsl_a5922eef3b875fbcf3633f95a4862d3b3}} 
+using {\bfseries mat2x1} = tmat$<$ float, 2, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a54d2325e01fcb86cadf08a1995d84fb6}\label{namespacepsl_a54d2325e01fcb86cadf08a1995d84fb6}} 
+using {\bfseries dmat2x1} = tmat$<$ double, 2, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a399170d1ed9767c3a3e3e312f058047c}\label{namespacepsl_a399170d1ed9767c3a3e3e312f058047c}} 
+using {\bfseries imat2x1} = tmat$<$ int, 2, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a15c7014f7c740ecd325025103c70ddbf}\label{namespacepsl_a15c7014f7c740ecd325025103c70ddbf}} 
+using {\bfseries mat2x1\+\_\+sz} = tmat$<$ size\+\_\+t, 2, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_afac85d48a1f6c04c8055b383d55a8e82}\label{namespacepsl_afac85d48a1f6c04c8055b383d55a8e82}} 
+using {\bfseries mat1x4} = tmat$<$ float, 1, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a7ff919068d17ec99bbab354ddd2b32e8}\label{namespacepsl_a7ff919068d17ec99bbab354ddd2b32e8}} 
+using {\bfseries dmat1x4} = tmat$<$ double, 1, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a1459a6edfdd3047940b0df5e18b07e8e}\label{namespacepsl_a1459a6edfdd3047940b0df5e18b07e8e}} 
+using {\bfseries imat1x4} = tmat$<$ int, 1, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a2352ca7b222ecab14c893e8605c7b126}\label{namespacepsl_a2352ca7b222ecab14c893e8605c7b126}} 
+using {\bfseries mat1x4\+\_\+sz} = tmat$<$ size\+\_\+t, 1, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aa6a77569ac98f2c8d209b781c15449bc}\label{namespacepsl_aa6a77569ac98f2c8d209b781c15449bc}} 
+using {\bfseries mat1x3} = tmat$<$ float, 1, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a623dd97fd8f040664e3b4c2701765a79}\label{namespacepsl_a623dd97fd8f040664e3b4c2701765a79}} 
+using {\bfseries dmat1x3} = tmat$<$ double, 1, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a79b2dd6cb71c1a8f502d7ac5050fc123}\label{namespacepsl_a79b2dd6cb71c1a8f502d7ac5050fc123}} 
+using {\bfseries imat1x3} = tmat$<$ int, 1, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a9e44eb992cf6b05a3b79233778f44b84}\label{namespacepsl_a9e44eb992cf6b05a3b79233778f44b84}} 
+using {\bfseries mat1x3\+\_\+sz} = tmat$<$ size\+\_\+t, 1, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a63b58a6c4355a9180e99ece64d5bd799}\label{namespacepsl_a63b58a6c4355a9180e99ece64d5bd799}} 
+using {\bfseries mat1x2} = tmat$<$ float, 1, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a45fd10f979bab4d505de8027d5eeb66f}\label{namespacepsl_a45fd10f979bab4d505de8027d5eeb66f}} 
+using {\bfseries dmat1x2} = tmat$<$ double, 1, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ae5346fe3b46e0904d343642c85cf2e33}\label{namespacepsl_ae5346fe3b46e0904d343642c85cf2e33}} 
+using {\bfseries imat1x2} = tmat$<$ int, 1, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a81fa8ed4fdb34b372c7c3bf7c4366b1f}\label{namespacepsl_a81fa8ed4fdb34b372c7c3bf7c4366b1f}} 
+using {\bfseries mat1x2\+\_\+sz} = tmat$<$ size\+\_\+t, 1, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a06b7c1d8a4548f2f674c627e9b2b9fde}\label{namespacepsl_a06b7c1d8a4548f2f674c627e9b2b9fde}} 
+using {\bfseries mat1x1} = tmat$<$ float, 1, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_adbe3c0cd3ba818705cf926630c206e3f}\label{namespacepsl_adbe3c0cd3ba818705cf926630c206e3f}} 
+using {\bfseries dmat1x1} = tmat$<$ double, 1, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ada2d366bcf97e3d8355ff3cf47b395ba}\label{namespacepsl_ada2d366bcf97e3d8355ff3cf47b395ba}} 
+using {\bfseries imat1x1} = tmat$<$ int, 1, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aecd4877179aa37a24c940605f2d92a48}\label{namespacepsl_aecd4877179aa37a24c940605f2d92a48}} 
+using {\bfseries mat1x1\+\_\+sz} = tmat$<$ size\+\_\+t, 1, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ae38cf9b711b3902c3e15634de278368d}\label{namespacepsl_ae38cf9b711b3902c3e15634de278368d}} 
+using {\bfseries quat} = tquat$<$ float $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_adbd6ad2c6298432241921e6c762d5841}\label{namespacepsl_adbd6ad2c6298432241921e6c762d5841}} 
+using {\bfseries dquat} = tquat$<$ double $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a327e7bfaaea3bd1b90fd90fe2b8aba17}\label{namespacepsl_a327e7bfaaea3bd1b90fd90fe2b8aba17}} 
+using {\bfseries iquat} = tquat$<$ int $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ad20b2f92726934187df938cc8c67529e}\label{namespacepsl_ad20b2f92726934187df938cc8c67529e}} 
+using {\bfseries quat\+\_\+sz} = tquat$<$ size\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_abd125ced579cb8f136ec2ad10cb53b49}\label{namespacepsl_abd125ced579cb8f136ec2ad10cb53b49}} 
+using {\bfseries vec1} = psl\+::tvec$<$ float, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ab9ae76006e71584db201f753b51ad791}\label{namespacepsl_ab9ae76006e71584db201f753b51ad791}} 
+using {\bfseries vec2} = psl\+::tvec$<$ float, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a19dd7bd8998e5fb33c4e33ba9cfc69ff}\label{namespacepsl_a19dd7bd8998e5fb33c4e33ba9cfc69ff}} 
+using {\bfseries vec3} = psl\+::tvec$<$ float, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a70044ad4a23bf8a62ab182a3444d69a0}\label{namespacepsl_a70044ad4a23bf8a62ab182a3444d69a0}} 
+using {\bfseries vec4} = psl\+::tvec$<$ float, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a6a29f649c66df6824dddeefc4190446b}\label{namespacepsl_a6a29f649c66df6824dddeefc4190446b}} 
+using {\bfseries dvec1} = psl\+::tvec$<$ double, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a3a7d94992d25fd4eb2b9b4356e675f22}\label{namespacepsl_a3a7d94992d25fd4eb2b9b4356e675f22}} 
+using {\bfseries dvec2} = psl\+::tvec$<$ double, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a9eb2565b93f93d006e97d18e14ffaaac}\label{namespacepsl_a9eb2565b93f93d006e97d18e14ffaaac}} 
+using {\bfseries dvec3} = psl\+::tvec$<$ double, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a457779749bd9381554d69e4d60d2357e}\label{namespacepsl_a457779749bd9381554d69e4d60d2357e}} 
+using {\bfseries dvec4} = psl\+::tvec$<$ double, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_afe963dfe527b52934a81548212fd328d}\label{namespacepsl_afe963dfe527b52934a81548212fd328d}} 
+using {\bfseries ivec1} = psl\+::tvec$<$ int, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a4cacd6ff553084dd2e38637f88513a29}\label{namespacepsl_a4cacd6ff553084dd2e38637f88513a29}} 
+using {\bfseries ivec2} = psl\+::tvec$<$ int, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ae1a7bed53737ee758cbbe6a42135d88c}\label{namespacepsl_ae1a7bed53737ee758cbbe6a42135d88c}} 
+using {\bfseries ivec3} = psl\+::tvec$<$ int, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ae2a7a4c4529a9853739621b97e63c853}\label{namespacepsl_ae2a7a4c4529a9853739621b97e63c853}} 
+using {\bfseries ivec4} = psl\+::tvec$<$ int, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a7dc2c6f0c28c149aa570c1573c0eed77}\label{namespacepsl_a7dc2c6f0c28c149aa570c1573c0eed77}} 
+using {\bfseries vec1\+\_\+sz} = psl\+::tvec$<$ size\+\_\+t, 1 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a2c63ee00cae4f59076e2e12c735b591a}\label{namespacepsl_a2c63ee00cae4f59076e2e12c735b591a}} 
+using {\bfseries vec2\+\_\+sz} = psl\+::tvec$<$ size\+\_\+t, 2 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a25c49c6185a235b2b2dd2e07a55e3f5c}\label{namespacepsl_a25c49c6185a235b2b2dd2e07a55e3f5c}} 
+using {\bfseries vec3\+\_\+sz} = psl\+::tvec$<$ size\+\_\+t, 3 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a7569ba89301a8b97611b561facee288d}\label{namespacepsl_a7569ba89301a8b97611b561facee288d}} 
+using {\bfseries vec4\+\_\+sz} = psl\+::tvec$<$ size\+\_\+t, 4 $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a506ea7e1f41b3bd242356c15a8703819}\label{namespacepsl_a506ea7e1f41b3bd242356c15a8703819}} 
+{\footnotesize template$<$typename T , size\+\_\+t N = 0$>$ }\\using {\bfseries static\+\_\+array} = std\+::array$<$ T, N $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a43b65b204a3e0e9c10d26a59c456139a}\label{namespacepsl_a43b65b204a3e0e9c10d26a59c456139a}} 
+{\footnotesize template$<$typename KT , typename VT $>$ }\\using {\bfseries unordered\+\_\+map} = std\+::unordered\+\_\+map$<$ KT, VT $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ac7892d6a968c132663a90145e821c26b}\label{namespacepsl_ac7892d6a968c132663a90145e821c26b}} 
+using {\bfseries string8\+\_\+t} = std\+::basic\+\_\+string$<$ string8\+::char\+\_\+t, std\+::char\+\_\+traits$<$ string8\+::char\+\_\+t $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ab3800deb9beabfe4e09c075075923bec}\label{namespacepsl_ab3800deb9beabfe4e09c075075923bec}} 
+using {\bfseries string16\+\_\+t} = std\+::basic\+\_\+string$<$ string16\+::char\+\_\+t, std\+::char\+\_\+traits$<$ string16\+::char\+\_\+t $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a58ba03803d495f31027d7a0d431b0152}\label{namespacepsl_a58ba03803d495f31027d7a0d431b0152}} 
+using {\bfseries string32\+\_\+t} = std\+::basic\+\_\+string$<$ string32\+::char\+\_\+t, std\+::char\+\_\+traits$<$ string32\+::char\+\_\+t $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aabe2b89b2fcb7960d7ae60c48eb71efa}\label{namespacepsl_aabe2b89b2fcb7960d7ae60c48eb71efa}} 
+using \mbox{\hyperlink{namespacepsl_aabe2b89b2fcb7960d7ae60c48eb71efa}{pchar\+\_\+t}} = platform\+::char\+\_\+t
+\begin{DoxyCompactList}\small\item\em platform conditional string type, turns into char or wchar depending on the platform and compile options \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacepsl_a25e0db97f096b755286f5ac2cd9f9a04}\label{namespacepsl_a25e0db97f096b755286f5ac2cd9f9a04}} 
+using {\bfseries pstring\+\_\+t} = std\+::basic\+\_\+string$<$ \mbox{\hyperlink{namespacepsl_aabe2b89b2fcb7960d7ae60c48eb71efa}{pchar\+\_\+t}}, std\+::char\+\_\+traits$<$ \mbox{\hyperlink{namespacepsl_aabe2b89b2fcb7960d7ae60c48eb71efa}{pchar\+\_\+t}} $>$ $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a5d21cdbe1f2c04b94b2a4674de0f5fde}\label{namespacepsl_a5d21cdbe1f2c04b94b2a4674de0f5fde}} 
+using {\bfseries string} = string8\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacepsl_ae3a22c89857046a4886c58c5e7743060}\label{namespacepsl_ae3a22c89857046a4886c58c5e7743060}} 
+using {\bfseries char\+\_\+t} = string8\+::char\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacepsl_a410ffef54619c8dff3cdf8bd46755632}\label{namespacepsl_a410ffef54619c8dff3cdf8bd46755632}} 
+using {\bfseries string\+\_\+view} = string8\+::view
+\item 
+\mbox{\Hypertarget{namespacepsl_a998da8572c087d8d101d2e52bbd04a9f}\label{namespacepsl_a998da8572c087d8d101d2e52bbd04a9f}} 
+using {\bfseries stringstream} = string8\+::stream
+\item 
+\mbox{\Hypertarget{namespacepsl_a3420815598cf09879d0f0ad82d7708c0}\label{namespacepsl_a3420815598cf09879d0f0ad82d7708c0}} 
+using {\bfseries ostream} = string8\+::ostream
+\item 
+\mbox{\Hypertarget{namespacepsl_a217547564d3f613d97ecae1537a2e36e}\label{namespacepsl_a217547564d3f613d97ecae1537a2e36e}} 
+using {\bfseries ofstream} = string8\+::ofstream
+\item 
+\mbox{\Hypertarget{namespacepsl_a1861304bd69209326db4cbc2fdd9358e}\label{namespacepsl_a1861304bd69209326db4cbc2fdd9358e}} 
+using {\bfseries istream} = string8\+::istream
+\item 
+\mbox{\Hypertarget{namespacepsl_a3f41d926b1acc197177798373d430968}\label{namespacepsl_a3f41d926b1acc197177798373d430968}} 
+using {\bfseries ifstream} = string8\+::ifstream
+\item 
+\mbox{\Hypertarget{namespacepsl_afced1ddf9788c64c60bf55dd337a6051}\label{namespacepsl_afced1ddf9788c64c60bf55dd337a6051}} 
+using {\bfseries fstream} = string8\+::fstream
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_aac2ad8ea89de0f34d4ffaeaef26e5afa}\label{namespacepsl_aac2ad8ea89de0f34d4ffaeaef26e5afa}} 
+enum {\bfseries sorter} \{ \newline
+{\bfseries hybrid}, 
+{\bfseries quick\+\_\+3way}, 
+{\bfseries insertion}, 
+{\bfseries heap}, 
+\newline
+{\bfseries merge}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_a88f449c5bfc71ef19c67b07e7bcc7057}\label{namespacepsl_a88f449c5bfc71ef19c67b07e7bcc7057}} 
+{\footnotesize template$<$class Input\+It , class Output\+It , class Pred , class Fct $>$ }\\void {\bfseries transform\+\_\+if} (Input\+It first, Input\+It last, Output\+It dest, Pred pred, Fct transform)
+\item 
+\mbox{\Hypertarget{namespacepsl_a5cba1c92950849c27fa4716785d28a0d}\label{namespacepsl_a5cba1c92950849c27fa4716785d28a0d}} 
+{\footnotesize template$<$typename Sorter , typename It , typename Pred $>$ }\\void {\bfseries sort} (Sorter \&\&, const It first, const It last, Pred \&\&pred) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a77dffb25b3a0debcc74df6e8c4fbc9e2}\label{namespacepsl_a77dffb25b3a0debcc74df6e8c4fbc9e2}} 
+{\footnotesize template$<$typename Sorter , typename It $>$ }\\void {\bfseries sort} (Sorter \&\&, const It first, const It last) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ade2b6231b7da0b1a3d12636d12ca5185}\label{namespacepsl_ade2b6231b7da0b1a3d12636d12ca5185}} 
+{\footnotesize template$<$class Input\+It1 , class Input\+It2 , class Compare $>$ }\\Input\+It1 {\bfseries inplace\+\_\+set\+\_\+difference} (Input\+It1 first1, Input\+It1 last1, Input\+It2 first2, Input\+It2 last2, Compare comp)
+\item 
+\mbox{\Hypertarget{namespacepsl_a443491cf748aabc3c3c4c417f460c1dc}\label{namespacepsl_a443491cf748aabc3c3c4c417f460c1dc}} 
+{\footnotesize template$<$class Input\+It1 , class Input\+It2 $>$ }\\Input\+It1 {\bfseries inplace\+\_\+set\+\_\+difference} (Input\+It1 first1, Input\+It1 last1, Input\+It2 first2, Input\+It2 last2)
+\item 
+\mbox{\Hypertarget{namespacepsl_a3ded86f3be6a1fa3507c7337b2701ea2}\label{namespacepsl_a3ded86f3be6a1fa3507c7337b2701ea2}} 
+{\footnotesize template$<$typename IT $>$ }\\{\bfseries array\+\_\+view} (IT first, IT last) -\/$>$ array\+\_\+view$<$ typename std\+::iterator\+\_\+traits$<$ IT $>$\+::value\+\_\+type $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_aaa1c9b7ffdc9d5c35ca4fcf6859a6431}\label{namespacepsl_aaa1c9b7ffdc9d5c35ca4fcf6859a6431}} 
+{\footnotesize template$<$typename IT $>$ }\\{\bfseries array\+\_\+view} (IT first, size\+\_\+t count) -\/$>$ array\+\_\+view$<$ typename std\+::iterator\+\_\+traits$<$ IT $>$\+::value\+\_\+type $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a209f9f0462c407afba191e6ea347b86a}\label{namespacepsl_a209f9f0462c407afba191e6ea347b86a}} 
+{\footnotesize template$<$class T $>$ }\\auto {\bfseries enumerate} (T first, T last, typename enumerator$<$ T $>$\+::index\+\_\+t index=0) -\/$>$ enumerator$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_ad9224ce5596cfae5b16645f801802178}\label{namespacepsl_ad9224ce5596cfae5b16645f801802178}} 
+{\footnotesize template$<$class T $>$ }\\auto {\bfseries enumerate} (T \&content) -\/$>$ enumerator$<$ T $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_a9077e038c05735c20217e39303891e4f}\label{namespacepsl_a9077e038c05735c20217e39303891e4f}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t d1, size\+\_\+t d2, size\+\_\+t d3$>$ }\\constexpr tmat$<$ precision\+\_\+t, d1, d3 $>$ {\bfseries operator$\ast$} (const tmat$<$ precision\+\_\+t, d1, d2 $>$ \&left, const tmat$<$ precision\+\_\+t, d2, d3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aec1f03dcce111b50d52de83e7310aa2a}\label{namespacepsl_aec1f03dcce111b50d52de83e7310aa2a}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator+=} (tquat$<$ precision\+\_\+t $>$ \&owner, const tquat$<$ precision\+\_\+t $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a97bf9b855d46f3b0b8c9c0a94a7946a5}\label{namespacepsl_a97bf9b855d46f3b0b8c9c0a94a7946a5}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator$\ast$=} (tquat$<$ precision\+\_\+t $>$ \&owner, const tquat$<$ precision\+\_\+t $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a095eb832545f227299b368785d8d2d97}\label{namespacepsl_a095eb832545f227299b368785d8d2d97}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator/=} (tquat$<$ precision\+\_\+t $>$ \&owner, const tquat$<$ precision\+\_\+t $>$ \&other)
+\item 
+\mbox{\Hypertarget{namespacepsl_ae84f714f4906874184ce2c111bf60f92}\label{namespacepsl_ae84f714f4906874184ce2c111bf60f92}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator-\/=} (tquat$<$ precision\+\_\+t $>$ \&owner, const tquat$<$ precision\+\_\+t $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a7f5611ca9f56855959c953ec309af21a}\label{namespacepsl_a7f5611ca9f56855959c953ec309af21a}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator+=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const tvec$<$ precision\+\_\+t, 4 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a8ac30b250d04b3b95e811b843e407ffb}\label{namespacepsl_a8ac30b250d04b3b95e811b843e407ffb}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const tvec$<$ precision\+\_\+t, 4 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_adee6ccb9a9efc9623e6f870369d8ed92}\label{namespacepsl_adee6ccb9a9efc9623e6f870369d8ed92}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const tvec$<$ precision\+\_\+t, 4 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a3eea08e7f5109c0f714fc14373eb301b}\label{namespacepsl_a3eea08e7f5109c0f714fc14373eb301b}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator-\/=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const tvec$<$ precision\+\_\+t, 4 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a31ddc756e63c098d199910df2d86b634}\label{namespacepsl_a31ddc756e63c098d199910df2d86b634}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr psl\+::tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator$\ast$} (const psl\+::tquat$<$ precision\+\_\+t $>$ \&quat, const psl\+::tvec$<$ precision\+\_\+t, 3 $>$ \&vec) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ab2ea84d5e6789f2b89a24da632d53aa5}\label{namespacepsl_ab2ea84d5e6789f2b89a24da632d53aa5}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator$\ast$=} (tquat$<$ precision\+\_\+t $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ae886cd2fa74c09f0de4543717b64b818}\label{namespacepsl_ae886cd2fa74c09f0de4543717b64b818}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ \& {\bfseries operator/=} (tquat$<$ precision\+\_\+t $>$ \&owner, const precision\+\_\+t \&other)
+\item 
+\mbox{\Hypertarget{namespacepsl_afd9134a91b6e6fd4aef04552314b0968}\label{namespacepsl_afd9134a91b6e6fd4aef04552314b0968}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator+} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a32c50ad9465da7c0abe292cb7b507e54}\label{namespacepsl_a32c50ad9465da7c0abe292cb7b507e54}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator$\ast$} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a348ccc483f846f617de917190a8abe85}\label{namespacepsl_a348ccc483f846f617de917190a8abe85}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator/} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right)
+\item 
+\mbox{\Hypertarget{namespacepsl_a35ad2bb7df4f4e9bb9885621aaba5fef}\label{namespacepsl_a35ad2bb7df4f4e9bb9885621aaba5fef}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator$\ast$} (const tquat$<$ precision\+\_\+t $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aa7d8872f52f5100fc5f202c9ce8fbdc5}\label{namespacepsl_aa7d8872f52f5100fc5f202c9ce8fbdc5}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator/} (const tquat$<$ precision\+\_\+t $>$ \&left, const precision\+\_\+t \&right)
+\item 
+\mbox{\Hypertarget{namespacepsl_af31c627c7a52520f0befa65548d725b3}\label{namespacepsl_af31c627c7a52520f0befa65548d725b3}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tquat$<$ precision\+\_\+t $>$ {\bfseries operator-\/} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a77ef6f1d7fa174becf275e9c9f6fdc3d}\label{namespacepsl_a77ef6f1d7fa174becf275e9c9f6fdc3d}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator==} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a200f3ac9f33dff011e168cfce2b7e3d0}\label{namespacepsl_a200f3ac9f33dff011e168cfce2b7e3d0}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator!=} (const tquat$<$ precision\+\_\+t $>$ \&left, const tquat$<$ precision\+\_\+t $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a0c94d7c6580b122522b29938063acae4}\label{namespacepsl_a0c94d7c6580b122522b29938063acae4}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator+=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const tvec$<$ precision\+\_\+t, 1 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad27caf601a7d74aa59d6be81798497a1}\label{namespacepsl_ad27caf601a7d74aa59d6be81798497a1}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const tvec$<$ precision\+\_\+t, 1 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_af7a69875dda176f553b69cd93fc0061e}\label{namespacepsl_af7a69875dda176f553b69cd93fc0061e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const tvec$<$ precision\+\_\+t, 1 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a2ebdffe3275fb7ac44fa9b4bebd89911}\label{namespacepsl_a2ebdffe3275fb7ac44fa9b4bebd89911}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a34ba4e6f1a605de583f688fd8d22d190}\label{namespacepsl_a34ba4e6f1a605de583f688fd8d22d190}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a11fae26dc427cfb4e329b88d84d1b3e9}\label{namespacepsl_a11fae26dc427cfb4e329b88d84d1b3e9}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ \& {\bfseries operator-\/=} (tvec$<$ precision\+\_\+t, 1 $>$ \&owner, const tvec$<$ precision\+\_\+t, 1 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a3011dd13a5f82d230343a67ca549ed11}\label{namespacepsl_a3011dd13a5f82d230343a67ca549ed11}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator+} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a12a88b2ddbabb1823c46f526c062fac1}\label{namespacepsl_a12a88b2ddbabb1823c46f526c062fac1}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_afffe048ea19a32e0c64d83ba32e20f03}\label{namespacepsl_afffe048ea19a32e0c64d83ba32e20f03}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aab09f41dc1a7ef23d1cd44d7c6b30ac4}\label{namespacepsl_aab09f41dc1a7ef23d1cd44d7c6b30ac4}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a3d229deb515fca69cdd708f61f414634}\label{namespacepsl_a3d229deb515fca69cdd708f61f414634}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_acd791a5ea41d0f957470d9771aca742b}\label{namespacepsl_acd791a5ea41d0f957470d9771aca742b}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 1 $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a5d7bb2b05b7cc1f77d9c38ed55c44157}\label{namespacepsl_a5d7bb2b05b7cc1f77d9c38ed55c44157}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator==} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ac1fe337760bcd89cb44bd3458da17b5a}\label{namespacepsl_ac1fe337760bcd89cb44bd3458da17b5a}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator!=} (const tvec$<$ precision\+\_\+t, 1 $>$ \&left, const tvec$<$ precision\+\_\+t, 1 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_af06307a88938097131f1aa9c8fb4d7f1}\label{namespacepsl_af06307a88938097131f1aa9c8fb4d7f1}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator+=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const tvec$<$ precision\+\_\+t, 2 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ade5f1b13d0cfd82704710fa18da72080}\label{namespacepsl_ade5f1b13d0cfd82704710fa18da72080}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const tvec$<$ precision\+\_\+t, 2 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aec52dbe43e209f5c7c57504ca0518688}\label{namespacepsl_aec52dbe43e209f5c7c57504ca0518688}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const tvec$<$ precision\+\_\+t, 2 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a06198bd346f82159f4fd8e0ae7412711}\label{namespacepsl_a06198bd346f82159f4fd8e0ae7412711}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a84ee1e8a5230ad3ca6acd944fbb39fa9}\label{namespacepsl_a84ee1e8a5230ad3ca6acd944fbb39fa9}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a207c15467f7bc3b59a1773d77848090e}\label{namespacepsl_a207c15467f7bc3b59a1773d77848090e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ \& {\bfseries operator-\/=} (tvec$<$ precision\+\_\+t, 2 $>$ \&owner, const tvec$<$ precision\+\_\+t, 2 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a0338123c94d560e1b7aea23b3572d95c}\label{namespacepsl_a0338123c94d560e1b7aea23b3572d95c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator+} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_acfc82c1bad11f6028f67b13bd24b0a6e}\label{namespacepsl_acfc82c1bad11f6028f67b13bd24b0a6e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a0b7e7e9673e55110fc253059e598e3d2}\label{namespacepsl_a0b7e7e9673e55110fc253059e598e3d2}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a51b0c1fd93bd68d2288a7f2033887cc1}\label{namespacepsl_a51b0c1fd93bd68d2288a7f2033887cc1}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_af80c7ea55909e7e64148fa236dc513a2}\label{namespacepsl_af80c7ea55909e7e64148fa236dc513a2}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ac637c3c40430648c0568522065b4d88a}\label{namespacepsl_ac637c3c40430648c0568522065b4d88a}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 2 $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad53fa103bc59b5f3a1bf4652bc525f2c}\label{namespacepsl_ad53fa103bc59b5f3a1bf4652bc525f2c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator==} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a7d1caafaf843bd5d041c6f57a41ebfc8}\label{namespacepsl_a7d1caafaf843bd5d041c6f57a41ebfc8}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator!=} (const tvec$<$ precision\+\_\+t, 2 $>$ \&left, const tvec$<$ precision\+\_\+t, 2 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a83e1dcdef30c04c94f565ada8e463a62}\label{namespacepsl_a83e1dcdef30c04c94f565ada8e463a62}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator+=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const tvec$<$ precision\+\_\+t, 3 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ab003b76607e28d0f128d985b7e7b94d0}\label{namespacepsl_ab003b76607e28d0f128d985b7e7b94d0}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const tvec$<$ precision\+\_\+t, 3 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_abbd60cc18a5b31b3d5ca14bb1ad794c7}\label{namespacepsl_abbd60cc18a5b31b3d5ca14bb1ad794c7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const tvec$<$ precision\+\_\+t, 3 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_addd6c1b435fd0ab5727805f5ddccf309}\label{namespacepsl_addd6c1b435fd0ab5727805f5ddccf309}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad0b2ea4c8e3bc06afd8c0283dfee4d5c}\label{namespacepsl_ad0b2ea4c8e3bc06afd8c0283dfee4d5c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a8adc2fa221cc7f35823e7a68290743f0}\label{namespacepsl_a8adc2fa221cc7f35823e7a68290743f0}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ \& {\bfseries operator-\/=} (tvec$<$ precision\+\_\+t, 3 $>$ \&owner, const tvec$<$ precision\+\_\+t, 3 $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aa66401ef0a9810898e0a0ec5e2ece4b7}\label{namespacepsl_aa66401ef0a9810898e0a0ec5e2ece4b7}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator+} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a55a480567b4bf16321e9a3913c8a3fec}\label{namespacepsl_a55a480567b4bf16321e9a3913c8a3fec}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ae52e8d6754150c2645795337deff60a2}\label{namespacepsl_ae52e8d6754150c2645795337deff60a2}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_abb79afefd7de89246a748f0b46a10eb8}\label{namespacepsl_abb79afefd7de89246a748f0b46a10eb8}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a7801db3acdff42b3bcf9ac576338cb67}\label{namespacepsl_a7801db3acdff42b3bcf9ac576338cb67}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_abcb10643d3a8f1c5395f5842193fa940}\label{namespacepsl_abcb10643d3a8f1c5395f5842193fa940}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 3 $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a25fb505949e0df4e5a5ceb2a22d21b07}\label{namespacepsl_a25fb505949e0df4e5a5ceb2a22d21b07}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator==} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a3a7464f7a8396f4b2c714635bcaea04b}\label{namespacepsl_a3a7464f7a8396f4b2c714635bcaea04b}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator!=} (const tvec$<$ precision\+\_\+t, 3 $>$ \&left, const tvec$<$ precision\+\_\+t, 3 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a58724055345a42bad6fe6ce534db0b1e}\label{namespacepsl_a58724055345a42bad6fe6ce534db0b1e}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a61dd45cc7956e73260c91c1081a7fb13}\label{namespacepsl_a61dd45cc7956e73260c91c1081a7fb13}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, 4 $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a94c2fb8431d86eec941794ad98fde07c}\label{namespacepsl_a94c2fb8431d86eec941794ad98fde07c}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator+} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a506e3834381a7e847b7812c3251e6e88}\label{namespacepsl_a506e3834381a7e847b7812c3251e6e88}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ae3a54db26dd6f89f560b55324f1abb50}\label{namespacepsl_ae3a54db26dd6f89f560b55324f1abb50}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ade0010d92731d6c7db528aa564a97ad5}\label{namespacepsl_ade0010d92731d6c7db528aa564a97ad5}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a8de6b6f97bdf1a56cb71a5588c54cba0}\label{namespacepsl_a8de6b6f97bdf1a56cb71a5588c54cba0}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const precision\+\_\+t \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a08c8c6a9d1f6941395ccc640f1c6af41}\label{namespacepsl_a08c8c6a9d1f6941395ccc640f1c6af41}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr tvec$<$ precision\+\_\+t, 4 $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aac52d96ab4a50cbc743412085051974d}\label{namespacepsl_aac52d96ab4a50cbc743412085051974d}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator==} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad0dd8c17d05b3734c13a7a8d384179e8}\label{namespacepsl_ad0dd8c17d05b3734c13a7a8d384179e8}} 
+{\footnotesize template$<$typename precision\+\_\+t $>$ }\\constexpr bool {\bfseries operator!=} (const tvec$<$ precision\+\_\+t, 4 $>$ \&left, const tvec$<$ precision\+\_\+t, 4 $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a12890237c518668247f52b4a91938175}\label{namespacepsl_a12890237c518668247f52b4a91938175}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&owner) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ab63f687cfaf0385696e75994cb9fd845}\label{namespacepsl_ab63f687cfaf0385696e75994cb9fd845}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator+=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const tvec$<$ precision\+\_\+t, dimensions $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a5992be721b2531334b3e98ec820d7fc5}\label{namespacepsl_a5992be721b2531334b3e98ec820d7fc5}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const tvec$<$ precision\+\_\+t, dimensions $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a368db3daf3dba3cbe62b6c70e1b4305d}\label{namespacepsl_a368db3daf3dba3cbe62b6c70e1b4305d}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const tvec$<$ precision\+\_\+t, dimensions $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a079cf894e9814f01019117743c4adc1e}\label{namespacepsl_a079cf894e9814f01019117743c4adc1e}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator$\ast$=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ae989ae12469483fb3a77b43daf5049a6}\label{namespacepsl_ae989ae12469483fb3a77b43daf5049a6}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator/=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const precision\+\_\+t \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a4b50baf88ccb91a389c7272ca3e25d79}\label{namespacepsl_a4b50baf88ccb91a389c7272ca3e25d79}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ \& {\bfseries operator-\/=} (tvec$<$ precision\+\_\+t, dimensions $>$ \&owner, const tvec$<$ precision\+\_\+t, dimensions $>$ \&other) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a19c0269df4a515ca8362e30ca9191c18}\label{namespacepsl_a19c0269df4a515ca8362e30ca9191c18}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries operator+} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ae6043db54888e730030340e096b2add7}\label{namespacepsl_ae6043db54888e730030340e096b2add7}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries operator$\ast$} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a70361c7180bc654c9f0781c5a11ec1ab}\label{namespacepsl_a70361c7180bc654c9f0781c5a11ec1ab}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries operator/} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a8640413755ac70479db1e4ca251651ce}\label{namespacepsl_a8640413755ac70479db1e4ca251651ce}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr tvec$<$ precision\+\_\+t, dimensions $>$ {\bfseries operator-\/} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a8209612140cb4327eabb96216175d5ef}\label{namespacepsl_a8209612140cb4327eabb96216175d5ef}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr bool {\bfseries operator==} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad4d475c9e898f264c8bed4fcd4201db6}\label{namespacepsl_ad4d475c9e898f264c8bed4fcd4201db6}} 
+{\footnotesize template$<$typename precision\+\_\+t , size\+\_\+t dimensions$>$ }\\constexpr bool {\bfseries operator!=} (const tvec$<$ precision\+\_\+t, dimensions $>$ \&left, const tvec$<$ precision\+\_\+t, dimensions $>$ \&right) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a81546342cfb88ee8483cc260982668e6}\label{namespacepsl_a81546342cfb88ee8483cc260982668e6}} 
+constexpr bool {\bfseries valid\+\_\+uid} (const char $\ast$text, std\+::size\+\_\+t size) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aae93ebb36d5b8697fd5d6fb28cc960c8}\label{namespacepsl_aae93ebb36d5b8697fd5d6fb28cc960c8}} 
+constexpr \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} {\bfseries try\+\_\+make\+\_\+uid} (const char $\ast$text, std\+::size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{namespacepsl_ac1ea696c17255c558bbc38d3fd169ff8}\label{namespacepsl_ac1ea696c17255c558bbc38d3fd169ff8}} 
+constexpr \mbox{\hyperlink{structpsl_1_1_u_i_d}{psl\+::\+U\+ID}} {\bfseries make\+\_\+uid} (const char $\ast$text, std\+::size\+\_\+t size) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a16cc24c3fc123d4624bd5930780ff914}\label{namespacepsl_a16cc24c3fc123d4624bd5930780ff914}} 
+{\footnotesize template$<$typename... Ts$>$ }\\psl\+::pack\+\_\+view$<$ Ts... $>$ {\bfseries zip} (psl\+::array\+\_\+view$<$ Ts $>$... range)
+\item 
+\mbox{\Hypertarget{namespacepsl_a7af83d6d73c9d90407cd3fe20bc28db9}\label{namespacepsl_a7af83d6d73c9d90407cd3fe20bc28db9}} 
+{\footnotesize template$<$typename... Ts$>$ }\\auto {\bfseries zip} (Ts... range)
+\item 
+\mbox{\Hypertarget{namespacepsl_ad72306108c8367f70b4dce98200bea65}\label{namespacepsl_ad72306108c8367f70b4dce98200bea65}} 
+{\footnotesize template$<$typename... Ts, typename T $>$ }\\psl\+::pack\+\_\+view$<$ Ts... $>$ {\bfseries make\+\_\+pack} (const T \&pack)
+\item 
+psl\+::string8\+\_\+t \mbox{\hyperlink{namespacepsl_a5ad1017fc6d07ed98ea6dfb33b63f62c}{to\+\_\+string8\+\_\+t}} (const psl\+::string \&s)
+\begin{DoxyCompactList}\small\item\em converts a psl\+::string into a U\+T\+F-\/8 string. \end{DoxyCompactList}\item 
+psl\+::string \mbox{\hyperlink{namespacepsl_a019de0ebbc90532b32c44e30add99a2a}{from\+\_\+string8\+\_\+t}} (const psl\+::string8\+\_\+t \&s)
+\begin{DoxyCompactList}\small\item\em converts a U\+T\+F-\/8 string into a psl\+::string \end{DoxyCompactList}\item 
+psl\+::string8\+\_\+t \mbox{\hyperlink{namespacepsl_a19f76888880944ed7fd7db56bf4a6109}{to\+\_\+string8\+\_\+t}} (psl\+::string\+\_\+view s)
+\begin{DoxyCompactList}\small\item\em converts a psl\+::string into a U\+T\+F-\/8 string. \end{DoxyCompactList}\item 
+psl\+::string \mbox{\hyperlink{namespacepsl_a7137b4dab41015dd4af435065379012c}{from\+\_\+string8\+\_\+t}} (psl\+::string8\+::view s)
+\begin{DoxyCompactList}\small\item\em converts a U\+T\+F-\/8 string into a psl\+::string \end{DoxyCompactList}\item 
+psl\+::pstring\+\_\+t \mbox{\hyperlink{namespacepsl_a8c98b3a31f15573fae6753b637a2a841}{to\+\_\+pstring}} (const psl\+::string8\+\_\+t \&s)
+\begin{DoxyCompactList}\small\item\em converts a psl\+::string8\+\_\+t int a psl\+::pstring \end{DoxyCompactList}\item 
+psl\+::pstring\+\_\+t \mbox{\hyperlink{namespacepsl_ae4deaa7d8c1c2b103868fb760b7fe58a}{to\+\_\+pstring}} (psl\+::string8\+::view s)
+\begin{DoxyCompactList}\small\item\em converts a psl\+::string int a psl\+::pstring \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespacepsl_a10efb94352f82e168cb2cc09959677e0}{memset}} (char\+\_\+t $\ast$\+\_\+\+Dst, char\+\_\+t \+\_\+\+Val, size\+\_\+t \+\_\+\+Size)
+\begin{DoxyCompactList}\small\item\em std\+::memset wrapper that auto-\/converts to std\+::wmemset when wchar == psl\+::char\+\_\+t \end{DoxyCompactList}\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{namespacepsl_ae2a1f3b5b2742103ae14ee4749575244}{popen}} (const char\+\_\+t $\ast$\+\_\+\+Command, const char\+\_\+t $\ast$\+\_\+\+Mode)
+\begin{DoxyCompactList}\small\item\em wrapper for the platform specific popen command, changes its internals depending on psl\+::char\+\_\+t size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacepsl_aae1bd582f97a95dcd6f584735673c861}{pclose}} (F\+I\+LE $\ast$\+\_\+\+Stream)
+\begin{DoxyCompactList}\small\item\em wrapper around pclose. \end{DoxyCompactList}\item 
+char\+\_\+t $\ast$ \mbox{\hyperlink{namespacepsl_a36d8b9a383105782bcf704612d22036e}{memcpy\+\_\+s}} (char\+\_\+t $\ast$const \+\_\+\+Destination, char\+\_\+t const $\ast$const \+\_\+\+Source, size\+\_\+t const \+\_\+\+Source\+Size)
+\begin{DoxyCompactList}\small\item\em wrapper around std\+::memcpy that changes behaviour depending on the size of psl\+::char\+\_\+t. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{namespacepsl_a17d45a429d784672ddf15bceca3b9229}{strlen}} (const char\+\_\+t $\ast$\+\_\+\+Str)
+\begin{DoxyCompactList}\small\item\em wrapper around \mbox{\hyperlink{namespacepsl_a17d45a429d784672ddf15bceca3b9229}{strlen}} that changes behaviour depending on the size of psl\+::char\+\_\+t. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{namespacepsl_a97a39a66497550d0ec9403540784a38e}{fprintf}} (F\+I\+LE $\ast$const \+\_\+\+Stream, char\+\_\+t const $\ast$\+\_\+\+Format, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em wrapper around fprintf that changes behaviour depending on the size of psl\+::char\+\_\+t. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{namespacepsl_a81f2ba09a1584614ebcb512e4d509687}{printf}} (char\+\_\+t const $\ast$\+\_\+\+Format, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em wrapper around printf that changes behaviour depending on the size of psl\+::char\+\_\+t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacepsl_a5c661ab8e68278a2330ac78764142852}\label{namespacepsl_a5c661ab8e68278a2330ac78764142852}} 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool {\bfseries operator==} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T1 $>$ p1, \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T2 $>$ p2) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a4b13936109b086957ccc90fc1888c7ed}\label{namespacepsl_a4b13936109b086957ccc90fc1888c7ed}} 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\constexpr bool {\bfseries operator!=} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T1 $>$ p1, \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T2 $>$ p2) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aecacb15a307e95d7e42b15b65fb13618}\label{namespacepsl_aecacb15a307e95d7e42b15b65fb13618}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool {\bfseries operator==} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T $>$ p, std\+::nullptr\+\_\+t) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_aae2be18e02bca91924ce10d710706087}\label{namespacepsl_aae2be18e02bca91924ce10d710706087}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool {\bfseries operator==} (std\+::nullptr\+\_\+t, \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T $>$ p) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_ad787d9a7d1831e43d8cadc11cdcce0e6}\label{namespacepsl_ad787d9a7d1831e43d8cadc11cdcce0e6}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool {\bfseries operator!=} (\mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T $>$ p, std\+::nullptr\+\_\+t) noexcept
+\item 
+\mbox{\Hypertarget{namespacepsl_a0e4bf2c6da3a0231249aebe7b58ffc28}\label{namespacepsl_a0e4bf2c6da3a0231249aebe7b58ffc28}} 
+{\footnotesize template$<$typename T $>$ }\\constexpr bool {\bfseries operator!=} (std\+::nullptr\+\_\+t, \mbox{\hyperlink{classpsl_1_1view__ptr}{view\+\_\+ptr}}$<$ T $>$ p) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_ae977a1c250287f37dc5f344a7860dce9}\label{namespacepsl_ae977a1c250287f37dc5f344a7860dce9}} 
+static constexpr size\+\_\+t {\bfseries uchar\+\_\+size} \{sizeof(string8\+::char\+\_\+t)\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains various utilities and constructs to aid you. In this you\textquotesingle{}ll find constructs that allow event signalling, dealing with U\+TF encoded strings, etc... 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepsl_a5ad1017fc6d07ed98ea6dfb33b63f62c}\label{namespacepsl_a5ad1017fc6d07ed98ea6dfb33b63f62c}} 
+\index{psl@{psl}!to\_string8\_t@{to\_string8\_t}}
+\index{to\_string8\_t@{to\_string8\_t}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{to\_string8\_t()}{to\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string8\+\_\+t psl\+::to\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{const psl\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+converts a U\+T\+F-\/16 string into a U\+T\+F-\/8 string.
+
+converts a psl\+::string into a U\+T\+F-\/8 string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string8\+\_\+t based on the input psl\+::string. 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a019de0ebbc90532b32c44e30add99a2a}\label{namespacepsl_a019de0ebbc90532b32c44e30add99a2a}} 
+\index{psl@{psl}!from\_string8\_t@{from\_string8\_t}}
+\index{from\_string8\_t@{from\_string8\_t}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{from\_string8\_t()}{from\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string psl\+::from\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{const psl\+::string8\+\_\+t \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+converts a U\+T\+F-\/8 string into a psl\+::string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string based on the input U\+T\+F-\/8 string. 
+\end{DoxyReturn}
+
+
+Definition at line 234 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a19f76888880944ed7fd7db56bf4a6109}\label{namespacepsl_a19f76888880944ed7fd7db56bf4a6109}} 
+\index{psl@{psl}!to\_string8\_t@{to\_string8\_t}}
+\index{to\_string8\_t@{to\_string8\_t}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{to\_string8\_t()}{to\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::string8\+\_\+t psl\+::to\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{psl\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+converts a psl\+::string into a U\+T\+F-\/8 string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string8\+\_\+t based on the input psl\+::string. 
+\end{DoxyReturn}
+
+
+Definition at line 242 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a7137b4dab41015dd4af435065379012c}\label{namespacepsl_a7137b4dab41015dd4af435065379012c}} 
+\index{psl@{psl}!from\_string8\_t@{from\_string8\_t}}
+\index{from\_string8\_t@{from\_string8\_t}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{from\_string8\_t()}{from\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::string psl\+::from\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+converts a U\+T\+F-\/8 string into a U\+T\+F-\/16 string.
+
+converts a U\+T\+F-\/8 string into a psl\+::string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string based on the input U\+T\+F-\/8 string. 
+\end{DoxyReturn}
+
+
+Definition at line 250 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a8c98b3a31f15573fae6753b637a2a841}\label{namespacepsl_a8c98b3a31f15573fae6753b637a2a841}} 
+\index{psl@{psl}!to\_pstring@{to\_pstring}}
+\index{to\_pstring@{to\_pstring}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{to\_pstring()}{to\_pstring()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::pstring\+\_\+t psl\+::to\+\_\+pstring (\begin{DoxyParamCaption}\item[{const psl\+::string8\+\_\+t \&}]{s }\end{DoxyParamCaption})}
+
+converts a psl\+::string int a psl\+::pstring
+
+converts a psl\+::string8\+\_\+t into a psl\+::pstring, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::pstring\+\_\+t based on the input psl\+::string.
+\end{DoxyReturn}
+converts a psl\+::string into a psl\+::pstring, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::wstring based on the input psl\+::string. 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file ustring.\+cpp.
+
+\mbox{\Hypertarget{namespacepsl_ae4deaa7d8c1c2b103868fb760b7fe58a}\label{namespacepsl_ae4deaa7d8c1c2b103868fb760b7fe58a}} 
+\index{psl@{psl}!to\_pstring@{to\_pstring}}
+\index{to\_pstring@{to\_pstring}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{to\_pstring()}{to\_pstring()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::pstring\+\_\+t psl\+::to\+\_\+pstring (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{s }\end{DoxyParamCaption})}
+
+converts a psl\+::string into a psl\+::pstring, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::pstring\+\_\+t based on the input psl\+::string.
+\end{DoxyReturn}
+converts a psl\+::string into a psl\+::pstring, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::wstring based on the input psl\+::string. 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file ustring.\+cpp.
+
+\mbox{\Hypertarget{namespacepsl_a10efb94352f82e168cb2cc09959677e0}\label{namespacepsl_a10efb94352f82e168cb2cc09959677e0}} 
+\index{psl@{psl}!memset@{memset}}
+\index{memset@{memset}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{memset()}{memset()}}
+{\footnotesize\ttfamily void$\ast$ psl\+::memset (\begin{DoxyParamCaption}\item[{char\+\_\+t $\ast$}]{\+\_\+\+Dst,  }\item[{char\+\_\+t}]{\+\_\+\+Val,  }\item[{size\+\_\+t}]{\+\_\+\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Dst} & destination location of what to memset \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Val} & the value to set the \+\_\+\+Dst to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Size} & how many times this should be repeated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the location on success, or a nullptr on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 323 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_ae2a1f3b5b2742103ae14ee4749575244}\label{namespacepsl_ae2a1f3b5b2742103ae14ee4749575244}} 
+\index{psl@{psl}!popen@{popen}}
+\index{popen@{popen}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{popen()}{popen()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ psl\+::popen (\begin{DoxyParamCaption}\item[{const char\+\_\+t $\ast$}]{\+\_\+\+Command,  }\item[{const char\+\_\+t $\ast$}]{\+\_\+\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Command} & the command to execute. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Mode} & mode of the returned stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a F\+I\+L\+E$\ast$ handle on success. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method is platform specific, please review the internals before calling so that it satisfies the requirements of the platform you call it on. 
+\end{DoxyWarning}
+
+
+Definition at line 346 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_aae1bd582f97a95dcd6f584735673c861}\label{namespacepsl_aae1bd582f97a95dcd6f584735673c861}} 
+\index{psl@{psl}!pclose@{pclose}}
+\index{pclose@{pclose}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{pclose()}{pclose()}}
+{\footnotesize\ttfamily int psl\+::pclose (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{\+\_\+\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Stream} & the F\+I\+L\+E$\ast$ handle you wish to close. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a platform specific success code depending on what happened. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method is platform specific, please review the internals before calling so that it satisfies the requirements of the platform you call it on. 
+\end{DoxyWarning}
+
+
+Definition at line 368 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a36d8b9a383105782bcf704612d22036e}\label{namespacepsl_a36d8b9a383105782bcf704612d22036e}} 
+\index{psl@{psl}!memcpy\_s@{memcpy\_s}}
+\index{memcpy\_s@{memcpy\_s}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{memcpy\_s()}{memcpy\_s()}}
+{\footnotesize\ttfamily char\+\_\+t$\ast$ psl\+::memcpy\+\_\+s (\begin{DoxyParamCaption}\item[{char\+\_\+t $\ast$const}]{\+\_\+\+Destination,  }\item[{char\+\_\+t const $\ast$const}]{\+\_\+\+Source,  }\item[{size\+\_\+t const}]{\+\_\+\+Source\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Destination} & the destination to memcpy to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Source} & the source to memcpy from. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Source\+Size} & the amount of bytes to copy from the source. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 382 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a17d45a429d784672ddf15bceca3b9229}\label{namespacepsl_a17d45a429d784672ddf15bceca3b9229}} 
+\index{psl@{psl}!strlen@{strlen}}
+\index{strlen@{strlen}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily size\+\_\+t psl\+::strlen (\begin{DoxyParamCaption}\item[{const char\+\_\+t $\ast$}]{\+\_\+\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Str} & the target string to count. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this method works on the \char`\"{}platforms expectations\char`\"{} of the string, not the actual U\+TF encoding. 
+\end{DoxyNote}
+
+
+Definition at line 398 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a97a39a66497550d0ec9403540784a38e}\label{namespacepsl_a97a39a66497550d0ec9403540784a38e}} 
+\index{psl@{psl}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{fprintf()}{fprintf()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void psl\+::fprintf (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$const}]{\+\_\+\+Stream,  }\item[{char\+\_\+t const $\ast$}]{\+\_\+\+Format,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Stream} & pointer to a F\+I\+LE object that identifies an output stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Format} & text you wish to write to the stream, with optional formatting instructions. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & stream of variables you wish to send to forward to fprintf, the behaviour is unchanged. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 415 of file ustring.\+hpp.
+
+\mbox{\Hypertarget{namespacepsl_a81f2ba09a1584614ebcb512e4d509687}\label{namespacepsl_a81f2ba09a1584614ebcb512e4d509687}} 
+\index{psl@{psl}!printf@{printf}}
+\index{printf@{printf}!psl@{psl}}
+\doxysubsubsection{\texorpdfstring{printf()}{printf()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void psl\+::printf (\begin{DoxyParamCaption}\item[{char\+\_\+t const $\ast$}]{\+\_\+\+Format,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+Format} & text you wish to write to the stream, with optional formatting instructions. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & stream of variables you wish to send to forward to fprintf, the behaviour is unchanged. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 431 of file ustring.\+hpp.
+

@@ -1,0 +1,186 @@
+\hypertarget{classcore_1_1data_1_1geometry__t}{}\doxysection{core\+::data\+::geometry\+\_\+t Class Reference}
+\label{classcore_1_1data_1_1geometry__t}\index{core::data::geometry\_t@{core::data::geometry\_t}}
+
+
+describes a stream of data that will be uploaded to the G\+PU as geometry data.  
+
+
+
+
+{\ttfamily \#include $<$geometry.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcore_1_1data_1_1geometry__t_1_1constants}{constants}}
+\begin{DoxyCompactList}\small\item\em contains globally pre-\/defined keys for common streams that most engines have. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_ab20e0ffce44f41f7254446f5b707da6a}\label{classcore_1_1data_1_1geometry__t_ab20e0ffce44f41f7254446f5b707da6a}} 
+using {\bfseries index\+\_\+size\+\_\+t} = uint32\+\_\+t
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a0aea2d2d677cf3a11fbea34e622a97b6}\label{classcore_1_1data_1_1geometry__t_a0aea2d2d677cf3a11fbea34e622a97b6}} 
+using {\bfseries bone\+\_\+t} = psl\+::mat4x4
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a48d5f60442b04a3aea4545ae4e8ccc37}\label{classcore_1_1data_1_1geometry__t_a48d5f60442b04a3aea4545ae4e8ccc37}} 
+{\bfseries geometry\+\_\+t} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_ad77311d6bc1e61a7ec6f383bad3b4374}\label{classcore_1_1data_1_1geometry__t_ad77311d6bc1e61a7ec6f383bad3b4374}} 
+{\bfseries geometry\+\_\+t} (const \mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_af08dc875bc04595a6687b59f53651c01}\label{classcore_1_1data_1_1geometry__t_af08dc875bc04595a6687b59f53651c01}} 
+{\bfseries geometry\+\_\+t} (\mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a99e17a91e32ff7ab5ec50575d7c30887}\label{classcore_1_1data_1_1geometry__t_a99e17a91e32ff7ab5ec50575d7c30887}} 
+\mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a17bc8007c263c083a8833e639be8ec53}\label{classcore_1_1data_1_1geometry__t_a17bc8007c263c083a8833e639be8ec53}} 
+\mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1geometry__t}{geometry\+\_\+t}} \&\&)=delete
+\item 
+std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ const \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} $>$ $>$ \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_aac22e920c0acae59008e2d531e728863}{vertices}} (const psl\+::string\+\_\+view name=\mbox{\hyperlink{structcore_1_1data_1_1geometry__t_1_1constants_a5385d72e7cd1e7f01f1d8124d0a48ed1}{constants\+::\+P\+O\+S\+I\+T\+I\+ON}}) const
+\begin{DoxyCompactList}\small\item\em returns the stream reference (if any found) for the given key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_a8507837aad4c23991daf5d565cf20029}{vertices}} (const psl\+::string\+\_\+view name, const \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} \&\mbox{\hyperlink{classcore_1_1stream}{stream}})
+\begin{DoxyCompactList}\small\item\em sets the stream data for the given key. If data was already present, then it gets replaced. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_af9539fefdcfe565477b7a254e3041eff}\label{classcore_1_1data_1_1geometry__t_af9539fefdcfe565477b7a254e3041eff}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries vertices} (const psl\+::string\+\_\+view name, psl\+::array$<$ T $>$ \mbox{\hyperlink{classcore_1_1stream}{stream}})
+\item 
+const std\+::vector$<$ index\+\_\+size\+\_\+t $>$ \& \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_a681dd32c5d822cc865d9a95bd0c5f1b1}{indices}} () const
+\begin{DoxyCompactList}\small\item\em gets all indices that are currently assigned to this model data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_aca8d8be2731f5da1422a5cda3a48d40a}{indices}} (psl\+::array\+\_\+view$<$ index\+\_\+size\+\_\+t $>$ indices)
+\begin{DoxyCompactList}\small\item\em sets the indices. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ psl\+::string, \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} $>$ \& \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_aff9072507331956c9a9a81c50f8b3105}{vertex\+\_\+streams}} () const
+\begin{DoxyCompactList}\small\item\em returns all the streams of data and their keys. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_a2f811ccdf09796bc502418f2490fc0a1}{is\+\_\+valid}} () const noexcept
+\begin{DoxyCompactList}\small\item\em helper method to check for validity of the model data in its current state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_ab27f0a75fa05b0618f01b1d06fbed86a}\label{classcore_1_1data_1_1geometry__t_ab27f0a75fa05b0618f01b1d06fbed86a}} 
+index\+\_\+size\+\_\+t {\bfseries vertex\+\_\+count} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a69a2c0fb0c5e1292de5cecde5150454f}\label{classcore_1_1data_1_1geometry__t_a69a2c0fb0c5e1292de5cecde5150454f}} 
+index\+\_\+size\+\_\+t {\bfseries index\+\_\+count} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_ae61f8605d6725895def234d72da4fbfa}\label{classcore_1_1data_1_1geometry__t_ae61f8605d6725895def234d72da4fbfa}} 
+index\+\_\+size\+\_\+t {\bfseries triangles} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a2ed2d933847287cf2f7e2036d4557e8a}\label{classcore_1_1data_1_1geometry__t_a2ed2d933847287cf2f7e2036d4557e8a}} 
+size\+\_\+t {\bfseries bytesize} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a05fdeb3807054af0f990fe4a4acb910a}\label{classcore_1_1data_1_1geometry__t_a05fdeb3807054af0f990fe4a4acb910a}} 
+size\+\_\+t {\bfseries elements} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a602e5f44fc04934a9bf9d714cb069238}\label{classcore_1_1data_1_1geometry__t_a602e5f44fc04934a9bf9d714cb069238}} 
+bool \mbox{\hyperlink{classcore_1_1data_1_1geometry__t_a602e5f44fc04934a9bf9d714cb069238}{erase}} (psl\+::string\+\_\+view name) noexcept
+\begin{DoxyCompactList}\small\item\em erases the given stream if found \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a66791c44e6d8069529b260598f24cae0}\label{classcore_1_1data_1_1geometry__t_a66791c44e6d8069529b260598f24cae0}} 
+{\footnotesize template$<$typename F $>$ }\\bool {\bfseries transform} (psl\+::string\+\_\+view name, F \&\&transformation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1geometry__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unlike most engines, geometry data in paradigm is considered a collection of undescribed data, that has been keyed. There are some globally accepted keys defined for convenience at the \mbox{\hyperlink{structcore_1_1data_1_1geometry__t_1_1constants}{core\+::data\+::geometry\+\_\+t\+::constants}} namespace. Only 2 streams are mandatory (\mbox{\hyperlink{structcore_1_1data_1_1geometry__t_1_1constants_a5385d72e7cd1e7f01f1d8124d0a48ed1}{core\+::data\+::geometry\+\_\+t\+::constants\+::\+P\+O\+S\+I\+T\+I\+ON}} and the indices stream), if those are not present, the data is considered invalid. All streams (except the index buffer stream) should have equally as many entries as the position buffer stream has. The index buffer stream should not reffer to positions larger than the size of the position buffer stream. \begin{DoxyNote}{Note}
+these data streams can be anything, as long as atleast a position buffer and a index buffer is present. It\textquotesingle{}s up to you to make sure your geometry object has all the required streams to correctly bind it to a \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}}. 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]write an example of a custom stream. 
+
+support numbered streams (i.\+e. U\+V0, U\+V1, etc..). \end{DoxyRefDesc}
+
+
+Definition at line 46 of file geometry.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_aac22e920c0acae59008e2d531e728863}\label{classcore_1_1data_1_1geometry__t_aac22e920c0acae59008e2d531e728863}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!vertices@{vertices}}
+\index{vertices@{vertices}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{vertices()}{vertices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ const \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} $>$ $>$ geometry\+\_\+t\+::vertices (\begin{DoxyParamCaption}\item[{const psl\+::string\+\_\+view}]{name = {\ttfamily \mbox{\hyperlink{structcore_1_1data_1_1geometry__t_1_1constants_a5385d72e7cd1e7f01f1d8124d0a48ed1}{constants\+::\+P\+O\+S\+I\+T\+I\+ON}}} }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the stream reference (if any found) for the given key. 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file geometry.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a8507837aad4c23991daf5d565cf20029}\label{classcore_1_1data_1_1geometry__t_a8507837aad4c23991daf5d565cf20029}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!vertices@{vertices}}
+\index{vertices@{vertices}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{vertices()}{vertices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void geometry\+\_\+t\+::vertices (\begin{DoxyParamCaption}\item[{const psl\+::string\+\_\+view}]{name,  }\item[{const \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} \&}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+be sure that the stream has the correct amount of vertices as is expected by the index buffer. As you might be replacing/resizing the internal model data, we cannot error check this condition for you here. 
+\end{DoxyWarning}
+
+
+Definition at line 24 of file geometry.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a681dd32c5d822cc865d9a95bd0c5f1b1}\label{classcore_1_1data_1_1geometry__t_a681dd32c5d822cc865d9a95bd0c5f1b1}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!indices@{indices}}
+\index{indices@{indices}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{indices()}{indices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ geometry\+\_\+t\+::index\+\_\+size\+\_\+t $>$ \& geometry\+\_\+t\+::indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+all indices that are currently assigned to this model data. 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file geometry.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_aca8d8be2731f5da1422a5cda3a48d40a}\label{classcore_1_1data_1_1geometry__t_aca8d8be2731f5da1422a5cda3a48d40a}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!indices@{indices}}
+\index{indices@{indices}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{indices()}{indices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void geometry\+\_\+t\+::indices (\begin{DoxyParamCaption}\item[{psl\+::array\+\_\+view$<$ index\+\_\+size\+\_\+t $>$}]{indices }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+be sure to check that the indices do not reffer to out of index locations in the position buffer. Seeing you might be replacing/resizing the model data, we cannot error check this condition for you here. 
+\end{DoxyWarning}
+
+
+Definition at line 29 of file geometry.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_aff9072507331956c9a9a81c50f8b3105}\label{classcore_1_1data_1_1geometry__t_aff9072507331956c9a9a81c50f8b3105}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!vertex\_streams@{vertex\_streams}}
+\index{vertex\_streams@{vertex\_streams}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{vertex\_streams()}{vertex\_streams()}}
+{\footnotesize\ttfamily const std\+::unordered\+\_\+map$<$ psl\+::string, \mbox{\hyperlink{classcore_1_1stream}{core\+::stream}} $>$ \& geometry\+\_\+t\+::vertex\+\_\+streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+all the streams of data and their keys. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file geometry.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1geometry__t_a2f811ccdf09796bc502418f2490fc0a1}\label{classcore_1_1data_1_1geometry__t_a2f811ccdf09796bc502418f2490fc0a1}} 
+\index{core::data::geometry\_t@{core::data::geometry\_t}!is\_valid@{is\_valid}}
+\index{is\_valid@{is\_valid}!core::data::geometry\_t@{core::data::geometry\_t}}
+\doxysubsubsection{\texorpdfstring{is\_valid()}{is\_valid()}}
+{\footnotesize\ttfamily bool geometry\+\_\+t\+::is\+\_\+valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+true if the data passes all checks. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file geometry.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/geometry.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/geometry.\+cpp\end{DoxyCompactItemize}

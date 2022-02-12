@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcommon_1_1event_3_01void_01_4" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>common::event&lt; void &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">common::event_listener_t&lt; void &gt;</basecompoundref>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommon_1_1event_3_01void_01_4_1a9bce19766bb6189e374e2c206a63b708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>event_listener_t &amp;</type>
+        <definition>event_listener_t&amp; common::event&lt; void &gt;::Listener</definition>
+        <argsstring>()</argsstring>
+        <name>Listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="349" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="349" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommon_1_1event_3_01void_01_4_1a9b3dd8a4f2ede18da97fba112e095a16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void common::event&lt; void &gt;::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="351" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="351" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classcommon_1_1event_3_01void_01_4_1a90d6d8c0d3dd73af95888ad6abccd953" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void common::event&lt; void &gt;::Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="360" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="360" bodyend="360"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="347" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="346" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classcommon_1_1event__listener__t_1a7bc603b6b956d75a050b2ac17c6d4a15" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>event_listener_t</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a5d50ea8bb0a7000a73b94cb5a3892a57" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>event_listener_t</name></member>
+      <member refid="classcommon_1_1event__listener__t_1aaf2b00adf89727c8be929576f05b1ca6" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>event_listener_t</name></member>
+      <member refid="classcommon_1_1event_3_01void_01_4_1a90d6d8c0d3dd73af95888ad6abccd953" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Execute</name></member>
+      <member refid="classcommon_1_1event_3_01void_01_4_1a9bce19766bb6189e374e2c206a63b708" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Listener</name></member>
+      <member refid="classcommon_1_1event__listener__t_1aa8f0ad921a29259822804c11bf6f95b1" prot="protected" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>m_Listeners</name></member>
+      <member refid="classcommon_1_1event_3_01void_01_4_1a9b3dd8a4f2ede18da97fba112e095a16" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator()</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a469fa43d0a12f145a752466b75ad6ef1" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator+=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a9e03c7b90ee5289a1d861f7749b861db" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator+=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1af7fea3c3e9d47aa9bed824db80d30167" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator-=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1adb66fc29687a7525667ef35db2030023" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator-=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a375ff2eeb3823e1efee28fb36137981b" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1af1d97831c626559dd80aadf9326a2347" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>operator=</name></member>
+      <member refid="classcommon_1_1event__listener__t_1ae1c21b6ecdbd9dd407d53be446f75210" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Subscribe</name></member>
+      <member refid="classcommon_1_1event__listener__t_1ab10ba4c1579e8f3dea843607b84a7d7e" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Subscribe</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a1f1f9906e5b4660b1257aa1f7bd9d346" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Unsubscribe</name></member>
+      <member refid="classcommon_1_1event__listener__t_1a06118ffec916d0010553ca6b6708994e" prot="public" virt="non-virtual"><scope>common::event&lt; void &gt;</scope><name>Unsubscribe</name></member>
+      <member refid="classcommon_1_1event__listener__t_1ac4ad31671f8b0def603f5b987542c93a" prot="public" virt="virtual"><scope>common::event&lt; void &gt;</scope><name>~event_listener_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

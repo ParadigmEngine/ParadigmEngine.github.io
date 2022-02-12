@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1converter_3_01float_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::converter&lt; float &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1converter_3_01float_01_4_1a91c218e0f9ea711b2fadd39eecc0dc30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>static psl::string8_t utility::converter&lt; float &gt;::to_string</definition>
+        <argsstring>(const float &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="904" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="904" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01float_01_4_1a56482d0f43aa0c5f0caad3e48e027707" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float utility::converter&lt; float &gt;::from_string</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="906" column="14" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="906" bodyend="906"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="903" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="902" bodyend="907"/>
+    <listofallmembers>
+      <member refid="structutility_1_1converter_3_01float_01_4_1a56482d0f43aa0c5f0caad3e48e027707" prot="public" virt="non-virtual"><scope>utility::converter&lt; float &gt;</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_3_01float_01_4_1a91c218e0f9ea711b2fadd39eecc0dc30" prot="public" virt="non-virtual"><scope>utility::converter&lt; float &gt;</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

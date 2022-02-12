@@ -1,0 +1,128 @@
+\hypertarget{classcore_1_1ivk_1_1drawpass}{}\doxysection{core\+::ivk\+::drawpass Class Reference}
+\label{classcore_1_1ivk_1_1drawpass}\index{core::ivk::drawpass@{core::ivk::drawpass}}
+
+
+a pass describes a start-\/to-\/finish sequence of commands to render into a set of rendertargets.  
+
+
+
+
+{\ttfamily \#include $<$drawpass.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a0162a577587b0359a36a62cdf1d677e2}{drawpass}} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}}, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$ framebuffer)
+\begin{DoxyCompactList}\small\item\em creates a pass that targets a framebuffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a5ae41fa34c68a93a3f79b4539b3363c1}{drawpass}} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}}, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{swapchain}})
+\begin{DoxyCompactList}\small\item\em creates a pass that targets a swapchain image set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a9e71989765d83f3703a1ac081b9d89ea}\label{classcore_1_1ivk_1_1drawpass_a9e71989765d83f3703a1ac081b9d89ea}} 
+{\bfseries drawpass} (const \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_aa9ad6f2c5f28e6849714f0b066184a57}\label{classcore_1_1ivk_1_1drawpass_aa9ad6f2c5f28e6849714f0b066184a57}} 
+{\bfseries drawpass} (\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_aa85be7438bff8a7d194584896d88f936}\label{classcore_1_1ivk_1_1drawpass_aa85be7438bff8a7d194584896d88f936}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_acfec0311198cf461b7871ea86ccc6e1b}\label{classcore_1_1ivk_1_1drawpass_acfec0311198cf461b7871ea86ccc6e1b}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_af24327f51d0ba22225756feaf05729ec}\label{classcore_1_1ivk_1_1drawpass_af24327f51d0ba22225756feaf05729ec}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_af24327f51d0ba22225756feaf05729ec}{prepare}} ()
+\begin{DoxyCompactList}\small\item\em prepares the pass for presenting (i.\+e. it does some basic housekeeping such as fetching the swapchain image if any) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a822cdd0001a0326b016699443e0e3094}\label{classcore_1_1ivk_1_1drawpass_a822cdd0001a0326b016699443e0e3094}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a822cdd0001a0326b016699443e0e3094}{present}} ()
+\begin{DoxyCompactList}\small\item\em submits the recorded instructions to the G\+PU, handling the dependencies accordingly. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a4e0902e29cee9b762e7d0a0201e63db9}\label{classcore_1_1ivk_1_1drawpass_a4e0902e29cee9b762e7d0a0201e63db9}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a4e0902e29cee9b762e7d0a0201e63db9}{bias}} (const core\+::ivk\+::depth\+\_\+bias \&bias) noexcept
+\begin{DoxyCompactList}\small\item\em set the depth bias on the current pass. \end{DoxyCompactList}\item 
+core\+::ivk\+::depth\+\_\+bias \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_abab6faca284428e11c43881e3c5aa7db}{bias}} () const noexcept
+\begin{DoxyCompactList}\small\item\em returns the current dept bias on this instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a2de0c68dc0d628ba953df461ce82212e}{build}} ()
+\begin{DoxyCompactList}\small\item\em build, and records the draw, and other instructions associated with this pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a3b8b2cb9d0af90956d0858df19d1cff8}\label{classcore_1_1ivk_1_1drawpass_a3b8b2cb9d0af90956d0858df19d1cff8}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a3b8b2cb9d0af90956d0858df19d1cff8}{add}} (\mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{core\+::gfx\+::drawgroup}} \&group) noexcept
+\begin{DoxyCompactList}\small\item\em add an additional drawgroup to be included in this pass\textquotesingle{} draw instructions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a852d928f47ec70451e4149305e333ea1}\label{classcore_1_1ivk_1_1drawpass_a852d928f47ec70451e4149305e333ea1}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a852d928f47ec70451e4149305e333ea1}{connect}} (\mbox{\hyperlink{classpsl_1_1view__ptr}{psl\+::view\+\_\+ptr}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} $>$ pass) noexcept
+\begin{DoxyCompactList}\small\item\em makes the current pass wait for the given pass to complete \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_ad73faa9d83d6f177ca949e88c39f3ba2}\label{classcore_1_1ivk_1_1drawpass_ad73faa9d83d6f177ca949e88c39f3ba2}} 
+void {\bfseries disconnect} (\mbox{\hyperlink{classpsl_1_1view__ptr}{psl\+::view\+\_\+ptr}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass}{drawpass}} $>$ pass) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a4a0893120bd8e8a1aa0ed6e70af45fc9}\label{classcore_1_1ivk_1_1drawpass_a4a0893120bd8e8a1aa0ed6e70af45fc9}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_a4a0893120bd8e8a1aa0ed6e70af45fc9}{remove}} (const \mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{core\+::gfx\+::drawgroup}} \&group) noexcept
+\begin{DoxyCompactList}\small\item\em removes an existing drawgroup from this pass\textquotesingle{} draw instructions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_af7f3bd2d59b42491093dd66324d497d0}\label{classcore_1_1ivk_1_1drawpass_af7f3bd2d59b42491093dd66324d497d0}} 
+void \mbox{\hyperlink{classcore_1_1ivk_1_1drawpass_af7f3bd2d59b42491093dd66324d497d0}{clear}} () noexcept
+\begin{DoxyCompactList}\small\item\em removes all drawgroups from this pass\textquotesingle{} draw instructions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a355ea2764b4086e3582835631a98dfd0}\label{classcore_1_1ivk_1_1drawpass_a355ea2764b4086e3582835631a98dfd0}} 
+bool {\bfseries is\+\_\+swapchain} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A pass is a collection of drawcalls, grouped into sets of drawgroups, and a target framebuffer or swapchain. This describes a full pipeline (synced) to get something into a set of rendertargets and to either use it in subsequent passes, or present it to a core\+::gfx\+::surface. Passes also make sure that they don\textquotesingle{}t create race conditions with other passes that have been assigned as its dependencies. 
+
+Definition at line 46 of file drawpass.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a0162a577587b0359a36a62cdf1d677e2}\label{classcore_1_1ivk_1_1drawpass_a0162a577587b0359a36a62cdf1d677e2}} 
+\index{core::ivk::drawpass@{core::ivk::drawpass}!drawpass@{drawpass}}
+\index{drawpass@{drawpass}!core::ivk::drawpass@{core::ivk::drawpass}}
+\doxysubsubsection{\texorpdfstring{drawpass()}{drawpass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily core\+::ivk\+::drawpass\+::drawpass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$}]{framebuffer }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em context} & the valid and loaded context to bind this pass to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em framebuffer} & the valid and loaded framebuffer that this pass will output to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a5ae41fa34c68a93a3f79b4539b3363c1}\label{classcore_1_1ivk_1_1drawpass_a5ae41fa34c68a93a3f79b4539b3363c1}} 
+\index{core::ivk::drawpass@{core::ivk::drawpass}!drawpass@{drawpass}}
+\index{drawpass@{drawpass}!core::ivk::drawpass@{core::ivk::drawpass}}
+\doxysubsubsection{\texorpdfstring{drawpass()}{drawpass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily core\+::ivk\+::drawpass\+::drawpass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$}]{swapchain }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em context} & the valid and loaded context to bind this pass to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em swapchain} & the valid and loaded swapchain that this pass will output to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_abab6faca284428e11c43881e3c5aa7db}\label{classcore_1_1ivk_1_1drawpass_abab6faca284428e11c43881e3c5aa7db}} 
+\index{core::ivk::drawpass@{core::ivk::drawpass}!bias@{bias}}
+\index{bias@{bias}!core::ivk::drawpass@{core::ivk::drawpass}}
+\doxysubsubsection{\texorpdfstring{bias()}{bias()}}
+{\footnotesize\ttfamily core\+::ivk\+::depth\+\_\+bias core\+::ivk\+::drawpass\+::bias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the current dept bias on this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1drawpass_a2de0c68dc0d628ba953df461ce82212e}\label{classcore_1_1ivk_1_1drawpass_a2de0c68dc0d628ba953df461ce82212e}} 
+\index{core::ivk::drawpass@{core::ivk::drawpass}!build@{build}}
+\index{build@{build}!core::ivk::drawpass@{core::ivk::drawpass}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily bool drawpass\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true on success, false if submitting the instructions to the G\+PU failed. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file drawpass.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.\+cpp\end{DoxyCompactItemize}

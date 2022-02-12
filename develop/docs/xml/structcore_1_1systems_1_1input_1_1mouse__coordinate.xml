@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1systems_1_1input_1_1mouse__coordinate" kind="struct" language="C++" prot="public">
+    <compoundname>core::systems::input::mouse_coordinate</compoundname>
+    <includes refid="input_8hpp" local="no">input.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1systems_1_1input_1_1mouse__coordinate_1a40137d6f8955998240678cd21410d9e5" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::systems::input::mouse_coordinate::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="46" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1systems_1_1input_1_1mouse__coordinate_1accbc2fd691c32656a84f8fd92bc12541" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t core::systems::input::mouse_coordinate::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="47" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1systems_1_1input_1_1mouse__coordinate_1acc0c664a1b3c85231af861865aa59176" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t core::systems::input::mouse_coordinate::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="48" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1systems_1_1input_1_1mouse__coordinate_1a713acd9e65d4954a22d1454190252abd" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t core::systems::input::mouse_coordinate::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="49" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>absolute mouse coordinates that also contain the surface width/height. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="45" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="44" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structcore_1_1systems_1_1input_1_1mouse__coordinate_1a713acd9e65d4954a22d1454190252abd" prot="public" virt="non-virtual"><scope>core::systems::input::mouse_coordinate</scope><name>height</name></member>
+      <member refid="structcore_1_1systems_1_1input_1_1mouse__coordinate_1acc0c664a1b3c85231af861865aa59176" prot="public" virt="non-virtual"><scope>core::systems::input::mouse_coordinate</scope><name>width</name></member>
+      <member refid="structcore_1_1systems_1_1input_1_1mouse__coordinate_1a40137d6f8955998240678cd21410d9e5" prot="public" virt="non-virtual"><scope>core::systems::input::mouse_coordinate</scope><name>x</name></member>
+      <member refid="structcore_1_1systems_1_1input_1_1mouse__coordinate_1accbc2fd691c32656a84f8fd92bc12541" prot="public" virt="non-virtual"><scope>core::systems::input::mouse_coordinate</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

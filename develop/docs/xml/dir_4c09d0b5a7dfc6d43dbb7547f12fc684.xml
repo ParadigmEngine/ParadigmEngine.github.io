@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_4c09d0b5a7dfc6d43dbb7547f12fc684" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/src/ecs/details</compoundname>
+    <innerfile refid="component__info_8cpp">component_info.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/src/ecs/details/"/>
+  </compounddef>
+</doxygen>

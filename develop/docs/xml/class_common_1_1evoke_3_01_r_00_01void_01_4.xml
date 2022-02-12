@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_common_1_1evoke_3_01_r_00_01void_01_4" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Common::evoke&lt; R, void &gt;</compoundname>
+    <basecompoundref prot="public" virt="virtual">Common::evocableR&lt; R &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="virtual">Common::evocableT&lt; void &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a1e33408e6c289ee26ca7b7482e98d77d" prot="public" static="no">
+        <type>typename std::tuple&lt; void &gt;</type>
+        <definition>using Common::evoke&lt; R, void &gt;::tuple_type =  typename std::tuple&lt;void&gt;</definition>
+        <argsstring></argsstring>
+        <name>tuple_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="234" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1ac5c7a401d72daf70e67c62ab69877a82" prot="public" static="no">
+        <type>tuple_type</type>
+        <definition>using Common::evoke&lt; R, void &gt;::parameter_types =  tuple_type</definition>
+        <argsstring></argsstring>
+        <name>parameter_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="235" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7f0f01de35fd3660058090cec1f7c8fb" prot="public" static="no">
+        <type>R</type>
+        <definition>using Common::evoke&lt; R, void &gt;::return_type =  R</definition>
+        <argsstring></argsstring>
+        <name>return_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="236" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a57832560ec4c5bd7acf657d48decce38" prot="private" static="no" mutable="no">
+        <type>std::function&lt; R()&gt;</type>
+        <definition>std::function&lt;R()&gt; Common::evoke&lt; R, void &gt;::bind_</definition>
+        <argsstring></argsstring>
+        <name>bind_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="267" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1ae95a4bde7c2f14a930a77d306089c305" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Common::evoke&lt; R, void &gt;::evoke</definition>
+        <argsstring>(std::function&lt; R()&gt; &amp;&amp;f)</argsstring>
+        <name>evoke</name>
+        <param>
+          <type>std::function&lt; R()&gt; &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="238" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="238" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7deed34424adcbf6794a08f738fdd9a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Common::evoke&lt; R, void &gt;::~evoke</definition>
+        <argsstring>()</argsstring>
+        <name>~evoke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="239" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a364967cec885eedf5a2b302e22303da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>R Common::evoke&lt; R, void &gt;::operator()</definition>
+        <argsstring>() override</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="241" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1abac7d2e55e97b91a877945d656488752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Common::evoke&lt; R, void &gt;::evoke</definition>
+        <argsstring>(const evoke &amp;e)</argsstring>
+        <name>evoke</name>
+        <param>
+          <type>const evoke &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="242" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a1342271d3e2e981496cdca187ffa285e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Common::evoke&lt; R, void &gt;::evoke</definition>
+        <argsstring>(evoke &amp;&amp;e)</argsstring>
+        <name>evoke</name>
+        <param>
+          <type>evoke &amp;&amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="243" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="243" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7d4d0786a4bef423e4136e9a7cde9b84" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type>evoke &amp;</type>
+        <definition>evoke&amp; Common::evoke&lt; R, void &gt;::operator=</definition>
+        <argsstring>(const evoke &amp;e) &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const evoke &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="244" column="7" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="244" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1af6abe757fa22b3145f551e7f0bfe1d64" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type>evoke &amp;</type>
+        <definition>evoke&amp; Common::evoke&lt; R, void &gt;::operator=</definition>
+        <argsstring>(evoke &amp;&amp;e) &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>evoke &amp;&amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="252" column="7" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evoke_3_01_r_00_01void_01_4_1aea5ccf2a3df09e1ecaf96886aec33610" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::array&lt; std::pair&lt; std::uintptr_t, size_t &gt;, 0 &gt;</type>
+        <definition>std::array&lt;std::pair&lt;std::uintptr_t, size_t&gt;, 0&gt; Common::evoke&lt; R, void &gt;::_parameter_locations</definition>
+        <argsstring>() const</argsstring>
+        <name>_parameter_locations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="261" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="261" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="232" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="231" bodyend="268"/>
+    <listofallmembers>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1aea5ccf2a3df09e1ecaf96886aec33610" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>_parameter_locations</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a57832560ec4c5bd7acf657d48decce38" prot="private" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>bind_</name></member>
+      <member refid="class_common_1_1evocable_1ada069216a51826f97bb5ef92507c7dad" prot="protected" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evocable_1a154ed6811474b7c3982bc882da48e187" prot="protected" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evocable_1a41b2524e0a8a3288057c753b9923949b" prot="protected" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1ae95a4bde7c2f14a930a77d306089c305" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evoke</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1abac7d2e55e97b91a877945d656488752" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evoke</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a1342271d3e2e981496cdca187ffa285e" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>evoke</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a364967cec885eedf5a2b302e22303da2" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>operator()</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7d4d0786a4bef423e4136e9a7cde9b84" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1af6abe757fa22b3145f551e7f0bfe1d64" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evocable_1a0a4a17ca45151559c62a5f3602ee37c5" prot="protected" virt="non-virtual" ambiguityscope="Common::evocableR::"><scope>Common::evoke&lt; R, void &gt;</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evocable_1a0dc2e9351a755330c9db9b0499571a1e" prot="protected" virt="non-virtual" ambiguityscope="Common::evocableR::"><scope>Common::evoke&lt; R, void &gt;</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1ac5c7a401d72daf70e67c62ab69877a82" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>parameter_types</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7f0f01de35fd3660058090cec1f7c8fb" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>return_type</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a1e33408e6c289ee26ca7b7482e98d77d" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>tuple_type</name></member>
+      <member refid="class_common_1_1evocable_1a32c4a260e7d10d11feea4224df331e8d" prot="public" virt="virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>~evocable</name></member>
+      <member refid="class_common_1_1evocable_r_1a14c3e0a56973c20b373f0e5597d91ae8" prot="public" virt="virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>~evocableR</name></member>
+      <member refid="class_common_1_1evocable_t_1af1216a92d78f985d5773e44e24e52f54" prot="public" virt="virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>~evocableT</name></member>
+      <member refid="class_common_1_1evoke_3_01_r_00_01void_01_4_1a7deed34424adcbf6794a08f738fdd9a0" prot="public" virt="non-virtual"><scope>Common::evoke&lt; R, void &gt;</scope><name>~evoke</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

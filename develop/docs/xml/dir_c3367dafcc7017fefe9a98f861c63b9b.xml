@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c3367dafcc7017fefe9a98f861c63b9b" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/collections</compoundname>
+    <innerdir refid="dir_104893bfb4b0f47ddf451624d3f8a2bd">/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc</innerdir>
+    <innerfile refid="ring__array_8hpp">ring_array.hpp</innerfile>
+    <innerfile refid="spmc_8hpp">spmc.hpp</innerfile>
+    <innerfile refid="static__ring__array_8hpp">static_ring_array.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/"/>
+  </compounddef>
+</doxygen>

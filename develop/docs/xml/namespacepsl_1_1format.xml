@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1format" kind="namespace" language="C++">
+    <compoundname>psl::format</compoundname>
+    <innerclass refid="structpsl_1_1format_1_1container" prot="public">psl::format::container</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1data" prot="public">psl::format::data</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1duplicate__node" prot="public">psl::format::duplicate_node</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1handle" prot="public">psl::format::handle</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1max__depth__reached" prot="public">psl::format::max_depth_reached</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1max__nodes__reached" prot="public">psl::format::max_nodes_reached</innerclass>
+    <innerclass refid="classpsl_1_1format_1_1node" prot="public">psl::format::node</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1node__not__found" prot="public">psl::format::node_not_found</innerclass>
+    <innerclass refid="classpsl_1_1format_1_1parser" prot="public">psl::format::parser</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1partial__view" prot="public">psl::format::partial_view</innerclass>
+    <innerclass refid="structpsl_1_1format_1_1settings" prot="public">psl::format::settings</innerclass>
+    <innerclass refid="classpsl_1_1format_1_1validator" prot="public">psl::format::validator</innerclass>
+    <innernamespace refid="namespacepsl_1_1format_1_1constants">psl::format::constants</innernamespace>
+    <innernamespace refid="namespacepsl_1_1format_1_1details">psl::format::details</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>type_t</name>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9a57a0e323fc5b066538cf67fdaa367aa8" prot="public">
+          <name>MALFORMED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9aecc2e9c313faddb07e7da223c1dc5c3f" prot="public">
+          <name>VALUE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9ad123b368593581dd290414eb608f1c9d" prot="public">
+          <name>VALUE_RANGE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9adcd320d017d7f3c317bc8b234287bc9f" prot="public">
+          <name>REFERENCE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9a23d65da7266d2151b4a129e3e804c920" prot="public">
+          <name>REFERENCE_RANGE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format_8hpp_1aea8095c6f16b4fec122891b1075053f9a872de0fe16584b2236bbd28a09cdc87c" prot="public">
+          <name>COLLECTION</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="65" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="64" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="format2_8hpp_1a94a1ee48777e72dfa63a60a567c77759" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>response</name>
+        <enumvalue id="format2_8hpp_1a94a1ee48777e72dfa63a60a567c77759a40908e0f79c647b844c42f5babdc3feb" prot="public">
+          <name>ALLOW</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a94a1ee48777e72dfa63a60a567c77759a32bd8a1db2275458673903bdb84cb277" prot="public">
+          <name>WARN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a94a1ee48777e72dfa63a60a567c77759abb1ca97ec761fc37101737ba0aa2e7c5" prot="public">
+          <name>ERROR</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="58" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="format2_8hpp_1a76f89f4a3119de6e83bc31ae538d18b7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>inheritance_mode</name>
+        <enumvalue id="format2_8hpp_1a76f89f4a3119de6e83bc31ae538d18b7a65464c31b2e6ac04da1fcaa37c9bd9c7" prot="public">
+          <name>merge</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a76f89f4a3119de6e83bc31ae538d18b7a9516dfb15f51c7ee19a4d46b8c0dbe1d" prot="public">
+          <name>append</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="65" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="format2_8hpp_1a8656c7dc9859c3635c36d2d6d7e2945f" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>attribute</name>
+        <enumvalue id="format2_8hpp_1a8656c7dc9859c3635c36d2d6d7e2945fad57c24f3fe52d16e7169b912dd647f0d" prot="public">
+          <name>optional</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a8656c7dc9859c3635c36d2d6d7e2945faac67ede5a84eb5a1add7ff4440e9a485" prot="public">
+          <name>required</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="71" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>type</name>
+        <enumvalue id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44a57a0e323fc5b066538cf67fdaa367aa8" prot="public">
+          <name>MALFORMED</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44aecc2e9c313faddb07e7da223c1dc5c3f" prot="public">
+          <name>VALUE</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44a8eee8e217391199668cbac89472ace53" prot="public">
+          <name>OBJECT</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44adcd320d017d7f3c317bc8b234287bc9f" prot="public">
+          <name>REFERENCE</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="format2_8hpp_1a895c2c23bb2a8b24282cc1534a86cb44a01036ddcc971d02f6c32c3da31a119f2" prot="public">
+          <name>RANGE</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="111" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="110" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="format_8hpp_1ac6c8c905fe10befe5c6bb44d46a08c83" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>using psl::format::children_t = typedef uint16_t</definition>
+        <argsstring></argsstring>
+        <name>children_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="56" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1aefda0df685c94b7918658edc2d1e4d79" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using psl::format::nodes_t = typedef uint32_t</definition>
+        <argsstring></argsstring>
+        <name>nodes_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="57" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1afd149782f60b279297046f42ce5da38a" prot="public" static="no">
+        <type>std::pair&lt; bool, std::pair&lt; size_t, size_t &gt; &gt;</type>
+        <definition>using psl::format::value_t = typedef std::pair&lt;bool, std::pair&lt;size_t, size_t&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>value_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="58" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1af1bbc223979b35c7caacef30af7d6e26" prot="public" static="no">
+        <type>std::vector&lt; value_t &gt;</type>
+        <definition>using psl::format::value_range_t = typedef std::vector&lt;value_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>value_range_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="59" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1a5814c74201fad226c8422aff963ee8cc" prot="public" static="no">
+        <type>handle *</type>
+        <definition>using psl::format::reference_t = typedef handle*</definition>
+        <argsstring></argsstring>
+        <name>reference_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="60" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1a552848bdeed19171553ef723ee599cc1" prot="public" static="no">
+        <type>std::vector&lt; reference_t &gt;</type>
+        <definition>using psl::format::reference_range_t = typedef std::vector&lt;reference_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>reference_range_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="61" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="format_8hpp_1a897643fb6c42f631e1d2d63e350f02af" prot="public" static="no">
+        <type>nodes_t</type>
+        <definition>using psl::format::collection_t = typedef nodes_t</definition>
+        <argsstring></argsstring>
+        <name>collection_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="62" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="format2_8hpp_1a8822bd3193b7edcbf2fadd6d336f185a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::format::is_valid</definition>
+        <argsstring>(type t) noexcept</argsstring>
+        <name>is_valid</name>
+        <param>
+          <type>type</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="131" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="format2_8hpp_1a0780df76906f513fb7a5c2f785778f15" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::format::is_range</definition>
+        <argsstring>(type t) noexcept</argsstring>
+        <name>is_range</name>
+        <param>
+          <type>type</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="136" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="format2_8hpp_1ac61ee47ad7df961f120b5a8599e9343e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::format::is_value</definition>
+        <argsstring>(type t) noexcept</argsstring>
+        <name>is_value</name>
+        <param>
+          <type>type</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="137" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="format2_8hpp_1af8ff4fe69552b85ac1d86fb988ff77b0" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::format::is_object</definition>
+        <argsstring>(type t) noexcept</argsstring>
+        <name>is_object</name>
+        <param>
+          <type>type</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="138" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="format2_8hpp_1a3300160e479f63fe85393d5b896cf65e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool psl::format::is_reference</definition>
+        <argsstring>(type t) noexcept</argsstring>
+        <name>is_reference</name>
+        <param>
+          <type>type</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="139" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="53" column="1"/>
+  </compounddef>
+</doxygen>

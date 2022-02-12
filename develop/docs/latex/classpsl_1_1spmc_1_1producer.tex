@@ -1,0 +1,116 @@
+\hypertarget{classpsl_1_1spmc_1_1producer}{}\doxysection{psl\+::spmc\+::producer$<$ T $>$ Class Template Reference}
+\label{classpsl_1_1spmc_1_1producer}\index{psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}}
+
+
+S\+P\+MC based on Chase-\/\+Lev deque.  
+
+
+
+
+{\ttfamily \#include $<$producer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a5e7b59d431ec71114c7fb48efd9e340e}\label{classpsl_1_1spmc_1_1producer_a5e7b59d431ec71114c7fb48efd9e340e}} 
+{\bfseries producer} (int64\+\_\+t capacity=1024)
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a919ddd1ab6082bb077f8430547abc6e3}\label{classpsl_1_1spmc_1_1producer_a919ddd1ab6082bb077f8430547abc6e3}} 
+{\bfseries producer} (const \mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a1f5c787d2084de7e446e8d3607210dd8}\label{classpsl_1_1spmc_1_1producer_a1f5c787d2084de7e446e8d3607210dd8}} 
+{\bfseries producer} (\mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a6f34ab3ed6399d61efa63f296852662b}\label{classpsl_1_1spmc_1_1producer_a6f34ab3ed6399d61efa63f296852662b}} 
+\mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \& {\bfseries operator=} (const \mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a96866e11fcc868e1eb0693de5d15cbb2}\label{classpsl_1_1spmc_1_1producer_a96866e11fcc868e1eb0693de5d15cbb2}} 
+\mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \& {\bfseries operator=} (\mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{producer}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a9c3270ad45e4ce66f44ce77e5b5db2f6}\label{classpsl_1_1spmc_1_1producer_a9c3270ad45e4ce66f44ce77e5b5db2f6}} 
+\+::\mbox{\hyperlink{classpsl_1_1spmc_1_1consumer}{psl\+::spmc\+::consumer}}$<$ T $>$ \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_a9c3270ad45e4ce66f44ce77e5b5db2f6}{consumer}} () noexcept
+\begin{DoxyCompactList}\small\item\em \textbackslash{}\+Returns a consumer that is linked to the current producer, to be used in other threads. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_abd31ee51286904b226eb79096e19a9a3}\label{classpsl_1_1spmc_1_1producer_abd31ee51286904b226eb79096e19a9a3}} 
+bool {\bfseries empty} () const noexcept
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_af33000c50368d934996856a6e4e2f2cc}\label{classpsl_1_1spmc_1_1producer_af33000c50368d934996856a6e4e2f2cc}} 
+size\+\_\+t \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_af33000c50368d934996856a6e4e2f2cc}{size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em \textbackslash{}\+Returns the current count of all elements in the producer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_acd5309033fe1030434a7d43123e0f2d1}\label{classpsl_1_1spmc_1_1producer_acd5309033fe1030434a7d43123e0f2d1}} 
+int64\+\_\+t \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_acd5309033fe1030434a7d43123e0f2d1}{ssize}} () const noexcept
+\begin{DoxyCompactList}\small\item\em \textbackslash{}\+Returns the current count of all elements in the producer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_a7bae6c6ed61cf74cf973a6a3b6b23d90}{resize}} (size\+\_\+t \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_af33000c50368d934996856a6e4e2f2cc}{size}})
+\begin{DoxyCompactList}\small\item\em Resizes the internal buffer to the given size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_a11cdadc6ac76979d33eee5cb7f7284f3}{push}} (T \&\&value)
+\begin{DoxyCompactList}\small\item\em Push the given element onto the end of the deque. \end{DoxyCompactList}\item 
+std\+::optional$<$ T $>$ \mbox{\hyperlink{classpsl_1_1spmc_1_1producer_a5783dc5abb66036b7a350a1d663bd686}{pop}} () noexcept
+\begin{DoxyCompactList}\small\item\em Pops an element (if any are left) off the deque from the end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_ab50b3333d89735b052372c4a22a2f9f7}\label{classpsl_1_1spmc_1_1producer_ab50b3333d89735b052372c4a22a2f9f7}} 
+void {\bfseries clear} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_ad5bb70c38b8040af709da7c6ce3a7d2f}\label{classpsl_1_1spmc_1_1producer_ad5bb70c38b8040af709da7c6ce3a7d2f}} 
+class {\bfseries consumer$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class psl\+::spmc\+::producer$<$ T $>$}
+
+This class is based on Chase-\/\+Lev\textquotesingle{}s deque implementation of a Single Producer Multi Consumer (S\+P\+MC). The producer should only be used on a single thread, and the \textquotesingle{}\mbox{\hyperlink{classpsl_1_1spmc_1_1consumer}{psl\+::spmc\+::consumer}}\textquotesingle{} variant should be used in the consuming threads. This offers a safe A\+PI. 
+
+Definition at line 11 of file consumer.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a7bae6c6ed61cf74cf973a6a3b6b23d90}\label{classpsl_1_1spmc_1_1producer_a7bae6c6ed61cf74cf973a6a3b6b23d90}} 
+\index{psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{psl\+::spmc\+::producer}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tries to resize to the given size, it will automatically align itself to the next power of 2 if the value isn\textquotesingle{}t a power of 2 already. The minimum size will be \textquotesingle{}at least\textquotesingle{} equal to, or bigger than, the current size (not capacity) of the internal buffer. 
+
+Definition at line 117 of file producer.\+hpp.
+
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a11cdadc6ac76979d33eee5cb7f7284f3}\label{classpsl_1_1spmc_1_1producer_a11cdadc6ac76979d33eee5cb7f7284f3}} 
+\index{psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}!push@{push}}
+\index{push@{push}!psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{psl\+::spmc\+::producer}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Will push the given element onto the deque if enough space is present. If not enough space is present it will construct a new internal buffer that contains at least enough space. If a previous (unused) buffer is present it will now clean that buffer up. \begin{DoxyWarning}{Warning}
+Callable only on the owning thread, do not call from multiple threads. 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]Implement the backing storage as an atomic$<$shared\+\_\+ptr$<$buffer$>$$>$ for more logical cleanup flow. \end{DoxyRefDesc}
+
+
+Definition at line 140 of file producer.\+hpp.
+
+\mbox{\Hypertarget{classpsl_1_1spmc_1_1producer_a5783dc5abb66036b7a350a1d663bd686}\label{classpsl_1_1spmc_1_1producer_a5783dc5abb66036b7a350a1d663bd686}} 
+\index{psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!psl::spmc::producer$<$ T $>$@{psl::spmc::producer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::optional$<$T$>$ \mbox{\hyperlink{classpsl_1_1spmc_1_1producer}{psl\+::spmc\+::producer}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Tries to pop an element off the end of the deque. \begin{DoxyWarning}{Warning}
+Only callable from the owning thread, otherwise the results will be undefined. 
+\end{DoxyWarning}
+
+
+Definition at line 165 of file producer.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.\+hpp\end{DoxyCompactItemize}

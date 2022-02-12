@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1igles" kind="namespace" language="C++">
+    <compoundname>core::igles</compoundname>
+    <innerclass refid="classcore_1_1igles_1_1buffer__t" prot="public">core::igles::buffer_t</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1compute" prot="public">core::igles::compute</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1computepass" prot="public">core::igles::computepass</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1context" prot="public">core::igles::context</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1drawpass" prot="public">core::igles::drawpass</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1framebuffer__t" prot="public">core::igles::framebuffer_t</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1geometry__t" prot="public">core::igles::geometry_t</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1material__t" prot="public">core::igles::material_t</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1program" prot="public">core::igles::program</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1program__cache" prot="public">core::igles::program_cache</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1sampler__t" prot="public">core::igles::sampler_t</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1shader" prot="public">core::igles::shader</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1swapchain" prot="public">core::igles::swapchain</innerclass>
+    <innerclass refid="classcore_1_1igles_1_1texture__t" prot="public">core::igles::texture_t</innerclass>
+    <innernamespace refid="namespacecore_1_1igles_1_1details">core::igles::details</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/fwd/gles/compute.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

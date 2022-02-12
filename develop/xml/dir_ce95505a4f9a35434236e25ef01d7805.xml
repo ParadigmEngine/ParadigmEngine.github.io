@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_ce95505a4f9a35434236e25ef01d7805" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/src</compoundname>
+    <innerdir refid="dir_52dba4e452bd4f3ab27611d6adc84f4d">/home/runner/work/paradigm/paradigm/psl/src/async</innerdir>
+    <innerdir refid="dir_2e83b5238d3fde50e6f1c42b06372c0e">/home/runner/work/paradigm/paradigm/psl/src/ecs</innerdir>
+    <innerdir refid="dir_d8d71ec8d9592da43869a3daf42e0f1b">/home/runner/work/paradigm/paradigm/psl/src/memory</innerdir>
+    <innerdir refid="dir_396b6378e1dc5fa8858bd7b3c2df65f6">/home/runner/work/paradigm/paradigm/psl/src/noise</innerdir>
+    <innerdir refid="dir_a68ac407a1e0c4f52934b9d43b25246a">/home/runner/work/paradigm/paradigm/psl/src/profiling</innerdir>
+    <innerdir refid="dir_491cdd3e599632dec997840046ac3862">/home/runner/work/paradigm/paradigm/psl/src/serialization</innerdir>
+    <innerfile refid="application__utils_8cpp">application_utils.cpp</innerfile>
+    <innerfile refid="file_8cpp">file.cpp</innerfile>
+    <innerfile refid="format_8cpp">format.cpp</innerfile>
+    <innerfile refid="formatted__string__buffer_8cpp">formatted_string_buffer.cpp</innerfile>
+    <innerfile refid="library_8cpp">library.cpp</innerfile>
+    <innerfile refid="meta_8cpp">meta.cpp</innerfile>
+    <innerfile refid="platform__utils_8cpp">platform_utils.cpp</innerfile>
+    <innerfile refid="stdafx__psl_8cpp">stdafx_psl.cpp</innerfile>
+    <innerfile refid="terminal__utils_8cpp">terminal_utils.cpp</innerfile>
+    <innerfile refid="ustring_8cpp">ustring.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/src/"/>
+  </compounddef>
+</doxygen>

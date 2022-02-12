@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>psl::UID struct | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span>UID <span class="m-thin">struct</span> <span class="m-label m-flat m-warning">final</span>
+        </h1>
+        <p>is an object holding a Unique IDentifier (<a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>)</p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+<p><a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> generates a unique ID, either through a random number generator, or by using OS provided methods. It is immutable once created.</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const static <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> <a href="#aeec5559339f7caaa980455d794b41863" class="m-doc">invalid_uid</a>
+            </dt>
+            <dd>a global instance that signifies the invalid_uid used by the current runtime.</dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ad2cf2280f47c832ab7e8636fd08317ce" class="m-doc">from_string</a>(</span><span class="m-doc-wrap">const psl::string8_t&amp; key) -&gt; <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a></span>
+            </dt>
+            <dd>tries to convert from the given string based representation to a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a649f019b38fd2608f00d1c4c15551cfd" class="m-doc">valid</a>(</span><span class="m-doc-wrap">const psl::string8_t&amp; key) -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>checks the given string if it&#x27;s in a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> format.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aa9f7b5541b9aac957970f7265c657234" class="m-doc">generate</a>(</span><span class="m-doc-wrap">) -&gt; <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a></span>
+            </dt>
+            <dd>generates a <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a9441b815ea346351f27b25897953f1b3">
+              <span class="m-doc-wrap-bumper"><a href="#a9441b815ea346351f27b25897953f1b3" class="m-doc-self">UID</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-info">defaulted</span></span>
+            </dt>
+            <dd>constructor that creates an invalid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a2bfd45155d096c7f072b7c3f24bbf0c3" class="m-doc">UID</a>(</span><span class="m-doc-wrap">const PUID&amp; id) <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a498ea07260bcc8f71574f7eda306cd9a" class="m-doc">operator bool</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd>checks if the held <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> is valid.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a727f5bbd55fc11ef6b6fb0fa8d71dcf6" class="m-doc">to_string</a>(</span><span class="m-doc-wrap">) const -&gt; const psl::string8_t</span>
+            </dt>
+            <dd>creates a string based representation of the owned <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a1bbb1986e2da5358c057c8806d3cc909" class="m-doc">invalidate</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>invalidates the current <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ad2cf2280f47c832ab7e8636fd08317ce"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad2cf2280f47c832ab7e8636fd08317ce" class="m-doc-self">from_string</a>(</span><span class="m-doc-wrap">const psl::string8_t&amp; key)</span></span>
+            </h3>
+            <p>tries to convert from the given string based representation to a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>a string in the valid format to convert to <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>either a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> based on the key, or <a href="structpsl_1_1_u_i_d.html#aeec5559339f7caaa980455d794b41863" class="m-doc">UID::<wbr />invalid_uid</a> if something went wrong.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>when sending a string of the form &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot; or &quot;{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}&quot; to this method, it will parse it and will return a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> instance. Otherwise it will return <a href="structpsl_1_1_u_i_d.html#aeec5559339f7caaa980455d794b41863" class="m-doc">UID::<wbr />invalid_uid</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a649f019b38fd2608f00d1c4c15551cfd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static bool psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a649f019b38fd2608f00d1c4c15551cfd" class="m-doc-self">valid</a>(</span><span class="m-doc-wrap">const psl::string8_t&amp; key) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <p>checks the given string if it&#x27;s in a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> format.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the string to be checked.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the given key is convertible to a <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> instance.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="aa9f7b5541b9aac957970f7265c657234"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa9f7b5541b9aac957970f7265c657234" class="m-doc-self">generate</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <p>generates a <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a2bfd45155d096c7f072b7c3f24bbf0c3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2bfd45155d096c7f072b7c3f24bbf0c3" class="m-doc-self">UID</a>(</span><span class="m-doc-wrap">const PUID&amp; id) <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the internal representation of a <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>a constructor that created a <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> from the internal representation (PUID).</p>
+          </div></section>
+          <section class="m-doc-details" id="a498ea07260bcc8f71574f7eda306cd9a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a498ea07260bcc8f71574f7eda306cd9a" class="m-doc-self">operator bool</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>checks if the held <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> is valid.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true in case the held <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> is valid.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a727f5bbd55fc11ef6b6fb0fa8d71dcf6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const psl::string8_t psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a727f5bbd55fc11ef6b6fb0fa8d71dcf6" class="m-doc-self">to_string</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>creates a string based representation of the owned <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>a UTF-8 string based representation of the owned <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>creates a string based representation of the owned <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> of the form &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;.</p>
+          </div></section>
+          <section class="m-doc-details" id="a1bbb1986e2da5358c057c8806d3cc909"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void psl::<wbr />UID::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1bbb1986e2da5358c057c8806d3cc909" class="m-doc-self">invalidate</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <p>invalidates the current <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>.</p>
+<p>If for some reason you want to invalidate this object as being a valid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>, then calling this method will set the internal <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> to be equivalent to <a href="structpsl_1_1_u_i_d.html#aeec5559339f7caaa980455d794b41863" class="m-doc">UID::<wbr />invalid_uid</a>. This operation is permanent.</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="aeec5559339f7caaa980455d794b41863"><div>
+            <h3>
+              static const static <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> psl::<wbr />UID::<wbr /><a href="#aeec5559339f7caaa980455d794b41863" class="m-doc-self">invalid_uid</a>
+            </h3>
+            <p>a global instance that signifies the invalid_uid used by the current runtime.</p>
+<aside class="m-note m-info"><h4>Note</h4><p>on certain platforms this can be a &quot;nulled&quot; <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>, but prefer checking against this instance to make sure that is actually the case. The invalid <a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a> will not change during the life of the application.</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

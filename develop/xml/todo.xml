@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Class <ref refid="classcore_1_1data_1_1buffer__t" kindref="compound">core::data::buffer_t</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/> figure out a way around incompatible <ref refid="classcore_1_1data_1_1buffer__t" kindref="compound">core::data::buffer_t</ref> setups, perhaps by using structs to construct the class.  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classcore_1_1data_1_1geometry__t" kindref="compound">core::data::geometry_t</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>write an example of a custom stream. </para>
+<para>support numbered streams (i.e. UV0, UV1, etc..).  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classcore_1_1data_1_1sampler__t_1ace67337e9b24c8dd56a522d32f77ca70" kindref="member">core::data::sampler_t::mip_maxlod</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>this value is currently ignored in core::core::ivk::sampler_t.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classcore_1_1ivk_1_1material__t_1a0f05c71f5b90524760861509d3e8b7a1" kindref="member">core::ivk::material_t::bind_pipeline</ref>  (vk::CommandBuffer cmdBuffer, core::resource::handle&lt; core::ivk::framebuffer_t &gt; framebuffer, uint32_t drawIndex)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000008"/>drawindex is a temporary hack to support instancing. a generic solution should be sought after.  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classcore_1_1ivk_1_1pipeline" kindref="compound">core::ivk::pipeline</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000009"/>find a solution around the warning  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>add a way to deal with push_constants  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classcore_1_1os_1_1surface_1aa7b3ec29b0e211088c166922398989c7" kindref="member">core::os::surface::register_swapchain</ref>  (core::resource::handle&lt; core::ivk::swapchain &gt; swapchain)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000006"/>can we hide this?  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000007"/>check multi-cache  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">psl::serialization::details::anonymous_property&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000017"/>add overloads for <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref> interacting with other <ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">anonymous_property</ref>&apos;s  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classpsl_1_1spmc_1_1producer_1a11cdadc6ac76979d33eee5cb7f7284f3" kindref="member">psl::spmc::producer&lt; T &gt;::push</ref>  (T &amp;&amp;value)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000011"/>Implement the backing storage as an atomic&lt;shared_ptr&lt;buffer&gt;&gt; for more logical cleanup flow.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespaceutility_1_1application_1_1path_1a4e9a3a1197bb19854671a376eae0d648" kindref="member">utility::application::path::get_path</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000010"/>check if returning an empty path for android is correct behaviour.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classutility_1_1platform_1_1directory_1a7c46f9c700311a3e35a5051b4b490d34" kindref="member">utility::platform::directory::all_files</ref>  (psl::string_view target_directory, bool recursive)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000014"/>on android no search is run.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classutility_1_1platform_1_1directory_1a4461e834aff50accc70d32afdc07edda" kindref="member">utility::platform::directory::erase</ref>  (psl::string_view path)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000013"/>android platform always fails this, is it possible this is not always the case?  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classutility_1_1platform_1_1directory_1a6ee485a49093a2f072d63901d130fbe5" kindref="member">utility::platform::directory::is_directory</ref>  (psl::string_view path)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000012"/>android platform always returns false. Check if there is a way around this or redesign this.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespaceutility_1_1platform_1_1file_1a5f0b946c4c9580a4c4871488de4945db" kindref="member">utility::platform::file::erase</ref>  (psl::string_view filename)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000016"/>android lacks an implementation.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespaceutility_1_1platform_1_1file_1ae1b9987030fbc4be85c4832f69b5f16f" kindref="member">utility::platform::file::exists</ref>  (psl::string_view filename)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000015"/>android lacks an implementation. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

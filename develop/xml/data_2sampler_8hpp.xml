@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="data_2sampler_8hpp" kind="file" language="C++">
+    <compoundname>sampler.hpp</compoundname>
+    <includes refid="fwd_2resource_2resource_8hpp" local="yes">fwd/resource/resource.hpp</includes>
+    <includes refid="gfx_2types_8hpp" local="yes">gfx/types.hpp</includes>
+    <includes refid="serializer_8hpp" local="yes">psl/serialization/serializer.hpp</includes>
+    <includedby refid="data_2sampler_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/data/sampler.cpp</includedby>
+    <includedby refid="lighting_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</includedby>
+    <includedby refid="text_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</includedby>
+    <includedby refid="gfx_2sampler_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/gfx/sampler.cpp</includedby>
+    <includedby refid="gles_2sampler_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/gles/sampler.cpp</includedby>
+    <includedby refid="vk_2sampler_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/vk/sampler.cpp</includedby>
+    <incdepgraph>
+      <node id="39">
+        <label>iomanip</label>
+      </node>
+      <node id="17">
+        <label>functional</label>
+      </node>
+      <node id="24">
+        <label>limits</label>
+      </node>
+      <node id="30">
+        <label>psl/memory/range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>psl/math/vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>cstdint</label>
+      </node>
+      <node id="21">
+        <label>variant</label>
+      </node>
+      <node id="23">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="40">
+        <label>numeric</label>
+      </node>
+      <node id="8">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unordered_set</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="37">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="42">
+        <label>string_view</label>
+      </node>
+      <node id="36">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>bitset</label>
+      </node>
+      <node id="57">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>optional</label>
+      </node>
+      <node id="43">
+        <label>vector</label>
+      </node>
+      <node id="35">
+        <label>stack</label>
+      </node>
+      <node id="16">
+        <label>signal.h</label>
+      </node>
+      <node id="3">
+        <label>gfx/types.hpp</label>
+        <link refid="gfx_2types_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="41">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/sampler.hpp</label>
+        <link refid="data_2sampler_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="29">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="49">
+        <label>clocale</label>
+      </node>
+      <node id="48">
+        <label>cctype</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="19">
+        <label>unordered_map</label>
+      </node>
+      <node id="5">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="52">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>concepts</label>
+      </node>
+      <node id="26">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="51">
+        <label>thread</label>
+      </node>
+      <node id="18">
+        <label>type_traits</label>
+      </node>
+      <node id="32">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>stdio.h</label>
+      </node>
+      <node id="13">
+        <label>cstring</label>
+      </node>
+      <node id="31">
+        <label>memory</label>
+      </node>
+      <node id="34">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="10">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/sampler.cpp</label>
+        <link refid="vk_2sampler_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/sampler.cpp</label>
+        <link refid="data_2sampler_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/sampler.hpp</label>
+        <link refid="data_2sampler_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/sampler.cpp</label>
+        <link refid="gfx_2sampler_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/sampler.cpp</label>
+        <link refid="gles_2sampler_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcore_1_1data_1_1sampler__t" prot="public">core::data::sampler_t</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1data">core::data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwd/resource/resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/serialization/serializer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1data" kindref="compound">core::data</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="classcore_1_1data_1_1sampler__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref><sp/>final</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">psl::serialization::accessor;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref>*<sp/>metaFile)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>(<ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;&amp;<sp/>other)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;<sp/>operator=(<ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">sampler_t</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a99a4c1d2bcc15290d438b19f547497c1" kindref="member">mipmaps</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a99a4c1d2bcc15290d438b19f547497c1" kindref="member">mipmaps</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a8effea61912629b90bba6f483a7fc65e" kindref="member">mip_bias</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a8effea61912629b90bba6f483a7fc65e" kindref="member">mip_bias</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_mipmap_mode<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a15261c7a4e1eb460bf578a19339b9fc7" kindref="member">mip_mode</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a15261c7a4e1eb460bf578a19339b9fc7" kindref="member">mip_mode</ref>(core::gfx::sampler_mipmap_mode<sp/>value);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a44b2d8b8491adb30aabcd0534d6938f0" kindref="member">mip_minlod</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a44b2d8b8491adb30aabcd0534d6938f0" kindref="member">mip_minlod</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ace67337e9b24c8dd56a522d32f77ca70" kindref="member">mip_maxlod</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ace67337e9b24c8dd56a522d32f77ca70" kindref="member">mip_maxlod</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a389bea496611d8bbebe7c39447745f14" kindref="member">addressU</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a389bea496611d8bbebe7c39447745f14" kindref="member">addressU</ref>(core::gfx::sampler_address_mode<sp/>value);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a1da95da7879280c55166811f36c88af0" kindref="member">addressV</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a1da95da7879280c55166811f36c88af0" kindref="member">addressV</ref>(core::gfx::sampler_address_mode<sp/>value);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a245249ae46a9a1ef00d576b387d3a6f9" kindref="member">addressW</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a245249ae46a9a1ef00d576b387d3a6f9" kindref="member">addressW</ref>(core::gfx::sampler_address_mode<sp/>value);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>address(core::gfx::sampler_address_mode<sp/>value)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>address(core::gfx::sampler_address_mode<sp/>u,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode<sp/>v,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode<sp/>w)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::border_color<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a6d74233c5e92367a1343fa8d5985d9d3" kindref="member">border_color</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a6d74233c5e92367a1343fa8d5985d9d3" kindref="member">border_color</ref>(core::gfx::border_color<sp/>value);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1afadbce6da831055d2c609ced1ead86ed" kindref="member">anisotropic_filtering</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1afadbce6da831055d2c609ced1ead86ed" kindref="member">anisotropic_filtering</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ac7dfb67005aa203f296e3e576e315ec9" kindref="member">max_anisotropy</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ac7dfb67005aa203f296e3e576e315ec9" kindref="member">max_anisotropy</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ae833716f38eb04b802575c92dd7fd9ca" kindref="member">compare_mode</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ae833716f38eb04b802575c92dd7fd9ca" kindref="member">compare_mode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::compare_op<sp/><ref refid="classcore_1_1data_1_1sampler__t_1a22cbd56ee7897e681e8d6fe8a19011ca" kindref="member">compare_op</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a22cbd56ee7897e681e8d6fe8a19011ca" kindref="member">compare_op</ref>(core::gfx::compare_op<sp/>value);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::filter<sp/><ref refid="classcore_1_1data_1_1sampler__t_1ac4c54b94de7058efc5cba15dc5c1c6fc" kindref="member">filter_min</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1ac4c54b94de7058efc5cba15dc5c1c6fc" kindref="member">filter_min</ref>(core::gfx::filter<sp/>value);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::filter<sp/><ref refid="classcore_1_1data_1_1sampler__t_1aa6ed4ba35c21ce7fc44411485aa92965" kindref="member">filter_max</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1aa6ed4ba35c21ce7fc44411485aa92965" kindref="member">filter_max</ref>(core::gfx::filter<sp/>value);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a95ff1293a765ba49a903232e0c399387" kindref="member">normalized_coordinates</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t_1a95ff1293a765ba49a903232e0c399387" kindref="member">normalized_coordinates</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>S&gt;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(S&amp;<sp/>serializer)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serializer<sp/>&lt;&lt;<sp/>m_MipMapped;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_MipMapped.value)<sp/>serializer<sp/>&lt;&lt;<sp/>m_MipMapMode<sp/>&lt;&lt;<sp/>m_MipLodBias<sp/>&lt;&lt;<sp/>m_MinLod<sp/>&lt;&lt;<sp/>m_MaxLod;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serializer<sp/>&lt;&lt;<sp/>m_AddressModeU<sp/>&lt;&lt;<sp/>m_AddressModeV<sp/>&lt;&lt;<sp/>m_AddressModeW<sp/>&lt;&lt;<sp/>m_BorderColor<sp/>&lt;&lt;<sp/>m_AnisotropyEnable;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_AnisotropyEnable.value)<sp/>serializer<sp/>&lt;&lt;<sp/>m_MaxAnisotropy;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serializer<sp/>&lt;&lt;<sp/>m_CompareEnable;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_CompareEnable.value)<sp/>serializer<sp/>&lt;&lt;<sp/>m_CompareOp;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serializer<sp/>&lt;&lt;<sp/>m_MinFilter<sp/>&lt;&lt;<sp/>m_MaxFilter<sp/>&lt;&lt;<sp/>m_NormalizedCoordinates;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>psl::string8::view<sp/>serialization_name<sp/>{</highlight><highlight class="stringliteral">&quot;SAMPLER&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MIPMAPS&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/>m_MipMapped<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MIP_MODE&quot;</highlight><highlight class="normal">,<sp/>core::gfx::sampler_mipmap_mode&gt;<sp/>m_MipMapMode<sp/>=</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_mipmap_mode::nearest;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MIP_BIAS&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>m_MipLodBias<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MIP_MIN&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>m_MinLod<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MIP_MAX&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>m_MaxLod<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14.0f;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;ADDRESS_U&quot;</highlight><highlight class="normal">,<sp/>core::gfx::sampler_address_mode&gt;<sp/>m_AddressModeU<sp/>=</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode::repeat;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;ADDRESS_V&quot;</highlight><highlight class="normal">,<sp/>core::gfx::sampler_address_mode&gt;<sp/>m_AddressModeV<sp/>=</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode::repeat;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;ADDRESS_W&quot;</highlight><highlight class="normal">,<sp/>core::gfx::sampler_address_mode&gt;<sp/>m_AddressModeW<sp/>=</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::sampler_address_mode::repeat;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;BORDER_COLOR&quot;</highlight><highlight class="normal">,<sp/>core::gfx::border_color&gt;<sp/>m_BorderColor<sp/>=</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::border_color::float_transparent_black;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;ANISOTROPY&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/>m_AnisotropyEnable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;MAX_ANISO&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>m_MaxAnisotropy<sp/><sp/><sp/><sp/>=<sp/>8.0f;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;COMPARE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/>m_CompareEnable<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;COMPARE_OPERATION&quot;</highlight><highlight class="normal">,<sp/>core::gfx::compare_op&gt;<sp/>m_CompareOp<sp/>=</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::compare_op::never;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;FILTER_MIN&quot;</highlight><highlight class="normal">,<sp/>core::gfx::filter&gt;<sp/>m_MinFilter<sp/>=<sp/>core::gfx::filter::linear;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;FILTER_MAX&quot;</highlight><highlight class="normal">,<sp/>core::gfx::filter&gt;<sp/>m_MaxFilter<sp/>=<sp/>core::gfx::filter::linear;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::serialization::property&lt;</highlight><highlight class="stringliteral">&quot;NORMALIZED_COORDINATES&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/>m_NormalizedCoordinates<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::data</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/sampler.hpp"/>
+  </compounddef>
+</doxygen>

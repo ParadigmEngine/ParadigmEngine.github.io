@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_common_1_1evocable" kind="class" language="C++" prot="public">
+    <compoundname>Common::evocable</compoundname>
+    <derivedcompoundref refid="class_common_1_1evocable_r" prot="public" virt="virtual">Common::evocableR&lt; R &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_common_1_1evocable_t" prot="public" virt="virtual">Common::evocableT&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_common_1_1evocable_r" prot="public" virt="virtual">Common::evocableR&lt; void &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_common_1_1evocable_t" prot="public" virt="virtual">Common::evocableT&lt; T... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_common_1_1evocable_t" prot="public" virt="virtual">Common::evocableT&lt; void &gt;</derivedcompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_common_1_1evocable_1ada069216a51826f97bb5ef92507c7dad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Common::evocable::evocable</definition>
+        <argsstring>()=default</argsstring>
+        <name>evocable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evocable_1a154ed6811474b7c3982bc882da48e187" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Common::evocable::evocable</definition>
+        <argsstring>(const evocable &amp;)=default</argsstring>
+        <name>evocable</name>
+        <param>
+          <type>const evocable &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evocable_1a41b2524e0a8a3288057c753b9923949b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Common::evocable::evocable</definition>
+        <argsstring>(evocable &amp;&amp;)=default</argsstring>
+        <name>evocable</name>
+        <param>
+          <type>evocable &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evocable_1a0a4a17ca45151559c62a5f3602ee37c5" prot="protected" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type>evocable &amp;</type>
+        <definition>evocable&amp; Common::evocable::operator=</definition>
+        <argsstring>(const evocable &amp;) &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const evocable &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evocable_1a0dc2e9351a755330c9db9b0499571a1e" prot="protected" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type>evocable &amp;</type>
+        <definition>evocable&amp; Common::evocable::operator=</definition>
+        <argsstring>(evocable &amp;&amp;) &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>evocable &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="142" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_common_1_1evocable_1a639946550382e5b34ad4ffd641e39e74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Common::evocable::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="146" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_1_1evocable_1a32c4a260e7d10d11feea4224df331e8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Common::evocable::~evocable</definition>
+        <argsstring>()</argsstring>
+        <name>~evocable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="147" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="147" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="136" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="135" bodyend="148"/>
+    <listofallmembers>
+      <member refid="class_common_1_1evocable_1ada069216a51826f97bb5ef92507c7dad" prot="protected" virt="non-virtual"><scope>Common::evocable</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evocable_1a154ed6811474b7c3982bc882da48e187" prot="protected" virt="non-virtual"><scope>Common::evocable</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evocable_1a41b2524e0a8a3288057c753b9923949b" prot="protected" virt="non-virtual"><scope>Common::evocable</scope><name>evocable</name></member>
+      <member refid="class_common_1_1evocable_1a639946550382e5b34ad4ffd641e39e74" prot="public" virt="non-virtual"><scope>Common::evocable</scope><name>operator()</name></member>
+      <member refid="class_common_1_1evocable_1a0a4a17ca45151559c62a5f3602ee37c5" prot="protected" virt="non-virtual"><scope>Common::evocable</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evocable_1a0dc2e9351a755330c9db9b0499571a1e" prot="protected" virt="non-virtual"><scope>Common::evocable</scope><name>operator=</name></member>
+      <member refid="class_common_1_1evocable_1a32c4a260e7d10d11feea4224df331e8d" prot="public" virt="virtual"><scope>Common::evocable</scope><name>~evocable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

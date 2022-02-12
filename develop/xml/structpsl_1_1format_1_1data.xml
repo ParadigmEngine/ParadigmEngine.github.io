@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1data" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>psl::format::data</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structpsl_1_1format_1_1data_1a928c7fe08a699004e27c8b99eb276bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="113" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1data_1ad7efa2d5ab95653d3996be858a88ddae" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t psl::format::data::buffer[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>buffer</name>
+        <initializer>{0, 0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="164" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1data_1a57cc70e7b42cb7f8f00e1b620b585123" prot="protected" static="no" mutable="no">
+        <type>std::pair&lt; size_t, size_t &gt;</type>
+        <definition>std::pair&lt;size_t, size_t&gt; psl::format::data::m_Name</definition>
+        <argsstring></argsstring>
+        <name>m_Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="165" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1data_1a1bd9a5cd455ad07d4b314a11b5833e33" prot="protected" static="no" mutable="no">
+        <type>handle *</type>
+        <definition>handle* psl::format::data::m_Handle</definition>
+        <argsstring></argsstring>
+        <name>m_Handle</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="166" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1data_1a3952f0230d52129873477096b9dc31a3" prot="protected" static="no" mutable="no">
+        <type>format::children_t</type>
+        <definition>format::children_t psl::format::data::m_Depth</definition>
+        <argsstring></argsstring>
+        <name>m_Depth</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="167" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1data_1a679b942f1775cd664c36cb497555551a" prot="protected" static="no" mutable="no">
+        <type>format::type_t</type>
+        <definition>format::type_t psl::format::data::m_Type</definition>
+        <argsstring></argsstring>
+        <name>m_Type</name>
+        <initializer>{type_t::MALFORMED}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="168" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a7b0c5de36b906f10af9d726f5dd46bf1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::data::data</definition>
+        <argsstring>(container *parent, nodes_t index)</argsstring>
+        <name>data</name>
+        <param>
+          <type>container *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>nodes_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="124" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ab271c86652e85cd56e88dbc71b209550" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>value_range_t &amp;</type>
+        <definition>value_range_t &amp; psl::format::data::reinterpret_as_value_range</definition>
+        <argsstring>() const</argsstring>
+        <name>reinterpret_as_value_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="125" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ab0886cb27595d49d0dc4134b1fe7cdc2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>value_t &amp;</type>
+        <definition>value_t &amp; psl::format::data::reinterpret_as_value</definition>
+        <argsstring>() const</argsstring>
+        <name>reinterpret_as_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="126" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a89689bfab31324865c95317bbaf2027c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>reference_range_t &amp;</type>
+        <definition>reference_range_t &amp; psl::format::data::reinterpret_as_reference_range</definition>
+        <argsstring>() const</argsstring>
+        <name>reinterpret_as_reference_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="127" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a7e78ffaec0449f245ba4f014634790d7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>reference_t &amp;</type>
+        <definition>reference_t &amp; psl::format::data::reinterpret_as_reference</definition>
+        <argsstring>() const</argsstring>
+        <name>reinterpret_as_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="128" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a475d4a07b8908285cff34a39f15d3095" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>collection_t &amp;</type>
+        <definition>collection_t &amp; psl::format::data::reinterpret_as_collection</definition>
+        <argsstring>() const</argsstring>
+        <name>reinterpret_as_collection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="129" column="14" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a624fd76795f68ca3f3575d6d451c0fbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::format::data::to_string</definition>
+        <argsstring>(const format::settings &amp;settings) const</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const format::settings &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="132" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ae0c453a580cdc93766358b1e775a3634" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::format::data::to_string</definition>
+        <argsstring>(const format::settings &amp;settings, psl::string8_t &amp;out) const</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const format::settings &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>psl::string8_t &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="133" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1aca2c4a1939eadd87c23881a667acc502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::data::data</definition>
+        <argsstring>(const data &amp;other)=delete</argsstring>
+        <name>data</name>
+        <param>
+          <type>const data &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a500834ef6d577efadb9f01dfe4ce3071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>data &amp;</type>
+        <definition>data&amp; psl::format::data::operator=</definition>
+        <argsstring>(const data &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const data &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="135" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ab7f7fadbc01205fb4776788e833053d9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::data::data</definition>
+        <argsstring>(data &amp;&amp;) noexcept=default</argsstring>
+        <name>data</name>
+        <param>
+          <type>data &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ade3a7ab0705874a0ac0437eb9300a470" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>data &amp;</type>
+        <definition>data&amp; psl::format::data::operator=</definition>
+        <argsstring>(data &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>data &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="137" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a9b1f29dd7fe80febd6bc4c7fedcb9f1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string8::view</type>
+        <definition>psl::string8::view psl::format::data::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="139" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1add059482baedb8e13bd0a4f81e9a2abd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>container *</type>
+        <definition>container * psl::format::data::root</definition>
+        <argsstring>() const</argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="140" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="1071" bodyend="1071"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a2d8731b1655aed589b32793e2cdb61c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>type_t</type>
+        <definition>type_t psl::format::data::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="141" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1afd8507a059b41c54e011ea06614647b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>format::children_t</type>
+        <definition>format::children_t psl::format::data::depth</definition>
+        <argsstring>() const</argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="142" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ac7adf5a1134bc17873c220560302e151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::format::data::parent</definition>
+        <argsstring>(data &amp;parent)</argsstring>
+        <name>parent</name>
+        <param>
+          <type>data &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="144" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="954" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a717680b0fe6761ba0d32270a39e4b799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::format::data::unparent</definition>
+        <argsstring>()</argsstring>
+        <name>unparent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="147" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="956" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ae22974d1c0b664ce80a9a5fb16e00465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; data * &gt;</type>
+        <definition>std::optional&lt; data * &gt; psl::format::data::parent</definition>
+        <argsstring>()</argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="150" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="878" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a7c8ea9ae070ee8e38cde2788bb182d05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; value_range_t &gt;</type>
+        <definition>std::optional&lt;value_range_t&gt; psl::format::data::as_value_range</definition>
+        <argsstring>() const</argsstring>
+        <name>as_value_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="152" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1accc7b84e26196ee45568d366d57864a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; value_t &gt;</type>
+        <definition>std::optional&lt;value_t&gt; psl::format::data::as_value</definition>
+        <argsstring>() const</argsstring>
+        <name>as_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="153" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a2d268558aaa779b21e714e1f43636e01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; reference_t &gt;</type>
+        <definition>std::optional&lt;reference_t&gt; psl::format::data::as_reference</definition>
+        <argsstring>() const</argsstring>
+        <name>as_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="154" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1ae0fffa5aff61809f1432fee427f27b97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; reference_range_t &gt;</type>
+        <definition>std::optional&lt;reference_range_t&gt; psl::format::data::as_reference_range</definition>
+        <argsstring>() const</argsstring>
+        <name>as_reference_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="155" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a26b9ae7e6b8dd944a5a63043d7f44777" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; collection_t &gt;</type>
+        <definition>std::optional&lt;collection_t&gt; psl::format::data::as_collection</definition>
+        <argsstring>() const</argsstring>
+        <name>as_collection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="156" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a625fbf312400557315cbb751bf425327" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; std::pair&lt; bool, psl::string8::view &gt; &gt;</type>
+        <definition>std::optional&lt;std::pair&lt;bool, psl::string8::view&gt; &gt; psl::format::data::as_value_content</definition>
+        <argsstring>() const</argsstring>
+        <name>as_value_content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="158" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a0babe36cbb8ac20b6346cc2548199ade" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; std::vector&lt; std::pair&lt; bool, psl::string8::view &gt; &gt; &gt;</type>
+        <definition>std::optional&lt;std::vector&lt;std::pair&lt;bool, psl::string8::view&gt; &gt; &gt; psl::format::data::as_value_range_content</definition>
+        <argsstring>() const</argsstring>
+        <name>as_value_range_content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="159" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1data_1a629d466aaa87f75e2ada6d12e05c727f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* psl::format::data::_data</definition>
+        <argsstring>()</argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="161" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="161" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="112" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="111" bodyend="169"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1data_1a629d466aaa87f75e2ada6d12e05c727f" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>_data</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a26b9ae7e6b8dd944a5a63043d7f44777" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_collection</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a2d268558aaa779b21e714e1f43636e01" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_reference</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ae0fffa5aff61809f1432fee427f27b97" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_reference_range</name></member>
+      <member refid="structpsl_1_1format_1_1data_1accc7b84e26196ee45568d366d57864a1" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_value</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a625fbf312400557315cbb751bf425327" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_value_content</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a7c8ea9ae070ee8e38cde2788bb182d05" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_value_range</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a0babe36cbb8ac20b6346cc2548199ade" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>as_value_range_content</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ad7efa2d5ab95653d3996be858a88ddae" prot="protected" virt="non-virtual"><scope>psl::format::data</scope><name>buffer</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a928c7fe08a699004e27c8b99eb276bc8" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>container</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a7b0c5de36b906f10af9d726f5dd46bf1" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>data</name></member>
+      <member refid="structpsl_1_1format_1_1data_1aca2c4a1939eadd87c23881a667acc502" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>data</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ab7f7fadbc01205fb4776788e833053d9" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>data</name></member>
+      <member refid="structpsl_1_1format_1_1data_1afd8507a059b41c54e011ea06614647b5" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>depth</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a3952f0230d52129873477096b9dc31a3" prot="protected" virt="non-virtual"><scope>psl::format::data</scope><name>m_Depth</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a1bd9a5cd455ad07d4b314a11b5833e33" prot="protected" virt="non-virtual"><scope>psl::format::data</scope><name>m_Handle</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a57cc70e7b42cb7f8f00e1b620b585123" prot="protected" virt="non-virtual"><scope>psl::format::data</scope><name>m_Name</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a679b942f1775cd664c36cb497555551a" prot="protected" virt="non-virtual"><scope>psl::format::data</scope><name>m_Type</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a9b1f29dd7fe80febd6bc4c7fedcb9f1f" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>name</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a500834ef6d577efadb9f01dfe4ce3071" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ade3a7ab0705874a0ac0437eb9300a470" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ac7adf5a1134bc17873c220560302e151" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>parent</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ae22974d1c0b664ce80a9a5fb16e00465" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>parent</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a475d4a07b8908285cff34a39f15d3095" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>reinterpret_as_collection</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a7e78ffaec0449f245ba4f014634790d7" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>reinterpret_as_reference</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a89689bfab31324865c95317bbaf2027c" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>reinterpret_as_reference_range</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ab0886cb27595d49d0dc4134b1fe7cdc2" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>reinterpret_as_value</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ab271c86652e85cd56e88dbc71b209550" prot="private" virt="non-virtual"><scope>psl::format::data</scope><name>reinterpret_as_value_range</name></member>
+      <member refid="structpsl_1_1format_1_1data_1add059482baedb8e13bd0a4f81e9a2abd" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>root</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a624fd76795f68ca3f3575d6d451c0fbf" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>to_string</name></member>
+      <member refid="structpsl_1_1format_1_1data_1ae0c453a580cdc93766358b1e775a3634" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>to_string</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a2d8731b1655aed589b32793e2cdb61c9" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>type</name></member>
+      <member refid="structpsl_1_1format_1_1data_1a717680b0fe6761ba0d32270a39e4b799" prot="public" virt="non-virtual"><scope>psl::format::data</scope><name>unparent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

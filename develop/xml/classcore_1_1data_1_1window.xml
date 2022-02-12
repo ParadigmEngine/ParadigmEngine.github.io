@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1data_1_1window" kind="class" language="C++" prot="public">
+    <compoundname>core::data::window</compoundname>
+    <includes refid="window_8hpp" local="no">window.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcore_1_1data_1_1window_1ae6e4002148765f114da9fe1b5c64547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class psl::serialization::accessor</definition>
+        <argsstring></argsstring>
+        <name>psl::serialization::accessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="32" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1a364d6523d511d78f9bdd9591dcc6ed91" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view core::data::window::serialization_name</definition>
+        <argsstring></argsstring>
+        <name>serialization_name</name>
+        <initializer>{&quot;WINDOW&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="96" column="37" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1a6e36f37de3c4d1ca91560f9d5e0e3a81" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;NAME&quot;, psl::string8_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;NAME&quot;, psl::string8_t&gt; core::data::window::m_Name</definition>
+        <argsstring></argsstring>
+        <name>m_Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="98" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1ae08987c177c4cd864c624306c238f7d3" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;WIDTH&quot;, uint32_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;WIDTH&quot;, uint32_t&gt; core::data::window::m_Width</definition>
+        <argsstring></argsstring>
+        <name>m_Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="99" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1a079d392a2a79a9e600079e873008a50d" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;HEIGHT&quot;, uint32_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;HEIGHT&quot;, uint32_t&gt; core::data::window::m_Height</definition>
+        <argsstring></argsstring>
+        <name>m_Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="100" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1af0f276000241b524003060a784e84ae5" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;MODE&quot;, core::gfx::surface_mode &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;MODE&quot;, core::gfx::surface_mode&gt; core::data::window::m_WindowMode</definition>
+        <argsstring></argsstring>
+        <name>m_WindowMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="102" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1window_1afcbe34f3b9d6368fc398bf8cb0ae47ab" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;BUFFERING&quot;, core::gfx::buffering &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;BUFFERING&quot;, core::gfx::buffering&gt; core::data::window::m_Buffering</definition>
+        <argsstring></argsstring>
+        <name>m_Buffering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="103" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a5b84f18af612b0914f78b273a754e18a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>window::window</definition>
+        <argsstring>(uint32_t width=800, uint32_t height=600, core::gfx::surface_mode mode=core::gfx::surface_mode::WINDOWED, core::gfx::buffering buffering=core::gfx::buffering::SINGLE, psl::string8::view name=&quot;Paradigm Engine&quot;) noexcept</argsstring>
+        <name>window</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+          <defval>800</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+          <defval>600</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" kindref="member">core::gfx::surface_mode</ref></type>
+          <declname>mode</declname>
+          <defval>core::gfx::surface_mode::WINDOWED</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990" kindref="member">core::gfx::buffering</ref></type>
+          <declname>buffering</declname>
+          <defval>core::gfx::buffering::SINGLE</defval>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>name</declname>
+          <defval>&quot;Paradigm Engine&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a49664eb0426638d7bd44dc70cca2c7e3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>window::window</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile, uint32_t width=800, uint32_t height=600, core::gfx::surface_mode mode=core::gfx::surface_mode::WINDOWED, core::gfx::buffering buffering=core::gfx::buffering::SINGLE, psl::string8::view name=&quot;Paradigm Engine&quot;) noexcept</argsstring>
+        <name>window</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+          <defval>800</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+          <defval>600</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" kindref="member">core::gfx::surface_mode</ref></type>
+          <declname>mode</declname>
+          <defval>core::gfx::surface_mode::WINDOWED</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990" kindref="member">core::gfx::buffering</ref></type>
+          <declname>buffering</declname>
+          <defval>core::gfx::buffering::SINGLE</defval>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>name</declname>
+          <defval>&quot;Paradigm Engine&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="40" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="18" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a5227ae0c01e47610d5924d3a6aa2ecff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::window::~window</definition>
+        <argsstring>()=default</argsstring>
+        <name>~window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1afbc93c84efab263707236c6f5cea6ba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::window::window</definition>
+        <argsstring>(const window &amp;other)=default</argsstring>
+        <name>window</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a2e6f977883f616a1390808afd4be1faa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::window::window</definition>
+        <argsstring>(window &amp;&amp;other)=default</argsstring>
+        <name>window</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a5d25db644c1649b64154989708d657f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;</type>
+        <definition>window&amp; core::data::window::operator=</definition>
+        <argsstring>(const window &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a915feb8ed79857b6ea291e43a4672949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;</type>
+        <definition>window&amp; core::data::window::operator=</definition>
+        <argsstring>(window &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1window" kindref="compound">window</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1abfc7141fc1e27878024f6b5c57fd8406" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t window::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>returns the width in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the width in pixels. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="56" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a3d6f47cad1732e631e3ed0020688c8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window::width</definition>
+        <argsstring>(uint32_t width)</argsstring>
+        <name>width</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>sets the width in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this value is a suggestion, the actual surface might still have a different value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="60" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a913d1d4c2b423e775ad3042485e9be85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t window::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>returns the height in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the height in pixels. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="63" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a459d7e3321339ae169caed048b895a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window::height</definition>
+        <argsstring>(uint32_t height)</argsstring>
+        <name>height</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>sets the height in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this value is a suggestion, the actual surface might still have a different value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="67" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a62c63cd24e287da71012a96593f56188" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string8::view</type>
+        <definition>psl::string8::view window::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>returns the name of the surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name of the surface. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="70" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a0154d02ae2785a92c9a34bf63b311b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window::name</definition>
+        <argsstring>(psl::string8::view name)</argsstring>
+        <name>name</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>sets the name of the surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name to set this instance&apos;s value to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>depending on the <ref refid="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" kindref="member">core::gfx::surface_mode</ref> and platform specifics, you might never see this name anywhere. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="75" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a4cd3ee4beda3309011a2339be9e5c547" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" kindref="member">core::gfx::surface_mode</ref></type>
+        <definition>core::gfx::surface_mode window::mode</definition>
+        <argsstring>() const</argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>returns the current mode of rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the current mode of rendering. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="78" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a9c5349e200167bac27398864f09069c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window::mode</definition>
+        <argsstring>(core::gfx::surface_mode mode)</argsstring>
+        <name>mode</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1a11a4c4ab27e21f12bb4a783aab81b465" kindref="member">core::gfx::surface_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>sets the current mode of rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode to set this instance&apos;s value to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="81" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1ad6740b7c2cf8ae7471a6b2cf6007edb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990" kindref="member">core::gfx::buffering</ref></type>
+        <definition>core::gfx::buffering window::buffering</definition>
+        <argsstring>() const</argsstring>
+        <name>buffering</name>
+        <briefdescription>
+<para>returns the current buffering behaviour of this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the current buffering behaviour of this instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="84" column="22" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a31f80f496d7e46cf9cae86d7cf2da770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window::buffering</definition>
+        <argsstring>(core::gfx::buffering mode)</argsstring>
+        <name>buffering</name>
+        <param>
+          <type><ref refid="namespacecore_1_1gfx_1aabe6d19fbf8443e45d8b5d68366cd990" kindref="member">core::gfx::buffering</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>sets the buffering behaviour of this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode to set this instance&apos;s value to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="87" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/window.cpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1window_1a298c3a48dca47cb7b48f17371e011425" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::window::serialize</definition>
+        <argsstring>(S &amp;serializer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>S &amp;</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="91" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains the data to initialize a <ref refid="classcore_1_1os_1_1surface" kindref="compound">core::os::surface</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" line="31" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp" bodystart="30" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classcore_1_1data_1_1window_1ad6740b7c2cf8ae7471a6b2cf6007edb5" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>buffering</name></member>
+      <member refid="classcore_1_1data_1_1window_1a31f80f496d7e46cf9cae86d7cf2da770" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>buffering</name></member>
+      <member refid="classcore_1_1data_1_1window_1a913d1d4c2b423e775ad3042485e9be85" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>height</name></member>
+      <member refid="classcore_1_1data_1_1window_1a459d7e3321339ae169caed048b895a5c" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>height</name></member>
+      <member refid="classcore_1_1data_1_1window_1afcbe34f3b9d6368fc398bf8cb0ae47ab" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>m_Buffering</name></member>
+      <member refid="classcore_1_1data_1_1window_1a079d392a2a79a9e600079e873008a50d" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>m_Height</name></member>
+      <member refid="classcore_1_1data_1_1window_1a6e36f37de3c4d1ca91560f9d5e0e3a81" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>m_Name</name></member>
+      <member refid="classcore_1_1data_1_1window_1ae08987c177c4cd864c624306c238f7d3" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>m_Width</name></member>
+      <member refid="classcore_1_1data_1_1window_1af0f276000241b524003060a784e84ae5" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>m_WindowMode</name></member>
+      <member refid="classcore_1_1data_1_1window_1a4cd3ee4beda3309011a2339be9e5c547" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>mode</name></member>
+      <member refid="classcore_1_1data_1_1window_1a9c5349e200167bac27398864f09069c8" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>mode</name></member>
+      <member refid="classcore_1_1data_1_1window_1a62c63cd24e287da71012a96593f56188" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>name</name></member>
+      <member refid="classcore_1_1data_1_1window_1a0154d02ae2785a92c9a34bf63b311b30" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>name</name></member>
+      <member refid="classcore_1_1data_1_1window_1a5d25db644c1649b64154989708d657f6" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1window_1a915feb8ed79857b6ea291e43a4672949" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1window_1ae6e4002148765f114da9fe1b5c64547d" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>psl::serialization::accessor</name></member>
+      <member refid="classcore_1_1data_1_1window_1a364d6523d511d78f9bdd9591dcc6ed91" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>serialization_name</name></member>
+      <member refid="classcore_1_1data_1_1window_1a298c3a48dca47cb7b48f17371e011425" prot="private" virt="non-virtual"><scope>core::data::window</scope><name>serialize</name></member>
+      <member refid="classcore_1_1data_1_1window_1abfc7141fc1e27878024f6b5c57fd8406" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>width</name></member>
+      <member refid="classcore_1_1data_1_1window_1a3d6f47cad1732e631e3ed0020688c8e4" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>width</name></member>
+      <member refid="classcore_1_1data_1_1window_1a5b84f18af612b0914f78b273a754e18a" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>window</name></member>
+      <member refid="classcore_1_1data_1_1window_1a49664eb0426638d7bd44dc70cca2c7e3" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>window</name></member>
+      <member refid="classcore_1_1data_1_1window_1afbc93c84efab263707236c6f5cea6ba3" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>window</name></member>
+      <member refid="classcore_1_1data_1_1window_1a2e6f977883f616a1390808afd4be1faa" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>window</name></member>
+      <member refid="classcore_1_1data_1_1window_1a5227ae0c01e47610d5924d3a6aa2ecff" prot="public" virt="non-virtual"><scope>core::data::window</scope><name>~window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

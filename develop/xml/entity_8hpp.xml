@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="entity_8hpp" kind="file" language="C++">
+    <compoundname>entity.hpp</compoundname>
+    <includes refid="array_8hpp" local="yes">psl/array.hpp</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">type_traits</includes>
+    <includedby refid="systems_2lighting_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</includedby>
+    <includedby refid="systems_2text_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</includedby>
+    <includedby refid="staged__sparse__array_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp</includedby>
+    <includedby refid="component__info_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp</includedby>
+    <includedby refid="command__buffer_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/command_buffer.hpp</includedby>
+    <includedby refid="pack_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp</includedby>
+    <includedby refid="state_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</includedby>
+    <includedby refid="component__info_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/ecs/details/component_info.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp</label>
+        <link refid="entity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="27">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp</label>
+        <link refid="pack_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp</label>
+        <link refid="geometry__instance_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug/grid.cpp</label>
+        <link refid="grid_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp</label>
+        <link refid="fly_8cpp_source"/>
+      </node>
+      <node id="25">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/state.cpp</label>
+        <link refid="state_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/command_buffer.cpp</label>
+        <link refid="command__buffer_8cpp_source"/>
+      </node>
+      <node id="13">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp</label>
+        <link refid="attractor_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp</label>
+        <link refid="entity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp</label>
+        <link refid="system__information_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/grid.hpp</label>
+        <link refid="grid_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</label>
+        <link refid="state_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp</label>
+        <link refid="geometry__instance_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/details/component_info.cpp</label>
+        <link refid="component__info_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/command_buffer.hpp</label>
+        <link refid="command__buffer_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/gpu_camera.cpp</label>
+        <link refid="gpu__camera_8cpp_source"/>
+      </node>
+      <node id="20">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/movement.hpp</label>
+        <link refid="movement_8hpp_source"/>
+      </node>
+      <node id="28">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp</label>
+        <link refid="filtering_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/death.hpp</label>
+        <link refid="death_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp</label>
+        <link refid="fly_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp</label>
+        <link refid="staged__sparse__array_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lifetime.hpp</label>
+        <link refid="systems_2lifetime_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/render.hpp</label>
+        <link refid="render_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</label>
+        <link refid="systems_2text_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/render.cpp</label>
+        <link refid="render_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</label>
+        <link refid="systems_2lighting_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp</label>
+        <link refid="component__info_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpsl_1_1ecs_1_1empty" prot="public">psl::ecs::empty</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__empty__container" prot="public">psl::ecs::details::is_empty_container</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4" prot="public">psl::ecs::details::is_empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1empty__container" prot="public">psl::ecs::details::empty_container</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4" prot="public">psl::ecs::details::empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__range__t" prot="public">psl::ecs::details::is_range_t</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__range__t_3_01psl_1_1array_3_01_t_01_4_01_4" prot="public">psl::ecs::details::is_range_t&lt; psl::array&lt; T &gt; &gt;</innerclass>
+    <innernamespace refid="namespacepsl">psl</innernamespace>
+    <innernamespace refid="namespacepsl_1_1ecs">psl::ecs</innernamespace>
+    <innernamespace refid="namespacepsl_1_1ecs_1_1details">psl::ecs::details</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/array.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">psl::ecs</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="10" refid="structpsl_1_1ecs_1_1empty" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1empty" kindref="compound">empty</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">details</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">is_empty_container<sp/>:<sp/>std::false_type</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">is_empty_container&lt;<ref refid="namespacepsl" kindref="compound">psl</ref>::<ref refid="structpsl_1_1ecs_1_1empty" kindref="compound">ecs::empty</ref>&lt;T&gt;&gt;<sp/>:<sp/>std::true_type</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">empty_container</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>void;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">empty_container&lt;<ref refid="namespacepsl" kindref="compound">psl</ref>::ecs::empty&lt;T&gt;&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">is_range_t<sp/>:<sp/>std::false_type</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">is_range_t&lt;<ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;T&gt;&gt;<sp/>:<sp/>std::true_type</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>details</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>struct<sp/>entity;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>entity<sp/>=<sp/>uint32_t;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>valid(entity<sp/>e)<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e<sp/>!=<sp/>0u;<sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>psl::ecs</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp"/>
+  </compounddef>
+</doxygen>

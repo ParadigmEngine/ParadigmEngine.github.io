@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::operators::details::has_pre_increment</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1aec8ef8ff19f78b8d2919159580bd3490" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool utility::templates::operators::details::has_pre_increment&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= sizeof(test(std::declval&lt;T&gt;())) == sizeof(long)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="286" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1ab36c289f9a735cc1e1fd96b4225829a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>decltype(++(std::declval&lt;U&amp;&gt;()))</defval>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long utility::templates::operators::details::has_pre_increment&lt; T &gt;::test</definition>
+        <argsstring>(const U &amp;&amp;)</argsstring>
+        <name>test</name>
+        <param>
+          <type>const U &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="283" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1a3814e06cf64b237f301a29052b35020b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char utility::templates::operators::details::has_pre_increment&lt; T &gt;::test</definition>
+        <argsstring>(...)</argsstring>
+        <name>test</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="284" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="281" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="280" bodyend="287"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1ab36c289f9a735cc1e1fd96b4225829a5" prot="public" virt="non-virtual"><scope>utility::templates::operators::details::has_pre_increment</scope><name>test</name></member>
+      <member refid="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1a3814e06cf64b237f301a29052b35020b" prot="public" virt="non-virtual"><scope>utility::templates::operators::details::has_pre_increment</scope><name>test</name></member>
+      <member refid="structutility_1_1templates_1_1operators_1_1details_1_1has__pre__increment_1aec8ef8ff19f78b8d2919159580bd3490" prot="public" virt="non-virtual"><scope>utility::templates::operators::details::has_pre_increment</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

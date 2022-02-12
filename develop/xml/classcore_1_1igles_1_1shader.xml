@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1igles_1_1shader" kind="class" language="C++" prot="public">
+    <compoundname>core::igles::shader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1igles_1_1shader_1a311c425da4a19e38f00e0eca82522191" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint core::igles::shader::m_Shader</definition>
+        <argsstring></argsstring>
+        <name>m_Shader</name>
+        <initializer>{std::numeric_limits&lt;GLuint&gt;::max()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="24" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1shader_1a831bccb9ba02518818c20c37e6f38e9f" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+        <definition>core::meta::shader* core::igles::shader::m_Meta</definition>
+        <argsstring></argsstring>
+        <name>m_Meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="25" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1ad4e6927408dcc9d463230e2779b3bbcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shader::shader</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, core::meta::shader *metaFile)</argsstring>
+        <name>shader</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/shader.cpp" bodystart="13" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1a54ae84e4ea7db18c45fca4026b3d35dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shader::~shader</definition>
+        <argsstring>()</argsstring>
+        <name>~shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/shader.cpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1ad903096afe958f974da0fc8aaca765aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::shader::shader</definition>
+        <argsstring>(const shader &amp;)=delete</argsstring>
+        <name>shader</name>
+        <param>
+          <type>const shader &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1a63e2ebf107e7736d5dfdef81837886c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::shader::shader</definition>
+        <argsstring>(shader &amp;&amp;)=delete</argsstring>
+        <name>shader</name>
+        <param>
+          <type>shader &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1a0834c18d712db76b0727c2dc6d757669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>shader &amp;</type>
+        <definition>shader&amp; core::igles::shader::operator=</definition>
+        <argsstring>(const shader &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const shader &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="17" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1a40c84db54e13fc32b425ececbac66200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>shader &amp;</type>
+        <definition>shader&amp; core::igles::shader::operator=</definition>
+        <argsstring>(shader &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>shader &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="18" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1aae2d87266c5a9b2ce6d91c0f9562487b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint shader::id</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="20" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/shader.cpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1shader_1a5662ac1a58163c8e7914148e13f39975" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+        <definition>core::meta::shader* core::igles::shader::meta</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="21" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/shader.hpp" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classcore_1_1igles_1_1shader_1aae2d87266c5a9b2ce6d91c0f9562487b" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>id</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a831bccb9ba02518818c20c37e6f38e9f" prot="private" virt="non-virtual"><scope>core::igles::shader</scope><name>m_Meta</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a311c425da4a19e38f00e0eca82522191" prot="private" virt="non-virtual"><scope>core::igles::shader</scope><name>m_Shader</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a5662ac1a58163c8e7914148e13f39975" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>meta</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a0834c18d712db76b0727c2dc6d757669" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a40c84db54e13fc32b425ececbac66200" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1ad4e6927408dcc9d463230e2779b3bbcb" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1ad903096afe958f974da0fc8aaca765aa" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a63e2ebf107e7736d5dfdef81837886c8" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1igles_1_1shader_1a54ae84e4ea7db18c45fca4026b3d35dd" prot="public" virt="non-virtual"><scope>core::igles::shader</scope><name>~shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

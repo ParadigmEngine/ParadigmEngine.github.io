@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance" kind="struct" language="C++" prot="private">
+    <compoundname>core::ecs::systems::geometry_instancing::geometry_instance</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance_1a11020e0c32d5363bba58be0d2a95ceaf" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::ecs::systems::geometry_instancing::geometry_instance::startIndex</definition>
+        <argsstring></argsstring>
+        <name>startIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="27" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance_1ad0eed54c1da29c12dc56573674069c15" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::ecs::systems::geometry_instancing::geometry_instance::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="28" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="26" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" bodystart="25" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance_1ad0eed54c1da29c12dc56573674069c15" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing::geometry_instance</scope><name>count</name></member>
+      <member refid="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance_1a11020e0c32d5363bba58be0d2a95ceaf" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing::geometry_instance</scope><name>startIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vk_2sampler_8cpp" kind="file" language="C++">
+    <compoundname>sampler.cpp</compoundname>
+    <includes refid="vk_2sampler_8hpp" local="yes">vk/sampler.hpp</includes>
+    <includes refid="data_2sampler_8hpp" local="yes">data/sampler.hpp</includes>
+    <includes refid="vk_2context_8hpp" local="yes">vk/context.hpp</includes>
+    <includes refid="vk_2conversion_8hpp" local="yes">vk/conversion.hpp</includes>
+    <incdepgraph>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>iomanip</label>
+      </node>
+      <node id="40">
+        <label>limits</label>
+      </node>
+      <node id="31">
+        <label>assert.h</label>
+      </node>
+      <node id="64">
+        <label>vk/context.hpp</label>
+        <link refid="vk_2context_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>psl/memory/range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>psl/math/vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>cstdint</label>
+      </node>
+      <node id="27">
+        <label>variant</label>
+      </node>
+      <node id="65">
+        <label>gfx/limits.hpp</label>
+        <link refid="limits_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>cmath</label>
+      </node>
+      <node id="21">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>numeric</label>
+      </node>
+      <node id="19">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vk/sampler.hpp</label>
+        <link refid="vk_2sampler_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>unordered_set</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/sampler.cpp</label>
+        <link refid="vk_2sampler_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="17">
+        <label>string_view</label>
+      </node>
+      <node id="51">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>bitset</label>
+      </node>
+      <node id="63">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>optional</label>
+      </node>
+      <node id="50">
+        <label>stack</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>signal.h</label>
+      </node>
+      <node id="34">
+        <label>gfx/types.hpp</label>
+        <link refid="gfx_2types_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>vk/conversion.hpp</label>
+        <link refid="vk_2conversion_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>utility</label>
+      </node>
+      <node id="37">
+        <label>array</label>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+      </node>
+      <node id="32">
+        <label>data/sampler.hpp</label>
+        <link refid="data_2sampler_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="45">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="55">
+        <label>clocale</label>
+      </node>
+      <node id="54">
+        <label>cctype</label>
+      </node>
+      <node id="3">
+        <label>resource/resource.hpp</label>
+      </node>
+      <node id="38">
+        <label>cstddef</label>
+      </node>
+      <node id="25">
+        <label>unordered_map</label>
+      </node>
+      <node id="36">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>vk/ivk.hpp</label>
+        <link refid="ivk_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>concepts</label>
+      </node>
+      <node id="42">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="57">
+        <label>thread</label>
+      </node>
+      <node id="24">
+        <label>type_traits</label>
+      </node>
+      <node id="47">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>cstring</label>
+      </node>
+      <node id="28">
+        <label>vulkan/vulkan.hpp</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="49">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="7">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/sampler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/sampler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/conversion.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacepsl" kindref="compound">psl</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">core::gfx::conversion;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1ivk" kindref="compound">core::ivk</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1resource" kindref="compound">core::resource</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore" kindref="compound">core</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">sampler_t::sampler_t(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref>*<sp/>metaFile,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle&lt;context&gt;</ref><sp/><ref refid="classcore_1_1ivk_1_1context" kindref="compound">context</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle&lt;data::sampler_t&gt;</ref><sp/>sampler_data)<sp/>:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Data(sampler_data),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Context(<ref refid="classcore_1_1ivk_1_1context" kindref="compound">context</ref>),<sp/>m_Samplers<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iterationCount<sp/>=<sp/>(m_Data-&gt;mipmaps())<sp/>?<sp/>14<sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>14<sp/>==<sp/>8096<sp/>//<sp/>todo:<sp/>this<sp/>is<sp/>a<sp/>hack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Samplers.resize(iterationCount);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0u;<sp/>i<sp/>&lt;<sp/>iterationCount;<sp/>++i)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::SamplerCreateInfo<sp/>sampler;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.magFilter<sp/><sp/><sp/><sp/><sp/>=<sp/>to_vk(m_Data-&gt;filter_max());</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.minFilter<sp/><sp/><sp/><sp/><sp/>=<sp/>to_vk(m_Data-&gt;filter_min());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.mipmapMode<sp/><sp/><sp/><sp/>=<sp/>to_vk(m_Data-&gt;mip_mode());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.addressModeU<sp/><sp/>=<sp/>to_vk(m_Data-&gt;addressU());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.addressModeV<sp/><sp/>=<sp/>to_vk(m_Data-&gt;addressV());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.addressModeW<sp/><sp/>=<sp/>to_vk(m_Data-&gt;addressW());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.mipLodBias<sp/><sp/><sp/><sp/>=<sp/>m_Data-&gt;mip_bias();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.compareEnable<sp/>=<sp/>m_Data-&gt;compare_mode();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.compareOp<sp/><sp/><sp/><sp/><sp/>=<sp/>to_vk(m_Data-&gt;compare_op());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.minLod<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>m_Data-&gt;mip_minlod();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.maxLod<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(m_Data-&gt;mipmaps())<sp/>?<sp/>i<sp/>:<sp/>1.0f;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo:<sp/>figure<sp/>this<sp/>out<sp/>more<sp/>correctly;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>anisotropic<sp/>filtering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.maxAnisotropy<sp/><sp/><sp/><sp/>=<sp/>m_Data-&gt;max_anisotropy();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.anisotropyEnable<sp/>=<sp/>m_Data-&gt;anisotropic_filtering();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sampler.borderColor<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>to_vk(m_Data-&gt;border_color());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::vulkan::check(m_Context-&gt;device().createSampler(&amp;sampler,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;m_Samplers[i]));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">sampler_t::~sampler_t()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>sampler<sp/>:<sp/>m_Samplers)<sp/>m_Context-&gt;device().destroySampler(sampler,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classcore_1_1ivk_1_1sampler__t_1a49d9796b9bda2d43fa14da1356b06756" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vk::Sampler&amp;<sp/>sampler_t::get(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mip)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mip<sp/>&gt;=<sp/>m_Samplers.size())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_WARNING(</highlight><highlight class="stringliteral">&quot;Requested<sp/>a<sp/>mip<sp/>level<sp/>higher<sp/>than<sp/>the<sp/>available<sp/>mip<sp/>levels&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Samplers[m_Samplers.size()<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Samplers[mip];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classcore_1_1ivk_1_1sampler__t_1aa3eb98bf25a034acc5dba14f195def8a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">core::data::sampler_t</ref>&amp;<sp/>sampler_t::data()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data.value();<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/vk/sampler.cpp"/>
+  </compounddef>
+</doxygen>

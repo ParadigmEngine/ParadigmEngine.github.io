@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstbtt__bakedchar" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_bakedchar</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a8011a0ed0410de9fa405c9cb1ab43da2" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="470" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1aec4def12c086e0038ba32ff33ee78644" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::y0</definition>
+        <argsstring></argsstring>
+        <name>y0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="470" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a72c22c32abde95a5ba02925b8bd892bf" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="470" column="22" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1ac831dc667f6c39b5d22740c6cbd5bc3f" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::y1</definition>
+        <argsstring></argsstring>
+        <name>y1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="470" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a0708a6588a2768b68a3ae59002944b7c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::xoff</definition>
+        <argsstring></argsstring>
+        <name>xoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="471" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1aba01393e52d1c6f4ce86a8b51e498bb4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::yoff</definition>
+        <argsstring></argsstring>
+        <name>yoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="471" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1ad77b35d1a849d9eb7edb91df05b10536" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::xadvance</definition>
+        <argsstring></argsstring>
+        <name>xadvance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="471" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="469" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="468" bodyend="472"/>
+    <listofallmembers>
+      <member refid="structstbtt__bakedchar_1a8011a0ed0410de9fa405c9cb1ab43da2" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>x0</name></member>
+      <member refid="structstbtt__bakedchar_1a72c22c32abde95a5ba02925b8bd892bf" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>x1</name></member>
+      <member refid="structstbtt__bakedchar_1ad77b35d1a849d9eb7edb91df05b10536" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>xadvance</name></member>
+      <member refid="structstbtt__bakedchar_1a0708a6588a2768b68a3ae59002944b7c" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>xoff</name></member>
+      <member refid="structstbtt__bakedchar_1aec4def12c086e0038ba32ff33ee78644" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>y0</name></member>
+      <member refid="structstbtt__bakedchar_1ac831dc667f6c39b5d22740c6cbd5bc3f" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>y1</name></member>
+      <member refid="structstbtt__bakedchar_1aba01393e52d1c6f4ce86a8b51e498bb4" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>yoff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

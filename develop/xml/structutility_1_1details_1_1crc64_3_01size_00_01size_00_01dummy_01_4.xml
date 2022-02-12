@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1details_1_1crc64_3_01size_00_01size_00_01dummy_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::details::crc64&lt; size, size, dummy &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>size</declname>
+        <defname>size</defname>
+      </param>
+      <param>
+        <type>class dummy</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1details_1_1crc64_3_01size_00_01size_00_01dummy_01_4_1a4b67b5266b04f7040b81da9b7f3fe116" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr uint64_t</type>
+        <definition>static constexpr uint64_t utility::details::crc64&lt; size, size, dummy &gt;::generate</definition>
+        <argsstring>([[maybe_unused]] const char *str, uint64_t prev_crc=0xFFFFFFFFFFFFFFFF)</argsstring>
+        <name>generate</name>
+        <param>
+          <attributes>[[maybe_unused]</attributes>
+          <type>] const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>prev_crc</declname>
+          <defval>0xFFFFFFFFFFFFFFFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp" line="133" column="27" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp" line="132" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp" bodystart="131" bodyend="137"/>
+    <listofallmembers>
+      <member refid="structutility_1_1details_1_1crc64_3_01size_00_01size_00_01dummy_01_4_1a4b67b5266b04f7040b81da9b7f3fe116" prot="public" virt="non-virtual"><scope>utility::details::crc64&lt; size, size, dummy &gt;</scope><name>generate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

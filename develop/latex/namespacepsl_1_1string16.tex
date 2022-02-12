@@ -1,0 +1,116 @@
+\hypertarget{namespacepsl_1_1string16}{}\doxysection{psl\+::string16 Namespace Reference}
+\label{namespacepsl_1_1string16}\index{psl::string16@{psl::string16}}
+
+
+U\+T\+F-\/16 class namespace that contains the typedefs for the string objects, as well as helper methods.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_aa6abf59775b8f602d61dbba31d7958c4}\label{namespacepsl_1_1string16_aa6abf59775b8f602d61dbba31d7958c4}} 
+using {\bfseries char\+\_\+t} = char16\+\_\+t
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_a5e8573ef698c5ab41ff8cb04835c59ab}\label{namespacepsl_1_1string16_a5e8573ef698c5ab41ff8cb04835c59ab}} 
+using {\bfseries view} = std\+::basic\+\_\+string\+\_\+view$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_a31454132924f3caed8315987dd419e12}\label{namespacepsl_1_1string16_a31454132924f3caed8315987dd419e12}} 
+using {\bfseries stream} = std\+::basic\+\_\+stringstream$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_a6339cf94a5fa35bbd20551c504e5dfec}\label{namespacepsl_1_1string16_a6339cf94a5fa35bbd20551c504e5dfec}} 
+using {\bfseries ostream} = std\+::basic\+\_\+ostream$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_ab9d95a30c2df94e9d639627fe9a1a7a7}\label{namespacepsl_1_1string16_ab9d95a30c2df94e9d639627fe9a1a7a7}} 
+using {\bfseries ofstream} = std\+::basic\+\_\+ofstream$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_aaba77ba195bf41d249eb79f305a61e1f}\label{namespacepsl_1_1string16_aaba77ba195bf41d249eb79f305a61e1f}} 
+using {\bfseries istream} = std\+::basic\+\_\+istream$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_a4d8ae3dbab41a94b78bbce8563034e3c}\label{namespacepsl_1_1string16_a4d8ae3dbab41a94b78bbce8563034e3c}} 
+using {\bfseries ifstream} = std\+::basic\+\_\+ifstream$<$ char\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacepsl_1_1string16_a715898880f31d4cc5099df94fafc614b}\label{namespacepsl_1_1string16_a715898880f31d4cc5099df94fafc614b}} 
+using {\bfseries fstream} = std\+::basic\+\_\+fstream$<$ char\+\_\+t $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+psl\+::string8\+\_\+t \mbox{\hyperlink{namespacepsl_1_1string16_a30c718a8b0f1b96afaaa7fd454fc9573}{to\+\_\+string8\+\_\+t}} (const psl\+::string16\+\_\+t \&s)
+\begin{DoxyCompactList}\small\item\em converts a U\+T\+F-\/16 string into a U\+T\+F-\/8 string. \end{DoxyCompactList}\item 
+psl\+::string16\+\_\+t \mbox{\hyperlink{namespacepsl_1_1string16_a64fc661e8ef5741297eebb2beee40655}{from\+\_\+string8\+\_\+t}} (const psl\+::string8\+\_\+t \&s)
+\begin{DoxyCompactList}\small\item\em converts a U\+T\+F-\/8 string into a U\+T\+F-\/16 string. \end{DoxyCompactList}\item 
+psl\+::string16\+\_\+t \mbox{\hyperlink{namespacepsl_1_1string16_a6f70cfc9263cb4deda2d3b98bf6ffc5d}{from\+\_\+string8\+\_\+t}} (psl\+::string8\+::view s)
+\begin{DoxyCompactList}\small\item\em converts a U\+T\+F-\/8 string into a U\+T\+F-\/16 string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepsl_1_1string16_a30c718a8b0f1b96afaaa7fd454fc9573}\label{namespacepsl_1_1string16_a30c718a8b0f1b96afaaa7fd454fc9573}} 
+\index{psl::string16@{psl::string16}!to\_string8\_t@{to\_string8\_t}}
+\index{to\_string8\_t@{to\_string8\_t}!psl::string16@{psl::string16}}
+\doxysubsubsection{\texorpdfstring{to\_string8\_t()}{to\_string8\_t()}}
+{\footnotesize\ttfamily psl\+::string8\+\_\+t psl\+::string16\+::to\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{const psl\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & U\+T\+F-\/16 encoded string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string8\+\_\+t based on the input U\+T\+F-\/16 string.
+\end{DoxyReturn}
+converts a U\+T\+F-\/16 string into a U\+T\+F-\/8 string.
+
+converts a psl\+::string into a U\+T\+F-\/8 string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string8\+\_\+t based on the input psl\+::string. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file ustring.\+cpp.
+
+\mbox{\Hypertarget{namespacepsl_1_1string16_a64fc661e8ef5741297eebb2beee40655}\label{namespacepsl_1_1string16_a64fc661e8ef5741297eebb2beee40655}} 
+\index{psl::string16@{psl::string16}!from\_string8\_t@{from\_string8\_t}}
+\index{from\_string8\_t@{from\_string8\_t}!psl::string16@{psl::string16}}
+\doxysubsubsection{\texorpdfstring{from\_string8\_t()}{from\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string16\+\_\+t psl\+::string16\+::from\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{const psl\+::string8\+\_\+t \&}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & U\+T\+F-\/8 encoded string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string16\+\_\+t based on the input U\+T\+F-\/8 string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacepsl_1_1string16_a6f70cfc9263cb4deda2d3b98bf6ffc5d}\label{namespacepsl_1_1string16_a6f70cfc9263cb4deda2d3b98bf6ffc5d}} 
+\index{psl::string16@{psl::string16}!from\_string8\_t@{from\_string8\_t}}
+\index{from\_string8\_t@{from\_string8\_t}!psl::string16@{psl::string16}}
+\doxysubsubsection{\texorpdfstring{from\_string8\_t()}{from\_string8\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::string16\+\_\+t psl\+::string16\+::from\+\_\+string8\+\_\+t (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & U\+T\+F-\/8 encoded string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string16\+\_\+t based on the input U\+T\+F-\/8 string.
+\end{DoxyReturn}
+converts a U\+T\+F-\/8 string into a U\+T\+F-\/16 string.
+
+converts a U\+T\+F-\/8 string into a psl\+::string, depending on the bit-\/size (8 or 16) of psl\+::string this turns into a no-\/op. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & string to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a psl\+::string based on the input U\+T\+F-\/8 string. 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file ustring.\+cpp.
+

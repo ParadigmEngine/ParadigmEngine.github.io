@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1func__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::func_traits&lt; Ret(*)(Args...)&gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Ret</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structutility_1_1templates_1_1func__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_1a791f00af7869ae4f5054cb82935df06c" prot="public" static="no">
+        <type>Ret</type>
+        <definition>using utility::templates::func_traits&lt; Ret(*)(Args...)&gt;::result_t =  Ret</definition>
+        <argsstring></argsstring>
+        <name>result_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="607" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structutility_1_1templates_1_1func__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_1a1d56adf673a3627aac64797633ed297d" prot="public" static="no">
+        <type>std::tuple&lt; Args... &gt;</type>
+        <definition>using utility::templates::func_traits&lt; Ret(*)(Args...)&gt;::arguments_t =  std::tuple&lt;Args...&gt;</definition>
+        <argsstring></argsstring>
+        <name>arguments_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="608" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="606" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="605" bodyend="609"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1func__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_1a1d56adf673a3627aac64797633ed297d" prot="public" virt="non-virtual"><scope>utility::templates::func_traits&lt; Ret(*)(Args...)&gt;</scope><name>arguments_t</name></member>
+      <member refid="structutility_1_1templates_1_1func__traits_3_01_ret_07_5_08_07_args_8_8_8_08_4_1a791f00af7869ae4f5054cb82935df06c" prot="public" virt="non-virtual"><scope>utility::templates::func_traits&lt; Ret(*)(Args...)&gt;</scope><name>result_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

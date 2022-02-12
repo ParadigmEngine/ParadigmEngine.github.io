@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1platform" kind="namespace" language="C++">
+    <compoundname>psl::platform</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ustring_8hpp_1a6189d7ec55dcf738dfec0e52adc3c1ee" prot="public" static="no">
+        <type>char</type>
+        <definition>using psl::platform::char_t = typedef char</definition>
+        <argsstring></argsstring>
+        <name>char_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="81" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1a878094a230739761f1751757049d5344" prot="public" static="no">
+        <type>std::basic_string_view&lt; char_t &gt;</type>
+        <definition>using psl::platform::view = typedef std::basic_string_view&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="83" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1aeee6af27db6de41a3a6a5a69255d435e" prot="public" static="no">
+        <type>std::basic_stringstream&lt; char_t &gt;</type>
+        <definition>using psl::platform::stream = typedef std::basic_stringstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="84" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1a4c91b5f1eb47466762df6dfda43de7b1" prot="public" static="no">
+        <type>std::basic_ostream&lt; char_t &gt;</type>
+        <definition>using psl::platform::ostream = typedef std::basic_ostream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ostream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="85" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1a8a07b487a4179764c9df1894012affe0" prot="public" static="no">
+        <type>std::basic_ofstream&lt; char_t &gt;</type>
+        <definition>using psl::platform::ofstream = typedef std::basic_ofstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ofstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="86" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1aa6b041628e9634b31009bfad4d92a65c" prot="public" static="no">
+        <type>std::basic_istream&lt; char_t &gt;</type>
+        <definition>using psl::platform::istream = typedef std::basic_istream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>istream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="87" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1a4c6d4ea2aa08fffa3304e5f727ca9bf6" prot="public" static="no">
+        <type>std::basic_ifstream&lt; char_t &gt;</type>
+        <definition>using psl::platform::ifstream = typedef std::basic_ifstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ifstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="88" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ustring_8hpp_1a26ebce5674bc9bab0cb71cf0285226e1" prot="public" static="no">
+        <type>std::basic_fstream&lt; char_t &gt;</type>
+        <definition>using psl::platform::fstream = typedef std::basic_fstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>fstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="89" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="77" column="1"/>
+  </compounddef>
+</doxygen>

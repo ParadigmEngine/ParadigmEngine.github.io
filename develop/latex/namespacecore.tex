@@ -1,0 +1,41 @@
+\hypertarget{namespacecore}{}\doxysection{core Namespace Reference}
+\label{namespacecore}\index{core@{core}}
+
+
+the engine core, here all graphics resources and render operations are described.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecore_1_1data}{data}}
+\begin{DoxyCompactList}\small\item\em contains all data types that can be serialized to/from disk. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1gfx}{gfx}}
+\begin{DoxyCompactList}\small\item\em namespace that deals with the abstract render objects \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1ivk}{ivk}}
+\begin{DoxyCompactList}\small\item\em deals with all objects that are directly mapped to vulkan objects (i.\+e. they have internal vulkan concepts in them) \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1meta}{meta}}
+\begin{DoxyCompactList}\small\item\em contains all extensions to the \+::meta namespace. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1os}{os}}
+\begin{DoxyCompactList}\small\item\em specific OS wrappers and resources. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1resource}{resource}}
+\begin{DoxyCompactList}\small\item\em deals with resource creation, tracking, and managing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecore_1_1systems}{systems}}
+\begin{DoxyCompactList}\small\item\em contains systems that are responsible for handling certain aspects (audio, input, physics, etc..). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcore_1_1stream}{stream}}
+\begin{DoxyCompactList}\small\item\em stream contains a type erased \char`\"{}stream\char`\"{} of memory with basic facilities to protect it from incorrect casts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecore_a799a9a2cf756220be256558a17316079}\label{namespacecore_a799a9a2cf756220be256558a17316079}} 
+std\+::shared\+\_\+ptr$<$ spdlog\+::logger $>$ {\bfseries log} \{nullptr\}
+\item 
+\mbox{\Hypertarget{namespacecore_a37c6c31fc984ab889c6a285783da3ffd}\label{namespacecore_a37c6c31fc984ab889c6a285783da3ffd}} 
+psl\+::profiling\+::profiler {\bfseries profiler} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}

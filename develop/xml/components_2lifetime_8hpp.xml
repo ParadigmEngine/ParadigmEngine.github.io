@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="components_2lifetime_8hpp" kind="file" language="C++">
+    <compoundname>lifetime.hpp</compoundname>
+    <includedby refid="systems_2lifetime_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lifetime.hpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp</label>
+        <link refid="components_2lifetime_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lifetime.hpp</label>
+        <link refid="systems_2lifetime_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1lifetime" prot="public">core::ecs::components::lifetime</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1ecs">core::ecs</innernamespace>
+    <innernamespace refid="namespacecore_1_1ecs_1_1components">core::ecs::components</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core::ecs::components</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">lifetime</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lifetime(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>10.0f)<sp/>:<sp/>value(value)<sp/>{};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value<sp/>{};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::ecs::components</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lifetime.hpp"/>
+  </compounddef>
+</doxygen>

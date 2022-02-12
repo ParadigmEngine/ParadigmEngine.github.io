@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_common" kind="namespace" language="C++">
+    <compoundname>Common</compoundname>
+    <innerclass refid="class_common_1_1evocable" prot="public">Common::evocable</innerclass>
+    <innerclass refid="class_common_1_1evocable_r" prot="public">Common::evocableR</innerclass>
+    <innerclass refid="class_common_1_1evocable_t" prot="public">Common::evocableT</innerclass>
+    <innerclass refid="class_common_1_1evoke" prot="public">Common::evoke</innerclass>
+    <innerclass refid="class_common_1_1evoke_3_01_r_00_01void_01_4" prot="public">Common::evoke&lt; R, void &gt;</innerclass>
+    <innerclass refid="class_common_1_1evoke_3_01void_00_01_t_8_8_8_01_4" prot="public">Common::evoke&lt; void, T... &gt;</innerclass>
+    <innerclass refid="class_common_1_1evoke_3_01void_00_01void_01_4" prot="public">Common::evoke&lt; void, void &gt;</innerclass>
+    <innernamespace refid="namespace_common_1_1details">Common::details</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="evoke_8hpp_1aaf68977c9ab58510686aaaa9a51eefa5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; std::result_of_t&lt; R(T...)&gt;, T... &gt;</type>
+        <definition>static psl::evoke&lt;std::result_of_t&lt;R(T...)&gt;, T...&gt; Common::make_evocable</definition>
+        <argsstring>(R &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper functions for compilers below C++17 The following functions assist in inferring the types you want </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="379" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="379" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a17ba82463eea721740c3bb23abed682b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; std::result_of_t&lt; R()&gt;, void &gt;</type>
+        <definition>static psl::evoke&lt;std::result_of_t&lt;R()&gt;, void&gt; Common::make_evocable</definition>
+        <argsstring>(R &amp;&amp;r)</argsstring>
+        <name>make_evocable</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="386" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a4ecab90cdcf5d5bc3a4535cf0f043514" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; void, T... &gt;</type>
+        <definition>static psl::evoke&lt;void, T...&gt; Common::make_evocable</definition>
+        <argsstring>(std::function&lt; void(T...)&gt; &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable</name>
+        <param>
+          <type>std::function&lt; void(T...)&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="393" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="393" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a2cf8fc0fb67fc5ae0bdb69ae0ed8b82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>psl::evoke&lt; void, void &gt;</type>
+        <definition>psl::evoke&lt;void, void&gt; Common::make_evocable</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;r)</argsstring>
+        <name>make_evocable</name>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="399" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="399" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a33c8384abe29517cd7744c27d5055dc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; std::result_of_t&lt; R(T...)&gt;, T... &gt; *</type>
+        <definition>static psl::evoke&lt;std::result_of_t&lt;R(T...)&gt;, T...&gt;* Common::make_evocable_ptr</definition>
+        <argsstring>(R &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable_ptr</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="406" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a072ebe68426fdc5c006fce2bf3b023ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; std::result_of_t&lt; R()&gt;, void &gt; *</type>
+        <definition>static psl::evoke&lt;std::result_of_t&lt;R()&gt;, void&gt;* Common::make_evocable_ptr</definition>
+        <argsstring>(R &amp;&amp;r)</argsstring>
+        <name>make_evocable_ptr</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="413" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="413" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1aef41e69b170a519de7e991f88e32c961" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evoke&lt; void, T... &gt; *</type>
+        <definition>static psl::evoke&lt;void, T...&gt;* Common::make_evocable_ptr</definition>
+        <argsstring>(std::function&lt; void(T...)&gt; &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable_ptr</name>
+        <param>
+          <type>std::function&lt; void(T...)&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="420" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a926afd24d20c2b1b56b3ad8a8f591a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>psl::evoke&lt; void, void &gt; *</type>
+        <definition>psl::evoke&lt;void, void&gt;* Common::make_evocable_ptr</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;r)</argsstring>
+        <name>make_evocable_ptr</name>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="426" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="426" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1afcc3fd1127bbb17fb3e7bdd1ed563a8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evocableR&lt; std::result_of_t&lt; R(T...)&gt; &gt; *</type>
+        <definition>static psl::evocableR&lt;std::result_of_t&lt;R(T...)&gt; &gt;* Common::make_evocable_r_ptr</definition>
+        <argsstring>(R &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable_r_ptr</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="432" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="432" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a18a2ababc35a67c4defac2df67fa7664" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>psl::evocableR&lt; std::result_of_t&lt; R()&gt; &gt; *</type>
+        <definition>static psl::evocableR&lt;std::result_of_t&lt;R()&gt; &gt;* Common::make_evocable_r_ptr</definition>
+        <argsstring>(R &amp;&amp;r)</argsstring>
+        <name>make_evocable_r_ptr</name>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="439" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="439" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a4db4183851b9d22c1b299043fb2477a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>psl::evocableR&lt; void &gt; *</type>
+        <definition>static psl::evocableR&lt;void&gt;* Common::make_evocable_r_ptr</definition>
+        <argsstring>(std::function&lt; void(T...)&gt; &amp;&amp;r, T &amp;&amp;... parameters)</argsstring>
+        <name>make_evocable_r_ptr</name>
+        <param>
+          <type>std::function&lt; void(T...)&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="446" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="446" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="evoke_8hpp_1a64965afee8e239d43a7f917641e442ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>psl::evocableR&lt; void &gt; *</type>
+        <definition>psl::evocableR&lt;void&gt;* Common::make_evocable_r_ptr</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;r)</argsstring>
+        <name>make_evocable_r_ptr</name>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="452" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="452" bodyend="455"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="113" column="1"/>
+  </compounddef>
+</doxygen>

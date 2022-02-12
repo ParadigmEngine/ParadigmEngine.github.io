@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_b01960ce56516083bfdb29721efd367a" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs</compoundname>
+    <innerdir refid="dir_3623dc68b30d8b61c2780067a8499274">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details</innerdir>
+    <innerfile refid="command__buffer_8hpp">command_buffer.hpp</innerfile>
+    <innerfile refid="entity_8hpp">entity.hpp</innerfile>
+    <innerfile refid="filtering_8hpp">filtering.hpp</innerfile>
+    <innerfile refid="pack_8hpp">pack.hpp</innerfile>
+    <innerfile refid="selectors_8hpp">selectors.hpp</innerfile>
+    <innerfile refid="state_8hpp">state.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/"/>
+  </compounddef>
+</doxygen>

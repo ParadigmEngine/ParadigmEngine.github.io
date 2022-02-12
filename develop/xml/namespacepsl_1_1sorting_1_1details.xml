@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1sorting_1_1details" kind="namespace" language="C++">
+    <compoundname>psl::sorting::details</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="algorithm_8hpp_1a3493b1523ad36f989ac58b12eab3c9f3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+          <param>
+            <type>class Pred</type>
+          </param>
+        </templateparamlist>
+        <type>It</type>
+        <definition>It psl::sorting::details::partition</definition>
+        <argsstring>(It first, It last, Pred &amp;&amp;pred) noexcept</argsstring>
+        <name>partition</name>
+        <param>
+          <type>It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>It</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="26" column="4" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="26" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

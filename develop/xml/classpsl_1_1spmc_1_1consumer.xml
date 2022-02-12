@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1spmc_1_1consumer" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>psl::spmc::consumer</compoundname>
+    <includes refid="consumer_8hpp" local="no">consumer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classpsl_1_1spmc_1_1consumer_1afbb9dbf815955b5798cb780476035a7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class producer&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>producer&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="1" column="0" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1spmc_1_1consumer_1ac27d7c81e534003fc5e9d1ab3ca37513" prot="private" static="no" mutable="no">
+        <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref>&lt; T &gt; &gt;</type>
+        <definition>psl::view_ptr&lt;producer&lt;T&gt; &gt; psl::spmc::consumer&lt; T &gt;::m_Producer</definition>
+        <argsstring></argsstring>
+        <name>m_Producer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="51" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1ac3467434a49119ca00832d26284e95b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::consumer&lt; T &gt;::consumer</definition>
+        <argsstring>(psl::view_ptr&lt; producer&lt; T &gt;&gt; producer)</argsstring>
+        <name>consumer</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; <ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref>&lt; T &gt;&gt;</type>
+          <declname>producer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1a722f8b5d8667271bc1167dc8743a7ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::consumer&lt; T &gt;::consumer</definition>
+        <argsstring>()=delete</argsstring>
+        <name>consumer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1aa614da647b043f05cdc32cf3a84a23f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::consumer&lt; T &gt;::~consumer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~consumer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1afb3a3de36af0a5944b7c5c2a40805648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::consumer&lt; T &gt;::consumer</definition>
+        <argsstring>(const consumer &amp;other)=default</argsstring>
+        <name>consumer</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1ad6a6d0de08ef3cc91b74f869e87a299c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::consumer&lt; T &gt;::consumer</definition>
+        <argsstring>(consumer &amp;&amp;other) noexcept=default</argsstring>
+        <name>consumer</name>
+        <param>
+          <type><ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1acb5274585ef610e15dfbab1ef9d56555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;</type>
+        <definition>consumer&amp; psl::spmc::consumer&lt; T &gt;::operator=</definition>
+        <argsstring>(const consumer &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="30" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1afe39ed2e4add4bf74244055c42968a34" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;</type>
+        <definition>consumer&amp; psl::spmc::consumer&lt; T &gt;::operator=</definition>
+        <argsstring>(consumer &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">consumer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1ae1da99d77357cfc7303c008f58e1cd5f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::spmc::consumer&lt; T &gt;::pop</definition>
+        <argsstring>() noexcept -&gt; decltype(std::declval&lt; producer&lt; T &gt;&gt;().steal())</argsstring>
+        <name>pop</name>
+        <briefdescription>
+<para>Tries to pop an element from the front of the producer thread&apos;s deque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If any items are left on the producer&apos;s deque, then this method will pop an item off of the front. Otherwise it will return a nullopt; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="37" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1aa8cf135de252a0320c8da625f494e85e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::spmc::consumer&lt; T &gt;::size</definition>
+        <argsstring>() const noexcept -&gt; decltype(std::declval&lt; producer&lt; T &gt;&gt;().size())</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>\Returns the current count of all elements in the producer. <simplesect kind="warning"><para>The result here doesn&apos;t mean there will be/won&apos;t be an item on the deque by the time you invoke pop. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="43" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1consumer_1a72b9fb6ce3eed71ec647d1fda5759cb9" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::spmc::consumer&lt; T &gt;::ssize</definition>
+        <argsstring>() const noexcept -&gt; decltype(std::declval&lt; producer&lt; T &gt;&gt;().ssize())</argsstring>
+        <name>ssize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>\Returns the current count of all elements in the producer. <simplesect kind="warning"><para>The result here doesn&apos;t mean there will be/won&apos;t be an item on the deque by the time you invoke pop. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="48" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>provides multithread safe access into a <ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">psl::spmc::producer</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the object to pass to the consumer threads, they have a minimal multithread safe API into the SPMC deque. The consumer is limited to viewing the state of the producer, and popping items from the front (if any are left). </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="19" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1spmc_1_1consumer_1ac3467434a49119ca00832d26284e95b7" prot="private" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>consumer</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1a722f8b5d8667271bc1167dc8743a7ff4" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>consumer</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1afb3a3de36af0a5944b7c5c2a40805648" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>consumer</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1ad6a6d0de08ef3cc91b74f869e87a299c" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>consumer</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1ac27d7c81e534003fc5e9d1ab3ca37513" prot="private" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>m_Producer</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1acb5274585ef610e15dfbab1ef9d56555" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1afe39ed2e4add4bf74244055c42968a34" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1ae1da99d77357cfc7303c008f58e1cd5f" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>pop</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1afbb9dbf815955b5798cb780476035a7d" prot="private" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>producer&lt; T &gt;</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1aa8cf135de252a0320c8da625f494e85e" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>size</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1a72b9fb6ce3eed71ec647d1fda5759cb9" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>ssize</name></member>
+      <member refid="classpsl_1_1spmc_1_1consumer_1aa614da647b043f05cdc32cf3a84a23f0" prot="public" virt="non-virtual"><scope>psl::spmc::consumer</scope><name>~consumer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

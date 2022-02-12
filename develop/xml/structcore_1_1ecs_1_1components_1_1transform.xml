@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1transform" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::transform</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1transform_1a67a8d01ec5fab345da05bf04a8402bc7" prot="public" static="no" mutable="no">
+        <type>psl::quat</type>
+        <definition>psl::quat core::ecs::components::transform::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <initializer>{psl::quat::identity}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="13" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1transform_1a8123546b9f439d621c533f7f74c97698" prot="public" static="no" mutable="no">
+        <type>psl::vec3</type>
+        <definition>psl::vec3 core::ecs::components::transform::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <initializer>{psl::vec3::zero}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="14" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1transform_1a7e89f8a5c21925838e8f5796ab11e8c2" prot="public" static="no" mutable="no">
+        <type>psl::vec3</type>
+        <definition>psl::vec3 core::ecs::components::transform::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <initializer>{psl::vec3::one}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="15" column="11" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1transform_1ad1b7d261a1f0a97791f7ee25b7a6413b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::transform::transform</definition>
+        <argsstring>()=default</argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1transform_1a1198b38bf1cbae39ebf8eeebe1f5fd23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::transform::transform</definition>
+        <argsstring>(const psl::vec3 &amp;position)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const psl::vec3 &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="9" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1transform_1a6021012c0d9d97cb1d14cf8f097bb095" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::transform::transform</definition>
+        <argsstring>(const psl::vec3 &amp;position, const psl::vec3 &amp;scale)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const psl::vec3 &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const psl::vec3 &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="10" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1ecs_1_1components_1_1transform_1ad1a7203c71a59516acce349c4f505902" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::components::transform::transform</definition>
+        <argsstring>(psl::vec3 position, psl::vec3 scale, psl::quat rotation)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>psl::vec3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>psl::vec3</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>psl::quat</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" line="7" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/transform.hpp" bodystart="6" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1a8123546b9f439d621c533f7f74c97698" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>position</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1a67a8d01ec5fab345da05bf04a8402bc7" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>rotation</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1a7e89f8a5c21925838e8f5796ab11e8c2" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>scale</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1ad1b7d261a1f0a97791f7ee25b7a6413b" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>transform</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1a1198b38bf1cbae39ebf8eeebe1f5fd23" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>transform</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1a6021012c0d9d97cb1d14cf8f097bb095" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>transform</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1transform_1ad1a7203c71a59516acce349c4f505902" prot="public" virt="non-virtual"><scope>core::ecs::components::transform</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classmemory_1_1default__allocator" kind="class" language="C++" prot="public">
+    <compoundname>memory::default_allocator</compoundname>
+    <basecompoundref refid="classmemory_1_1allocator__base" prot="public" virt="non-virtual">memory::allocator_base</basecompoundref>
+    <includes refid="allocator_8hpp" local="no">allocator.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmemory_1_1default__allocator_1a5ecc9d96a9d27e757341f55043906348" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classmemory_1_1range__t" kindref="compound">range_t</ref> &gt;</type>
+        <definition>std::list&lt;range_t&gt; memory::default_allocator::m_Committed</definition>
+        <argsstring></argsstring>
+        <name>m_Committed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="75" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1default__allocator_1af4a5d66f7e2e5c98a4803b8714918740" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classmemory_1_1range__t" kindref="compound">range_t</ref> &gt;</type>
+        <definition>std::list&lt;range_t&gt; memory::default_allocator::m_Free</definition>
+        <argsstring></argsstring>
+        <name>m_Free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="76" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1af5fc9b0ac11b782a482859ecc730ed40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>memory::default_allocator::default_allocator</definition>
+        <argsstring>(bool physically_backed=true)</argsstring>
+        <name>default_allocator</name>
+        <param>
+          <type>bool</type>
+          <declname>physically_backed</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="64" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1af38c6f5de71542b740278742781c519b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual memory::default_allocator::~default_allocator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~default_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="65" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1a52f20d2bdc1e11d61b5b3be00ea8565f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &gt;</type>
+        <definition>std::optional&lt; segment &gt; default_allocator::do_allocate</definition>
+        <argsstring>(region *region, std::size_t bytes) override</argsstring>
+        <name>do_allocate</name>
+        <reimplements refid="classmemory_1_1allocator__base_1ac57d9a6f0c8063ed5e95922838d29b13">do_allocate</reimplements>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> *</type>
+          <declname>region</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="68" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="45" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1a3f21ba3804606679ea10fcb1b3230b2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool default_allocator::do_deallocate</definition>
+        <argsstring>(segment &amp;segment) override</argsstring>
+        <name>do_deallocate</name>
+        <reimplements refid="classmemory_1_1allocator__base_1a000d33a26cec374ac82daaa9dc01f70c">do_deallocate</reimplements>
+        <param>
+          <type><ref refid="classmemory_1_1segment" kindref="compound">segment</ref> &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="69" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="84" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1a6ef84b6ce02553e2297c6db23f5e22b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void default_allocator::initialize</definition>
+        <argsstring>(region *region) override</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> *</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="70" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1aa616219b14872d2e033f40d22129c7fb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classmemory_1_1range__t" kindref="compound">range_t</ref> &gt;</type>
+        <definition>std::vector&lt; range_t &gt; default_allocator::get_committed</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_committed</name>
+        <reimplements refid="classmemory_1_1allocator__base_1aeb02d1e41dfeca4bd6ab3814e9f2b6fd">get_committed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="71" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="159" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1ab2d18a991bbd75472803a360876a176d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classmemory_1_1range__t" kindref="compound">range_t</ref> &gt;</type>
+        <definition>std::vector&lt; range_t &gt; default_allocator::get_available</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_available</name>
+        <reimplements refid="classmemory_1_1allocator__base_1a50ede03cd6c7958855a4528e6adb87ff">get_available</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="72" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1ace99af15727ccfb1b09d18b0763813f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void default_allocator::do_compact</definition>
+        <argsstring>(region *region) override</argsstring>
+        <name>do_compact</name>
+        <param>
+          <type><ref refid="classmemory_1_1region" kindref="compound">region</ref> *</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="73" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="188" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory_1_1default__allocator_1a026bf7783583b270d6a8b6c6d144e167" prot="private" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool default_allocator::get_owns</definition>
+        <argsstring>(const memory::segment &amp;segment) const noexcept override</argsstring>
+        <name>get_owns</name>
+        <reimplements refid="classmemory_1_1allocator__base_1a72a4b8ebe8f787316686d311a3fadc83">get_owns</reimplements>
+        <param>
+          <type>const <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="74" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp" bodystart="246" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>default allocator that internally works using lists </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>memory::default_allocator</label>
+        <link refid="classmemory_1_1default__allocator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory::allocator_base</label>
+        <link refid="classmemory_1_1allocator__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>memory::default_allocator</label>
+        <link refid="classmemory_1_1default__allocator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory::allocator_base</label>
+        <link refid="classmemory_1_1allocator__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" line="62" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.hpp" bodystart="61" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classmemory_1_1allocator__base_1a631aaea05e2227040676bacd1a815978" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>alignment</name></member>
+      <member refid="classmemory_1_1allocator__base_1a70fc8dd6504d162ef9fcec2f2d430d8b" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>allocate</name></member>
+      <member refid="classmemory_1_1allocator__base_1ad5d9bee43e84374b6a472eab100778f4" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>allocator_base</name></member>
+      <member refid="classmemory_1_1allocator__base_1a8a739e71de034018dc1bad3b5c4610a3" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>allocator_base</name></member>
+      <member refid="classmemory_1_1allocator__base_1a0a7a8654e4d91232cbca36f77de1062a" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>available</name></member>
+      <member refid="classmemory_1_1allocator__base_1adfcea51583c36bc5a9819ed4d0e49cc6" prot="protected" virt="non-virtual"><scope>memory::default_allocator</scope><name>commit</name></member>
+      <member refid="classmemory_1_1allocator__base_1af09c2414bdc81b836406c69fe41cf213" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>committed</name></member>
+      <member refid="classmemory_1_1allocator__base_1a55afd4a585a25537de1ad96ea5d30537" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>compact</name></member>
+      <member refid="classmemory_1_1allocator__base_1a2bc4dab10acef2888165886767a82788" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>deallocate</name></member>
+      <member refid="classmemory_1_1default__allocator_1af5fc9b0ac11b782a482859ecc730ed40" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>default_allocator</name></member>
+      <member refid="classmemory_1_1default__allocator_1a52f20d2bdc1e11d61b5b3be00ea8565f" prot="private" virt="virtual"><scope>memory::default_allocator</scope><name>do_allocate</name></member>
+      <member refid="classmemory_1_1default__allocator_1ace99af15727ccfb1b09d18b0763813f9" prot="private" virt="non-virtual"><scope>memory::default_allocator</scope><name>do_compact</name></member>
+      <member refid="classmemory_1_1default__allocator_1a3f21ba3804606679ea10fcb1b3230b2a" prot="private" virt="virtual"><scope>memory::default_allocator</scope><name>do_deallocate</name></member>
+      <member refid="classmemory_1_1default__allocator_1ab2d18a991bbd75472803a360876a176d" prot="private" virt="virtual"><scope>memory::default_allocator</scope><name>get_available</name></member>
+      <member refid="classmemory_1_1default__allocator_1aa616219b14872d2e033f40d22129c7fb" prot="private" virt="virtual"><scope>memory::default_allocator</scope><name>get_committed</name></member>
+      <member refid="classmemory_1_1default__allocator_1a026bf7783583b270d6a8b6c6d144e167" prot="private" virt="virtual"><scope>memory::default_allocator</scope><name>get_owns</name></member>
+      <member refid="classmemory_1_1allocator__base_1aae63c94cb09359c6b7aa79bec30029b4" prot="protected" virt="non-virtual"><scope>memory::default_allocator</scope><name>get_range</name></member>
+      <member refid="classmemory_1_1default__allocator_1a6ef84b6ce02553e2297c6db23f5e22b8" prot="private" virt="non-virtual"><scope>memory::default_allocator</scope><name>initialize</name></member>
+      <member refid="classmemory_1_1allocator__base_1a965361530e1829cd69d075f1ea3f894b" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>is_physically_backed</name></member>
+      <member refid="classmemory_1_1default__allocator_1a5ecc9d96a9d27e757341f55043906348" prot="private" virt="non-virtual"><scope>memory::default_allocator</scope><name>m_Committed</name></member>
+      <member refid="classmemory_1_1default__allocator_1af4a5d66f7e2e5c98a4803b8714918740" prot="private" virt="non-virtual"><scope>memory::default_allocator</scope><name>m_Free</name></member>
+      <member refid="classmemory_1_1allocator__base_1a128d2b0abaa5c09d15b4dfb45c8c6a0b" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>operator=</name></member>
+      <member refid="classmemory_1_1allocator__base_1ae30458b0f04867bebd9cf36b957a260b" prot="public" virt="non-virtual"><scope>memory::default_allocator</scope><name>owns</name></member>
+      <member refid="classmemory_1_1allocator__base_1aaed0b3e05165b0016a06efa6d3a82253" prot="public" virt="virtual"><scope>memory::default_allocator</scope><name>~allocator_base</name></member>
+      <member refid="classmemory_1_1default__allocator_1af38c6f5de71542b740278742781c519b" prot="public" virt="virtual"><scope>memory::default_allocator</scope><name>~default_allocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

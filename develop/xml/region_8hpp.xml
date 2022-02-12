@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="region_8hpp" kind="file" language="C++">
+    <compoundname>region.hpp</compoundname>
+    <includes refid="allocator_8hpp" local="yes">allocator.hpp</includes>
+    <includes refid="expected_8hpp" local="yes">psl/expected.hpp</includes>
+    <includes refid="platform__def_8hpp" local="yes">psl/platform_def.hpp</includes>
+    <includes refid="range_8hpp" local="yes">range.hpp</includes>
+    <includes refid="segment_8hpp" local="yes">segment.hpp</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="core_2inc_2data_2buffer_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/data/buffer.hpp</includedby>
+    <includedby refid="core_2inc_2gfx_2buffer_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/gfx/buffer.hpp</includedby>
+    <includedby refid="lighting_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</includedby>
+    <includedby refid="allocator_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp</includedby>
+    <includedby refid="region_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp</includedby>
+    <incdepgraph>
+      <node id="16">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>allocator.hpp</label>
+        <link refid="allocator_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>system_error</label>
+      </node>
+      <node id="3">
+        <label>range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp</label>
+        <link refid="region_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>optional</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+      <node id="17">
+        <label>stack</label>
+      </node>
+      <node id="13">
+        <label>signal.h</label>
+      </node>
+      <node id="5">
+        <label>segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>cstring</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="6">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>psl/expected.hpp</label>
+        <link refid="expected_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/pipeline.cpp</label>
+        <link refid="pipeline_8cpp_source"/>
+      </node>
+      <node id="18">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug/grid.cpp</label>
+        <link refid="grid_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.cpp</label>
+        <link refid="allocator_8cpp_source"/>
+      </node>
+      <node id="21">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/material.cpp</label>
+        <link refid="gfx_2material_8cpp_source"/>
+      </node>
+      <node id="12">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/material.cpp</label>
+        <link refid="vk_2material_8cpp_source"/>
+      </node>
+      <node id="23">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp</label>
+        <link refid="vk_2drawpass_8cpp_source"/>
+      </node>
+      <node id="15">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/buffer.hpp</label>
+        <link refid="core_2inc_2gfx_2buffer_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/memory/region.cpp</label>
+        <link refid="region_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/buffer.hpp</label>
+        <link refid="core_2inc_2data_2buffer_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/bundle.cpp</label>
+        <link refid="gfx_2bundle_8cpp_source"/>
+      </node>
+      <node id="17">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/gpu_camera.cpp</label>
+        <link refid="gpu__camera_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp</label>
+        <link refid="region_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/details/instance.cpp</label>
+        <link refid="instance_8cpp_source"/>
+      </node>
+      <node id="11">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp</label>
+        <link refid="vk_2geometry_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/buffer.cpp</label>
+        <link refid="gfx_2buffer_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/compute.cpp</label>
+        <link refid="gles_2compute_8cpp_source"/>
+      </node>
+      <node id="14">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp</label>
+        <link refid="vk_2texture_8cpp_source"/>
+      </node>
+      <node id="22">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp</label>
+        <link refid="gles_2drawpass_8cpp_source"/>
+      </node>
+      <node id="20">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/geometry.cpp</label>
+        <link refid="gfx_2geometry_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/buffer.cpp</label>
+        <link refid="vk_2buffer_8cpp_source"/>
+      </node>
+      <node id="9">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/material.cpp</label>
+        <link refid="gles_2material_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/buffer.cpp</label>
+        <link refid="gles_2buffer_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/buffer.cpp</label>
+        <link refid="data_2buffer_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmemory_1_1region" prot="public">memory::region</innerclass>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;allocator.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/expected.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/platform_def.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;range.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;segment.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacememory" kindref="compound">memory</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="classmemory_1_1region" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmemory_1_1region" kindref="compound">region</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>state</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESERVED<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COMMITED<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEFERRED<sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>someone<sp/>else<sp/>manages<sp/>this,<sp/>likely<sp/>a<sp/>sub-region</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RELEASED<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>(<ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;<sp/>parent,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref>&amp;<sp/><ref refid="classmemory_1_1segment" kindref="compound">segment</ref>,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>pageSize,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>alignment,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>*<sp/>allocator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>(uint64_t<sp/>size,<sp/>uint64_t<sp/>alignment,<sp/><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>*<sp/>allocator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classmemory_1_1region" kindref="compound">region</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>(<ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;<sp/>operator<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=(<ref refid="classmemory_1_1region" kindref="compound">region</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;segment&gt;<sp/><ref refid="classmemory_1_1region_1a90ba0332ac1296fc17d2eccf56ee8a24" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::optional&lt;memory::region&gt;<sp/><ref refid="classmemory_1_1region_1a03bbcdef381f14b1ec6e1c5073dae80a" kindref="member">create_region</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;size_t&gt;<sp/>alignment,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>*<sp/>allocator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1default__allocator" kindref="compound">default_allocator</ref>());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;segment&gt;<sp/>allocate()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allocate(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>owns(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref>&amp;<sp/><ref refid="classmemory_1_1segment" kindref="compound">segment</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Allocator-&gt;owns(<ref refid="classmemory_1_1segment" kindref="compound">segment</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>specialized<sp/>version<sp/>of<sp/>allocate<sp/>that<sp/>will<sp/>create<sp/>the<sp/>given<sp/>type<sp/>instead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>when<sp/>using<sp/>this<sp/>version,<sp/>please<sp/>also<sp/>call<sp/>destroy<sp/>on<sp/>the<sp/>result<sp/>when<sp/>you&apos;re<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>method<sp/>will<sp/>fail<sp/>when<sp/>no<sp/>memory<sp/>is<sp/>remaining<sp/>in<sp/>the<sp/>region</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;std::reference_wrapper&lt;T&gt;&gt;<sp/>create(Args&amp;&amp;...<sp/>args)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>seg<sp/>{allocate(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T))};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(seg)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DBG_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>new</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>item<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)seg.value().range().begin)<sp/>T(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DBG_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>new<sp/>DBG_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*item;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>destroy(T&amp;<sp/>target)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref><sp/>temp_range<sp/>{(std::uintptr_t)((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(&amp;target)),</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(std::uintptr_t)((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(&amp;target))<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref><sp/>seg(temp_range,<sp/>m_Allocator-&gt;is_physically_backed());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(deallocate(seg))</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.~T();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>destroy(std::optional&lt;T&gt;&amp;<sp/>target)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((target)<sp/>?<sp/>destroy(target.value())<sp/>:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deallocate(<ref refid="classmemory_1_1segment" kindref="compound">segment</ref>&amp;<sp/><ref refid="classmemory_1_1segment" kindref="compound">segment</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deallocate(std::optional&lt;segment&gt;&amp;<sp/><ref refid="classmemory_1_1segment" kindref="compound">segment</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>*<sp/>allocator()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Allocator;<sp/>};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compact();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decommit_unused();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespacecore_1_1data" kindref="compound">data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Base;<sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>size()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Size;<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>alignment()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Alignment;<sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref><sp/>range()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref><sp/>{(std::uintptr_t)(m_Base),<sp/>(std::uintptr_t)(m_Base)<sp/>+<sp/>m_Size};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>erase_region(<ref refid="classmemory_1_1region" kindref="compound">memory::region</ref>&amp;<sp/>child);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>m_Base<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">memory::region</ref>*<sp/>m_Parent<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;memory::region*&gt;<sp/>m_Children;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_Size;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_Alignment;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>will<sp/>return<sp/>true<sp/>if<sp/>the<sp/>region<sp/>can<sp/>be<sp/>allocated<sp/>onto<sp/>(i.e.<sp/>it<sp/>is<sp/>backed<sp/>by<sp/>real<sp/>memory)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>commit(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref>&amp;<sp/>range);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1allocator__base" kindref="compound">allocator_base</ref>*<sp/>m_Allocator<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PLATFORM_WINDOWS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;uint64_t,<sp/>uint64_t&gt;<sp/>page_range(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref>&amp;<sp/>range);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;state&gt;<sp/>m_PageState;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>m_PageSize<sp/>{0u};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/region.hpp"/>
+  </compounddef>
+</doxygen>

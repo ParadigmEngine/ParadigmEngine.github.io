@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stdafx__psl_8hpp" kind="file" language="C++">
+    <compoundname>stdafx_psl.hpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="platform__def_8hpp" local="yes">psl/platform_def.hpp</includes>
+    <includes refid="ustring_8hpp" local="yes">psl/ustring.hpp</includes>
+    <includes refid="psl_2inc_2psl_2logging_8hpp" local="yes">psl/logging.hpp</includes>
+    <includes refid="assertions_8hpp" local="yes">psl/assertions.hpp</includes>
+    <includes refid="profiler_8hpp" local="yes">psl/profiling/profiler.hpp</includes>
+    <includes refid="template__utils_8hpp" local="yes">psl/template_utils.hpp</includes>
+    <includes refid="timer_8hpp" local="yes">psl/timer.hpp</includes>
+    <includes refid="array__view_8hpp" local="yes">psl/array_view.hpp</includes>
+    <includes refid="enumerate_8hpp" local="yes">psl/enumerate.hpp</includes>
+    <includes refid="pack__view_8hpp" local="yes">psl/pack_view.hpp</includes>
+    <includes refid="literals_8hpp" local="yes">psl/literals.hpp</includes>
+    <includedby refid="stdafx_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp</includedby>
+    <includedby refid="stdafx__psl_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/stdafx_psl.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="24">
+        <label>functional</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp</label>
+        <link refid="stdafx__psl_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>iterator</label>
+      </node>
+      <node id="28">
+        <label>psl/array_view.hpp</label>
+        <link refid="array__view_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>cstdint</label>
+      </node>
+      <node id="27">
+        <label>variant</label>
+      </node>
+      <node id="21">
+        <label>psl/timer.hpp</label>
+        <link refid="timer_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>psl/pack_view.hpp</label>
+        <link refid="pack__view_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>unordered_set</label>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="19">
+        <label>psl/bytell_map.hpp</label>
+        <link refid="bytell__map_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="12">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>signal.h</label>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="33">
+        <label>psl/literals.hpp</label>
+        <link refid="literals_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="18">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unordered_map</label>
+      </node>
+      <node id="29">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>chrono</label>
+      </node>
+      <node id="25">
+        <label>type_traits</label>
+      </node>
+      <node id="17">
+        <label>psl/profiling/profiler.hpp</label>
+        <link refid="profiler_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>cstring</label>
+      </node>
+      <node id="31">
+        <label>psl/enumerate.hpp</label>
+        <link refid="enumerate_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp</label>
+        <link refid="stdafx__psl_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp</label>
+        <link refid="stdafx_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/stdafx_psl.cpp</label>
+        <link refid="stdafx__psl_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceplatform">platform</innernamespace>
+    <innernamespace refid="namespaceplatform_1_1specifics">platform::specifics</innernamespace>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stdafx__psl_8hpp_1a7a104b2e349617222c6419b36bfd3260" prot="public" static="no">
+        <name>__STDC_WANT_LIB_EXT1__</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp" line="3" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STDC_WANT_LIB_EXT1__<sp/>1<sp/><sp/><sp/><sp/>//<sp/>https://stackoverflow.com/questions/31278172/undefined-reference-to-memcpy-s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/platform_def.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/ustring.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PLATFORM_ANDROID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;android/configuration.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;android/log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;android_native_app_glue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/logging.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">platform::specifics</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PLATFORM_ANDROID)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>android_app*<sp/>android_application;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>platform::specifics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/assertions.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#include<sp/>&quot;psl/profiling/profiler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/template_utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/timer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/array_view.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/enumerate.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/pack_view.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/literals.hpp&quot;</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/stdafx_psl.hpp"/>
+  </compounddef>
+</doxygen>

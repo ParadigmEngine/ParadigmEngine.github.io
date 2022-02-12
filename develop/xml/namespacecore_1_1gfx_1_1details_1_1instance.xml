@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1gfx_1_1details_1_1instance" kind="namespace" language="C++">
+    <compoundname>core::gfx::details::instance</compoundname>
+    <innerclass refid="structcore_1_1gfx_1_1details_1_1instance_1_1binding" prot="public">core::gfx::details::instance::binding</innerclass>
+    <innerclass refid="classcore_1_1gfx_1_1details_1_1instance_1_1data" prot="public">core::gfx::details::instance::data</innerclass>
+    <innerclass refid="structcore_1_1gfx_1_1details_1_1instance_1_1object" prot="public">core::gfx::details::instance::object</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="27" column="1"/>
+  </compounddef>
+</doxygen>

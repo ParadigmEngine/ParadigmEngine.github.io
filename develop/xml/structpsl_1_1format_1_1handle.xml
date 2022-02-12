@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1handle" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>psl::format::handle</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structpsl_1_1format_1_1handle_1af9e652a62fb80ff8d98294ee353271a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>data path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="174" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="structpsl_1_1format_1_1handle_1a928c7fe08a699004e27c8b99eb276bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="175" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1handle_1ac5a058d61201b23ac5fe42dec45b1b4e" prot="private" static="no" mutable="no">
+        <type>container *</type>
+        <definition>container* psl::format::handle::m_Container</definition>
+        <argsstring></argsstring>
+        <name>m_Container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="192" column="11" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1handle_1afba7ccfc065d4116a8165cc831c0aa54" prot="private" static="no" mutable="no">
+        <type>nodes_t</type>
+        <definition>nodes_t psl::format::handle::m_Index</definition>
+        <argsstring></argsstring>
+        <name>m_Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="193" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1handle_1a9315bb4173d71958e41adb9ab83abddc" prot="private" static="no" mutable="no">
+        <type>handle *</type>
+        <definition>handle* psl::format::handle::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="194" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1ab2b88ba512c047393923c9dd5f28225a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::handle::handle</definition>
+        <argsstring>(nodes_t index, container *container)</argsstring>
+        <name>handle</name>
+        <param>
+          <type>nodes_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>container *</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="176" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a1d0b45679290fe8eac19b8bf076dfac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::handle::handle</definition>
+        <argsstring>(const handle &amp;other)</argsstring>
+        <name>handle</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="177" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a72864b3d3edfd32955af796d080f5ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>handle &amp;</type>
+        <definition>handle&amp; psl::format::handle::operator=</definition>
+        <argsstring>(const handle &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="178" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a5d6e48497299221c690804b653fccfbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>data &amp;</type>
+        <definition>data &amp; handle::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="179" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="1789" bodyend="1789"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a6b18c8663c6d8f47ece251fce2bec1ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>data *</type>
+        <definition>data * handle::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="180" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/format.cpp" bodystart="1791" bodyend="1791"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a2f8dd32abb190923b7b9d42f6741d177" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::format::handle::exists</definition>
+        <argsstring>() const</argsstring>
+        <name>exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="181" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a00988c81b60a76374400b6738065bb6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::format::handle::operator==</definition>
+        <argsstring>(const handle &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="182" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1handle_1a4dc83d0c471e690a432ac164fed0e433" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::format::handle::operator!=</definition>
+        <argsstring>(const handle &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const handle &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="186" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="173" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="172" bodyend="195"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1handle_1a928c7fe08a699004e27c8b99eb276bc8" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>container</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1af9e652a62fb80ff8d98294ee353271a8" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>data</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a2f8dd32abb190923b7b9d42f6741d177" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>exists</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a5d6e48497299221c690804b653fccfbf" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>get</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1ab2b88ba512c047393923c9dd5f28225a" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>handle</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a1d0b45679290fe8eac19b8bf076dfac6" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>handle</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1ac5a058d61201b23ac5fe42dec45b1b4e" prot="private" virt="non-virtual"><scope>psl::format::handle</scope><name>m_Container</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1afba7ccfc065d4116a8165cc831c0aa54" prot="private" virt="non-virtual"><scope>psl::format::handle</scope><name>m_Index</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a4dc83d0c471e690a432ac164fed0e433" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>operator!=</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a6b18c8663c6d8f47ece251fce2bec1ef" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>operator-&gt;</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a72864b3d3edfd32955af796d080f5ebd" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>operator=</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a00988c81b60a76374400b6738065bb6b" prot="public" virt="non-virtual"><scope>psl::format::handle</scope><name>operator==</name></member>
+      <member refid="structpsl_1_1format_1_1handle_1a9315bb4173d71958e41adb9ab83abddc" prot="private" virt="non-virtual"><scope>psl::format::handle</scope><name>parent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

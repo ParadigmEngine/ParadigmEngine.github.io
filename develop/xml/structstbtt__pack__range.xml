@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstbtt__pack__range" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_pack_range</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__pack__range_1a296916dc971e5e7627822fe98dc42828" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_pack_range::font_size</definition>
+        <argsstring></argsstring>
+        <name>font_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="579" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a3b414cbee1e164c29dd138e0ae3d5759" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_pack_range::first_unicode_codepoint_in_range</definition>
+        <argsstring></argsstring>
+        <name>first_unicode_codepoint_in_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="580" column="5" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a1567aa5455e1251529a91b46261368cf" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stbtt_pack_range::array_of_unicode_codepoints</definition>
+        <argsstring></argsstring>
+        <name>array_of_unicode_codepoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="582" column="5" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a046d65b6ffb65fb998d471ba098e2e23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_pack_range::num_chars</definition>
+        <argsstring></argsstring>
+        <name>num_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="583" column="5" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1aa8f7ddd637ed341ea39b08466fab9284" prot="public" static="no" mutable="no">
+        <type>stbtt_packedchar *</type>
+        <definition>stbtt_packedchar* stbtt_pack_range::chardata_for_range</definition>
+        <argsstring></argsstring>
+        <name>chardata_for_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="584" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a7a642139ce446c58fde5c48553bcf008" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_pack_range::h_oversample</definition>
+        <argsstring></argsstring>
+        <name>h_oversample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="585" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a6288f14006e257544db3d015c32b4113" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_pack_range::v_oversample</definition>
+        <argsstring></argsstring>
+        <name>v_oversample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="585" column="28" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="578" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="577" bodyend="586"/>
+    <listofallmembers>
+      <member refid="structstbtt__pack__range_1a1567aa5455e1251529a91b46261368cf" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>array_of_unicode_codepoints</name></member>
+      <member refid="structstbtt__pack__range_1aa8f7ddd637ed341ea39b08466fab9284" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>chardata_for_range</name></member>
+      <member refid="structstbtt__pack__range_1a3b414cbee1e164c29dd138e0ae3d5759" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>first_unicode_codepoint_in_range</name></member>
+      <member refid="structstbtt__pack__range_1a296916dc971e5e7627822fe98dc42828" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>font_size</name></member>
+      <member refid="structstbtt__pack__range_1a7a642139ce446c58fde5c48553bcf008" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>h_oversample</name></member>
+      <member refid="structstbtt__pack__range_1a046d65b6ffb65fb998d471ba098e2e23" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>num_chars</name></member>
+      <member refid="structstbtt__pack__range_1a6288f14006e257544db3d015c32b4113" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>v_oversample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

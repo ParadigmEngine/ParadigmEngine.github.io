@@ -1,0 +1,81 @@
+\hypertarget{classmemory_1_1allocator__base}{}\doxysection{memory\+::allocator\+\_\+base Class Reference}
+\label{classmemory_1_1allocator__base}\index{memory::allocator\_base@{memory::allocator\_base}}
+
+
+base class that defines the interface for an allocator.  
+
+
+
+
+{\ttfamily \#include $<$allocator.\+hpp$>$}
+
+Inheritance diagram for memory\+::allocator\+\_\+base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmemory_1_1allocator__base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_ad5d9bee43e84374b6a472eab100778f4}\label{classmemory_1_1allocator__base_ad5d9bee43e84374b6a472eab100778f4}} 
+{\bfseries allocator\+\_\+base} (bool physically\+\_\+backed=true)
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a8a739e71de034018dc1bad3b5c4610a3}\label{classmemory_1_1allocator__base_a8a739e71de034018dc1bad3b5c4610a3}} 
+{\bfseries allocator\+\_\+base} (const \mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} \&)=delete
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a128d2b0abaa5c09d15b4dfb45c8c6a0b}\label{classmemory_1_1allocator__base_a128d2b0abaa5c09d15b4dfb45c8c6a0b}} 
+\mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} \& {\bfseries operator=} (const \mbox{\hyperlink{classmemory_1_1allocator__base}{allocator\+\_\+base}} \&)=delete
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a70fc8dd6504d162ef9fcec2f2d430d8b}\label{classmemory_1_1allocator__base_a70fc8dd6504d162ef9fcec2f2d430d8b}} 
+std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{segment}} $>$ {\bfseries allocate} (std\+::size\+\_\+t bytes)
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a2bc4dab10acef2888165886767a82788}\label{classmemory_1_1allocator__base_a2bc4dab10acef2888165886767a82788}} 
+bool {\bfseries deallocate} (\mbox{\hyperlink{classmemory_1_1segment}{segment}} \&\mbox{\hyperlink{classmemory_1_1segment}{segment}})
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_af09c2414bdc81b836406c69fe41cf213}\label{classmemory_1_1allocator__base_af09c2414bdc81b836406c69fe41cf213}} 
+std\+::vector$<$ \mbox{\hyperlink{classmemory_1_1range__t}{range\+\_\+t}} $>$ {\bfseries committed} ()
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a0a7a8654e4d91232cbca36f77de1062a}\label{classmemory_1_1allocator__base_a0a7a8654e4d91232cbca36f77de1062a}} 
+std\+::vector$<$ \mbox{\hyperlink{classmemory_1_1range__t}{range\+\_\+t}} $>$ {\bfseries available} ()
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a965361530e1829cd69d075f1ea3f894b}\label{classmemory_1_1allocator__base_a965361530e1829cd69d075f1ea3f894b}} 
+bool {\bfseries is\+\_\+physically\+\_\+backed} () const noexcept
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a631aaea05e2227040676bacd1a815978}\label{classmemory_1_1allocator__base_a631aaea05e2227040676bacd1a815978}} 
+size\+\_\+t {\bfseries alignment} () const noexcept
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_ae30458b0f04867bebd9cf36b957a260b}\label{classmemory_1_1allocator__base_ae30458b0f04867bebd9cf36b957a260b}} 
+bool {\bfseries owns} (const \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \&\mbox{\hyperlink{classmemory_1_1segment}{segment}}) const noexcept
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a55afd4a585a25537de1ad96ea5d30537}\label{classmemory_1_1allocator__base_a55afd4a585a25537de1ad96ea5d30537}} 
+void {\bfseries compact} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_adfcea51583c36bc5a9819ed4d0e49cc6}\label{classmemory_1_1allocator__base_adfcea51583c36bc5a9819ed4d0e49cc6}} 
+bool {\bfseries commit} (const \mbox{\hyperlink{classmemory_1_1range__t}{range\+\_\+t}} \&range)
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_aae63c94cb09359c6b7aa79bec30029b4}\label{classmemory_1_1allocator__base_aae63c94cb09359c6b7aa79bec30029b4}} 
+\mbox{\hyperlink{classmemory_1_1range__t}{memory\+::range\+\_\+t}} {\bfseries get\+\_\+range} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmemory_1_1allocator__base_a0c1a2dfb50d276e1264e5aedb56c3069}\label{classmemory_1_1allocator__base_a0c1a2dfb50d276e1264e5aedb56c3069}} 
+class {\bfseries region}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file allocator.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/allocator.\+hpp\item 
+/home/runner/work/paradigm/paradigm/psl/src/memory/allocator.\+cpp\end{DoxyCompactItemize}

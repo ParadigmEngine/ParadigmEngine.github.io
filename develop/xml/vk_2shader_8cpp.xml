@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vk_2shader_8cpp" kind="file" language="C++">
+    <compoundname>shader.cpp</compoundname>
+    <includes local="yes">vk/shader.hpp</includes>
+    <includes local="yes">logging.hpp</includes>
+    <includes refid="meta_2shader_8hpp" local="yes">meta/shader.hpp</includes>
+    <includes refid="vk_2context_8hpp" local="yes">vk/context.hpp</includes>
+    <incdepgraph>
+      <node id="46">
+        <label>iomanip</label>
+      </node>
+      <node id="19">
+        <label>functional</label>
+      </node>
+      <node id="26">
+        <label>limits</label>
+      </node>
+      <node id="70">
+        <label>assert.h</label>
+      </node>
+      <node id="39">
+        <label>iterator</label>
+      </node>
+      <node id="65">
+        <label>vk/context.hpp</label>
+        <link refid="vk_2context_8hpp_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>psl/array_view.hpp</label>
+        <link refid="array__view_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>psl/memory/range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>psl/math/vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>cstdint</label>
+      </node>
+      <node id="40">
+        <label>psl/library.hpp</label>
+        <link refid="library_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>variant</label>
+      </node>
+      <node id="67">
+        <label>gfx/limits.hpp</label>
+        <link refid="limits_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>cassert</label>
+      </node>
+      <node id="13">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="47">
+        <label>numeric</label>
+      </node>
+      <node id="10">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>unordered_set</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="44">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="49">
+        <label>string_view</label>
+      </node>
+      <node id="52">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>bitset</label>
+      </node>
+      <node id="64">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>optional</label>
+      </node>
+      <node id="51">
+        <label>stack</label>
+      </node>
+      <node id="37">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>signal.h</label>
+      </node>
+      <node id="5">
+        <label>gfx/types.hpp</label>
+        <link refid="gfx_2types_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="48">
+        <label>sstream</label>
+      </node>
+      <node id="66">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="31">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="56">
+        <label>clocale</label>
+      </node>
+      <node id="55">
+        <label>cctype</label>
+      </node>
+      <node id="9">
+        <label>cstddef</label>
+      </node>
+      <node id="36">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unordered_map</label>
+      </node>
+      <node id="7">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="68">
+        <label>vk/ivk.hpp</label>
+        <link refid="ivk_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>logging.hpp</label>
+      </node>
+      <node id="43">
+        <label>psl/meta.hpp</label>
+        <link refid="meta_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vk/shader.hpp</label>
+      </node>
+      <node id="61">
+        <label>concepts</label>
+      </node>
+      <node id="28">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="58">
+        <label>thread</label>
+      </node>
+      <node id="20">
+        <label>type_traits</label>
+      </node>
+      <node id="34">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>meta/shader.hpp</label>
+        <link refid="meta_2shader_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp</label>
+        <link refid="vk_2shader_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>cstring</label>
+      </node>
+      <node id="69">
+        <label>vulkan/vulkan.hpp</label>
+      </node>
+      <node id="33">
+        <label>memory</label>
+      </node>
+      <node id="50">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="12">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;vk/shader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;logging.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;meta/shader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacepsl" kindref="compound">psl</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1gfx" kindref="compound">core::gfx</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1ivk" kindref="compound">core::ivk</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1resource" kindref="compound">core::resource</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore" kindref="compound">core</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">shader::shader(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>*<sp/>metaFile,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::ivk::context&gt;</ref><sp/>context)<sp/>:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Context(context),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Cache(cache),<sp/>m_UID(metaData.uid),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Meta(cache.library().get&lt;<ref refid="namespacecore" kindref="compound">core</ref>::meta::shader&gt;(metaFile-&gt;ID()).value_or(nullptr))</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_Meta<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;error(</highlight><highlight class="stringliteral">&quot;ivk::shader<sp/>[{0}]<sp/>does<sp/>not<sp/>have<sp/>a<sp/>valid,<sp/>on<sp/>disk,<sp/>meta<sp/>file&quot;</highlight><highlight class="normal">,<sp/>m_UID.to_string());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>&amp;<sp/>meta<sp/>=<sp/>*m_Meta;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cache.library().is_physical_file(meta.<ref refid="classpsl_1_1meta_1_1file_1abea97c4747d4e435033ec7b73270c103" kindref="member">ID</ref>()))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>cache.library().load(meta.<ref refid="classpsl_1_1meta_1_1file_1abea97c4747d4e435033ec7b73270c103" kindref="member">ID</ref>());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!result)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;error(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;could<sp/>not<sp/>load<sp/>ivk::shader<sp/>[{0}]<sp/>from<sp/>resource<sp/>UID<sp/>[{1}]&quot;</highlight><highlight class="normal">,<sp/>m_UID.to_string(),<sp/>meta.<ref refid="classpsl_1_1meta_1_1file_1abea97c4747d4e435033ec7b73270c103" kindref="member">ID</ref>().<ref refid="structpsl_1_1_u_i_d_1a727f5bbd55fc11ef6b6fb0fa8d71dcf6" kindref="member">to_string</ref>());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::ShaderModuleCreateInfo<sp/>moduleCreateInfo;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.pNext<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.codeSize<sp/>=<sp/>result.value().size();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.pCode<sp/><sp/><sp/><sp/>=<sp/>(uint32_t*)result.value().data();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.flags<sp/><sp/><sp/><sp/>=<sp/>vk::ShaderModuleCreateFlagBits();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[spec,<sp/>pipe]<sp/>=<sp/>m_Specializations.emplace_back();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pipe.stage<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>vk::ShaderStageFlagBits((uint32_t)meta.<ref refid="classcore_1_1meta_1_1shader_1a73c79a7e7e625782f6e37ec696a257d1" kindref="member">stage</ref>());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;info(</highlight><highlight class="stringliteral">&quot;creating<sp/>ivk::shader<sp/>[{0}]<sp/>using<sp/>resource<sp/>uid<sp/>[{1}]<sp/>with<sp/>shader<sp/>stage<sp/>[{2}]&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_UID.to_string(),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meta.<ref refid="classpsl_1_1meta_1_1file_1abea97c4747d4e435033ec7b73270c103" kindref="member">ID</ref>().<ref refid="structpsl_1_1_u_i_d_1a727f5bbd55fc11ef6b6fb0fa8d71dcf6" kindref="member">to_string</ref>(),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::to_string(pipe.stage));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spec.name<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;main&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pipe.pName<sp/>=<sp/>spec.name.data();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!utility::vulkan::check(m_Context-&gt;device().createShaderModule(&amp;moduleCreateInfo,<sp/>NULL,<sp/>&amp;pipe.module)))</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Specializations.erase(std::end(m_Specializations)<sp/>-<sp/>1u);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">shader::shader(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>*<sp/>metaFile,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::ivk::context&gt;</ref><sp/>context,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;specialization&gt;<sp/>specializations)<sp/>:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Context(context),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Cache(cache),<sp/>m_UID(metaData.uid)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cache.library().is_physical_file(m_UID))</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>&amp;<sp/>meta<sp/>=<sp/>*metaFile;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cache.library().load(m_UID);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!result)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;error(</highlight><highlight class="stringliteral">&quot;ivk::shader<sp/>[{0}]<sp/>does<sp/>not<sp/>have<sp/>a<sp/>valid,<sp/>on<sp/>disk,<sp/>meta<sp/>file&quot;</highlight><highlight class="normal">,<sp/>m_UID.to_string());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::ShaderModuleCreateInfo<sp/>moduleCreateInfo;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.pNext<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.codeSize<sp/>=<sp/>result.value().size();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.pCode<sp/><sp/><sp/><sp/>=<sp/>(uint32_t*)result.value().data();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleCreateInfo.flags<sp/><sp/><sp/><sp/>=<sp/>vk::ShaderModuleCreateFlagBits();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>spec_temp<sp/>:<sp/>specializations)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[spec,<sp/>pipe]<sp/>=</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Specializations.emplace_back(std::make_pair(spec_temp,<sp/>vk::PipelineShaderStageCreateInfo<sp/>{}));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pipe.stage<sp/>=<sp/>vk::ShaderStageFlagBits((uint32_t)meta.<ref refid="classcore_1_1meta_1_1shader_1a73c79a7e7e625782f6e37ec696a257d1" kindref="member">stage</ref>());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;info(</highlight><highlight class="stringliteral">&quot;creating<sp/>ivk::shader<sp/>[{0}]<sp/>using<sp/>resource<sp/>uid<sp/>[{1}]<sp/>with<sp/>shader<sp/>stage<sp/>[{2}]&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_UID.to_string(),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meta.<ref refid="classpsl_1_1meta_1_1file_1abea97c4747d4e435033ec7b73270c103" kindref="member">ID</ref>().<ref refid="structpsl_1_1_u_i_d_1a727f5bbd55fc11ef6b6fb0fa8d71dcf6" kindref="member">to_string</ref>(),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::to_string(pipe.stage));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!utility::vulkan::check(m_Context-&gt;device().createShaderModule(&amp;moduleCreateInfo,<sp/>NULL,<sp/>&amp;pipe.module)))</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Specializations.erase(std::end(m_Specializations)<sp/>-<sp/>1u);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pair<sp/>:<sp/>m_Specializations)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pair.second.pName<sp/>=<sp/>pair.first.name.data();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">shader::~shader()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[spec,<sp/><ref refid="classcore_1_1ivk_1_1pipeline" kindref="compound">pipeline</ref>]<sp/>:<sp/>m_Specializations)<sp/>m_Context-&gt;device().destroyShaderModule(<ref refid="classcore_1_1ivk_1_1pipeline" kindref="compound">pipeline</ref>.module,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classcore_1_1ivk_1_1shader_1a261324f1279dee29bf333edf414d5d9d" refkind="member"><highlight class="normal">std::optional&lt;vk::PipelineShaderStageCreateInfo&gt;<sp/><ref refid="classcore_1_1ivk_1_1shader_1a261324f1279dee29bf333edf414d5d9d" kindref="member">shader::pipeline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1ivk_1_1shader_1_1specialization" kindref="compound">specialization</ref>&amp;<sp/>description)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>std::find_if(std::begin(m_Specializations),</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::end(m_Specializations),</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;description](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;specialization,<sp/>vk::PipelineShaderStageCreateInfo&gt;&amp;<sp/>pair)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pair.first<sp/>==<sp/>description;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(it<sp/>!=<sp/>std::end(m_Specializations))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!m_Cache.library().is_physical_file(m_UID))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>m_Cache.library().load(m_UID);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>vk::ShaderModuleCreateInfo<sp/>moduleCreateInfo;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>moduleCreateInfo.pNext<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>moduleCreateInfo.codeSize<sp/>=<sp/>result.value().size();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>moduleCreateInfo.pCode<sp/><sp/><sp/><sp/>=<sp/>(uint32_t*)result.value().data();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>moduleCreateInfo.flags<sp/><sp/><sp/><sp/>=<sp/>vk::ShaderModuleCreateFlagBits();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[spec,<sp/>pipe]<sp/>=</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_Specializations.emplace_back(std::make_pair(description,<sp/>vk::PipelineShaderStageCreateInfo<sp/>{}));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>pipe.stage<sp/>=<sp/>m_Specializations[0].second.stage;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>pipe.pName<sp/>=<sp/>description.name.data();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pair<sp/>:<sp/>m_Specializations)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pair.second.pName<sp/>=<sp/>pair.first.name.data();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!utility::vulkan::check(m_Context-&gt;device().createShaderModule(&amp;moduleCreateInfo,<sp/>NULL,<sp/>&amp;pipe.module)))</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Specializations.erase(std::end(m_Specializations)<sp/>-<sp/>1u);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pipe;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref>*<sp/><ref refid="classcore_1_1ivk_1_1shader_1ab3cab268670b7f53e962436e3572292e" kindref="member">shader::meta</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Meta;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp"/>
+  </compounddef>
+</doxygen>

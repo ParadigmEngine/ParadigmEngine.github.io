@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1is__keyed__range" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::is_keyed_range</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1details_1_1is__keyed__range_1a30e8feb3b3576a70b7793c65bd301b4a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool psl::serialization::details::is_keyed_range&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{utility::templates::is_associative_container&lt;T&gt;::value}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="305" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="304" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="303" bodyend="306"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1details_1_1is__keyed__range_1a30e8feb3b3576a70b7793c65bd301b4a" prot="public" virt="non-virtual"><scope>psl::serialization::details::is_keyed_range</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1converter_3_01bool_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::converter&lt; bool &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1converter_3_01bool_01_4_1a3572e37d4efbde60172fa013cff0e3c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>static psl::string8_t utility::converter&lt; bool &gt;::to_string</definition>
+        <argsstring>(const bool &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="868" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="868" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01bool_01_4_1a7298cdfb20467c31ed21f30e14de3515" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::converter&lt; bool &gt;::from_string</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="870" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="870" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01bool_01_4_1a7e11b4981479cfe3f8c91e7f9d4a79b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::converter&lt; bool &gt;::is_valid</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>is_valid</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="877" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="877" bodyend="881"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="867" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="866" bodyend="882"/>
+    <listofallmembers>
+      <member refid="structutility_1_1converter_3_01bool_01_4_1a7298cdfb20467c31ed21f30e14de3515" prot="public" virt="non-virtual"><scope>utility::converter&lt; bool &gt;</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_3_01bool_01_4_1a7e11b4981479cfe3f8c91e7f9d4a79b3" prot="public" virt="non-virtual"><scope>utility::converter&lt; bool &gt;</scope><name>is_valid</name></member>
+      <member refid="structutility_1_1converter_3_01bool_01_4_1a3572e37d4efbde60172fa013cff0e3c2" prot="public" virt="non-virtual"><scope>utility::converter&lt; bool &gt;</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

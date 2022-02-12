@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1light_1_1spot" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::light::spot</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1light_1_1spot_1aa6a4dc01dd5df1479013be8c70753f7e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::light::spot::innerAngle</definition>
+        <argsstring></argsstring>
+        <name>innerAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="18" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1light_1_1spot_1a6dc590be2da5dfcc68419b03531a1c51" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::light::spot::outerAngle</definition>
+        <argsstring></argsstring>
+        <name>outerAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="19" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1light_1_1spot_1a46ab3f3d95f23785070a0539c171063c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::light::spot::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="20" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="17" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="16" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1light_1_1spot_1aa6a4dc01dd5df1479013be8c70753f7e" prot="public" virt="non-virtual"><scope>core::ecs::components::light::spot</scope><name>innerAngle</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1light_1_1spot_1a46ab3f3d95f23785070a0539c171063c" prot="public" virt="non-virtual"><scope>core::ecs::components::light::spot</scope><name>length</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1light_1_1spot_1a6dc590be2da5dfcc68419b03531a1c51" prot="public" virt="non-virtual"><scope>core::ecs::components::light::spot</scope><name>outerAngle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

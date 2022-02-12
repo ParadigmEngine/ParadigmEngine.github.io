@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="unioninternals_1_1event_1_1_horrible_union" kind="union" language="C++" prot="public">
+    <compoundname>internals::event::HorribleUnion</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class TOut</type>
+      </param>
+      <param>
+        <type>class TIn</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unioninternals_1_1event_1_1_horrible_union_1ae0944a7a7a0f958b675ea9d4375abedc" prot="public" static="no" mutable="no">
+        <type>TOut</type>
+        <definition>TOut internals::event::HorribleUnion&lt; TOut, TIn &gt;::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="25" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioninternals_1_1event_1_1_horrible_union_1aee5620323666ada6aad630c55829d40d" prot="public" static="no" mutable="no">
+        <type>TIn</type>
+        <definition>TIn internals::event::HorribleUnion&lt; TOut, TIn &gt;::in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="26" column="5" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="24" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="unioninternals_1_1event_1_1_horrible_union_1aee5620323666ada6aad630c55829d40d" prot="public" virt="non-virtual"><scope>internals::event::HorribleUnion</scope><name>in</name></member>
+      <member refid="unioninternals_1_1event_1_1_horrible_union_1ae0944a7a7a0f958b675ea9d4375abedc" prot="public" virt="non-virtual"><scope>internals::event::HorribleUnion</scope><name>out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

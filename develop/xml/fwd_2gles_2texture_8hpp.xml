@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="fwd_2gles_2texture_8hpp" kind="file" language="C++">
+    <compoundname>texture.hpp</compoundname>
+    <includes refid="fwd_2resource_2resource_8hpp" local="yes">fwd/resource/resource.hpp</includes>
+    <includedby refid="gles_2compute_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/gles/compute.hpp</includedby>
+    <includedby refid="gles_2texture_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/gles/texture.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/fwd/gles/texture.hpp</label>
+        <link refid="fwd_2gles_2texture_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/compute.hpp</label>
+        <link refid="gles_2compute_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/framebuffer.cpp</label>
+        <link refid="gles_2framebuffer_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/texture.cpp</label>
+        <link refid="gles_2texture_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/compute.cpp</label>
+        <link refid="gles_2compute_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/fwd/gles/texture.hpp</label>
+        <link refid="fwd_2gles_2texture_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/texture.hpp</label>
+        <link refid="gles_2texture_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp</label>
+        <link refid="gles_2drawpass_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/material.cpp</label>
+        <link refid="gles_2material_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcore_1_1resource_1_1resource__traits_3_01core_1_1igles_1_1texture__t_01_4" prot="public">core::resource::resource_traits&lt; core::igles::texture_t &gt;</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1igles">core::igles</innernamespace>
+    <innernamespace refid="namespacecore_1_1meta">core::meta</innernamespace>
+    <innernamespace refid="namespacecore_1_1resource">core::resource</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwd/resource/resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core::igles</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">texture_t;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::igles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1meta" kindref="compound">core::meta</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">texture_t;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1resource" kindref="compound">core::resource</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">resource_traits&lt;<ref refid="namespacecore" kindref="compound">core</ref>::igles::texture_t&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>meta_type<sp/>=<sp/><ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::resource</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/fwd/gles/texture.hpp"/>
+  </compounddef>
+</doxygen>

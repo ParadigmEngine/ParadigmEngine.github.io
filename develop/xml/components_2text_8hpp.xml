@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="components_2text_8hpp" kind="file" language="C++">
+    <compoundname>text.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="systems_2text_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/components/text.hpp</label>
+        <link refid="components_2text_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/components/text.hpp</label>
+        <link refid="components_2text_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</label>
+        <link refid="systems_2text_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1text" prot="public">core::ecs::components::text</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1ecs">core::ecs</innernamespace>
+    <innernamespace refid="namespacecore_1_1ecs_1_1components">core::ecs::components</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core::ecs::components</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">text</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string*<sp/>value<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::ecs::components</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/text.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1sorting" kind="namespace" language="C++">
+    <compoundname>psl::sorting</compoundname>
+    <innernamespace refid="namespacepsl_1_1sorting_1_1details">psl::sorting::details</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="algorithm_8hpp_1a08403ed037cc883a19a709c36c73440c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+          <param>
+            <type>class Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::sorting::quick</definition>
+        <argsstring>(const It first, const It last, Pred &amp;&amp;pred) noexcept</argsstring>
+        <name>quick</name>
+        <param>
+          <type>const It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const It</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="50" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="50" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="algorithm_8hpp_1a83bd303ee51fc04f1d0de4ac151802b2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::sorting::quick</definition>
+        <argsstring>(const It first, const It last) noexcept</argsstring>
+        <name>quick</name>
+        <param>
+          <type>const It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const It</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sorting algorithm best used for data with few unique items </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="64" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="algorithm_8hpp_1a540625496c4930fe08d875862a070301" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+          <param>
+            <type>class Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::sorting::insertion</definition>
+        <argsstring>(const It first, const It last, Pred &amp;&amp;pred) noexcept</argsstring>
+        <name>insertion</name>
+        <param>
+          <type>const It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const It</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="70" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="70" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="algorithm_8hpp_1afa5722867cf961a0fd769d6c3ed11a30" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename It</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void psl::sorting::insertion</definition>
+        <argsstring>(const It first, const It last) noexcept</argsstring>
+        <name>insertion</name>
+        <param>
+          <type>const It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const It</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="86" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/algorithm.hpp" line="22" column="1"/>
+  </compounddef>
+</doxygen>

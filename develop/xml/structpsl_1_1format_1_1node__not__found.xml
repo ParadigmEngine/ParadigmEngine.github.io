@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1format_1_1node__not__found" kind="struct" language="C++" prot="public">
+    <compoundname>psl::format::node_not_found</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1format_1_1node__not__found_1ab7c23d91f0cd122ad98b5aea16bc7d3b" prot="public" static="no" mutable="no">
+        <type>container const  *const</type>
+        <definition>container const* const psl::format::node_not_found::m_Container</definition>
+        <argsstring></argsstring>
+        <name>m_Container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="385" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1node__not__found_1a8ac15c786ee307116970c74497c83853" prot="public" static="no" mutable="no">
+        <type>std::variant&lt; nodes_t, psl::string8_t &gt;</type>
+        <definition>std::variant&lt;nodes_t, psl::string8_t&gt; psl::format::node_not_found::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="386" column="14" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1format_1_1node__not__found_1ae9521da60aad4906237ca76a004736cf" prot="public" static="no" mutable="yes">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::format::node_not_found::m_Message</definition>
+        <argsstring></argsstring>
+        <name>m_Message</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="387" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1format_1_1node__not__found_1aaa10d4485724e9d36647d2db2f65bfe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::node_not_found::node_not_found</definition>
+        <argsstring>(container const *const container, nodes_t index)</argsstring>
+        <name>node_not_found</name>
+        <param>
+          <type>container const *const</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>nodes_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="357" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="357" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1node__not__found_1ab18e676c0efbe0cae080fa494cddffea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::node_not_found::node_not_found</definition>
+        <argsstring>(container const *const container, psl::string8::view name)</argsstring>
+        <name>node_not_found</name>
+        <param>
+          <type>container const *const</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="358" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="358" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1node__not__found_1a5e090044a03ba9917b0eafde9a070be4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>container const  *const</type>
+        <definition>container const* const psl::format::node_not_found::target</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="361" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="361" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1format_1_1node__not__found_1a50b6e57075cef43e2bf3ad7fa965b942" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>char const  *</type>
+        <definition>char const* psl::format::node_not_found::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="363" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="363" bodyend="382"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" line="356" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format.hpp" bodystart="355" bodyend="388"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1format_1_1node__not__found_1ab7c23d91f0cd122ad98b5aea16bc7d3b" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>m_Container</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1a8ac15c786ee307116970c74497c83853" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>m_Data</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1ae9521da60aad4906237ca76a004736cf" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>m_Message</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1aaa10d4485724e9d36647d2db2f65bfe8" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>node_not_found</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1ab18e676c0efbe0cae080fa494cddffea" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>node_not_found</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1a5e090044a03ba9917b0eafde9a070be4" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>target</name></member>
+      <member refid="structpsl_1_1format_1_1node__not__found_1a50b6e57075cef43e2bf3ad7fa965b942" prot="public" virt="non-virtual"><scope>psl::format::node_not_found</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

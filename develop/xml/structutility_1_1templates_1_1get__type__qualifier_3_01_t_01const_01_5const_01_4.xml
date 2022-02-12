@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01const_01_5const_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::get_type_qualifier&lt; T const *const &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01const_01_5const_01_4_1a7c8269ad8f660e3027fe6043a2839fb5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr type_qualifier</type>
+        <definition>constexpr type_qualifier utility::templates::get_type_qualifier&lt; T const *const &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{type_qualifier::IS_POINTER}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="64" column="33" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="63" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="62" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1get__type__qualifier_3_01_t_01const_01_5const_01_4_1a7c8269ad8f660e3027fe6043a2839fb5" prot="public" virt="non-virtual"><scope>utility::templates::get_type_qualifier&lt; T const *const &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

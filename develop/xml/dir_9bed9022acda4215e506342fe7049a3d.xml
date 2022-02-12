@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_9bed9022acda4215e506342fe7049a3d" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/src/vk</compoundname>
+    <innerfile refid="vk_2buffer_8cpp">buffer.cpp</innerfile>
+    <innerfile refid="vk_2compute_8cpp">compute.cpp</innerfile>
+    <innerfile refid="vk_2computepass_8cpp">computepass.cpp</innerfile>
+    <innerfile refid="vk_2context_8cpp">context.cpp</innerfile>
+    <innerfile refid="vk_2drawpass_8cpp">drawpass.cpp</innerfile>
+    <innerfile refid="vk_2framebuffer_8cpp">framebuffer.cpp</innerfile>
+    <innerfile refid="vk_2geometry_8cpp">geometry.cpp</innerfile>
+    <innerfile refid="vk_2material_8cpp">material.cpp</innerfile>
+    <innerfile refid="pipeline_8cpp">pipeline.cpp</innerfile>
+    <innerfile refid="vk_2pipeline__cache_8cpp">pipeline_cache.cpp</innerfile>
+    <innerfile refid="vk_2sampler_8cpp">sampler.cpp</innerfile>
+    <innerfile refid="vk_2shader_8cpp">shader.cpp</innerfile>
+    <innerfile refid="vk_2swapchain_8cpp">swapchain.cpp</innerfile>
+    <innerfile refid="vk_2texture_8cpp">texture.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/vk/"/>
+  </compounddef>
+</doxygen>

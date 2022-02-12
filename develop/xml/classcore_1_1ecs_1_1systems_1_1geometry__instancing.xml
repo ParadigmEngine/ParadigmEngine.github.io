@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ecs_1_1systems_1_1geometry__instancing" kind="class" language="C++" prot="public">
+    <compoundname>core::ecs::systems::geometry_instancing</compoundname>
+    <innerclass refid="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1geometry__instance" prot="private">core::ecs::systems::geometry_instancing::geometry_instance</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1instance__id" prot="private">core::ecs::systems::geometry_instancing::instance_id</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1systems_1_1geometry__instancing_1_1renderer__sort" prot="private">core::ecs::systems::geometry_instancing::renderer_sort</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a6bf52d521017f2d0a7ed3ce983c7b97c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>geometry_instancing::geometry_instancing</definition>
+        <argsstring>(psl::ecs::state_t &amp;state)</argsstring>
+        <name>geometry_instancing</name>
+        <param>
+          <type>psl::ecs::state_t &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="37" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a3d60884e2e03208befb8e5a9e816b168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::systems::geometry_instancing::~geometry_instancing</definition>
+        <argsstring>()=default</argsstring>
+        <name>~geometry_instancing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1ad5c130b34048898395368a1db01fa8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::systems::geometry_instancing::geometry_instancing</definition>
+        <argsstring>(const geometry_instancing &amp;other)=delete</argsstring>
+        <name>geometry_instancing</name>
+        <param>
+          <type>const geometry_instancing &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a0c96b098a3110599d4fd43f72bb7a30e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::ecs::systems::geometry_instancing::geometry_instancing</definition>
+        <argsstring>(geometry_instancing &amp;&amp;other) noexcept=delete</argsstring>
+        <name>geometry_instancing</name>
+        <param>
+          <type>geometry_instancing &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a0c310696d0291b85f6d21133c9273844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_instancing &amp;</type>
+        <definition>geometry_instancing&amp; core::ecs::systems::geometry_instancing::operator=</definition>
+        <argsstring>(const geometry_instancing &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const geometry_instancing &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="42" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a2740e41aebd9c35d64ba8862dfcb7300" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>geometry_instancing &amp;</type>
+        <definition>geometry_instancing&amp; core::ecs::systems::geometry_instancing::operator=</definition>
+        <argsstring>(geometry_instancing &amp;&amp;other) noexcept=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>geometry_instancing &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="43" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a174878854da61b9a56526fa013b0f242" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_instancing::dynamic_system</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; core::ecs::components::renderable, const core::ecs::components::transform, const core::ecs::components::dynamic_tag, psl::ecs::except&lt; core::ecs::components::dont_render_tag &gt;, psl::ecs::order_by&lt; renderer_sort, core::ecs::components::renderable &gt;&gt; geometry_pack)</argsstring>
+        <name>dynamic_system</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; core::ecs::components::renderable, const core::ecs::components::transform, const core::ecs::components::dynamic_tag, <ref refid="structpsl_1_1ecs_1_1except" kindref="compound">psl::ecs::except</ref>&lt; core::ecs::components::dont_render_tag &gt;, psl::ecs::order_by&lt; renderer_sort, core::ecs::components::renderable &gt;&gt;</type>
+          <declname>geometry_pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="51" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="30" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a2c574df4bcbf65fecd3b9014e7bb5840" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_instancing::static_add</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; psl::ecs::entity, const core::ecs::components::renderable, const core::ecs::components::transform, psl::ecs::except&lt; core::ecs::components::dynamic_tag &gt;, psl::ecs::on_combine&lt; const core::ecs::components::renderable, const core::ecs::components::transform &gt;, psl::ecs::order_by&lt; renderer_sort, core::ecs::components::renderable &gt;&gt; geometry_pack)</argsstring>
+        <name>static_add</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; psl::ecs::entity, const core::ecs::components::renderable, const core::ecs::components::transform, <ref refid="structpsl_1_1ecs_1_1except" kindref="compound">psl::ecs::except</ref>&lt; core::ecs::components::dynamic_tag &gt;, <ref refid="structpsl_1_1ecs_1_1on__combine" kindref="compound">psl::ecs::on_combine</ref>&lt; const core::ecs::components::renderable, const core::ecs::components::transform &gt;, psl::ecs::order_by&lt; renderer_sort, core::ecs::components::renderable &gt;&gt;</type>
+          <declname>geometry_pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="59" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="107" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1abc4c9c766de4493289ce9bd862067d76" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_instancing::static_remove</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; psl::ecs::entity, core::ecs::components::renderable, const instance_id, psl::ecs::except&lt; core::ecs::components::dynamic_tag &gt;, psl::ecs::on_break&lt; const core::ecs::components::renderable, const core::ecs::components::transform &gt;&gt; geometry_pack)</argsstring>
+        <name>static_remove</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; psl::ecs::entity, core::ecs::components::renderable, const instance_id, <ref refid="structpsl_1_1ecs_1_1except" kindref="compound">psl::ecs::except</ref>&lt; core::ecs::components::dynamic_tag &gt;, <ref refid="structpsl_1_1ecs_1_1on__break" kindref="compound">psl::ecs::on_break</ref>&lt; const core::ecs::components::renderable, const core::ecs::components::transform &gt;&gt;</type>
+          <declname>geometry_pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="68" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="170" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1aa9067867dc016884c74c2982fc0ff6de" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_instancing::static_geometry_add</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; psl::ecs::entity, const core::ecs::components::renderable, psl::ecs::except&lt; core::ecs::components::transform &gt;, psl::ecs::on_add&lt; core::ecs::components::renderable &gt;&gt; pack)</argsstring>
+        <name>static_geometry_add</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; psl::ecs::entity, const core::ecs::components::renderable, <ref refid="structpsl_1_1ecs_1_1except" kindref="compound">psl::ecs::except</ref>&lt; core::ecs::components::transform &gt;, <ref refid="structpsl_1_1ecs_1_1on__add" kindref="compound">psl::ecs::on_add</ref>&lt; core::ecs::components::renderable &gt;&gt;</type>
+          <declname>pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="76" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="189" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a5a21d2da7bc0b6b05bd5b9eceeb71344" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_instancing::static_geometry_remove</definition>
+        <argsstring>(psl::ecs::info_t &amp;info, psl::ecs::pack&lt; psl::ecs::entity, core::ecs::components::renderable, const instance_id, psl::ecs::except&lt; core::ecs::components::transform &gt;, psl::ecs::on_remove&lt; core::ecs::components::renderable &gt;&gt; pack)</argsstring>
+        <name>static_geometry_remove</name>
+        <param>
+          <type>psl::ecs::info_t &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; psl::ecs::entity, core::ecs::components::renderable, const instance_id, <ref refid="structpsl_1_1ecs_1_1except" kindref="compound">psl::ecs::except</ref>&lt; core::ecs::components::transform &gt;, <ref refid="structpsl_1_1ecs_1_1on__remove" kindref="compound">psl::ecs::on_remove</ref>&lt; core::ecs::components::renderable &gt;&gt;</type>
+          <declname>pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="83" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp" bodystart="210" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp" bodystart="12" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a174878854da61b9a56526fa013b0f242" prot="private" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>dynamic_system</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a6bf52d521017f2d0a7ed3ce983c7b97c" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>geometry_instancing</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1ad5c130b34048898395368a1db01fa8ad" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>geometry_instancing</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a0c96b098a3110599d4fd43f72bb7a30e" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>geometry_instancing</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a0c310696d0291b85f6d21133c9273844" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a2740e41aebd9c35d64ba8862dfcb7300" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a2c574df4bcbf65fecd3b9014e7bb5840" prot="private" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>static_add</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1aa9067867dc016884c74c2982fc0ff6de" prot="private" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>static_geometry_add</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a5a21d2da7bc0b6b05bd5b9eceeb71344" prot="private" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>static_geometry_remove</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1abc4c9c766de4493289ce9bd862067d76" prot="private" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>static_remove</name></member>
+      <member refid="classcore_1_1ecs_1_1systems_1_1geometry__instancing_1a3d60884e2e03208befb8e5a9e816b168" prot="public" virt="non-virtual"><scope>core::ecs::systems::geometry_instancing</scope><name>~geometry_instancing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

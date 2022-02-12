@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1serialization_1_1details" kind="namespace" language="C++">
+    <compoundname>psl::serialization::details</compoundname>
+    <innerclass refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" prot="public">psl::serialization::details::anonymous_property</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1function__serialize" prot="public">psl::serialization::details::function_serialize</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1function__serialize_3_01_s_00_01_t_00_01std_1_1void__t_0cfd82b368821bdad75c4a7fbf28f90f" prot="public">psl::serialization::details::function_serialize&lt; S, T, std::void_t&lt; decltype(serialize(std::declval&lt; S &amp; &gt;(), std::declval&lt; T &amp; &gt;()))&gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__collection" prot="public">psl::serialization::details::is_collection</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__collection_3_01_t_01_5_00_01_encoder_01_4" prot="public">psl::serialization::details::is_collection&lt; T *, Encoder &gt;</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__collection__range" prot="public">psl::serialization::details::is_collection_range</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__collection__range_3_01_t_01_5_00_01_encoder_01_4" prot="public">psl::serialization::details::is_collection_range&lt; T *, Encoder &gt;</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__keyed__range" prot="public">psl::serialization::details::is_keyed_range</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__property" prot="public">psl::serialization::details::is_property</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__property_3_01psl_1_1serialization_1_1property_3_01_name_00_01_a_01_4_01_4" prot="public">psl::serialization::details::is_property&lt; psl::serialization::property&lt; Name, A &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1is__range" prot="public">psl::serialization::details::is_range</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1member__function__serialize" prot="public">psl::serialization::details::member_function_serialize</innerclass>
+    <innerclass refid="structpsl_1_1serialization_1_1details_1_1member__function__serialize_3_01_s_00_01_t_00_01std_1_1c82366e7d9815b03e55403bbebab8c34" prot="public">psl::serialization::details::member_function_serialize&lt; S, T, std::void_t&lt; decltype(::psl::serialization::accessor::serialize(std::declval&lt; S &amp; &gt;(), std::declval&lt; T &amp; &gt;()))&gt; &gt;</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="serializer_8hpp_1a2eba31d2fe2e2a40827f2924b43f09b9" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; std::unordered_map&lt; uint64_t, psl::serialization::polymorphic_data_t * &gt; &gt;</type>
+        <definition>std::unique_ptr&lt; std::unordered_map&lt; uint64_t, psl::serialization::polymorphic_data_t * &gt; &gt; psl::serialization::details::m_PolymorphicData</definition>
+        <argsstring></argsstring>
+        <name>m_PolymorphicData</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="77" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/serialization/serializer.cpp" bodystart="3" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" declline="77" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1a90ccfe7485ab85fb372acaf0770d114e" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::HasSerializationName</definition>
+        <argsstring></argsstring>
+        <name>HasSerializationName</name>
+        <initializer>= requires
+		{
+			accessor::template test_has_name&lt;T&gt;();
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="177" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1a1d50d47f97e836e31b25cd5889cd2c14" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::HasSerializationPolymorphicName</definition>
+        <argsstring></argsstring>
+        <name>HasSerializationPolymorphicName</name>
+        <initializer>= requires
+		{
+			accessor::template test_has_polymorphic_name&lt;T&gt;();
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="183" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1acf06fea9617a16f50ad269459aabe104" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::IsSerializationPolymorphic</definition>
+        <argsstring></argsstring>
+        <name>IsSerializationPolymorphic</name>
+        <initializer>= requires
+		{
+			{
+				accessor::template test_is_polymorphic&lt;T&gt;()
+				} -&gt; std::same_as&lt;std::true_type&gt;;
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="189" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1af026e8b505bb8c164ad700555b4021e2" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::IsCodec</definition>
+        <argsstring></argsstring>
+        <name>IsCodec</name>
+        <initializer>= std::is_base_of_v&lt;codec, T&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="223" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1ad759aba1d5fa865a946954b47ab1a76c" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::IsEncoder</definition>
+        <argsstring></argsstring>
+        <name>IsEncoder</name>
+        <initializer>= std::is_base_of_v&lt;encoder, T&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="225" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serializer_8hpp_1a3bff6d9d4a1c723a46ab804e17056d90" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept psl::serialization::details::IsDecoder</definition>
+        <argsstring></argsstring>
+        <name>IsDecoder</name>
+        <initializer>= std::is_base_of_v&lt;decoder, T&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="227" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

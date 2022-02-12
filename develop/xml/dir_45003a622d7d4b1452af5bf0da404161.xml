@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_45003a622d7d4b1452af5bf0da404161" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/resource</compoundname>
+    <innerfile refid="cache_8hpp">cache.hpp</innerfile>
+    <innerfile refid="handle_8hpp">handle.hpp</innerfile>
+    <innerfile refid="resource_2resource_8hpp">resource.hpp</innerfile>
+    <innerfile refid="tag_8hpp">tag.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/"/>
+  </compounddef>
+</doxygen>

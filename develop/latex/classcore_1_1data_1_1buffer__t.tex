@@ -1,0 +1,218 @@
+\hypertarget{classcore_1_1data_1_1buffer__t}{}\doxysection{core\+::data\+::buffer\+\_\+t Class Reference}
+\label{classcore_1_1data_1_1buffer__t}\index{core::data::buffer\_t@{core::data::buffer\_t}}
+
+
+container class for G\+PU data.  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a6ecbfbe0bdf4f677a834dc2e61a3e8b1}{buffer\+\_\+t}} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, core\+::gfx\+::memory\+\_\+usage \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a553b45255b7368b0c0c75500721e2f4b}{usage}}, core\+::gfx\+::memory\+\_\+property \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_abd840f9c10fc833828c2e7decc8bafa6}{memory\+Property\+Flags}}, \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} \&\&memory\+\_\+region) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_acd3f160c7b55c16ee2b1b3839fbf4ef4}\label{classcore_1_1data_1_1buffer__t_acd3f160c7b55c16ee2b1b3839fbf4ef4}} 
+{\bfseries buffer\+\_\+t} (const \mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{buffer\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a7b81e3083e237e3f13955b3e65131fd1}\label{classcore_1_1data_1_1buffer__t_a7b81e3083e237e3f13955b3e65131fd1}} 
+\mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{buffer\+\_\+t}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{buffer\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a03aae6fb887b6b8a265ae5cdac8be090}\label{classcore_1_1data_1_1buffer__t_a03aae6fb887b6b8a265ae5cdac8be090}} 
+\mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{buffer\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{buffer\+\_\+t}} \&\&)=delete
+\item 
+size\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a6c7bd6eef91114b0a1ce1cc9fdc71eff}{size}} () const
+\item 
+core\+::gfx\+::memory\+\_\+usage \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a553b45255b7368b0c0c75500721e2f4b}{usage}} () const
+\item 
+core\+::gfx\+::memory\+\_\+property \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_abd840f9c10fc833828c2e7decc8bafa6}{memory\+Property\+Flags}} () const
+\item 
+const \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} \& \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a436b80bc459cd6a9dae53f8ed9d06f5f}{region}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} $>$ \& \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a74beda2e5defc0253f4c60eefe270634}{segments}} () const
+\item 
+std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} $>$ \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_aa7cc819b973c19ab38cafdfbf8d04b16}{allocate}} (size\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a6c7bd6eef91114b0a1ce1cc9fdc71eff}{size}})
+\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1buffer__t_a01649f11bfc58ff4dce167f39c4a5ff7}{deallocate}} (\mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \&segment)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_ad47d314429786cd24045b7a3122f281e}\label{classcore_1_1data_1_1buffer__t_ad47d314429786cd24045b7a3122f281e}} 
+bool {\bfseries transient} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_ac5beb788d82e8f7b1a53c72db01b6a2d}\label{classcore_1_1data_1_1buffer__t_ac5beb788d82e8f7b1a53c72db01b6a2d}} 
+void {\bfseries transient} (bool value) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a0e526f1c1c67885dbdd2a9d661320a22}\label{classcore_1_1data_1_1buffer__t_a0e526f1c1c67885dbdd2a9d661320a22}} 
+core\+::gfx\+::memory\+\_\+write\+\_\+frequency {\bfseries write\+\_\+frequency} () const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a785435e7d51211acd94244412fc17879}\label{classcore_1_1data_1_1buffer__t_a785435e7d51211acd94244412fc17879}} 
+void {\bfseries write\+\_\+frequency} (core\+::gfx\+::memory\+\_\+write\+\_\+frequency value) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1buffer__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{core\+::data\+::buffer\+\_\+t}} is a data container for anything that will be uploaded to the G\+PU. This means that this can not contain any complex types (such as indirections). \mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{core\+::data\+::buffer\+\_\+t}} can be incorrectly set up when giving incompatible \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} bundled with core\+::gfx\+::memory\+\_\+usage. \begin{DoxyNote}{Note}
+the \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} you pass to this object will also dictate the {\bfseries{size}} and {\bfseries{alignment}} requirements of this specific resource on the G\+PU. 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]figure out a way around incompatible \mbox{\hyperlink{classcore_1_1data_1_1buffer__t}{core\+::data\+::buffer\+\_\+t}} setups, perhaps by using structs to construct the class. \end{DoxyRefDesc}
+\begin{DoxyAuthor}{Author}
+Jessy De Lannoit 
+\end{DoxyAuthor}
+
+
+Definition at line 21 of file buffer.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a6ecbfbe0bdf4f677a834dc2e61a3e8b1}\label{classcore_1_1data_1_1buffer__t_a6ecbfbe0bdf4f677a834dc2e61a3e8b1}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!buffer\_t@{buffer\_t}}
+\index{buffer\_t@{buffer\_t}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{buffer\_t()}{buffer\_t()}}
+{\footnotesize\ttfamily buffer\+\_\+t\+::buffer\+\_\+t (\begin{DoxyParamCaption}\item[{core\+::resource\+::cache\+\_\+t \&}]{cache,  }\item[{const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&}]{meta\+Data,  }\item[{\mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$}]{meta\+File,  }\item[{core\+::gfx\+::memory\+\_\+usage}]{usage,  }\item[{core\+::gfx\+::memory\+\_\+property}]{memory\+Property\+Flags,  }\item[{\mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} \&\&}]{memory\+\_\+region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+will do the minimal setup needed, no allocations happen at this point yet. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cache} & which cache this object has been allocated in \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+Data} & the metadata that is assigned to this object \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+File} & the metafile associated with this instance \\
+\hline
+\mbox{\texttt{ in}}  & {\em usage} & the usage flags that signify how the resource should be used by the G\+PU \\
+\hline
+\mbox{\texttt{ in}}  & {\em memory\+Property\+Flags} & what are the properties of the memory (i.\+e. where does it live) \\
+\hline
+\mbox{\texttt{ in}}  & {\em memory\+\_\+region} & what is the owning region of this memory. Note that this parameter also will dictate the size and alignment of the resource. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file buffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a6c7bd6eef91114b0a1ce1cc9fdc71eff}\label{classcore_1_1data_1_1buffer__t_a6c7bd6eef91114b0a1ce1cc9fdc71eff}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!size@{size}}
+\index{size@{size}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t buffer\+\_\+t\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the total size in the \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} that this buffer occupies. 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a553b45255b7368b0c0c75500721e2f4b}\label{classcore_1_1data_1_1buffer__t_a553b45255b7368b0c0c75500721e2f4b}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!usage@{usage}}
+\index{usage@{usage}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{usage()}{usage()}}
+{\footnotesize\ttfamily core\+::gfx\+::memory\+\_\+usage buffer\+\_\+t\+::usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the core\+::gfx\+::memory\+\_\+usage of this instance, showing the type of resource this is for the G\+PU 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_abd840f9c10fc833828c2e7decc8bafa6}\label{classcore_1_1data_1_1buffer__t_abd840f9c10fc833828c2e7decc8bafa6}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!memoryPropertyFlags@{memoryPropertyFlags}}
+\index{memoryPropertyFlags@{memoryPropertyFlags}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{memoryPropertyFlags()}{memoryPropertyFlags()}}
+{\footnotesize\ttfamily core\+::gfx\+::memory\+\_\+property buffer\+\_\+t\+::memory\+Property\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the core\+::gfx\+::memory\+\_\+property, so you know where the data lives. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a436b80bc459cd6a9dae53f8ed9d06f5f}\label{classcore_1_1data_1_1buffer__t_a436b80bc459cd6a9dae53f8ed9d06f5f}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!region@{region}}
+\index{region@{region}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{region()}{region()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}} \& buffer\+\_\+t\+::region (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the associated \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}}, where the data lives. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+the data can exist \char`\"{}virtually\char`\"{} as well, for example in the case this is a pure G\+PU resource. 
+\end{DoxyNote}
+
+
+Definition at line 61 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a74beda2e5defc0253f4c60eefe270634}\label{classcore_1_1data_1_1buffer__t_a74beda2e5defc0253f4c60eefe270634}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!segments@{segments}}
+\index{segments@{segments}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{segments()}{segments()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} $>$ \& buffer\+\_\+t\+::segments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+all committed memory\+::segments in the \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}}. Using this you can calculate fragmentation, and allocated size. 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_aa7cc819b973c19ab38cafdfbf8d04b16}\label{classcore_1_1data_1_1buffer__t_aa7cc819b973c19ab38cafdfbf8d04b16}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!allocate@{allocate}}
+\index{allocate@{allocate}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} $>$ buffer\+\_\+t\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Will try to allocate a new \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} of {\itshape atleast} the given size. This method will adhere to the alignment requirements of the underlaying \mbox{\hyperlink{classmemory_1_1region}{memory\+::region}}.
+
+\begin{DoxyReturn}{Returns}
+optionally, a new allocated \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} of {\itshape atleast} the given size. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & the minimum expected size, this will auto-\/align/grow to the alignment requirements. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1buffer__t_a01649f11bfc58ff4dce167f39c4a5ff7}\label{classcore_1_1data_1_1buffer__t_a01649f11bfc58ff4dce167f39c4a5ff7}} 
+\index{core::data::buffer\_t@{core::data::buffer\_t}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!core::data::buffer\_t@{core::data::buffer\_t}}
+\doxysubsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily bool buffer\+\_\+t\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} \&}]{segment }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true in case the deallocation was successful. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em segment} & the target segment to deallocate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+{\itshape segment} gets invalidated on success. 
+\end{DoxyNote}
+
+
+Definition at line 29 of file buffer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/buffer.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/buffer.\+cpp\end{DoxyCompactItemize}

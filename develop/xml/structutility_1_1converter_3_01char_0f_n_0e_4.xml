@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1converter_3_01char_0f_n_0e_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::converter&lt; char[N]&gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structutility_1_1converter_3_01char_0f_n_0e_4_1a04082735215315d4ed12a58bf99d450c" prot="public" static="no">
+        <type>char[N]</type>
+        <definition>using utility::converter&lt; char[N]&gt;::value_t =  char[N]</definition>
+        <argsstring></argsstring>
+        <name>value_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="853" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structutility_1_1converter_3_01char_0f_n_0e_4_1aabdbb03f09d4b81aedc0d5561bc927a4" prot="public" static="no">
+        <type>psl::string8::view</type>
+        <definition>using utility::converter&lt; char[N]&gt;::view_t =  psl::string8::view</definition>
+        <argsstring></argsstring>
+        <name>view_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="854" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structutility_1_1converter_3_01char_0f_n_0e_4_1a2105a9c1c26d2d746fec9440d37dffd8" prot="public" static="no">
+        <type>psl::string8_t</type>
+        <definition>using utility::converter&lt; char[N]&gt;::encoding_t =  psl::string8_t</definition>
+        <argsstring></argsstring>
+        <name>encoding_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="855" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1converter_3_01char_0f_n_0e_4_1adb99ff11df4e890339762ae5863ab83f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>static encoding_t utility::converter&lt; char[N]&gt;::to_string</definition>
+        <argsstring>(const value_t &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const value_t &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="857" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="857" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01char_0f_n_0e_4_1a23d473ce7b828cc99a51b9bae10f6606" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>static encoding_t utility::converter&lt; char[N]&gt;::from_string</definition>
+        <argsstring>(view_t str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>view_t</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="859" column="19" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="859" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01char_0f_n_0e_4_1adfb64f90259376c483dfcee2bd693938" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void utility::converter&lt; char[N]&gt;::from_string</definition>
+        <argsstring>(value_t &amp;out, view_t str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>value_t &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>view_t</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="861" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="861" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01char_0f_n_0e_4_1a50f8f26a47895357650d83a27431da7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool utility::converter&lt; char[N]&gt;::is_valid</definition>
+        <argsstring>(view_t str)</argsstring>
+        <name>is_valid</name>
+        <param>
+          <type>view_t</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="863" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="863" bodyend="863"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" line="852" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/string_utils.hpp" bodystart="851" bodyend="864"/>
+    <listofallmembers>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1a2105a9c1c26d2d746fec9440d37dffd8" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>encoding_t</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1a23d473ce7b828cc99a51b9bae10f6606" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1adfb64f90259376c483dfcee2bd693938" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1a50f8f26a47895357650d83a27431da7d" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>is_valid</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1adb99ff11df4e890339762ae5863ab83f" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>to_string</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1a04082735215315d4ed12a58bf99d450c" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>value_t</name></member>
+      <member refid="structutility_1_1converter_3_01char_0f_n_0e_4_1aabdbb03f09d4b81aedc0d5561bc927a4" prot="public" virt="non-virtual"><scope>utility::converter&lt; char[N]&gt;</scope><name>view_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

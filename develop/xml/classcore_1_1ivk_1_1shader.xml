@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1ivk_1_1shader" kind="class" language="C++" prot="public">
+    <compoundname>core::ivk::shader</compoundname>
+    <includes refid="vk_2shader_8hpp" local="no">shader.hpp</includes>
+    <innerclass refid="structcore_1_1ivk_1_1shader_1_1specialization" prot="public">core::ivk::shader::specialization</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1shader_1acc65e79f7abde91f220b27bdf98fc556" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+        <definition>core::resource::handle&lt;core::ivk::context&gt; core::ivk::shader::m_Context</definition>
+        <argsstring></argsstring>
+        <name>m_Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="59" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1shader_1aaac7d750df397e78610e06715c2a74c0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="structcore_1_1ivk_1_1shader_1_1specialization" kindref="compound">specialization</ref>, vk::PipelineShaderStageCreateInfo &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;specialization, vk::PipelineShaderStageCreateInfo&gt; &gt; core::ivk::shader::m_Specializations</definition>
+        <argsstring></argsstring>
+        <name>m_Specializations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="60" column="13" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1shader_1a7768db3a565a0381b5af50dd5a402285" prot="private" static="no" mutable="no">
+        <type>core::resource::cache_t &amp;</type>
+        <definition>core::resource::cache_t&amp; core::ivk::shader::m_Cache</definition>
+        <argsstring></argsstring>
+        <name>m_Cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="61" column="25" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1shader_1a6b91c48a29e8d15f0bdc1c9dbf3cf463" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+        <definition>core::meta::shader* core::ivk::shader::m_Meta</definition>
+        <argsstring></argsstring>
+        <name>m_Meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="62" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1ivk_1_1shader_1ae30ed36734661eef80370665571c27b8" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+        <definition>const psl::UID core::ivk::shader::m_UID</definition>
+        <argsstring></argsstring>
+        <name>m_UID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="63" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1ae5116a2d34099710aa8f7b014dfcd103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shader::shader</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, core::meta::shader *metaFile, core::resource::handle&lt; core::ivk::context &gt; context)</argsstring>
+        <name>shader</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="35" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp" bodystart="12" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1aeb3e275a108d1ae9f7584c4b1981c5d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>shader::shader</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, core::meta::shader *metaFile, core::resource::handle&lt; core::ivk::context &gt; context, const std::vector&lt; specialization &gt; specializations)</argsstring>
+        <name>shader</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; <ref refid="classcore_1_1ivk_1_1context" kindref="compound">core::ivk::context</ref> &gt;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structcore_1_1ivk_1_1shader_1_1specialization" kindref="compound">specialization</ref> &gt;</type>
+          <declname>specializations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="39" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp" bodystart="57" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1a2b099785bcc534428d5ca8921f806fa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::shader::~shader</definition>
+        <argsstring>()</argsstring>
+        <name>~shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1a0cd2d801160f50cd985e50753643646a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::shader::shader</definition>
+        <argsstring>(const shader &amp;)=delete</argsstring>
+        <name>shader</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1afb6db62849a3b2985d4b95fd444fa6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::ivk::shader::shader</definition>
+        <argsstring>(shader &amp;&amp;)=delete</argsstring>
+        <name>shader</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1a6b9af4e9971a5673ac044867e821aa0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;</type>
+        <definition>shader&amp; core::ivk::shader::operator=</definition>
+        <argsstring>(const shader &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1aea756bc22aff12e6314a5119e745d9d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;</type>
+        <definition>shader&amp; core::ivk::shader::operator=</definition>
+        <argsstring>(shader &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1ivk_1_1shader" kindref="compound">shader</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1a261324f1279dee29bf333edf414d5d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; vk::PipelineShaderStageCreateInfo &gt;</type>
+        <definition>std::optional&lt; vk::PipelineShaderStageCreateInfo &gt; shader::pipeline</definition>
+        <argsstring>(const specialization &amp;description=specialization {})</argsstring>
+        <name>pipeline</name>
+        <param>
+          <type>const <ref refid="structcore_1_1ivk_1_1shader_1_1specialization" kindref="compound">specialization</ref> &amp;</type>
+          <declname>description</declname>
+          <defval><ref refid="structcore_1_1ivk_1_1shader_1_1specialization" kindref="compound">specialization</ref> {}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the pipeline shader stage create info for the given specialization. </para>
+</simplesect>
+<simplesect kind="note"><para>will return nothing in case the specialization does not exist. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="53" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp" bodystart="111" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1ivk_1_1shader_1ab3cab268670b7f53e962436e3572292e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> *</type>
+        <definition>core::meta::shader* core::ivk::shader::meta</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the meta data that describes this shader and its binding points. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="56" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>creates a shader object from a SPIR-V module </para>
+    </briefdescription>
+    <detaileddescription>
+<para>handles loading a SPIR-V object from a source (disk, or otherwise). and subsequently uploads it to the driver to be validated. a couple of shaders together with a <ref refid="classcore_1_1ivk_1_1pipeline" kindref="compound">core::ivk::pipeline</ref> and <ref refid="classcore_1_1ivk_1_1geometry__t" kindref="compound">core::ivk::geometry_t</ref> is all that&apos;s needed to render an object on screen. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" line="23" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp" bodystart="22" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classcore_1_1ivk_1_1shader_1a7768db3a565a0381b5af50dd5a402285" prot="private" virt="non-virtual"><scope>core::ivk::shader</scope><name>m_Cache</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1acc65e79f7abde91f220b27bdf98fc556" prot="private" virt="non-virtual"><scope>core::ivk::shader</scope><name>m_Context</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1a6b91c48a29e8d15f0bdc1c9dbf3cf463" prot="private" virt="non-virtual"><scope>core::ivk::shader</scope><name>m_Meta</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1aaac7d750df397e78610e06715c2a74c0" prot="private" virt="non-virtual"><scope>core::ivk::shader</scope><name>m_Specializations</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1ae30ed36734661eef80370665571c27b8" prot="private" virt="non-virtual"><scope>core::ivk::shader</scope><name>m_UID</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1ab3cab268670b7f53e962436e3572292e" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>meta</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1a6b9af4e9971a5673ac044867e821aa0a" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1aea756bc22aff12e6314a5119e745d9d5" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>operator=</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1a261324f1279dee29bf333edf414d5d9d" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>pipeline</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1ae5116a2d34099710aa8f7b014dfcd103" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1aeb3e275a108d1ae9f7584c4b1981c5d3" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1a0cd2d801160f50cd985e50753643646a" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1afb6db62849a3b2985d4b95fd444fa6d1" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>shader</name></member>
+      <member refid="classcore_1_1ivk_1_1shader_1a2b099785bcc534428d5ca8921f806fa6" prot="public" virt="non-virtual"><scope>core::ivk::shader</scope><name>~shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

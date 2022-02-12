@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1memory__copy" kind="struct" language="C++" prot="public">
+    <compoundname>core::gfx::memory_copy</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1memory__copy_1a86e33c0506d0ac4e0e7e6c3940820155" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::gfx::memory_copy::source_offset</definition>
+        <argsstring></argsstring>
+        <name>source_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="173" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1memory__copy_1a1138b97640bf8eaa2ae2a895fd378146" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::gfx::memory_copy::destination_offset</definition>
+        <argsstring></argsstring>
+        <name>destination_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="174" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1memory__copy_1a8be0313f9b0a7395e1195c9b42c641b8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::gfx::memory_copy::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="175" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="172" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="171" bodyend="176"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1memory__copy_1a1138b97640bf8eaa2ae2a895fd378146" prot="public" virt="non-virtual"><scope>core::gfx::memory_copy</scope><name>destination_offset</name></member>
+      <member refid="structcore_1_1gfx_1_1memory__copy_1a8be0313f9b0a7395e1195c9b42c641b8" prot="public" virt="non-virtual"><scope>core::gfx::memory_copy</scope><name>size</name></member>
+      <member refid="structcore_1_1gfx_1_1memory__copy_1a86e33c0506d0ac4e0e7e6c3940820155" prot="public" virt="non-virtual"><scope>core::gfx::memory_copy</scope><name>source_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

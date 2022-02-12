@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore" kind="namespace" language="C++">
+    <compoundname>core</compoundname>
+    <innerclass refid="classcore_1_1stream" prot="public">core::stream</innerclass>
+    <innernamespace refid="namespacecore_1_1data">core::data</innernamespace>
+    <innernamespace refid="namespacecore_1_1ecs">core::ecs</innernamespace>
+    <innernamespace refid="namespacecore_1_1gfx">core::gfx</innernamespace>
+    <innernamespace refid="namespacecore_1_1igles">core::igles</innernamespace>
+    <innernamespace refid="namespacecore_1_1ivk">core::ivk</innernamespace>
+    <innernamespace refid="namespacecore_1_1meta">core::meta</innernamespace>
+    <innernamespace refid="namespacecore_1_1os">core::os</innernamespace>
+    <innernamespace refid="namespacecore_1_1resource">core::resource</innernamespace>
+    <innernamespace refid="namespacecore_1_1resource2">core::resource2</innernamespace>
+    <innernamespace refid="namespacecore_1_1systems">core::systems</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecore_1a799a9a2cf756220be256558a17316079" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; core::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="9" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/src/logging.cpp" bodystart="5" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" declline="9" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecore_1a37c6c31fc984ab889c6a285783da3ffd" prot="public" static="no" mutable="no">
+        <type>psl::profiling::profiler</type>
+        <definition>psl::profiling::profiler core::profiler</definition>
+        <argsstring></argsstring>
+        <name>profiler</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="39" column="33" bodyfile="/home/runner/work/paradigm/paradigm/core/src/logging.cpp" bodystart="18" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" declline="39" declcolumn="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>the engine core, here all graphics resources and render operations are described. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/application.hpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

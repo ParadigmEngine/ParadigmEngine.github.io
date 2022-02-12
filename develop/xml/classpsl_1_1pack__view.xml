@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1pack__view" kind="class" language="C++" prot="public">
+    <compoundname>psl::pack_view</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpsl_1_1pack__view_1a72fc4e9c13095b8c84689abd87bdfb30" prot="public" static="no">
+        <type>std::tuple&lt; psl::array_view&lt; Ts &gt;... &gt;</type>
+        <definition>using psl::pack_view&lt; Ts &gt;::range_t =  std::tuple&lt;psl::array_view&lt;Ts&gt;...&gt;</definition>
+        <argsstring></argsstring>
+        <name>range_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="432" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1pack__view_1ab2b9d185d76d5827245db16800bda24f" prot="public" static="no">
+        <type>details::unpack_iterator&lt; Ts... &gt;</type>
+        <definition>using psl::pack_view&lt; Ts &gt;::unpack_iterator =  details::unpack_iterator&lt;Ts...&gt;</definition>
+        <argsstring></argsstring>
+        <name>unpack_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="433" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classpsl_1_1pack__view_1a5dbef352891cb6462c3ebe7fc7841aff" prot="public" static="no">
+        <type>details::iterator&lt; Ts... &gt;</type>
+        <definition>using psl::pack_view&lt; Ts &gt;::iterator =  details::iterator&lt;Ts...&gt;</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="434" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1pack__view_1af8be6fdfbe3e118de0ff4c19f5bca17e" prot="private" static="no" mutable="no">
+        <type>range_t</type>
+        <definition>range_t psl::pack_view&lt; Ts &gt;::m_Pack</definition>
+        <argsstring></argsstring>
+        <name>m_Pack</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="549" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a3e6c9764b0e770c3e88bdfd79b044ae9" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>T...</type>
+            <declname>indices</declname>
+            <defname>indices</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr std::tuple&lt; Ts *... &gt;</type>
+        <definition>constexpr std::tuple&lt;Ts*...&gt; psl::pack_view&lt; Ts &gt;::iterator_begin</definition>
+        <argsstring>(const range_t &amp;t, size_t index, std::integer_sequence&lt; T, indices... &gt; indices_sequence) const noexcept</argsstring>
+        <name>iterator_begin</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::integer_sequence&lt; T, indices... &gt;</type>
+          <declname>indices_sequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="439" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="439" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1acb9865acdfdf8445ec2399f6f428c172" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>T...</type>
+            <declname>indices</declname>
+            <defname>indices</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr std::tuple&lt; Ts *... &gt;</type>
+        <definition>constexpr std::tuple&lt;Ts*...&gt; psl::pack_view&lt; Ts &gt;::iterator_end</definition>
+        <argsstring>(const range_t &amp;t, size_t index, std::integer_sequence&lt; T, indices... &gt; indices_sequence) const noexcept</argsstring>
+        <name>iterator_end</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::integer_sequence&lt; T, indices... &gt;</type>
+          <declname>indices_sequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="447" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="447" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1aa565a5471c45c3253cfc689812edcd2a" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>T...</type>
+            <declname>indices</declname>
+            <defname>indices</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr std::tuple&lt; typename psl::array_view&lt; Ts &gt;::iterator... &gt;</type>
+        <definition>constexpr std::tuple&lt;typename psl::array_view&lt;Ts&gt;::iterator...&gt; psl::pack_view&lt; Ts &gt;::unpack_iterator_begin</definition>
+        <argsstring>(const range_t &amp;t, size_t index, std::integer_sequence&lt; T, indices... &gt; indices_sequence) const noexcept</argsstring>
+        <name>unpack_iterator_begin</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::integer_sequence&lt; T, indices... &gt;</type>
+          <declname>indices_sequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="456" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="456" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1afe92718d44479054016f55107ffb7708" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>T...</type>
+            <declname>indices</declname>
+            <defname>indices</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr std::tuple&lt; typename psl::array_view&lt; Ts &gt;::iterator... &gt;</type>
+        <definition>constexpr std::tuple&lt;typename psl::array_view&lt;Ts&gt;::iterator...&gt; psl::pack_view&lt; Ts &gt;::unpack_iterator_end</definition>
+        <argsstring>(const range_t &amp;t, size_t index, std::integer_sequence&lt; T, indices... &gt; indices_sequence) const noexcept</argsstring>
+        <name>unpack_iterator_end</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::integer_sequence&lt; T, indices... &gt;</type>
+          <declname>indices_sequence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="465" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="465" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1acfe461c33897bed2f7569bc87897f902" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr std::tuple&lt; Ts *... &gt;</type>
+        <definition>constexpr std::tuple&lt;Ts*...&gt; psl::pack_view&lt; Ts &gt;::iterator_begin</definition>
+        <argsstring>(const range_t &amp;t, size_t index=0) const noexcept</argsstring>
+        <name>iterator_begin</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="473" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="473" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a8e6efa19ea14f846eae0ad4211e0b8af" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr std::tuple&lt; Ts *... &gt;</type>
+        <definition>constexpr std::tuple&lt;Ts*...&gt; psl::pack_view&lt; Ts &gt;::iterator_end</definition>
+        <argsstring>(const range_t &amp;t, size_t index=0) const noexcept</argsstring>
+        <name>iterator_end</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="478" column="22" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="478" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1aaaf8fdd1a0c716562c888eb2744a60de" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::pack_view&lt; Ts &gt;::unpack_iterator_begin</definition>
+        <argsstring>(const range_t &amp;t, size_t index=0) const noexcept</argsstring>
+        <name>unpack_iterator_begin</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="483" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="483" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1aa0f85724d4f2e8ffab22bc6a99b4332f" prot="private" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto psl::pack_view&lt; Ts &gt;::unpack_iterator_end</definition>
+        <argsstring>(const range_t &amp;t, size_t index=0) const noexcept</argsstring>
+        <name>unpack_iterator_end</name>
+        <param>
+          <type>const range_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="488" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="488" bodyend="491"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a43911a74ac84feb2d599702658e91313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::pack_view&lt; Ts &gt;::pack_view</definition>
+        <argsstring>(psl::array_view&lt; Ts &gt;... views)</argsstring>
+        <name>pack_view</name>
+        <param>
+          <type>psl::array_view&lt; Ts &gt;...</type>
+          <declname>views</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="494" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="494" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a2827be07d1d366fe5fefa9314081b35f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>range_t</type>
+        <definition>range_t psl::pack_view&lt; Ts &gt;::view</definition>
+        <argsstring>()</argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="502" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="502" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a2373d46f26cb27f461f96503a6af0d30" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>psl::array_view&lt; T &gt;</type>
+        <definition>psl::array_view&lt;T&gt; psl::pack_view&lt; Ts &gt;::get</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="505" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="505" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a408c6b418a92734141b073aeed7ffcb3" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::pack_view&lt; Ts &gt;::get</definition>
+        <argsstring>() const noexcept -&gt; decltype(std::get&lt; N &gt;(std::declval&lt; range_t &gt;()))</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="513" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="513" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1af97f4f8e1757a9cd5992f61e8e686e43" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::pack_view&lt; Ts &gt;::operator[]</definition>
+        <argsstring>(size_t index) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="520" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="520" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a909ac3fd4686f92bee092b933a966d49" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::pack_view&lt; Ts &gt;::operator[]</definition>
+        <argsstring>(size_t index) noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="525" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="525" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1af046e23f5a84f295fb9b7ad9e6531534" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator psl::pack_view&lt; Ts &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="530" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="530" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a47360012161bc9b87c5da429f541698e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator psl::pack_view&lt; Ts &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="531" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="531" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a3ecf727eeea229a3618a7f692dc086e4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::pack_view&lt; Ts &gt;::unpack</definition>
+        <argsstring>(size_t index) const noexcept</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="534" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="534" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1a39a7cb793e9fd6d3caf759692d3c7623" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto psl::pack_view&lt; Ts &gt;::unpack</definition>
+        <argsstring>(size_t index) noexcept</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="539" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="539" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1ac243f93b5782e67a2a02bc3b24b562f7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>unpack_iterator</type>
+        <definition>unpack_iterator psl::pack_view&lt; Ts &gt;::unpack_begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>unpack_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="544" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="544" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1af5916fac03704b1810ae1a12ea87ebe1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>unpack_iterator</type>
+        <definition>unpack_iterator psl::pack_view&lt; Ts &gt;::unpack_end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>unpack_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="545" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="545" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1pack__view_1ae22c564f12f79966ad1f9edf4ee2318c" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t psl::pack_view&lt; Ts &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" line="546" column="18" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/pack_view.hpp" bodystart="546" bodyend="546"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="16" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="16" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1pack__view_1af046e23f5a84f295fb9b7ad9e6531534" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>begin</name></member>
+      <member refid="classpsl_1_1pack__view_1a47360012161bc9b87c5da429f541698e" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>end</name></member>
+      <member refid="classpsl_1_1pack__view_1a2373d46f26cb27f461f96503a6af0d30" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>get</name></member>
+      <member refid="classpsl_1_1pack__view_1a408c6b418a92734141b073aeed7ffcb3" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>get</name></member>
+      <member refid="classpsl_1_1pack__view_1a5dbef352891cb6462c3ebe7fc7841aff" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>iterator</name></member>
+      <member refid="classpsl_1_1pack__view_1a3e6c9764b0e770c3e88bdfd79b044ae9" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>iterator_begin</name></member>
+      <member refid="classpsl_1_1pack__view_1acfe461c33897bed2f7569bc87897f902" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>iterator_begin</name></member>
+      <member refid="classpsl_1_1pack__view_1acb9865acdfdf8445ec2399f6f428c172" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>iterator_end</name></member>
+      <member refid="classpsl_1_1pack__view_1a8e6efa19ea14f846eae0ad4211e0b8af" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>iterator_end</name></member>
+      <member refid="classpsl_1_1pack__view_1af8be6fdfbe3e118de0ff4c19f5bca17e" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>m_Pack</name></member>
+      <member refid="classpsl_1_1pack__view_1af97f4f8e1757a9cd5992f61e8e686e43" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1pack__view_1a909ac3fd4686f92bee092b933a966d49" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1pack__view_1a43911a74ac84feb2d599702658e91313" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>pack_view</name></member>
+      <member refid="classpsl_1_1pack__view_1a72fc4e9c13095b8c84689abd87bdfb30" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>range_t</name></member>
+      <member refid="classpsl_1_1pack__view_1ae22c564f12f79966ad1f9edf4ee2318c" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>size</name></member>
+      <member refid="classpsl_1_1pack__view_1a3ecf727eeea229a3618a7f692dc086e4" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack</name></member>
+      <member refid="classpsl_1_1pack__view_1a39a7cb793e9fd6d3caf759692d3c7623" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack</name></member>
+      <member refid="classpsl_1_1pack__view_1ac243f93b5782e67a2a02bc3b24b562f7" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_begin</name></member>
+      <member refid="classpsl_1_1pack__view_1af5916fac03704b1810ae1a12ea87ebe1" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_end</name></member>
+      <member refid="classpsl_1_1pack__view_1ab2b9d185d76d5827245db16800bda24f" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_iterator</name></member>
+      <member refid="classpsl_1_1pack__view_1aa565a5471c45c3253cfc689812edcd2a" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_iterator_begin</name></member>
+      <member refid="classpsl_1_1pack__view_1aaaf8fdd1a0c716562c888eb2744a60de" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_iterator_begin</name></member>
+      <member refid="classpsl_1_1pack__view_1afe92718d44479054016f55107ffb7708" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_iterator_end</name></member>
+      <member refid="classpsl_1_1pack__view_1aa0f85724d4f2e8ffab22bc6a99b4332f" prot="private" virt="non-virtual"><scope>psl::pack_view</scope><name>unpack_iterator_end</name></member>
+      <member refid="classpsl_1_1pack__view_1a2827be07d1d366fe5fefa9314081b35f" prot="public" virt="non-virtual"><scope>psl::pack_view</scope><name>view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

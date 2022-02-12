@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1ecs_1_1components" kind="namespace" language="C++">
+    <compoundname>core::ecs::components</compoundname>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1attractor" prot="public">core::ecs::components::attractor</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1camera" prot="public">core::ecs::components::camera</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1dead__tag" prot="public">core::ecs::components::dead_tag</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1dont__render__tag" prot="public">core::ecs::components::dont_render_tag</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1dynamic__tag" prot="public">core::ecs::components::dynamic_tag</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1input__tag" prot="public">core::ecs::components::input_tag</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1lifetime" prot="public">core::ecs::components::lifetime</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1light" prot="public">core::ecs::components::light</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1renderable" prot="public">core::ecs::components::renderable</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1text" prot="public">core::ecs::components::text</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1transform" prot="public">core::ecs::components::transform</innerclass>
+    <innerclass refid="structcore_1_1ecs_1_1components_1_1velocity" prot="public">core::ecs::components::velocity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

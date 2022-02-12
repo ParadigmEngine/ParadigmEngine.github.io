@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1details_1_1instance_1_1object" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>core::gfx::details::instance::object</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a8ef19f5bc2f27580ac69243292856269" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+        <definition>const psl::UID core::gfx::details::instance::object::geometry</definition>
+        <argsstring></argsstring>
+        <name>geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="52" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1af92eb01514c50a3035318191e5f7e113" prot="public" static="no" mutable="no">
+        <type>psl::generator&lt; uint32_t &gt;</type>
+        <definition>psl::generator&lt;uint32_t&gt; core::gfx::details::instance::object::id_generator</definition>
+        <argsstring></argsstring>
+        <name>id_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="53" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a088b28967fb4a23c6dc730057c458d72" prot="public" static="no" mutable="no">
+        <type>psl::array&lt; binding::header &gt;</type>
+        <definition>psl::array&lt;binding::header&gt; core::gfx::details::instance::object::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="54" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1aa6f1aadd95f270cd7bc3dafa3ed79153" prot="public" static="no" mutable="no">
+        <type>psl::array&lt; <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> &gt;</type>
+        <definition>psl::array&lt;memory::segment&gt; core::gfx::details::instance::object::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="55" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a806e627eff25b05f7857fcb1477208d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::details::instance::object::object</definition>
+        <argsstring>(psl::UID uid)</argsstring>
+        <name>object</name>
+        <param>
+          <type><ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="47" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1acee00614b0e16017803ea4d1eb24822b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::details::instance::object::object</definition>
+        <argsstring>(psl::UID uid, uint32_t capacity)</argsstring>
+        <name>object</name>
+        <param>
+          <type><ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="48" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a9b721801ef7d91a98968c0fa119bcd74" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::gfx::details::instance::object::operator==</definition>
+        <argsstring>(const object &amp;rhs) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const object &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="50" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>core::gfx::details::instance::object</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>geometry</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>psl::UID</label>
+        <link refid="structpsl_1_1_u_i_d"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>invalid_uid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" line="46" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp" bodystart="45" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1aa6f1aadd95f270cd7bc3dafa3ed79153" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>data</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a088b28967fb4a23c6dc730057c458d72" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>description</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a8ef19f5bc2f27580ac69243292856269" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>geometry</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1af92eb01514c50a3035318191e5f7e113" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>id_generator</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a806e627eff25b05f7857fcb1477208d5" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>object</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1acee00614b0e16017803ea4d1eb24822b" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>object</name></member>
+      <member refid="structcore_1_1gfx_1_1details_1_1instance_1_1object_1a9b721801ef7d91a98968c0fa119bcd74" prot="public" virt="non-virtual"><scope>core::gfx::details::instance::object</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

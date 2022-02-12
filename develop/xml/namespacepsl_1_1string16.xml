@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1string16" kind="namespace" language="C++">
+    <compoundname>psl::string16</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1aa6abf59775b8f602d61dbba31d7958c4" prot="public" static="no">
+        <type>char16_t</type>
+        <definition>using psl::string16::char_t = typedef char16_t</definition>
+        <argsstring></argsstring>
+        <name>char_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1a5e8573ef698c5ab41ff8cb04835c59ab" prot="public" static="no">
+        <type>std::basic_string_view&lt; char_t &gt;</type>
+        <definition>using psl::string16::view = typedef std::basic_string_view&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="53" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1a31454132924f3caed8315987dd419e12" prot="public" static="no">
+        <type>std::basic_stringstream&lt; char_t &gt;</type>
+        <definition>using psl::string16::stream = typedef std::basic_stringstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="54" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1a6339cf94a5fa35bbd20551c504e5dfec" prot="public" static="no">
+        <type>std::basic_ostream&lt; char_t &gt;</type>
+        <definition>using psl::string16::ostream = typedef std::basic_ostream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ostream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="55" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1ab9d95a30c2df94e9d639627fe9a1a7a7" prot="public" static="no">
+        <type>std::basic_ofstream&lt; char_t &gt;</type>
+        <definition>using psl::string16::ofstream = typedef std::basic_ofstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ofstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="56" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1aaba77ba195bf41d249eb79f305a61e1f" prot="public" static="no">
+        <type>std::basic_istream&lt; char_t &gt;</type>
+        <definition>using psl::string16::istream = typedef std::basic_istream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>istream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="57" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1a4d8ae3dbab41a94b78bbce8563034e3c" prot="public" static="no">
+        <type>std::basic_ifstream&lt; char_t &gt;</type>
+        <definition>using psl::string16::ifstream = typedef std::basic_ifstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>ifstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="58" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1string16_1a715898880f31d4cc5099df94fafc614b" prot="public" static="no">
+        <type>std::basic_fstream&lt; char_t &gt;</type>
+        <definition>using psl::string16::fstream = typedef std::basic_fstream&lt;char_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>fstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="59" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepsl_1_1string16_1a30c718a8b0f1b96afaaa7fd454fc9573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::string16::to_string8_t</definition>
+        <argsstring>(const psl::string16_t &amp;s)</argsstring>
+        <name>to_string8_t</name>
+        <param>
+          <type>const psl::string16_t &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>converts a UTF-16 string into a UTF-8 string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTF-16 encoded string to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string8_t based on the input UTF-16 string.</para>
+</simplesect>
+converts a UTF-16 string into a UTF-8 string.</para>
+<para>converts a psl::string into a UTF-8 string, depending on the bit-size (8 or 16) of psl::string this turns into a no-op. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string8_t based on the input psl::string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="165" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/ustring.cpp" bodystart="29" bodyend="34" declfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" declline="165" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1string16_1a64fc661e8ef5741297eebb2beee40655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string16_t</type>
+        <definition>psl::string16_t psl::string16::from_string8_t</definition>
+        <argsstring>(const psl::string8_t &amp;s)</argsstring>
+        <name>from_string8_t</name>
+        <param>
+          <type>const psl::string8_t &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>converts a UTF-8 string into a UTF-16 string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTF-8 encoded string to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string16_t based on the input UTF-8 string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="170" column="17" declfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" declline="170" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1string16_1a6f70cfc9263cb4deda2d3b98bf6ffc5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::string16_t</type>
+        <definition>psl::string16_t psl::string16::from_string8_t</definition>
+        <argsstring>(psl::string8::view s)</argsstring>
+        <name>from_string8_t</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>converts a UTF-8 string into a UTF-16 string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTF-8 encoded string to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string16_t based on the input UTF-8 string.</para>
+</simplesect>
+converts a UTF-8 string into a UTF-16 string.</para>
+<para>converts a UTF-8 string into a psl::string, depending on the bit-size (8 or 16) of psl::string this turns into a no-op. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a psl::string based on the input UTF-8 string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="175" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/ustring.cpp" bodystart="43" bodyend="43" declfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" declline="175" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UTF-16 class namespace that contains the typedefs for the string objects, as well as helper methods. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ustring.hpp" line="51" column="1"/>
+  </compounddef>
+</doxygen>

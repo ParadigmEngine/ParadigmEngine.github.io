@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="raw__region_8hpp" kind="file" language="C++">
+    <compoundname>raw_region.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="staged__sparse__array_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp</includedby>
+    <includedby refid="state_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</includedby>
+    <includedby refid="memory_2sparse__array_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/sparse_array.hpp</includedby>
+    <includedby refid="component__info_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/ecs/details/component_info.cpp</includedby>
+    <includedby refid="raw__region_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/memory/raw_region.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/raw_region.hpp</label>
+        <link refid="raw__region_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>optional</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp</label>
+        <link refid="geometry__instance_8cpp_source"/>
+      </node>
+      <node id="22">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="12">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug/grid.cpp</label>
+        <link refid="grid_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp</label>
+        <link refid="fly_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/state.cpp</label>
+        <link refid="state_8cpp_source"/>
+      </node>
+      <node id="19">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="23">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/command_buffer.cpp</label>
+        <link refid="command__buffer_8cpp_source"/>
+      </node>
+      <node id="9">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp</label>
+        <link refid="attractor_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/raw_region.hpp</label>
+        <link refid="raw__region_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp</label>
+        <link refid="system__information_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/grid.hpp</label>
+        <link refid="grid_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</label>
+        <link refid="state_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp</label>
+        <link refid="geometry__instance_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/details/component_info.cpp</label>
+        <link refid="component__info_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/command_buffer.hpp</label>
+        <link refid="command__buffer_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/gpu_camera.cpp</label>
+        <link refid="gpu__camera_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/movement.hpp</label>
+        <link refid="movement_8hpp_source"/>
+      </node>
+      <node id="26">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/sparse_array.hpp</label>
+        <link refid="memory_2sparse__array_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/death.hpp</label>
+        <link refid="death_8hpp_source"/>
+      </node>
+      <node id="13">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp</label>
+        <link refid="fly_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/staged_sparse_array.hpp</label>
+        <link refid="staged__sparse__array_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lifetime.hpp</label>
+        <link refid="systems_2lifetime_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/render.hpp</label>
+        <link refid="render_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/memory/raw_region.cpp</label>
+        <link refid="raw__region_8cpp_source"/>
+      </node>
+      <node id="20">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/render.cpp</label>
+        <link refid="render_8cpp_source"/>
+      </node>
+      <node id="18">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</label>
+        <link refid="systems_2lighting_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp</label>
+        <link refid="component__info_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmemory_1_1raw__region" prot="public">memory::raw_region</innerclass>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacememory" kindref="compound">memory</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">raw_region</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_region(uint64_t<sp/>size);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~raw_region();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_region(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>raw_region&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_region(raw_region&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_region&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>raw_region&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_region&amp;<sp/>operator=(raw_region&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>commit(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespacecore_1_1data" kindref="compound">data</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Base;<sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>size()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Size;<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pageSize()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_PageSize;<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>m_Base<sp/>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_Size<sp/>{0u};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_PageSize<sp/>{0u};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/raw_region.hpp"/>
+  </compounddef>
+</doxygen>

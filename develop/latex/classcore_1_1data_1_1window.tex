@@ -1,0 +1,223 @@
+\hypertarget{classcore_1_1data_1_1window}{}\doxysection{core\+::data\+::window Class Reference}
+\label{classcore_1_1data_1_1window}\index{core::data::window@{core::data::window}}
+
+
+contains the data to initialize a \mbox{\hyperlink{classcore_1_1os_1_1surface}{core\+::os\+::surface}}  
+
+
+
+
+{\ttfamily \#include $<$window.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a5b84f18af612b0914f78b273a754e18a}\label{classcore_1_1data_1_1window_a5b84f18af612b0914f78b273a754e18a}} 
+{\bfseries window} (uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_abfc7141fc1e27878024f6b5c57fd8406}{width}}=800, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_a913d1d4c2b423e775ad3042485e9be85}{height}}=600, \mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} \mbox{\hyperlink{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}{mode}}=core\+::gfx\+::surface\+\_\+mode\+::\+W\+I\+N\+D\+O\+W\+ED, \mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}} \mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{buffering}}=core\+::gfx\+::buffering\+::\+S\+I\+N\+G\+LE, psl\+::string8\+::view \mbox{\hyperlink{classcore_1_1data_1_1window_a62c63cd24e287da71012a96593f56188}{name}}=\char`\"{}Paradigm Engine\char`\"{}) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a49664eb0426638d7bd44dc70cca2c7e3}\label{classcore_1_1data_1_1window_a49664eb0426638d7bd44dc70cca2c7e3}} 
+{\bfseries window} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_abfc7141fc1e27878024f6b5c57fd8406}{width}}=800, uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_a913d1d4c2b423e775ad3042485e9be85}{height}}=600, \mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} \mbox{\hyperlink{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}{mode}}=core\+::gfx\+::surface\+\_\+mode\+::\+W\+I\+N\+D\+O\+W\+ED, \mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}} \mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{buffering}}=core\+::gfx\+::buffering\+::\+S\+I\+N\+G\+LE, psl\+::string8\+::view \mbox{\hyperlink{classcore_1_1data_1_1window_a62c63cd24e287da71012a96593f56188}{name}}=\char`\"{}Paradigm Engine\char`\"{}) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_afbc93c84efab263707236c6f5cea6ba3}\label{classcore_1_1data_1_1window_afbc93c84efab263707236c6f5cea6ba3}} 
+{\bfseries window} (const \mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \&other)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a2e6f977883f616a1390808afd4be1faa}\label{classcore_1_1data_1_1window_a2e6f977883f616a1390808afd4be1faa}} 
+{\bfseries window} (\mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \&\&other)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a5d25db644c1649b64154989708d657f6}\label{classcore_1_1data_1_1window_a5d25db644c1649b64154989708d657f6}} 
+\mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \&other)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a915feb8ed79857b6ea291e43a4672949}\label{classcore_1_1data_1_1window_a915feb8ed79857b6ea291e43a4672949}} 
+\mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1window}{window}} \&\&other)=default
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_abfc7141fc1e27878024f6b5c57fd8406}{width}} () const
+\begin{DoxyCompactList}\small\item\em returns the width in pixels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1window_a3d6f47cad1732e631e3ed0020688c8e4}{width}} (uint32\+\_\+t width)
+\begin{DoxyCompactList}\small\item\em sets the width in pixels. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcore_1_1data_1_1window_a913d1d4c2b423e775ad3042485e9be85}{height}} () const
+\begin{DoxyCompactList}\small\item\em returns the height in pixels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1window_a459d7e3321339ae169caed048b895a5c}{height}} (uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em sets the height in pixels. \end{DoxyCompactList}\item 
+psl\+::string8\+::view \mbox{\hyperlink{classcore_1_1data_1_1window_a62c63cd24e287da71012a96593f56188}{name}} () const
+\begin{DoxyCompactList}\small\item\em returns the name of the surface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1window_a0154d02ae2785a92c9a34bf63b311b30}{name}} (psl\+::string8\+::view name)
+\begin{DoxyCompactList}\small\item\em sets the name of the surface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} \mbox{\hyperlink{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}{mode}} () const
+\begin{DoxyCompactList}\small\item\em returns the current mode of rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1window_a9c5349e200167bac27398864f09069c8}{mode}} (\mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} mode)
+\begin{DoxyCompactList}\small\item\em sets the current mode of rendering. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}} \mbox{\hyperlink{classcore_1_1data_1_1window_ad6740b7c2cf8ae7471a6b2cf6007edb5}{buffering}} () const
+\begin{DoxyCompactList}\small\item\em returns the current buffering behaviour of this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1window_a31f80f496d7e46cf9cae86d7cf2da770}{buffering}} (\mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}} \mbox{\hyperlink{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}{mode}})
+\begin{DoxyCompactList}\small\item\em sets the buffering behaviour of this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1window_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1window_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 30 of file window.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1window_abfc7141fc1e27878024f6b5c57fd8406}\label{classcore_1_1data_1_1window_abfc7141fc1e27878024f6b5c57fd8406}} 
+\index{core::data::window@{core::data::window}!width@{width}}
+\index{width@{width}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t window\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the width in pixels. 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a3d6f47cad1732e631e3ed0020688c8e4}\label{classcore_1_1data_1_1window_a3d6f47cad1732e631e3ed0020688c8e4}} 
+\index{core::data::window@{core::data::window}!width@{width}}
+\index{width@{width}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::width (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em width} & the value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this value is a suggestion, the actual surface might still have a different value. 
+\end{DoxyNote}
+
+
+Definition at line 31 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a913d1d4c2b423e775ad3042485e9be85}\label{classcore_1_1data_1_1window_a913d1d4c2b423e775ad3042485e9be85}} 
+\index{core::data::window@{core::data::window}!height@{height}}
+\index{height@{height}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t window\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the height in pixels. 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a459d7e3321339ae169caed048b895a5c}\label{classcore_1_1data_1_1window_a459d7e3321339ae169caed048b895a5c}} 
+\index{core::data::window@{core::data::window}!height@{height}}
+\index{height@{height}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::height (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em height} & the value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this value is a suggestion, the actual surface might still have a different value. 
+\end{DoxyNote}
+
+
+Definition at line 33 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a62c63cd24e287da71012a96593f56188}\label{classcore_1_1data_1_1window_a62c63cd24e287da71012a96593f56188}} 
+\index{core::data::window@{core::data::window}!name@{name}}
+\index{name@{name}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string8\+::view window\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the name of the surface. 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a0154d02ae2785a92c9a34bf63b311b30}\label{classcore_1_1data_1_1window_a0154d02ae2785a92c9a34bf63b311b30}} 
+\index{core::data::window@{core::data::window}!name@{name}}
+\index{name@{name}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::name (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & the name to set this instance\textquotesingle{}s value to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+depending on the \mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} and platform specifics, you might never see this name anywhere. 
+\end{DoxyNote}
+
+
+Definition at line 35 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}\label{classcore_1_1data_1_1window_a4cd3ee4beda3309011a2339be9e5c547}} 
+\index{core::data::window@{core::data::window}!mode@{mode}}
+\index{mode@{mode}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}} window\+::mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the current mode of rendering. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a9c5349e200167bac27398864f09069c8}\label{classcore_1_1data_1_1window_a9c5349e200167bac27398864f09069c8}} 
+\index{core::data::window@{core::data::window}!mode@{mode}}
+\index{mode@{mode}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecore_1_1gfx_a11a4c4ab27e21f12bb4a783aab81b465}{core\+::gfx\+::surface\+\_\+mode}}}]{mode }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mode} & the mode to set this instance\textquotesingle{}s value to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_ad6740b7c2cf8ae7471a6b2cf6007edb5}\label{classcore_1_1data_1_1window_ad6740b7c2cf8ae7471a6b2cf6007edb5}} 
+\index{core::data::window@{core::data::window}!buffering@{buffering}}
+\index{buffering@{buffering}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{buffering()}{buffering()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}} window\+::buffering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the current buffering behaviour of this instance. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file window.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1window_a31f80f496d7e46cf9cae86d7cf2da770}\label{classcore_1_1data_1_1window_a31f80f496d7e46cf9cae86d7cf2da770}} 
+\index{core::data::window@{core::data::window}!buffering@{buffering}}
+\index{buffering@{buffering}!core::data::window@{core::data::window}}
+\doxysubsubsection{\texorpdfstring{buffering()}{buffering()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::buffering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecore_1_1gfx_aabe6d19fbf8443e45d8b5d68366cd990}{core\+::gfx\+::buffering}}}]{mode }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mode} & the mode to set this instance\textquotesingle{}s value to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file window.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/window.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/window.\+cpp\end{DoxyCompactItemize}

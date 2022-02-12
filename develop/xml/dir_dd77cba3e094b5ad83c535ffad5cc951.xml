@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_dd77cba3e094b5ad83c535ffad5cc951" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization</compoundname>
+    <innerfile refid="property_8hpp">property.hpp</innerfile>
+    <innerfile refid="serializer_8hpp">serializer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/"/>
+  </compounddef>
+</doxygen>

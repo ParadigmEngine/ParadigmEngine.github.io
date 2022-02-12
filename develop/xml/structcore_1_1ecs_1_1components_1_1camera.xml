@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1camera" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::camera</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1camera_1a3e8bb5ac9bf62abbd563434a231845ab" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::camera::fov</definition>
+        <argsstring></argsstring>
+        <name>fov</name>
+        <initializer>{60}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="16" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1camera_1af12adcdba5035c70044481ef775abdfa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::camera::near</definition>
+        <argsstring></argsstring>
+        <name>near</name>
+        <initializer>{1.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="17" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1camera_1ae1d89bfab3d630068eac714bb50fb8ef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::camera::far</definition>
+        <argsstring></argsstring>
+        <name>far</name>
+        <initializer>{8192.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="18" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1camera_1aeb7b202ad5187ea9a5205fbc20860520" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 16 &gt;</type>
+        <definition>std::array&lt;uint32_t, 16&gt; core::ecs::components::camera::layers</definition>
+        <argsstring></argsstring>
+        <name>layers</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="20" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" line="15" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/camera.hpp" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1camera_1ae1d89bfab3d630068eac714bb50fb8ef" prot="public" virt="non-virtual"><scope>core::ecs::components::camera</scope><name>far</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1camera_1a3e8bb5ac9bf62abbd563434a231845ab" prot="public" virt="non-virtual"><scope>core::ecs::components::camera</scope><name>fov</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1camera_1aeb7b202ad5187ea9a5205fbc20860520" prot="public" virt="non-virtual"><scope>core::ecs::components::camera</scope><name>layers</name></member>
+      <member refid="structcore_1_1ecs_1_1components_1_1camera_1af12adcdba5035c70044481ef775abdfa" prot="public" virt="non-virtual"><scope>core::ecs::components::camera</scope><name>near</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

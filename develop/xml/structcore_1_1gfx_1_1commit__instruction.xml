@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1gfx_1_1commit__instruction" kind="struct" language="C++" prot="public">
+    <compoundname>core::gfx::commit_instruction</compoundname>
+    <includes refid="gfx_2types_8hpp" local="no">types.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1commit__instruction_1a7f1f1fa56e849d8f1962a8717b95da46" prot="public" static="no" mutable="no">
+        <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+        <definition>memory::segment core::gfx::commit_instruction::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>target segment in the buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="135" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1commit__instruction_1a0e31e7fdd90196dc94a61d7e29cc7895" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref> &gt;</type>
+        <definition>std::optional&lt;memory::range_t&gt; core::gfx::commit_instruction::sub_range</definition>
+        <argsstring></argsstring>
+        <name>sub_range</name>
+        <briefdescription>
+<para>possible sub range within the segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>this is local offsets from the point of view of the segment (i.e. the sub_range.begin &amp;&amp; sub_range.end can never be bigger than the segment.size() ) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="140" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1commit__instruction_1ae4a9bb2d1864f00916e25d867ce45f5d" prot="public" static="no" mutable="no">
+        <type>std::uintptr_t</type>
+        <definition>std::uintptr_t core::gfx::commit_instruction::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>source to copy from </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="143" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1gfx_1_1commit__instruction_1adbf728d7a790a4b913ac402655eac6dc" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t core::gfx::commit_instruction::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>sizeof source </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="146" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcore_1_1gfx_1_1commit__instruction_1a20b6fd33cb03a3a6ca2c7c46e14134fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>core::gfx::commit_instruction::commit_instruction</definition>
+        <argsstring>(T *source, memory::segment segment, std::optional&lt; memory::range_t &gt; sub_range=std::nullopt)</argsstring>
+        <name>commit_instruction</name>
+        <param>
+          <type>T *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; <ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref> &gt;</type>
+          <declname>sub_range</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+<para>automatically construct the information from the type information of the source. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type you wish to commit in this instruction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source we will copy from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref> we will copy to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sub_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional sub_range offset in the <ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref>, where a sub_range.begin() is equal to the head of the segment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>make sure the source outlives the commit instruction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="124" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="124" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1gfx_1_1commit__instruction_1a951598cf10f56ee44a9f722f47683d1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::commit_instruction::commit_instruction</definition>
+        <argsstring>()</argsstring>
+        <name>commit_instruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="126" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="structcore_1_1gfx_1_1commit__instruction_1a5998b0caaa95dd017057450104015a73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::gfx::commit_instruction::commit_instruction</definition>
+        <argsstring>(void *source, size_t size, memory::segment segment, std::optional&lt; memory::range_t &gt; sub_range=std::nullopt)</argsstring>
+        <name>commit_instruction</name>
+        <param>
+          <type>void *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="classmemory_1_1segment" kindref="compound">memory::segment</ref></type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; <ref refid="classmemory_1_1range__t" kindref="compound">memory::range_t</ref> &gt;</type>
+          <declname>sub_range</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="128" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="128" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>description of a memory commit instruction. Tries to offer some safer mechanisms. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>core::gfx::commit_instruction</label>
+        <link refid="structcore_1_1gfx_1_1commit__instruction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>segment</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory::segment</label>
+        <link refid="classmemory_1_1segment"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" line="116" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gfx/types.hpp" bodystart="115" bodyend="147"/>
+    <listofallmembers>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1a20b6fd33cb03a3a6ca2c7c46e14134fe" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>commit_instruction</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1a951598cf10f56ee44a9f722f47683d1b" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>commit_instruction</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1a5998b0caaa95dd017057450104015a73" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>commit_instruction</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1a7f1f1fa56e849d8f1962a8717b95da46" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>segment</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1adbf728d7a790a4b913ac402655eac6dc" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>size</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1ae4a9bb2d1864f00916e25d867ce45f5d" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>source</name></member>
+      <member refid="structcore_1_1gfx_1_1commit__instruction_1a0e31e7fdd90196dc94a61d7e29cc7895" prot="public" virt="non-virtual"><scope>core::gfx::commit_instruction</scope><name>sub_range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

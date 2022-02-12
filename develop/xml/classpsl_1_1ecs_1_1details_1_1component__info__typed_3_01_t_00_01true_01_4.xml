@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>psl::ecs::details::component_info_typed&lt; T, true &gt;</compoundname>
+    <basecompoundref refid="classpsl_1_1ecs_1_1details_1_1component__info" prot="public" virt="non-virtual">psl::ecs::details::component_info</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0037a9395f212b2f33df8ebc5dfb96ad" prot="private" static="no" mutable="no">
+        <type>details::staged_sparse_array&lt; void, entity &gt;</type>
+        <definition>details::staged_sparse_array&lt;void, entity&gt; psl::ecs::details::component_info_typed&lt; T, true &gt;::m_Entities</definition>
+        <argsstring></argsstring>
+        <name>m_Entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="343" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a917d2d3210a3a71baf2e15879088b65a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::ecs::details::component_info_typed&lt; T, true &gt;::component_info_typed</definition>
+        <argsstring>()</argsstring>
+        <name>component_info_typed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="275" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a14edacc35cf8623ac9cbfe60c9365b84" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* psl::ecs::details::component_info_typed&lt; T, true &gt;::data</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="278" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a6187775837f8ec3d73b6144518f3b781" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::component_info_typed&lt; T, true &gt;::has_storage_for</definition>
+        <argsstring>(entity entity) const noexcept override</argsstring>
+        <name>has_storage_for</name>
+        <param>
+          <type>entity</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="280" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0a00d9d6eba7443eb1f22bab29ebb7e0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::ecs::details::component_info_typed&lt; T, true &gt;::alignment</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="282" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a44c6dac85e88833f776a7960a2ae9f2c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::remap</definition>
+        <argsstring>(const psl::sparse_array&lt; entity &gt; &amp;mapping, std::function&lt; bool(entity)&gt; pred) noexcept override</argsstring>
+        <name>remap</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1sparse__array" kindref="compound">psl::sparse_array</ref>&lt; entity &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(entity)&gt;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="284" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ae7c92a81921853f03b980f64cf7fd63a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::component_info_typed&lt; T, true &gt;::merge</definition>
+        <argsstring>(const component_info &amp;other) noexcept override</argsstring>
+        <name>merge</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1ecs_1_1details_1_1component__info" kindref="compound">component_info</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="289" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="289" bodyend="296"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1accc6c8cf82a4b91b4bdc322d48c13a60" prot="protected" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::set_impl</definition>
+        <argsstring>(entity entity, void *data) noexcept</argsstring>
+        <name>set_impl</name>
+        <param>
+          <type>entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="299" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a6898569cae1b19b0dbce437490b6e56f" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>psl::array_view&lt; entity &gt;</type>
+        <definition>psl::array_view&lt;entity&gt; psl::ecs::details::component_info_typed&lt; T, true &gt;::entities_impl</definition>
+        <argsstring>(size_t startStage, size_t endStage) const noexcept override</argsstring>
+        <name>entities_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>startStage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endStage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="300" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="300" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ab315410d2474e825c478cc8d83fba7be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::add_impl</definition>
+        <argsstring>(psl::array_view&lt; entity &gt; entities, void *data, bool repeat) override</argsstring>
+        <name>add_impl</name>
+        <param>
+          <type>psl::array_view&lt; entity &gt;</type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="304" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="304" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a20efa56eca81c39f271b2d0676410493" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::add_impl</definition>
+        <argsstring>(entity entity, void *data) override</argsstring>
+        <name>add_impl</name>
+        <param>
+          <type>entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="309" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="309" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0fc461ca44c330b4adf25fb02de11f3a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::add_impl</definition>
+        <argsstring>(psl::array_view&lt; std::pair&lt; entity, entity &gt;&gt; entities, void *data, bool repeat) override</argsstring>
+        <name>add_impl</name>
+        <param>
+          <type>psl::array_view&lt; std::pair&lt; entity, entity &gt;&gt;</type>
+          <declname>entities</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="310" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="310" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ad308c1dbae1beda6937fa3430011b68c" prot="protected" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::purge_impl</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>purge_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="323" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="323" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a7b2e72814699b837fab6d3a979d8a7e7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::remove_impl</definition>
+        <argsstring>(entity entity) override</argsstring>
+        <name>remove_impl</name>
+        <param>
+          <type>entity</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="325" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="325" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a33b41a2de3a6d62175aca64422ffb0ef" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::remove_impl</definition>
+        <argsstring>(psl::array_view&lt; entity &gt; entities) override</argsstring>
+        <name>remove_impl</name>
+        <param>
+          <type>psl::array_view&lt; entity &gt;</type>
+          <declname>entities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="326" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a70e16ec9ca3ecdfed05925abd3bdbcd3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::ecs::details::component_info_typed&lt; T, true &gt;::remove_impl</definition>
+        <argsstring>(psl::array_view&lt; std::pair&lt; entity, entity &gt;&gt; entities) override</argsstring>
+        <name>remove_impl</name>
+        <param>
+          <type>psl::array_view&lt; std::pair&lt; entity, entity &gt;&gt;</type>
+          <declname>entities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="330" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="330" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a55e92412e16bf7b1ccb42e0faa8b7a7a" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::ecs::details::component_info_typed&lt; T, true &gt;::has_impl</definition>
+        <argsstring>(entity entity, size_t startStage, size_t endStage) const noexcept override</argsstring>
+        <name>has_impl</name>
+        <param>
+          <type>entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>startStage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endStage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="337" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="337" bodyend="340"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>psl::ecs::details::component_info_typed&lt; T, true &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>psl::ecs::details::component_info</label>
+        <link refid="classpsl_1_1ecs_1_1details_1_1component__info"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>psl::ecs::details::component_info_typed&lt; T, true &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>psl::ecs::details::component_info</label>
+        <link refid="classpsl_1_1ecs_1_1details_1_1component__info"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="273" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" bodystart="272" bodyend="344"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a5594f87d42f901168c61363152614735" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a82ffa7e781560a8b5ab9f3504431e25d" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1af705672695a51101ad2427ea3ac6cb79" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ab315410d2474e825c478cc8d83fba7be" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a20efa56eca81c39f271b2d0676410493" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0fc461ca44c330b4adf25fb02de11f3a" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>add_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a86ce692f7b51445afa3909a6052e62eb" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>added_entities</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0a00d9d6eba7443eb1f22bab29ebb7e0" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>alignment</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a2d9fe1fac3ea807a68290926b9394b06" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_info</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1aa997fa6ea41e3ec9973851e432d3638b" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_info</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a12515fb0922dda64759f25aad1729a7e" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_info</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a9a2f4a5e3498f5354fd75b58e8b5aa0f" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_info</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a917d2d3210a3a71baf2e15879088b65a" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_info_typed</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a769623f1fa1f2dc6839b4861dc7e85dc" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>component_size</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a7450cf708a2762ae909dc64cab511471" prot="public" virt="virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>copy_from</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1aa4a1611e99c2c585dbe333b4bd495660" prot="public" virt="virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>copy_to</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a14edacc35cf8623ac9cbfe60c9365b84" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>data</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a9af8500ec8c6a62f177a39aaa424e73b" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>destroy</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1af215695d11f1a50031b3010eb7f1e5bf" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>destroy</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1af668acef9351cb58dbab62481716904e" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>destroy</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a15d9fb3f0a27f8135fa4cd18f14fda20" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>entities</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a6898569cae1b19b0dbce437490b6e56f" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>entities_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1af530f044596203da60c6ed2c38b75382" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>has_added</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1aa26bda825970f6dd29ca97af30e5ec56" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>has_component</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a55e92412e16bf7b1ccb42e0faa8b7a7a" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>has_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a249944a44d9108f78290cfc5b9506a94" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>has_removed</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a6187775837f8ec3d73b6144518f3b781" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>has_storage_for</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1ab7d4dca937b836b0d1cc0131ac4f76ac" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>id</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1adfe8837bccc3a3906a1e6abfa3d81ae6" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>is_tag</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a0037a9395f212b2f33df8ebc5dfb96ad" prot="private" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>m_Entities</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ae7c92a81921853f03b980f64cf7fd63a" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>merge</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1ae65bb2a58bffaa508cc9f68b88f4b5a9" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a40576d9e85fbade9ce760dfc7ca190fd" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a55ff908e2603998ab2ab965e0f53e645" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>purge</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1ad308c1dbae1beda6937fa3430011b68c" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>purge_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a44c6dac85e88833f776a7960a2ae9f2c" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>remap</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a7b2e72814699b837fab6d3a979d8a7e7" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>remove_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a33b41a2de3a6d62175aca64422ffb0ef" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>remove_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1a70e16ec9ca3ecdfed05925abd3bdbcd3" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>remove_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a7290264f36bbe385100bdedb16b00fe4" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>removed_entities</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a257624d73886606b1dac3f7437fdf755" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>set</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4_1accc6c8cf82a4b91b4bdc322d48c13a60" prot="protected" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>set_impl</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a7460f42fb725c7ba2f44d6ef799c4852" prot="public" virt="non-virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>size</name></member>
+      <member refid="classpsl_1_1ecs_1_1details_1_1component__info_1a835765765965e0acb9e7fab2b695ff60" prot="public" virt="virtual"><scope>psl::ecs::details::component_info_typed&lt; T, true &gt;</scope><name>~component_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

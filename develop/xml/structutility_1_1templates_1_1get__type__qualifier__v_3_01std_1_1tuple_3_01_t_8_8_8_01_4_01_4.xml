@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1get__type__qualifier__v_3_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::get_type_qualifier_v&lt; std::tuple&lt; T... &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structutility_1_1templates_1_1get__type__qualifier__v_3_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4_1a11c7b789a92fb86691b747cf97916e9b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::array&lt; type_qualifier, sizeof...(T)&gt;</type>
+        <definition>constexpr std::array&lt;type_qualifier, sizeof...(T)&gt; utility::templates::get_type_qualifier_v&lt; std::tuple&lt; T... &gt; &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>{
+		  utility::templates::get_type_qualifier&lt;T&gt; {}.value...}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="108" column="29" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" line="107" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/evoke.hpp" bodystart="106" bodyend="110"/>
+    <listofallmembers>
+      <member refid="structutility_1_1templates_1_1get__type__qualifier__v_3_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4_1a11c7b789a92fb86691b747cf97916e9b" prot="public" virt="non-virtual"><scope>utility::templates::get_type_qualifier_v&lt; std::tuple&lt; T... &gt; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

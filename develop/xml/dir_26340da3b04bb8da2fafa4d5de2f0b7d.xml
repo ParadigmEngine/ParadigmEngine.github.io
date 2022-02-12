@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_26340da3b04bb8da2fafa4d5de2f0b7d" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug</compoundname>
+    <innerfile refid="grid_8hpp">grid.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/"/>
+  </compounddef>
+</doxygen>

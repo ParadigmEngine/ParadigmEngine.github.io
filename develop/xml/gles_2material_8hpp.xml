@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="gles_2material_8hpp" kind="file" language="C++">
+    <compoundname>material.hpp</compoundname>
+    <includes local="yes">resource/resource.hpp</includes>
+    <includedby refid="gles_2drawpass_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp</includedby>
+    <includedby refid="gles_2geometry_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp</includedby>
+    <includedby refid="gles_2material_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/gles/material.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/material.hpp</label>
+        <link refid="gles_2material_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>resource/resource.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp</label>
+        <link refid="gles_2geometry_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/material.hpp</label>
+        <link refid="gles_2material_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp</label>
+        <link refid="gles_2drawpass_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/material.cpp</label>
+        <link refid="gles_2material_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcore_1_1igles_1_1material__t" prot="public">core::igles::material_t</innerclass>
+    <innerclass refid="structcore_1_1igles_1_1material__t_1_1buffer__binding" prot="private">core::igles::material_t::buffer_binding</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1data">core::data</innernamespace>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+    <innernamespace refid="namespacecore_1_1igles">core::igles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;resource/resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1data" kindref="compound">core::data</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">material_t;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacememory" kindref="compound">memory</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">segment;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">core::igles</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">buffer_t;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">program;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">program_cache;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">texture_t;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">sampler_t;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">shader;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">material_t</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">buffer_binding</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::igles::buffer_t&gt;</ref><sp/>buffer;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>slot;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>offset<sp/>{0};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>size<sp/>{0};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>material_t(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref>*<sp/>metaFile,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::data::material_t&gt;</ref><sp/><ref refid="namespacecore_1_1data" kindref="compound">data</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::igles::program_cache&gt;</ref><sp/>program_cache);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~material_t()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>material_t(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>material_t&amp;<sp/>other)<sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>material_t(material_t&amp;&amp;<sp/>other)<sp/>noexcept<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>material_t&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>material_t&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>material_t&amp;<sp/>operator=(material_t&amp;&amp;<sp/>other)<sp/>noexcept<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bind();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;core::resource::handle&lt;core::igles::shader&gt;&gt;&amp;<sp/>shaders()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/><ref refid="namespacecore" kindref="compound">core</ref>::<ref refid="namespacecore_1_1data" kindref="compound">data</ref>::material_t&amp;<sp/><ref refid="namespacecore_1_1data" kindref="compound">data</ref>()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bind_instance_data(uint32_t<sp/>binding,<sp/>uint32_t<sp/>offset);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;program&gt;<sp/>m_Program;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;<ref refid="namespacecore" kindref="compound">core</ref>::<ref refid="namespacecore_1_1data" kindref="compound">data</ref>::material_t&gt;<sp/>m_Data;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;<ref refid="namespacecore" kindref="compound">core</ref>::igles::shader&gt;&gt;<sp/>m_Shaders;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;<ref refid="namespacecore" kindref="compound">core</ref>::igles::texture_t&gt;&gt;&gt;<sp/>m_Textures;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;<ref refid="namespacecore" kindref="compound">core</ref>::igles::sampler_t&gt;&gt;&gt;<sp/>m_Samplers;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;buffer_binding&gt;<sp/>m_Buffers;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::optional&lt;std::tuple&lt;uint32_t,<sp/>core::resource::handle&lt;core::igles::buffer_t&gt;,<sp/>memory::segment&gt;&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>m_MaterialInstanceData{<sp/>std::nullopt<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::igles</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/material.hpp"/>
+  </compounddef>
+</doxygen>

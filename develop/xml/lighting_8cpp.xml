@@ -1,0 +1,1339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lighting_8cpp" kind="file" language="C++">
+    <compoundname>lighting.cpp</compoundname>
+    <includes refid="systems_2lighting_8hpp" local="yes">ecs/systems/lighting.hpp</includes>
+    <includes refid="core_2inc_2data_2buffer_8hpp" local="yes">data/buffer.hpp</includes>
+    <includes refid="data_2framebuffer_8hpp" local="yes">data/framebuffer.hpp</includes>
+    <includes refid="data_2sampler_8hpp" local="yes">data/sampler.hpp</includes>
+    <includes refid="render_8hpp" local="yes">ecs/systems/render.hpp</includes>
+    <includes local="yes">gfx/buffer.hpp</includes>
+    <includes local="yes">gfx/context.hpp</includes>
+    <includes refid="gfx_2drawpass_8hpp" local="yes">gfx/drawpass.hpp</includes>
+    <includes local="yes">gfx/framebuffer.hpp</includes>
+    <includes refid="limits_8hpp" local="yes">gfx/limits.hpp</includes>
+    <includes refid="render__graph_8hpp" local="yes">gfx/render_graph.hpp</includes>
+    <includes local="yes">gfx/sampler.hpp</includes>
+    <includes refid="surface_8hpp" local="yes">os/surface.hpp</includes>
+    <includes refid="state_8hpp" local="yes">psl/ecs/state.hpp</includes>
+    <includes refid="region_8hpp" local="yes">psl/memory/region.hpp</includes>
+    <incdepgraph>
+      <node id="106">
+        <label>list</label>
+      </node>
+      <node id="139">
+        <label>data/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>gfx/render_graph.hpp</label>
+        <link refid="render__graph_8hpp_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>scheduler.hpp</label>
+        <link refid="scheduler_8hpp_source"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>atomic</label>
+      </node>
+      <node id="134">
+        <label>gfx/framebuffer.hpp</label>
+      </node>
+      <node id="93">
+        <label>../token.hpp</label>
+        <link refid="token_8hpp_source"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>psl/sparse_indice_array.hpp</label>
+        <link refid="sparse__indice__array_8hpp_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>allocator.hpp</label>
+        <link refid="allocator_8hpp_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>../pack.hpp</label>
+        <link refid="pack_8hpp_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>system_error</label>
+      </node>
+      <node id="114">
+        <label>iomanip</label>
+      </node>
+      <node id="17">
+        <label>functional</label>
+      </node>
+      <node id="24">
+        <label>limits</label>
+      </node>
+      <node id="68">
+        <label>iterator</label>
+      </node>
+      <node id="67">
+        <label>psl/array_view.hpp</label>
+        <link refid="array__view_8hpp_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>psl/memory/range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>defines.hpp</label>
+        <link refid="defines_8hpp_source"/>
+      </node>
+      <node id="97">
+        <label>task.hpp</label>
+        <link refid="task_8hpp_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>psl/math/vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>os/surface.hpp</label>
+        <link refid="surface_8hpp_source"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>variant</label>
+      </node>
+      <node id="92">
+        <label>details/packet.hpp</label>
+        <link refid="packet_8hpp_source"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>psl/memory/raw_region.hpp</label>
+        <link refid="raw__region_8hpp_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>gfx/limits.hpp</label>
+        <link refid="limits_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>gfx/drawcall.hpp</label>
+        <link refid="drawcall_8hpp_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="77">
+        <label>details/entity_info.hpp</label>
+        <link refid="entity__info_8hpp_source"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="86">
+        <label>stdexcept</label>
+      </node>
+      <node id="75">
+        <label>numeric</label>
+      </node>
+      <node id="64">
+        <label>../entity.hpp</label>
+        <link refid="entity_8hpp_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>psl/math/fallback/quaternion.hpp</label>
+        <link refid="fallback_2quaternion_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>utility.hpp</label>
+        <link refid="utility_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>details/system_information.hpp</label>
+        <link refid="system__information_8hpp_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>psl/math/math.hpp</label>
+        <link refid="math_8hpp_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>psl/math/AVX2/matrix.hpp</label>
+        <link refid="_a_v_x2_2matrix_8hpp_source"/>
+      </node>
+      <node id="78">
+        <label>psl/pack_view.hpp</label>
+        <link refid="pack__view_8hpp_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>map</label>
+      </node>
+      <node id="99">
+        <label>psl/collections/spmc/producer.hpp</label>
+        <link refid="producer_8hpp_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>psl/math/AVX/quaternion.hpp</label>
+        <link refid="_a_v_x_2quaternion_8hpp_source"/>
+      </node>
+      <node id="103">
+        <label>data/buffer.hpp</label>
+        <link refid="core_2inc_2data_2buffer_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unordered_set</label>
+      </node>
+      <node id="96">
+        <label>description.hpp</label>
+        <link refid="description_8hpp_source"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>gfx/context.hpp</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="72">
+        <label>../selectors.hpp</label>
+        <link refid="selectors_8hpp_source"/>
+      </node>
+      <node id="35">
+        <label>psl/math/SSE/matrix.hpp</label>
+        <link refid="_s_s_e_2matrix_8hpp_source"/>
+      </node>
+      <node id="60">
+        <label>psl/ecs/state.hpp</label>
+        <link refid="state_8hpp_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>component_key.hpp</label>
+        <link refid="component__key_8hpp_source"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>gfx/buffer.hpp</label>
+      </node>
+      <node id="49">
+        <label>fwd/gfx/geometry.hpp</label>
+        <link refid="fwd_2gfx_2geometry_8hpp_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>command_buffer.hpp</label>
+        <link refid="command__buffer_8hpp_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>gfx/drawgroup.hpp</label>
+        <link refid="drawgroup_8hpp_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>gfx/drawlayer.hpp</label>
+        <link refid="drawlayer_8hpp_source"/>
+      </node>
+      <node id="94">
+        <label>psl/view_ptr.hpp</label>
+        <link refid="view__ptr_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>details/selectors.hpp</label>
+        <link refid="details_2selectors_8hpp_source"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="46">
+        <label>fwd/gfx/bundle.hpp</label>
+        <link refid="fwd_2gfx_2bundle_8hpp_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>psl/memory/region.hpp</label>
+        <link refid="region_8hpp_source"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>string_view</label>
+      </node>
+      <node id="36">
+        <label>psl/math/fallback/matrix.hpp</label>
+        <link refid="fallback_2matrix_8hpp_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>cstdio</label>
+      </node>
+      <node id="113">
+        <label>bitset</label>
+      </node>
+      <node id="95">
+        <label>future</label>
+      </node>
+      <node id="73">
+        <label>psl/memory/sparse_array.hpp</label>
+        <link refid="memory_2sparse__array_8hpp_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ecs/components/lighting.hpp</label>
+        <link refid="components_2lighting_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>optional</label>
+      </node>
+      <node id="82">
+        <label>psl/ecs/filtering.hpp</label>
+        <link refid="filtering_8hpp_source"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>stack</label>
+      </node>
+      <node id="56">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>signal.h</label>
+      </node>
+      <node id="50">
+        <label>gfx/types.hpp</label>
+        <link refid="gfx_2types_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="55">
+        <label>gfx/bundle.hpp</label>
+      </node>
+      <node id="115">
+        <label>sstream</label>
+      </node>
+      <node id="63">
+        <label>../details/staged_sparse_array.hpp</label>
+        <link refid="staged__sparse__array_8hpp_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>data/sampler.hpp</label>
+        <link refid="data_2sampler_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="85">
+        <label>psl/IDGenerator.hpp</label>
+        <link refid="_i_d_generator_8hpp_source"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ecs/components/transform.hpp</label>
+        <link refid="transform_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>gfx/sampler.hpp</label>
+      </node>
+      <node id="125">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="88">
+        <label>cstdlib</label>
+      </node>
+      <node id="121">
+        <label>clocale</label>
+      </node>
+      <node id="120">
+        <label>cctype</label>
+      </node>
+      <node id="40">
+        <label>psl/math/SSE/quaternion.hpp</label>
+        <link refid="_s_s_e_2quaternion_8hpp_source"/>
+      </node>
+      <node id="33">
+        <label>psl/math/AVX/matrix.hpp</label>
+        <link refid="_a_v_x_2matrix_8hpp_source"/>
+      </node>
+      <node id="58">
+        <label>resource/resource.hpp</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="65">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>gfx/drawpass.hpp</label>
+        <link refid="gfx_2drawpass_8hpp_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>psl/sparse_array.hpp</label>
+        <link refid="sparse__array_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unordered_map</label>
+      </node>
+      <node id="5">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>ecs/systems/render.hpp</label>
+        <link refid="render_8hpp_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>execution</label>
+      </node>
+      <node id="27">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="84">
+        <label>chrono</label>
+      </node>
+      <node id="124">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>psl/collections/ring_array.hpp</label>
+        <link refid="ring__array_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>psl/meta.hpp</label>
+        <link refid="meta_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>concepts</label>
+      </node>
+      <node id="26">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="123">
+        <label>thread</label>
+      </node>
+      <node id="89">
+        <label>psl/async/async.hpp</label>
+        <link refid="async_8hpp_source"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>psl/unique_ptr.hpp</label>
+        <link refid="unique__ptr_8hpp_source"/>
+      </node>
+      <node id="128">
+        <label>data/framebuffer.hpp</label>
+        <link refid="data_2framebuffer_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>type_traits</label>
+      </node>
+      <node id="90">
+        <label>barrier.hpp</label>
+        <link refid="barrier_8hpp_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>ecs/systems/lighting.hpp</label>
+        <link refid="systems_2lighting_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>details/component_info.hpp</label>
+        <link refid="component__info_8hpp_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cstring</label>
+      </node>
+      <node id="37">
+        <label>quaternion.hpp</label>
+        <link refid="quaternion_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>matrix.hpp</label>
+        <link refid="matrix_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>memory</label>
+      </node>
+      <node id="110">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>psl/expected.hpp</label>
+        <link refid="expected_8hpp_source"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>psl/math/AVX2/quaternion.hpp</label>
+        <link refid="_a_v_x2_2quaternion_8hpp_source"/>
+      </node>
+      <node id="122">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="10">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;ecs/systems/lighting.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/buffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/framebuffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/sampler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ecs/systems/render.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/buffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/drawpass.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/framebuffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/limits.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/render_graph.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gfx/sampler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;os/surface.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/ecs/state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/memory/region.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">core::ecs::systems;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore" kindref="compound">core</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1resource" kindref="compound">core::resource</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">core::ecs::components;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">psl::ecs;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">lighting_system::lighting_system(<ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr&lt;psl::ecs::state_t&gt;</ref><sp/>state,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr&lt;core::resource::cache_t&gt;</ref><sp/>cache,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmemory_1_1region" kindref="compound">memory::region</ref>&amp;<sp/>resource_region,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr&lt;core::gfx::render_graph&gt;</ref><sp/>renderGraph,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr&lt;core::gfx::drawpass&gt;</ref><sp/>pass,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::gfx::context&gt;</ref><sp/>context,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::os::surface&gt;</ref><sp/>surface)<sp/>noexcept<sp/>:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Cache(cache),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>m_RenderGraph(renderGraph),<sp/>m_DependsPass(pass),<sp/>m_State(state),<sp/>m_Context(context),<sp/>m_Surface(surface)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>state-&gt;declare(&amp;lighting_system::create_dir,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>bufferData<sp/>=<sp/>cache-&gt;create&lt;<ref refid="classcore_1_1data_1_1buffer__t" kindref="compound">data::buffer_t</ref>&gt;(</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gfx::memory_usage::uniform_buffer,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gfx::memory_property::host_visible<sp/>|<sp/>gfx::memory_property::host_coherent,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>resource_region</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.create_region(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(light)<sp/>*<sp/>1024,<sp/>m_Context-&gt;limits().uniform.alignment,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classmemory_1_1default__allocator" kindref="compound">memory::default_allocator</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.value());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>m_LightDataBuffer<sp/>=<sp/>cache-&gt;create&lt;gfx::buffer_t&gt;(m_Context,<sp/>bufferData);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>cache-&gt;library().set(m_LightDataBuffer,<sp/></highlight><highlight class="stringliteral">&quot;GLOBAL_LIGHT_DATA&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>m_LightSegment<sp/>=<sp/>m_LightDataBuffer-&gt;reserve(m_LightDataBuffer-&gt;free_size()).value();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lighting_system::create_dir(info_t&amp;<sp/>info,<sp/><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">pack</ref>&lt;entity,<sp/>light,<sp/><ref refid="structpsl_1_1ecs_1_1on__combine" kindref="compound">on_combine&lt;light, transform&gt;</ref>&gt;<sp/><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">pack</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">pack</ref>.size()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insertion_sort(std::begin(pack),<sp/>std::end(pack),<sp/>sort_impl&lt;light_sort,<sp/>light&gt;{});</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>depth<sp/>pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[e,<sp/>light]<sp/>:<sp/><ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">pack</ref>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!light.shadows)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fbdata<sp/>=<sp/>m_Cache-&gt;create&lt;<ref refid="classcore_1_1data_1_1framebuffer__t" kindref="compound">data::framebuffer_t</ref>&gt;(m_Surface-&gt;data().width(),<sp/>m_Surface-&gt;data().height(),<sp/>1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::attachment<sp/>descr;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>format<sp/>=<sp/>m_Context-&gt;limits().supported_depthformat;<sp/>format<sp/>==<sp/>core::gfx::format_t::undefined)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::log-&gt;error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>a<sp/>suitable<sp/>depth<sp/>stencil<sp/>buffer<sp/>format.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.format<sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.sample_bits<sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.image_load<sp/><sp/><sp/><sp/>=<sp/>core::gfx::attachment::load_op::clear;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.image_store<sp/><sp/><sp/>=<sp/>core::gfx::attachment::store_op::dont_care;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.stencil_load<sp/><sp/>=<sp/>core::gfx::attachment::load_op::dont_care;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.stencil_store<sp/>=<sp/>core::gfx::attachment::store_op::dont_care;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.initial<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>core::gfx::image::layout::undefined;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr.final<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>core::gfx::image::layout::depth_stencil_attachment_optimal;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fbdata-&gt;add(m_Surface-&gt;data().width(),</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Surface-&gt;data().height(),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::image::usage::dept_stencil_attachment,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::gfx::depth_stencil<sp/>{1.0f,<sp/>0},</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>descr);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ppsamplerData<sp/>=<sp/>m_Cache-&gt;create&lt;<ref refid="classcore_1_1data_1_1sampler__t" kindref="compound">data::sampler_t</ref>&gt;();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ppsamplerData-&gt;<ref refid="classcore_1_1data_1_1sampler__t_1a99a4c1d2bcc15290d438b19f547497c1" kindref="member">mipmaps</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ppsamplerHandle<sp/>=<sp/>m_Cache-&gt;create&lt;gfx::sampler_t&gt;(m_Context,<sp/>ppsamplerData);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fbdata-&gt;set(ppsamplerHandle);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>depthPass<sp/>=<sp/>m_Cache-&gt;create&lt;gfx::framebuffer_t&gt;(m_Context,<sp/>fbdata);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pass<sp/><sp/><sp/><sp/>=<sp/>m_RenderGraph-&gt;create_drawpass(m_Context,<sp/>depthPass);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Systems[e]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>core::ecs::systems::render<sp/>{*m_State,<sp/>pass};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Systems[e]-&gt;add_render_range(1000,<sp/>1500);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_RenderGraph-&gt;connect(pass,<sp/>m_DependsPass);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp"/>
+  </compounddef>
+</doxygen>

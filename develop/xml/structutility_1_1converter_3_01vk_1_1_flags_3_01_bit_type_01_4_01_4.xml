@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1converter_3_01vk_1_1_flags_3_01_bit_type_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::converter&lt; vk::Flags&lt; BitType &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename BitType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structutility_1_1converter_3_01vk_1_1_flags_3_01_bit_type_01_4_01_4_1abdb7b1ec94233f8c5f9d62e42e6f4a5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>psl::string8_t</type>
+        <definition>static psl::string8_t utility::converter&lt; vk::Flags&lt; BitType &gt; &gt;::to_string</definition>
+        <argsstring>(const vk::Flags&lt; BitType &gt; &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const vk::Flags&lt; BitType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="65" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structutility_1_1converter_3_01vk_1_1_flags_3_01_bit_type_01_4_01_4_1a21d1b797c42e55b6e2ce44a247438ec4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::Flags&lt; BitType &gt;</type>
+        <definition>static vk::Flags&lt;BitType&gt; utility::converter&lt; vk::Flags&lt; BitType &gt; &gt;::from_string</definition>
+        <argsstring>(psl::string8::view str)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="71" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="64" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="63" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structutility_1_1converter_3_01vk_1_1_flags_3_01_bit_type_01_4_01_4_1a21d1b797c42e55b6e2ce44a247438ec4" prot="public" virt="non-virtual"><scope>utility::converter&lt; vk::Flags&lt; BitType &gt; &gt;</scope><name>from_string</name></member>
+      <member refid="structutility_1_1converter_3_01vk_1_1_flags_3_01_bit_type_01_4_01_4_1abdb7b1ec94233f8c5f9d62e42e6f4a5b" prot="public" virt="non-virtual"><scope>utility::converter&lt; vk::Flags&lt; BitType &gt; &gt;</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

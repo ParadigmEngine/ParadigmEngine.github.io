@@ -1,0 +1,875 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1vulkan_1_1defaults" kind="namespace" language="C++">
+    <compoundname>utility::vulkan::defaults</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1ac75178bf2bce513c32d54a9ccbb73182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkMemoryAllocateInfo</type>
+        <definition>VkMemoryAllocateInfo utility::vulkan::defaults::mem_ai</definition>
+        <argsstring>()</argsstring>
+        <name>mem_ai</name>
+        <briefdescription>
+<para>creates a default, 0 sized VkMemoryAllocateInfo </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="92" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a1770ba728a6acec62bfd52fe62d2c75a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkCommandBufferAllocateInfo</type>
+        <definition>VkCommandBufferAllocateInfo utility::vulkan::defaults::cmd_buffer_ai</definition>
+        <argsstring>(VkCommandPool commandPool, VkCommandBufferLevel level, uint32_t bufferCount)</argsstring>
+        <name>cmd_buffer_ai</name>
+        <param>
+          <type>VkCommandPool</type>
+          <declname>commandPool</declname>
+        </param>
+        <param>
+          <type>VkCommandBufferLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bufferCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="103" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a26487a5611ccb239cd591215d0a443c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkCommandPoolCreateInfo</type>
+        <definition>VkCommandPoolCreateInfo utility::vulkan::defaults::cmd_pool_ci</definition>
+        <argsstring>()</argsstring>
+        <name>cmd_pool_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="113" column="32" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1aca3d6e10b3c16fc148e5e2f20d07389a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkCommandBufferBeginInfo</type>
+        <definition>VkCommandBufferBeginInfo utility::vulkan::defaults::cmd_pool_bi</definition>
+        <argsstring>()</argsstring>
+        <name>cmd_pool_bi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="120" column="33" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1ab9afe6030f43899644863739c04852cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkCommandBufferInheritanceInfo</type>
+        <definition>VkCommandBufferInheritanceInfo utility::vulkan::defaults::cmd_buffer_ii</definition>
+        <argsstring>()</argsstring>
+        <name>cmd_buffer_ii</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="128" column="39" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="128" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1aef524c07d8a89d27f55153fde2494629" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkRenderPassBeginInfo</type>
+        <definition>VkRenderPassBeginInfo utility::vulkan::defaults::renderpass_bi</definition>
+        <argsstring>()</argsstring>
+        <name>renderpass_bi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="135" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a80b4783f2634f9203436b64e762c1b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkRenderPassCreateInfo</type>
+        <definition>VkRenderPassCreateInfo utility::vulkan::defaults::renderpass_ci</definition>
+        <argsstring>()</argsstring>
+        <name>renderpass_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="143" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a04d199c1509382d02384374bfd2d24ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkImageMemoryBarrier</type>
+        <definition>VkImageMemoryBarrier utility::vulkan::defaults::image_membarrier</definition>
+        <argsstring>()</argsstring>
+        <name>image_membarrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="151" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="151" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a4c21952b5c7c7adc803ae94dddeebf8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkBufferMemoryBarrier</type>
+        <definition>VkBufferMemoryBarrier utility::vulkan::defaults::buffer_membarrier</definition>
+        <argsstring>()</argsstring>
+        <name>buffer_membarrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="162" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a1bcb040f05bcf606ed5be7fb2d932456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkSemaphoreCreateInfo</type>
+        <definition>VkSemaphoreCreateInfo utility::vulkan::defaults::semaphore_ci</definition>
+        <argsstring>()</argsstring>
+        <name>semaphore_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="170" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="170" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1ab319dfffa7494c2c6f2f0e2e76a4cb22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkFenceCreateInfo</type>
+        <definition>VkFenceCreateInfo utility::vulkan::defaults::fence_ci</definition>
+        <argsstring>(VkFenceCreateFlags flags)</argsstring>
+        <name>fence_ci</name>
+        <param>
+          <type>VkFenceCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="179" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="179" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a435e3e688dd4b277aeb3d526e3dcf07c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkEventCreateInfo</type>
+        <definition>VkEventCreateInfo utility::vulkan::defaults::event_ci</definition>
+        <argsstring>()</argsstring>
+        <name>event_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="187" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="187" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1aa7cc23a1b10007a1c6b5ccb8145c5558" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkSubmitInfo</type>
+        <definition>VkSubmitInfo utility::vulkan::defaults::submit_i</definition>
+        <argsstring>()</argsstring>
+        <name>submit_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="194" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a7e549a6412cd09472c6aaff9aaec26dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkViewport</type>
+        <definition>VkViewport utility::vulkan::defaults::viewport</definition>
+        <argsstring>(float width, float height, float minDepth, float maxDepth)</argsstring>
+        <name>viewport</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minDepth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="202" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="202" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1af48822259d2a4d38f4e2cfdc24ca719a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkRect2D</type>
+        <definition>VkRect2D utility::vulkan::defaults::rect2D</definition>
+        <argsstring>(int32_t width, int32_t height, int32_t offsetX, int32_t offsetY)</argsstring>
+        <name>rect2D</name>
+        <param>
+          <type>int32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>offsetX</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>offsetY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="212" column="17" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="212" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1af74ce18a0f1d8156560bbc01bbfa04c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkBufferCreateInfo</type>
+        <definition>VkBufferCreateInfo utility::vulkan::defaults::buffer_ci</definition>
+        <argsstring>()</argsstring>
+        <name>buffer_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="222" column="27" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a3a722b8082f1102af5e01585d9b1bdba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkBufferCreateInfo</type>
+        <definition>VkBufferCreateInfo utility::vulkan::defaults::buffer_ci</definition>
+        <argsstring>(VkBufferUsageFlags usage, VkDeviceSize size)</argsstring>
+        <name>buffer_ci</name>
+        <param>
+          <type>VkBufferUsageFlags</type>
+          <declname>usage</declname>
+        </param>
+        <param>
+          <type>VkDeviceSize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="229" column="27" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="229" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a0f0a053827260ff8d314930e2fea72ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::DescriptorPoolCreateInfo</type>
+        <definition>vk::DescriptorPoolCreateInfo utility::vulkan::defaults::descriptor_pool_ci</definition>
+        <argsstring>(uint32_t poolSizeCount, vk::DescriptorPoolSize *pPoolSizes, uint32_t maxSets)</argsstring>
+        <name>descriptor_pool_ci</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>poolSizeCount</declname>
+        </param>
+        <param>
+          <type>vk::DescriptorPoolSize *</type>
+          <declname>pPoolSizes</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>maxSets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="241" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="241" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a9dff24d953793525328a9c2742983e35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkDescriptorPoolSize</type>
+        <definition>VkDescriptorPoolSize utility::vulkan::defaults::descriptor_pool_size</definition>
+        <argsstring>(VkDescriptorType type, uint32_t descriptorCount)</argsstring>
+        <name>descriptor_pool_size</name>
+        <param>
+          <type>VkDescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>descriptorCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="251" column="29" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="251" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a2c90e26042e83468997537c2addffd87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::DescriptorSetLayoutBinding</type>
+        <definition>vk::DescriptorSetLayoutBinding utility::vulkan::defaults::descriptor_setlayout_binding</definition>
+        <argsstring>(vk::DescriptorType type, vk::ShaderStageFlags stageFlags, uint32_t binding, uint32_t descriptorCount=1)</argsstring>
+        <name>descriptor_setlayout_binding</name>
+        <param>
+          <type>vk::DescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>vk::ShaderStageFlags</type>
+          <declname>stageFlags</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>descriptorCount</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="259" column="39" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="259" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1aebeb462bda3f190095ae593aa7cd8248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkDescriptorSetLayoutCreateInfo</type>
+        <definition>VkDescriptorSetLayoutCreateInfo utility::vulkan::defaults::descriptor_setlayout_ci</definition>
+        <argsstring>(const VkDescriptorSetLayoutBinding *pBindings, uint32_t bindingCount)</argsstring>
+        <name>descriptor_setlayout_ci</name>
+        <param>
+          <type>const VkDescriptorSetLayoutBinding *</type>
+          <declname>pBindings</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bindingCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="274" column="40" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="274" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1ace5c83364764d7c246f12e7f2d365fe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineLayoutCreateInfo</type>
+        <definition>VkPipelineLayoutCreateInfo utility::vulkan::defaults::pipeline_layout_ci</definition>
+        <argsstring>(const VkDescriptorSetLayout *pSetLayouts, uint32_t setLayoutCount)</argsstring>
+        <name>pipeline_layout_ci</name>
+        <param>
+          <type>const VkDescriptorSetLayout *</type>
+          <declname>pSetLayouts</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>setLayoutCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="285" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="285" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a3dba81c822d9f38e157e497093515565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkDescriptorSetAllocateInfo</type>
+        <definition>VkDescriptorSetAllocateInfo utility::vulkan::defaults::descriptor_set_ai</definition>
+        <argsstring>(VkDescriptorPool descriptorPool, const VkDescriptorSetLayout *pSetLayouts, uint32_t descriptorSetCount)</argsstring>
+        <name>descriptor_set_ai</name>
+        <param>
+          <type>VkDescriptorPool</type>
+          <declname>descriptorPool</declname>
+        </param>
+        <param>
+          <type>const VkDescriptorSetLayout *</type>
+          <declname>pSetLayouts</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>descriptorSetCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="296" column="36" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="296" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a0e8b839a922c5423459c137a6d739513" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::DescriptorImageInfo</type>
+        <definition>vk::DescriptorImageInfo utility::vulkan::defaults::descriptor_image_info</definition>
+        <argsstring>(vk::Sampler sampler, vk::ImageView imageView, vk::ImageLayout imageLayout)</argsstring>
+        <name>descriptor_image_info</name>
+        <param>
+          <type>vk::Sampler</type>
+          <declname>sampler</declname>
+        </param>
+        <param>
+          <type>vk::ImageView</type>
+          <declname>imageView</declname>
+        </param>
+        <param>
+          <type>vk::ImageLayout</type>
+          <declname>imageLayout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="310" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="310" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a0de411c6fc0da6107bf3512bf9ef6e67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::WriteDescriptorSet</type>
+        <definition>vk::WriteDescriptorSet utility::vulkan::defaults::write_descriptor_set</definition>
+        <argsstring>(vk::DescriptorSet dstSet, vk::DescriptorType type, uint32_t binding, vk::DescriptorBufferInfo *bufferInfo, uint32_t descriptorCount=1)</argsstring>
+        <name>write_descriptor_set</name>
+        <param>
+          <type>vk::DescriptorSet</type>
+          <declname>dstSet</declname>
+        </param>
+        <param>
+          <type>vk::DescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>vk::DescriptorBufferInfo *</type>
+          <declname>bufferInfo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>descriptorCount</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="319" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="319" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a523ce34096ebc54ac8726c37a7cdf406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vk::WriteDescriptorSet</type>
+        <definition>vk::WriteDescriptorSet utility::vulkan::defaults::write_descriptor_set</definition>
+        <argsstring>(vk::DescriptorSet dstSet, vk::DescriptorType type, uint32_t binding, vk::DescriptorImageInfo *imageInfo, uint32_t descriptorCount=1)</argsstring>
+        <name>write_descriptor_set</name>
+        <param>
+          <type>vk::DescriptorSet</type>
+          <declname>dstSet</declname>
+        </param>
+        <param>
+          <type>vk::DescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>vk::DescriptorImageInfo *</type>
+          <declname>imageInfo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>descriptorCount</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="337" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="337" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a8208e9afc72caacff5383850169e44e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkVertexInputBindingDescription</type>
+        <definition>VkVertexInputBindingDescription utility::vulkan::defaults::vertex_input_binding</definition>
+        <argsstring>(uint32_t binding, uint32_t stride, VkVertexInputRate inputRate)</argsstring>
+        <name>vertex_input_binding</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>VkVertexInputRate</type>
+          <declname>inputRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="356" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="356" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1afd0826e206afed0204d0abfddab067f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkVertexInputAttributeDescription</type>
+        <definition>VkVertexInputAttributeDescription utility::vulkan::defaults::vertex_input_attr</definition>
+        <argsstring>(uint32_t binding, uint32_t location, VkFormat format, uint32_t offset)</argsstring>
+        <name>vertex_input_attr</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>VkFormat</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="366" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="366" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a99bd0d0a48a14946e3a22ea1fc92ebd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineVertexInputStateCreateInfo</type>
+        <definition>VkPipelineVertexInputStateCreateInfo utility::vulkan::defaults::pipeline_vertex_inputstate_ci</definition>
+        <argsstring>()</argsstring>
+        <name>pipeline_vertex_inputstate_ci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="376" column="45" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="376" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1af09cc9c3520327b22a36c5da91b2f730" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineInputAssemblyStateCreateInfo</type>
+        <definition>VkPipelineInputAssemblyStateCreateInfo utility::vulkan::defaults::pipeline_input_asmstate_ci</definition>
+        <argsstring>(VkPrimitiveTopology topology, VkPipelineInputAssemblyStateCreateFlags flags, VkBool32 primitiveRestartEnable)</argsstring>
+        <name>pipeline_input_asmstate_ci</name>
+        <param>
+          <type>VkPrimitiveTopology</type>
+          <declname>topology</declname>
+        </param>
+        <param>
+          <type>VkPipelineInputAssemblyStateCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>VkBool32</type>
+          <declname>primitiveRestartEnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="385" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="385" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1ab886ac157187486c1d9b3dccab683e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineRasterizationStateCreateInfo</type>
+        <definition>VkPipelineRasterizationStateCreateInfo utility::vulkan::defaults::pipeline_rasterizationstate_ci</definition>
+        <argsstring>(VkPolygonMode polygonMode, VkCullModeFlags cullMode, VkFrontFace frontFace, VkPipelineRasterizationStateCreateFlags flags)</argsstring>
+        <name>pipeline_rasterizationstate_ci</name>
+        <param>
+          <type>VkPolygonMode</type>
+          <declname>polygonMode</declname>
+        </param>
+        <param>
+          <type>VkCullModeFlags</type>
+          <declname>cullMode</declname>
+        </param>
+        <param>
+          <type>VkFrontFace</type>
+          <declname>frontFace</declname>
+        </param>
+        <param>
+          <type>VkPipelineRasterizationStateCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="398" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="398" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a93e24878d2e25947df080a4edbac6ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineColorBlendAttachmentState</type>
+        <definition>VkPipelineColorBlendAttachmentState utility::vulkan::defaults::pipeline_colorblend_attch_state</definition>
+        <argsstring>(VkColorComponentFlags colorWriteMask, VkBool32 blendEnable)</argsstring>
+        <name>pipeline_colorblend_attch_state</name>
+        <param>
+          <type>VkColorComponentFlags</type>
+          <declname>colorWriteMask</declname>
+        </param>
+        <param>
+          <type>VkBool32</type>
+          <declname>blendEnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="414" column="44" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="414" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a62fb0942d03835b4f55f8a468c23fd2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineColorBlendStateCreateInfo</type>
+        <definition>VkPipelineColorBlendStateCreateInfo utility::vulkan::defaults::pipeline_colorblendstate_ci</definition>
+        <argsstring>(uint32_t attachmentCount, const VkPipelineColorBlendAttachmentState *pAttachments)</argsstring>
+        <name>pipeline_colorblendstate_ci</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>attachmentCount</declname>
+        </param>
+        <param>
+          <type>const VkPipelineColorBlendAttachmentState *</type>
+          <declname>pAttachments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="424" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="424" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a126f352c041bd6b89336f1bd5aaabf37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineDepthStencilStateCreateInfo</type>
+        <definition>VkPipelineDepthStencilStateCreateInfo utility::vulkan::defaults::pipeline_ds_state_ci</definition>
+        <argsstring>(VkBool32 depthTestEnable, VkBool32 depthWriteEnable, VkCompareOp depthCompareOp)</argsstring>
+        <name>pipeline_ds_state_ci</name>
+        <param>
+          <type>VkBool32</type>
+          <declname>depthTestEnable</declname>
+        </param>
+        <param>
+          <type>VkBool32</type>
+          <declname>depthWriteEnable</declname>
+        </param>
+        <param>
+          <type>VkCompareOp</type>
+          <declname>depthCompareOp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="435" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="435" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a9da2cca7fe8d3113fee73e0a78a25387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineViewportStateCreateInfo</type>
+        <definition>VkPipelineViewportStateCreateInfo utility::vulkan::defaults::pipeline_viewportstate_ci</definition>
+        <argsstring>(uint32_t viewportCount, uint32_t scissorCount, VkPipelineViewportStateCreateFlags flags)</argsstring>
+        <name>pipeline_viewportstate_ci</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>viewportCount</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>scissorCount</declname>
+        </param>
+        <param>
+          <type>VkPipelineViewportStateCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="448" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="448" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a1e9a02275a64285628f7f88eca94ec71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineMultisampleStateCreateInfo</type>
+        <definition>VkPipelineMultisampleStateCreateInfo utility::vulkan::defaults::pipeline_ms_state_ci</definition>
+        <argsstring>(VkSampleCountFlagBits rasterizationSamples, VkPipelineMultisampleStateCreateFlags flags)</argsstring>
+        <name>pipeline_ms_state_ci</name>
+        <param>
+          <type>VkSampleCountFlagBits</type>
+          <declname>rasterizationSamples</declname>
+        </param>
+        <param>
+          <type>VkPipelineMultisampleStateCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="458" column="45" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="458" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a54d080551b14b4b80eec34c3878499d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineDynamicStateCreateInfo</type>
+        <definition>VkPipelineDynamicStateCreateInfo utility::vulkan::defaults::pipeline_dynstate_ci</definition>
+        <argsstring>(const VkDynamicState *pDynamicStates, uint32_t dynamicStateCount, VkPipelineDynamicStateCreateFlags flags)</argsstring>
+        <name>pipeline_dynstate_ci</name>
+        <param>
+          <type>const VkDynamicState *</type>
+          <declname>pDynamicStates</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dynamicStateCount</declname>
+        </param>
+        <param>
+          <type>VkPipelineDynamicStateCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="467" column="41" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="467" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1aa2283405ab4f29eea4818923e5de0087" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineTessellationStateCreateInfo</type>
+        <definition>VkPipelineTessellationStateCreateInfo utility::vulkan::defaults::pipeline_tess_state_ci</definition>
+        <argsstring>(uint32_t patchControlPoints)</argsstring>
+        <name>pipeline_tess_state_ci</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>patchControlPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="478" column="46" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="478" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a042ef41415b70298a2d56099a07a9ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkGraphicsPipelineCreateInfo</type>
+        <definition>VkGraphicsPipelineCreateInfo utility::vulkan::defaults::pipeline_ci</definition>
+        <argsstring>(VkPipelineLayout layout, VkRenderPass renderPass, VkPipelineCreateFlags flags)</argsstring>
+        <name>pipeline_ci</name>
+        <param>
+          <type>VkPipelineLayout</type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>VkRenderPass</type>
+          <declname>renderPass</declname>
+        </param>
+        <param>
+          <type>VkPipelineCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="487" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="487" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a0db98dc0fa57ac155a4ada695bfaa021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkComputePipelineCreateInfo</type>
+        <definition>VkComputePipelineCreateInfo utility::vulkan::defaults::compute_pipeline_ci</definition>
+        <argsstring>(VkPipelineLayout layout, VkPipelineCreateFlags flags)</argsstring>
+        <name>compute_pipeline_ci</name>
+        <param>
+          <type>VkPipelineLayout</type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>VkPipelineCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="498" column="36" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="498" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutility_1_1vulkan_1_1defaults_1a4c8d689ab12ac74e95e17c17326538bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPushConstantRange</type>
+        <definition>VkPushConstantRange utility::vulkan::defaults::push_constant_range</definition>
+        <argsstring>(VkShaderStageFlags stageFlags, uint32_t size, uint32_t offset)</argsstring>
+        <name>push_constant_range</name>
+        <param>
+          <type>VkShaderStageFlags</type>
+          <declname>stageFlags</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="507" column="28" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" bodystart="507" bodyend="514"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>helper namespace that contains handy defaults and constructor helpers for Vulkan objects </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/ivk.hpp" line="90" column="1"/>
+  </compounddef>
+</doxygen>

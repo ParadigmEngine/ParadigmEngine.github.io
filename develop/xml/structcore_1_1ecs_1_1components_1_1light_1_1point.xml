@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ecs_1_1components_1_1light_1_1point" kind="struct" language="C++" prot="public">
+    <compoundname>core::ecs::components::light::point</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ecs_1_1components_1_1light_1_1point_1a9e5336cf0031703a552df1bc17bac2bf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float core::ecs::components::light::point::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="13" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" line="12" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/ecs/components/lighting.hpp" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ecs_1_1components_1_1light_1_1point_1a9e5336cf0031703a552df1bc17bac2bf" prot="public" virt="non-virtual"><scope>core::ecs::components::light::point</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

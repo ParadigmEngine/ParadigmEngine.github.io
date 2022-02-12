@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="selectors_8hpp" kind="file" language="C++">
+    <compoundname>selectors.hpp</compoundname>
+    <includedby refid="systems_2lighting_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</includedby>
+    <includedby refid="systems_2text_8hpp" local="yes">/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</includedby>
+    <includedby refid="component__key_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp</includedby>
+    <includedby refid="details_2selectors_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp</includedby>
+    <includedby refid="pack_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp</includedby>
+    <includedby refid="filtering_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp</includedby>
+    <includedby refid="state_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</includedby>
+    <invincdepgraph>
+      <node id="30">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/pack.hpp</label>
+        <link refid="pack_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp</label>
+        <link refid="geometry__instance_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug/grid.cpp</label>
+        <link refid="grid_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/fly.cpp</label>
+        <link refid="fly_8cpp_source"/>
+      </node>
+      <node id="25">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/state.cpp</label>
+        <link refid="state_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/command_buffer.cpp</label>
+        <link refid="command__buffer_8cpp_source"/>
+      </node>
+      <node id="13">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/attractor.hpp</label>
+        <link refid="attractor_8hpp_source"/>
+      </node>
+      <node id="27">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/entity_info.hpp</label>
+        <link refid="entity__info_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp</label>
+        <link refid="system__information_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/grid.hpp</label>
+        <link refid="grid_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp</label>
+        <link refid="selectors_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/state.hpp</label>
+        <link refid="state_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp</label>
+        <link refid="geometry__instance_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp</label>
+        <link refid="component__key_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/ecs/details/component_info.cpp</label>
+        <link refid="component__info_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/command_buffer.hpp</label>
+        <link refid="command__buffer_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/gpu_camera.cpp</label>
+        <link refid="gpu__camera_8cpp_source"/>
+      </node>
+      <node id="20">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/movement.hpp</label>
+        <link refid="movement_8hpp_source"/>
+      </node>
+      <node id="29">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp</label>
+        <link refid="details_2selectors_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp</label>
+        <link refid="filtering_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/death.hpp</label>
+        <link refid="death_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/fly.hpp</label>
+        <link refid="fly_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lifetime.hpp</label>
+        <link refid="systems_2lifetime_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/render.hpp</label>
+        <link refid="render_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</label>
+        <link refid="systems_2text_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/render.cpp</label>
+        <link refid="render_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</label>
+        <link refid="systems_2lighting_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp</label>
+        <link refid="component__info_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpsl_1_1ecs_1_1on__add" prot="public">psl::ecs::on_add</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__remove" prot="public">psl::ecs::on_remove</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__combine" prot="public">psl::ecs::on_combine</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__break" prot="public">psl::ecs::on_break</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1except" prot="public">psl::ecs::except</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1filter" prot="public">psl::ecs::filter</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1on__condition" prot="public">psl::ecs::on_condition</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1order__by" prot="public">psl::ecs::order_by</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1partial" prot="public">psl::ecs::partial</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1full" prot="public">psl::ecs::full</innerclass>
+    <innernamespace refid="namespacepsl">psl</innernamespace>
+    <innernamespace refid="namespacepsl_1_1ecs">psl::ecs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">psl::ecs</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="13" refid="structpsl_1_1ecs_1_1on__add" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1on__add" kindref="compound">on_add</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="24" refid="structpsl_1_1ecs_1_1on__remove" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1on__remove" kindref="compound">on_remove</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="39" refid="structpsl_1_1ecs_1_1on__combine" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1on__combine" kindref="compound">on_combine</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="51" refid="structpsl_1_1ecs_1_1on__break" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1on__break" kindref="compound">on_break</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="64" refid="structpsl_1_1ecs_1_1except" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1except" kindref="compound">except</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="75" refid="structpsl_1_1ecs_1_1filter" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1filter" kindref="compound">filter</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">on_condition</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Pred,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">order_by</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structpsl_1_1ecs_1_1partial" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1partial" kindref="compound">partial</ref></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structpsl_1_1ecs_1_1full" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpsl_1_1ecs_1_1full" kindref="compound">full</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>psl::ecs</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp"/>
+  </compounddef>
+</doxygen>

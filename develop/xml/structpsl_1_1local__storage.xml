@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1local__storage" kind="struct" language="C++" prot="public">
+    <compoundname>psl::local_storage</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>SIZE</declname>
+        <defname>SIZE</defname>
+        <defval>8</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structpsl_1_1local__storage_1a5fcbfadd089c2eecfb0eb363d291582d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t psl::local_storage&lt; SIZE &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>{SIZE}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" line="14" column="25" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1local__storage_1abb310920ec5d1b16208dccb50573691b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char psl::local_storage&lt; SIZE &gt;::_storage[SIZE]</definition>
+        <argsstring>[SIZE]</argsstring>
+        <name>_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" line="17" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1local__storage_1a157c7570e9b0045eee11990a7f99fe36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* psl::local_storage&lt; SIZE &gt;::storage</definition>
+        <argsstring>() const</argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" line="15" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" line="13" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/buffer.hpp" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1local__storage_1abb310920ec5d1b16208dccb50573691b" prot="public" virt="non-virtual"><scope>psl::local_storage</scope><name>_storage</name></member>
+      <member refid="structpsl_1_1local__storage_1a5fcbfadd089c2eecfb0eb363d291582d" prot="public" virt="non-virtual"><scope>psl::local_storage</scope><name>size</name></member>
+      <member refid="structpsl_1_1local__storage_1a157c7570e9b0045eee11990a7f99fe36" prot="public" virt="non-virtual"><scope>psl::local_storage</scope><name>storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

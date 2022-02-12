@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1igles_1_1drawpass" kind="class" language="C++" prot="public">
+    <compoundname>core::igles::drawpass</compoundname>
+    <innerclass refid="structcore_1_1igles_1_1drawpass_1_1memory__barrier__t" prot="private">core::igles::drawpass::memory_barrier_t</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1igles_1_1drawpass_1ae334b1bc4e2c1f7fda72a1485cb26f3b" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; swapchain &gt;</type>
+        <definition>core::resource::handle&lt;swapchain&gt; core::igles::drawpass::m_Swapchain</definition>
+        <argsstring></argsstring>
+        <name>m_Swapchain</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="45" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1drawpass_1a485e38be3453b571896b61597ec33adf" prot="private" static="no" mutable="no">
+        <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; framebuffer_t &gt;</type>
+        <definition>core::resource::handle&lt;framebuffer_t&gt; core::igles::drawpass::m_Framebuffer</definition>
+        <argsstring></argsstring>
+        <name>m_Framebuffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="46" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1drawpass_1aef226126d2feb394b733eae4cb0672ba" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; memory_barrier_t &gt;</type>
+        <definition>psl::array&lt;memory_barrier_t&gt; core::igles::drawpass::m_MemoryBarriers</definition>
+        <argsstring></argsstring>
+        <name>m_MemoryBarriers</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="47" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1igles_1_1drawpass_1a0b4929b243eda3f10a430347e004edf3" prot="private" static="no" mutable="no">
+        <type>psl::array&lt; <ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &gt;</type>
+        <definition>psl::array&lt;core::gfx::drawgroup&gt; core::igles::drawpass::m_DrawGroups</definition>
+        <argsstring></argsstring>
+        <name>m_DrawGroups</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="48" column="12" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a73c8a11ce16e6edd51098ecee734ef72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; swapchain &gt; swapchain)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; swapchain &gt;</type>
+          <declname>swapchain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a0ceba14914c485250fa48b70bde5a5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawpass::drawpass</definition>
+        <argsstring>(core::resource::handle&lt; framebuffer_t &gt; framebuffer)</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle</ref>&lt; framebuffer_t &gt;</type>
+          <declname>framebuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="23" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a024eee0d34cda662c1f69a1789730da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::drawpass::~drawpass</definition>
+        <argsstring>()=default</argsstring>
+        <name>~drawpass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1aa617490e61a4acdbc10c8ecf40353d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::drawpass::drawpass</definition>
+        <argsstring>(const drawpass &amp;other)=default</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type>const drawpass &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1ade426dfb2f3f5314a77f1ba50b3f7089" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>core::igles::drawpass::drawpass</definition>
+        <argsstring>(drawpass &amp;&amp;other) noexcept=default</argsstring>
+        <name>drawpass</name>
+        <param>
+          <type>drawpass &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1afb4405c25e2a413a599823cd814299e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>drawpass &amp;</type>
+        <definition>drawpass&amp; core::igles::drawpass::operator=</definition>
+        <argsstring>(const drawpass &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const drawpass &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="28" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1ad734b40256578b46dc90c2ef710c57dc" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>drawpass &amp;</type>
+        <definition>drawpass&amp; core::igles::drawpass::operator=</definition>
+        <argsstring>(drawpass &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>drawpass &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1ad627987b7d656f541bb27294ecaf5a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="31" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a9c2f3c5bfce49bed8e5245477942ff15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::prepare</definition>
+        <argsstring>()</argsstring>
+        <name>prepare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="32" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="29" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a2de0c68dc0d628ba953df461ce82212e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawpass::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="33" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a37036932f66ae247e491884ed1ee0202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::present</definition>
+        <argsstring>()</argsstring>
+        <name>present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="34" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="115" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1ab59d847c1c893c4ddba38b050fc89da4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool core::igles::drawpass::is_swapchain</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_swapchain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="36" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a78df34e9189fb9d984de4831a9e53c27" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::add</definition>
+        <argsstring>(core::gfx::drawgroup &amp;group) noexcept</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classcore_1_1gfx_1_1drawgroup" kindref="compound">core::gfx::drawgroup</ref> &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="37" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a78cb2fc1244591ed23d060eebb022279" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; drawpass &gt; pass) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; drawpass &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="39" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a42a9165bc75fef659e01fca4669100fd" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::connect</definition>
+        <argsstring>(psl::view_ptr&lt; computepass &gt; pass) noexcept</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; computepass &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="40" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="229" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a6c7e40ad6a69739d6c2bc73550bb3d95" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; drawpass &gt; pass) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; drawpass &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="41" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1igles_1_1drawpass_1a1f826488335018ed390745f0d792a55d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawpass::disconnect</definition>
+        <argsstring>(psl::view_ptr&lt; computepass &gt; pass) noexcept</argsstring>
+        <name>disconnect</name>
+        <param>
+          <type><ref refid="classpsl_1_1view__ptr" kindref="compound">psl::view_ptr</ref>&lt; computepass &gt;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="42" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp" bodystart="242" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" line="14" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp" bodystart="13" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcore_1_1igles_1_1drawpass_1a78df34e9189fb9d984de4831a9e53c27" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>add</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a2de0c68dc0d628ba953df461ce82212e" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>build</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1ad627987b7d656f541bb27294ecaf5a44" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>clear</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a78cb2fc1244591ed23d060eebb022279" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>connect</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a42a9165bc75fef659e01fca4669100fd" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>connect</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a6c7e40ad6a69739d6c2bc73550bb3d95" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a1f826488335018ed390745f0d792a55d" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>disconnect</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a73c8a11ce16e6edd51098ecee734ef72" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a0ceba14914c485250fa48b70bde5a5f3" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1aa617490e61a4acdbc10c8ecf40353d8d" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1ade426dfb2f3f5314a77f1ba50b3f7089" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>drawpass</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1ab59d847c1c893c4ddba38b050fc89da4" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>is_swapchain</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a0b4929b243eda3f10a430347e004edf3" prot="private" virt="non-virtual"><scope>core::igles::drawpass</scope><name>m_DrawGroups</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a485e38be3453b571896b61597ec33adf" prot="private" virt="non-virtual"><scope>core::igles::drawpass</scope><name>m_Framebuffer</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1aef226126d2feb394b733eae4cb0672ba" prot="private" virt="non-virtual"><scope>core::igles::drawpass</scope><name>m_MemoryBarriers</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1ae334b1bc4e2c1f7fda72a1485cb26f3b" prot="private" virt="non-virtual"><scope>core::igles::drawpass</scope><name>m_Swapchain</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1afb4405c25e2a413a599823cd814299e8" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1ad734b40256578b46dc90c2ef710c57dc" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>operator=</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a9c2f3c5bfce49bed8e5245477942ff15" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>prepare</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a37036932f66ae247e491884ed1ee0202" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>present</name></member>
+      <member refid="classcore_1_1igles_1_1drawpass_1a024eee0d34cda662c1f69a1789730da1" prot="public" virt="non-virtual"><scope>core::igles::drawpass</scope><name>~drawpass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

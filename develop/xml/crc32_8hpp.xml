@@ -1,0 +1,1493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="crc32_8hpp" kind="file" language="C++">
+    <compoundname>crc32.hpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">array</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">numeric</includes>
+    <includes refid="fixed__astring_8hpp" local="yes">psl/details/fixed_astring.hpp</includes>
+    <includedby refid="property_8hpp" local="yes">/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp</includedby>
+    <includedby refid="format_8cpp" local="yes">/home/runner/work/paradigm/paradigm/psl/src/format.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>numeric</label>
+      </node>
+      <node id="6">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string_view</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp</label>
+        <link refid="crc32_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="25">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/material.cpp</label>
+        <link refid="data_2material_8cpp_source"/>
+      </node>
+      <node id="45">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/render_graph.hpp</label>
+        <link refid="render__graph_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/pipeline.cpp</label>
+        <link refid="pipeline_8cpp_source"/>
+      </node>
+      <node id="85">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/computepass.cpp</label>
+        <link refid="vk_2computepass_8cpp_source"/>
+      </node>
+      <node id="125">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/library.cpp</label>
+        <link refid="library_8cpp_source"/>
+      </node>
+      <node id="86">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/compute.hpp</label>
+        <link refid="gles_2compute_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/material.hpp</label>
+        <link refid="vk_2material_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/framebuffer.cpp</label>
+        <link refid="gfx_2framebuffer_8cpp_source"/>
+      </node>
+      <node id="58">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/geometry_instance.cpp</label>
+        <link refid="geometry__instance_8cpp_source"/>
+      </node>
+      <node id="70">
+        <label>/home/runner/work/paradigm/paradigm/core/src/meta/shader.cpp</label>
+        <link refid="meta_2shader_8cpp_source"/>
+      </node>
+      <node id="56">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/bundle.hpp</label>
+        <link refid="gfx_2bundle_8hpp_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/text.cpp</label>
+        <link refid="text_8cpp_source"/>
+      </node>
+      <node id="43">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/drawgroup.cpp</label>
+        <link refid="drawgroup_8cpp_source"/>
+      </node>
+      <node id="105">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/pipeline_cache.hpp</label>
+        <link refid="gfx_2pipeline__cache_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/drawpass.cpp</label>
+        <link refid="gfx_2drawpass_8cpp_source"/>
+      </node>
+      <node id="26">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/debug/grid.cpp</label>
+        <link refid="grid_8cpp_source"/>
+      </node>
+      <node id="90">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/resource/resource.hpp</label>
+        <link refid="resource_2resource_8hpp_source"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/swapchain.hpp</label>
+        <link refid="gfx_2swapchain_8hpp_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/swapchain.hpp</label>
+        <link refid="gles_2swapchain_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/os/surface.hpp</label>
+        <link refid="surface_8hpp_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/serialization/serializer.cpp</label>
+        <link refid="serializer_8cpp_source"/>
+      </node>
+      <node id="69">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/shader.cpp</label>
+        <link refid="gles_2shader_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/lighting.cpp</label>
+        <link refid="lighting_8cpp_source"/>
+      </node>
+      <node id="118">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/pipeline_cache.hpp</label>
+        <link refid="vk_2pipeline__cache_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp</label>
+        <link refid="library_8hpp_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/framebuffer.hpp</label>
+        <link refid="vk_2framebuffer_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/material.cpp</label>
+        <link refid="gfx_2material_8cpp_source"/>
+      </node>
+      <node id="14">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/material.cpp</label>
+        <link refid="vk_2material_8cpp_source"/>
+      </node>
+      <node id="22">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/drawpass.cpp</label>
+        <link refid="vk_2drawpass_8cpp_source"/>
+      </node>
+      <node id="72">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/meta/texture.hpp</label>
+        <link refid="meta_2texture_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/drawcall.hpp</label>
+        <link refid="drawcall_8hpp_source"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/shader.hpp</label>
+        <link refid="vk_2shader_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/drawpass.hpp</label>
+        <link refid="vk_2drawpass_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/buffer.hpp</label>
+        <link refid="core_2inc_2gfx_2buffer_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>/home/runner/work/paradigm/paradigm/psl/src/format.cpp</label>
+        <link refid="format_8cpp_source"/>
+      </node>
+      <node id="23">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/framebuffer.cpp</label>
+        <link refid="vk_2framebuffer_8cpp_source"/>
+      </node>
+      <node id="48">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/swapchain.cpp</label>
+        <link refid="gfx_2swapchain_8cpp_source"/>
+      </node>
+      <node id="78">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/components/renderable.hpp</label>
+        <link refid="renderable_8hpp_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/utility/geometry.hpp</label>
+        <link refid="utility_2geometry_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/sampler.hpp</label>
+        <link refid="vk_2sampler_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/swapchain.cpp</label>
+        <link refid="gles_2swapchain_8cpp_source"/>
+      </node>
+      <node id="33">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/pipeline_cache.cpp</label>
+        <link refid="vk_2pipeline__cache_8cpp_source"/>
+      </node>
+      <node id="81">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/computepass.hpp</label>
+        <link refid="gles_2computepass_8hpp_source"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/computecall.hpp</label>
+        <link refid="computecall_8hpp_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/buffer.hpp</label>
+        <link refid="core_2inc_2data_2buffer_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/debug/grid.hpp</label>
+        <link refid="grid_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/framebuffer.cpp</label>
+        <link refid="gles_2framebuffer_8cpp_source"/>
+      </node>
+      <node id="116">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/geometry.hpp</label>
+        <link refid="vk_2geometry_8hpp_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/sampler.cpp</label>
+        <link refid="vk_2sampler_8cpp_source"/>
+      </node>
+      <node id="57">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/geometry_instance.hpp</label>
+        <link refid="geometry__instance_8hpp_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/computecall.cpp</label>
+        <link refid="computecall_8cpp_source"/>
+      </node>
+      <node id="75">
+        <label>/home/runner/work/paradigm/paradigm/core/src/meta/texture.cpp</label>
+        <link refid="meta_2texture_8cpp_source"/>
+      </node>
+      <node id="107">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/sampler.hpp</label>
+        <link refid="gfx_2sampler_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/pipeline_cache.cpp</label>
+        <link refid="gfx_2pipeline__cache_8cpp_source"/>
+      </node>
+      <node id="28">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/bundle.cpp</label>
+        <link refid="gfx_2bundle_8cpp_source"/>
+      </node>
+      <node id="98">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/context.hpp</label>
+        <link refid="gfx_2context_8hpp_source"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/geometry.hpp</label>
+        <link refid="data_2geometry_8hpp_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/resource/handle.hpp</label>
+        <link refid="handle_8hpp_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/framebuffer.hpp</label>
+        <link refid="gles_2framebuffer_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/drawgroup.hpp</label>
+        <link refid="drawgroup_8hpp_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/texture.cpp</label>
+        <link refid="gles_2texture_8cpp_source"/>
+      </node>
+      <node id="50">
+        <label>/home/runner/work/paradigm/paradigm/core/src/os/surface.cpp</label>
+        <link refid="surface_8cpp_source"/>
+      </node>
+      <node id="47">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/gpu_camera.cpp</label>
+        <link refid="gpu__camera_8cpp_source"/>
+      </node>
+      <node id="64">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/drawpass.hpp</label>
+        <link refid="gles_2drawpass_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/shader.cpp</label>
+        <link refid="gfx_2shader_8cpp_source"/>
+      </node>
+      <node id="35">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/sampler.cpp</label>
+        <link refid="data_2sampler_8cpp_source"/>
+      </node>
+      <node id="111">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/buffer.hpp</label>
+        <link refid="core_2inc_2gles_2buffer_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/swapchain.cpp</label>
+        <link refid="vk_2swapchain_8cpp_source"/>
+      </node>
+      <node id="29">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/compute.cpp</label>
+        <link refid="gfx_2compute_8cpp_source"/>
+      </node>
+      <node id="31">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/geometry.cpp</label>
+        <link refid="gles_2geometry_8cpp_source"/>
+      </node>
+      <node id="110">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/texture.hpp</label>
+        <link refid="gfx_2texture_8hpp_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/stream.hpp</label>
+        <link refid="stream_8hpp_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/details/instance.cpp</label>
+        <link refid="instance_8cpp_source"/>
+      </node>
+      <node id="55">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/details/instance.hpp</label>
+        <link refid="instance_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/geometry.cpp</label>
+        <link refid="vk_2geometry_8cpp_source"/>
+      </node>
+      <node id="104">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/material.hpp</label>
+        <link refid="gfx_2material_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp</label>
+        <link refid="crc32_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/buffer.cpp</label>
+        <link refid="gfx_2buffer_8cpp_source"/>
+      </node>
+      <node id="51">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/context.cpp</label>
+        <link refid="vk_2context_8cpp_source"/>
+      </node>
+      <node id="113">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/buffer.hpp</label>
+        <link refid="core_2inc_2vk_2buffer_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/window.cpp</label>
+        <link refid="window_8cpp_source"/>
+      </node>
+      <node id="96">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/computepass.hpp</label>
+        <link refid="gfx_2computepass_8hpp_source"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp</label>
+        <link refid="cache_8hpp_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/render_graph.cpp</label>
+        <link refid="render__graph_8cpp_source"/>
+      </node>
+      <node id="44">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/stdafx.hpp</label>
+        <link refid="stdafx_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/compute.cpp</label>
+        <link refid="gles_2compute_8cpp_source"/>
+      </node>
+      <node id="117">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/pipeline.hpp</label>
+        <link refid="pipeline_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/texture.cpp</label>
+        <link refid="gfx_2texture_8cpp_source"/>
+      </node>
+      <node id="34">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/sampler.hpp</label>
+        <link refid="data_2sampler_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/texture.cpp</label>
+        <link refid="vk_2texture_8cpp_source"/>
+      </node>
+      <node id="112">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/material.hpp</label>
+        <link refid="gles_2material_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/drawpass.cpp</label>
+        <link refid="gles_2drawpass_8cpp_source"/>
+      </node>
+      <node id="92">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/gpu_camera.hpp</label>
+        <link refid="gpu__camera_8hpp_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/context.cpp</label>
+        <link refid="gfx_2context_8cpp_source"/>
+      </node>
+      <node id="101">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/drawpass.hpp</label>
+        <link refid="gfx_2drawpass_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/sampler.cpp</label>
+        <link refid="gfx_2sampler_8cpp_source"/>
+      </node>
+      <node id="103">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/geometry.hpp</label>
+        <link refid="gfx_2geometry_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/render.hpp</label>
+        <link refid="render_8hpp_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/geometry.cpp</label>
+        <link refid="gfx_2geometry_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/buffer.cpp</label>
+        <link refid="vk_2buffer_8cpp_source"/>
+      </node>
+      <node id="123">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/swapchain.hpp</label>
+        <link refid="vk_2swapchain_8hpp_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/material.cpp</label>
+        <link refid="gles_2material_8cpp_source"/>
+      </node>
+      <node id="95">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/compute.hpp</label>
+        <link refid="gfx_2compute_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/buffer.cpp</label>
+        <link refid="gles_2buffer_8cpp_source"/>
+      </node>
+      <node id="37">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/sampler.cpp</label>
+        <link refid="gles_2sampler_8cpp_source"/>
+      </node>
+      <node id="108">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/shader.hpp</label>
+        <link refid="gfx_2shader_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/framebuffer.hpp</label>
+        <link refid="data_2framebuffer_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gles/geometry.hpp</label>
+        <link refid="gles_2geometry_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/framebuffer.cpp</label>
+        <link refid="data_2framebuffer_8cpp_source"/>
+      </node>
+      <node id="32">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/program.cpp</label>
+        <link refid="program_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/buffer.cpp</label>
+        <link refid="data_2buffer_8cpp_source"/>
+      </node>
+      <node id="54">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/meta/shader.hpp</label>
+        <link refid="meta_2shader_8hpp_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/text.hpp</label>
+        <link refid="systems_2text_8hpp_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/shader.cpp</label>
+        <link refid="vk_2shader_8cpp_source"/>
+      </node>
+      <node id="63">
+        <label>/home/runner/work/paradigm/paradigm/core/src/ecs/systems/render.cpp</label>
+        <link refid="render_8cpp_source"/>
+      </node>
+      <node id="62">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/ecs/systems/lighting.hpp</label>
+        <link refid="systems_2lighting_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/drawcall.cpp</label>
+        <link refid="drawcall_8cpp_source"/>
+      </node>
+      <node id="122">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/program_cache.cpp</label>
+        <link refid="program__cache_8cpp_source"/>
+      </node>
+      <node id="42">
+        <label>/home/runner/work/paradigm/paradigm/core/src/data/geometry.cpp</label>
+        <link refid="data_2geometry_8cpp_source"/>
+      </node>
+      <node id="84">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gfx/computepass.cpp</label>
+        <link refid="gfx_2computepass_8cpp_source"/>
+      </node>
+      <node id="121">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/texture.hpp</label>
+        <link refid="vk_2texture_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/home/runner/work/paradigm/paradigm/core/src/gles/computepass.cpp</label>
+        <link refid="gles_2computepass_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/gfx/framebuffer.hpp</label>
+        <link refid="gfx_2framebuffer_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp</label>
+        <link refid="data_2material_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structutility_1_1details_1_1crc32" prot="public">utility::details::crc32</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc32_3_01size_00_01size_00_01dummy_01_4" prot="public">utility::details::crc32&lt; size, size, dummy &gt;</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc64" prot="public">utility::details::crc64</innerclass>
+    <innerclass refid="structutility_1_1details_1_1crc64_3_01size_00_01size_00_01dummy_01_4" prot="public">utility::details::crc64&lt; size, size, dummy &gt;</innerclass>
+    <innernamespace refid="namespaceutility">utility</innernamespace>
+    <innernamespace refid="namespaceutility_1_1details">utility::details</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/details/fixed_astring.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceutility" kindref="compound">utility</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="namespaceutility_1a64f363a6076f3b670262e0acd9e87fdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint32_t<sp/><ref refid="namespaceutility_1a64f363a6076f3b670262e0acd9e87fdb" kindref="member">crc32_table</ref>[256]<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x00000000,<sp/>0x77073096,<sp/>0xee0e612c,<sp/>0x990951ba,<sp/>0x076dc419,<sp/>0x706af48f,<sp/>0xe963a535,<sp/>0x9e6495a3,<sp/>0x0edb8832,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x79dcb8a4,<sp/>0xe0d5e91e,<sp/>0x97d2d988,<sp/>0x09b64c2b,<sp/>0x7eb17cbd,<sp/>0xe7b82d07,<sp/>0x90bf1d91,<sp/>0x1db71064,<sp/>0x6ab020f2,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xf3b97148,<sp/>0x84be41de,<sp/>0x1adad47d,<sp/>0x6ddde4eb,<sp/>0xf4d4b551,<sp/>0x83d385c7,<sp/>0x136c9856,<sp/>0x646ba8c0,<sp/>0xfd62f97a,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x8a65c9ec,<sp/>0x14015c4f,<sp/>0x63066cd9,<sp/>0xfa0f3d63,<sp/>0x8d080df5,<sp/>0x3b6e20c8,<sp/>0x4c69105e,<sp/>0xd56041e4,<sp/>0xa2677172,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x3c03e4d1,<sp/>0x4b04d447,<sp/>0xd20d85fd,<sp/>0xa50ab56b,<sp/>0x35b5a8fa,<sp/>0x42b2986c,<sp/>0xdbbbc9d6,<sp/>0xacbcf940,<sp/>0x32d86ce3,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x45df5c75,<sp/>0xdcd60dcf,<sp/>0xabd13d59,<sp/>0x26d930ac,<sp/>0x51de003a,<sp/>0xc8d75180,<sp/>0xbfd06116,<sp/>0x21b4f4b5,<sp/>0x56b3c423,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xcfba9599,<sp/>0xb8bda50f,<sp/>0x2802b89e,<sp/>0x5f058808,<sp/>0xc60cd9b2,<sp/>0xb10be924,<sp/>0x2f6f7c87,<sp/>0x58684c11,<sp/>0xc1611dab,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xb6662d3d,<sp/>0x76dc4190,<sp/>0x01db7106,<sp/>0x98d220bc,<sp/>0xefd5102a,<sp/>0x71b18589,<sp/>0x06b6b51f,<sp/>0x9fbfe4a5,<sp/>0xe8b8d433,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x7807c9a2,<sp/>0x0f00f934,<sp/>0x9609a88e,<sp/>0xe10e9818,<sp/>0x7f6a0dbb,<sp/>0x086d3d2d,<sp/>0x91646c97,<sp/>0xe6635c01,<sp/>0x6b6b51f4,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x1c6c6162,<sp/>0x856530d8,<sp/>0xf262004e,<sp/>0x6c0695ed,<sp/>0x1b01a57b,<sp/>0x8208f4c1,<sp/>0xf50fc457,<sp/>0x65b0d9c6,<sp/>0x12b7e950,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x8bbeb8ea,<sp/>0xfcb9887c,<sp/>0x62dd1ddf,<sp/>0x15da2d49,<sp/>0x8cd37cf3,<sp/>0xfbd44c65,<sp/>0x4db26158,<sp/>0x3ab551ce,<sp/>0xa3bc0074,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xd4bb30e2,<sp/>0x4adfa541,<sp/>0x3dd895d7,<sp/>0xa4d1c46d,<sp/>0xd3d6f4fb,<sp/>0x4369e96a,<sp/>0x346ed9fc,<sp/>0xad678846,<sp/>0xda60b8d0,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x44042d73,<sp/>0x33031de5,<sp/>0xaa0a4c5f,<sp/>0xdd0d7cc9,<sp/>0x5005713c,<sp/>0x270241aa,<sp/>0xbe0b1010,<sp/>0xc90c2086,<sp/>0x5768b525,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x206f85b3,<sp/>0xb966d409,<sp/>0xce61e49f,<sp/>0x5edef90e,<sp/>0x29d9c998,<sp/>0xb0d09822,<sp/>0xc7d7a8b4,<sp/>0x59b33d17,<sp/>0x2eb40d81,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xb7bd5c3b,<sp/>0xc0ba6cad,<sp/>0xedb88320,<sp/>0x9abfb3b6,<sp/>0x03b6e20c,<sp/>0x74b1d29a,<sp/>0xead54739,<sp/>0x9dd277af,<sp/>0x04db2615,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x73dc1683,<sp/>0xe3630b12,<sp/>0x94643b84,<sp/>0x0d6d6a3e,<sp/>0x7a6a5aa8,<sp/>0xe40ecf0b,<sp/>0x9309ff9d,<sp/>0x0a00ae27,<sp/>0x7d079eb1,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xf00f9344,<sp/>0x8708a3d2,<sp/>0x1e01f268,<sp/>0x6906c2fe,<sp/>0xf762575d,<sp/>0x806567cb,<sp/>0x196c3671,<sp/>0x6e6b06e7,<sp/>0xfed41b76,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x89d32be0,<sp/>0x10da7a5a,<sp/>0x67dd4acc,<sp/>0xf9b9df6f,<sp/>0x8ebeeff9,<sp/>0x17b7be43,<sp/>0x60b08ed5,<sp/>0xd6d6a3e8,<sp/>0xa1d1937e,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x38d8c2c4,<sp/>0x4fdff252,<sp/>0xd1bb67f1,<sp/>0xa6bc5767,<sp/>0x3fb506dd,<sp/>0x48b2364b,<sp/>0xd80d2bda,<sp/>0xaf0a1b4c,<sp/>0x36034af6,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x41047a60,<sp/>0xdf60efc3,<sp/>0xa867df55,<sp/>0x316e8eef,<sp/>0x4669be79,<sp/>0xcb61b38c,<sp/>0xbc66831a,<sp/>0x256fd2a0,<sp/>0x5268e236,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xcc0c7795,<sp/>0xbb0b4703,<sp/>0x220216b9,<sp/>0x5505262f,<sp/>0xc5ba3bbe,<sp/>0xb2bd0b28,<sp/>0x2bb45a92,<sp/>0x5cb36a04,<sp/>0xc2d7ffa7,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xb5d0cf31,<sp/>0x2cd99e8b,<sp/>0x5bdeae1d,<sp/>0x9b64c2b0,<sp/>0xec63f226,<sp/>0x756aa39c,<sp/>0x026d930a,<sp/>0x9c0906a9,<sp/>0xeb0e363f,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x72076785,<sp/>0x05005713,<sp/>0x95bf4a82,<sp/>0xe2b87a14,<sp/>0x7bb12bae,<sp/>0x0cb61b38,<sp/>0x92d28e9b,<sp/>0xe5d5be0d,<sp/>0x7cdcefb7,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x0bdbdf21,<sp/>0x86d3d2d4,<sp/>0xf1d4e242,<sp/>0x68ddb3f8,<sp/>0x1fda836e,<sp/>0x81be16cd,<sp/>0xf6b9265b,<sp/>0x6fb077e1,<sp/>0x18b74777,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x88085ae6,<sp/>0xff0f6a70,<sp/>0x66063bca,<sp/>0x11010b5c,<sp/>0x8f659eff,<sp/>0xf862ae69,<sp/>0x616bffd3,<sp/>0x166ccf45,<sp/>0xa00ae278,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xd70dd2ee,<sp/>0x4e048354,<sp/>0x3903b3c2,<sp/>0xa7672661,<sp/>0xd06016f7,<sp/>0x4969474d,<sp/>0x3e6e77db,<sp/>0xaed16a4a,<sp/>0xd9d65adc,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x40df0b66,<sp/>0x37d83bf0,<sp/>0xa9bcae53,<sp/>0xdebb9ec5,<sp/>0x47b2cf7f,<sp/>0x30b5ffe9,<sp/>0xbdbdf21c,<sp/>0xcabac28a,<sp/>0x53b39330,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x24b4a3a6,<sp/>0xbad03605,<sp/>0xcdd70693,<sp/>0x54de5729,<sp/>0x23d967bf,<sp/>0xb3667a2e,<sp/>0xc4614ab8,<sp/>0x5d681b02,<sp/>0x2a6f2b94,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xb40bbe37,<sp/>0xc30c8ea1,<sp/>0x5a05df1b,<sp/>0x2d02ef8d};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespaceutility_1a36bf2094b48887c13f9c283540e96f04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint64_t<sp/><ref refid="namespaceutility_1a36bf2094b48887c13f9c283540e96f04" kindref="member">crc64_table</ref>[256]<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x0000000000000000ULL,<sp/>0x7ad870c830358979ULL,<sp/>0xf5b0e190606b12f2ULL,<sp/>0x8f689158505e9b8bULL,<sp/>0xc038e5739841b68fULL,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xbae095bba8743ff6ULL,<sp/>0x358804e3f82aa47dULL,<sp/>0x4f50742bc81f2d04ULL,<sp/>0xab28ecb46814fe75ULL,<sp/>0xd1f09c7c5821770cULL,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x5e980d24087fec87ULL,<sp/>0x24407dec384a65feULL,<sp/>0x6b1009c7f05548faULL,<sp/>0x11c8790fc060c183ULL,<sp/>0x9ea0e857903e5a08ULL,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xe478989fa00bd371ULL,<sp/>0x7d08ff3b88be6f81ULL,<sp/>0x07d08ff3b88be6f8ULL,<sp/>0x88b81eabe8d57d73ULL,<sp/>0xf2606e63d8e0f40aULL,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xbd301a4810ffd90eULL,<sp/>0xc7e86a8020ca5077ULL,<sp/>0x4880fbd87094cbfcULL,<sp/>0x32588b1040a14285ULL,<sp/>0xd620138fe0aa91f4ULL,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xacf86347d09f188dULL,<sp/>0x2390f21f80c18306ULL,<sp/>0x594882d7b0f40a7fULL,<sp/>0x1618f6fc78eb277bULL,<sp/>0x6cc0863448deae02ULL,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xe3a8176c18803589ULL,<sp/>0x997067a428b5bcf0ULL,<sp/>0xfa11fe77117cdf02ULL,<sp/>0x80c98ebf2149567bULL,<sp/>0x0fa11fe77117cdf0ULL,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x75796f2f41224489ULL,<sp/>0x3a291b04893d698dULL,<sp/>0x40f16bccb908e0f4ULL,<sp/>0xcf99fa94e9567b7fULL,<sp/>0xb5418a5cd963f206ULL,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x513912c379682177ULL,<sp/>0x2be1620b495da80eULL,<sp/>0xa489f35319033385ULL,<sp/>0xde51839b2936bafcULL,<sp/>0x9101f7b0e12997f8ULL,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xebd98778d11c1e81ULL,<sp/>0x64b116208142850aULL,<sp/>0x1e6966e8b1770c73ULL,<sp/>0x8719014c99c2b083ULL,<sp/>0xfdc17184a9f739faULL,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x72a9e0dcf9a9a271ULL,<sp/>0x08719014c99c2b08ULL,<sp/>0x4721e43f0183060cULL,<sp/>0x3df994f731b68f75ULL,<sp/>0xb29105af61e814feULL,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xc849756751dd9d87ULL,<sp/>0x2c31edf8f1d64ef6ULL,<sp/>0x56e99d30c1e3c78fULL,<sp/>0xd9810c6891bd5c04ULL,<sp/>0xa3597ca0a188d57dULL,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xec09088b6997f879ULL,<sp/>0x96d1784359a27100ULL,<sp/>0x19b9e91b09fcea8bULL,<sp/>0x636199d339c963f2ULL,<sp/>0xdf7adabd7a6e2d6fULL,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xa5a2aa754a5ba416ULL,<sp/>0x2aca3b2d1a053f9dULL,<sp/>0x50124be52a30b6e4ULL,<sp/>0x1f423fcee22f9be0ULL,<sp/>0x659a4f06d21a1299ULL,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xeaf2de5e82448912ULL,<sp/>0x902aae96b271006bULL,<sp/>0x74523609127ad31aULL,<sp/>0x0e8a46c1224f5a63ULL,<sp/>0x81e2d7997211c1e8ULL,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xfb3aa75142244891ULL,<sp/>0xb46ad37a8a3b6595ULL,<sp/>0xceb2a3b2ba0eececULL,<sp/>0x41da32eaea507767ULL,<sp/>0x3b024222da65fe1eULL,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xa2722586f2d042eeULL,<sp/>0xd8aa554ec2e5cb97ULL,<sp/>0x57c2c41692bb501cULL,<sp/>0x2d1ab4dea28ed965ULL,<sp/>0x624ac0f56a91f461ULL,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x1892b03d5aa47d18ULL,<sp/>0x97fa21650afae693ULL,<sp/>0xed2251ad3acf6feaULL,<sp/>0x095ac9329ac4bc9bULL,<sp/>0x7382b9faaaf135e2ULL,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xfcea28a2faafae69ULL,<sp/>0x8632586aca9a2710ULL,<sp/>0xc9622c4102850a14ULL,<sp/>0xb3ba5c8932b0836dULL,<sp/>0x3cd2cdd162ee18e6ULL,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x460abd1952db919fULL,<sp/>0x256b24ca6b12f26dULL,<sp/>0x5fb354025b277b14ULL,<sp/>0xd0dbc55a0b79e09fULL,<sp/>0xaa03b5923b4c69e6ULL,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xe553c1b9f35344e2ULL,<sp/>0x9f8bb171c366cd9bULL,<sp/>0x10e3202993385610ULL,<sp/>0x6a3b50e1a30ddf69ULL,<sp/>0x8e43c87e03060c18ULL,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xf49bb8b633338561ULL,<sp/>0x7bf329ee636d1eeaULL,<sp/>0x012b592653589793ULL,<sp/>0x4e7b2d0d9b47ba97ULL,<sp/>0x34a35dc5ab7233eeULL,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xbbcbcc9dfb2ca865ULL,<sp/>0xc113bc55cb19211cULL,<sp/>0x5863dbf1e3ac9decULL,<sp/>0x22bbab39d3991495ULL,<sp/>0xadd33a6183c78f1eULL,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xd70b4aa9b3f20667ULL,<sp/>0x985b3e827bed2b63ULL,<sp/>0xe2834e4a4bd8a21aULL,<sp/>0x6debdf121b863991ULL,<sp/>0x1733afda2bb3b0e8ULL,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xf34b37458bb86399ULL,<sp/>0x8993478dbb8deae0ULL,<sp/>0x06fbd6d5ebd3716bULL,<sp/>0x7c23a61ddbe6f812ULL,<sp/>0x3373d23613f9d516ULL,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x49aba2fe23cc5c6fULL,<sp/>0xc6c333a67392c7e4ULL,<sp/>0xbc1b436e43a74e9dULL,<sp/>0x95ac9329ac4bc9b5ULL,<sp/>0xef74e3e19c7e40ccULL,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x601c72b9cc20db47ULL,<sp/>0x1ac40271fc15523eULL,<sp/>0x5594765a340a7f3aULL,<sp/>0x2f4c0692043ff643ULL,<sp/>0xa02497ca54616dc8ULL,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xdafce7026454e4b1ULL,<sp/>0x3e847f9dc45f37c0ULL,<sp/>0x445c0f55f46abeb9ULL,<sp/>0xcb349e0da4342532ULL,<sp/>0xb1eceec59401ac4bULL,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xfebc9aee5c1e814fULL,<sp/>0x8464ea266c2b0836ULL,<sp/>0x0b0c7b7e3c7593bdULL,<sp/>0x71d40bb60c401ac4ULL,<sp/>0xe8a46c1224f5a634ULL,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x927c1cda14c02f4dULL,<sp/>0x1d148d82449eb4c6ULL,<sp/>0x67ccfd4a74ab3dbfULL,<sp/>0x289c8961bcb410bbULL,<sp/>0x5244f9a98c8199c2ULL,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xdd2c68f1dcdf0249ULL,<sp/>0xa7f41839ecea8b30ULL,<sp/>0x438c80a64ce15841ULL,<sp/>0x3954f06e7cd4d138ULL,<sp/>0xb63c61362c8a4ab3ULL,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xcce411fe1cbfc3caULL,<sp/>0x83b465d5d4a0eeceULL,<sp/>0xf96c151de49567b7ULL,<sp/>0x76048445b4cbfc3cULL,<sp/>0x0cdcf48d84fe7545ULL,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x6fbd6d5ebd3716b7ULL,<sp/>0x15651d968d029fceULL,<sp/>0x9a0d8ccedd5c0445ULL,<sp/>0xe0d5fc06ed698d3cULL,<sp/>0xaf85882d2576a038ULL,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xd55df8e515432941ULL,<sp/>0x5a3569bd451db2caULL,<sp/>0x20ed197575283bb3ULL,<sp/>0xc49581ead523e8c2ULL,<sp/>0xbe4df122e51661bbULL,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x3125607ab548fa30ULL,<sp/>0x4bfd10b2857d7349ULL,<sp/>0x04ad64994d625e4dULL,<sp/>0x7e7514517d57d734ULL,<sp/>0xf11d85092d094cbfULL,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x8bc5f5c11d3cc5c6ULL,<sp/>0x12b5926535897936ULL,<sp/>0x686de2ad05bcf04fULL,<sp/>0xe70573f555e26bc4ULL,<sp/>0x9ddd033d65d7e2bdULL,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xd28d7716adc8cfb9ULL,<sp/>0xa85507de9dfd46c0ULL,<sp/>0x273d9686cda3dd4bULL,<sp/>0x5de5e64efd965432ULL,<sp/>0xb99d7ed15d9d8743ULL,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xc3450e196da80e3aULL,<sp/>0x4c2d9f413df695b1ULL,<sp/>0x36f5ef890dc31cc8ULL,<sp/>0x79a59ba2c5dc31ccULL,<sp/>0x037deb6af5e9b8b5ULL,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x8c157a32a5b7233eULL,<sp/>0xf6cd0afa9582aa47ULL,<sp/>0x4ad64994d625e4daULL,<sp/>0x300e395ce6106da3ULL,<sp/>0xbf66a804b64ef628ULL,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xc5bed8cc867b7f51ULL,<sp/>0x8aeeace74e645255ULL,<sp/>0xf036dc2f7e51db2cULL,<sp/>0x7f5e4d772e0f40a7ULL,<sp/>0x05863dbf1e3ac9deULL,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xe1fea520be311aafULL,<sp/>0x9b26d5e88e0493d6ULL,<sp/>0x144e44b0de5a085dULL,<sp/>0x6e963478ee6f8124ULL,<sp/>0x21c640532670ac20ULL,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x5b1e309b16452559ULL,<sp/>0xd476a1c3461bbed2ULL,<sp/>0xaeaed10b762e37abULL,<sp/>0x37deb6af5e9b8b5bULL,<sp/>0x4d06c6676eae0222ULL,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xc26e573f3ef099a9ULL,<sp/>0xb8b627f70ec510d0ULL,<sp/>0xf7e653dcc6da3dd4ULL,<sp/>0x8d3e2314f6efb4adULL,<sp/>0x0256b24ca6b12f26ULL,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x788ec2849684a65fULL,<sp/>0x9cf65a1b368f752eULL,<sp/>0xe62e2ad306bafc57ULL,<sp/>0x6946bb8b56e467dcULL,<sp/>0x139ecb4366d1eea5ULL,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x5ccebf68aecec3a1ULL,<sp/>0x2616cfa09efb4ad8ULL,<sp/>0xa97e5ef8cea5d153ULL,<sp/>0xd3a62e30fe90582aULL,<sp/>0xb0c7b7e3c7593bd8ULL,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xca1fc72bf76cb2a1ULL,<sp/>0x45775673a732292aULL,<sp/>0x3faf26bb9707a053ULL,<sp/>0x70ff52905f188d57ULL,<sp/>0x0a2722586f2d042eULL,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x854fb3003f739fa5ULL,<sp/>0xff97c3c80f4616dcULL,<sp/>0x1bef5b57af4dc5adULL,<sp/>0x61372b9f9f784cd4ULL,<sp/>0xee5fbac7cf26d75fULL,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x9487ca0fff135e26ULL,<sp/>0xdbd7be24370c7322ULL,<sp/>0xa10fceec0739fa5bULL,<sp/>0x2e675fb4576761d0ULL,<sp/>0x54bf2f7c6752e8a9ULL,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0xcdcf48d84fe75459ULL,<sp/>0xb71738107fd2dd20ULL,<sp/>0x387fa9482f8c46abULL,<sp/>0x42a7d9801fb9cfd2ULL,<sp/>0x0df7adabd7a6e2d6ULL,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x772fdd63e7936bafULL,<sp/>0xf8474c3bb7cdf024ULL,<sp/>0x829f3cf387f8795dULL,<sp/>0x66e7a46c27f3aa2cULL,<sp/>0x1c3fd4a417c62355ULL,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x935745fc4798b8deULL,<sp/>0xe98f353477ad31a7ULL,<sp/>0xa6df411fbfb21ca3ULL,<sp/>0xdc0731d78f8795daULL,<sp/>0x536fa08fdfd90e51ULL,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0x29b7d047efec8728ULL,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">details</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">x<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>dummy<sp/>=<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint32_t<sp/>generate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/>uint32_t<sp/>prev_crc<sp/>=<sp/>0xFFFFFFFF)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc32&lt;size,<sp/>idx<sp/>+<sp/>1&gt;::generate(str,<sp/>(prev_crc<sp/>&gt;&gt;<sp/>8)<sp/>^<sp/><ref refid="namespaceutility_1a64f363a6076f3b670262e0acd9e87fdb" kindref="member">crc32_table</ref>[(prev_crc<sp/>^<sp/>str[idx])<sp/>&amp;<sp/>0xFF]);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>stop-recursion<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>dummy&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref>&lt;size,<sp/>size,<sp/>dummy&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint32_t<sp/>generate([[maybe_unused]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/>uint32_t<sp/>prev_crc<sp/>=<sp/>0xFFFFFFFF)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prev_crc<sp/>^<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">x<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>dummy<sp/>=<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint64_t<sp/>generate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/>uint64_t<sp/>prev_crc<sp/>=<sp/>0xFFFFFFFFFFFFFFFF)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc64&lt;size,<sp/>idx<sp/>+<sp/>1&gt;::generate(str,<sp/>(prev_crc<sp/>&gt;&gt;<sp/>8)<sp/>^<sp/><ref refid="namespaceutility_1a36bf2094b48887c13f9c283540e96f04" kindref="member">crc64_table</ref>[(prev_crc<sp/>^<sp/>str[idx])<sp/>&amp;<sp/>0xFF]);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>stop-recursion<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>dummy&gt;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref>&lt;size,<sp/>size,<sp/>dummy&gt;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint64_t<sp/>generate([[maybe_unused]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/>uint64_t<sp/>prev_crc<sp/>=<sp/>0xFFFFFFFFFFFFFFFF)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prev_crc<sp/>^<sp/>0xFFFFFFFFFFFFFFFF;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>details</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length&gt;</highlight></codeline>
+<codeline lineno="147" refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint32_t<sp/><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>(&amp;str)[length])</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc32&lt;length<sp/>-<sp/>1&gt;::generate(str);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length&gt;</highlight></codeline>
+<codeline lineno="157" refid="namespaceutility_1a3a672c8f107c89c4059ef06455212726" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint32_t<sp/><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>str)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc32&lt;length<sp/>-<sp/>1&gt;::generate(str);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;psl::details::fixed_a</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Text&gt;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>consteval<sp/>uint32_t<sp/><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref>()</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc32&lt;Text.size()&gt;::generate(Text);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length&gt;</highlight></codeline>
+<codeline lineno="173" refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint64_t<sp/><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>(&amp;str)[length])</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc64&lt;length<sp/>-<sp/>1&gt;::generate(str);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length&gt;</highlight></codeline>
+<codeline lineno="183" refid="namespaceutility_1a4280a768367b590947c16f0002654c27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>uint64_t<sp/><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>str)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc64&lt;length<sp/>-<sp/>1&gt;::generate(str);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;psl::details::fixed_a</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Text&gt;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>consteval<sp/>uint32_t<sp/><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref>()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>details::crc64&lt;Text.size()&gt;::generate(Text);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="namespaceutility_1a24d1365800825bb0d11da6dc29d8902f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">crc64</ref>(psl::string8::view<sp/>str)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>crc<sp/>=<sp/>0xFFFFFFFFFFFFFFFF;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>:<sp/>str)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/><ref refid="namespaceutility_1a36bf2094b48887c13f9c283540e96f04" kindref="member">crc64_table</ref>[(uint8_t)crc<sp/>^<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">]<sp/>^<sp/>(crc<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc<sp/>^<sp/>0xFFFFFFFFFFFFFFFF;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="namespaceutility_1a161c0e278c011ebd750433c2fcbc8531" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="namespaceutility_1a3fbca2e587f3bd4d5ce6030f29c66a63" kindref="member">crc32</ref>(psl::string8::view<sp/>str)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>crc<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>:<sp/>str)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/><ref refid="namespaceutility_1a64f363a6076f3b670262e0acd9e87fdb" kindref="member">crc32_table</ref>[(uint8_t)crc<sp/>^<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">]<sp/>^<sp/>(crc<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc<sp/>^<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>utility</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/crc32.hpp"/>
+  </compounddef>
+</doxygen>

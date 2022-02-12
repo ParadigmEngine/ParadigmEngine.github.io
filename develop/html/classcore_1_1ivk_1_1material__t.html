@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>core::ivk::material_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>material_t <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
+        </h1>
+        <p>class that creates a bindable collection of resources that can be used in conjuction with a surface to render.</p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+<p>The material class is a container of various resources that can, together, describe what should happen to a surface in the render pipeline on the GPU, and what is all needed. The material class also can contain instance data and will manage this for you. Together with a <a href="classcore_1_1ivk_1_1geometry__t.html" class="m-doc">core::<wbr />ivk::<wbr />geometry_t</a>, this describes all the resources you need to render something on screen.</p>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a16c6e27f1d805645ffd210d3ca7cbb5b" class="m-doc">material_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
+              <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1material__t.html" class="m-doc">core::<wbr />data::<wbr />material_t</a>&gt; data,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1pipeline__cache.html" class="m-doc">core::<wbr />ivk::<wbr />pipeline_cache</a>&gt; pipelineCache,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; materialBuffer)</span>
+            </dt>
+            <dd>the constructor that will create and bind the necesary resources to create a valid pipeline.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7f94c9319f996690bd19b1df8b299526" class="m-doc">data</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1material__t.html" class="m-doc">core::<wbr />data::<wbr />material_t</a>&gt;</span>
+            </dt>
+            <dd>returns a handle to the material data used to construct this object.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0f05c71f5b90524760861509d3e8b7a1" class="m-doc">bind_pipeline</a>(</span><span class="m-doc-wrap">vk::CommandBuffer cmdBuffer,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a>&gt; framebuffer,
+              uint32_t drawIndex) -&gt; bool</span>
+            </dt>
+            <dd>prepares the material for rendering by binding the pipeline.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a24d81e30828337c0e0a88f408d42fc8f" class="m-doc">bind_pipeline</a>(</span><span class="m-doc-wrap">vk::CommandBuffer cmdBuffer,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt; swapchain,
+              uint32_t drawIndex) -&gt; bool</span>
+            </dt>
+            <dd>prepares the material for rendering by binding the pipeline.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a16c6e27f1d805645ffd210d3ca7cbb5b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />material_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a16c6e27f1d805645ffd210d3ca7cbb5b" class="m-doc-self">material_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
+              <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1material__t.html" class="m-doc">core::<wbr />data::<wbr />material_t</a>&gt; data,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1pipeline__cache.html" class="m-doc">core::<wbr />ivk::<wbr />pipeline_cache</a>&gt; pipelineCache,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; materialBuffer)</span></span>
+            </h3>
+            <p>the constructor that will create and bind the necesary resources to create a valid pipeline.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">cache&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>resource cache that is constructing this material.</td>
+                </tr>
+                <tr>
+                  <td>metaData&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>metadata associated with the material.</td>
+                </tr>
+                <tr>
+                  <td>metaFile&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>metafile associated with the material&#x27;s instance.</td>
+                </tr>
+                <tr>
+                  <td>context&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>a handle to a graphics context (needs to be valid and loaded) which will own the material.</td>
+                </tr>
+                <tr>
+                  <td>data&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the material data this instance will be based on.</td>
+                </tr>
+                <tr>
+                  <td>pipelineCache&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the cache this instance can request a pipeline from.</td>
+                </tr>
+                <tr>
+                  <td>materialBuffer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>a GPU buffer that can be used by this instance to upload data to (if needed).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a7f94c9319f996690bd19b1df8b299526"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1material__t.html" class="m-doc">core::<wbr />data::<wbr />material_t</a>&gt; core::<wbr />ivk::<wbr />material_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7f94c9319f996690bd19b1df8b299526" class="m-doc-self">data</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>returns a handle to the material data used to construct this object.</p>
+<aside class="m-note m-info"><h4>Note</h4><p>when editing the material or the data after construction, this value will be out of sync with the runtime <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">ivk::<wbr />material_t</a>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0f05c71f5b90524760861509d3e8b7a1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />material_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f05c71f5b90524760861509d3e8b7a1" class="m-doc-self">bind_pipeline</a>(</span><span class="m-doc-wrap">vk::CommandBuffer cmdBuffer,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a>&gt; framebuffer,
+              uint32_t drawIndex)</span></span>
+            </h3>
+            <p>prepares the material for rendering by binding the pipeline.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">cmdBuffer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the command buffer you&#x27;ll be recording to</td>
+                </tr>
+                <tr>
+                  <td>framebuffer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the framebuffer the pipeline will be bound to.</td>
+                </tr>
+                <tr>
+                  <td>drawIndex&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the index to be set in the push constant.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-danger"><h4>Warning</h4><p>only call this in the context of recording the draw call.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000008" class="m-doc">Todo</a></h4><p>drawindex is a temporary hack to support instancing. a generic solution should be sought after.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a24d81e30828337c0e0a88f408d42fc8f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />material_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a24d81e30828337c0e0a88f408d42fc8f" class="m-doc-self">bind_pipeline</a>(</span><span class="m-doc-wrap">vk::CommandBuffer cmdBuffer,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt; swapchain,
+              uint32_t drawIndex)</span></span>
+            </h3>
+            <p>prepares the material for rendering by binding the pipeline.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">cmdBuffer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the command buffer you&#x27;ll be recording to</td>
+                </tr>
+                <tr>
+                  <td>swapchain&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the swapchain the pipeline will be bound to.</td>
+                </tr>
+                <tr>
+                  <td>drawIndex&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the index to be set in the push constant.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-danger"><h4>Warning</h4><p>only call this in the context of recording the draw call.</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

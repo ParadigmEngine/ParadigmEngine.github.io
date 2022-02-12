@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_65425568483fc4f3a64bacd15a55ce82" kind="dir">
+    <compoundname>/home/runner/work/paradigm/paradigm/psl/inc/psl/memory</compoundname>
+    <innerfile refid="allocator_8hpp">allocator.hpp</innerfile>
+    <innerfile refid="range_8hpp">range.hpp</innerfile>
+    <innerfile refid="raw__region_8hpp">raw_region.hpp</innerfile>
+    <innerfile refid="region_8hpp">region.hpp</innerfile>
+    <innerfile refid="segment_8hpp">segment.hpp</innerfile>
+    <innerfile refid="memory_2sparse__array_8hpp">sparse_array.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/memory/"/>
+  </compounddef>
+</doxygen>

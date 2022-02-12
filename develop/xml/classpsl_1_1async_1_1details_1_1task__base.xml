@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1async_1_1details_1_1task__base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>psl::async::details::task_base</compoundname>
+    <derivedcompoundref refid="classpsl_1_1async_1_1details_1_1task" prot="public" virt="non-virtual">psl::async::details::task&lt; R, Storage, Future &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classpsl_1_1async_1_1details_1_1task_3_01_r_00_01_storage_00_01void_01_4" prot="public" virt="non-virtual">psl::async::details::task&lt; R, Storage, void &gt;</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1async_1_1details_1_1task__base_1aa5f2554c10b49712915a67ecb49fb312" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual psl::async::details::task_base::~task_base</definition>
+        <argsstring>()=default</argsstring>
+        <name>~task_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/task.hpp" line="10" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1async_1_1details_1_1task__base_1aca5558e529271e22a5245a4cc86cbcc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void psl::async::details::task_base::operator()</definition>
+        <argsstring>()=0</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/task.hpp" line="11" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/task.hpp" line="8" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/async/details/task.hpp" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1async_1_1details_1_1task__base_1aca5558e529271e22a5245a4cc86cbcc8" prot="public" virt="pure-virtual"><scope>psl::async::details::task_base</scope><name>operator()</name></member>
+      <member refid="classpsl_1_1async_1_1details_1_1task__base_1aa5f2554c10b49712915a67ecb49fb312" prot="public" virt="virtual"><scope>psl::async::details::task_base</scope><name>~task_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

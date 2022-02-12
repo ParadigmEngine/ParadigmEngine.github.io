@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacepsl_1_1ecs_1_1details" kind="namespace" language="C++">
+    <compoundname>psl::ecs::details</compoundname>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1component__info" prot="public">psl::ecs::details::component_info</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1component__info__typed" prot="public">psl::ecs::details::component_info_typed</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1component__info__typed_3_01_t_00_01true_01_4" prot="public">psl::ecs::details::component_info_typed&lt; T, true &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type" prot="public">psl::ecs::details::decode_type</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01except_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; except&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01filter_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; filter&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01on__add_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; on_add&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01on__break_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; on_break&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01on__combine_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; on_combine&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01on__condition_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; on_condition&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01on__remove_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; on_remove&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1decode__type_3_01order__by_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::decode_type&lt; order_by&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1dependency__pack" prot="public">psl::ecs::details::dependency_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1empty__container" prot="public">psl::ecs::details::empty_container</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4" prot="public">psl::ecs::details::empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1entity__info" prot="public">psl::ecs::details::entity_info</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract" prot="public">psl::ecs::details::extract</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__add" prot="public">psl::ecs::details::extract_add</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__add_3_01on__add_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_add&lt; on_add&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__break" prot="public">psl::ecs::details::extract_break</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__break_3_01on__break_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_break&lt; on_break&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__combine" prot="public">psl::ecs::details::extract_combine</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__combine_3_01on__combine_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_combine&lt; on_combine&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__conditional" prot="public">psl::ecs::details::extract_conditional</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__conditional_3_01on__condition_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_conditional&lt; on_condition&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__except" prot="public">psl::ecs::details::extract_except</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__except_3_01except_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_except&lt; except&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__orderby" prot="public">psl::ecs::details::extract_orderby</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__orderby_3_01order__by_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_orderby&lt; order_by&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical" prot="public">psl::ecs::details::extract_physical</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01except_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; except&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01filter_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; filter&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01on__add_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; on_add&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01on__break_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; on_break&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01on__combine_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; on_combine&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01on__condition_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; on_condition&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01on__remove_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; on_remove&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__physical_3_01order__by_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_physical&lt; order_by&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__remove" prot="public">psl::ecs::details::extract_remove</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1extract__remove_3_01on__remove_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::extract_remove&lt; on_remove&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1filter__group" prot="public">psl::ecs::details::filter_group</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1has__type" prot="public">psl::ecs::details::has_type</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1has__type_3_01_t_00_01std_1_1tuple_3_01_t_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::has_type&lt; T, std::tuple&lt; T, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1has__type_3_01_t_00_01std_1_1tuple_3_01_u_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::has_type&lt; T, std::tuple&lt; U, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1has__type_3_01_t_00_01std_1_1tuple_3_4_01_4" prot="public">psl::ecs::details::has_type&lt; T, std::tuple&lt;&gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__empty__container" prot="public">psl::ecs::details::is_empty_container</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__empty__container_3_01psl_1_1ecs_1_1empty_3_01_t_01_4_01_4" prot="public">psl::ecs::details::is_empty_container&lt; psl::ecs::empty&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__exception" prot="public">psl::ecs::details::is_exception</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__exception_3_01except_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_exception&lt; except&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__range__t" prot="public">psl::ecs::details::is_range_t</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__range__t_3_01psl_1_1array_3_01_t_01_4_01_4" prot="public">psl::ecs::details::is_range_t&lt; psl::array&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector" prot="public">psl::ecs::details::is_selector</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01except_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; except&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01filter_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; filter&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01on__add_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; on_add&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01on__break_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; on_break&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01on__combine_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; on_combine&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01on__condition_3_01_pred_00_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; on_condition&lt; Pred, Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1is__selector_3_01on__remove_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::is_selector&lt; on_remove&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array" prot="public">psl::ecs::details::staged_sparse_array</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1staged__sparse__array_3_01void_00_01_key_00_01chunks__size_01_4" prot="public">psl::ecs::details::staged_sparse_array&lt; void, Key, chunks_size &gt;</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1system__information" prot="public">psl::ecs::details::system_information</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1system__token" prot="public">psl::ecs::details::system_token</innerclass>
+    <innerclass refid="classpsl_1_1ecs_1_1details_1_1transform__group" prot="public">psl::ecs::details::transform_group</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1tuple__to__pack__view" prot="public">psl::ecs::details::tuple_to_pack_view</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1tuple__to__pack__view_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::tuple_to_pack_view&lt; std::tuple&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__add__pack" prot="public">psl::ecs::details::typelist_to_add_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__break__pack" prot="public">psl::ecs::details::typelist_to_break_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__combine__pack" prot="public">psl::ecs::details::typelist_to_combine_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__conditional__pack" prot="public">psl::ecs::details::typelist_to_conditional_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__except__pack" prot="public">psl::ecs::details::typelist_to_except_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__orderby__pack" prot="public">psl::ecs::details::typelist_to_orderby_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__pack" prot="public">psl::ecs::details::typelist_to_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__pack__view" prot="public">psl::ecs::details::typelist_to_pack_view</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__physical__pack" prot="public">psl::ecs::details::typelist_to_physical_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__remove__pack" prot="public">psl::ecs::details::typelist_to_remove_pack</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1typelist__to__tuple" prot="public">psl::ecs::details::typelist_to_tuple</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1wrap__with__array__view" prot="public">psl::ecs::details::wrap_with_array_view</innerclass>
+    <innerclass refid="structpsl_1_1ecs_1_1details_1_1wrap__with__array__view_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4" prot="public">psl::ecs::details::wrap_with_array_view&lt; std::tuple&lt; Ts... &gt; &gt;</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacepsl_1_1ecs_1_1details_1aa89e25591d7352ff9b883a983f3f3ca0" prot="public" static="no">
+        <type>const std::uintptr_t *(*)()</type>
+        <definition>using psl::ecs::details::component_key_t = typedef const std::uintptr_t* (*)()</definition>
+        <argsstring></argsstring>
+        <name>component_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" line="19" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacepsl_1_1ecs_1_1details_1a0184b326ccfa540b50b99aa870d87530" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Tuple</type>
+          </param>
+        </templateparamlist>
+        <type>typename has_type&lt; T, Tuple &gt;::type</type>
+        <definition>using psl::ecs::details::tuple_contains_type = typedef typename has_type&lt;T, Tuple&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>tuple_contains_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" line="63" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/selectors.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepsl_1_1ecs_1_1details_1acb8f3c3b5770b4003171b9c51bd54f96" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr const std::uintptr_t</type>
+        <definition>constexpr const std::uintptr_t psl::ecs::details::component_key_var</definition>
+        <argsstring></argsstring>
+        <name>component_key_var</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" line="9" column="32" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1a094c8d19a9c8b6787fe2f3dba9143e78" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr const std::uintptr_t *</type>
+        <definition>constexpr const std::uintptr_t* psl::ecs::details::component_key</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>component_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" line="12" column="32" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1ad6db323a79282ca3933342fed3cef213" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr component_key_t</type>
+        <definition>constexpr component_key_t psl::ecs::details::key_for</definition>
+        <argsstring>()</argsstring>
+        <name>key_for</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" line="22" column="27" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_key.hpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1a55e4dc1d361248892331929f0318a7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t...</type>
+            <declname>Is</declname>
+            <defname>Is</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="classpsl_1_1ecs_1_1details_1_1dependency__pack" kindref="compound">dependency_pack</ref> &gt;</type>
+        <definition>std::vector&lt;dependency_pack&gt; psl::ecs::details::expand_to_dependency_pack</definition>
+        <argsstring>(std::index_sequence&lt; Is... &gt;, psl::templates::type_container&lt; T &gt;, bool seedWithPrevious=false)</argsstring>
+        <name>expand_to_dependency_pack</name>
+        <param>
+          <type>std::index_sequence&lt; Is... &gt;</type>
+        </param>
+        <param>
+          <type>psl::templates::type_container&lt; T &gt;</type>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>seedWithPrevious</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" line="291" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" bodystart="291" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1aff70b56c309f9de8d56eb45e9ef9613c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t...</type>
+            <declname>Is</declname>
+            <defname>Is</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>std::tuple&lt; Ts... &gt;</type>
+        <definition>std::tuple&lt;Ts...&gt; psl::ecs::details::compress_from_dependency_pack</definition>
+        <argsstring>(std::index_sequence&lt; Is... &gt;, psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;, std::vector&lt; dependency_pack &gt; &amp;pack)</argsstring>
+        <name>compress_from_dependency_pack</name>
+        <param>
+          <type>std::index_sequence&lt; Is... &gt;</type>
+        </param>
+        <param>
+          <type>psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;</type>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classpsl_1_1ecs_1_1details_1_1dependency__pack" kindref="compound">dependency_pack</ref> &gt; &amp;</type>
+          <declname>pack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" line="306" column="12" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/system_information.hpp" bodystart="306" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1ae1b3f38be072e3b276b058ff6e01962c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::ecs::details::make_filter_group</definition>
+        <argsstring>(psl::templates::type_container&lt; psl::ecs::pack&lt; Ts... &gt;&gt;)</argsstring>
+        <name>make_filter_group</name>
+        <param>
+          <type>psl::templates::type_container&lt; <ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; Ts... &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="311" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1a069bfea63da3f113af7be1a0c9f29ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::ecs::details::make_filter_group</definition>
+        <argsstring>(psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;)</argsstring>
+        <name>make_filter_group</name>
+        <param>
+          <type>psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="317" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="317" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1a510ee782b5e13c480b6a5d532c15e9c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::ecs::details::make_transform_group</definition>
+        <argsstring>(psl::templates::type_container&lt; psl::ecs::pack&lt; Ts... &gt;&gt;)</argsstring>
+        <name>make_transform_group</name>
+        <param>
+          <type>psl::templates::type_container&lt; <ref refid="classpsl_1_1ecs_1_1pack" kindref="compound">psl::ecs::pack</ref>&lt; Ts... &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="333" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepsl_1_1ecs_1_1details_1a82228124937fba42b92727073287a70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto psl::ecs::details::make_transform_group</definition>
+        <argsstring>(psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;)</argsstring>
+        <name>make_transform_group</name>
+        <param>
+          <type>psl::templates::type_container&lt; std::tuple&lt; Ts... &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" line="339" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/filtering.hpp" bodystart="339" bodyend="352"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>specialized implementation of <ref refid="classpsl_1_1sparse__array" kindref="compound">psl::sparse_array</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Unlike normal <ref refid="classpsl_1_1sparse__array" kindref="compound">sparse_array</ref>, this variation is implemented as a cascading stage, where stage 0 is the &quot;stale&quot; data, stage 1 is the recently added data, and stage 2 is the removed data. This is catered towards usage within the psl::ecs solution, which is why it is part of its namespace.</para>
+<para>In general it can be unwieldy and unsafe to use without knowing the internal workings, so avoid using this unless you know what you need it for and are sure you understand its internals. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/details/component_info.hpp" line="20" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1data_1_1clear__value_1_1overloaded" kind="struct" language="C++" prot="private">
+    <compoundname>core::data::clear_value::overloaded</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Ts</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" line="18" column="31" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/clear_value.hpp" bodystart="18" bodyend="18"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

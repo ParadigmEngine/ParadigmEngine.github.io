@@ -1,0 +1,583 @@
+\hypertarget{classcore_1_1data_1_1sampler__t}{}\doxysection{core\+::data\+::sampler\+\_\+t Class Reference}
+\label{classcore_1_1data_1_1sampler__t}\index{core::data::sampler\_t@{core::data::sampler\_t}}
+
+
+describes the data to build a \mbox{\hyperlink{classcore_1_1ivk_1_1sampler__t}{core\+::ivk\+::sampler\+\_\+t}} instance  
+
+
+
+
+{\ttfamily \#include $<$sampler.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a54cf1c32f02e5a97f759d2d7a16b35c9}\label{classcore_1_1data_1_1sampler__t_a54cf1c32f02e5a97f759d2d7a16b35c9}} 
+{\bfseries sampler\+\_\+t} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a5bf4de99d8e0323b9bca40f9b1dc5f3d}\label{classcore_1_1data_1_1sampler__t_a5bf4de99d8e0323b9bca40f9b1dc5f3d}} 
+{\bfseries sampler\+\_\+t} (const \mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a90a75871a2e8205f27af82264479a860}\label{classcore_1_1data_1_1sampler__t_a90a75871a2e8205f27af82264479a860}} 
+{\bfseries sampler\+\_\+t} (\mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \&\&other)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a948e906ece6b93b35e4fae0129c72342}\label{classcore_1_1data_1_1sampler__t_a948e906ece6b93b35e4fae0129c72342}} 
+\mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a0634e6eb861b74e4b50fa5f8bc800fcb}\label{classcore_1_1data_1_1sampler__t_a0634e6eb861b74e4b50fa5f8bc800fcb}} 
+\mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1sampler__t}{sampler\+\_\+t}} \&\&other)=delete
+\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a99a4c1d2bcc15290d438b19f547497c1}{mipmaps}} () const
+\begin{DoxyCompactList}\small\item\em returns if mipmapping is enabled or not \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ad254be2aa17fa473d9eb6a28420e2d8f}{mipmaps}} (bool value)
+\begin{DoxyCompactList}\small\item\em enables or disables mipmapping on this sampler. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a8effea61912629b90bba6f483a7fc65e}{mip\+\_\+bias}} () const
+\begin{DoxyCompactList}\small\item\em returns the mip\+\_\+bias that might be present on this sampler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a0368167ed286f535ce7066b887838085}{mip\+\_\+bias}} (float value)
+\begin{DoxyCompactList}\small\item\em sets the mip bias when sampling mipmaps. \end{DoxyCompactList}\item 
+core\+::gfx\+::sampler\+\_\+mipmap\+\_\+mode \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a15261c7a4e1eb460bf578a19339b9fc7}{mip\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em returns the mode for mipmap texture lookups. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a195286f174e5947f0042f9c997423a84}{mip\+\_\+mode}} (core\+::gfx\+::sampler\+\_\+mipmap\+\_\+mode value)
+\begin{DoxyCompactList}\small\item\em sets the mode for mipmap texture lookups. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a44b2d8b8491adb30aabcd0534d6938f0}{mip\+\_\+minlod}} () const
+\begin{DoxyCompactList}\small\item\em returns the minimal mipmap L\+OD this instance has set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a5eb3f322de4a02f84f87b0b61ab738f4}{mip\+\_\+minlod}} (float value)
+\begin{DoxyCompactList}\small\item\em sets the minimal mipmap L\+OD offset for this instance. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ace67337e9b24c8dd56a522d32f77ca70}{mip\+\_\+maxlod}} () const
+\begin{DoxyCompactList}\small\item\em returns the max mipmap L\+OD this instance has set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ad2d81cf6cb28a272eacf0fbbf98b1b0e}{mip\+\_\+maxlod}} (float value)
+\begin{DoxyCompactList}\small\item\em sets the minimal mipmap max L\+OD for this instance. \end{DoxyCompactList}\item 
+core\+::gfx\+::sampler\+\_\+address\+\_\+mode \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a389bea496611d8bbebe7c39447745f14}{addressU}} () const
+\begin{DoxyCompactList}\small\item\em returns how this instances deals with texture tiling in the U-\/axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ad1e49988b27d9d699c813cdd71ee529e}{addressU}} (core\+::gfx\+::sampler\+\_\+address\+\_\+mode value)
+\begin{DoxyCompactList}\small\item\em sets how this instance should deal with texture tiling in the U-\/axis. \end{DoxyCompactList}\item 
+core\+::gfx\+::sampler\+\_\+address\+\_\+mode \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a1da95da7879280c55166811f36c88af0}{addressV}} () const
+\begin{DoxyCompactList}\small\item\em returns how this instances deals with texture tiling in the V-\/axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a3e2f8df44cef4d7d52104924d0b3f757}{addressV}} (core\+::gfx\+::sampler\+\_\+address\+\_\+mode value)
+\begin{DoxyCompactList}\small\item\em sets how this instance should deal with texture tiling in the V-\/axis. \end{DoxyCompactList}\item 
+core\+::gfx\+::sampler\+\_\+address\+\_\+mode \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a245249ae46a9a1ef00d576b387d3a6f9}{addressW}} () const
+\begin{DoxyCompactList}\small\item\em returns how this instances deals with texture tiling in the W-\/axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a4c101776de82fdf817906cc90d1f58bb}{addressW}} (core\+::gfx\+::sampler\+\_\+address\+\_\+mode value)
+\begin{DoxyCompactList}\small\item\em sets how this instance should deal with texture tiling in the W-\/axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a04276de92686b3a6686595e153a69804}\label{classcore_1_1data_1_1sampler__t_a04276de92686b3a6686595e153a69804}} 
+void {\bfseries address} (core\+::gfx\+::sampler\+\_\+address\+\_\+mode value) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a7019e38d55578f0445bdd0d18f651c57}\label{classcore_1_1data_1_1sampler__t_a7019e38d55578f0445bdd0d18f651c57}} 
+void {\bfseries address} (core\+::gfx\+::sampler\+\_\+address\+\_\+mode u, core\+::gfx\+::sampler\+\_\+address\+\_\+mode v, core\+::gfx\+::sampler\+\_\+address\+\_\+mode w) noexcept
+\item 
+core\+::gfx\+::border\+\_\+color \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a6d74233c5e92367a1343fa8d5985d9d3}{border\+\_\+color}} () const
+\begin{DoxyCompactList}\small\item\em returns the border color that will be used during texture lookups. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a6f10ca85e2b9b6ef76ee99b37ff1bee3}{border\+\_\+color}} (core\+::gfx\+::border\+\_\+color value)
+\begin{DoxyCompactList}\small\item\em sets the border color that should be used during texture lookups. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_afadbce6da831055d2c609ced1ead86ed}{anisotropic\+\_\+filtering}} () const
+\begin{DoxyCompactList}\small\item\em returns if anisotropic filtering is enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a3ed49d83c248405f594f572fbb708cca}{anisotropic\+\_\+filtering}} (bool value)
+\begin{DoxyCompactList}\small\item\em call this to enable or disable anisotropic filtering. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ac7dfb67005aa203f296e3e576e315ec9}{max\+\_\+anisotropy}} () const
+\begin{DoxyCompactList}\small\item\em returns the max anistropic value for this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ab23aa4a8d62db40d680dbce1c0e890c7}{max\+\_\+anisotropy}} (float value)
+\begin{DoxyCompactList}\small\item\em sets the max anistropic value for this instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}{compare\+\_\+mode}} () const
+\begin{DoxyCompactList}\small\item\em returns if compare operations have been enabled or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ad1534b0e40eb01cd61e1b6181eedc8ac}{compare\+\_\+mode}} (bool value)
+\begin{DoxyCompactList}\small\item\em enables or disables compare ops. \end{DoxyCompactList}\item 
+core\+::gfx\+::compare\+\_\+op \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a22cbd56ee7897e681e8d6fe8a19011ca}{compare\+\_\+op}} () const
+\begin{DoxyCompactList}\small\item\em returns what compare op would be used if \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}{compare\+\_\+mode()}} is true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_aab7948823d39f7b057bd03a78df0f1da}{compare\+\_\+op}} (core\+::gfx\+::compare\+\_\+op value)
+\begin{DoxyCompactList}\small\item\em sets the compare op to a new value. \end{DoxyCompactList}\item 
+core\+::gfx\+::filter \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ac4c54b94de7058efc5cba15dc5c1c6fc}{filter\+\_\+min}} () const
+\begin{DoxyCompactList}\small\item\em returns the filtering mode to use when dealing with minification. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a9f04ea7c197d542743dc093fd3191568}{filter\+\_\+min}} (core\+::gfx\+::filter value)
+\begin{DoxyCompactList}\small\item\em sets the filtering mode to use when dealing with minification. \end{DoxyCompactList}\item 
+core\+::gfx\+::filter \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_aa6ed4ba35c21ce7fc44411485aa92965}{filter\+\_\+max}} () const
+\begin{DoxyCompactList}\small\item\em returns the filtering mode to use when dealing with magnification. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a1fa3a46c92a8f22417fb1df966370fdf}{filter\+\_\+max}} (core\+::gfx\+::filter value)
+\begin{DoxyCompactList}\small\item\em sets the filtering mode to use when dealing with magnification. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a95ff1293a765ba49a903232e0c399387}{normalized\+\_\+coordinates}} () const
+\begin{DoxyCompactList}\small\item\em returns if the coordinates for this sampler will be normalized or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a8a0797c16364d3462cb8df84bb86bcb5}{normalized\+\_\+coordinates}} (bool value)
+\begin{DoxyCompactList}\small\item\em enables or disables coordinate normalization when this sampler is used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1sampler__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file sampler.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a99a4c1d2bcc15290d438b19f547497c1}\label{classcore_1_1data_1_1sampler__t_a99a4c1d2bcc15290d438b19f547497c1}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mipmaps@{mipmaps}}
+\index{mipmaps@{mipmaps}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mipmaps()}{mipmaps()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool sampler\+\_\+t\+::mipmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+if mipmapping is enabled or not 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ad254be2aa17fa473d9eb6a28420e2d8f}\label{classcore_1_1data_1_1sampler__t_ad254be2aa17fa473d9eb6a28420e2d8f}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mipmaps@{mipmaps}}
+\index{mipmaps@{mipmaps}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mipmaps()}{mipmaps()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::mipmaps (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & true for enabling mipmapping. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a8effea61912629b90bba6f483a7fc65e}\label{classcore_1_1data_1_1sampler__t_a8effea61912629b90bba6f483a7fc65e}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_bias@{mip\_bias}}
+\index{mip\_bias@{mip\_bias}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_bias()}{mip\_bias()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float sampler\+\_\+t\+::mip\+\_\+bias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the mip\+\_\+bias that might be present on this sampler. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a99a4c1d2bcc15290d438b19f547497c1}{mipmaps()}} should be true for this to have an effect. 
+\end{DoxyNote}
+
+
+Definition at line 18 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a0368167ed286f535ce7066b887838085}\label{classcore_1_1data_1_1sampler__t_a0368167ed286f535ce7066b887838085}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_bias@{mip\_bias}}
+\index{mip\_bias@{mip\_bias}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_bias()}{mip\_bias()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::mip\+\_\+bias (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the bias to apply to mipmap sampling. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a99a4c1d2bcc15290d438b19f547497c1}{mipmaps()}} should be true for this to have an effect. 
+\end{DoxyNote}
+
+
+Definition at line 19 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a15261c7a4e1eb460bf578a19339b9fc7}\label{classcore_1_1data_1_1sampler__t_a15261c7a4e1eb460bf578a19339b9fc7}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_mode@{mip\_mode}}
+\index{mip\_mode@{mip\_mode}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_mode()}{mip\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::sampler\+\_\+mipmap\+\_\+mode sampler\+\_\+t\+::mip\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the mode for mipmap texture lookups. 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a195286f174e5947f0042f9c997423a84}\label{classcore_1_1data_1_1sampler__t_a195286f174e5947f0042f9c997423a84}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_mode@{mip\_mode}}
+\index{mip\_mode@{mip\_mode}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_mode()}{mip\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::mip\+\_\+mode (\begin{DoxyParamCaption}\item[{core\+::gfx\+::sampler\+\_\+mipmap\+\_\+mode}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the mode to change to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a44b2d8b8491adb30aabcd0534d6938f0}\label{classcore_1_1data_1_1sampler__t_a44b2d8b8491adb30aabcd0534d6938f0}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_minlod@{mip\_minlod}}
+\index{mip\_minlod@{mip\_minlod}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_minlod()}{mip\_minlod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float sampler\+\_\+t\+::mip\+\_\+minlod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the minimal mipmap L\+OD this instance has set. 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a5eb3f322de4a02f84f87b0b61ab738f4}\label{classcore_1_1data_1_1sampler__t_a5eb3f322de4a02f84f87b0b61ab738f4}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_minlod@{mip\_minlod}}
+\index{mip\_minlod@{mip\_minlod}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_minlod()}{mip\_minlod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::mip\+\_\+minlod (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the value to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ace67337e9b24c8dd56a522d32f77ca70}\label{classcore_1_1data_1_1sampler__t_ace67337e9b24c8dd56a522d32f77ca70}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_maxlod@{mip\_maxlod}}
+\index{mip\_maxlod@{mip\_maxlod}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_maxlod()}{mip\_maxlod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float sampler\+\_\+t\+::mip\+\_\+maxlod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the max mipmap L\+OD this instance has set. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]this value is currently ignored in core\+::core\+::ivk\+::sampler\+\_\+t. \end{DoxyRefDesc}
+
+
+Definition at line 27 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ad2d81cf6cb28a272eacf0fbbf98b1b0e}\label{classcore_1_1data_1_1sampler__t_ad2d81cf6cb28a272eacf0fbbf98b1b0e}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!mip\_maxlod@{mip\_maxlod}}
+\index{mip\_maxlod@{mip\_maxlod}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{mip\_maxlod()}{mip\_maxlod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::mip\+\_\+maxlod (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the value to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a389bea496611d8bbebe7c39447745f14}\label{classcore_1_1data_1_1sampler__t_a389bea496611d8bbebe7c39447745f14}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressU@{addressU}}
+\index{addressU@{addressU}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressU()}{addressU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::sampler\+\_\+address\+\_\+mode sampler\+\_\+t\+::addressU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+how this instances deals with texture tiling in the U-\/axis. 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ad1e49988b27d9d699c813cdd71ee529e}\label{classcore_1_1data_1_1sampler__t_ad1e49988b27d9d699c813cdd71ee529e}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressU@{addressU}}
+\index{addressU@{addressU}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressU()}{addressU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::addressU (\begin{DoxyParamCaption}\item[{core\+::gfx\+::sampler\+\_\+address\+\_\+mode}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the mode to set this instance to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a1da95da7879280c55166811f36c88af0}\label{classcore_1_1data_1_1sampler__t_a1da95da7879280c55166811f36c88af0}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressV@{addressV}}
+\index{addressV@{addressV}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressV()}{addressV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::sampler\+\_\+address\+\_\+mode sampler\+\_\+t\+::addressV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+how this instances deals with texture tiling in the V-\/axis. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a3e2f8df44cef4d7d52104924d0b3f757}\label{classcore_1_1data_1_1sampler__t_a3e2f8df44cef4d7d52104924d0b3f757}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressV@{addressV}}
+\index{addressV@{addressV}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressV()}{addressV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::addressV (\begin{DoxyParamCaption}\item[{core\+::gfx\+::sampler\+\_\+address\+\_\+mode}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the mode to set this instance to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a245249ae46a9a1ef00d576b387d3a6f9}\label{classcore_1_1data_1_1sampler__t_a245249ae46a9a1ef00d576b387d3a6f9}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressW@{addressW}}
+\index{addressW@{addressW}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressW()}{addressW()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::sampler\+\_\+address\+\_\+mode sampler\+\_\+t\+::addressW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+how this instances deals with texture tiling in the W-\/axis. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a4c101776de82fdf817906cc90d1f58bb}\label{classcore_1_1data_1_1sampler__t_a4c101776de82fdf817906cc90d1f58bb}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!addressW@{addressW}}
+\index{addressW@{addressW}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{addressW()}{addressW()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::addressW (\begin{DoxyParamCaption}\item[{core\+::gfx\+::sampler\+\_\+address\+\_\+mode}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the mode to set this instance to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a6d74233c5e92367a1343fa8d5985d9d3}\label{classcore_1_1data_1_1sampler__t_a6d74233c5e92367a1343fa8d5985d9d3}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!border\_color@{border\_color}}
+\index{border\_color@{border\_color}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{border\_color()}{border\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::border\+\_\+color sampler\+\_\+t\+::border\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the border color that will be used during texture lookups. 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a6f10ca85e2b9b6ef76ee99b37ff1bee3}\label{classcore_1_1data_1_1sampler__t_a6f10ca85e2b9b6ef76ee99b37ff1bee3}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!border\_color@{border\_color}}
+\index{border\_color@{border\_color}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{border\_color()}{border\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::border\+\_\+color (\begin{DoxyParamCaption}\item[{core\+::gfx\+::border\+\_\+color}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the new border color value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_afadbce6da831055d2c609ced1ead86ed}\label{classcore_1_1data_1_1sampler__t_afadbce6da831055d2c609ced1ead86ed}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!anisotropic\_filtering@{anisotropic\_filtering}}
+\index{anisotropic\_filtering@{anisotropic\_filtering}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{anisotropic\_filtering()}{anisotropic\_filtering()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool sampler\+\_\+t\+::anisotropic\+\_\+filtering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+if anisotropic filtering is enabled. 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a3ed49d83c248405f594f572fbb708cca}\label{classcore_1_1data_1_1sampler__t_a3ed49d83c248405f594f572fbb708cca}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!anisotropic\_filtering@{anisotropic\_filtering}}
+\index{anisotropic\_filtering@{anisotropic\_filtering}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{anisotropic\_filtering()}{anisotropic\_filtering()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::anisotropic\+\_\+filtering (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & set to true to enable anisotropic filtering. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+if the current \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} doesn\textquotesingle{}t support anisotropic filtering, then this value will be ingored upstream (core\+::core\+::ivk\+::sampler\+\_\+t). 
+\end{DoxyNote}
+
+
+Definition at line 59 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ac7dfb67005aa203f296e3e576e315ec9}\label{classcore_1_1data_1_1sampler__t_ac7dfb67005aa203f296e3e576e315ec9}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!max\_anisotropy@{max\_anisotropy}}
+\index{max\_anisotropy@{max\_anisotropy}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{max\_anisotropy()}{max\_anisotropy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float sampler\+\_\+t\+::max\+\_\+anisotropy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the max anistropic value for this instance. 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ab23aa4a8d62db40d680dbce1c0e890c7}\label{classcore_1_1data_1_1sampler__t_ab23aa4a8d62db40d680dbce1c0e890c7}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!max\_anisotropy@{max\_anisotropy}}
+\index{max\_anisotropy@{max\_anisotropy}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{max\_anisotropy()}{max\_anisotropy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::max\+\_\+anisotropy (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the value to set the max anisotropic value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}\label{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!compare\_mode@{compare\_mode}}
+\index{compare\_mode@{compare\_mode}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{compare\_mode()}{compare\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool sampler\+\_\+t\+::compare\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+if compare operations have been enabled or not. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ad1534b0e40eb01cd61e1b6181eedc8ac}\label{classcore_1_1data_1_1sampler__t_ad1534b0e40eb01cd61e1b6181eedc8ac}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!compare\_mode@{compare\_mode}}
+\index{compare\_mode@{compare\_mode}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{compare\_mode()}{compare\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::compare\+\_\+mode (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & set to true to enable compare ops. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a22cbd56ee7897e681e8d6fe8a19011ca}\label{classcore_1_1data_1_1sampler__t_a22cbd56ee7897e681e8d6fe8a19011ca}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!compare\_op@{compare\_op}}
+\index{compare\_op@{compare\_op}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{compare\_op()}{compare\_op()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::compare\+\_\+op sampler\+\_\+t\+::compare\+\_\+op (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+what compare op would be used if \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}{compare\+\_\+mode()}} is true. 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_aab7948823d39f7b057bd03a78df0f1da}\label{classcore_1_1data_1_1sampler__t_aab7948823d39f7b057bd03a78df0f1da}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!compare\_op@{compare\_op}}
+\index{compare\_op@{compare\_op}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{compare\_op()}{compare\_op()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::compare\+\_\+op (\begin{DoxyParamCaption}\item[{core\+::gfx\+::compare\+\_\+op}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the new compare op to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classcore_1_1data_1_1sampler__t_a22cbd56ee7897e681e8d6fe8a19011ca}{compare\+\_\+op()}} will only be used if \mbox{\hyperlink{classcore_1_1data_1_1sampler__t_ae833716f38eb04b802575c92dd7fd9ca}{compare\+\_\+mode()}} is true. You can still set this value regardless however. 
+\end{DoxyNote}
+
+
+Definition at line 68 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_ac4c54b94de7058efc5cba15dc5c1c6fc}\label{classcore_1_1data_1_1sampler__t_ac4c54b94de7058efc5cba15dc5c1c6fc}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!filter\_min@{filter\_min}}
+\index{filter\_min@{filter\_min}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{filter\_min()}{filter\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::filter sampler\+\_\+t\+::filter\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the filtering mode to use when dealing with minification. 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a9f04ea7c197d542743dc093fd3191568}\label{classcore_1_1data_1_1sampler__t_a9f04ea7c197d542743dc093fd3191568}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!filter\_min@{filter\_min}}
+\index{filter\_min@{filter\_min}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{filter\_min()}{filter\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::filter\+\_\+min (\begin{DoxyParamCaption}\item[{core\+::gfx\+::filter}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the new filter mode to use. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_aa6ed4ba35c21ce7fc44411485aa92965}\label{classcore_1_1data_1_1sampler__t_aa6ed4ba35c21ce7fc44411485aa92965}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!filter\_max@{filter\_max}}
+\index{filter\_max@{filter\_max}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{filter\_max()}{filter\_max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gfx\+::filter sampler\+\_\+t\+::filter\+\_\+max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the filtering mode to use when dealing with magnification. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a1fa3a46c92a8f22417fb1df966370fdf}\label{classcore_1_1data_1_1sampler__t_a1fa3a46c92a8f22417fb1df966370fdf}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!filter\_max@{filter\_max}}
+\index{filter\_max@{filter\_max}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{filter\_max()}{filter\_max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::filter\+\_\+max (\begin{DoxyParamCaption}\item[{core\+::gfx\+::filter}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the new filter mode to use. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a95ff1293a765ba49a903232e0c399387}\label{classcore_1_1data_1_1sampler__t_a95ff1293a765ba49a903232e0c399387}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!normalized\_coordinates@{normalized\_coordinates}}
+\index{normalized\_coordinates@{normalized\_coordinates}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{normalized\_coordinates()}{normalized\_coordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool sampler\+\_\+t\+::normalized\+\_\+coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+if the coordinates for this sampler will be normalized or not. 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file sampler.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1data_1_1sampler__t_a8a0797c16364d3462cb8df84bb86bcb5}\label{classcore_1_1data_1_1sampler__t_a8a0797c16364d3462cb8df84bb86bcb5}} 
+\index{core::data::sampler\_t@{core::data::sampler\_t}!normalized\_coordinates@{normalized\_coordinates}}
+\index{normalized\_coordinates@{normalized\_coordinates}!core::data::sampler\_t@{core::data::sampler\_t}}
+\doxysubsubsection{\texorpdfstring{normalized\_coordinates()}{normalized\_coordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void sampler\+\_\+t\+::normalized\+\_\+coordinates (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & enables or disables the behaviour. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file sampler.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/sampler.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/sampler.\+cpp\end{DoxyCompactItemize}

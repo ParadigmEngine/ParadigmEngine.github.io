@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1resource_1_1metadata" kind="struct" language="C++" prot="public">
+    <compoundname>core::resource::metadata</compoundname>
+    <includes refid="cache_8hpp" local="no">cache.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1a1d29a08afc03191d6d70e0c3c69edd90" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+        <definition>psl::UID core::resource::metadata::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="105" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1aa5d000881864663b127ce8746cc284a7" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref></type>
+        <definition>psl::UID core::resource::metadata::resource_uid</definition>
+        <argsstring></argsstring>
+        <name>resource_uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="106" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1a6ca5c258a53101161ace9eea62f29a67" prot="public" static="no" mutable="no">
+        <type>resource_key_t</type>
+        <definition>resource_key_t core::resource::metadata::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="107" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1adeafd2fd730cedd1a0b2fdedac3dc239" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacecore_1_1resource_1a8726bf09cf08e4532f29a70dd14400bf" kindref="member">status</ref></type>
+        <definition>status core::resource::metadata::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="108" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1a7e3ff8a41f7cddc448b7b1413c470194" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t core::resource::metadata::reference_count</definition>
+        <argsstring></argsstring>
+        <name>reference_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="109" column="8" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1resource_1_1metadata_1a852e0df63cf8e0539c9e006ef40859ce" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool core::resource::metadata::strong_type</definition>
+        <argsstring></argsstring>
+        <name>strong_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="110" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>represents a container of resources and their UID mappings </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The resource cache is a specialized container that can handle lifetime and ID mapping of resources. It also controls the memory that the resource will be allocated to. This means that every resource is guaranteed to be part of atleast one cache. Resource can also access other resources within the same cache with ease through the shared <ref refid="classpsl_1_1meta_1_1library" kindref="compound">psl::meta::library</ref> instance. Libraries can be shared between caches, but remember that neither the <ref refid="classpsl_1_1meta_1_1library" kindref="compound">psl::meta::library</ref> nor core::resource::cache_t are thread-safe by themselves. <xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>check multi-cache </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>core::resource::metadata</label>
+        <link refid="structcore_1_1resource_1_1metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>resource_uid</edgelabel>
+          <edgelabel>uid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>psl::UID</label>
+        <link refid="structpsl_1_1_u_i_d"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>invalid_uid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" line="104" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/resource/cache.hpp" bodystart="103" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structcore_1_1resource_1_1metadata_1a7e3ff8a41f7cddc448b7b1413c470194" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>reference_count</name></member>
+      <member refid="structcore_1_1resource_1_1metadata_1aa5d000881864663b127ce8746cc284a7" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>resource_uid</name></member>
+      <member refid="structcore_1_1resource_1_1metadata_1adeafd2fd730cedd1a0b2fdedac3dc239" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>state</name></member>
+      <member refid="structcore_1_1resource_1_1metadata_1a852e0df63cf8e0539c9e006ef40859ce" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>strong_type</name></member>
+      <member refid="structcore_1_1resource_1_1metadata_1a6ca5c258a53101161ace9eea62f29a67" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>type</name></member>
+      <member refid="structcore_1_1resource_1_1metadata_1a1d29a08afc03191d6d70e0c3c69edd90" prot="public" virt="non-virtual"><scope>core::resource::metadata</scope><name>uid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

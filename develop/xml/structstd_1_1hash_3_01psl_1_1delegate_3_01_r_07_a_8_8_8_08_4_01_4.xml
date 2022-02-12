@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstd_1_1hash_3_01psl_1_1delegate_3_01_r_07_a_8_8_8_08_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::hash&lt; psl::delegate&lt; R(A...)&gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>A</declname>
+        <defname>A</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1hash_3_01psl_1_1delegate_3_01_r_07_a_8_8_8_08_4_01_4_1a0c696c8e26097c63420454212cbe61ec" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t std::hash&lt; psl::delegate&lt; R(A...)&gt; &gt;::operator()</definition>
+        <argsstring>(psl::delegate&lt; R(A...)&gt; const &amp;d) const noexcept</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>psl::delegate&lt; R(A...)&gt; const &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/delegate.hpp" line="318" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/delegate.hpp" bodystart="318" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/delegate.hpp" line="317" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/delegate.hpp" bodystart="316" bodyend="325"/>
+    <listofallmembers>
+      <member refid="structstd_1_1hash_3_01psl_1_1delegate_3_01_r_07_a_8_8_8_08_4_01_4_1a0c696c8e26097c63420454212cbe61ec" prot="public" virt="non-virtual"><scope>std::hash&lt; psl::delegate&lt; R(A...)&gt; &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

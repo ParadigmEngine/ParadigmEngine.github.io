@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1polymorphic__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::polymorphic_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1polymorphic__data__t_1a71b4172d76c9499de269bd682670b433" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t psl::serialization::polymorphic_data_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="65" column="10" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1polymorphic__data__t_1a657704ba1fa5574f99008bfa990023e8" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(void *, encode_to_format &amp;)&gt;</type>
+        <definition>std::function&lt;void(void*, encode_to_format&amp;)&gt; psl::serialization::polymorphic_data_t::encode</definition>
+        <argsstring></argsstring>
+        <name>encode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="66" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1polymorphic__data__t_1ac236eccfcaf56f52a9decd0dee752e3b" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(void *, decode_from_format &amp;)&gt;</type>
+        <definition>std::function&lt;void(void*, decode_from_format&amp;)&gt; psl::serialization::polymorphic_data_t::decode</definition>
+        <argsstring></argsstring>
+        <name>decode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="67" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1polymorphic__data__t_1adcb900bc3b6fa270630a1cba43b2be3d" prot="public" static="no" mutable="no">
+        <type>invocable_wrapper_base *</type>
+        <definition>invocable_wrapper_base* psl::serialization::polymorphic_data_t::factory</definition>
+        <argsstring></argsstring>
+        <name>factory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="68" column="24" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1serialization_1_1polymorphic__data__t_1a3aaeed368773e9b6fc29bdf7d61c17a6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; psl::string8_t, uint64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;psl::string8_t, uint64_t&gt; &gt; psl::serialization::polymorphic_data_t::derived</definition>
+        <argsstring></argsstring>
+        <name>derived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="71" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1serialization_1_1polymorphic__data__t_1acdc675b7f1bd3e45c063457adc203dda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::serialization::polymorphic_data_t::~polymorphic_data_t</definition>
+        <argsstring>()</argsstring>
+        <name>~polymorphic_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="72" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="64" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="63" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1ac236eccfcaf56f52a9decd0dee752e3b" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>decode</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1a3aaeed368773e9b6fc29bdf7d61c17a6" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>derived</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1a657704ba1fa5574f99008bfa990023e8" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>encode</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1adcb900bc3b6fa270630a1cba43b2be3d" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>factory</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1a71b4172d76c9499de269bd682670b433" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>id</name></member>
+      <member refid="structpsl_1_1serialization_1_1polymorphic__data__t_1acdc675b7f1bd3e45c063457adc203dda" prot="public" virt="non-virtual"><scope>psl::serialization::polymorphic_data_t</scope><name>~polymorphic_data_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

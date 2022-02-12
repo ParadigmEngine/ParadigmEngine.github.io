@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1serialization_1_1details_1_1is__property_3_01psl_1_1serialization_1_1property_3_01_name_00_01_a_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>psl::serialization::details::is_property&lt; psl::serialization::property&lt; Name, A &gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>auto</type>
+        <declname>Name</declname>
+        <defname>Name</defname>
+      </param>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="262" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="261" bodyend="262"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+\hypertarget{classcore_1_1ivk_1_1shader}{}\doxysection{core\+::ivk\+::shader Class Reference}
+\label{classcore_1_1ivk_1_1shader}\index{core::ivk::shader@{core::ivk::shader}}
+
+
+creates a shader object from a S\+P\+I\+R-\/V module  
+
+
+
+
+{\ttfamily \#include $<$shader.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}}
+\begin{DoxyCompactList}\small\item\em contains the specialization info that might be used by the shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_ae5116a2d34099710aa8f7b014dfcd103}\label{classcore_1_1ivk_1_1shader_ae5116a2d34099710aa8f7b014dfcd103}} 
+{\bfseries shader} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} $\ast$meta\+File, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}})
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_aeb3e275a108d1ae9f7584c4b1981c5d3}\label{classcore_1_1ivk_1_1shader_aeb3e275a108d1ae9f7584c4b1981c5d3}} 
+{\bfseries shader} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} $\ast$meta\+File, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}}, const std\+::vector$<$ \mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}} $>$ specializations)
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_a0cd2d801160f50cd985e50753643646a}\label{classcore_1_1ivk_1_1shader_a0cd2d801160f50cd985e50753643646a}} 
+{\bfseries shader} (const \mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_afb6db62849a3b2985d4b95fd444fa6d1}\label{classcore_1_1ivk_1_1shader_afb6db62849a3b2985d4b95fd444fa6d1}} 
+{\bfseries shader} (\mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_a6b9af4e9971a5673ac044867e821aa0a}\label{classcore_1_1ivk_1_1shader_a6b9af4e9971a5673ac044867e821aa0a}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_aea756bc22aff12e6314a5119e745d9d5}\label{classcore_1_1ivk_1_1shader_aea756bc22aff12e6314a5119e745d9d5}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1ivk_1_1shader}{shader}} \&\&)=delete
+\item 
+std\+::optional$<$ vk\+::\+Pipeline\+Shader\+Stage\+Create\+Info $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1shader_a261324f1279dee29bf333edf414d5d9d}{pipeline}} (const \mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}} \&description=\mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}} \{\})
+\item 
+\mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} $\ast$ \mbox{\hyperlink{classcore_1_1ivk_1_1shader_ab3cab268670b7f53e962436e3572292e}{meta}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handles loading a S\+P\+I\+R-\/V object from a source (disk, or otherwise). and subsequently uploads it to the driver to be validated. a couple of shaders together with a \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline}{core\+::ivk\+::pipeline}} and \mbox{\hyperlink{classcore_1_1ivk_1_1geometry__t}{core\+::ivk\+::geometry\+\_\+t}} is all that\textquotesingle{}s needed to render an object on screen. 
+
+Definition at line 22 of file shader.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_a261324f1279dee29bf333edf414d5d9d}\label{classcore_1_1ivk_1_1shader_a261324f1279dee29bf333edf414d5d9d}} 
+\index{core::ivk::shader@{core::ivk::shader}!pipeline@{pipeline}}
+\index{pipeline@{pipeline}!core::ivk::shader@{core::ivk::shader}}
+\doxysubsubsection{\texorpdfstring{pipeline()}{pipeline()}}
+{\footnotesize\ttfamily std\+::optional$<$ vk\+::\+Pipeline\+Shader\+Stage\+Create\+Info $>$ shader\+::pipeline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}} \&}]{description = {\ttfamily \mbox{\hyperlink{structcore_1_1ivk_1_1shader_1_1specialization}{specialization}}~\{\}} }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the pipeline shader stage create info for the given specialization. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+will return nothing in case the specialization does not exist. 
+\end{DoxyNote}
+
+
+Definition at line 111 of file shader.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1shader_ab3cab268670b7f53e962436e3572292e}\label{classcore_1_1ivk_1_1shader_ab3cab268670b7f53e962436e3572292e}} 
+\index{core::ivk::shader@{core::ivk::shader}!meta@{meta}}
+\index{meta@{meta}!core::ivk::shader@{core::ivk::shader}}
+\doxysubsubsection{\texorpdfstring{meta()}{meta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}}$\ast$ core\+::ivk\+::shader\+::meta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+the meta data that describes this shader and its binding points. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/shader.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/shader.\+cpp\end{DoxyCompactItemize}

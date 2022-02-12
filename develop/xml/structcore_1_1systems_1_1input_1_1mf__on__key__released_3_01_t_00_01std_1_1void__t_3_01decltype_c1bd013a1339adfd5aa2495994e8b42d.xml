@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1systems_1_1input_1_1mf__on__key__released_3_01_t_00_01std_1_1void__t_3_01decltype_c1bd013a1339adfd5aa2495994e8b42d" kind="struct" language="C++" prot="private">
+    <compoundname>core::systems::input::mf_on_key_released&lt; T, std::void_t&lt; decltype(std::declval&lt; T &amp; &gt;().on_key_released(std::declval&lt; keycode &gt;()))&gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>SFINAE tag that is used to detect the method signature for the key release event. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" line="491" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/systems/input.hpp" bodystart="488" bodyend="491"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1igles_1_1framebuffer__t_1_1description" kind="struct" language="C++" prot="public">
+    <compoundname>core::igles::framebuffer_t::description</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1igles_1_1framebuffer__t_1_1description_1ad413b58944b017a395e6cd51946a6f60" prot="public" static="no" mutable="no">
+        <type>core::gfx::format_t</type>
+        <definition>core::gfx::format_t core::igles::framebuffer_t::description::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/framebuffer.hpp" line="21" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/framebuffer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/gles/framebuffer.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/gles/framebuffer.hpp" bodystart="19" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structcore_1_1igles_1_1framebuffer__t_1_1description_1ad413b58944b017a395e6cd51946a6f60" prot="public" virt="non-virtual"><scope>core::igles::framebuffer_t::description</scope><name>format</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

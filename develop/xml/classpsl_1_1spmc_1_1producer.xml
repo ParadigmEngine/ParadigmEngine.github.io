@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1spmc_1_1producer" kind="class" language="C++" prot="public">
+    <compoundname>psl::spmc::producer</compoundname>
+    <includes refid="producer_8hpp" local="no">producer.hpp</includes>
+    <innerclass refid="structpsl_1_1spmc_1_1producer_1_1buffer" prot="private">psl::spmc::producer::buffer</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classpsl_1_1spmc_1_1producer_1ad5bb70c38b8040af709da7c6ce3a7d2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class consumer&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>consumer&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="236" column="32" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpsl_1_1spmc_1_1producer_1a5604673e0713c8b6b12e57b843d9b531" prot="private" static="no" mutable="no">
+        <type>std::atomic_int64_t</type>
+        <definition>std::atomic_int64_t psl::spmc::producer&lt; T &gt;::m_Begin</definition>
+        <argsstring></argsstring>
+        <name>m_Begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="229" column="21" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1spmc_1_1producer_1afba918e4483b4d887f661d040693a724" prot="private" static="no" mutable="no">
+        <type>std::atomic_int64_t</type>
+        <definition>std::atomic_int64_t psl::spmc::producer&lt; T &gt;::m_End</definition>
+        <argsstring></argsstring>
+        <name>m_End</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="230" column="21" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1spmc_1_1producer_1a77d6276c6b23f8c9a5870327895a1c17" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; buffer * &gt;</type>
+        <definition>std::atomic&lt;buffer*&gt; psl::spmc::producer&lt; T &gt;::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="231" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1spmc_1_1producer_1adcdcea029e9b64ae05b1362b48ccf783" prot="private" static="no" mutable="no">
+        <type>buffer *</type>
+        <definition>buffer* psl::spmc::producer&lt; T &gt;::m_Last</definition>
+        <argsstring></argsstring>
+        <name>m_Last</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="232" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a5e7b59d431ec71114c7fb48efd9e340e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::producer</definition>
+        <argsstring>(int64_t capacity=1024)</argsstring>
+        <name>producer</name>
+        <param>
+          <type>int64_t</type>
+          <declname>capacity</declname>
+          <defval>1024</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="72" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a838ce4d51bdc221f5ea29e2104012bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::~producer</definition>
+        <argsstring>()</argsstring>
+        <name>~producer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="80" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a919ddd1ab6082bb077f8430547abc6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::producer</definition>
+        <argsstring>(const producer &amp;other)=delete</argsstring>
+        <name>producer</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a1f5c787d2084de7e446e8d3607210dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::spmc::producer&lt; T &gt;::producer</definition>
+        <argsstring>(producer &amp;&amp;other)=default</argsstring>
+        <name>producer</name>
+        <param>
+          <type><ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a6f34ab3ed6399d61efa63f296852662b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;</type>
+        <definition>producer&amp; psl::spmc::producer&lt; T &gt;::operator=</definition>
+        <argsstring>(const producer &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a96866e11fcc868e1eb0693de5d15cbb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;</type>
+        <definition>producer&amp; psl::spmc::producer&lt; T &gt;::operator=</definition>
+        <argsstring>(producer &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classpsl_1_1spmc_1_1producer" kindref="compound">producer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a9c3270ad45e4ce66f44ce77e5b5db2f6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>::<ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">psl::spmc::consumer</ref>&lt; T &gt;</type>
+        <definition>psl::spmc::consumer&lt; T &gt; psl::spmc::producer&lt; T &gt;::consumer</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>consumer</name>
+        <briefdescription>
+<para>\Returns a consumer that is linked to the current producer, to be used in other threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="92" column="23" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1abd31ee51286904b226eb79096e19a9a3" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::spmc::producer&lt; T &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="94" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1af33000c50368d934996856a6e4e2f2cc" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t psl::spmc::producer&lt; T &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>\Returns the current count of all elements in the producer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="102" column="8" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1acd5309033fe1030434a7d43123e0f2d1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t psl::spmc::producer&lt; T &gt;::ssize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>ssize</name>
+        <briefdescription>
+<para>\Returns the current count of all elements in the producer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="105" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a7bae6c6ed61cf74cf973a6a3b6b23d90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::spmc::producer&lt; T &gt;::resize</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Resizes the internal buffer to the given size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to resize to the given size, it will automatically align itself to the next power of 2 if the value isn&apos;t a power of 2 already. The minimum size will be &apos;at least&apos; equal to, or bigger than, the current size (not capacity) of the internal buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="117" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="117" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a11cdadc6ac76979d33eee5cb7f7284f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::spmc::producer&lt; T &gt;::push</definition>
+        <argsstring>(T &amp;&amp;value)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Push the given element onto the end of the deque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will push the given element onto the deque if enough space is present. If not enough space is present it will construct a new internal buffer that contains at least enough space. If a previous (unused) buffer is present it will now clean that buffer up. <simplesect kind="warning"><para>Callable only on the owning thread, do not call from multiple threads. </para>
+</simplesect>
+<xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>Implement the backing storage as an atomic&lt;shared_ptr&lt;buffer&gt;&gt; for more logical cleanup flow. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="140" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="140" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a5783dc5abb66036b7a350a1d663bd686" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt;T&gt; psl::spmc::producer&lt; T &gt;::pop</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>pop</name>
+        <briefdescription>
+<para>Pops an element (if any are left) off the deque from the end. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to pop an element off the end of the deque. <simplesect kind="warning"><para>Only callable from the owning thread, otherwise the results will be undefined. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="165" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="165" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1ab50b3333d89735b052372c4a22a2f9f7" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void psl::spmc::producer&lt; T &gt;::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="195" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="195" bodyend="199"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpsl_1_1spmc_1_1producer_1a798e0773b4f2b1ffda67e99423d25f3c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt;T&gt; psl::spmc::producer&lt; T &gt;::steal</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>steal</name>
+        <briefdescription>
+<para>Pops an element (if any are left) off the deque from the front. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To be used by consumer threads, this gives a thread safe way of stealing items from the deque. It can be called by any thread, but is only exposed to the consumer class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" line="206" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/producer.hpp" bodystart="206" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPMC based on Chase-Lev deque. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is based on Chase-Lev&apos;s deque implementation of a Single Producer Multi Consumer (SPMC). The producer should only be used on a single thread, and the &apos;<ref refid="classpsl_1_1spmc_1_1consumer" kindref="compound">psl::spmc::consumer</ref>&apos; variant should be used in the consuming threads. This offers a safe API. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" line="11" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/collections/spmc/consumer.hpp" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1spmc_1_1producer_1ab50b3333d89735b052372c4a22a2f9f7" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>clear</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a9c3270ad45e4ce66f44ce77e5b5db2f6" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>consumer</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1ad5bb70c38b8040af709da7c6ce3a7d2f" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>consumer&lt; T &gt;</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1abd31ee51286904b226eb79096e19a9a3" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>empty</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a5604673e0713c8b6b12e57b843d9b531" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>m_Begin</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a77d6276c6b23f8c9a5870327895a1c17" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>m_Data</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1afba918e4483b4d887f661d040693a724" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>m_End</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1adcdcea029e9b64ae05b1362b48ccf783" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>m_Last</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a6f34ab3ed6399d61efa63f296852662b" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a96866e11fcc868e1eb0693de5d15cbb2" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a5783dc5abb66036b7a350a1d663bd686" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>pop</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a5e7b59d431ec71114c7fb48efd9e340e" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>producer</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a919ddd1ab6082bb077f8430547abc6e3" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>producer</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a1f5c787d2084de7e446e8d3607210dd8" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>producer</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a11cdadc6ac76979d33eee5cb7f7284f3" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>push</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a7bae6c6ed61cf74cf973a6a3b6b23d90" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>resize</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1af33000c50368d934996856a6e4e2f2cc" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>size</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1acd5309033fe1030434a7d43123e0f2d1" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>ssize</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a798e0773b4f2b1ffda67e99423d25f3c" prot="private" virt="non-virtual"><scope>psl::spmc::producer</scope><name>steal</name></member>
+      <member refid="classpsl_1_1spmc_1_1producer_1a838ce4d51bdc221f5ea29e2104012bae" prot="public" virt="non-virtual"><scope>psl::spmc::producer</scope><name>~producer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

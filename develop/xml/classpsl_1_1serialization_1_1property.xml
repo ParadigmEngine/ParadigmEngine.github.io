@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1serialization_1_1property" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>psl::serialization::property</compoundname>
+    <basecompoundref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" prot="public" virt="non-virtual">psl::serialization::details::anonymous_property&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>psl::details::fixed_astring</type>
+        <declname>Name</declname>
+        <defname>Name</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classpsl_1_1serialization_1_1property_1a1ba3b22d05b6ec93ffedb6ec5e8d0bf1" prot="private" static="no">
+        <type><ref refid="classpsl_1_1serialization_1_1details_1_1anonymous__property" kindref="compound">details::anonymous_property</ref>&lt; T &gt;</type>
+        <definition>using psl::serialization::property&lt; Name, T &gt;::base_t =  details::anonymous_property&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>base_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="366" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classpsl_1_1serialization_1_1property_1a953c68bd0100c927cdf060bc118c7e9d" prot="public" static="no">
+        <type>typename base_t::value_type</type>
+        <definition>using psl::serialization::property&lt; Name, T &gt;::value_type =  typename base_t::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="369" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpsl_1_1serialization_1_1property_1a317f3a5a5211b153eaf318715d37f942" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t psl::serialization::property&lt; Name, T &gt;::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <initializer>{<ref refid="namespaceutility_1a857e522bee9af5904b82b11b5ccc8947" kindref="member">utility::crc64</ref>&lt;Name.size()&gt;(Name)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="371" column="27" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1ac294f1777eaf0f3a6dee0bf009eb6a75" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr std::string_view</type>
+        <definition>static constexpr std::string_view psl::serialization::property&lt; Name, T &gt;::name</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="370" column="35" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="370" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1a4a04f0a8a3bca57907a49a504e189b77" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator==</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasEqualityNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="373" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="292" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1a6bc7cad02949febdd067ca161fed3940" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator!=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasInequalityNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="374" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="298" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1ac05bb6e9d2ab8fc6ae68e92557983c70" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasLessEqualThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="375" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1a243e3210b16f175803b8aa02793ccbdf" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;=</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasGreaterEqualThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="376" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="324" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1a23a3791f714ff1223a34a8653bd96229" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasLessThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="377" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="304" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1property_1a500d3ef217efe7530eada5bceb644944" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename rhs_t</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr force_inline auto</type>
+        <definition>constexpr force_inline auto psl::serialization::details::anonymous_property&lt; T &gt;::operator&gt;</definition>
+        <argsstring>(const rhs_t &amp;rhs) noexcept(concepts::HasGreaterThanNothrow&lt; value_type, rhs_t &gt;) requires(concepts</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const rhs_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="378" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="310" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>psl::serialization::details::anonymous_property&lt; T &gt;</label>
+        <link refid="classpsl_1_1serialization_1_1details_1_1anonymous__property"/>
+      </node>
+      <node id="1">
+        <label>psl::serialization::property&lt; Name, T &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>psl::serialization::details::anonymous_property&lt; T &gt;</label>
+        <link refid="classpsl_1_1serialization_1_1details_1_1anonymous__property"/>
+      </node>
+      <node id="1">
+        <label>psl::serialization::property&lt; Name, T &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" line="365" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/property.hpp" bodystart="364" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad91e9e8e379eee912ea324e21ed9f614" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad99fcc9c82d0e448a608f63300de15ff" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7fb84871d9b08f294e62d11ca3561be5" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>anonymous_property</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a1ba3b22d05b6ec93ffedb6ec5e8d0bf1" prot="private" virt="non-virtual"><scope>psl::serialization::property</scope><name>base_t</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a317f3a5a5211b153eaf318715d37f942" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>ID</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1ac294f1777eaf0f3a6dee0bf009eb6a75" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>name</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4db49b65ca7ffe42c3cd44fdff4c2a1e" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator const value_type &amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7ecebb0cd421d7a6b30cc5eab98c170a" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator value_type &amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abade0a92b9d3e4fd7487e210921f4a59" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator!</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a6bc7cad02949febdd067ca161fed3940" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator!=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6bc7cad02949febdd067ca161fed3940" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator!=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1ebfcd0f5f715d525e73fad036731071" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator%</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a84cc4cd383a8962504866a49b1456bff" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator%=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace311c59da6be319c0e5cd269f2d0b04" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a41754be180b641f74dfd19a9b745e801" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&amp;&amp;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aed8ce054cab4af871fc4aa15fc21bb77" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&amp;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae2d2c494255ea2b8b4053326b96e139d" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator()</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e70dfb4abdb4afb2316f1de8cbb1d0f" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator*</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af53e91a06e5cda99ec20382a72f7e3af" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator*=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ad576f46bbbe54a118561ebd7f984c975" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator+</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab42caaee3ef892d1518a540fd2cdefb6" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator+</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a7774258bbcf0e38a2c8c14f1da755382" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a03bb929e5bb7b631c050ba41e79868f8" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator++</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aff9e6816b86ef91ef36826e104031e2b" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator+=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ab276ecdb42e96947d9e9b9956ac0fbfe" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ace038a3f5e8ef25019ea3a187b022302" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6e78ac1a23c1cf341e0d05b1919b937e" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1af55451a84b6202e0e3de5bc2bf668543" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1aa3a3d47b3c0564e2e79c2aa1f8151639" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator--</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a229570d49424b41e8daa9723553695f1" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a27898e9a71d01e9ac6c32361e7ff2d2b" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a9ada74fdd65b691ec66e57cf08bb404f" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator-&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a42c9221a412e35c4a9a6ee2e622f9d0a" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator/</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a2bc15ed55da0ba9d7dd753174e9bb9fc" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator/=</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a23a3791f714ff1223a34a8653bd96229" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&lt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a23a3791f714ff1223a34a8653bd96229" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator&lt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6c2ae9ca2d2f894b934a8e8e9f777431" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1abef375e482f39e3243dca3a93c2ab4ec" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&lt;&lt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1ac05bb6e9d2ab8fc6ae68e92557983c70" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&lt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac05bb6e9d2ab8fc6ae68e92557983c70" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator&lt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a6f3d109fa7a7f74ed136561f3f590bcc" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ae16b89ff7029e684372e2a99bd406536" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a0173a457c9e3d1598ee1311694c30b04" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a4a04f0a8a3bca57907a49a504e189b77" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator==</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a4a04f0a8a3bca57907a49a504e189b77" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator==</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a500d3ef217efe7530eada5bceb644944" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a500d3ef217efe7530eada5bceb644944" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a243e3210b16f175803b8aa02793ccbdf" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&gt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a243e3210b16f175803b8aa02793ccbdf" prot="public" virt="non-virtual" ambiguityscope="psl::serialization::details::anonymous_property::"><scope>psl::serialization::property</scope><name>operator&gt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a8dc167a4e35716b80ebdb74694ed7457" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac8220399b516c524cc56bc04d281a482" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator&gt;&gt;=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1ac120f351556b844c85f69010594466d9" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator[]</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a518c0c9adb03b15264310491c995e061" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator^</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a1153d6f0cef3fb26b3ce24a20b1200e5" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator^=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a13f6796b2c2421add0373afcf72c647b" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator|</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a5d33bd0ff93702773bf096a3baf6e53f" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator|=</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a94d24e71b3622d322efebf1f13e1f6c2" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>operator||</name></member>
+      <member refid="classpsl_1_1serialization_1_1details_1_1anonymous__property_1a027c4baf8b1989f7f134c99d97c7afc7" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>value</name></member>
+      <member refid="classpsl_1_1serialization_1_1property_1a953c68bd0100c927cdf060bc118c7e9d" prot="public" virt="non-virtual"><scope>psl::serialization::property</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

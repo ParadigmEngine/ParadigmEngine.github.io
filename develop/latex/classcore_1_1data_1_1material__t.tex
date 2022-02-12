@@ -1,0 +1,134 @@
+\hypertarget{classcore_1_1data_1_1material__t}{}\doxysection{core\+::data\+::material\+\_\+t Class Reference}
+\label{classcore_1_1data_1_1material__t}\index{core::data::material\_t@{core::data::material\_t}}
+
+
+Describes a collection of resources that can be used to initialize a \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{core\+::ivk\+::material\+\_\+t}}.  
+
+
+
+
+{\ttfamily \#include $<$material.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}}
+\begin{DoxyCompactList}\small\item\em describes the blend operation (source/destination) per color component in the render operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a132091e025b7c79c6f4c696fb514cda6}\label{classcore_1_1data_1_1material__t_a132091e025b7c79c6f4c696fb514cda6}} 
+{\bfseries material\+\_\+t} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_aed17507993e86a2e7ee62a8e082574ef}\label{classcore_1_1data_1_1material__t_aed17507993e86a2e7ee62a8e082574ef}} 
+{\bfseries material\+\_\+t} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ad159818e96d184592a9be9c135afab17}\label{classcore_1_1data_1_1material__t_ad159818e96d184592a9be9c135afab17}} 
+{\bfseries material\+\_\+t} (\mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a141b7aa240259dec99d437dc4f09d03c}\label{classcore_1_1data_1_1material__t_a141b7aa240259dec99d437dc4f09d03c}} 
+\mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a5517e7d8bf9ce1b4b982e3450d5cdebd}\label{classcore_1_1data_1_1material__t_a5517e7d8bf9ce1b4b982e3450d5cdebd}} 
+\mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1data_1_1material__t}{material\+\_\+t}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ae811fbd1326c48fdb40dcf6d47145078}\label{classcore_1_1data_1_1material__t_ae811fbd1326c48fdb40dcf6d47145078}} 
+const psl\+::array$<$ stage $>$ \& {\bfseries stages} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_afc46183ac2674ba1aa37aef02894a424}\label{classcore_1_1data_1_1material__t_afc46183ac2674ba1aa37aef02894a424}} 
+const psl\+::array$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} $>$ \& {\bfseries blend\+\_\+states} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a685f9331e19075bb811c549b5a297e5c}\label{classcore_1_1data_1_1material__t_a685f9331e19075bb811c549b5a297e5c}} 
+const psl\+::array$<$ psl\+::string8\+\_\+t $>$ \& {\bfseries defines} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ac6995980b448e9d6265dc78cd4f2828e}\label{classcore_1_1data_1_1material__t_ac6995980b448e9d6265dc78cd4f2828e}} 
+core\+::gfx\+::cullmode {\bfseries cull\+\_\+mode} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a96e08d7c41bf9bb5365a6aacba5f25ad}\label{classcore_1_1data_1_1material__t_a96e08d7c41bf9bb5365a6aacba5f25ad}} 
+core\+::gfx\+::compare\+\_\+op {\bfseries depth\+\_\+compare\+\_\+op} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a78e7ee195a6a8bcdbb3442d99110c990}\label{classcore_1_1data_1_1material__t_a78e7ee195a6a8bcdbb3442d99110c990}} 
+uint32\+\_\+t {\bfseries render\+\_\+layer} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ab69cce94b34a4479df57da9bb93bf745}\label{classcore_1_1data_1_1material__t_ab69cce94b34a4479df57da9bb93bf745}} 
+bool {\bfseries depth\+\_\+test} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ac4ed5787ef3ba17ea333a0730d720f10}\label{classcore_1_1data_1_1material__t_ac4ed5787ef3ba17ea333a0730d720f10}} 
+bool {\bfseries depth\+\_\+write} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a1b6f3feab9acac455a80fef40956ef37}\label{classcore_1_1data_1_1material__t_a1b6f3feab9acac455a80fef40956ef37}} 
+bool {\bfseries wireframe} () const
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_adc3489e2a3de946c3a332ed459f51319}\label{classcore_1_1data_1_1material__t_adc3489e2a3de946c3a332ed459f51319}} 
+void {\bfseries stages} (const psl\+::array$<$ stage $>$ \&values)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_afc4e855ff82313d0ff1c442c0b461912}\label{classcore_1_1data_1_1material__t_afc4e855ff82313d0ff1c442c0b461912}} 
+void {\bfseries blend\+\_\+states} (const psl\+::array$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} $>$ \&values)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a992e2efcc2b3d807514ffc985657e55f}\label{classcore_1_1data_1_1material__t_a992e2efcc2b3d807514ffc985657e55f}} 
+void {\bfseries defines} (const psl\+::array$<$ psl\+::string8\+\_\+t $>$ \&values)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a82f8c6a2a5ef5163cb616d7a5f0ec203}\label{classcore_1_1data_1_1material__t_a82f8c6a2a5ef5163cb616d7a5f0ec203}} 
+void {\bfseries cull\+\_\+mode} (core\+::gfx\+::cullmode value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a3a1f858f952a118d686a40e78456b919}\label{classcore_1_1data_1_1material__t_a3a1f858f952a118d686a40e78456b919}} 
+void {\bfseries depth\+\_\+compare\+\_\+op} (core\+::gfx\+::compare\+\_\+op value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_aa97dda073f94116d894ca3cda0a81525}\label{classcore_1_1data_1_1material__t_aa97dda073f94116d894ca3cda0a81525}} 
+void {\bfseries render\+\_\+layer} (uint32\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a779e80077439c6fd3061e2bd000f1111}\label{classcore_1_1data_1_1material__t_a779e80077439c6fd3061e2bd000f1111}} 
+void {\bfseries depth\+\_\+test} (bool value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ad533e7a1c81f2d58fe29619901f42710}\label{classcore_1_1data_1_1material__t_ad533e7a1c81f2d58fe29619901f42710}} 
+void {\bfseries depth\+\_\+write} (bool value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a9abd6a3f8efdefdf76b280e28019cd50}\label{classcore_1_1data_1_1material__t_a9abd6a3f8efdefdf76b280e28019cd50}} 
+void {\bfseries wireframe} (bool value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a5839dd18d67d4b64812f406edf79b924}\label{classcore_1_1data_1_1material__t_a5839dd18d67d4b64812f406edf79b924}} 
+void {\bfseries set} (const stage \&value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a104f28b8ee21122f12b95be197d8a95a}\label{classcore_1_1data_1_1material__t_a104f28b8ee21122f12b95be197d8a95a}} 
+void {\bfseries set} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a8cbdb8bc46251248e8adab18c753777f}\label{classcore_1_1data_1_1material__t_a8cbdb8bc46251248e8adab18c753777f}} 
+void {\bfseries define} (psl\+::string8\+::view value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a85417c0154fc2ac17883798420e64d98}\label{classcore_1_1data_1_1material__t_a85417c0154fc2ac17883798420e64d98}} 
+void {\bfseries erase} (const stage \&value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ad97144402082fdbb5c1521ecabacec14}\label{classcore_1_1data_1_1material__t_ad97144402082fdbb5c1521ecabacec14}} 
+void {\bfseries erase} (const \mbox{\hyperlink{classcore_1_1data_1_1material__t_1_1blendstate}{blendstate}} \&value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ac5eb92e6390668cb37a5eae1ea0053db}\label{classcore_1_1data_1_1material__t_ac5eb92e6390668cb37a5eae1ea0053db}} 
+void {\bfseries undefine} (psl\+::string8\+::view value)
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_a0c574becb8e28bd335504183a3a2b03b}\label{classcore_1_1data_1_1material__t_a0c574becb8e28bd335504183a3a2b03b}} 
+void {\bfseries from\+\_\+shaders} (const \mbox{\hyperlink{classpsl_1_1meta_1_1library}{psl\+::meta\+::library}} \&library, psl\+::array$<$ \mbox{\hyperlink{classcore_1_1meta_1_1shader}{core\+::meta\+::shader}} $\ast$ $>$ shader\+Metas)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ac33412e42864d29d54027dd9860112fd}\label{classcore_1_1data_1_1material__t_ac33412e42864d29d54027dd9860112fd}} 
+static constexpr psl\+::string\+\_\+view \mbox{\hyperlink{classcore_1_1data_1_1material__t_ac33412e42864d29d54027dd9860112fd}{M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+D\+A\+TA}} = \char`\"{}Material\+Data\char`\"{}
+\begin{DoxyCompactList}\small\item\em special identifier to mark buffers that are instanciable data \textbackslash{}detail this type of buffer has data that is unique per instanciated material \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1data_1_1material__t_ae6e4002148765f114da9fe1b5c64547d}\label{classcore_1_1data_1_1material__t_ae6e4002148765f114da9fe1b5c64547d}} 
+class {\bfseries psl\+::serialization\+::accessor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Material data describes a collection of textures, buffers, shaders, override parameters for these shaders, blend operations (such as opaque or transparent), render order offsets, and generic options of how this material {\itshape should} be rendered. It also contains facilities to set default values on buffers if needed. 
+
+Definition at line 26 of file material.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/data/material.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/data/material.\+cpp\end{DoxyCompactItemize}

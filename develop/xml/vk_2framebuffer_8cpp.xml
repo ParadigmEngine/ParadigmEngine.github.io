@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vk_2framebuffer_8cpp" kind="file" language="C++">
+    <compoundname>framebuffer.cpp</compoundname>
+    <includes refid="vk_2framebuffer_8hpp" local="yes">vk/framebuffer.hpp</includes>
+    <includes refid="data_2framebuffer_8hpp" local="yes">data/framebuffer.hpp</includes>
+    <includes refid="meta_2texture_8hpp" local="yes">meta/texture.hpp</includes>
+    <includes refid="vk_2context_8hpp" local="yes">vk/context.hpp</includes>
+    <includes refid="vk_2conversion_8hpp" local="yes">vk/conversion.hpp</includes>
+    <includes refid="vk_2sampler_8hpp" local="yes">vk/sampler.hpp</includes>
+    <includes local="yes">vk/texture.hpp</includes>
+    <incdepgraph>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>iomanip</label>
+      </node>
+      <node id="40">
+        <label>limits</label>
+      </node>
+      <node id="31">
+        <label>assert.h</label>
+      </node>
+      <node id="67">
+        <label>vk/context.hpp</label>
+        <link refid="vk_2context_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>psl/memory/range.hpp</label>
+        <link refid="range_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>psl/math/vec.hpp</label>
+        <link refid="vec_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>cstdint</label>
+      </node>
+      <node id="66">
+        <label>psl/library.hpp</label>
+        <link refid="library_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vk/framebuffer.hpp</label>
+        <link refid="vk_2framebuffer_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>variant</label>
+      </node>
+      <node id="65">
+        <label>meta/texture.hpp</label>
+        <link refid="meta_2texture_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gfx/limits.hpp</label>
+        <link refid="limits_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>cmath</label>
+      </node>
+      <node id="21">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>numeric</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/framebuffer.cpp</label>
+        <link refid="vk_2framebuffer_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>vk/sampler.hpp</label>
+        <link refid="vk_2sampler_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>unordered_set</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>psl/details/fixed_astring.hpp</label>
+        <link refid="fixed__astring_8hpp_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="17">
+        <label>string_view</label>
+      </node>
+      <node id="52">
+        <label>psl/binary_utils.hpp</label>
+        <link refid="binary__utils_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>bitset</label>
+      </node>
+      <node id="64">
+        <label>psl/crc32.hpp</label>
+        <link refid="crc32_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>optional</label>
+      </node>
+      <node id="51">
+        <label>stack</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>signal.h</label>
+      </node>
+      <node id="34">
+        <label>gfx/types.hpp</label>
+        <link refid="gfx_2types_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>vk/conversion.hpp</label>
+        <link refid="vk_2conversion_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>psl/format.hpp</label>
+        <link refid="format_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>utility</label>
+      </node>
+      <node id="37">
+        <label>array</label>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+      </node>
+      <node id="33">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="45">
+        <label>psl/math/fallback/vec.hpp</label>
+        <link refid="fallback_2vec_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>psl/concepts.hpp</label>
+        <link refid="concepts_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>psl/math/SSE/vec.hpp</label>
+        <link refid="_s_s_e_2vec_8hpp_source"/>
+      </node>
+      <node id="56">
+        <label>clocale</label>
+      </node>
+      <node id="55">
+        <label>cctype</label>
+      </node>
+      <node id="3">
+        <label>resource/resource.hpp</label>
+      </node>
+      <node id="38">
+        <label>cstddef</label>
+      </node>
+      <node id="25">
+        <label>unordered_map</label>
+      </node>
+      <node id="36">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>psl/platform_utils.hpp</label>
+        <link refid="platform__utils_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>psl/math/AVX2/vec.hpp</label>
+        <link refid="_a_v_x2_2vec_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>vk/ivk.hpp</label>
+        <link refid="ivk_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>psl/serialization/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>vk/texture.hpp</label>
+      </node>
+      <node id="49">
+        <label>psl/meta.hpp</label>
+        <link refid="meta_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>concepts</label>
+      </node>
+      <node id="42">
+        <label>psl/math/AVX/vec.hpp</label>
+        <link refid="_a_v_x_2vec_8hpp_source"/>
+      </node>
+      <node id="58">
+        <label>thread</label>
+      </node>
+      <node id="32">
+        <label>data/framebuffer.hpp</label>
+        <link refid="data_2framebuffer_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>type_traits</label>
+      </node>
+      <node id="47">
+        <label>psl/memory/segment.hpp</label>
+        <link refid="segment_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>cstring</label>
+      </node>
+      <node id="28">
+        <label>vulkan/vulkan.hpp</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="50">
+        <label>psl/serialization/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>experimental/filesystem</label>
+      </node>
+      <node id="7">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/framebuffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data/framebuffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;meta/texture.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/context.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/conversion.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/sampler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vk/texture.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacepsl" kindref="compound">psl</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1ivk" kindref="compound">core::ivk</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1resource" kindref="compound">core::resource</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore" kindref="compound">core</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">framebuffer_t::framebuffer_t(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref>&amp;<sp/>metaData,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref>*<sp/>metaFile,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle&lt;context&gt;</ref><sp/><ref refid="classcore_1_1ivk_1_1context" kindref="compound">context</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1resource_1_1handle" kindref="compound">handle&lt;data::framebuffer_t&gt;</ref><sp/><ref refid="namespacecore_1_1data" kindref="compound">data</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Context(<ref refid="classcore_1_1ivk_1_1context" kindref="compound">context</ref>),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Data(<ref refid="namespacecore_1_1data" kindref="compound">data</ref>)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>,<sp/>m_Data(copy(cache,<sp/>data))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Framebuffers.resize(m_Data-&gt;framebuffers());</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>attach<sp/>:<sp/>m_Data-&gt;attachments())</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classcore_1_1data_1_1framebuffer__t_1a8e7b1547309688df00a850820a516c94" kindref="member">add</ref>(cache,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attach.texture(),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gfx::conversion::to_vk(attach),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(attach.shared())<sp/>?<sp/>1u<sp/>:<sp/>m_Framebuffers.size()))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>+=<sp/>m_Framebuffers.size();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Sampler<sp/>=<sp/>cache.find&lt;<ref refid="classcore_1_1ivk_1_1sampler__t" kindref="compound">core::ivk::sampler_t</ref>&gt;(m_Data-&gt;sampler().value());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!m_Sampler)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core::ivk::log-&gt;error(</highlight><highlight class="stringliteral">&quot;could<sp/>not<sp/>load<sp/>sampler<sp/>{0}<sp/>for<sp/>framebuffer<sp/>{1}&quot;</highlight><highlight class="normal">,<sp/>m_Sampler.uid(),<sp/>metaData.uid);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>create<sp/>the<sp/>renderpass<sp/>that<sp/>describes<sp/>the<sp/>framebuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;vk::AttachmentDescription&gt;<sp/>attachmentDescriptions;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(std::begin(m_Bindings),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::end(m_Bindings),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::back_inserter(attachmentDescriptions),</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>binding)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>binding.description;<sp/>});</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Collect<sp/>attachment<sp/>references</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;vk::AttachmentReference&gt;<sp/>colorReferences;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>vk::AttachmentReference<sp/>depthReference;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasDepth<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasColor<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>attachmentIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>binding<sp/>:<sp/>m_Bindings)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(utility::vulkan::has_depth(binding.description.format)<sp/>||</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::vulkan::has_stencil(binding.description.format))</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>one<sp/>depth<sp/>attachment<sp/>allowed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assert(!hasDepth);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depthReference.attachment<sp/>=<sp/>attachmentIndex;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depthReference.layout<sp/><sp/><sp/><sp/><sp/>=<sp/>vk::ImageLayout::eDepthStencilAttachmentOptimal;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasDepth<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colorReferences.push_back({attachmentIndex,<sp/>vk::ImageLayout::eColorAttachmentOptimal});</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasColor<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachmentIndex++;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>render<sp/>pass<sp/>setup<sp/>uses<sp/>only<sp/>one<sp/>subpass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>vk::SubpassDescription<sp/>subpass;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>subpass.pipelineBindPoint<sp/>=<sp/>vk::PipelineBindPoint::eGraphics;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(hasColor)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subpass.pColorAttachments<sp/><sp/><sp/><sp/>=<sp/>colorReferences.data();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subpass.colorAttachmentCount<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(colorReferences.size());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(hasDepth)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subpass.pDepthStencilAttachment<sp/>=<sp/>&amp;depthReference;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>subpass<sp/>dependencies<sp/>for<sp/>attachment<sp/>layout<sp/>transitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;vk::SubpassDependency,<sp/>2&gt;<sp/>dependencies;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].srcSubpass<sp/><sp/><sp/><sp/>=<sp/>VK_SUBPASS_EXTERNAL;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].dstSubpass<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].srcStageMask<sp/><sp/>=<sp/>vk::PipelineStageFlagBits::eBottomOfPipe;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].dstStageMask<sp/><sp/>=<sp/>vk::PipelineStageFlagBits::eColorAttachmentOutput;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].srcAccessMask<sp/>=<sp/>vk::AccessFlagBits::eMemoryRead;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].dstAccessMask<sp/>=</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vk::AccessFlagBits::eColorAttachmentRead<sp/>|<sp/>vk::AccessFlagBits::eColorAttachmentWrite;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[0].dependencyFlags<sp/>=<sp/>vk::DependencyFlagBits::eByRegion;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].srcSubpass<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].dstSubpass<sp/><sp/><sp/>=<sp/>VK_SUBPASS_EXTERNAL;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].srcStageMask<sp/>=<sp/>vk::PipelineStageFlagBits::eColorAttachmentOutput;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].dstStageMask<sp/>=<sp/>vk::PipelineStageFlagBits::eBottomOfPipe;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].srcAccessMask<sp/>=</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vk::AccessFlagBits::eColorAttachmentRead<sp/>|<sp/>vk::AccessFlagBits::eColorAttachmentWrite;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].dstAccessMask<sp/><sp/><sp/>=<sp/>vk::AccessFlagBits::eMemoryRead;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>dependencies[1].dependencyFlags<sp/>=<sp/>vk::DependencyFlagBits::eByRegion;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>render<sp/>pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>vk::RenderPassCreateInfo<sp/>renderPassInfo;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.pAttachments<sp/><sp/><sp/><sp/>=<sp/>attachmentDescriptions.data();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.attachmentCount<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(attachmentDescriptions.size());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.subpassCount<sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.pSubpasses<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;subpass;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.dependencyCount<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>renderPassInfo.pDependencies<sp/><sp/><sp/>=<sp/>dependencies.data();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>utility::vulkan::check(m_Context-&gt;device().createRenderPass(&amp;renderPassInfo,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;m_RenderPass));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pre-allocate<sp/>attachmentviews,<sp/>and<sp/>fill<sp/>in<sp/>all<sp/>the<sp/>data<sp/>in<sp/>the<sp/>FBCI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>will<sp/>override<sp/>the<sp/>views<sp/>in<sp/>the<sp/>upcoming<sp/>loop,<sp/>where<sp/>the<sp/>device<sp/>also<sp/>will<sp/>create<sp/>the<sp/>FBOs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;vk::ImageView&gt;<sp/>attachmentViews;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>attachmentViews.resize(m_Bindings.size());</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>vk::FramebufferCreateInfo<sp/>framebufferInfo;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.renderPass<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>m_RenderPass;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.pAttachments<sp/><sp/><sp/><sp/>=<sp/>attachmentViews.data();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.attachmentCount<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(attachmentViews.size());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.width<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>m_Data-&gt;width();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.height<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>m_Data-&gt;height();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>framebufferInfo.layers<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0u;<sp/>i<sp/>&lt;<sp/>m_Data-&gt;framebuffers();<sp/>++i)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find.<sp/>max<sp/>number<sp/>of<sp/>layers<sp/>across<sp/>attachments<sp/>&amp;&amp;<sp/>store<sp/>all<sp/>attachment<sp/>views</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>maxLayers<sp/>=<sp/>0u;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>binding<sp/>:<sp/>m_Bindings)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachmentViews[binding.index]<sp/>=<sp/>binding.attachments[i]-&gt;view();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxLayers<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::max(maxLayers,<sp/>binding.attachments[i]-&gt;subResourceRange().layerCount);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>framebufferInfo.layers<sp/>=<sp/>maxLayers;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::vulkan::check(m_Context-&gt;device().createFramebuffer(&amp;framebufferInfo,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;m_Framebuffers[i]));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">framebuffer_t::~framebuffer_t()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>m_Context-&gt;device().destroyRenderPass(m_RenderPass);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>fb<sp/>:<sp/>m_Framebuffers)<sp/>m_Context-&gt;device().destroyFramebuffer(fb);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1a8e7b1547309688df00a850820a516c94" kindref="member">framebuffer_t::add</ref>(core::resource::cache_t&amp;<sp/>cache,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpsl_1_1_u_i_d" kindref="compound">UID</ref>&amp;<sp/>uid,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::AttachmentDescription<sp/>description,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>cache.library().get&lt;<ref refid="classcore_1_1meta_1_1texture__t" kindref="compound">core::meta::texture_t</ref>&gt;(uid);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!res)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1ac4903b64040a439c1f346863e7c429f6" kindref="member">texture</ref><sp/>=<sp/>cache.find&lt;<ref refid="classcore_1_1ivk_1_1texture__t" kindref="compound">core::ivk::texture_t</ref>&gt;(uid);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1ac4903b64040a439c1f346863e7c429f6" kindref="member">texture</ref>.state()<sp/>!=<sp/>core::resource::status::loaded)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1ac4903b64040a439c1f346863e7c429f6" kindref="member">texture</ref><sp/>=<sp/>cache.create_using&lt;<ref refid="classcore_1_1ivk_1_1texture__t" kindref="compound">core::ivk::texture_t</ref>&gt;(uid,<sp/>m_Context);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1ac4903b64040a439c1f346863e7c429f6" kindref="member">texture</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>meta<sp/>=<sp/>res.value();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>binding&amp;<sp/>binding<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>m_Bindings.emplace_back();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>binding.index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>binding.description<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>description;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>binding.description.format<sp/>=<sp/>gfx::conversion::to_vk(meta-&gt;format());</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>index;<sp/>i<sp/>&lt;<sp/>index<sp/>+<sp/>count;<sp/>++i)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>binding.attachments.push_back(<ref refid="classcore_1_1data_1_1framebuffer__t_1_1attachment_1ac4903b64040a439c1f346863e7c429f6" kindref="member">texture</ref>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*attachment&amp;<sp/>attachment<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>binding.attachments.emplace_back();</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachment.view<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>texture-&gt;view();</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachment.memory<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>texture-&gt;memory();</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachment.subresourceRange<sp/>=<sp/>texture-&gt;subResourceRange();</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attachment.image<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>texture-&gt;image();*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="classcore_1_1ivk_1_1framebuffer__t_1afebba2ecb3aa4eb8384f5343c0086cfa" refkind="member"><highlight class="normal">std::vector&lt;framebuffer_t::texture_handle&gt;<sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1aec57b627563cbca509ff6356ed26e992" kindref="member">framebuffer_t::attachments</ref>(uint32_t<sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(index<sp/>&gt;=<sp/>m_Bindings.size())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;framebuffer_t::texture_handle&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(std::begin(m_Bindings),<sp/>std::end(m_Bindings),<sp/>std::back_inserter(res),<sp/>[index](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments.size()<sp/>&gt;<sp/>1)<sp/>?<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments[index]<sp/>:<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments[0];</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="classcore_1_1ivk_1_1framebuffer__t_1abe5268c03d9330ed481818fe1fd0ce20" refkind="member"><highlight class="normal">std::vector&lt;framebuffer_t::texture_handle&gt;<sp/>framebuffer_t::color_attachments(uint32_t<sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(index<sp/>&gt;=<sp/>m_Bindings.size())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;framebuffer_t::texture_handle&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>bindings<sp/>{m_Bindings};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>std::remove_if(std::begin(bindings),<sp/>std::end(bindings),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">framebuffer_t::binding</ref>&amp;<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>utility::vulkan::has_depth(<ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.description.format)<sp/>||</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::vulkan::has_stencil(<ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.description.format);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(std::begin(bindings),<sp/>end,<sp/>std::back_inserter(res),<sp/>[index](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments.size()<sp/>&gt;<sp/>1)<sp/>?<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments[index]<sp/>:<sp/><ref refid="structcore_1_1ivk_1_1framebuffer__t_1_1binding" kindref="compound">binding</ref>.attachments[0];</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218" refid="classcore_1_1ivk_1_1framebuffer__t_1a9b1e84b15a1f4633cc54c71227658228" refkind="member"><highlight class="normal"><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::ivk::sampler_t&gt;</ref><sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1a04a18b31bf3e63b5282a93835758e4ac" kindref="member">framebuffer_t::sampler</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Sampler;<sp/>}</highlight></codeline>
+<codeline lineno="219" refid="classcore_1_1ivk_1_1framebuffer__t_1aa8afee9525d95c660fbcd15f1e677db3" refkind="member"><highlight class="normal"><ref refid="classcore_1_1resource_1_1handle" kindref="compound">core::resource::handle&lt;core::data::framebuffer_t&gt;</ref><sp/>framebuffer_t::data()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data;<sp/>}</highlight></codeline>
+<codeline lineno="220" refid="classcore_1_1ivk_1_1framebuffer__t_1ab7ebb265d388ff95c6e334869c8c2041" refkind="member"><highlight class="normal">vk::RenderPass<sp/>framebuffer_t::render_pass()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_RenderPass;<sp/>}</highlight></codeline>
+<codeline lineno="221" refid="classcore_1_1ivk_1_1framebuffer__t_1a4ff2a0878565c85a50f5c036926f7fce" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;vk::Framebuffer&gt;&amp;<sp/><ref refid="classcore_1_1data_1_1framebuffer__t_1ad21798e3e5fb23e971ba484bdbb3b6fb" kindref="member">framebuffer_t::framebuffers</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Framebuffers;<sp/>}</highlight></codeline>
+<codeline lineno="222" refid="classcore_1_1ivk_1_1framebuffer__t_1ab56dd9042d7c6fb8b2a36117673995f0" refkind="member"><highlight class="normal">vk::DescriptorImageInfo<sp/>framebuffer_t::descriptor()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Descriptor;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/src/vk/framebuffer.cpp"/>
+  </compounddef>
+</doxygen>

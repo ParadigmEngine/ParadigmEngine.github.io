@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecore_1_1systems" kind="namespace" language="C++">
+    <compoundname>core::systems</compoundname>
+    <innerclass refid="classcore_1_1systems_1_1input" prot="public">core::systems::input</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecore_1_1systems_1afddcee00a7831f8523830d613758e978" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; spdlog::logger &gt;</type>
+        <definition>std::shared_ptr&lt; spdlog::logger &gt; core::systems::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="32" column="24" bodyfile="/home/runner/work/paradigm/paradigm/core/src/logging.cpp" bodystart="14" bodyend="-1" declfile="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" declline="32" declcolumn="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains systems that are responsible for handling certain aspects (audio, input, physics, etc..). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/logging.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

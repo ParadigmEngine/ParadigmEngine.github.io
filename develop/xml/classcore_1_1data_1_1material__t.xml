@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classcore_1_1data_1_1material__t" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>core::data::material_t</compoundname>
+    <includes refid="data_2material_8hpp" local="no">material.hpp</includes>
+    <innerclass refid="classcore_1_1data_1_1material__t_1_1attribute" prot="public">core::data::material_t::attribute</innerclass>
+    <innerclass refid="classcore_1_1data_1_1material__t_1_1binding" prot="public">core::data::material_t::binding</innerclass>
+    <innerclass refid="classcore_1_1data_1_1material__t_1_1blendstate" prot="public">core::data::material_t::blendstate</innerclass>
+    <innerclass refid="classcore_1_1data_1_1material__t_1_1stage" prot="public">core::data::material_t::stage</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcore_1_1data_1_1material__t_1ae6e4002148765f114da9fe1b5c64547d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class psl::serialization::accessor</definition>
+        <argsstring></argsstring>
+        <name>psl::serialization::accessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="28" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1ac33412e42864d29d54027dd9860112fd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string_view</type>
+        <definition>constexpr psl::string_view core::data::material_t::MATERIAL_DATA</definition>
+        <argsstring></argsstring>
+        <name>MATERIAL_DATA</name>
+        <initializer>= &quot;MaterialData&quot;</initializer>
+        <briefdescription>
+<para>special identifier to mark buffers that are instanciable data \detail this type of buffer has data that is unique per instanciated material </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="33" column="35" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1ad95b8dbca17c3a713cd4406c44af54c2" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr psl::string8::view</type>
+        <definition>constexpr psl::string8::view core::data::material_t::serialization_name</definition>
+        <argsstring></argsstring>
+        <name>serialization_name</name>
+        <initializer>{&quot;MATERIAL&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="493" column="37" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1adf50fcc7d0e772939f544b49c3ce2bf7" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;STAGES&quot;, psl::array&lt; stage &gt; &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;STAGES&quot;, psl::array&lt;stage&gt; &gt; core::data::material_t::m_Stage</definition>
+        <argsstring></argsstring>
+        <name>m_Stage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="495" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a6a7757b4e1a10bfdc0b157cbc77d9bc7" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;BLEND_STATES&quot;, psl::array&lt; <ref refid="classcore_1_1data_1_1material__t_1_1blendstate" kindref="compound">blendstate</ref> &gt; &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;BLEND_STATES&quot;, psl::array&lt;blendstate&gt; &gt; core::data::material_t::m_BlendStates</definition>
+        <argsstring></argsstring>
+        <name>m_BlendStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="496" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a9d65d68fe6a50be5c80d9a2496b0e777" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;DEFINES&quot;, psl::array&lt; psl::string8_t &gt; &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;DEFINES&quot;, psl::array&lt;psl::string8_t&gt; &gt; core::data::material_t::m_Defines</definition>
+        <argsstring></argsstring>
+        <name>m_Defines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="497" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a222426a9e1ce0eb7c5aaec6c146daec3" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;CULLING&quot;, core::gfx::cullmode &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;CULLING&quot;, core::gfx::cullmode&gt; core::data::material_t::m_Culling</definition>
+        <argsstring></argsstring>
+        <name>m_Culling</name>
+        <initializer>{core::gfx::cullmode::back}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="498" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a65f3a6bf30385f832c363764a1ed3e5b" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;DEPTH_COMPARE&quot;, core::gfx::compare_op &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;DEPTH_COMPARE&quot;, core::gfx::compare_op&gt; core::data::material_t::m_DepthCompareOp</definition>
+        <argsstring></argsstring>
+        <name>m_DepthCompareOp</name>
+        <initializer>{
+		  core::gfx::compare_op::less_equal}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="500" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a69c303dd0d4584fb87045a2cdd8965ca" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;RENDER_LAYER&quot;, uint32_t &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;RENDER_LAYER&quot;, uint32_t&gt; core::data::material_t::m_RenderLayer</definition>
+        <argsstring></argsstring>
+        <name>m_RenderLayer</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="502" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a5f59af542dad7b91f4f070f857239368" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;DEPTH_TEST&quot;, bool &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;DEPTH_TEST&quot;, bool&gt; core::data::material_t::m_DepthTest</definition>
+        <argsstring></argsstring>
+        <name>m_DepthTest</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="503" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a2d3ecd6e25742797c53a13cd3724124f" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;DEPTH_WRITE&quot;, bool &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;DEPTH_WRITE&quot;, bool&gt; core::data::material_t::m_DepthWrite</definition>
+        <argsstring></argsstring>
+        <name>m_DepthWrite</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="504" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1data_1_1material__t_1a17d3f8d4221f752bcc25bf30de98c138" prot="private" static="no" mutable="no">
+        <type>psl::serialization::property&lt;&quot;WIREFRAME_MODE&quot;, bool &gt;</type>
+        <definition>psl::serialization::property&lt;&quot;WIREFRAME_MODE&quot;, bool&gt; core::data::material_t::m_Wireframe</definition>
+        <argsstring></argsstring>
+        <name>m_Wireframe</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="505" column="30" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a132091e025b7c79c6f4c696fb514cda6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>material_t::material_t</definition>
+        <argsstring>(core::resource::cache_t &amp;cache, const core::resource::metadata &amp;metaData, psl::meta::file *metaFile) noexcept</argsstring>
+        <name>material_t</name>
+        <param>
+          <type>core::resource::cache_t &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structcore_1_1resource_1_1metadata" kindref="compound">core::resource::metadata</ref> &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">psl::meta::file</ref> *</type>
+          <declname>metaFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="444" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1aad2c109e4260896c5a3aadbc5b166947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>material_t::~material_t</definition>
+        <argsstring>()</argsstring>
+        <name>~material_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="448" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1aed17507993e86a2e7ee62a8e082574ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::material_t::material_t</definition>
+        <argsstring>(const material_t &amp;)=delete</argsstring>
+        <name>material_t</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ad159818e96d184592a9be9c135afab17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>core::data::material_t::material_t</definition>
+        <argsstring>(material_t &amp;&amp;)=delete</argsstring>
+        <name>material_t</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="451" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a141b7aa240259dec99d437dc4f09d03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;</type>
+        <definition>material_t&amp; core::data::material_t::operator=</definition>
+        <argsstring>(const material_t &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="452" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a5517e7d8bf9ce1b4b982e3450d5cdebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;</type>
+        <definition>material_t&amp; core::data::material_t::operator=</definition>
+        <argsstring>(material_t &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classcore_1_1data_1_1material__t" kindref="compound">material_t</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="453" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ae811fbd1326c48fdb40dcf6d47145078" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const psl::array&lt; stage &gt; &amp;</type>
+        <definition>const psl::array&lt; material_t::stage &gt; &amp; material_t::stages</definition>
+        <argsstring>() const</argsstring>
+        <name>stages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="455" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1afc46183ac2674ba1aa37aef02894a424" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const psl::array&lt; <ref refid="classcore_1_1data_1_1material__t_1_1blendstate" kindref="compound">blendstate</ref> &gt; &amp;</type>
+        <definition>const psl::array&lt; material_t::blendstate &gt; &amp; material_t::blend_states</definition>
+        <argsstring>() const</argsstring>
+        <name>blend_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="456" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a685f9331e19075bb811c549b5a297e5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const psl::array&lt; psl::string8_t &gt; &amp;</type>
+        <definition>const psl::array&lt; psl::string8_t &gt; &amp; material_t::defines</definition>
+        <argsstring>() const</argsstring>
+        <name>defines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="457" column="18" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ac6995980b448e9d6265dc78cd4f2828e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>core::gfx::cullmode</type>
+        <definition>core::gfx::cullmode material_t::cull_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>cull_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="458" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a96e08d7c41bf9bb5365a6aacba5f25ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>core::gfx::compare_op</type>
+        <definition>core::gfx::compare_op material_t::depth_compare_op</definition>
+        <argsstring>() const</argsstring>
+        <name>depth_compare_op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="459" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a78e7ee195a6a8bcdbb3442d99110c990" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t material_t::render_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>render_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="460" column="10" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ab69cce94b34a4479df57da9bb93bf745" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool material_t::depth_test</definition>
+        <argsstring>() const</argsstring>
+        <name>depth_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="461" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ac4ed5787ef3ba17ea333a0730d720f10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool material_t::depth_write</definition>
+        <argsstring>() const</argsstring>
+        <name>depth_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="462" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a1b6f3feab9acac455a80fef40956ef37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool material_t::wireframe</definition>
+        <argsstring>() const</argsstring>
+        <name>wireframe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="463" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1adc3489e2a3de946c3a332ed459f51319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::stages</definition>
+        <argsstring>(const psl::array&lt; stage &gt; &amp;values)</argsstring>
+        <name>stages</name>
+        <param>
+          <type>const psl::array&lt; stage &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="465" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1afc4e855ff82313d0ff1c442c0b461912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::blend_states</definition>
+        <argsstring>(const psl::array&lt; blendstate &gt; &amp;values)</argsstring>
+        <name>blend_states</name>
+        <param>
+          <type>const psl::array&lt; <ref refid="classcore_1_1data_1_1material__t_1_1blendstate" kindref="compound">blendstate</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="466" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a992e2efcc2b3d807514ffc985657e55f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::defines</definition>
+        <argsstring>(const psl::array&lt; psl::string8_t &gt; &amp;values)</argsstring>
+        <name>defines</name>
+        <param>
+          <type>const psl::array&lt; psl::string8_t &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="467" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a82f8c6a2a5ef5163cb616d7a5f0ec203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::cull_mode</definition>
+        <argsstring>(core::gfx::cullmode value)</argsstring>
+        <name>cull_mode</name>
+        <param>
+          <type>core::gfx::cullmode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="468" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a3a1f858f952a118d686a40e78456b919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::depth_compare_op</definition>
+        <argsstring>(core::gfx::compare_op value)</argsstring>
+        <name>depth_compare_op</name>
+        <param>
+          <type>core::gfx::compare_op</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="469" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1aa97dda073f94116d894ca3cda0a81525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::render_layer</definition>
+        <argsstring>(uint32_t value)</argsstring>
+        <name>render_layer</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="470" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a779e80077439c6fd3061e2bd000f1111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::depth_test</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>depth_test</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="471" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ad533e7a1c81f2d58fe29619901f42710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::depth_write</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>depth_write</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="472" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a9abd6a3f8efdefdf76b280e28019cd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::wireframe</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>wireframe</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="473" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a5839dd18d67d4b64812f406edf79b924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::set</definition>
+        <argsstring>(const stage &amp;value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const stage &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="475" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="141" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a104f28b8ee21122f12b95be197d8a95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::set</definition>
+        <argsstring>(const blendstate &amp;value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1material__t_1_1blendstate" kindref="compound">blendstate</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="476" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="151" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a8cbdb8bc46251248e8adab18c753777f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::define</definition>
+        <argsstring>(psl::string8::view value)</argsstring>
+        <name>define</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="477" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a85417c0154fc2ac17883798420e64d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::erase</definition>
+        <argsstring>(const stage &amp;value)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>const stage &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="479" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="167" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ad97144402082fdbb5c1521ecabacec14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::erase</definition>
+        <argsstring>(const blendstate &amp;value)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>const <ref refid="classcore_1_1data_1_1material__t_1_1blendstate" kindref="compound">blendstate</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="480" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="174" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ac5eb92e6390668cb37a5eae1ea0053db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::undefine</definition>
+        <argsstring>(psl::string8::view value)</argsstring>
+        <name>undefine</name>
+        <param>
+          <type>psl::string8::view</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="481" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="181" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1a0c574becb8e28bd335504183a3a2b03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void material_t::from_shaders</definition>
+        <argsstring>(const psl::meta::library &amp;library, psl::array&lt; core::meta::shader * &gt; shaderMetas)</argsstring>
+        <name>from_shaders</name>
+        <param>
+          <type>const <ref refid="classpsl_1_1meta_1_1library" kindref="compound">psl::meta::library</ref> &amp;</type>
+          <declname>library</declname>
+        </param>
+        <param>
+          <type>psl::array&lt; <ref refid="classcore_1_1meta_1_1shader" kindref="compound">core::meta::shader</ref> * &gt;</type>
+          <declname>shaderMetas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="483" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/src/data/material.cpp" bodystart="187" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcore_1_1data_1_1material__t_1ad489daf959cde0d177ec9e4a8b0c5a1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void core::data::material_t::serialize</definition>
+        <argsstring>(S &amp;serializer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>S &amp;</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="487" column="6" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="487" bodyend="491"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a collection of resources that can be used to initialize a <ref refid="classcore_1_1ivk_1_1material__t" kindref="compound">core::ivk::material_t</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Material data describes a collection of textures, buffers, shaders, override parameters for these shaders, blend operations (such as opaque or transparent), render order offsets, and generic options of how this material <emphasis>should</emphasis> be rendered. It also contains facilities to set default values on buffers if needed. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" line="27" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/data/material.hpp" bodystart="26" bodyend="506"/>
+    <listofallmembers>
+      <member refid="classcore_1_1data_1_1material__t_1afc46183ac2674ba1aa37aef02894a424" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>blend_states</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1afc4e855ff82313d0ff1c442c0b461912" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>blend_states</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ac6995980b448e9d6265dc78cd4f2828e" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>cull_mode</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a82f8c6a2a5ef5163cb616d7a5f0ec203" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>cull_mode</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a8cbdb8bc46251248e8adab18c753777f" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>define</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a685f9331e19075bb811c549b5a297e5c" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>defines</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a992e2efcc2b3d807514ffc985657e55f" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>defines</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a96e08d7c41bf9bb5365a6aacba5f25ad" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_compare_op</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a3a1f858f952a118d686a40e78456b919" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_compare_op</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ab69cce94b34a4479df57da9bb93bf745" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_test</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a779e80077439c6fd3061e2bd000f1111" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_test</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ac4ed5787ef3ba17ea333a0730d720f10" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_write</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ad533e7a1c81f2d58fe29619901f42710" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>depth_write</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a85417c0154fc2ac17883798420e64d98" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>erase</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ad97144402082fdbb5c1521ecabacec14" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>erase</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a0c574becb8e28bd335504183a3a2b03b" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>from_shaders</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a6a7757b4e1a10bfdc0b157cbc77d9bc7" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_BlendStates</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a222426a9e1ce0eb7c5aaec6c146daec3" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_Culling</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a9d65d68fe6a50be5c80d9a2496b0e777" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_Defines</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a65f3a6bf30385f832c363764a1ed3e5b" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_DepthCompareOp</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a5f59af542dad7b91f4f070f857239368" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_DepthTest</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a2d3ecd6e25742797c53a13cd3724124f" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_DepthWrite</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a69c303dd0d4584fb87045a2cdd8965ca" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_RenderLayer</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1adf50fcc7d0e772939f544b49c3ce2bf7" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_Stage</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a17d3f8d4221f752bcc25bf30de98c138" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>m_Wireframe</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ac33412e42864d29d54027dd9860112fd" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>MATERIAL_DATA</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a132091e025b7c79c6f4c696fb514cda6" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>material_t</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1aed17507993e86a2e7ee62a8e082574ef" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>material_t</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ad159818e96d184592a9be9c135afab17" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>material_t</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a141b7aa240259dec99d437dc4f09d03c" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a5517e7d8bf9ce1b4b982e3450d5cdebd" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>operator=</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ae6e4002148765f114da9fe1b5c64547d" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>psl::serialization::accessor</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a78e7ee195a6a8bcdbb3442d99110c990" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>render_layer</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1aa97dda073f94116d894ca3cda0a81525" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>render_layer</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ad95b8dbca17c3a713cd4406c44af54c2" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>serialization_name</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ad489daf959cde0d177ec9e4a8b0c5a1d" prot="private" virt="non-virtual"><scope>core::data::material_t</scope><name>serialize</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a5839dd18d67d4b64812f406edf79b924" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>set</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a104f28b8ee21122f12b95be197d8a95a" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>set</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ae811fbd1326c48fdb40dcf6d47145078" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>stages</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1adc3489e2a3de946c3a332ed459f51319" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>stages</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1ac5eb92e6390668cb37a5eae1ea0053db" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>undefine</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a1b6f3feab9acac455a80fef40956ef37" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>wireframe</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1a9abd6a3f8efdefdf76b280e28019cd50" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>wireframe</name></member>
+      <member refid="classcore_1_1data_1_1material__t_1aad2c109e4260896c5a3aadbc5b166947" prot="public" virt="non-virtual"><scope>core::data::material_t</scope><name>~material_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

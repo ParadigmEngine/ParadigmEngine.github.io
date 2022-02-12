@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceutility_1_1application_1_1path" kind="namespace" language="C++">
+    <compoundname>utility::application::path</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a05fa6971046a4118b66cbf2e9704b963" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::project</definition>
+        <argsstring></argsstring>
+        <name>project</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a4e9a3a1197bb19854671a376eae0d648" kindref="member">get_path</ref>()</initializer>
+        <briefdescription>
+<para>location where the application is being ran from, check <ref refid="namespaceutility_1_1application_1_1path_1a4e9a3a1197bb19854671a376eae0d648" kindref="member">utility::application::path::get_path()</ref> for more info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="18" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a05fa6971046a4118b66cbf2e9704b963" kindref="member">project</ref> + &quot;data/&quot;</initializer>
+        <briefdescription>
+<para>data path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="20" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1aa2df4f518d29dc4b1ff3254e0740cdf4" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::library</definition>
+        <argsstring></argsstring>
+        <name>library</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a05fa6971046a4118b66cbf2e9704b963" kindref="member">project</ref> + &quot;library/&quot;</initializer>
+        <briefdescription>
+<para>library path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="22" column="14" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1aff13b003e78c65225daa1666462c65c7" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;settings/&quot;</initializer>
+        <briefdescription>
+<para>settings path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="24" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a4f9ca556f13fee6f81c01c42fdf34218" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;textures/&quot;</initializer>
+        <briefdescription>
+<para>textures path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="26" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a7ce8a457a7d453824b3d05e5b23eb1ba" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::materials</definition>
+        <argsstring></argsstring>
+        <name>materials</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;materials/&quot;</initializer>
+        <briefdescription>
+<para>materials path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="28" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1ad366a5ccbf82c507cd386330256f4535" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::models</definition>
+        <argsstring></argsstring>
+        <name>models</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;models/&quot;</initializer>
+        <briefdescription>
+<para>models path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="30" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a23f26a42d10b25593421af414da562f1" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::shaders</definition>
+        <argsstring></argsstring>
+        <name>shaders</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;shaders/&quot;</initializer>
+        <briefdescription>
+<para>shaders path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="32" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1addd9957ee3a186dbf506ed76b8b52f89" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::samplers</definition>
+        <argsstring></argsstring>
+        <name>samplers</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;samplers/&quot;</initializer>
+        <briefdescription>
+<para>samplers path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="34" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceutility_1_1application_1_1path_1a249429658973406ff0c019aeb6ba8b7f" prot="public" static="yes" mutable="no">
+        <type>const psl::string</type>
+        <definition>const psl::string utility::application::path::worlds</definition>
+        <argsstring></argsstring>
+        <name>worlds</name>
+        <initializer>= <ref refid="namespaceutility_1_1application_1_1path_1a76e6851d039a4c80b03fc2b8469a8143" kindref="member">data</ref> + &quot;worlds/&quot;</initializer>
+        <briefdescription>
+<para>worlds path on this platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="36" column="26" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceutility_1_1application_1_1path_1a4e9a3a1197bb19854671a376eae0d648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>psl::string</type>
+        <definition>psl::string utility::application::path::get_path</definition>
+        <argsstring>()</argsstring>
+        <name>get_path</name>
+        <briefdescription>
+<para>gets the path of the current application. This path is platform specific. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>check if returning an empty path for android is correct behaviour. </para>
+</xrefdescription></xrefsect><simplesect kind="return"><para>an absolute path where the application is being ran from. </para>
+</simplesect>
+<simplesect kind="note"><para>even though the path is absolute, don&apos;t expect it to look like a windows path on other platforms. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="14" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/src/application_utils.cpp" bodystart="16" bodyend="37" declfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" declline="14" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains application specific information and utilities </para>
+    </briefdescription>
+    <detaileddescription>
+<para>this namespace contains application specific information and utilities that might help you to find out information of its location, specific datapaths, etc... </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/application_utils.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstd_1_1is__placeholder_3_01internals_1_1event_1_1placeholder_3_01_n_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::is_placeholder&lt; internals::event::placeholder&lt; N &gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">integral_constant&lt; int, N &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" line="372" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/event.hpp" bodystart="371" bodyend="372"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

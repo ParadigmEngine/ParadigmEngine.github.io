@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vk_2compute_8hpp" kind="file" language="C++">
+    <compoundname>compute.hpp</compoundname>
+    <includes refid="fwd_2resource_2resource_8hpp" local="yes">fwd/resource/resource.hpp</includes>
+    <includes refid="core_2inc_2fwd_2vk_2buffer_8hpp" local="yes">fwd/vk/buffer.hpp</includes>
+    <includes refid="fwd_2vk_2texture_8hpp" local="yes">fwd/vk/texture.hpp</includes>
+    <includes refid="array_8hpp" local="yes">psl/array.hpp</includes>
+    <includes refid="array__view_8hpp" local="yes">psl/array_view.hpp</includes>
+    <includes refid="ivk_8hpp" local="yes">ivk.hpp</includes>
+    <includedby refid="vk_2compute_8cpp" local="yes">/home/runner/work/paradigm/paradigm/core/src/vk/compute.cpp</includedby>
+    <incdepgraph>
+      <node id="30">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>iomanip</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/compute.hpp</label>
+        <link refid="vk_2compute_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>assert.h</label>
+      </node>
+      <node id="11">
+        <label>iterator</label>
+      </node>
+      <node id="7">
+        <label>psl/array_view.hpp</label>
+        <link refid="array__view_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>variant</label>
+      </node>
+      <node id="28">
+        <label>cassert</label>
+      </node>
+      <node id="13">
+        <label>psl/platform_def.hpp</label>
+        <link refid="platform__def_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>numeric</label>
+      </node>
+      <node id="26">
+        <label>psl/template_utils.hpp</label>
+        <link refid="template__utils_8hpp_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>unordered_set</label>
+      </node>
+      <node id="3">
+        <label>fwd/vk/buffer.hpp</label>
+        <link refid="core_2inc_2fwd_2vk_2buffer_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="14">
+        <label>psl/string_utils.hpp</label>
+        <link refid="string__utils_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="25">
+        <label>string_view</label>
+      </node>
+      <node id="36">
+        <label>psl/logging.hpp</label>
+        <link refid="psl_2inc_2psl_2logging_8hpp_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>bitset</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="29">
+        <label>signal.h</label>
+      </node>
+      <node id="9">
+        <label>array</label>
+      </node>
+      <node id="24">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>fwd/resource/resource.hpp</label>
+        <link refid="fwd_2resource_2resource_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>cstddef</label>
+      </node>
+      <node id="5">
+        <label>psl/array.hpp</label>
+        <link refid="array_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>psl/static_array.hpp</label>
+        <link refid="static__array_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ivk.hpp</label>
+        <link refid="ivk_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>type_traits</label>
+      </node>
+      <node id="4">
+        <label>fwd/vk/texture.hpp</label>
+        <link refid="fwd_2vk_2texture_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>algorithm</label>
+      </node>
+      <node id="16">
+        <label>stdio.h</label>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="35">
+        <label>vulkan/vulkan.hpp</label>
+      </node>
+      <node id="22">
+        <label>memory</label>
+      </node>
+      <node id="27">
+        <label>psl/assertions.hpp</label>
+        <link refid="assertions_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>psl/ustring.hpp</label>
+        <link refid="ustring_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/runner/work/paradigm/paradigm/core/inc/vk/compute.hpp</label>
+        <link refid="vk_2compute_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/paradigm/paradigm/core/src/vk/compute.cpp</label>
+        <link refid="vk_2compute_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcore_1_1ivk_1_1compute" prot="public">core::ivk::compute</innerclass>
+    <innernamespace refid="namespacecore">core</innernamespace>
+    <innernamespace refid="namespacecore_1_1ivk">core::ivk</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwd/resource/resource.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwd/vk/buffer.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fwd/vk/texture.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/array.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;psl/array_view.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ivk.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecore_1_1ivk" kindref="compound">core::ivk</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">compute</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute()<sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~compute()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>compute&amp;<sp/>other)<sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute(compute&amp;&amp;<sp/>other)<sp/>noexcept<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>compute&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compute&amp;<sp/>operator=(compute&amp;&amp;<sp/>other)<sp/>noexcept<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispatch(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_groups_x,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_groups_y,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_groups_z<sp/>=<sp/>1u)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>psl::array&lt;core::resource::handle&lt;texture_t&gt;&gt;<sp/>textures()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;<ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;buffer_t&gt;&gt;<sp/>buffers()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;texture_t&gt;&gt;&gt;<sp/>m_InputTextures;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;buffer_t&gt;&gt;&gt;<sp/>m_InputBuffers;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;texture_t&gt;&gt;&gt;<sp/>m_OutputTextures;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacepsl" kindref="compound">psl</ref>::array&lt;std::pair&lt;uint32_t,<sp/><ref refid="namespacecore" kindref="compound">core</ref>::resource::handle&lt;buffer_t&gt;&gt;&gt;<sp/>m_OutputBuffers;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk::CommandBuffer<sp/>m_CommandBuffer;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>core::ivk</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/compute.hpp"/>
+  </compounddef>
+</doxygen>

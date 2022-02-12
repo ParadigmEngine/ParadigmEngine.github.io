@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1serialization_1_1invocable__wrapper" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>psl::serialization::invocable_wrapper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">psl::serialization::invocable_wrapper_base</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename INV</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpsl_1_1serialization_1_1invocable__wrapper_1a90fa9a882ae6d6bc5b942df8587fd445" prot="public" static="no" mutable="no">
+        <type>INV</type>
+        <definition>INV psl::serialization::invocable_wrapper&lt; INV &gt;::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="60" column="5" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1invocable__wrapper_1a794e989ec353b761e73b30f26de5de1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::serialization::invocable_wrapper&lt; INV &gt;::invocable_wrapper</definition>
+        <argsstring>(INV &amp;&amp;inv)</argsstring>
+        <name>invocable_wrapper</name>
+        <param>
+          <type>INV &amp;&amp;</type>
+          <declname>inv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="52" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1serialization_1_1invocable__wrapper_1acbc704bcb8a1f4f4d555482ec087c42d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* psl::serialization::invocable_wrapper&lt; INV &gt;::operator()</definition>
+        <argsstring>() override</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="58" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" line="50" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/serialization/serializer.hpp" bodystart="49" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1serialization_1_1invocable__wrapper_1a794e989ec353b761e73b30f26de5de1d" prot="public" virt="non-virtual"><scope>psl::serialization::invocable_wrapper</scope><name>invocable_wrapper</name></member>
+      <member refid="classpsl_1_1serialization_1_1invocable__wrapper_1acbc704bcb8a1f4f4d555482ec087c42d" prot="public" virt="non-virtual"><scope>psl::serialization::invocable_wrapper</scope><name>operator()</name></member>
+      <member refid="classpsl_1_1serialization_1_1invocable__wrapper_1a90fa9a882ae6d6bc5b942df8587fd445" prot="public" virt="non-virtual"><scope>psl::serialization::invocable_wrapper</scope><name>t</name></member>
+      <member refid="classpsl_1_1serialization_1_1invocable__wrapper__base_1a1d592471f9e5804eb3219fc8263d0521" prot="public" virt="virtual"><scope>psl::serialization::invocable_wrapper</scope><name>~invocable_wrapper_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

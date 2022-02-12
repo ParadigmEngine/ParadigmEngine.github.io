@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstbtt__vertex" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_vertex</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__vertex_1a81773edbe760d0e090561a3c1e86c919" prot="public" static="no" mutable="no">
+        <type>stbtt_vertex_type</type>
+        <definition>stbtt_vertex_type stbtt_vertex::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="776" column="19" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a9052065ca544b63d537325b246928cfc" prot="public" static="no" mutable="no">
+        <type>stbtt_vertex_type</type>
+        <definition>stbtt_vertex_type stbtt_vertex::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="776" column="21" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a43835489e2a151b31cb100d20f8adeae" prot="public" static="no" mutable="no">
+        <type>stbtt_vertex_type</type>
+        <definition>stbtt_vertex_type stbtt_vertex::cx</definition>
+        <argsstring></argsstring>
+        <name>cx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="776" column="23" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a5610d6335aa6962d970fc7fd2225545e" prot="public" static="no" mutable="no">
+        <type>stbtt_vertex_type</type>
+        <definition>stbtt_vertex_type stbtt_vertex::cy</definition>
+        <argsstring></argsstring>
+        <name>cy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="776" column="26" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1aa325b3707b88e7e104c0de46bb2bf395" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_vertex::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="777" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a8bd328747e8ea018612960a52e3e3ede" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_vertex::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="777" column="20" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="775" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="774" bodyend="778"/>
+    <listofallmembers>
+      <member refid="structstbtt__vertex_1a43835489e2a151b31cb100d20f8adeae" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cx</name></member>
+      <member refid="structstbtt__vertex_1a5610d6335aa6962d970fc7fd2225545e" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cy</name></member>
+      <member refid="structstbtt__vertex_1a8bd328747e8ea018612960a52e3e3ede" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>padding</name></member>
+      <member refid="structstbtt__vertex_1aa325b3707b88e7e104c0de46bb2bf395" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>type</name></member>
+      <member refid="structstbtt__vertex_1a81773edbe760d0e090561a3c1e86c919" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>x</name></member>
+      <member refid="structstbtt__vertex_1a9052065ca544b63d537325b246928cfc" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

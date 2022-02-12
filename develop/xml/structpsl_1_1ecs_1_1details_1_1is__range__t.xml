@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1details_1_1is__range__t" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::details::is_range_t</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">false_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" line="37" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/entity.hpp" bodystart="36" bodyend="37"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

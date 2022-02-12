@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstbtt____bitmap" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt__bitmap</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt____bitmap_1afbd607426f0a457b1a871ed902eeb926" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt__bitmap::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="950" column="5" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____bitmap_1a2afc802e26e9f1dda897ac16ecfff10e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt__bitmap::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="950" column="7" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____bitmap_1a48ee6b550ee4f1d85bfc32c62c0e9a98" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt__bitmap::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="950" column="9" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt____bitmap_1ae6be77625faf55b110eaaffde5c7733c" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* stbtt__bitmap::pixels</definition>
+        <argsstring></argsstring>
+        <name>pixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="951" column="15" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="951" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" line="949" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/stdb_truetype.hpp" bodystart="948" bodyend="952"/>
+    <listofallmembers>
+      <member refid="structstbtt____bitmap_1a2afc802e26e9f1dda897ac16ecfff10e" prot="public" virt="non-virtual"><scope>stbtt__bitmap</scope><name>h</name></member>
+      <member refid="structstbtt____bitmap_1ae6be77625faf55b110eaaffde5c7733c" prot="public" virt="non-virtual"><scope>stbtt__bitmap</scope><name>pixels</name></member>
+      <member refid="structstbtt____bitmap_1a48ee6b550ee4f1d85bfc32c62c0e9a98" prot="public" virt="non-virtual"><scope>stbtt__bitmap</scope><name>stride</name></member>
+      <member refid="structstbtt____bitmap_1afbd607426f0a457b1a871ed902eeb926" prot="public" virt="non-virtual"><scope>stbtt__bitmap</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

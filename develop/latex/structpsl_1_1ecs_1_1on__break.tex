@@ -1,0 +1,26 @@
+\hypertarget{structpsl_1_1ecs_1_1on__break}{}\doxysection{psl\+::ecs\+::on\+\_\+break$<$ Ts $>$ Struct Template Reference}
+\label{structpsl_1_1ecs_1_1on__break}\index{psl::ecs::on\_break$<$ Ts $>$@{psl::ecs::on\_break$<$ Ts $>$}}
+
+
+specialized tag of {\ttfamily \mbox{\hyperlink{structpsl_1_1ecs_1_1on__remove}{on\+\_\+remove}}}  
+
+
+
+
+{\ttfamily \#include $<$selectors.\+hpp$>$}
+
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename... Ts$>$\newline
+struct psl\+::ecs\+::on\+\_\+break$<$ Ts $>$}
+
+Similarly to the {\ttfamily \mbox{\hyperlink{structpsl_1_1ecs_1_1on__combine}{on\+\_\+combine}}} tag, the \mbox{\hyperlink{structpsl_1_1ecs_1_1on__break}{on\+\_\+break}} that denotes a combination group, but instead of containing all recently combined components, it instead contains all those who recently broke connection. This can be ideal to use in a system (such as a render system), to erase draw calls. \textbackslash{}warn tags do not mean this component will be present in the pack, they are considered filter directives (or specialized filter directives). 
+
+Definition at line 51 of file selectors.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.\+hpp\end{DoxyCompactItemize}

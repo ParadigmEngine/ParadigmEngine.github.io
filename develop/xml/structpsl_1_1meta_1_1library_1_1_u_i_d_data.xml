@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1meta_1_1library_1_1_u_i_d_data" kind="struct" language="C++" prot="private">
+    <compoundname>psl::meta::library::UIDData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a224ac638f13b28f10587111989f57a3b" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classpsl_1_1meta_1_1file" kindref="compound">file</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;file&gt; psl::meta::library::UIDData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="326" column="17" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a8e9182207ac6b2cd3fd2045f64e8559d" prot="public" static="no" mutable="no">
+        <type>std::unordered_set&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref> &gt;</type>
+        <definition>std::unordered_set&lt;psl::UID&gt; psl::meta::library::UIDData::referencing</definition>
+        <argsstring></argsstring>
+        <name>referencing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="327" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1afbf81f74dc5c53c0b4a6053c7061af20" prot="public" static="no" mutable="no">
+        <type>std::unordered_set&lt; <ref refid="structpsl_1_1_u_i_d" kindref="compound">psl::UID</ref> &gt;</type>
+        <definition>std::unordered_set&lt;psl::UID&gt; psl::meta::library::UIDData::referencedBy</definition>
+        <argsstring></argsstring>
+        <name>referencedBy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="328" column="20" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1ae9f38d7010ce927c76a1002a2a998c13" prot="public" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::meta::library::UIDData::file_data</definition>
+        <argsstring></argsstring>
+        <name>file_data</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="329" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a34b08e9e0aaeb845eb5e99eec0146b5d" prot="public" static="no" mutable="no">
+        <type>psl::string8_t</type>
+        <definition>psl::string8_t psl::meta::library::UIDData::readableName</definition>
+        <argsstring></argsstring>
+        <name>readableName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="332" column="16" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1ae0833dfc0e556d229de84f5818e0558d" prot="public" static="no" mutable="no">
+        <type>std::bitset&lt; 3 &gt;</type>
+        <definition>std::bitset&lt;3&gt; psl::meta::library::UIDData::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="334" column="13" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a41de7a35abef55e3ab810ce8da405054" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::meta::library::UIDData::UIDData</definition>
+        <argsstring>(std::unique_ptr&lt; file &gt; &amp;&amp;dataPtr)</argsstring>
+        <name>UIDData</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classpsl_1_1meta_1_1file" kindref="compound">file</ref> &gt; &amp;&amp;</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="322" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="322" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a9812dd225d57f0a36518d972beccd68b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::meta::library::UIDData::UIDData</definition>
+        <argsstring>(file *&amp;&amp;dataPtr)</argsstring>
+        <name>UIDData</name>
+        <param>
+          <type><ref refid="classpsl_1_1meta_1_1file" kindref="compound">file</ref> *&amp;&amp;</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="323" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="323" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a52883f216e0652d279c632934546044a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::meta::library::UIDData::UIDData</definition>
+        <argsstring>()</argsstring>
+        <name>UIDData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="324" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="324" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" line="321" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/library.hpp" bodystart="320" bodyend="338"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a224ac638f13b28f10587111989f57a3b" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>data</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1ae9f38d7010ce927c76a1002a2a998c13" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>file_data</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1ae0833dfc0e556d229de84f5818e0558d" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>flags</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a34b08e9e0aaeb845eb5e99eec0146b5d" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>readableName</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1afbf81f74dc5c53c0b4a6053c7061af20" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>referencedBy</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a8e9182207ac6b2cd3fd2045f64e8559d" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>referencing</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a41de7a35abef55e3ab810ce8da405054" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>UIDData</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a9812dd225d57f0a36518d972beccd68b" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>UIDData</name></member>
+      <member refid="structpsl_1_1meta_1_1library_1_1_u_i_d_data_1a52883f216e0652d279c632934546044a" prot="public" virt="non-virtual"><scope>psl::meta::library::UIDData</scope><name>UIDData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

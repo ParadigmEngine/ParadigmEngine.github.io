@@ -1,0 +1,203 @@
+\hypertarget{namespaceutility_1_1string}{}\doxysection{utility\+::string Namespace Reference}
+\label{namespaceutility_1_1string}\index{utility::string@{utility::string}}
+
+
+utility namespace to deal with psl\+::string operations.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\psl\+::string8\+\_\+t \mbox{\hyperlink{namespaceutility_1_1string_a3714175bb91ae28a40acdd52367ed675}{to\+\_\+hex}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em transforms the input value to a psl\+::string8\+\_\+t containing the hex characters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_aaf244cedfacacaee9878e1959b0da878}\label{namespaceutility_1_1string_aaf244cedfacacaee9878e1959b0da878}} 
+{\footnotesize template$<$typename T\+Out , typename T\+In $>$ }\\T\+Out {\bfseries lexical\+\_\+cast} (const T\+In \&in)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceutility_1_1string_a2cc2afd7074e14ac8d76f6580abee3c3}{from\+\_\+hex}} (const psl\+::string8\+\_\+t \&str)
+\begin{DoxyCompactList}\small\item\em cast the input string containing a hex value, to the given type \end{DoxyCompactList}\item 
+psl\+::string8\+\_\+t \mbox{\hyperlink{namespaceutility_1_1string_a8f9bf4e4eb0c0d0a66ee60688ebad366}{to\+\_\+upper}} (psl\+::string8\+::view str)
+\begin{DoxyCompactList}\small\item\em convert the given input string to capital letters (if possible). \end{DoxyCompactList}\item 
+psl\+::string8\+\_\+t \& \mbox{\hyperlink{namespaceutility_1_1string_ace061715cf87b53afc99cc1c8c8f6412}{to\+\_\+upper}} (psl\+::string8\+\_\+t \&str)
+\begin{DoxyCompactList}\small\item\em convert the given input string to capital letters (if possible). \end{DoxyCompactList}\item 
+psl\+::string8\+\_\+t \mbox{\hyperlink{namespaceutility_1_1string_a23a994fac13d018e20bceefe0bebb3d3}{to\+\_\+lower}} (psl\+::string8\+::view str)
+\begin{DoxyCompactList}\small\item\em convert the given input string to lowercase letters (if possible). \end{DoxyCompactList}\item 
+psl\+::string8\+\_\+t \& \mbox{\hyperlink{namespaceutility_1_1string_a8471bf76874b0819b648e6e3c1e15da7}{to\+\_\+lower}} (psl\+::string8\+\_\+t \&str)
+\begin{DoxyCompactList}\small\item\em convert the given input string to lowercase letters (if possible). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_affb1d501a791030dff68d6eadac11aa1}\label{namespaceutility_1_1string_affb1d501a791030dff68d6eadac11aa1}} 
+std\+::vector$<$ psl\+::string8\+::view $>$ \& {\bfseries split} (psl\+::string8\+::view s, psl\+::string8\+::view delimiter, std\+::vector$<$ psl\+::string8\+::view $>$ \&inout, bool ignore\+\_\+consecutive=false)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_aabbee3e6aadd02f18b5300a5185c081c}\label{namespaceutility_1_1string_aabbee3e6aadd02f18b5300a5185c081c}} 
+std\+::vector$<$ psl\+::string8\+::view $>$ {\bfseries split} (psl\+::string8\+::view s, psl\+::string8\+::view delimiter, bool ignore\+\_\+consecutive=true)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a76c2ae0789587df8698bd9cdaeb6f11f}\label{namespaceutility_1_1string_a76c2ae0789587df8698bd9cdaeb6f11f}} 
+std\+::vector$<$ psl\+::string16\+::view $>$ \& {\bfseries split} (psl\+::string16\+::view s, psl\+::string16\+::view delimiter, std\+::vector$<$ psl\+::string16\+::view $>$ \&inout)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_ae26249ccfaa0e7dc951de406f43b18d5}\label{namespaceutility_1_1string_ae26249ccfaa0e7dc951de406f43b18d5}} 
+std\+::vector$<$ psl\+::string16\+::view $>$ {\bfseries split} (psl\+::string16\+::view s, psl\+::string16\+::view delimiter)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a2ad7600df5d8065d82bd2b65d82e1032}\label{namespaceutility_1_1string_a2ad7600df5d8065d82bd2b65d82e1032}} 
+size\+\_\+t {\bfseries size} (const std\+::vector$<$ psl\+::string8\+::view $>$ \&values)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a27ab108ad1eceb1dc07813a4a614513d}\label{namespaceutility_1_1string_a27ab108ad1eceb1dc07813a4a614513d}} 
+psl\+::string16\+\_\+t \& {\bfseries erase\+\_\+consecutive} (psl\+::string16\+\_\+t \&str, psl\+::string16\+::view consecutive)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_aadec6830dc467d71f0c37bc4a486b98f}\label{namespaceutility_1_1string_aadec6830dc467d71f0c37bc4a486b98f}} 
+size\+\_\+t {\bfseries contains} (psl\+::string8\+::view s, psl\+::string8\+::view search)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_ad515f82943398fa563e448a33656b06c}\label{namespaceutility_1_1string_ad515f82943398fa563e448a33656b06c}} 
+size\+\_\+t {\bfseries count} (psl\+::string8\+::view s, psl\+::string8\+::view search)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a4af3db6a9e35da01b3ee503bc13c1b51}\label{namespaceutility_1_1string_a4af3db6a9e35da01b3ee503bc13c1b51}} 
+bool {\bfseries replace} (psl\+::string8\+\_\+t \&str, psl\+::string8\+::view from, psl\+::string8\+::view to)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_aca19ee433c589a33c2bd6f60c8959036}\label{namespaceutility_1_1string_aca19ee433c589a33c2bd6f60c8959036}} 
+bool {\bfseries replace\+\_\+all} (psl\+::string8\+\_\+t \&str, psl\+::string8\+::view from, psl\+::string8\+::view to)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a75f46718c4e21540cebd7218f1d12c56}\label{namespaceutility_1_1string_a75f46718c4e21540cebd7218f1d12c56}} 
+psl\+::string8\+\_\+t {\bfseries replace\+\_\+all} (psl\+::string8\+::view str, psl\+::string8\+::view from, psl\+::string8\+::view to)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a3125d52eade3451fdbecfff46f686ef8}\label{namespaceutility_1_1string_a3125d52eade3451fdbecfff46f686ef8}} 
+size\+\_\+t {\bfseries remove\+\_\+all} (psl\+::string8\+\_\+t \&str, psl\+::string8\+::view pattern)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a6753ec204adc5bbc590b77a0c8e0e56b}\label{namespaceutility_1_1string_a6753ec204adc5bbc590b77a0c8e0e56b}} 
+size\+\_\+t {\bfseries remove\+\_\+all} (psl\+::string8\+\_\+t \&str, psl\+::string8\+::view pattern, size\+\_\+t start\+Offset, size\+\_\+t \&end\+Offset)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_afbba3caafe13dd375091add22086315a}\label{namespaceutility_1_1string_afbba3caafe13dd375091add22086315a}} 
+size\+\_\+t {\bfseries remove\+\_\+all} (psl\+::string8\+\_\+t \&str, const std\+::vector$<$ psl\+::string8\+::view $>$ \&patterns, size\+\_\+t start\+Offset, size\+\_\+t \&end\+Offset)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a42106afaa149587b3293c13b15ac579c}\label{namespaceutility_1_1string_a42106afaa149587b3293c13b15ac579c}} 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries locations} (psl\+::string8\+::view s, psl\+::string8\+::view search)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a212b6466a542d322867090b3a4c5ba99}\label{namespaceutility_1_1string_a212b6466a542d322867090b3a4c5ba99}} 
+psl\+::string\+\_\+view\+::size\+\_\+type {\bfseries rfind\+\_\+first\+\_\+of} (psl\+::string\+\_\+view source, psl\+::string\+\_\+view tokens, const psl\+::string\+\_\+view\+::size\+\_\+type offset=psl\+::string\+\_\+view\+::npos)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a1d298cf2186eda5607b886418f101d7d}\label{namespaceutility_1_1string_a1d298cf2186eda5607b886418f101d7d}} 
+psl\+::string\+\_\+view\+::size\+\_\+type {\bfseries rfind\+\_\+first\+\_\+of} (psl\+::string\+\_\+view source, psl\+::char\+\_\+t token, const psl\+::string\+\_\+view\+::size\+\_\+type offset=psl\+::string\+\_\+view\+::npos)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a426a02c9eb32d5616853ccc800e40e3d}\label{namespaceutility_1_1string_a426a02c9eb32d5616853ccc800e40e3d}} 
+psl\+::string\+\_\+view\+::size\+\_\+type {\bfseries rfind\+\_\+first\+\_\+not\+\_\+of} (psl\+::string\+\_\+view source, psl\+::string\+\_\+view tokens, const psl\+::string\+\_\+view\+::size\+\_\+type offset=psl\+::string\+\_\+view\+::npos)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a1d66c144cab68189aa0c25f0e0ddc01f}\label{namespaceutility_1_1string_a1d66c144cab68189aa0c25f0e0ddc01f}} 
+psl\+::string\+\_\+view\+::size\+\_\+type {\bfseries rfind\+\_\+first\+\_\+not\+\_\+of} (psl\+::string\+\_\+view source, psl\+::char\+\_\+t token, const psl\+::string\+\_\+view\+::size\+\_\+type offset=psl\+::string\+\_\+view\+::npos)
+\item 
+\mbox{\Hypertarget{namespaceutility_1_1string_a7ade7e19db1d8cd584fd6d49a9c4b100}\label{namespaceutility_1_1string_a7ade7e19db1d8cd584fd6d49a9c4b100}} 
+{\footnotesize template$<$typename... Args$>$ }\\psl\+::string8\+\_\+t {\bfseries format} (const psl\+::string8\+\_\+t \&target, Args... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceutility_1_1string_a3714175bb91ae28a40acdd52367ed675}\label{namespaceutility_1_1string_a3714175bb91ae28a40acdd52367ed675}} 
+\index{utility::string@{utility::string}!to\_hex@{to\_hex}}
+\index{to\_hex@{to\_hex}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{to\_hex()}{to\_hex()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+psl\+::string8\+\_\+t utility\+::string\+::to\+\_\+hex (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & the value to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the hex value. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file string\+\_\+utils.\+hpp.
+
+\mbox{\Hypertarget{namespaceutility_1_1string_a2cc2afd7074e14ac8d76f6580abee3c3}\label{namespaceutility_1_1string_a2cc2afd7074e14ac8d76f6580abee3c3}} 
+\index{utility::string@{utility::string}!from\_hex@{from\_hex}}
+\index{from\_hex@{from\_hex}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{from\_hex()}{from\_hex()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T utility\+::string\+::from\+\_\+hex (\begin{DoxyParamCaption}\item[{const psl\+::string8\+\_\+t \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type to convert the output to. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & the string containing the hex value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object of type T that has been constructed using the hex value. 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file string\+\_\+utils.\+hpp.
+
+\mbox{\Hypertarget{namespaceutility_1_1string_a8f9bf4e4eb0c0d0a66ee60688ebad366}\label{namespaceutility_1_1string_a8f9bf4e4eb0c0d0a66ee60688ebad366}} 
+\index{utility::string@{utility::string}!to\_upper@{to\_upper}}
+\index{to\_upper@{to\_upper}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{to\_upper()}{to\_upper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string32\+\_\+t utility\+::string\+::to\+\_\+upper (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & the string to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed string. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file string\+\_\+utils.\+hpp.
+
+\mbox{\Hypertarget{namespaceutility_1_1string_ace061715cf87b53afc99cc1c8c8f6412}\label{namespaceutility_1_1string_ace061715cf87b53afc99cc1c8c8f6412}} 
+\index{utility::string@{utility::string}!to\_upper@{to\_upper}}
+\index{to\_upper@{to\_upper}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{to\_upper()}{to\_upper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::string32\+\_\+t \& utility\+::string\+::to\+\_\+upper (\begin{DoxyParamCaption}\item[{psl\+::string8\+\_\+t \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & the string to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed string. 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file string\+\_\+utils.\+hpp.
+
+\mbox{\Hypertarget{namespaceutility_1_1string_a23a994fac13d018e20bceefe0bebb3d3}\label{namespaceutility_1_1string_a23a994fac13d018e20bceefe0bebb3d3}} 
+\index{utility::string@{utility::string}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily psl\+::string32\+\_\+t utility\+::string\+::to\+\_\+lower (\begin{DoxyParamCaption}\item[{psl\+::string8\+::view}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & the string to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed string. 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file string\+\_\+utils.\+hpp.
+
+\mbox{\Hypertarget{namespaceutility_1_1string_a8471bf76874b0819b648e6e3c1e15da7}\label{namespaceutility_1_1string_a8471bf76874b0819b648e6e3c1e15da7}} 
+\index{utility::string@{utility::string}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!utility::string@{utility::string}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily psl\+::string32\+\_\+t \& utility\+::string\+::to\+\_\+lower (\begin{DoxyParamCaption}\item[{psl\+::string8\+\_\+t \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & the string to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed string. 
+\end{DoxyReturn}
+
+
+Definition at line 179 of file string\+\_\+utils.\+hpp.
+

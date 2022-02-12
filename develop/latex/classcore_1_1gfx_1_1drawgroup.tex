@@ -1,0 +1,57 @@
+\hypertarget{classcore_1_1gfx_1_1drawgroup}{}\doxysection{core\+::gfx\+::drawgroup Class Reference}
+\label{classcore_1_1gfx_1_1drawgroup}\index{core::gfx::drawgroup@{core::gfx::drawgroup}}
+
+
+a collection of draw instructions to be recorded and sent to the G\+PU.  
+
+
+
+
+{\ttfamily \#include $<$drawgroup.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_abc5bf246a537e982cf858f0d74567d31}\label{classcore_1_1gfx_1_1drawgroup_abc5bf246a537e982cf858f0d74567d31}} 
+{\bfseries drawgroup} (const \mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a7ffd6e2a47b0826b03451c40da045653}\label{classcore_1_1gfx_1_1drawgroup_a7ffd6e2a47b0826b03451c40da045653}} 
+{\bfseries drawgroup} (\mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a40a049d254222b1c2c1bf4b9afe5799c}\label{classcore_1_1gfx_1_1drawgroup_a40a049d254222b1c2c1bf4b9afe5799c}} 
+\mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a43ddcb9854a5df703370b581a406df1b}\label{classcore_1_1gfx_1_1drawgroup_a43ddcb9854a5df703370b581a406df1b}} 
+\mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1gfx_1_1drawgroup}{drawgroup}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a72b05841326aa3ffa9b5f3fa2dc30828}\label{classcore_1_1gfx_1_1drawgroup_a72b05841326aa3ffa9b5f3fa2dc30828}} 
+const drawlayer \& {\bfseries layer} (const psl\+::string \&layer, uint32\+\_\+t priority, uint32\+\_\+t extent) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a21aedff0e287eddfc4fbf37fbed4e086}\label{classcore_1_1gfx_1_1drawgroup_a21aedff0e287eddfc4fbf37fbed4e086}} 
+bool {\bfseries contains} (const psl\+::string \&layer) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a9c4bb0306be87a8cece20ee56f02fb35}\label{classcore_1_1gfx_1_1drawgroup_a9c4bb0306be87a8cece20ee56f02fb35}} 
+std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ const drawlayer $>$ $>$ {\bfseries get} (const psl\+::string \&layer) const noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_ab19669483db6175eead2d3d7753fb9f8}\label{classcore_1_1gfx_1_1drawgroup_ab19669483db6175eead2d3d7753fb9f8}} 
+bool {\bfseries priority} (drawlayer \&layer, uint32\+\_\+t priority) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a91c1f96718995a1f4c4d7f28ed672d1b}\label{classcore_1_1gfx_1_1drawgroup_a91c1f96718995a1f4c4d7f28ed672d1b}} 
+drawcall \& {\bfseries add} (const drawlayer \&layer, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1gfx_1_1bundle}{core\+::gfx\+::bundle}} $>$ \mbox{\hyperlink{classcore_1_1gfx_1_1bundle}{bundle}}) noexcept
+\item 
+\mbox{\Hypertarget{classcore_1_1gfx_1_1drawgroup_a0a4ee7f88d4197e25258d12b2e9b55d6}\label{classcore_1_1gfx_1_1drawgroup_a0a4ee7f88d4197e25258d12b2e9b55d6}} 
+std\+::optional$<$ std\+::reference\+\_\+wrapper$<$ drawcall $>$ $>$ {\bfseries get} (const drawlayer \&layer, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1gfx_1_1bundle}{core\+::gfx\+::bundle}} $>$ \mbox{\hyperlink{classcore_1_1gfx_1_1bundle}{bundle}}) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+describes a group of various core\+::gfx\+::drawcalls, ordered by core\+::gfx\+::drawlayers. these are then pinned to a set of possible outputs (swapchain or framebuffer) which will be used by the render to order and output them. 
+
+Definition at line 33 of file drawgroup.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/gfx/drawgroup.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/gfx/drawgroup.\+cpp\end{DoxyCompactItemize}

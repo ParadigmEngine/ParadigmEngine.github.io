@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcore_1_1ivk_1_1context_1_1_memory" kind="struct" language="C++" prot="private">
+    <compoundname>core::ivk::context::Memory</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_1_1ivk_1_1context_1_1_memory_1ab7cff2a84fca2381667ee7981bea5393" prot="public" static="no" mutable="no">
+        <type>vk::DeviceSize</type>
+        <definition>vk::DeviceSize core::ivk::context::Memory::maxMemory</definition>
+        <argsstring></argsstring>
+        <name>maxMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" line="257" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_1_1ivk_1_1context_1_1_memory_1a651844440be0efe7d1288f628a110016" prot="public" static="no" mutable="no">
+        <type>vk::DeviceSize</type>
+        <definition>vk::DeviceSize core::ivk::context::Memory::availableMemory</definition>
+        <argsstring></argsstring>
+        <name>availableMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" line="258" column="16" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" line="256" column="1" bodyfile="/home/runner/work/paradigm/paradigm/core/inc/vk/context.hpp" bodystart="255" bodyend="259"/>
+    <listofallmembers>
+      <member refid="structcore_1_1ivk_1_1context_1_1_memory_1a651844440be0efe7d1288f628a110016" prot="public" virt="non-virtual"><scope>core::ivk::context::Memory</scope><name>availableMemory</name></member>
+      <member refid="structcore_1_1ivk_1_1context_1_1_memory_1ab7cff2a84fca2381667ee7981bea5393" prot="public" virt="non-virtual"><scope>core::ivk::context::Memory</scope><name>maxMemory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

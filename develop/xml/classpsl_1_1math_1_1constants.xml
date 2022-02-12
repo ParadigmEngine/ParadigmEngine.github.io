@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1math_1_1constants" kind="class" language="C++" prot="public">
+    <compoundname>psl::math::constants</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename precision_t</type>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpsl_1_1math_1_1constants_1acc7c91ea0b66f4a4bdf0d1a7818c8369" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::constants&lt; precision_t &gt;::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>{static_cast&lt;precision_t&gt;(
+		  3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="10" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1math_1_1constants_1a657b7e2cd9a289f8a0f55e6918f9cb78" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::constants&lt; precision_t &gt;::DEG</definition>
+        <argsstring></argsstring>
+        <name>DEG</name>
+        <initializer>{precision_t {180} / PI}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="12" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpsl_1_1math_1_1constants_1ae68c6851a5c9c4fefd768056b38641fb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr precision_t</type>
+        <definition>constexpr precision_t psl::math::constants&lt; precision_t &gt;::RAD</definition>
+        <argsstring></argsstring>
+        <name>RAD</name>
+        <initializer>{PI / precision_t {180}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="13" column="30" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" line="8" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/math/utility.hpp" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1math_1_1constants_1a657b7e2cd9a289f8a0f55e6918f9cb78" prot="public" virt="non-virtual"><scope>psl::math::constants</scope><name>DEG</name></member>
+      <member refid="classpsl_1_1math_1_1constants_1acc7c91ea0b66f4a4bdf0d1a7818c8369" prot="public" virt="non-virtual"><scope>psl::math::constants</scope><name>PI</name></member>
+      <member refid="classpsl_1_1math_1_1constants_1ae68c6851a5c9c4fefd768056b38641fb" prot="public" virt="non-virtual"><scope>psl::math::constants</scope><name>RAD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

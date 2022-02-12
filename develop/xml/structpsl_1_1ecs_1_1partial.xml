@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1ecs_1_1partial" kind="struct" language="C++" prot="public">
+    <compoundname>psl::ecs::partial</compoundname>
+    <includes refid="selectors_8hpp" local="no">selectors.hpp</includes>
+    <briefdescription>
+<para>allows packs to exist in a partial state </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Special tag type that signifies that a pack can be split up into smaller sub-packs by the scheduler when ticking systems </para>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp" line="92" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/ecs/selectors.hpp" bodystart="91" bodyend="92"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

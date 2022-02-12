@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpsl_1_1format_1_1parser" kind="class" language="C++" prot="public">
+    <compoundname>psl::format::parser</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1a2f9f10f315c3e158dde89fa29b8ef7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::parser::parser</definition>
+        <argsstring>()=default</argsstring>
+        <name>parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1acdb90f9e98d24e36ab0ada9bca06d2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::parser::~parser</definition>
+        <argsstring>()=default</argsstring>
+        <name>~parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1ad1d5bdb8269bd5c1f3e74f01526094aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::parser::parser</definition>
+        <argsstring>(const parser &amp;other)=default</argsstring>
+        <name>parser</name>
+        <param>
+          <type>const parser &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1a0400a46367a2e713d30b52021230c65a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::format::parser::parser</definition>
+        <argsstring>(parser &amp;&amp;other) noexcept=default</argsstring>
+        <name>parser</name>
+        <param>
+          <type>parser &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1ade40d3c1995e4806365e96b2fe8443c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>parser &amp;</type>
+        <definition>parser&amp; psl::format::parser::operator=</definition>
+        <argsstring>(const parser &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const parser &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classpsl_1_1format_1_1parser_1adc9d51273d3047981abf39de9fd67c9e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>parser &amp;</type>
+        <definition>parser&amp; psl::format::parser::operator=</definition>
+        <argsstring>(parser &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>parser &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="34" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" line="26" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/format2.hpp" bodystart="25" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classpsl_1_1format_1_1parser_1ade40d3c1995e4806365e96b2fe8443c9" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1format_1_1parser_1adc9d51273d3047981abf39de9fd67c9e" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>operator=</name></member>
+      <member refid="classpsl_1_1format_1_1parser_1a2f9f10f315c3e158dde89fa29b8ef7a6" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>parser</name></member>
+      <member refid="classpsl_1_1format_1_1parser_1ad1d5bdb8269bd5c1f3e74f01526094aa" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>parser</name></member>
+      <member refid="classpsl_1_1format_1_1parser_1a0400a46367a2e713d30b52021230c65a" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>parser</name></member>
+      <member refid="classpsl_1_1format_1_1parser_1acdb90f9e98d24e36ab0ada9bca06d2a0" prot="public" virt="non-virtual"><scope>psl::format::parser</scope><name>~parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

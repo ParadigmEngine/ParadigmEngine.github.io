@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structutility_1_1templates_1_1all__same_3_01_t_00_01_t_00_01args_8_8_8_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>utility::templates::all_same&lt; T, T, args... &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">utility::templates::all_same&lt; T, args... &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>args</declname>
+        <defname>args</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" line="159" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/template_utils.hpp" bodystart="158" bodyend="159"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

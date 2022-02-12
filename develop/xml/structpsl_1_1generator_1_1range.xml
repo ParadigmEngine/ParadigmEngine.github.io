@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structpsl_1_1generator_1_1range" kind="struct" language="C++" prot="private">
+    <compoundname>psl::generator::range</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsl_1_1generator_1_1range_1a7d5ef6123fd3feecf9d5a273be819362" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T psl::generator&lt; T &gt;::range::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="38" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsl_1_1generator_1_1range_1aaf8515143786f7264f90f40aae35a248" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T psl::generator&lt; T &gt;::range::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="39" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a4945ccaf8d1fe60e02d74b1d8ea5b29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>psl::generator&lt; T &gt;::range::range</definition>
+        <argsstring>()=default</argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1ae850324c3bc6dd25f26d3dd70cf6b2af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>psl::generator&lt; T &gt;::range::range</definition>
+        <argsstring>(T first, T last)</argsstring>
+        <name>range</name>
+        <param>
+          <type>T</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="22" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a0a42160a1238a4c6acadf916f322fd11" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; psl::generator&lt; T &gt;::range::begin</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="23" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a2bf57581410e2e67a4c9173905100352" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; psl::generator&lt; T &gt;::range::end</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="24" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a0e6ebbbb88eb231dc239f2a1b4aa17d5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; psl::generator&lt; T &gt;::range::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="25" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a3330793ad9eebf1ad7d54431500afc90" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; psl::generator&lt; T &gt;::range::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="26" column="9" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a98f04fd450ba0b82b7bac1cbdd2a4b22" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator&lt;=</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="28" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1aebbc58a521ed45baf3a3250fc5458fec" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator&gt;=</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="29" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a8165a65584422c4538effcdfffc1ece0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator&lt;</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="30" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1abad57fd42f79edc7fedfdac41823e9f7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator&gt;</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="31" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a98f4cc7dc7e56c961f231e1cc0b6ea9c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator==</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="32" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1ae528672b1040aa7bf9ab0553c3c4fd65" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::operator!=</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="33" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1ad15f273843d67abb0971ea71970b2cd1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool psl::generator&lt; T &gt;::range::overlaps</definition>
+        <argsstring>(const range &amp;other) const noexcept</argsstring>
+        <name>overlaps</name>
+        <param>
+          <type>const range &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="34" column="6" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structpsl_1_1generator_1_1range_1a2e645980b8e84557fe78fbe25a533013" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T psl::generator&lt; T &gt;::range::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="41" column="3" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" line="20" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/IDGenerator.hpp" bodystart="19" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structpsl_1_1generator_1_1range_1a0a42160a1238a4c6acadf916f322fd11" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>begin</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a0e6ebbbb88eb231dc239f2a1b4aa17d5" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>begin</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a2bf57581410e2e67a4c9173905100352" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>end</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a3330793ad9eebf1ad7d54431500afc90" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>end</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a7d5ef6123fd3feecf9d5a273be819362" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>first</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1aaf8515143786f7264f90f40aae35a248" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>last</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1ae528672b1040aa7bf9ab0553c3c4fd65" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator!=</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a8165a65584422c4538effcdfffc1ece0" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator&lt;</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a98f04fd450ba0b82b7bac1cbdd2a4b22" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator&lt;=</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a98f4cc7dc7e56c961f231e1cc0b6ea9c" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator==</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1abad57fd42f79edc7fedfdac41823e9f7" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator&gt;</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1aebbc58a521ed45baf3a3250fc5458fec" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>operator&gt;=</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1ad15f273843d67abb0971ea71970b2cd1" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>overlaps</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a4945ccaf8d1fe60e02d74b1d8ea5b29f" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>range</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1ae850324c3bc6dd25f26d3dd70cf6b2af" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>range</name></member>
+      <member refid="structpsl_1_1generator_1_1range_1a2e645980b8e84557fe78fbe25a533013" prot="public" virt="non-virtual"><scope>psl::generator::range</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

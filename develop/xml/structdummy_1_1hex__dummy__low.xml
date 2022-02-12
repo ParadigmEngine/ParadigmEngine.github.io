@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structdummy_1_1hex__dummy__low" kind="struct" language="C++" prot="public">
+    <compoundname>dummy::hex_dummy_low</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdummy_1_1hex__dummy__low_1a2cd11f1d3da15972b0cd23b7f08297f0" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dummy::hex_dummy_low::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/meta.hpp" line="330" column="15" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/meta.hpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/paradigm/paradigm/psl/inc/psl/meta.hpp" line="329" column="1" bodyfile="/home/runner/work/paradigm/paradigm/psl/inc/psl/meta.hpp" bodystart="328" bodyend="331"/>
+    <listofallmembers>
+      <member refid="structdummy_1_1hex__dummy__low_1a2cd11f1d3da15972b0cd23b7f08297f0" prot="public" virt="non-virtual"><scope>dummy::hex_dummy_low</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

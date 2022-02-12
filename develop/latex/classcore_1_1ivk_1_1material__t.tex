@@ -1,0 +1,145 @@
+\hypertarget{classcore_1_1ivk_1_1material__t}{}\doxysection{core\+::ivk\+::material\+\_\+t Class Reference}
+\label{classcore_1_1ivk_1_1material__t}\index{core::ivk::material\_t@{core::ivk::material\_t}}
+
+
+class that creates a bindable collection of resources that can be used in conjuction with a surface to render.  
+
+
+
+
+{\ttfamily \#include $<$material.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1ivk_1_1material__t_a16c6e27f1d805645ffd210d3ca7cbb5b}{material\+\_\+t}} (core\+::resource\+::cache\+\_\+t \&cache, const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&meta\+Data, \mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$meta\+File, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{context}}, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1material__t_a7f94c9319f996690bd19b1df8b299526}{data}}, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{core\+::ivk\+::pipeline\+\_\+cache}} $>$ pipeline\+Cache, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1buffer__t}{core\+::ivk\+::buffer\+\_\+t}} $>$ material\+Buffer)
+\begin{DoxyCompactList}\small\item\em the constructor that will create and bind the necesary resources to create a valid pipeline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a00420fb5d60b46e6f776c246baa916ab}\label{classcore_1_1ivk_1_1material__t_a00420fb5d60b46e6f776c246baa916ab}} 
+{\bfseries material\+\_\+t} (const \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_af70ffcdd104d629abfec514c6d81ebff}\label{classcore_1_1ivk_1_1material__t_af70ffcdd104d629abfec514c6d81ebff}} 
+{\bfseries material\+\_\+t} (\mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a15cf4e736ba0ef558afb6d392f6e6b24}\label{classcore_1_1ivk_1_1material__t_a15cf4e736ba0ef558afb6d392f6e6b24}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \& {\bfseries operator=} (const \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \&)=delete
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a7737e6a5732a85f68c739297684ffa02}\label{classcore_1_1ivk_1_1material__t_a7737e6a5732a85f68c739297684ffa02}} 
+\mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \& {\bfseries operator=} (\mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{material\+\_\+t}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1material__t_a7f94c9319f996690bd19b1df8b299526}{data}} () const
+\begin{DoxyCompactList}\small\item\em returns a handle to the material data used to construct this object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1material__t_a0f05c71f5b90524760861509d3e8b7a1}{bind\+\_\+pipeline}} (vk\+::\+Command\+Buffer cmd\+Buffer, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$ framebuffer, uint32\+\_\+t draw\+Index)
+\begin{DoxyCompactList}\small\item\em prepares the material for rendering by binding the pipeline. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcore_1_1ivk_1_1material__t_a24d81e30828337c0e0a88f408d42fc8f}{bind\+\_\+pipeline}} (vk\+::\+Command\+Buffer cmd\+Buffer, \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{swapchain}}, uint32\+\_\+t draw\+Index)
+\begin{DoxyCompactList}\small\item\em prepares the material for rendering by binding the pipeline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a637a17a0cd2a93bfc19277dd86ad29b0}\label{classcore_1_1ivk_1_1material__t_a637a17a0cd2a93bfc19277dd86ad29b0}} 
+void {\bfseries bind\+\_\+material\+\_\+instance\+\_\+data} (\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1buffer__t}{core\+::ivk\+::buffer\+\_\+t}} $>$ buffer, \mbox{\hyperlink{classmemory_1_1segment}{memory\+::segment}} segment)
+\item 
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_afa45db8e5e5d4f15196ae371280d9712}\label{classcore_1_1ivk_1_1material__t_afa45db8e5e5d4f15196ae371280d9712}} 
+bool {\bfseries bind\+\_\+instance\+\_\+data} (uint32\+\_\+t binding, uint32\+\_\+t offset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The material class is a container of various resources that can, together, describe what should happen to a surface in the render pipeline on the G\+PU, and what is all needed. The material class also can contain instance data and will manage this for you. Together with a \mbox{\hyperlink{classcore_1_1ivk_1_1geometry__t}{core\+::ivk\+::geometry\+\_\+t}}, this describes all the resources you need to render something on screen. 
+
+Definition at line 41 of file material.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a16c6e27f1d805645ffd210d3ca7cbb5b}\label{classcore_1_1ivk_1_1material__t_a16c6e27f1d805645ffd210d3ca7cbb5b}} 
+\index{core::ivk::material\_t@{core::ivk::material\_t}!material\_t@{material\_t}}
+\index{material\_t@{material\_t}!core::ivk::material\_t@{core::ivk::material\_t}}
+\doxysubsubsection{\texorpdfstring{material\_t()}{material\_t()}}
+{\footnotesize\ttfamily material\+\_\+t\+::material\+\_\+t (\begin{DoxyParamCaption}\item[{core\+::resource\+::cache\+\_\+t \&}]{cache,  }\item[{const \mbox{\hyperlink{structcore_1_1resource_1_1metadata}{core\+::resource\+::metadata}} \&}]{meta\+Data,  }\item[{\mbox{\hyperlink{classpsl_1_1meta_1_1file}{psl\+::meta\+::file}} $\ast$}]{meta\+File,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1context}{core\+::ivk\+::context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$}]{data,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1pipeline__cache}{core\+::ivk\+::pipeline\+\_\+cache}} $>$}]{pipeline\+Cache,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1buffer__t}{core\+::ivk\+::buffer\+\_\+t}} $>$}]{material\+Buffer }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cache} & resource cache that is constructing this material. \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+Data} & metadata associated with the material. \\
+\hline
+\mbox{\texttt{ in}}  & {\em meta\+File} & metafile associated with the material\textquotesingle{}s instance. \\
+\hline
+\mbox{\texttt{ in}}  & {\em context} & a handle to a graphics context (needs to be valid and loaded) which will own the material. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & the material data this instance will be based on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pipeline\+Cache} & the cache this instance can request a pipeline from. \\
+\hline
+\mbox{\texttt{ in}}  & {\em material\+Buffer} & a G\+PU buffer that can be used by this instance to upload data to (if needed). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file material.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a7f94c9319f996690bd19b1df8b299526}\label{classcore_1_1ivk_1_1material__t_a7f94c9319f996690bd19b1df8b299526}} 
+\index{core::ivk::material\_t@{core::ivk::material\_t}!data@{data}}
+\index{data@{data}!core::ivk::material\_t@{core::ivk::material\_t}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1data_1_1material__t}{core\+::data\+::material\+\_\+t}} $>$ material\+\_\+t\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyNote}{Note}
+when editing the material or the data after construction, this value will be out of sync with the runtime \mbox{\hyperlink{classcore_1_1ivk_1_1material__t}{ivk\+::material\+\_\+t}}. 
+\end{DoxyNote}
+
+
+Definition at line 152 of file material.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a0f05c71f5b90524760861509d3e8b7a1}\label{classcore_1_1ivk_1_1material__t_a0f05c71f5b90524760861509d3e8b7a1}} 
+\index{core::ivk::material\_t@{core::ivk::material\_t}!bind\_pipeline@{bind\_pipeline}}
+\index{bind\_pipeline@{bind\_pipeline}!core::ivk::material\_t@{core::ivk::material\_t}}
+\doxysubsubsection{\texorpdfstring{bind\_pipeline()}{bind\_pipeline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool material\+\_\+t\+::bind\+\_\+pipeline (\begin{DoxyParamCaption}\item[{vk\+::\+Command\+Buffer}]{cmd\+Buffer,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1framebuffer__t}{core\+::ivk\+::framebuffer\+\_\+t}} $>$}]{framebuffer,  }\item[{uint32\+\_\+t}]{draw\+Index }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+only call this in the context of recording the draw call. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cmd\+Buffer} & the command buffer you\textquotesingle{}ll be recording to \\
+\hline
+\mbox{\texttt{ in}}  & {\em framebuffer} & the framebuffer the pipeline will be bound to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em draw\+Index} & the index to be set in the push constant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]drawindex is a temporary hack to support instancing. a generic solution should be sought after. \end{DoxyRefDesc}
+
+
+Definition at line 191 of file material.\+cpp.
+
+\mbox{\Hypertarget{classcore_1_1ivk_1_1material__t_a24d81e30828337c0e0a88f408d42fc8f}\label{classcore_1_1ivk_1_1material__t_a24d81e30828337c0e0a88f408d42fc8f}} 
+\index{core::ivk::material\_t@{core::ivk::material\_t}!bind\_pipeline@{bind\_pipeline}}
+\index{bind\_pipeline@{bind\_pipeline}!core::ivk::material\_t@{core::ivk::material\_t}}
+\doxysubsubsection{\texorpdfstring{bind\_pipeline()}{bind\_pipeline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool material\+\_\+t\+::bind\+\_\+pipeline (\begin{DoxyParamCaption}\item[{vk\+::\+Command\+Buffer}]{cmd\+Buffer,  }\item[{\mbox{\hyperlink{classcore_1_1resource_1_1handle}{core\+::resource\+::handle}}$<$ \mbox{\hyperlink{classcore_1_1ivk_1_1swapchain}{core\+::ivk\+::swapchain}} $>$}]{swapchain,  }\item[{uint32\+\_\+t}]{draw\+Index }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+only call this in the context of recording the draw call. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cmd\+Buffer} & the command buffer you\textquotesingle{}ll be recording to \\
+\hline
+\mbox{\texttt{ in}}  & {\em swapchain} & the swapchain the pipeline will be bound to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em draw\+Index} & the index to be set in the push constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 219 of file material.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/runner/work/paradigm/paradigm/core/inc/vk/material.\+hpp\item 
+/home/runner/work/paradigm/paradigm/core/src/vk/material.\+cpp\end{DoxyCompactItemize}

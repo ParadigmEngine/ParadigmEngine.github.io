@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -48,51 +48,222 @@
         </h1>
         <p>contains various utilities in helping you to convert to, and from a byte stream.</p>
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#func-members">Functions</a></li>
-              </ul>
-            </li>
+
+            <li><a href="#func-members">functions</a></li>
           </ul>
         </nav>
         <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
+          <h2><a href="#func-members">functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <div class="m-doc-template">template&lt;typename T&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a href="#a07f9073154118c53540adfcbf1133bf6" class="m-doc">write_8b</a>(</span><span class="m-doc-wrap">T* target,
-              std::vector&lt;uint8_t&gt;&amp; buffer,
-              size_t offset,
-              size_t size = 1)</span>
-            </dt>
-            <dd>writes in sets of 8 bytes to the target location</dd>
-            <dt>
-              <div class="m-doc-template">template&lt;typename T&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a href="#a754b31d213c32473be6209e1fb87c74d" class="m-doc">write_4b</a>(</span><span class="m-doc-wrap">T* target,
-              std::vector&lt;uint8_t&gt;&amp; buffer,
-              size_t offset,
-              size_t size = 1)</span>
-            </dt>
-            <dd>writes in sets of 4 bytes to the target location</dd>
-            <dt>
-              <div class="m-doc-template">template&lt;typename T&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a href="#a18bf3958d005904c59665fb6d0c5edc7" class="m-doc">write_2b</a>(</span><span class="m-doc-wrap">T* target,
-              std::vector&lt;uint8_t&gt;&amp; buffer,
-              size_t offset,
-              size_t size = 1)</span>
-            </dt>
-            <dd>writes in sets of 2 bytes to the target location</dd>
-            <dt>
-              <div class="m-doc-template">template&lt;typename T&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a href="#ad300b6a4c023c9bc6f552d4f3d67d193" class="m-doc">write_1b</a>(</span><span class="m-doc-wrap">T* target,
-              std::vector&lt;uint8_t&gt;&amp; buffer,
-              size_t offset,
-              size_t size = 1)</span>
-            </dt>
-            <dd>writes in sets of 1 byte to the target location</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a07f9073154118c53540adfcbf1133bf6" class="m-doc">write_8b&lt;…&gt;</a>                </div>
+                <div class="m-entry">writes in sets of 8 bytes to the target location</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a07f9073154118c53540adfcbf1133bf6" class="m-doc">write_8b&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
+                  <div class="m-entry">T*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer</div>
+                  <div class="m-entry">std::vector&lt;uint8_t&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">offset</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                  <div class="m-entry right_align">= 1</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">writes in sets of 8 bytes to the target location</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a754b31d213c32473be6209e1fb87c74d" class="m-doc">write_4b&lt;…&gt;</a>                </div>
+                <div class="m-entry">writes in sets of 4 bytes to the target location</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a754b31d213c32473be6209e1fb87c74d" class="m-doc">write_4b&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
+                  <div class="m-entry">T*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer</div>
+                  <div class="m-entry">std::vector&lt;uint8_t&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">offset</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                  <div class="m-entry right_align">= 1</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">writes in sets of 4 bytes to the target location</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a18bf3958d005904c59665fb6d0c5edc7" class="m-doc">write_2b&lt;…&gt;</a>                </div>
+                <div class="m-entry">writes in sets of 2 bytes to the target location</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a18bf3958d005904c59665fb6d0c5edc7" class="m-doc">write_2b&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
+                  <div class="m-entry">T*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer</div>
+                  <div class="m-entry">std::vector&lt;uint8_t&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">offset</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                  <div class="m-entry right_align">= 1</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">writes in sets of 2 bytes to the target location</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad300b6a4c023c9bc6f552d4f3d67d193" class="m-doc">write_1b&lt;…&gt;</a>                </div>
+                <div class="m-entry">writes in sets of 1 byte to the target location</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad300b6a4c023c9bc6f552d4f3d67d193" class="m-doc">write_1b&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
+                  <div class="m-entry">T*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer</div>
+                  <div class="m-entry">std::vector&lt;uint8_t&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">offset</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                  <div class="m-entry right_align">= 1</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">writes in sets of 1 byte to the target location</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section>
@@ -107,7 +278,8 @@
               size_t offset,
               size_t size = 1)</span></span>
             </h3>
-            <p>writes in sets of 8 bytes to the target location</p>
+              <h3>Brief</h3>
+              <p>writes in sets of 8 bytes to the target location</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -142,7 +314,8 @@
               size_t offset,
               size_t size = 1)</span></span>
             </h3>
-            <p>writes in sets of 4 bytes to the target location</p>
+              <h3>Brief</h3>
+              <p>writes in sets of 4 bytes to the target location</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -177,7 +350,8 @@
               size_t offset,
               size_t size = 1)</span></span>
             </h3>
-            <p>writes in sets of 2 bytes to the target location</p>
+              <h3>Brief</h3>
+              <p>writes in sets of 2 bytes to the target location</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -212,7 +386,8 @@
               size_t offset,
               size_t size = 1)</span></span>
             </h3>
-            <p>writes in sets of 1 byte to the target location</p>
+              <h3>Brief</h3>
+              <p>writes in sets of 1 byte to the target location</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -276,6 +451,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

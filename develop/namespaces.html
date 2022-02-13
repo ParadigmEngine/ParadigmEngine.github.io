@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html" id="m-navbar-current">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html" id="m-navbar-current">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -43,45 +43,59 @@
   <div class="m-container m-container-inflatable">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <h1>Namespaces</h1>
+        <h1>namespaces</h1>
         <ul class="m-doc">
           <li class="m-doc-collapsible">
-            <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespacecore.html" class="m-doc">core</a> <span class="m-doc">the engine core, here all graphics resources and render operations are described.</span>
+            <a href="#" onclick="return toggle(this)"></a><a href="namespacecore.html" class="m-doc namespace">core</a> <span class="m-doc">the engine core, here all graphics resources and render operations are described.</span>
             <ul class="m-doc">
-              <li>namespace <a href="namespacecore_1_1data.html" class="m-doc">data</a> <span class="m-doc">contains all data types that can be serialized to/from disk.</span></li>
-              <li>namespace <a href="namespacecore_1_1gfx.html" class="m-doc">gfx</a> <span class="m-doc">namespace that deals with the abstract render objects</span></li>
-              <li>namespace <a href="namespacecore_1_1ivk.html" class="m-doc">ivk</a> <span class="m-doc">deals with all objects that are directly mapped to vulkan objects (i.e. they have internal vulkan concepts in them)</span></li>
-              <li>namespace <a href="namespacecore_1_1meta.html" class="m-doc">meta</a> <span class="m-doc">contains all extensions to the ::meta namespace.</span></li>
-              <li>namespace <a href="namespacecore_1_1os.html" class="m-doc">os</a> <span class="m-doc">specific OS wrappers and resources.</span></li>
-              <li>namespace <a href="namespacecore_1_1resource.html" class="m-doc">resource</a> <span class="m-doc">deals with resource creation, tracking, and managing.</span></li>
-              <li>namespace <a href="namespacecore_1_1systems.html" class="m-doc">systems</a> <span class="m-doc">contains systems that are responsible for handling certain aspects (audio, input, physics, etc..).</span></li>
-            </ul>
-          </li>
-          <li>namespace <a href="namespacememory.html" class="m-doc">memory</a> <span class="m-doc">this namespace contains types and utilities for managing regions of memory</span></li>
-          <li class="m-doc-collapsible">
-            <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespacepsl.html" class="m-doc">psl</a> <span class="m-doc">paradigm standard library</span>
-            <ul class="m-doc">
-              <li>namespace <a href="namespacepsl_1_1math.html" class="m-doc">math</a> <span class="m-doc">conversions</span></li>
-              <li>namespace <a href="namespacepsl_1_1meta.html" class="m-doc">meta</a> <span class="m-doc">contains utilities to identify types and instances at runtime and on disk.</span></li>
-              <li>namespace <a href="namespacepsl_1_1string16.html" class="m-doc">string16</a> <span class="m-doc">UTF-16 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
-              <li>namespace <a href="namespacepsl_1_1string32.html" class="m-doc">string32</a> <span class="m-doc">UTF-32 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
-              <li>namespace <a href="namespacepsl_1_1string8.html" class="m-doc">string8</a> <span class="m-doc">UTF-8 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
-            </ul>
-          </li>
-          <li>namespace <a href="namespacestd.html" class="m-doc">std</a> <span class="m-doc">STL namespace.</span></li>
-          <li class="m-doc-collapsible">
-            <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespaceutility.html" class="m-doc">utility</a> <span class="m-doc">this namespace contains various helper utilities to aid you.</span>
-            <ul class="m-doc">
-              <li>namespace <a href="namespaceutility_1_1binary.html" class="m-doc">binary</a> <span class="m-doc">contains various utilities in helping you to convert to, and from a byte stream.</span></li>
-              <li>namespace <a href="namespaceutility_1_1geometry.html" class="m-doc">geometry</a> <span class="m-doc">various geometry and geometry related operation utilities.</span></li>
+              <li> <a href="namespacecore_1_1data.html" class="m-doc namespace">data</a> <span class="m-doc">contains all data types that can be serialized to/from disk.</span></li>
               <li class="m-doc-collapsible">
-                <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespaceutility_1_1platform.html" class="m-doc">platform</a> <span class="m-doc">platform specific utilities that help in identifying the current platform, and various specifications of it.</span>
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">All ECS related implementations.</span>
                 <ul class="m-doc">
-                  <li>namespace <a href="namespaceutility_1_1platform_1_1file.html" class="m-doc">file</a> <span class="m-doc">file i/o and manpulations utilities namespace</span></li>
+                  <li> <a href="namespacecore_1_1ecs_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">ECS Systems.</span></li>
                 </ul>
               </li>
-              <li>namespace <a href="namespaceutility_1_1string.html" class="m-doc">string</a> <span class="m-doc">utility namespace to deal with psl::string operations.</span></li>
-              <li>namespace <a href="namespaceutility_1_1templates.html" class="m-doc">templates</a> <span class="m-doc"></span></li>
+              <li> <a href="namespacecore_1_1gfx.html" class="m-doc namespace">gfx</a> <span class="m-doc">namespace that deals with the abstract render objects</span></li>
+              <li> <a href="namespacecore_1_1igles.html" class="m-doc namespace">igles</a> <span class="m-doc">OpenGLES API abstraction.</span></li>
+              <li> <a href="namespacecore_1_1ivk.html" class="m-doc namespace">ivk</a> <span class="m-doc">deals with all objects that are directly mapped to vulkan objects (i.e. they have internal vulkan concepts in them)</span></li>
+              <li> <a href="namespacecore_1_1meta.html" class="m-doc namespace">meta</a> <span class="m-doc">contains all extensions to the <a href="namespacepsl_1_1meta.html" class="m-doc">psl::<wbr />meta</a> namespace.</span></li>
+              <li> <a href="namespacecore_1_1os.html" class="m-doc namespace">os</a> <span class="m-doc">specific OS wrappers and resources.</span></li>
+              <li> <a href="namespacecore_1_1resource.html" class="m-doc namespace">resource</a> <span class="m-doc">deals with resource creation, tracking, and managing.</span></li>
+              <li> <a href="namespacecore_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">contains systems that are responsible for handling certain aspects (audio, input, physics, etc..).</span></li>
+            </ul>
+          </li>
+          <li> <a href="namespacememory.html" class="m-doc namespace">memory</a> <span class="m-doc">this namespace contains types and utilities for managing regions of memory</span></li>
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl.html" class="m-doc namespace">psl</a> <span class="m-doc">paradigm standard library</span>
+            <ul class="m-doc">
+              <li> <a href="namespacepsl_1_1concepts.html" class="m-doc namespace">concepts</a> <span class="m-doc">Utility concepts.</span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">Entity Component System.</span>
+                <ul class="m-doc">
+                  <li> <a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc namespace">details</a> <span class="m-doc">specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></span></li>
+                </ul>
+              </li>
+              <li> <a href="namespacepsl_1_1math.html" class="m-doc namespace">math</a> <span class="m-doc">conversions</span></li>
+              <li> <a href="namespacepsl_1_1meta.html" class="m-doc namespace">meta</a> <span class="m-doc">contains utilities to identify types and instances at runtime and on disk.</span></li>
+              <li> <a href="namespacepsl_1_1string16.html" class="m-doc namespace">string16</a> <span class="m-doc">UTF-16 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+              <li> <a href="namespacepsl_1_1string32.html" class="m-doc namespace">string32</a> <span class="m-doc">UTF-32 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+              <li> <a href="namespacepsl_1_1string8.html" class="m-doc namespace">string8</a> <span class="m-doc">UTF-8 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+            </ul>
+          </li>
+          <li> <a href="namespacestd.html" class="m-doc namespace">std</a> <span class="m-doc">STL namespace.</span></li>
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)"></a><a href="namespaceutility.html" class="m-doc namespace">utility</a> <span class="m-doc">this namespace contains various helper utilities to aid you.</span>
+            <ul class="m-doc">
+              <li> <a href="namespaceutility_1_1binary.html" class="m-doc namespace">binary</a> <span class="m-doc">contains various utilities in helping you to convert to, and from a byte stream.</span></li>
+              <li> <a href="namespaceutility_1_1geometry.html" class="m-doc namespace">geometry</a> <span class="m-doc">various geometry and geometry related operation utilities.</span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespaceutility_1_1platform.html" class="m-doc namespace">platform</a> <span class="m-doc">platform specific utilities that help in identifying the current platform, and various specifications of it.</span>
+                <ul class="m-doc">
+                  <li> <a href="namespaceutility_1_1platform_1_1file.html" class="m-doc namespace">file</a> <span class="m-doc">file i/o and manpulations utilities namespace</span></li>
+                </ul>
+              </li>
+              <li> <a href="namespaceutility_1_1string.html" class="m-doc namespace">string</a> <span class="m-doc">utility namespace to deal with <a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a> operations.</span></li>
+              <li> <a href="namespaceutility_1_1templates.html" class="m-doc namespace">templates</a> <span class="m-doc"></span></li>
             </ul>
           </li>
         </ul>
@@ -139,6 +153,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,87 +47,485 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>swapchain <span class="m-thin">class</span>
         </h1>
         <p>describes a framebuffer that is specially handled and created by the driver</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>swpachains can be considered special <a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a>&#x27;s, with some special pecularities. For example, unlike framebuffer&#x27;s, you have to request the next image from the driver for a swapchain, and there are many more restrictions on both format and size imposed on swapchains.</p>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ade61b6d3ba58649d4483e6adbe6d4172" class="m-doc">next</a>(</span><span class="m-doc-wrap">vk::Semaphore presentComplete,
-              uint32_t&amp; out_image_index) -&gt; bool</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#adeeb2e4c049c1d899522d35acf5f0e39" class="m-doc">present</a>(</span><span class="m-doc-wrap">vk::Semaphore wait) -&gt; vk::Result</span>
-            </dt>
-            <dd></dd>
-            <dt id="a96aca58695fe522bba6178a23c98bdcb">
-              <span class="m-doc-wrap-bumper">auto <a href="#a96aca58695fe522bba6178a23c98bdcb" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const -&gt; uint32_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>returns the amount of images in the swapchain</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a72629a1ec605133f65f16ac6a8293208" class="m-doc">renderpass</a>(</span><span class="m-doc-wrap">) const -&gt; vk::RenderPass <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a42c50d5c0dc7d06c58bce058fa814df6" class="m-doc">width</a>(</span><span class="m-doc-wrap">) const -&gt; uint32_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abf6b9ebef765cd559c40ec4a4ba212d9" class="m-doc">height</a>(</span><span class="m-doc-wrap">) const -&gt; uint32_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aa6be9f4bfba1ea437333250ce0ee09df" class="m-doc">framebuffers</a>(</span><span class="m-doc-wrap">) const -&gt; const std::vector&lt;vk::Framebuffer&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a50cc3b8932f5428a4f1db0b1ebd3f521" class="m-doc">images</a>(</span><span class="m-doc-wrap">) const -&gt; const std::vector&lt;vk::Image&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae018f11e33320556b15c4ee7ccf48007" class="m-doc">views</a>(</span><span class="m-doc-wrap">) const -&gt; const std::vector&lt;vk::ImageView&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a612f715485009b4656f95d1fac0e8643" class="m-doc">clear_color</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::ClearColorValue <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aa70aba3dee880982089bfa55b14073a8" class="m-doc">clear_depth</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::ClearDepthStencilValue <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a271898802ad040eb02b30ecc24406cd9" class="m-doc">has_depth</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#af0d00dfa60d2cec89693633cc8a28ae2" class="m-doc">clear_color</a>(</span><span class="m-doc-wrap">vk::ClearColorValue color) <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>sets the clear color</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#af490a715688d063358b78059300e79d4" class="m-doc">is_ready</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ade61b6d3ba58649d4483e6adbe6d4172" class="m-doc">next</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ade61b6d3ba58649d4483e6adbe6d4172" class="m-doc">next</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">presentComplete</div>
+                  <div class="m-entry">vk::Semaphore</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">out_image_index</div>
+                  <div class="m-entry">uint32_t&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#adeeb2e4c049c1d899522d35acf5f0e39" class="m-doc">present</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#adeeb2e4c049c1d899522d35acf5f0e39" class="m-doc">present</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">vk::Result</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">wait</div>
+                  <div class="m-entry">vk::Semaphore</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a96aca58695fe522bba6178a23c98bdcb">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">size                </div>
+                <div class="m-entry">returns the amount of images in the swapchain</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">size</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the amount of images in the swapchain</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a72629a1ec605133f65f16ac6a8293208" class="m-doc">renderpass</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a72629a1ec605133f65f16ac6a8293208" class="m-doc">renderpass</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">vk::RenderPass</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a42c50d5c0dc7d06c58bce058fa814df6" class="m-doc">width</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a42c50d5c0dc7d06c58bce058fa814df6" class="m-doc">width</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abf6b9ebef765cd559c40ec4a4ba212d9" class="m-doc">height</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abf6b9ebef765cd559c40ec4a4ba212d9" class="m-doc">height</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa6be9f4bfba1ea437333250ce0ee09df" class="m-doc">framebuffers</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa6be9f4bfba1ea437333250ce0ee09df" class="m-doc">framebuffers</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;vk::Framebuffer&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a50cc3b8932f5428a4f1db0b1ebd3f521" class="m-doc">images</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a50cc3b8932f5428a4f1db0b1ebd3f521" class="m-doc">images</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;vk::Image&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae018f11e33320556b15c4ee7ccf48007" class="m-doc">views</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae018f11e33320556b15c4ee7ccf48007" class="m-doc">views</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;vk::ImageView&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a612f715485009b4656f95d1fac0e8643" class="m-doc">clear_color</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a612f715485009b4656f95d1fac0e8643" class="m-doc">clear_color</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::ClearColorValue</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa70aba3dee880982089bfa55b14073a8" class="m-doc">clear_depth</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa70aba3dee880982089bfa55b14073a8" class="m-doc">clear_depth</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::ClearDepthStencilValue</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a271898802ad040eb02b30ecc24406cd9" class="m-doc">has_depth</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a271898802ad040eb02b30ecc24406cd9" class="m-doc">has_depth</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af0d00dfa60d2cec89693633cc8a28ae2" class="m-doc">clear_color</a>                </div>
+                <div class="m-entry">sets the clear color</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af0d00dfa60d2cec89693633cc8a28ae2" class="m-doc">clear_color</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">color</div>
+                  <div class="m-entry">vk::ClearColorValue</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the clear color</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af490a715688d063358b78059300e79d4" class="m-doc">is_ready</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af490a715688d063358b78059300e79d4" class="m-doc">is_ready</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ade61b6d3ba58649d4483e6adbe6d4172"><div>
+          
+          
+          			          <section class="m-doc-details" id="ade61b6d3ba58649d4483e6adbe6d4172"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ade61b6d3ba58649d4483e6adbe6d4172" class="m-doc-self">next</a>(</span><span class="m-doc-wrap">vk::Semaphore presentComplete,
               uint32_t&amp; out_image_index)</span></span>
             </h3>
+              <h3>Details</h3>
+              <p><p>when invoking this method it will request the next image in the swapchain, and return. the semaphore will be flaged once the resource is ready on the GPU. (and so should be used as a sync point before using the image in the swapchain.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -149,9 +547,8 @@
                 </tr>
               </tfoot>
             </table>
-<p>when invoking this method it will request the next image in the swapchain, and return. the semaphore will be flaged once the resource is ready on the GPU. (and so should be used as a sync point before using the image in the swapchain.</p>
           </div></section>
-          <section class="m-doc-details" id="adeeb2e4c049c1d899522d35acf5f0e39"><div>
+			          <section class="m-doc-details" id="adeeb2e4c049c1d899522d35acf5f0e39"><div>
             <h3>
               <span class="m-doc-wrap-bumper">vk::Result core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adeeb2e4c049c1d899522d35acf5f0e39" class="m-doc-self">present</a>(</span><span class="m-doc-wrap">vk::Semaphore wait)</span></span>
             </h3>
@@ -173,7 +570,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a72629a1ec605133f65f16ac6a8293208"><div>
+			          <section class="m-doc-details" id="a72629a1ec605133f65f16ac6a8293208"><div>
             <h3>
               <span class="m-doc-wrap-bumper">vk::RenderPass core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72629a1ec605133f65f16ac6a8293208" class="m-doc-self">renderpass</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -186,7 +583,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a42c50d5c0dc7d06c58bce058fa814df6"><div>
+			          <section class="m-doc-details" id="a42c50d5c0dc7d06c58bce058fa814df6"><div>
             <h3>
               <span class="m-doc-wrap-bumper">uint32_t core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a42c50d5c0dc7d06c58bce058fa814df6" class="m-doc-self">width</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -199,7 +596,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="abf6b9ebef765cd559c40ec4a4ba212d9"><div>
+			          <section class="m-doc-details" id="abf6b9ebef765cd559c40ec4a4ba212d9"><div>
             <h3>
               <span class="m-doc-wrap-bumper">uint32_t core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf6b9ebef765cd559c40ec4a4ba212d9" class="m-doc-self">height</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -212,7 +609,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="aa6be9f4bfba1ea437333250ce0ee09df"><div>
+			          <section class="m-doc-details" id="aa6be9f4bfba1ea437333250ce0ee09df"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const std::vector&lt;vk::Framebuffer&gt;&amp; core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6be9f4bfba1ea437333250ce0ee09df" class="m-doc-self">framebuffers</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -225,7 +622,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a50cc3b8932f5428a4f1db0b1ebd3f521"><div>
+			          <section class="m-doc-details" id="a50cc3b8932f5428a4f1db0b1ebd3f521"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const std::vector&lt;vk::Image&gt;&amp; core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a50cc3b8932f5428a4f1db0b1ebd3f521" class="m-doc-self">images</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -238,7 +635,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ae018f11e33320556b15c4ee7ccf48007"><div>
+			          <section class="m-doc-details" id="ae018f11e33320556b15c4ee7ccf48007"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const std::vector&lt;vk::ImageView&gt;&amp; core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae018f11e33320556b15c4ee7ccf48007" class="m-doc-self">views</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -251,7 +648,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a612f715485009b4656f95d1fac0e8643"><div>
+			          <section class="m-doc-details" id="a612f715485009b4656f95d1fac0e8643"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::ClearColorValue core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a612f715485009b4656f95d1fac0e8643" class="m-doc-self">clear_color</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -264,10 +661,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="aa70aba3dee880982089bfa55b14073a8"><div>
+			          <section class="m-doc-details" id="aa70aba3dee880982089bfa55b14073a8"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::ClearDepthStencilValue core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa70aba3dee880982089bfa55b14073a8" class="m-doc-self">clear_depth</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>will return default value in case there is no depth texture.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -276,9 +675,8 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>will return default value in case there is no depth texture.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a271898802ad040eb02b30ecc24406cd9"><div>
+			          <section class="m-doc-details" id="a271898802ad040eb02b30ecc24406cd9"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a271898802ad040eb02b30ecc24406cd9" class="m-doc-self">has_depth</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -291,11 +689,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af0d00dfa60d2cec89693633cc8a28ae2"><div>
+			          <section class="m-doc-details" id="af0d00dfa60d2cec89693633cc8a28ae2"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af0d00dfa60d2cec89693633cc8a28ae2" class="m-doc-self">clear_color</a>(</span><span class="m-doc-wrap">vk::ClearColorValue color) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
-            <p>sets the clear color</p>
+              <h3>Brief</h3>
+              <p>sets the clear color</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -308,10 +707,12 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af490a715688d063358b78059300e79d4"><div>
+			          <section class="m-doc-details" id="af490a715688d063358b78059300e79d4"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />swapchain::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af490a715688d063358b78059300e79d4" class="m-doc-self">is_ready</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>calls to getting the next swapchain image and presenting will fail in that scenario.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -320,8 +721,17 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>calls to getting the next swapchain image and presenting will fail in that scenario.</p></aside>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -361,6 +771,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

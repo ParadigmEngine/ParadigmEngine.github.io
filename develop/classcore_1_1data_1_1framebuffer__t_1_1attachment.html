@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,72 +47,235 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1data.html">data</a>::<wbr/></span><span class="m-breadcrumb"><a href="classcore_1_1data_1_1framebuffer__t.html">framebuffer_t</a>::<wbr/></span>attachment <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
         </h1>
         <p>describes a single rendertarget in a framebuffer.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-types">Public types</a></li>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#types">types</a></li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
-<p>all data contained within this object is not guaranteed to be loaded, this includes the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> of the core::gfx::texture_t. You should take caution when calling methods that manipulate the contained resources for this reason.</p>
-        <section id="pub-types">
-          <h2><a href="#pub-types">Public types</a></h2>
+<p>all data contained within this object is not guaranteed to be loaded, this includes the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> of the <a href="classcore_1_1gfx_1_1texture__t.html" class="m-doc">core::<wbr />gfx::<wbr />texture_t</a>. You should take caution when calling methods that manipulate the contained resources for this reason.</p>
+        <section id="types">
+          <h2><a href="#types">types</a></h2>
           <dl class="m-doc">
-            <dt>
-              class <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">description</a>
-            </dt>
-            <dd>describes how the rendertarget should be loaded, stored, it&#x27;s sample count, and what transition layouts it should go through.</dd>
+	<h3>classes</h3>
+	<table style="width:100%">
+		<tr>
+			            <div class="m-entry-container hoverable" id="description">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">description</a></div>
+                <div class="m-entry">describes how the rendertarget should be loaded, stored, it&#x27;s sample count, and what transition layouts it should go through.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+		</tr>
+	</table>
           </dl>
         </section>
         <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#a8317857a9d086185f8f88d462ca87778" class="m-doc">attachment</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; texture,
-              const core::gfx::clear_value&amp; clear_col,
-              core::gfx::attachment descr,
-              bool shared = false)</span>
-            </dt>
-            <dd>constructs an attachment based on the given texture and values.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#abbf995507b976dc874d05f5b51c3d744" class="m-doc">operator core::gfx::attachment</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>returns a core::gfx::attachment based on the internal settings. This is a passthrough method to the <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr />description</a> instance.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8317857a9d086185f8f88d462ca87778" class="m-doc">attachment</a>                </div>
+                <div class="m-entry">constructs an attachment based on the given texture and values.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8317857a9d086185f8f88d462ca87778" class="m-doc">attachment</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">texture</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">clear_col</div>
+                  <div class="m-entry">const <a href="namespacecore_1_1gfx.html#af956ec954d0182121b6b94a7fa4b6c0f" class="m-doc">core::<wbr />gfx::<wbr />clear_value</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">descr</div>
+                  <div class="m-entry"><a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">shared</div>
+                  <div class="m-entry">bool</div>
+                  <div class="m-entry right_align">= false</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">constructs an attachment based on the given texture and values.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abbf995507b976dc874d05f5b51c3d744" class="m-doc">operator core::gfx::attachment</a>                </div>
+                <div class="m-entry">returns a <a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a> based on the internal settings. This is a passthrough method to the <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr />description</a> instance.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abbf995507b976dc874d05f5b51c3d744" class="m-doc">operator core::gfx::attachment</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns a <a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a> based on the internal settings. This is a passthrough method to the <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr />description</a> instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac4903b64040a439c1f346863e7c429f6" class="m-doc">texture</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</span>
-            </dt>
-            <dd>returns the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> assigned to this render attachment.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a22feced3c9abd7d14b0821e3244a881b" class="m-doc">clear_value</a>(</span><span class="m-doc-wrap">) const -&gt; const core::gfx::clear_value&amp;</span>
-            </dt>
-            <dd>returns the clear value assigned to this attachment.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad74ad94a80e87c312248195b3be0a391" class="m-doc">shared</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
-            </dt>
-            <dd>signifies if this specific attachment duplicated when the framebuffer&#x27;s image count is larger than 1.</dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac4903b64040a439c1f346863e7c429f6" class="m-doc">texture</a>                </div>
+                <div class="m-entry">returns the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> assigned to this render attachment.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac4903b64040a439c1f346863e7c429f6" class="m-doc">texture</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> assigned to this render attachment.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a22feced3c9abd7d14b0821e3244a881b" class="m-doc">clear_value</a>                </div>
+                <div class="m-entry">returns the clear value assigned to this attachment.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a22feced3c9abd7d14b0821e3244a881b" class="m-doc">clear_value</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const <a href="namespacecore_1_1gfx.html#af956ec954d0182121b6b94a7fa4b6c0f" class="m-doc">core::<wbr />gfx::<wbr />clear_value</a>&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the clear value assigned to this attachment.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad74ad94a80e87c312248195b3be0a391" class="m-doc">shared</a>                </div>
+                <div class="m-entry">signifies if this specific attachment duplicated when the framebuffer&#x27;s image count is larger than 1.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad74ad94a80e87c312248195b3be0a391" class="m-doc">shared</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">signifies if this specific attachment duplicated when the framebuffer&#x27;s image count is larger than 1.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a8317857a9d086185f8f88d462ca87778"><div>
+          
+          			          <section class="m-doc-details" id="a8317857a9d086185f8f88d462ca87778"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8317857a9d086185f8f88d462ca87778" class="m-doc-self">attachment</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; texture,
-              const core::gfx::clear_value&amp; clear_col,
-              core::gfx::attachment descr,
+              const <a href="namespacecore_1_1gfx.html#af956ec954d0182121b6b94a7fa4b6c0f" class="m-doc">core::<wbr />gfx::<wbr />clear_value</a>&amp; clear_col,
+              <a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a> descr,
               bool shared = false)</span></span>
             </h3>
-            <p>constructs an attachment based on the given texture and values.</p>
+              <h3>Brief</h3>
+              <p>constructs an attachment based on the given texture and values.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>that the texture should be valid (not pointing to a non-texture), otherwise you might run into issues further down.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -136,27 +299,31 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>that the texture should be valid (not pointing to a non-texture), otherwise you might run into issues further down.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="abbf995507b976dc874d05f5b51c3d744"><div>
+			          <section class="m-doc-details" id="abbf995507b976dc874d05f5b51c3d744"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abbf995507b976dc874d05f5b51c3d744" class="m-doc-self">operator core::gfx::attachment</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
-            <p>returns a core::gfx::attachment based on the internal settings. This is a passthrough method to the <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr />description</a> instance.</p>
+              <h3>Brief</h3>
+              <p>returns a <a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a> based on the internal settings. This is a passthrough method to the <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc">core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr />description</a> instance.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>a core::gfx::attachment based on the internal settings.</td>
+                  <td>a <a href="structcore_1_1gfx_1_1attachment.html" class="m-doc">core::<wbr />gfx::<wbr />attachment</a> based on the internal settings.</td>
                 </tr>
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ac4903b64040a439c1f346863e7c429f6"><div>
+
+          			          <section class="m-doc-details" id="ac4903b64040a439c1f346863e7c429f6"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac4903b64040a439c1f346863e7c429f6" class="m-doc-self">texture</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> assigned to this render attachment.</p>
+              <h3>Brief</h3>
+              <p>returns the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> assigned to this render attachment.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>the texture resource assigned to the UID is not guaranteed to be loaded (or even constructed), as it can have just been parsed from disk.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -165,13 +332,13 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>the texture resource assigned to the UID is not guaranteed to be loaded (or even constructed), as it can have just been parsed from disk.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a22feced3c9abd7d14b0821e3244a881b"><div>
+			          <section class="m-doc-details" id="a22feced3c9abd7d14b0821e3244a881b"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const core::gfx::clear_value&amp; core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a22feced3c9abd7d14b0821e3244a881b" class="m-doc-self">clear_value</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">const <a href="namespacecore_1_1gfx.html#af956ec954d0182121b6b94a7fa4b6c0f" class="m-doc">core::<wbr />gfx::<wbr />clear_value</a>&amp; core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a22feced3c9abd7d14b0821e3244a881b" class="m-doc-self">clear_value</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the clear value assigned to this attachment.</p>
+              <h3>Brief</h3>
+              <p>returns the clear value assigned to this attachment.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -181,11 +348,14 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ad74ad94a80e87c312248195b3be0a391"><div>
+			          <section class="m-doc-details" id="ad74ad94a80e87c312248195b3be0a391"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />framebuffer_t::<wbr />attachment::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad74ad94a80e87c312248195b3be0a391" class="m-doc-self">shared</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>signifies if this specific attachment duplicated when the framebuffer&#x27;s image count is larger than 1.</p>
+              <h3>Brief</h3>
+              <p>signifies if this specific attachment duplicated when the framebuffer&#x27;s image count is larger than 1.</p>
+              <h3>Details</h3>
+              <p><p>Sometimes you don&#x27;t need a render attachment to have a unique instance per framebuffer entry (for example depth testing/texture in a double buffer scenario). in this case you can set this render attachment to be &quot;shared&quot;, a flag that will tell the implementation that rather than creating a new instance for when the framebuffer count is larger than 1, it should instead reuse the current one.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a> for the <a href="classcore_1_1data_1_1application.html" class="m-doc">application</a> of this flag.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -194,8 +364,17 @@
                 </tr>
               </tfoot>
             </table>
-<p>Sometimes you don&#x27;t need a render attachment to have a unique instance per framebuffer entry (for example depth testing/texture in a double buffer scenario). in this case you can set this render attachment to be &quot;shared&quot;, a flag that will tell the implementation that rather than creating a new instance for when the framebuffer count is larger than 1, it should instead reuse the current one.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a> for the application of this flag.</p></aside>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -235,6 +414,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

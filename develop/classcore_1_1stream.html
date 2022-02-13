@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,118 +47,607 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span>stream <span class="m-thin">class</span>
         </h1>
         <p>stream contains a type erased &quot;stream&quot; of memory with basic facilities to protect it from incorrect casts.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-types">Public types</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#types">types</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>stream should be used in scenarios where something could contain various, but functionaly similar arrays of float. see <a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a> for an example of this.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a></p></aside>
-        <section id="pub-types">
-          <h2><a href="#pub-types">Public types</a></h2>
+        <section id="types">
+          <h2><a href="#types">types</a></h2>
           <dl class="m-doc">
-            <dt id="a2141f36b55d92ac83e0a57d858ec8590">
-              <span class="m-doc-wrap-bumper">enum class <a href="#a2141f36b55d92ac83e0a57d858ec8590" class="m-doc-self">type</a> { </span><span class="m-doc-wrap"><a href="#a2141f36b55d92ac83e0a57d858ec8590add5c07036f2975ff4bce568b6511d3bc" class="m-doc">single</a> = 0,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a87c214e1e77f5e0644a224f3df50fae7" class="m-doc">vec2</a> = 1,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a97ade28e93c0de60adc075bdbe07ca36" class="m-doc">vec3</a> = 2,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a1a9028fd802c481a99491a418ca2fe86" class="m-doc">vec4</a> = 3,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a2e8e00c845516e3865a43b0e4781166c" class="m-doc">mat2</a> = 4,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a68fd2f70993e47d51bc5c377aebe4791" class="m-doc">mat3x3</a> = 5,
-              <a href="#a2141f36b55d92ac83e0a57d858ec8590a8761e87637e7828e67ce545265f2e609" class="m-doc">mat4x4</a> = 6 }</span>
-            </dt>
-            <dd>the supported internal types of the stream.</dd>
+	<h3>enums</h3>
+	<table style="width:100%">
+		<tr>
+			              <div class="m-entry-container hoverable" id="a2141f36b55d92ac83e0a57d858ec8590">
+                <div class="m-entry-row flex">
+                  <div class="m-entry header"><span>type</span></div>
+                  <div class="m-entry">the supported internal types of the stream.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+		</tr>
+	</table>
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a9a06e10a0f7bd261b2bf85c7fe424e82" class="m-doc">data</a>(</span><span class="m-doc-wrap">) -&gt; void*</span>
-            </dt>
-            <dd>returns the pointer to the head of the memory stream.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad8c75154b08fbd2e84f9efba17aefb61" class="m-doc">cdata</a>(</span><span class="m-doc-wrap">) const -&gt; const void*</span>
-            </dt>
-            <dd>returns the constant pointer to the head of the memory stream.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5e84761233f2f91f9511442289739cd4" class="m-doc">as_single</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;float&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad47e076bdf66446e77f1f3e6f39dd538" class="m-doc">as_vec2</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec2&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a7eb210e7716868f263f1002d4f5220ea" class="m-doc">as_vec3</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec3&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac4bab4491e0d94f3cb8352aba5ae65f6" class="m-doc">as_vec4</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec4&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a8ec597c9fe0e35f5f09b6b6b1bc903d0" class="m-doc">as_mat2</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat2x2&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5efad521f3513e965afd08f489546595" class="m-doc">as_mat3</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat3x3&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae33cda7086b097b0a059124e15bdc0cc" class="m-doc">as_mat4</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat4x4&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac8f6812ad5166c903b77ee54eda821b7" class="m-doc">as_single</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;float&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a748d9a92acf554717bc7df1ccb63ecee" class="m-doc">as_vec2</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec2&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a0d32cd4b635b02af0282403f52186c78" class="m-doc">as_vec3</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec3&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a757f9cdf76a7f6ed2d16d7265d7e3c0c" class="m-doc">as_vec4</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec4&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a8607a74c19090363545c70ce6aa3e8a4" class="m-doc">as_mat2</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat2x2&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a929dea41ca8bba4408307b5b79617e5e" class="m-doc">as_mat3</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat3x3&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5e6ba8cc4623bad7ba401fc24cb6b6ad" class="m-doc">as_mat4</a>(</span><span class="m-doc-wrap">) const -&gt; std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat4x4&gt;&gt;&gt;</span>
-            </dt>
-            <dd>returns the type safe variant of the stream as a reference.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size</a>(</span><span class="m-doc-wrap">) const -&gt; size_t</span>
-            </dt>
-            <dd>returns the size of the stream (in unique element count).</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a626f602096bc9a46cba61422d2ef4141" class="m-doc">bytesize</a>(</span><span class="m-doc-wrap">) const -&gt; size_t</span>
-            </dt>
-            <dd>returns the total size of the memory stream in bytes.</dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9a06e10a0f7bd261b2bf85c7fe424e82" class="m-doc">data</a>                </div>
+                <div class="m-entry">returns the pointer to the head of the memory stream.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9a06e10a0f7bd261b2bf85c7fe424e82" class="m-doc">data</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void*</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the pointer to the head of the memory stream.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad8c75154b08fbd2e84f9efba17aefb61" class="m-doc">cdata</a>                </div>
+                <div class="m-entry">returns the constant pointer to the head of the memory stream.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad8c75154b08fbd2e84f9efba17aefb61" class="m-doc">cdata</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const void*</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the constant pointer to the head of the memory stream.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5e84761233f2f91f9511442289739cd4" class="m-doc">as_single</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5e84761233f2f91f9511442289739cd4" class="m-doc">as_single</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;float&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad47e076bdf66446e77f1f3e6f39dd538" class="m-doc">as_vec2</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad47e076bdf66446e77f1f3e6f39dd538" class="m-doc">as_vec2</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a7eb210e7716868f263f1002d4f5220ea" class="m-doc">as_vec3</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a7eb210e7716868f263f1002d4f5220ea" class="m-doc">as_vec3</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac4bab4491e0d94f3cb8352aba5ae65f6" class="m-doc">as_vec4</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac4bab4491e0d94f3cb8352aba5ae65f6" class="m-doc">as_vec4</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a70044ad4a23bf8a62ab182a3444d69a0" class="m-doc">psl::<wbr />vec4</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8ec597c9fe0e35f5f09b6b6b1bc903d0" class="m-doc">as_mat2</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8ec597c9fe0e35f5f09b6b6b1bc903d0" class="m-doc">as_mat2</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a2da10079b7423df1523e5df4ff8c6e43" class="m-doc">psl::<wbr />mat2x2</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5efad521f3513e965afd08f489546595" class="m-doc">as_mat3</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5efad521f3513e965afd08f489546595" class="m-doc">as_mat3</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#af2298145127037af0c5af724e322686b" class="m-doc">psl::<wbr />mat3x3</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae33cda7086b097b0a059124e15bdc0cc" class="m-doc">as_mat4</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae33cda7086b097b0a059124e15bdc0cc" class="m-doc">as_mat4</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a774fc727a9654f449234fc652b8a6336" class="m-doc">psl::<wbr />mat4x4</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac8f6812ad5166c903b77ee54eda821b7" class="m-doc">as_single</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac8f6812ad5166c903b77ee54eda821b7" class="m-doc">as_single</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;float&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a748d9a92acf554717bc7df1ccb63ecee" class="m-doc">as_vec2</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a748d9a92acf554717bc7df1ccb63ecee" class="m-doc">as_vec2</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a0d32cd4b635b02af0282403f52186c78" class="m-doc">as_vec3</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a0d32cd4b635b02af0282403f52186c78" class="m-doc">as_vec3</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a757f9cdf76a7f6ed2d16d7265d7e3c0c" class="m-doc">as_vec4</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a757f9cdf76a7f6ed2d16d7265d7e3c0c" class="m-doc">as_vec4</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a70044ad4a23bf8a62ab182a3444d69a0" class="m-doc">psl::<wbr />vec4</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8607a74c19090363545c70ce6aa3e8a4" class="m-doc">as_mat2</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8607a74c19090363545c70ce6aa3e8a4" class="m-doc">as_mat2</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a2da10079b7423df1523e5df4ff8c6e43" class="m-doc">psl::<wbr />mat2x2</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a929dea41ca8bba4408307b5b79617e5e" class="m-doc">as_mat3</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a929dea41ca8bba4408307b5b79617e5e" class="m-doc">as_mat3</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#af2298145127037af0c5af724e322686b" class="m-doc">psl::<wbr />mat3x3</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5e6ba8cc4623bad7ba401fc24cb6b6ad" class="m-doc">as_mat4</a>                </div>
+                <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5e6ba8cc4623bad7ba401fc24cb6b6ad" class="m-doc">as_mat4</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a774fc727a9654f449234fc652b8a6336" class="m-doc">psl::<wbr />mat4x4</a>&gt;&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the type safe variant of the stream as a reference.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size</a>                </div>
+                <div class="m-entry">returns the size of the stream (in unique element count).</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the size of the stream (in unique element count).</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a626f602096bc9a46cba61422d2ef4141" class="m-doc">bytesize</a>                </div>
+                <div class="m-entry">returns the total size of the memory stream in bytes.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a626f602096bc9a46cba61422d2ef4141" class="m-doc">bytesize</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the total size of the memory stream in bytes.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a9a06e10a0f7bd261b2bf85c7fe424e82"><div>
+          
+          
+          			          <section class="m-doc-details" id="a9a06e10a0f7bd261b2bf85c7fe424e82"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void* core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9a06e10a0f7bd261b2bf85c7fe424e82" class="m-doc-self">data</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the pointer to the head of the memory stream.</p>
+              <h3>Brief</h3>
+              <p>returns the pointer to the head of the memory stream.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -168,11 +657,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ad8c75154b08fbd2e84f9efba17aefb61"><div>
+			          <section class="m-doc-details" id="ad8c75154b08fbd2e84f9efba17aefb61"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const void* core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad8c75154b08fbd2e84f9efba17aefb61" class="m-doc-self">cdata</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the constant pointer to the head of the memory stream.</p>
+              <h3>Brief</h3>
+              <p>returns the constant pointer to the head of the memory stream.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -182,11 +672,14 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a5e84761233f2f91f9511442289739cd4"><div>
+			          <section class="m-doc-details" id="a5e84761233f2f91f9511442289739cd4"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;float&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e84761233f2f91f9511442289739cd4" class="m-doc-self">as_single</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;float&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e84761233f2f91f9511442289739cd4" class="m-doc-self">as_single</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -195,13 +688,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="ad47e076bdf66446e77f1f3e6f39dd538"><div>
+			          <section class="m-doc-details" id="ad47e076bdf66446e77f1f3e6f39dd538"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec2&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad47e076bdf66446e77f1f3e6f39dd538" class="m-doc-self">as_vec2</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad47e076bdf66446e77f1f3e6f39dd538" class="m-doc-self">as_vec2</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -210,13 +705,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a7eb210e7716868f263f1002d4f5220ea"><div>
+			          <section class="m-doc-details" id="a7eb210e7716868f263f1002d4f5220ea"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec3&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7eb210e7716868f263f1002d4f5220ea" class="m-doc-self">as_vec3</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7eb210e7716868f263f1002d4f5220ea" class="m-doc-self">as_vec3</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -225,13 +722,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="ac4bab4491e0d94f3cb8352aba5ae65f6"><div>
+			          <section class="m-doc-details" id="ac4bab4491e0d94f3cb8352aba5ae65f6"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::vec4&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac4bab4491e0d94f3cb8352aba5ae65f6" class="m-doc-self">as_vec4</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a70044ad4a23bf8a62ab182a3444d69a0" class="m-doc">psl::<wbr />vec4</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac4bab4491e0d94f3cb8352aba5ae65f6" class="m-doc-self">as_vec4</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -240,13 +739,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a8ec597c9fe0e35f5f09b6b6b1bc903d0"><div>
+			          <section class="m-doc-details" id="a8ec597c9fe0e35f5f09b6b6b1bc903d0"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat2x2&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ec597c9fe0e35f5f09b6b6b1bc903d0" class="m-doc-self">as_mat2</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a2da10079b7423df1523e5df4ff8c6e43" class="m-doc">psl::<wbr />mat2x2</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ec597c9fe0e35f5f09b6b6b1bc903d0" class="m-doc-self">as_mat2</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -255,13 +756,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a5efad521f3513e965afd08f489546595"><div>
+			          <section class="m-doc-details" id="a5efad521f3513e965afd08f489546595"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat3x3&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5efad521f3513e965afd08f489546595" class="m-doc-self">as_mat3</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#af2298145127037af0c5af724e322686b" class="m-doc">psl::<wbr />mat3x3</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5efad521f3513e965afd08f489546595" class="m-doc-self">as_mat3</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -270,13 +773,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="ae33cda7086b097b0a059124e15bdc0cc"><div>
+			          <section class="m-doc-details" id="ae33cda7086b097b0a059124e15bdc0cc"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;psl::array&lt;psl::mat4x4&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae33cda7086b097b0a059124e15bdc0cc" class="m-doc-self">as_mat4</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;<a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a774fc727a9654f449234fc652b8a6336" class="m-doc">psl::<wbr />mat4x4</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae33cda7086b097b0a059124e15bdc0cc" class="m-doc-self">as_mat4</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -285,13 +790,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="ac8f6812ad5166c903b77ee54eda821b7"><div>
+			          <section class="m-doc-details" id="ac8f6812ad5166c903b77ee54eda821b7"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;float&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8f6812ad5166c903b77ee54eda821b7" class="m-doc-self">as_single</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;float&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8f6812ad5166c903b77ee54eda821b7" class="m-doc-self">as_single</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -300,13 +807,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a748d9a92acf554717bc7df1ccb63ecee"><div>
+			          <section class="m-doc-details" id="a748d9a92acf554717bc7df1ccb63ecee"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec2&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a748d9a92acf554717bc7df1ccb63ecee" class="m-doc-self">as_vec2</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a748d9a92acf554717bc7df1ccb63ecee" class="m-doc-self">as_vec2</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -315,13 +824,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a0d32cd4b635b02af0282403f52186c78"><div>
+			          <section class="m-doc-details" id="a0d32cd4b635b02af0282403f52186c78"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec3&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0d32cd4b635b02af0282403f52186c78" class="m-doc-self">as_vec3</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0d32cd4b635b02af0282403f52186c78" class="m-doc-self">as_vec3</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -330,13 +841,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a757f9cdf76a7f6ed2d16d7265d7e3c0c"><div>
+			          <section class="m-doc-details" id="a757f9cdf76a7f6ed2d16d7265d7e3c0c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::vec4&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a757f9cdf76a7f6ed2d16d7265d7e3c0c" class="m-doc-self">as_vec4</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a70044ad4a23bf8a62ab182a3444d69a0" class="m-doc">psl::<wbr />vec4</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a757f9cdf76a7f6ed2d16d7265d7e3c0c" class="m-doc-self">as_vec4</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -345,13 +858,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a8607a74c19090363545c70ce6aa3e8a4"><div>
+			          <section class="m-doc-details" id="a8607a74c19090363545c70ce6aa3e8a4"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat2x2&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8607a74c19090363545c70ce6aa3e8a4" class="m-doc-self">as_mat2</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a2da10079b7423df1523e5df4ff8c6e43" class="m-doc">psl::<wbr />mat2x2</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8607a74c19090363545c70ce6aa3e8a4" class="m-doc-self">as_mat2</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -360,13 +875,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a929dea41ca8bba4408307b5b79617e5e"><div>
+			          <section class="m-doc-details" id="a929dea41ca8bba4408307b5b79617e5e"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat3x3&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a929dea41ca8bba4408307b5b79617e5e" class="m-doc-self">as_mat3</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#af2298145127037af0c5af724e322686b" class="m-doc">psl::<wbr />mat3x3</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a929dea41ca8bba4408307b5b79617e5e" class="m-doc-self">as_mat3</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -375,13 +892,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a5e6ba8cc4623bad7ba401fc24cb6b6ad"><div>
+			          <section class="m-doc-details" id="a5e6ba8cc4623bad7ba401fc24cb6b6ad"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const psl::array&lt;psl::mat4x4&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e6ba8cc4623bad7ba401fc24cb6b6ad" class="m-doc-self">as_mat4</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;<a href="namespacepsl.html#a774fc727a9654f449234fc652b8a6336" class="m-doc">psl::<wbr />mat4x4</a>&gt;&gt;&gt; core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e6ba8cc4623bad7ba401fc24cb6b6ad" class="m-doc-self">as_mat4</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Brief</h3>
+              <p>returns the type safe variant of the stream as a reference.</p>
+              <h3>Details</h3>
+              <p><p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -390,13 +909,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>if the stream is of the correct type, it will return a valid vector, otherwise a std::nullopt</p>
           </div></section>
-          <section class="m-doc-details" id="a729c8f7d00b72a61343ec38b3db8a0fa"><div>
+			          <section class="m-doc-details" id="a729c8f7d00b72a61343ec38b3db8a0fa"><div>
             <h3>
               <span class="m-doc-wrap-bumper">size_t core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the size of the stream (in unique element count).</p>
+              <h3>Brief</h3>
+              <p>returns the size of the stream (in unique element count).</p>
+              <h3>Details</h3>
+              <p><p>depending on the contained type, one &quot;element&quot; is bigger/smaller. This method returns the size of one element. for example if the stream contains vec2 data, one element is equal to 2 floats, and so the <a href="classcore_1_1stream.html#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size()</a> would be 2 if there were 4 floats present. similarly if the stream contained vec3 data, one element would be equivalent to 3 floats, and so a <a href="classcore_1_1stream.html#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size()</a> of 4 would be equal to 12 floats.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -405,13 +926,13 @@
                 </tr>
               </tfoot>
             </table>
-<p>depending on the contained type, one &quot;element&quot; is bigger/smaller. This method returns the size of one element. for example if the stream contains vec2 data, one element is equal to 2 floats, and so the <a href="classcore_1_1stream.html#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size()</a> would be 2 if there were 4 floats present. similarly if the stream contained vec3 data, one element would be equivalent to 3 floats, and so a <a href="classcore_1_1stream.html#a729c8f7d00b72a61343ec38b3db8a0fa" class="m-doc">size()</a> of 4 would be equal to 12 floats.</p>
           </div></section>
-          <section class="m-doc-details" id="a626f602096bc9a46cba61422d2ef4141"><div>
+			          <section class="m-doc-details" id="a626f602096bc9a46cba61422d2ef4141"><div>
             <h3>
               <span class="m-doc-wrap-bumper">size_t core::<wbr />stream::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a626f602096bc9a46cba61422d2ef4141" class="m-doc-self">bytesize</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the total size of the memory stream in bytes.</p>
+              <h3>Brief</h3>
+              <p>returns the total size of the memory stream in bytes.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -421,6 +942,16 @@
               </tfoot>
             </table>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -460,6 +991,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

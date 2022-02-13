@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,54 +47,254 @@
           <span class="m-breadcrumb"><a href="namespacememory.html">memory</a>::<wbr/></span>region <span class="m-thin">class</span>
         </h1>
         <p>defines a region of memory that <em>might</em> be physically backed depending on the allocator.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#types">types</a></li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
-<p>memory regions allow for easy managing of virtual memory in a platform abstract way. it provides some helper utilities to allocate correctly sized segments for the given type and even allows constructor/destructors to be called (using the memory::region::create()/memory::region::destroy() methods). Memory regions do not allocate memory in one go, they reserve and &quot;grow to&quot; the specified size (like how virtual memory behaves). How they do this is platform specific however, but should not be of concern for the end-user.</p>
-        <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+<p>memory regions allow for easy managing of virtual memory in a platform abstract way. it provides some helper utilities to allocate correctly sized segments for the given type and even allows constructor/destructors to be called (using the <a href="classmemory_1_1region.html#a431f5ae3319c41d7ba7cbc1e0201f809" class="m-doc">memory::<wbr />region::<wbr />create()</a>/memory::region::destroy() methods). Memory regions do not allocate memory in one go, they reserve and &quot;grow to&quot; the specified size (like how virtual memory behaves). How they do this is platform specific however, but should not be of concern for the end-user.</p>
+        <section id="types">
+          <h2><a href="#types">types</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#ac3e73ac0084d309d3b155e2bef9185de" class="m-doc">region</a>(</span><span class="m-doc-wrap">uint64_t size,
-              uint64_t alignment,
-              <a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>* allocator = new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>())</span>
-            </dt>
-            <dd>constructs a region of atleast the given <em>size</em>, using the <em>alignment</em> value.</dd>
+	<h3>typedefs</h3>
+	<table style="width:100%">
+		<tr>
+			              <div class="m-entry-container hoverable" id="a5f92738931f74867c754a5009e70329a">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;&gt;</div>
+                  <div class="m-entry header"><span><a href="#a5f92738931f74867c754a5009e70329a" class="m-doc-self">state</a> = </span></div>
+                  <div class="m-entry">describes the various states memory can be in.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-private"><span class="tooltip">private</span>private</span></span></div>
+                </div>
+              </div>
+		</tr>
+	</table>
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a90ba0332ac1296fc17d2eccf56ee8a24" class="m-doc">allocate</a>(</span><span class="m-doc-wrap">size_t size) -&gt; std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">segment</a>&gt;</span>
-            </dt>
-            <dd>tries to allocate a segment of atleast the given <em>size</em>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a03bbcdef381f14b1ec6e1c5073dae80a" class="m-doc">create_region</a>(</span><span class="m-doc-wrap">size_t size,
-              std::optional&lt;size_t&gt; alignment,
-              <a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>* allocator = new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>()) -&gt; std::optional&lt;<a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&gt;</span>
-            </dt>
-            <dd>creates a sub-region of atleast that size.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aba14855cef0855f21278ec924fc9618b" class="m-doc">region</a>                </div>
+                <div class="m-entry">specialized constructor used for internal usage</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aba14855cef0855f21278ec924fc9618b" class="m-doc">region</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">parent</div>
+                  <div class="m-entry"><a href="classmemory_1_1region.html" class="m-doc">region</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">segment</div>
+                  <div class="m-entry"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">pageSize</div>
+                  <div class="m-entry">uint64_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">alignment</div>
+                  <div class="m-entry">uint64_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">allocator</div>
+                  <div class="m-entry"><a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>*</div>
+                  <div class="m-entry right_align">= new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>()</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">specialized constructor used for internal usage</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac3e73ac0084d309d3b155e2bef9185de" class="m-doc">region</a>                </div>
+                <div class="m-entry">constructs a region of atleast the given <em>size</em>, using the <em>alignment</em> value.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac3e73ac0084d309d3b155e2bef9185de" class="m-doc">region</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">uint64_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">alignment</div>
+                  <div class="m-entry">uint64_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">allocator</div>
+                  <div class="m-entry"><a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>*</div>
+                  <div class="m-entry right_align">= new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>()</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">constructs a region of atleast the given <em>size</em>, using the <em>alignment</em> value.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a90ba0332ac1296fc17d2eccf56ee8a24" class="m-doc">allocate</a>                </div>
+                <div class="m-entry">tries to allocate a segment of atleast the given <em>size</em>.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a90ba0332ac1296fc17d2eccf56ee8a24" class="m-doc">allocate</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">segment</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">tries to allocate a segment of atleast the given <em>size</em>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a03bbcdef381f14b1ec6e1c5073dae80a" class="m-doc">create_region</a>                </div>
+                <div class="m-entry">creates a sub-region of atleast that size.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a03bbcdef381f14b1ec6e1c5073dae80a" class="m-doc">create_region</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">alignment</div>
+                  <div class="m-entry">std::optional&lt;size_t&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">allocator</div>
+                  <div class="m-entry"><a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>*</div>
+                  <div class="m-entry right_align">= new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>()</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates a sub-region of atleast that size.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ac3e73ac0084d309d3b155e2bef9185de"><div>
+          
+          			          <section class="m-doc-details" id="aba14855cef0855f21278ec924fc9618b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> memory::<wbr />region::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aba14855cef0855f21278ec924fc9618b" class="m-doc-self">region</a>(</span><span class="m-doc-wrap"><a href="classmemory_1_1region.html" class="m-doc">region</a>&amp; parent,
+              <a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp; segment,
+              uint64_t pageSize,
+              uint64_t alignment,
+              <a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>* allocator = new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>()) <span class="m-label m-danger">private</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>specialized constructor used for internal usage</p>
+              <h3>Details</h3>
+              <p><p>we keep this one private as it relies on certain conditions on the size of the segment (being aligned to pages, and starting at a page).</p></p>
+          </div></section>
+			          <section class="m-doc-details" id="ac3e73ac0084d309d3b155e2bef9185de"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> memory::<wbr />region::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac3e73ac0084d309d3b155e2bef9185de" class="m-doc-self">region</a>(</span><span class="m-doc-wrap">uint64_t size,
               uint64_t alignment,
               <a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>* allocator = new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>())</span></span>
             </h3>
-            <p>constructs a region of atleast the given <em>size</em>, using the <em>alignment</em> value.</p>
+              <h3>Brief</h3>
+              <p>constructs a region of atleast the given <em>size</em>, using the <em>alignment</em> value.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p><em>allocators</em> should not be shared unless the allocator itself supports such a behaviour.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -114,13 +314,14 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p><em>allocators</em> should not be shared unless the allocator itself supports such a behaviour.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a90ba0332ac1296fc17d2eccf56ee8a24"><div>
+
+          			          <section class="m-doc-details" id="a90ba0332ac1296fc17d2eccf56ee8a24"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">segment</a>&gt; memory::<wbr />region::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a90ba0332ac1296fc17d2eccf56ee8a24" class="m-doc-self">allocate</a>(</span><span class="m-doc-wrap">size_t size)</span></span>
             </h3>
-            <p>tries to allocate a segment of atleast the given <em>size</em>.</p>
+              <h3>Brief</h3>
+              <p>tries to allocate a segment of atleast the given <em>size</em>.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -139,15 +340,27 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a03bbcdef381f14b1ec6e1c5073dae80a"><div>
+			          <section class="m-doc-details" id="a03bbcdef381f14b1ec6e1c5073dae80a"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&gt; memory::<wbr />region::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a03bbcdef381f14b1ec6e1c5073dae80a" class="m-doc-self">create_region</a>(</span><span class="m-doc-wrap">size_t size,
               std::optional&lt;size_t&gt; alignment,
               <a href="classmemory_1_1allocator__base.html" class="m-doc">allocator_<wbr />base</a>* allocator = new <a href="classmemory_1_1default__allocator.html" class="m-doc">default_<wbr />allocator</a>())</span></span>
             </h3>
-            <p>creates a sub-region of atleast that size.</p>
-<p>Creates a sub region of atleast the given size. The region could be bigger depending on certain factors such as alignment, etc.. Destruction/cleanup happens automatically through the destructor of the created region.</p>
+              <h3>Brief</h3>
+              <p>creates a sub-region of atleast that size.</p>
+              <h3>Details</h3>
+              <p><p>Creates a sub region of atleast the given size. The region could be bigger depending on certain factors such as alignment, etc.. Destruction/cleanup happens automatically through the destructor of the created region.</p></p>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -187,6 +400,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

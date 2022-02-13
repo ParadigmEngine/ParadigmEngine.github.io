@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -48,79 +48,360 @@
           <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1spmc.html">spmc</a>::<wbr/></span>producer <span class="m-thin">class</span>
         </h1>
         <p>SPMC based on Chase-Lev deque.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>This class is based on Chase-Lev&#x27;s deque implementation of a Single Producer Multi Consumer (SPMC). The producer should only be used on a single thread, and the &#x27;<a href="classpsl_1_1spmc_1_1consumer.html" class="m-doc">psl::<wbr />spmc::<wbr />consumer</a>&#x27; variant should be used in the consuming threads. This offers a safe API.</p>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt id="a9c3270ad45e4ce66f44ce77e5b5db2f6">
-              <span class="m-doc-wrap-bumper">auto <a href="#a9c3270ad45e4ce66f44ce77e5b5db2f6" class="m-doc-self">consumer</a>(</span><span class="m-doc-wrap">) -&gt; ::<a href="classpsl_1_1spmc_1_1consumer.html" class="m-doc">psl::<wbr />spmc::<wbr />consumer</a>&lt;T&gt; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>\Returns a consumer that is linked to the current producer, to be used in other threads.</dd>
-            <dt id="af33000c50368d934996856a6e4e2f2cc">
-              <span class="m-doc-wrap-bumper">auto <a href="#af33000c50368d934996856a6e4e2f2cc" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const -&gt; size_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>\Returns the current count of all elements in the producer.</dd>
-            <dt id="acd5309033fe1030434a7d43123e0f2d1">
-              <span class="m-doc-wrap-bumper">auto <a href="#acd5309033fe1030434a7d43123e0f2d1" class="m-doc-self">ssize</a>(</span><span class="m-doc-wrap">) const -&gt; int64_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>\Returns the current count of all elements in the producer.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a7bae6c6ed61cf74cf973a6a3b6b23d90" class="m-doc">resize</a>(</span><span class="m-doc-wrap">size_t size)</span>
-            </dt>
-            <dd>Resizes the internal buffer to the given size.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a11cdadc6ac76979d33eee5cb7f7284f3" class="m-doc">push</a>(</span><span class="m-doc-wrap">T&amp;&amp; value)</span>
-            </dt>
-            <dd>Push the given element onto the end of the deque.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5783dc5abb66036b7a350a1d663bd686" class="m-doc">pop</a>(</span><span class="m-doc-wrap">) -&gt; std::optional&lt;T&gt; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>Pops an element (if any are left) off the deque from the end.</dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9c3270ad45e4ce66f44ce77e5b5db2f6" class="m-doc">consumer</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9c3270ad45e4ce66f44ce77e5b5db2f6" class="m-doc">consumer</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">::<a href="classpsl_1_1spmc_1_1consumer.html" class="m-doc">psl::<wbr />spmc::<wbr />consumer</a>&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af33000c50368d934996856a6e4e2f2cc" class="m-doc">size</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af33000c50368d934996856a6e4e2f2cc" class="m-doc">size</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#acd5309033fe1030434a7d43123e0f2d1" class="m-doc">ssize</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#acd5309033fe1030434a7d43123e0f2d1" class="m-doc">ssize</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">int64_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a7bae6c6ed61cf74cf973a6a3b6b23d90" class="m-doc">resize</a>                </div>
+                <div class="m-entry">Resizes the internal buffer to the given size.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a7bae6c6ed61cf74cf973a6a3b6b23d90" class="m-doc">resize</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Resizes the internal buffer to the given size.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a11cdadc6ac76979d33eee5cb7f7284f3" class="m-doc">push</a>                </div>
+                <div class="m-entry">Push the given element onto the end of the deque.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a11cdadc6ac76979d33eee5cb7f7284f3" class="m-doc">push</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">T&amp;&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Push the given element onto the end of the deque.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5783dc5abb66036b7a350a1d663bd686" class="m-doc">pop</a>                </div>
+                <div class="m-entry">Pops an element (if any are left) off the deque from the end.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5783dc5abb66036b7a350a1d663bd686" class="m-doc">pop</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Pops an element (if any are left) off the deque from the end.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a798e0773b4f2b1ffda67e99423d25f3c" class="m-doc">steal</a>                </div>
+                <div class="m-entry">Pops an element (if any are left) off the deque from the front.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a798e0773b4f2b1ffda67e99423d25f3c" class="m-doc">steal</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Pops an element (if any are left) off the deque from the front.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a7bae6c6ed61cf74cf973a6a3b6b23d90"><div>
+          
+          
+          			          <section class="m-doc-details" id="a9c3270ad45e4ce66f44ce77e5b5db2f6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">::<a href="classpsl_1_1spmc_1_1consumer.html" class="m-doc">psl::<wbr />spmc::<wbr />consumer</a>&lt;T&gt; psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9c3270ad45e4ce66f44ce77e5b5db2f6" class="m-doc-self">consumer</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>a consumer that is linked to the current producer, to be used in other threads.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="af33000c50368d934996856a6e4e2f2cc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">size_t psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af33000c50368d934996856a6e4e2f2cc" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the current count of all elements in the producer.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="acd5309033fe1030434a7d43123e0f2d1"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">int64_t psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acd5309033fe1030434a7d43123e0f2d1" class="m-doc-self">ssize</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the current count of all elements in the producer.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a7bae6c6ed61cf74cf973a6a3b6b23d90"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
               <span class="m-doc-wrap-bumper">void psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7bae6c6ed61cf74cf973a6a3b6b23d90" class="m-doc-self">resize</a>(</span><span class="m-doc-wrap">size_t size)</span></span>
             </h3>
-            <p>Resizes the internal buffer to the given size.</p>
-<p>Tries to resize to the given size, it will automatically align itself to the next power of 2 if the value isn&#x27;t a power of 2 already. The minimum size will be &#x27;at least&#x27; equal to, or bigger than, the current size (not capacity) of the internal buffer.</p>
+              <h3>Brief</h3>
+              <p>Resizes the internal buffer to the given size.</p>
+              <h3>Details</h3>
+              <p><p>Tries to resize to the given size, it will automatically align itself to the next power of 2 if the value isn&#x27;t a power of 2 already. The minimum size will be &#x27;at least&#x27; equal to, or bigger than, the current size (not capacity) of the internal buffer.</p></p>
           </div></section>
-          <section class="m-doc-details" id="a11cdadc6ac76979d33eee5cb7f7284f3"><div>
+			          <section class="m-doc-details" id="a11cdadc6ac76979d33eee5cb7f7284f3"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
               <span class="m-doc-wrap-bumper">void psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11cdadc6ac76979d33eee5cb7f7284f3" class="m-doc-self">push</a>(</span><span class="m-doc-wrap">T&amp;&amp; value)</span></span>
             </h3>
-            <p>Push the given element onto the end of the deque.</p>
-<p>Will push the given element onto the deque if enough space is present. If not enough space is present it will construct a new internal buffer that contains at least enough space. If a previous (unused) buffer is present it will now clean that buffer up.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Callable only on the owning thread, do not call from multiple threads.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000011" class="m-doc">Todo</a></h4><p>Implement the backing storage as an atomic&lt;shared_ptr&lt;buffer&gt;&gt; for more logical cleanup flow.</p></aside>
+              <h3>Brief</h3>
+              <p>Push the given element onto the end of the deque.</p>
+              <h3>Details</h3>
+              <p><p>Will push the given element onto the deque if enough space is present. If not enough space is present it will construct a new internal buffer that contains at least enough space. If a previous (unused) buffer is present it will now clean that buffer up.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Callable only on the owning thread, do not call from multiple threads.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000011" class="m-doc">Todo</a></h4><p>Implement the backing storage as an atomic&lt;shared_ptr&lt;buffer&gt;&gt; for more logical cleanup flow.</p></aside></p>
           </div></section>
-          <section class="m-doc-details" id="a5783dc5abb66036b7a350a1d663bd686"><div>
+			          <section class="m-doc-details" id="a5783dc5abb66036b7a350a1d663bd686"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
               <span class="m-doc-wrap-bumper">std::optional&lt;T&gt; psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5783dc5abb66036b7a350a1d663bd686" class="m-doc-self">pop</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
-            <p>Pops an element (if any are left) off the deque from the end.</p>
-<p>Tries to pop an element off the end of the deque.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Only callable from the owning thread, otherwise the results will be undefined.</p></aside>
+              <h3>Brief</h3>
+              <p>Pops an element (if any are left) off the deque from the end.</p>
+              <h3>Details</h3>
+              <p><p>Tries to pop an element off the end of the deque.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Only callable from the owning thread, otherwise the results will be undefined.</p></aside></p>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          			          <section class="m-doc-details" id="a798e0773b4f2b1ffda67e99423d25f3c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">std::optional&lt;T&gt; psl::<wbr />spmc::<wbr />producer&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a798e0773b4f2b1ffda67e99423d25f3c" class="m-doc-self">steal</a>(</span><span class="m-doc-wrap">) <span class="m-label m-danger">private</span> <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Pops an element (if any are left) off the deque from the front.</p>
+              <h3>Details</h3>
+              <p><p>To be used by consumer threads, this gives a thread safe way of stealing items from the deque. It can be called by any thread, but is only exposed to the consumer class.</p></p>
+          </div></section>
+
+          
+          
         </section>
       </div>
     </div>
@@ -160,6 +441,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

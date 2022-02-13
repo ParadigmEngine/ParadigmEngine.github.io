@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,77 +47,327 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1data.html">data</a>::<wbr/></span>buffer_t <span class="m-thin">class</span>
         </h1>
         <p>container class for GPU data.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
-<p><a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> is a data container for anything that will be uploaded to the GPU. This means that this can not contain any complex types (such as indirections). <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> can be incorrectly set up when giving incompatible <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> bundled with core::gfx::memory_usage.</p><aside class="m-note m-info"><h4>Note</h4><p>the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> you pass to this object will also dictate the <strong>size</strong> and <strong>alignment</strong> requirements of this specific resource on the GPU.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000001" class="m-doc">Todo</a></h4><p>figure out a way around incompatible <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> setups, perhaps by using structs to construct the class.</p></aside><aside class="m-note m-default"><h4>Author</h4><p>Jessy De Lannoit</p></aside>
+<p><a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> is a data container for anything that will be uploaded to the GPU. This means that this can not contain any complex types (such as indirections). <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> can be incorrectly set up when giving incompatible <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> bundled with <a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> you pass to this object will also dictate the <strong>size</strong> and <strong>alignment</strong> requirements of this specific resource on the GPU.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000001" class="m-doc">Todo</a></h4><p>figure out a way around incompatible <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> setups, perhaps by using structs to construct the class.</p></aside><aside class="m-note m-default"><h4>Author</h4><p>Jessy De Lannoit</p></aside>
         <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#a6ecbfbe0bdf4f677a834dc2e61a3e8b1" class="m-doc">buffer_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
-              <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
-              core::gfx::memory_usage usage,
-              core::gfx::memory_property memoryPropertyFlags,
-              <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp;&amp; memory_region) <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6ecbfbe0bdf4f677a834dc2e61a3e8b1" class="m-doc">buffer_t</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6ecbfbe0bdf4f677a834dc2e61a3e8b1" class="m-doc">buffer_t</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaData</div>
+                  <div class="m-entry">const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaFile</div>
+                  <div class="m-entry"><a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">usage</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">memoryPropertyFlags</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a0f29935c45bb23260985c11ad3389b80" class="m-doc">core::<wbr />gfx::<wbr />memory_property</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">memory_region</div>
+                  <div class="m-entry"><a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp;&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a6c7bd6eef91114b0a1ce1cc9fdc71eff" class="m-doc">size</a>(</span><span class="m-doc-wrap">) const -&gt; size_t</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a553b45255b7368b0c0c75500721e2f4b" class="m-doc">usage</a>(</span><span class="m-doc-wrap">) const -&gt; core::gfx::memory_usage</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abd840f9c10fc833828c2e7decc8bafa6" class="m-doc">memoryPropertyFlags</a>(</span><span class="m-doc-wrap">) const -&gt; core::gfx::memory_property</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a436b80bc459cd6a9dae53f8ed9d06f5f" class="m-doc">region</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a74beda2e5defc0253f4c60eefe270634" class="m-doc">segments</a>(</span><span class="m-doc-wrap">) const -&gt; const std::vector&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;&amp;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aa7cc819b973c19ab38cafdfbf8d04b16" class="m-doc">allocate</a>(</span><span class="m-doc-wrap">size_t size) -&gt; std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a01649f11bfc58ff4dce167f39c4a5ff7" class="m-doc">deallocate</a>(</span><span class="m-doc-wrap"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp; segment) -&gt; bool</span>
-            </dt>
-            <dd></dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6c7bd6eef91114b0a1ce1cc9fdc71eff" class="m-doc">size</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6c7bd6eef91114b0a1ce1cc9fdc71eff" class="m-doc">size</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a553b45255b7368b0c0c75500721e2f4b" class="m-doc">usage</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a553b45255b7368b0c0c75500721e2f4b" class="m-doc">usage</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abd840f9c10fc833828c2e7decc8bafa6" class="m-doc">memoryPropertyFlags</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abd840f9c10fc833828c2e7decc8bafa6" class="m-doc">memoryPropertyFlags</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a0f29935c45bb23260985c11ad3389b80" class="m-doc">core::<wbr />gfx::<wbr />memory_property</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a436b80bc459cd6a9dae53f8ed9d06f5f" class="m-doc">region</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a436b80bc459cd6a9dae53f8ed9d06f5f" class="m-doc">region</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a74beda2e5defc0253f4c60eefe270634" class="m-doc">segments</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a74beda2e5defc0253f4c60eefe270634" class="m-doc">segments</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa7cc819b973c19ab38cafdfbf8d04b16" class="m-doc">allocate</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa7cc819b973c19ab38cafdfbf8d04b16" class="m-doc">allocate</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">size_t</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a01649f11bfc58ff4dce167f39c4a5ff7" class="m-doc">deallocate</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a01649f11bfc58ff4dce167f39c4a5ff7" class="m-doc">deallocate</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">segment</div>
+                  <div class="m-entry"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a6ecbfbe0bdf4f677a834dc2e61a3e8b1"><div>
+          
+          			          <section class="m-doc-details" id="a6ecbfbe0bdf4f677a834dc2e61a3e8b1"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6ecbfbe0bdf4f677a834dc2e61a3e8b1" class="m-doc-self">buffer_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              <span class="m-doc-wrap-bumper"> core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6ecbfbe0bdf4f677a834dc2e61a3e8b1" class="m-doc-self">buffer_t</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
               const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
               <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
-              core::gfx::memory_usage usage,
-              core::gfx::memory_property memoryPropertyFlags,
+              <a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a> usage,
+              <a href="namespacecore_1_1gfx.html#a0f29935c45bb23260985c11ad3389b80" class="m-doc">core::<wbr />gfx::<wbr />memory_property</a> memoryPropertyFlags,
               <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp;&amp; memory_region) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
+              <h3>Details</h3>
+              <p><p>will do the minimal setup needed, no allocations happen at this point yet.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -149,9 +399,9 @@
                 </tr>
               </tbody>
             </table>
-<p>will do the minimal setup needed, no allocations happen at this point yet.</p>
           </div></section>
-          <section class="m-doc-details" id="a6c7bd6eef91114b0a1ce1cc9fdc71eff"><div>
+
+          			          <section class="m-doc-details" id="a6c7bd6eef91114b0a1ce1cc9fdc71eff"><div>
             <h3>
               <span class="m-doc-wrap-bumper">size_t core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6c7bd6eef91114b0a1ce1cc9fdc71eff" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
@@ -164,36 +414,38 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a553b45255b7368b0c0c75500721e2f4b"><div>
+			          <section class="m-doc-details" id="a553b45255b7368b0c0c75500721e2f4b"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">core::gfx::memory_usage core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a553b45255b7368b0c0c75500721e2f4b" class="m-doc-self">usage</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a> core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a553b45255b7368b0c0c75500721e2f4b" class="m-doc-self">usage</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>the core::gfx::memory_usage of this instance, showing the type of resource this is for the GPU</td>
+                  <td>the <a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">core::<wbr />gfx::<wbr />memory_usage</a> of this instance, showing the type of resource this is for the GPU</td>
                 </tr>
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="abd840f9c10fc833828c2e7decc8bafa6"><div>
+			          <section class="m-doc-details" id="abd840f9c10fc833828c2e7decc8bafa6"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">core::gfx::memory_property core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd840f9c10fc833828c2e7decc8bafa6" class="m-doc-self">memoryPropertyFlags</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#a0f29935c45bb23260985c11ad3389b80" class="m-doc">core::<wbr />gfx::<wbr />memory_property</a> core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd840f9c10fc833828c2e7decc8bafa6" class="m-doc-self">memoryPropertyFlags</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>the core::gfx::memory_property, so you know where the data lives.</td>
+                  <td>the <a href="namespacecore_1_1gfx.html#a0f29935c45bb23260985c11ad3389b80" class="m-doc">core::<wbr />gfx::<wbr />memory_property</a>, so you know where the data lives.</td>
                 </tr>
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a436b80bc459cd6a9dae53f8ed9d06f5f"><div>
+			          <section class="m-doc-details" id="a436b80bc459cd6a9dae53f8ed9d06f5f"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>&amp; core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a436b80bc459cd6a9dae53f8ed9d06f5f" class="m-doc-self">region</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>the data can exist &quot;virtually&quot; as well, for example in the case this is a pure GPU resource.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -202,9 +454,8 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>the data can exist &quot;virtually&quot; as well, for example in the case this is a pure GPU resource.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a74beda2e5defc0253f4c60eefe270634"><div>
+			          <section class="m-doc-details" id="a74beda2e5defc0253f4c60eefe270634"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const std::vector&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;&amp; core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a74beda2e5defc0253f4c60eefe270634" class="m-doc-self">segments</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
@@ -217,10 +468,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="aa7cc819b973c19ab38cafdfbf8d04b16"><div>
+			          <section class="m-doc-details" id="aa7cc819b973c19ab38cafdfbf8d04b16"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt; core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa7cc819b973c19ab38cafdfbf8d04b16" class="m-doc-self">allocate</a>(</span><span class="m-doc-wrap">size_t size)</span></span>
             </h3>
+              <h3>Details</h3>
+              <p><p>Will try to allocate a new <a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a> of <em>atleast</em> the given size. This method will adhere to the alignment requirements of the underlaying <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -238,12 +491,13 @@
                 </tr>
               </tfoot>
             </table>
-<p>Will try to allocate a new <a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a> of <em>atleast</em> the given size. This method will adhere to the alignment requirements of the underlaying <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a>.</p>
           </div></section>
-          <section class="m-doc-details" id="a01649f11bfc58ff4dce167f39c4a5ff7"><div>
+			          <section class="m-doc-details" id="a01649f11bfc58ff4dce167f39c4a5ff7"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a01649f11bfc58ff4dce167f39c4a5ff7" class="m-doc-self">deallocate</a>(</span><span class="m-doc-wrap"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp; segment)</span></span>
             </h3>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p><em>segment</em> gets invalidated on success.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -261,8 +515,17 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p><em>segment</em> gets invalidated on success.</p></aside>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -302,6 +565,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

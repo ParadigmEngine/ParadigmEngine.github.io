@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -48,79 +48,171 @@
         </h1>
         <p>contains application specific information and utilities</p>
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#func-members">Functions</a></li>
-                <li><a href="#var-members">Variables</a></li>
-              </ul>
-            </li>
+
+            <li><a href="#func-members">functions</a></li>
+            <li><a href="#var-members">variables</a></li>
           </ul>
         </nav>
 <p>this namespace contains application specific information and utilities that might help you to find out information of its location, specific datapaths, etc...</p>
         <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
+          <h2><a href="#func-members">functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a4e9a3a1197bb19854671a376eae0d648" class="m-doc">get_path</a>(</span><span class="m-doc-wrap">) -&gt; psl::string</span>
-            </dt>
-            <dd>gets the path of the current application. This path is platform specific.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a4e9a3a1197bb19854671a376eae0d648" class="m-doc">get_path</a>                </div>
+                <div class="m-entry">gets the path of the current application. This path is platform specific.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a4e9a3a1197bb19854671a376eae0d648" class="m-doc">get_path</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">gets the path of the current application. This path is platform specific.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section id="var-members">
-          <h2><a href="#var-members">Variables</a></h2>
+          <h2><a href="#var-members">variables</a></h2>
           <dl class="m-doc">
-            <dt id="a05fa6971046a4118b66cbf2e9704b963">
-              static const psl::string <a href="#a05fa6971046a4118b66cbf2e9704b963" class="m-doc-self">project</a>
-            </dt>
-            <dd>location where the application is being ran from, check <a href="namespaceutility_1_1application_1_1path.html#a4e9a3a1197bb19854671a376eae0d648" class="m-doc">utility::<wbr />application::<wbr />path::<wbr />get_path()</a> for more info.</dd>
-            <dt id="a76e6851d039a4c80b03fc2b8469a8143">
-              static const psl::string <a href="#a76e6851d039a4c80b03fc2b8469a8143" class="m-doc-self">data</a>
-            </dt>
-            <dd>data path on this platform.</dd>
-            <dt id="aa2df4f518d29dc4b1ff3254e0740cdf4">
-              static const psl::string <a href="#aa2df4f518d29dc4b1ff3254e0740cdf4" class="m-doc-self">library</a>
-            </dt>
-            <dd>library path on this platform.</dd>
-            <dt id="aff13b003e78c65225daa1666462c65c7">
-              static const psl::string <a href="#aff13b003e78c65225daa1666462c65c7" class="m-doc-self">settings</a>
-            </dt>
-            <dd>settings path on this platform.</dd>
-            <dt id="a4f9ca556f13fee6f81c01c42fdf34218">
-              static const psl::string <a href="#a4f9ca556f13fee6f81c01c42fdf34218" class="m-doc-self">textures</a>
-            </dt>
-            <dd>textures path on this platform.</dd>
-            <dt id="a7ce8a457a7d453824b3d05e5b23eb1ba">
-              static const psl::string <a href="#a7ce8a457a7d453824b3d05e5b23eb1ba" class="m-doc-self">materials</a>
-            </dt>
-            <dd>materials path on this platform.</dd>
-            <dt id="ad366a5ccbf82c507cd386330256f4535">
-              static const psl::string <a href="#ad366a5ccbf82c507cd386330256f4535" class="m-doc-self">models</a>
-            </dt>
-            <dd>models path on this platform.</dd>
-            <dt id="a23f26a42d10b25593421af414da562f1">
-              static const psl::string <a href="#a23f26a42d10b25593421af414da562f1" class="m-doc-self">shaders</a>
-            </dt>
-            <dd>shaders path on this platform.</dd>
-            <dt id="addd9957ee3a186dbf506ed76b8b52f89">
-              static const psl::string <a href="#addd9957ee3a186dbf506ed76b8b52f89" class="m-doc-self">samplers</a>
-            </dt>
-            <dd>samplers path on this platform.</dd>
-            <dt id="a249429658973406ff0c019aeb6ba8b7f">
-              static const psl::string <a href="#a249429658973406ff0c019aeb6ba8b7f" class="m-doc-self">worlds</a>
-            </dt>
-            <dd>worlds path on this platform.</dd>
+            	<table style="width:100%">
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="a05fa6971046a4118b66cbf2e9704b963">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> project</div>
+                <div class="m-entry">location where the application is being ran from, check <a href="namespaceutility_1_1application_1_1path.html#a4e9a3a1197bb19854671a376eae0d648" class="m-doc">utility::<wbr />application::<wbr />path::<wbr />get_path()</a> for more info.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable" id="a76e6851d039a4c80b03fc2b8469a8143">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> data</div>
+                <div class="m-entry">data path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="aa2df4f518d29dc4b1ff3254e0740cdf4">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> library</div>
+                <div class="m-entry">library path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable" id="aff13b003e78c65225daa1666462c65c7">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> settings</div>
+                <div class="m-entry">settings path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="a4f9ca556f13fee6f81c01c42fdf34218">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> textures</div>
+                <div class="m-entry">textures path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable" id="a7ce8a457a7d453824b3d05e5b23eb1ba">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> materials</div>
+                <div class="m-entry">materials path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="ad366a5ccbf82c507cd386330256f4535">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> models</div>
+                <div class="m-entry">models path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable" id="a23f26a42d10b25593421af414da562f1">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> shaders</div>
+                <div class="m-entry">shaders path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="addd9957ee3a186dbf506ed76b8b52f89">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> samplers</div>
+                <div class="m-entry">samplers path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable" id="a249429658973406ff0c019aeb6ba8b7f">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a></div> worlds</div>
+                <div class="m-entry">worlds path on this platform.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"><span class="tooltip">const</span>const</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="a4e9a3a1197bb19854671a376eae0d648"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">psl::string utility::<wbr />application::<wbr />path::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4e9a3a1197bb19854671a376eae0d648" class="m-doc-self">get_path</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a> utility::<wbr />application::<wbr />path::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4e9a3a1197bb19854671a376eae0d648" class="m-doc-self">get_path</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
-            <p>gets the path of the current application. This path is platform specific.</p>
+              <h3>Brief</h3>
+              <p>gets the path of the current application. This path is platform specific.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-dim"><h4><a href="todo.html#_todo000010" class="m-doc">Todo</a></h4><p>check if returning an empty path for android is correct behaviour.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>even though the path is absolute, don&#x27;t expect it to look like a windows path on other platforms.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -129,7 +221,6 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-dim"><h4><a href="todo.html#_todo000010" class="m-doc">Todo</a></h4><p>check if returning an empty path for android is correct behaviour.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>even though the path is absolute, don&#x27;t expect it to look like a windows path on other platforms.</p></aside>
           </div></section>
         </section>
       </div>
@@ -170,6 +261,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,90 +47,528 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>context <span class="m-thin">class</span>
         </h1>
         <p>encapsulated a graphics context.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>a context encapsulated a physical device (GPU), as well as a instance of the graphics context on the driver. it is the single point of information that many operations need in Vulkan, so that those operations know who will be executing them. As such, the context class is fundamental, and will be passed around a lot. It is often one of the first objects to be created, and one of the last to be destroyed in a most applications.</p>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a7833eeee7c4d1c62684286f97452e990" class="m-doc">instance</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::Instance&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abec09333ef3bd9573c43e050085452be" class="m-doc">device</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::Device&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5771ae336d86f87c4e76f67cc4c3cbfb" class="m-doc">physical_device</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::PhysicalDevice&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ab35e395ebb72abd85e03420836ac6068" class="m-doc">properties</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::PhysicalDeviceProperties&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#afb68579b54e70612a1efaa7ba3209e73" class="m-doc">features</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::PhysicalDeviceFeatures&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a2ee91cf9aa96cad4297a3f21dd704e7e" class="m-doc">memory_properties</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::PhysicalDeviceMemoryProperties&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ab76c30b774f07eb2661f9c1b00f72837" class="m-doc">command_pool</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::CommandPool&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a3246465b2821ca362a8468cbcb0d0a3d" class="m-doc">descriptor_pool</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::DescriptorPool&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#acea5a860f5bb2cd72f6f493417afa74c" class="m-doc">queue</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::Queue&amp; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a09e6fed6df145580c75e475f56894c67" class="m-doc">graphics_queue_index</a>(</span><span class="m-doc-wrap">) const -&gt; uint32_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abe153e21db8015a866c39b2b6b993d13" class="m-doc">memory_type</a>(</span><span class="m-doc-wrap">uint32_t typeBits,
-              const vk::MemoryPropertyFlags&amp; properties,
-              uint32_t* typeIndex) const -&gt; vk::Bool32 <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a31449ef4eb24c559f8fdd7ed33888a57" class="m-doc">memory_type</a>(</span><span class="m-doc-wrap">uint32_t typeBits,
-              const vk::MemoryPropertyFlags&amp; properties) const -&gt; uint32_t</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#af078770ab9f0bbde2ec186fe4dc3e7f8" class="m-doc">flush</a>(</span><span class="m-doc-wrap">vk::CommandBuffer commandBuffer,
-              bool free)</span>
-            </dt>
-            <dd>flushes all operations on the given commandbuffer and potentially free it at the end.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a288f64c03536185aade44c37033157ab" class="m-doc">device_index</a>(</span><span class="m-doc-wrap">) const -&gt; uint32_t <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aae9a6ec400c391a1a4a776885bd8d38a" class="m-doc">acquireNextImage2KHR</a>(</span><span class="m-doc-wrap">optional_ref&lt;uint64_t&gt; out_version = std::nullopt) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a7833eeee7c4d1c62684286f97452e990" class="m-doc">instance</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a7833eeee7c4d1c62684286f97452e990" class="m-doc">instance</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::Instance&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abec09333ef3bd9573c43e050085452be" class="m-doc">device</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abec09333ef3bd9573c43e050085452be" class="m-doc">device</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::Device&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5771ae336d86f87c4e76f67cc4c3cbfb" class="m-doc">physical_device</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5771ae336d86f87c4e76f67cc4c3cbfb" class="m-doc">physical_device</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::PhysicalDevice&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab35e395ebb72abd85e03420836ac6068" class="m-doc">properties</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab35e395ebb72abd85e03420836ac6068" class="m-doc">properties</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::PhysicalDeviceProperties&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#afb68579b54e70612a1efaa7ba3209e73" class="m-doc">features</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#afb68579b54e70612a1efaa7ba3209e73" class="m-doc">features</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::PhysicalDeviceFeatures&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2ee91cf9aa96cad4297a3f21dd704e7e" class="m-doc">memory_properties</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2ee91cf9aa96cad4297a3f21dd704e7e" class="m-doc">memory_properties</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::PhysicalDeviceMemoryProperties&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab76c30b774f07eb2661f9c1b00f72837" class="m-doc">command_pool</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab76c30b774f07eb2661f9c1b00f72837" class="m-doc">command_pool</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::CommandPool&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a3246465b2821ca362a8468cbcb0d0a3d" class="m-doc">descriptor_pool</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a3246465b2821ca362a8468cbcb0d0a3d" class="m-doc">descriptor_pool</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::DescriptorPool&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#acea5a860f5bb2cd72f6f493417afa74c" class="m-doc">queue</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#acea5a860f5bb2cd72f6f493417afa74c" class="m-doc">queue</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::Queue&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a09e6fed6df145580c75e475f56894c67" class="m-doc">graphics_queue_index</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a09e6fed6df145580c75e475f56894c67" class="m-doc">graphics_queue_index</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abe153e21db8015a866c39b2b6b993d13" class="m-doc">memory_type</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abe153e21db8015a866c39b2b6b993d13" class="m-doc">memory_type</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">vk::Bool32</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">typeBits</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">properties</div>
+                  <div class="m-entry">const vk::MemoryPropertyFlags&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">typeIndex</div>
+                  <div class="m-entry">uint32_t*</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a31449ef4eb24c559f8fdd7ed33888a57" class="m-doc">memory_type</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a31449ef4eb24c559f8fdd7ed33888a57" class="m-doc">memory_type</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">typeBits</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">properties</div>
+                  <div class="m-entry">const vk::MemoryPropertyFlags&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af078770ab9f0bbde2ec186fe4dc3e7f8" class="m-doc">flush</a>                </div>
+                <div class="m-entry">flushes all operations on the given commandbuffer and potentially free it at the end.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af078770ab9f0bbde2ec186fe4dc3e7f8" class="m-doc">flush</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">commandBuffer</div>
+                  <div class="m-entry">vk::CommandBuffer</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">free</div>
+                  <div class="m-entry">bool</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">flushes all operations on the given commandbuffer and potentially free it at the end.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a288f64c03536185aade44c37033157ab" class="m-doc">device_index</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a288f64c03536185aade44c37033157ab" class="m-doc">device_index</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">uint32_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aae9a6ec400c391a1a4a776885bd8d38a" class="m-doc">acquireNextImage2KHR</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aae9a6ec400c391a1a4a776885bd8d38a" class="m-doc">acquireNextImage2KHR</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">out_version</div>
+                  <div class="m-entry"><a href="classcore_1_1ivk_1_1context.html#a5c0305c2da21ab2344390e77616f6e37" class="m-doc">optional_<wbr />ref</a>&lt;uint64_t&gt;</div>
+                  <div class="m-entry right_align">= std::nullopt</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a7833eeee7c4d1c62684286f97452e990"><div>
+          
+          
+          			          <section class="m-doc-details" id="a7833eeee7c4d1c62684286f97452e990"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::Instance&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7833eeee7c4d1c62684286f97452e990" class="m-doc-self">instance</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -143,7 +581,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="abec09333ef3bd9573c43e050085452be"><div>
+			          <section class="m-doc-details" id="abec09333ef3bd9573c43e050085452be"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::Device&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abec09333ef3bd9573c43e050085452be" class="m-doc-self">device</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -156,7 +594,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a5771ae336d86f87c4e76f67cc4c3cbfb"><div>
+			          <section class="m-doc-details" id="a5771ae336d86f87c4e76f67cc4c3cbfb"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::PhysicalDevice&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5771ae336d86f87c4e76f67cc4c3cbfb" class="m-doc-self">physical_device</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -169,7 +607,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ab35e395ebb72abd85e03420836ac6068"><div>
+			          <section class="m-doc-details" id="ab35e395ebb72abd85e03420836ac6068"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::PhysicalDeviceProperties&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab35e395ebb72abd85e03420836ac6068" class="m-doc-self">properties</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -182,7 +620,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="afb68579b54e70612a1efaa7ba3209e73"><div>
+			          <section class="m-doc-details" id="afb68579b54e70612a1efaa7ba3209e73"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::PhysicalDeviceFeatures&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afb68579b54e70612a1efaa7ba3209e73" class="m-doc-self">features</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -195,7 +633,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a2ee91cf9aa96cad4297a3f21dd704e7e"><div>
+			          <section class="m-doc-details" id="a2ee91cf9aa96cad4297a3f21dd704e7e"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::PhysicalDeviceMemoryProperties&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2ee91cf9aa96cad4297a3f21dd704e7e" class="m-doc-self">memory_properties</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -208,7 +646,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ab76c30b774f07eb2661f9c1b00f72837"><div>
+			          <section class="m-doc-details" id="ab76c30b774f07eb2661f9c1b00f72837"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::CommandPool&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab76c30b774f07eb2661f9c1b00f72837" class="m-doc-self">command_pool</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -221,7 +659,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a3246465b2821ca362a8468cbcb0d0a3d"><div>
+			          <section class="m-doc-details" id="a3246465b2821ca362a8468cbcb0d0a3d"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::DescriptorPool&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3246465b2821ca362a8468cbcb0d0a3d" class="m-doc-self">descriptor_pool</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -234,7 +672,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="acea5a860f5bb2cd72f6f493417afa74c"><div>
+			          <section class="m-doc-details" id="acea5a860f5bb2cd72f6f493417afa74c"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::Queue&amp; core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acea5a860f5bb2cd72f6f493417afa74c" class="m-doc-self">queue</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -247,7 +685,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a09e6fed6df145580c75e475f56894c67"><div>
+			          <section class="m-doc-details" id="a09e6fed6df145580c75e475f56894c67"><div>
             <h3>
               <span class="m-doc-wrap-bumper">uint32_t core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a09e6fed6df145580c75e475f56894c67" class="m-doc-self">graphics_queue_index</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -260,7 +698,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="abe153e21db8015a866c39b2b6b993d13"><div>
+			          <section class="m-doc-details" id="abe153e21db8015a866c39b2b6b993d13"><div>
             <h3>
               <span class="m-doc-wrap-bumper">vk::Bool32 core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abe153e21db8015a866c39b2b6b993d13" class="m-doc-self">memory_type</a>(</span><span class="m-doc-wrap">uint32_t typeBits,
               const vk::MemoryPropertyFlags&amp; properties,
@@ -292,7 +730,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a31449ef4eb24c559f8fdd7ed33888a57"><div>
+			          <section class="m-doc-details" id="a31449ef4eb24c559f8fdd7ed33888a57"><div>
             <h3>
               <span class="m-doc-wrap-bumper">uint32_t core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a31449ef4eb24c559f8fdd7ed33888a57" class="m-doc-self">memory_type</a>(</span><span class="m-doc-wrap">uint32_t typeBits,
               const vk::MemoryPropertyFlags&amp; properties) const</span></span>
@@ -319,12 +757,13 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af078770ab9f0bbde2ec186fe4dc3e7f8"><div>
+			          <section class="m-doc-details" id="af078770ab9f0bbde2ec186fe4dc3e7f8"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af078770ab9f0bbde2ec186fe4dc3e7f8" class="m-doc-self">flush</a>(</span><span class="m-doc-wrap">vk::CommandBuffer commandBuffer,
               bool free)</span></span>
             </h3>
-            <p>flushes all operations on the given commandbuffer and potentially free it at the end.</p>
+              <h3>Brief</h3>
+              <p>flushes all operations on the given commandbuffer and potentially free it at the end.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -341,7 +780,7 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a288f64c03536185aade44c37033157ab"><div>
+			          <section class="m-doc-details" id="a288f64c03536185aade44c37033157ab"><div>
             <h3>
               <span class="m-doc-wrap-bumper">uint32_t core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a288f64c03536185aade44c37033157ab" class="m-doc-self">device_index</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -354,9 +793,9 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="aae9a6ec400c391a1a4a776885bd8d38a"><div>
+			          <section class="m-doc-details" id="aae9a6ec400c391a1a4a776885bd8d38a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aae9a6ec400c391a1a4a776885bd8d38a" class="m-doc-self">acquireNextImage2KHR</a>(</span><span class="m-doc-wrap">optional_ref&lt;uint64_t&gt; out_version = std::nullopt) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />context::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aae9a6ec400c391a1a4a776885bd8d38a" class="m-doc-self">acquireNextImage2KHR</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1ivk_1_1context.html#a5c0305c2da21ab2344390e77616f6e37" class="m-doc">optional_<wbr />ref</a>&lt;uint64_t&gt; out_version = std::nullopt) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -376,6 +815,16 @@
               </tfoot>
             </table>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -415,6 +864,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

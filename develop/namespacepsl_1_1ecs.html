@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>core::gfx::details::instance::data class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::ecs namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -44,78 +44,172 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1gfx.html">gfx</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1gfx_1_1details.html">details</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1gfx_1_1details_1_1instance.html">instance</a>::<wbr/></span>data <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span>ecs <span class="m-thin">namespace</span>
         </h1>
-        <p>handles instance data associated to materials/geometry combinations</p>
-        
+        <p>Entity Component System.</p>
         <nav class="m-block m-default">
           <h3>content</h3>
           <ul>
-            <li><a href="#member-functions">member functions</a></li>
+
+            <li><a href="#namespaces">namespaces</a></li>
+            <li><a href="#nested-classes">classes</a></li>
+            <li><a href="#typedef-members">typedefs</a></li>
+            <li><a href="#func-members">functions</a></li>
           </ul>
         </nav>
-<p>Manages instance data related to materials-geometry, both the geometry specific data (such as instance position, etc...), as well as material-wide instance data (shared with all drawcalls using this specific instance set). The latter could be visualised as all pieces of foliage sharing the same &quot;wind intensity&quot; value. This is not to be confused as &quot;global data&quot;, such as all pieces of geometry knowing about &quot;fog&quot;, it is still duplicated over every instance of a bundle.</p>
-        <section id="member-functions">
-          <h2><a href="#member-functions">member-functions</a></h2>
+        <section id="namespaces">
+          <h2><a href="#namespaces">namespaces</a></h2>
           <dl class="m-doc">
-	<table style="width:100%">
+            	<table style="width:100%">
+	<tr>
+	            <div class="m-entry-container hoverable" id="details">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc">details</a></div>
+                <div class="m-entry">specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="nested-classes">
+          <h2><a href="#nested-classes">classes</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	            <div class="m-entry-container hoverable" id="empty">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1empty.html" class="m-doc">empty<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag type to circumvent constructing an object in the backing data</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="except">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1except.html" class="m-doc">except<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag that disallows a certain component to be present on the given entity.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="filter">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1filter.html" class="m-doc">filter<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag allows you to filter on sets of components</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="full">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1full.html" class="m-doc">full</a></div>
+                <div class="m-entry">requires a pack to be whole when filled in</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="on_add">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_add<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag that allows you to select entities (and components) that have recently added the given component type</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="on_break">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__break.html" class="m-doc">on_break<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_<wbr />remove</a></code></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="on_combine">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__combine.html" class="m-doc">on_combine<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_<wbr />add</a></code></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="on_remove">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_remove<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag that allows you to listen to the event of a component of the given type being removed.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="pack">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1pack.html" class="m-doc">pack<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">an iterable container to work with components and entities.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="partial">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1partial.html" class="m-doc">partial</a></div>
+                <div class="m-entry">allows packs to exist in a partial state</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="typedef-members">
+          <h2><a href="#typedef-members">typedefs</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	              <div class="m-entry-container hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-entry header"><span>using <a href="#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a> = uint32_t</span></div>
+                  <div class="m-entry">entity points to a collection of components</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="func-members">
+          <h2><a href="#func-members">functions</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
 	<tr>
 	            
             <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a75471bf9b8160d7e3181a68481a2f7d7" class="m-doc">offset_of</a>                </div>
-                <div class="m-entry"></div>
-                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a75471bf9b8160d7e3181a68481a2f7d7" class="m-doc">offset_of</a></div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
-                </div>
-                <div class="m-entry-row">
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">size_t</div>
-                </div>
-                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
-                <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">material</div>
-                  <div class="m-entry"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1material__t.html" class="m-doc">core::<wbr />gfx::<wbr />material_t</a>&gt;</div>
-                </div>            
-                <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
-                  <div class="m-entry"><a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a></div>
-                </div>            
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry"></div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            
-            <div class="m-entry-container-alternating hoverable">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#aeb212e84fe39c7dc470706348d8b1040" class="m-doc">bind_material</a>                </div>
-                <div class="m-entry">bind the given material&#x27;s instance data (if present).</div>
+                  <span class="m-doc-wrap-bumper"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc">valid</a>                </div>
+                <div class="m-entry">checks if an entity is valid or not</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
+ <span class="m-label m-flat m-static">static</span> <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
               </div>
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aeb212e84fe39c7dc470706348d8b1040" class="m-doc">bind_material</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc">valid</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
+ <span class="m-label m-flat m-static">static</span> <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
                 </div>
                 <div class="m-entry-row">
                 </div>
@@ -125,64 +219,50 @@
                 </div>
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">material</div>
-                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1gfx_1_1material__t.html" class="m-doc">core::<wbr />gfx::<wbr />material_t</a>&gt;</div>
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">e</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs.html#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">bind the given material&#x27;s instance data (if present).</div>
+                  <div class="m-entry">checks if an entity is valid or not</div>
                 </div>
               </div>
             </div>
 	</tr>
 	</table>
+
           </dl>
         </section>
         <section>
-          <h2>Function documentation</h2>
-          
-          
-          			          <section class="m-doc-details" id="a75471bf9b8160d7e3181a68481a2f7d7"><div>
+          <h2>Typedef documentation</h2>
+          <section class="m-doc-details" id="af17242c0e907153143d867af38365ff9"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">size_t core::<wbr />gfx::<wbr />details::<wbr />instance::<wbr />data::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a75471bf9b8160d7e3181a68481a2f7d7" class="m-doc-self">offset_of</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1material__t.html" class="m-doc">core::<wbr />gfx::<wbr />material_t</a>&gt; material,
-              <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name) const <span class="m-label m-success">noexcept</span></span></span>
+              using psl::<wbr />ecs::<wbr /><a href="#af17242c0e907153143d867af38365ff9" class="m-doc-self">entity</a> = uint32_t
             </h3>
-              <h3>Details</h3>
-              <p><aside class="m-note m-default"><h4>Remark</h4><p>nested declarations (like struct within binding), must be seperated by a &#x27;.&#x27;, so that the chain is respected and looks like this &quot;data.player.rotation&quot;.</p><p>array based declarations must be indexed with the bracket operator &#x27;[i]&#x27;, otherwise it will default to &#x27;[0]&#x27; implicitly.</p></aside></p>
-            <table class="m-table m-fullwidth m-flat">
-              <tfoot>
-                <tr>
-                  <th style="width: 1%">Returns</th>
-                  <td>the offset of the material data&#x27;s member.</td>
-                </tr>
-              </tfoot>
-            </table>
+            <p>entity points to a collection of components</p>
+<hr/><h5>Entity </h5>
           </div></section>
-			          <section class="m-doc-details" id="aeb212e84fe39c7dc470706348d8b1040"><div>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="abfe4b1639f3fa5a2c870ddc5187289a6"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool core::<wbr />gfx::<wbr />details::<wbr />instance::<wbr />data::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aeb212e84fe39c7dc470706348d8b1040" class="m-doc-self">bind_material</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1gfx_1_1material__t.html" class="m-doc">core::<wbr />gfx::<wbr />material_t</a>&gt; material)</span></span>
+              <span class="m-doc-wrap-bumper">static bool psl::<wbr />ecs::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc-self">valid</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs.html#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a> e) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
               <h3>Brief</h3>
-              <p>bind the given material&#x27;s instance data (if present).</p>
+              <p>checks if an entity is valid or not</p>
             <table class="m-table m-fullwidth m-flat">
-              <tfoot>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
                 <tr>
-                  <th style="width: 1%">Returns</th>
-                  <td>true if there was instance data found, otherwise propogates lower failure.</td>
+                  <td style="width: 1%">e&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the entity to check</td>
                 </tr>
-              </tfoot>
+              </tbody>
             </table>
           </div></section>
-
-          
-          
-          
-          
-          
-          
-          
-          
-          
         </section>
       </div>
     </div>

@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,125 +47,780 @@
           <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1meta.html">meta</a>::<wbr/></span>library <span class="m-thin">class</span>
         </h1>
         <p>container class for <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>&#x27;s</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>a <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> is a collection of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> instances. The library will do the basic bookkeeping, allowing you to search and retrieve <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> instances based on their <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, or tags and narrow it down depending on the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> type as well.</p><p>There are also facilities to have <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s reference other <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s, and do bi-directional lookups for these relations. As well as the ability to load the persistent companion file that the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> describes (in case the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> satisfies <a href="classpsl_1_1meta_1_1library.html#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_<wbr />physical_<wbr />file()</a> ), and to have that companion file cached for faster reloads.</p>
         <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc">library</a>(</span><span class="m-doc-wrap">psl::string8::view lib,
-              std::vector&lt;psl::string8_t&gt; environment = {})</span>
-            </dt>
-            <dd>location on disk where the library can be found.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc">library</a>                </div>
+                <div class="m-entry">location on disk where the library can be found.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc">library</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">lib</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">environment</div>
+                  <div class="m-entry">std::vector&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt;</div>
+                  <div class="m-entry right_align">= {}</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">location on disk where the library can be found.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt id="a811f7c93973a56d03225efd5a2bf5b73">
-              <div class="m-doc-template">template&lt;typename MF = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a href="#a811f7c93973a56d03225efd5a2bf5b73" class="m-doc-self">create</a>(</span><span class="m-doc-wrap">) -&gt; std::pair&lt;const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;, MF&amp;&gt;</span>
-            </dt>
-            <dd>creates a new entry with a unique <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</dd>
-            <dt>
-              <div class="m-doc-template">template&lt;typename MF = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad48f871466b440d7617161f0d10783bc" class="m-doc">create</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) -&gt; std::pair&lt;const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;, MF&amp;&gt;</span>
-            </dt>
-            <dd>creates a new entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5b7ea7cdb8261d1b5616db6e3bf99690" class="m-doc">serialize</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) -&gt; bool</span>
-            </dt>
-            <dd>serializes the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to disk in case it is present, and an on-disk file.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a3929be0a3af743fa0169f6602304b168" class="m-doc">remove</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              bool safe_mode = true) -&gt; bool</span>
-            </dt>
-            <dd>tries to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the library.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ab706fec8ce425d3343b872a2a96f4d83" class="m-doc">contains</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; bool</span>
-            </dt>
-            <dd>searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> if it has an entry that corresponds to the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find</a>(</span><span class="m-doc-wrap">psl::string8::view tag) const -&gt; std::optional&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</span>
-            </dt>
-            <dd>searches for the first <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> that is associated with the given tag.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac94429d6420c9a54c6171e453d48e244" class="m-doc">find_all</a>(</span><span class="m-doc-wrap">psl::string8::view tag) const -&gt; std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</span>
-            </dt>
-            <dd>advanced version of <a href="classpsl_1_1meta_1_1library.html#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find()</a> that finds all instances of the given tag.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aa6f273697ac74887e1b30624c3397c6a" class="m-doc">tags</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; const std::vector&lt;psl::string8_t&gt;&amp;</span>
-            </dt>
-            <dd>get all tags (if any) associated with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#afe942660d07c99617af92ce89e4f807c" class="m-doc">has_tag</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              psl::string8::view tag) const -&gt; bool</span>
-            </dt>
-            <dd>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> has the specific tag associated to it.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              psl::string8::view tag) -&gt; bool</span>
-            </dt>
-            <dd>associates the tag with this specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aee7c93cb86c477d300d3f9adc9ef9f3d" class="m-doc">set</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              std::vector&lt;psl::string8::view&gt; tags) -&gt; bool</span>
-            </dt>
-            <dd>advanced version of <a href="classpsl_1_1meta_1_1library.html#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set()</a> that allows a list of tags.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a05b36ad8b5bf7df6357c6cf5fd9df00b" class="m-doc">referencing</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</span>
-            </dt>
-            <dd>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referencing.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae878be8f2dd25e41318582aae5d5a114" class="m-doc">referencedBy</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</span>
-            </dt>
-            <dd>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referenced by.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) -&gt; std::optional&lt;psl::string8::view&gt;</span>
-            </dt>
-            <dd>loads the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s content.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a27e240bd3b3cb65018db5ec58f7178f4" class="m-doc">unload</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) -&gt; bool</span>
-            </dt>
-            <dd>purges the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s cachec content.</dd>
-            <dt>
-              <div class="m-doc-template">template&lt;typename T = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a href="#abf1a7cb98dc581dc2db8e5698458ca7d" class="m-doc">get</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; std::optional&lt;T*&gt;</span>
-            </dt>
-            <dd>get the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> and tries to cast to the templated type.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_physical_file</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; bool</span>
-            </dt>
-            <dd>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is associated with a physical/persistent file, or dynamically created during the runtime.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a992171900bd57998b5721cfdd2c23ab5" class="m-doc">get_physical_location</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const -&gt; std::optional&lt;psl::string8_t&gt;</span>
-            </dt>
-            <dd>gets the relative location (to the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>&#x27;s location) of the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a2b1243cd199b4accef5215d898dc305c" class="m-doc">size</a>(</span><span class="m-doc-wrap">) const -&gt; size_t</span>
-            </dt>
-            <dd>returns the count of <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a811f7c93973a56d03225efd5a2bf5b73">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">create&lt;…&gt;                </div>
+                <div class="m-entry">creates a new entry with a unique <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">create&lt;…&gt;</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename MF = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::pair&lt;const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;, MF&amp;&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates a new entry with a unique <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad48f871466b440d7617161f0d10783bc" class="m-doc">create&lt;…&gt;</a>                </div>
+                <div class="m-entry">creates a new entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad48f871466b440d7617161f0d10783bc" class="m-doc">create&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename MF = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::pair&lt;const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;, MF&amp;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates a new entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5b7ea7cdb8261d1b5616db6e3bf99690" class="m-doc">serialize</a>                </div>
+                <div class="m-entry">serializes the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to disk in case it is present, and an on-disk file.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5b7ea7cdb8261d1b5616db6e3bf99690" class="m-doc">serialize</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">serializes the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to disk in case it is present, and an on-disk file.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a3929be0a3af743fa0169f6602304b168" class="m-doc">remove</a>                </div>
+                <div class="m-entry">tries to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the library.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a3929be0a3af743fa0169f6602304b168" class="m-doc">remove</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">safe_mode</div>
+                  <div class="m-entry">bool</div>
+                  <div class="m-entry right_align">= true</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">tries to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the library.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab706fec8ce425d3343b872a2a96f4d83" class="m-doc">contains</a>                </div>
+                <div class="m-entry">searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> if it has an entry that corresponds to the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab706fec8ce425d3343b872a2a96f4d83" class="m-doc">contains</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> if it has an entry that corresponds to the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find</a>                </div>
+                <div class="m-entry">searches for the first <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> that is associated with the given tag.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">tag</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">searches for the first <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> that is associated with the given tag.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac94429d6420c9a54c6171e453d48e244" class="m-doc">find_all</a>                </div>
+                <div class="m-entry">advanced version of <a href="classpsl_1_1meta_1_1library.html#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find()</a> that finds all instances of the given tag.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac94429d6420c9a54c6171e453d48e244" class="m-doc">find_all</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">tag</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">advanced version of <a href="classpsl_1_1meta_1_1library.html#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find()</a> that finds all instances of the given tag.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa6f273697ac74887e1b30624c3397c6a" class="m-doc">tags</a>                </div>
+                <div class="m-entry">get all tags (if any) associated with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa6f273697ac74887e1b30624c3397c6a" class="m-doc">tags</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">get all tags (if any) associated with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#afe942660d07c99617af92ce89e4f807c" class="m-doc">has_tag</a>                </div>
+                <div class="m-entry">checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> has the specific tag associated to it.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#afe942660d07c99617af92ce89e4f807c" class="m-doc">has_tag</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">tag</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> has the specific tag associated to it.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set</a>                </div>
+                <div class="m-entry">associates the tag with this specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">tag</div>
+                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">associates the tag with this specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aee7c93cb86c477d300d3f9adc9ef9f3d" class="m-doc">set</a>                </div>
+                <div class="m-entry">advanced version of <a href="classpsl_1_1meta_1_1library.html#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set()</a> that allows a list of tags.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aee7c93cb86c477d300d3f9adc9ef9f3d" class="m-doc">set</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">tags</div>
+                  <div class="m-entry">std::vector&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">advanced version of <a href="classpsl_1_1meta_1_1library.html#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set()</a> that allows a list of tags.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a05b36ad8b5bf7df6357c6cf5fd9df00b" class="m-doc">referencing</a>                </div>
+                <div class="m-entry">gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referencing.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a05b36ad8b5bf7df6357c6cf5fd9df00b" class="m-doc">referencing</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referencing.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae878be8f2dd25e41318582aae5d5a114" class="m-doc">referencedBy</a>                </div>
+                <div class="m-entry">gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referenced by.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae878be8f2dd25e41318582aae5d5a114" class="m-doc">referencedBy</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referenced by.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load</a>                </div>
+                <div class="m-entry">loads the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s content.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">loads the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s content.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a27e240bd3b3cb65018db5ec58f7178f4" class="m-doc">unload</a>                </div>
+                <div class="m-entry">purges the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s cachec content.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a27e240bd3b3cb65018db5ec58f7178f4" class="m-doc">unload</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">purges the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s cachec content.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abf1a7cb98dc581dc2db8e5698458ca7d" class="m-doc">get&lt;…&gt;</a>                </div>
+                <div class="m-entry">get the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> and tries to cast to the templated type.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abf1a7cb98dc581dc2db8e5698458ca7d" class="m-doc">get&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;T*&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">get the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> and tries to cast to the templated type.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_physical_file</a>                </div>
+                <div class="m-entry">checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is associated with a physical/persistent file, or dynamically created during the runtime.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_physical_file</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is associated with a physical/persistent file, or dynamically created during the runtime.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a992171900bd57998b5721cfdd2c23ab5" class="m-doc">get_physical_location</a>                </div>
+                <div class="m-entry">gets the relative location (to the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>&#x27;s location) of the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a992171900bd57998b5721cfdd2c23ab5" class="m-doc">get_physical_location</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">gets the relative location (to the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>&#x27;s location) of the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2b1243cd199b4accef5215d898dc305c" class="m-doc">size</a>                </div>
+                <div class="m-entry">returns the count of <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2b1243cd199b4accef5215d898dc305c" class="m-doc">size</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the count of <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a6229350f2c3579b9cdf09a36fd329aee"><div>
+          
+          			          <section class="m-doc-details" id="a6229350f2c3579b9cdf09a36fd329aee"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc-self">library</a>(</span><span class="m-doc-wrap">psl::string8::view lib,
-              std::vector&lt;psl::string8_t&gt; environment = {})</span></span>
+              <span class="m-doc-wrap-bumper"> psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc-self">library</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> lib,
+              std::vector&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt; environment = {})</span></span>
             </h3>
-            <p>location on disk where the library can be found.</p>
+              <h3>Brief</h3>
+              <p>location on disk where the library can be found.</p>
+              <h3>Details</h3>
+              <p><p>The constructor will try to load the given filepath, and then parse it. It will also create the minimal representation of each <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> entry in the given file, with its tags, etc..</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -181,16 +836,19 @@
                 </tr>
               </tbody>
             </table>
-<p>The constructor will try to load the given filepath, and then parse it. It will also create the minimal representation of each <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> entry in the given file, with its tags, etc..</p>
           </div></section>
-          <section class="m-doc-details" id="ad48f871466b440d7617161f0d10783bc"><div>
+
+          			          <section class="m-doc-details" id="ad48f871466b440d7617161f0d10783bc"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename MF = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a>&gt;
               </div>
               <span class="m-doc-wrap-bumper">std::pair&lt;const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;, MF&amp;&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad48f871466b440d7617161f0d10783bc" class="m-doc-self">create</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid)</span></span>
             </h3>
-            <p>creates a new entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</p>
+              <h3>Brief</h3>
+              <p>creates a new entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> and a given type that is either, or derived of <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>giving an already present <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> will result in an error log, and you will be given back the instance that is already present.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -202,13 +860,15 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>giving an already present <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> will result in an error log, and you will be given back the instance that is already present.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a5b7ea7cdb8261d1b5616db6e3bf99690"><div>
+			          <section class="m-doc-details" id="a5b7ea7cdb8261d1b5616db6e3bf99690"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b7ea7cdb8261d1b5616db6e3bf99690" class="m-doc-self">serialize</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid)</span></span>
             </h3>
-            <p>serializes the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to disk in case it is present, and an on-disk file.</p>
+              <h3>Brief</h3>
+              <p>serializes the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to disk in case it is present, and an on-disk file.</p>
+              <h3>Details</h3>
+              <p><p>When you send a <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to this method, the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> will verify that it has an entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, and that it is linked to an on-disk location. When it satisfies those two requirements, it will then proceed to serialize the file to disk using the current values that are present.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -226,14 +886,16 @@
                 </tr>
               </tfoot>
             </table>
-<p>When you send a <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> to this method, the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> will verify that it has an entry with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, and that it is linked to an on-disk location. When it satisfies those two requirements, it will then proceed to serialize the file to disk using the current values that are present.</p>
           </div></section>
-          <section class="m-doc-details" id="a3929be0a3af743fa0169f6602304b168"><div>
+			          <section class="m-doc-details" id="a3929be0a3af743fa0169f6602304b168"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3929be0a3af743fa0169f6602304b168" class="m-doc-self">remove</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
               bool safe_mode = true)</span></span>
             </h3>
-            <p>tries to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the library.</p>
+              <h3>Brief</h3>
+              <p>tries to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the library.</p>
+              <h3>Details</h3>
+              <p><p>Will try to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>. On success it will notify all other <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>&#x27;s that it references, that they no longer are being referenced by this instance.</p><p><em>safe_mode</em> controls wether you should avoid deleting this instance if others are still referencing this <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> (true), or forcibly delete this instance regardless (false).</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -255,13 +917,13 @@
                 </tr>
               </tfoot>
             </table>
-<p>Will try to remove the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>. On success it will notify all other <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>&#x27;s that it references, that they no longer are being referenced by this instance.</p><p><em>safe_mode</em> controls wether you should avoid deleting this instance if others are still referencing this <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> (true), or forcibly delete this instance regardless (false).</p>
           </div></section>
-          <section class="m-doc-details" id="ab706fec8ce425d3343b872a2a96f4d83"><div>
+			          <section class="m-doc-details" id="ab706fec8ce425d3343b872a2a96f4d83"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab706fec8ce425d3343b872a2a96f4d83" class="m-doc-self">contains</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> if it has an entry that corresponds to the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Brief</h3>
+              <p>searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> if it has an entry that corresponds to the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -280,11 +942,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af33866bae007a7b693ee44ac4856f48f"><div>
+			          <section class="m-doc-details" id="af33866bae007a7b693ee44ac4856f48f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af33866bae007a7b693ee44ac4856f48f" class="m-doc-self">find</a>(</span><span class="m-doc-wrap">psl::string8::view tag) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af33866bae007a7b693ee44ac4856f48f" class="m-doc-self">find</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> tag) const</span></span>
             </h3>
-            <p>searches for the first <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> that is associated with the given tag.</p>
+              <h3>Brief</h3>
+              <p>searches for the first <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> that is associated with the given tag.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -303,11 +966,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ac94429d6420c9a54c6171e453d48e244"><div>
+			          <section class="m-doc-details" id="ac94429d6420c9a54c6171e453d48e244"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac94429d6420c9a54c6171e453d48e244" class="m-doc-self">find_all</a>(</span><span class="m-doc-wrap">psl::string8::view tag) const</span></span>
+              <span class="m-doc-wrap-bumper">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac94429d6420c9a54c6171e453d48e244" class="m-doc-self">find_all</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> tag) const</span></span>
             </h3>
-            <p>advanced version of <a href="classpsl_1_1meta_1_1library.html#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find()</a> that finds all instances of the given tag.</p>
+              <h3>Brief</h3>
+              <p>advanced version of <a href="classpsl_1_1meta_1_1library.html#af33866bae007a7b693ee44ac4856f48f" class="m-doc">find()</a> that finds all instances of the given tag.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -326,11 +990,14 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="aa6f273697ac74887e1b30624c3397c6a"><div>
+			          <section class="m-doc-details" id="aa6f273697ac74887e1b30624c3397c6a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const std::vector&lt;psl::string8_t&gt;&amp; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6f273697ac74887e1b30624c3397c6a" class="m-doc-self">tags</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
+              <span class="m-doc-wrap-bumper">const std::vector&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt;&amp; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6f273697ac74887e1b30624c3397c6a" class="m-doc-self">tags</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>get all tags (if any) associated with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Brief</h3>
+              <p>get all tags (if any) associated with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>even if the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>, this method will not fail, it will just find 0 tags.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -348,14 +1015,16 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>even if the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>, this method will not fail, it will just find 0 tags.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="afe942660d07c99617af92ce89e4f807c"><div>
+			          <section class="m-doc-details" id="afe942660d07c99617af92ce89e4f807c"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afe942660d07c99617af92ce89e4f807c" class="m-doc-self">has_tag</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              psl::string8::view tag) const</span></span>
+              <a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> tag) const</span></span>
             </h3>
-            <p>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> has the specific tag associated to it.</p>
+              <h3>Brief</h3>
+              <p>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> has the specific tag associated to it.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>if the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>, then this method always returns false.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -377,14 +1046,16 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>if the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>, then this method always returns false.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a3f6cfb7e8b3b4e927be163fbcdd68473"><div>
+			          <section class="m-doc-details" id="a3f6cfb7e8b3b4e927be163fbcdd68473"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc-self">set</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              psl::string8::view tag)</span></span>
+              <a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> tag)</span></span>
             </h3>
-            <p>associates the tag with this specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Brief</h3>
+              <p>associates the tag with this specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>it is possible to set the same tag multiple times on the same <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -406,14 +1077,16 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>it is possible to set the same tag multiple times on the same <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="aee7c93cb86c477d300d3f9adc9ef9f3d"><div>
+			          <section class="m-doc-details" id="aee7c93cb86c477d300d3f9adc9ef9f3d"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aee7c93cb86c477d300d3f9adc9ef9f3d" class="m-doc-self">set</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
-              std::vector&lt;psl::string8::view&gt; tags)</span></span>
+              std::vector&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt; tags)</span></span>
             </h3>
-            <p>advanced version of <a href="classpsl_1_1meta_1_1library.html#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set()</a> that allows a list of tags.</p>
+              <h3>Brief</h3>
+              <p>advanced version of <a href="classpsl_1_1meta_1_1library.html#a3f6cfb7e8b3b4e927be163fbcdd68473" class="m-doc">set()</a> that allows a list of tags.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>it is possible to set the same tag multiple times on the same <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -435,13 +1108,15 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>it is possible to set the same tag multiple times on the same <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a05b36ad8b5bf7df6357c6cf5fd9df00b"><div>
+			          <section class="m-doc-details" id="a05b36ad8b5bf7df6357c6cf5fd9df00b"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a05b36ad8b5bf7df6357c6cf5fd9df00b" class="m-doc-self">referencing</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referencing.</p>
+              <h3>Brief</h3>
+              <p>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referencing.</p>
+              <h3>Details</h3>
+              <p><p>as an example, a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a> could be referencing a <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a>, this means that if you call this method using the <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&#x27;s <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, then you will get a list back that atleast contains the <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a> <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>will return an empty list in case the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -459,13 +1134,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>as an example, a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a> could be referencing a <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a>, this means that if you call this method using the <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&#x27;s <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, then you will get a list back that atleast contains the <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a> <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>will return an empty list in case the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="ae878be8f2dd25e41318582aae5d5a114"><div>
+			          <section class="m-doc-details" id="ae878be8f2dd25e41318582aae5d5a114"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::unordered_set&lt;<a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae878be8f2dd25e41318582aae5d5a114" class="m-doc-self">referencedBy</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referenced by.</p>
+              <h3>Brief</h3>
+              <p>gets a list of all <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> might be referenced by.</p>
+              <h3>Details</h3>
+              <p><p>as an example, a <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a> could be referenced by a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>, this means that if you call this method using the <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a>&#x27;s <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, then you will get a list back that atleast contains the <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a> <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>will return an empty list in case the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -483,13 +1160,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>as an example, a <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a> could be referenced by a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>, this means that if you call this method using the <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc">core::<wbr />ivk::<wbr />texture_t</a>&#x27;s <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, then you will get a list back that atleast contains the <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a> <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>will return an empty list in case the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a667f5b9b1544433ad7a8a94403d6afa3"><div>
+			          <section class="m-doc-details" id="a667f5b9b1544433ad7a8a94403d6afa3"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;psl::string8::view&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc-self">load</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid)</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc-self">load</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid)</span></span>
             </h3>
-            <p>loads the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s content.</p>
+              <h3>Brief</h3>
+              <p>loads the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s content.</p>
+              <h3>Details</h3>
+              <p><p>Loads the specified <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated file, <strong>not</strong> <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>, and returns it (if found). The associated file is the companion file for which the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> was generated, for example a shader will have a <a href="classcore_1_1meta_1_1shader.html" class="m-doc">core::<wbr />meta::<wbr />shader</a> file on disk, but also the actual shader file (SPIR-V for Vulkan). This returns the SPIR-V file. The file content will get cached into the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> to make subsequent <a href="classpsl_1_1meta_1_1library.html#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load()</a> calls faster.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method requires the file to satisfy <a href="classpsl_1_1meta_1_1library.html#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_<wbr />physical_<wbr />file()</a>, otherwise it will silently fail.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -507,13 +1186,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>Loads the specified <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated file, <strong>not</strong> <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>, and returns it (if found). The associated file is the companion file for which the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> was generated, for example a shader will have a <a href="classcore_1_1meta_1_1shader.html" class="m-doc">core::<wbr />meta::<wbr />shader</a> file on disk, but also the actual shader file (SPIR-V for Vulkan). This returns the SPIR-V file. The file content will get cached into the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> to make subsequent <a href="classpsl_1_1meta_1_1library.html#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load()</a> calls faster.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method requires the file to satisfy <a href="classpsl_1_1meta_1_1library.html#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_<wbr />physical_<wbr />file()</a>, otherwise it will silently fail.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a27e240bd3b3cb65018db5ec58f7178f4"><div>
+			          <section class="m-doc-details" id="a27e240bd3b3cb65018db5ec58f7178f4"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a27e240bd3b3cb65018db5ec58f7178f4" class="m-doc-self">unload</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid)</span></span>
             </h3>
-            <p>purges the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s cachec content.</p>
+              <h3>Brief</h3>
+              <p>purges the specific <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s cachec content.</p>
+              <h3>Details</h3>
+              <p><p>Unloads the specified <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated file, <strong>not</strong> <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>, and returns true if it was in the cache and purged. The associated file is the companion file for which the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> was generated, for example a shader will have a <a href="classcore_1_1meta_1_1shader.html" class="m-doc">core::<wbr />meta::<wbr />shader</a> file on disk, but also the actual shader file (SPIR-V for Vulkan). This returns the SPIR-V file. You can reload the file into the cache by calling <a href="classpsl_1_1meta_1_1library.html#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load()</a> with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> as parameter.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method requires the file to satisfy <a href="classpsl_1_1meta_1_1library.html#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_<wbr />physical_<wbr />file()</a>, otherwise it will silently fail.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -531,16 +1212,18 @@
                 </tr>
               </tfoot>
             </table>
-<p>Unloads the specified <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated file, <strong>not</strong> <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>, and returns true if it was in the cache and purged. The associated file is the companion file for which the <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> was generated, for example a shader will have a <a href="classcore_1_1meta_1_1shader.html" class="m-doc">core::<wbr />meta::<wbr />shader</a> file on disk, but also the actual shader file (SPIR-V for Vulkan). This returns the SPIR-V file. You can reload the file into the cache by calling <a href="classpsl_1_1meta_1_1library.html#a667f5b9b1544433ad7a8a94403d6afa3" class="m-doc">load()</a> with the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> as parameter.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method requires the file to satisfy <a href="classpsl_1_1meta_1_1library.html#a30001692a65acadf17d3b1315566aebd" class="m-doc">is_<wbr />physical_<wbr />file()</a>, otherwise it will silently fail.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="abf1a7cb98dc581dc2db8e5698458ca7d"><div>
+			          <section class="m-doc-details" id="abf1a7cb98dc581dc2db8e5698458ca7d"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T = <a href="classpsl_1_1meta_1_1file.html" class="m-doc">file</a>&gt;
               </div>
               <span class="m-doc-wrap-bumper">std::optional&lt;T*&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf1a7cb98dc581dc2db8e5698458ca7d" class="m-doc-self">get</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>get the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> and tries to cast to the templated type.</p>
+              <h3>Brief</h3>
+              <p>get the <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s associated <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a> from the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> and tries to cast to the templated type.</p>
+              <h3>Details</h3>
+              <p><p>Searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> for the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, and then tries to satisfy the templated type given. If successful it will return the given template type (default <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>), otherwise it returns an std::nullopt in case the conversion is not possible at runtime, and will give a compile error when the template type does not satisfy the type constraint.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method cannot downcast, it has to satisfy the type perfectly.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Template parameters</th></tr>
@@ -567,13 +1250,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>Searches the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a> for the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>, and then tries to satisfy the templated type given. If successful it will return the given template type (default <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>), otherwise it returns an std::nullopt in case the conversion is not possible at runtime, and will give a compile error when the template type does not satisfy the type constraint.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this method cannot downcast, it has to satisfy the type perfectly.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a30001692a65acadf17d3b1315566aebd"><div>
+			          <section class="m-doc-details" id="a30001692a65acadf17d3b1315566aebd"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a30001692a65acadf17d3b1315566aebd" class="m-doc-self">is_physical_file</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is associated with a physical/persistent file, or dynamically created during the runtime.</p>
+              <h3>Brief</h3>
+              <p>checks if the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> is associated with a physical/persistent file, or dynamically created during the runtime.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>that the physical backing might be out of sync with the current version that is being used by the runtime.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -591,13 +1276,15 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>that the physical backing might be out of sync with the current version that is being used by the runtime.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a992171900bd57998b5721cfdd2c23ab5"><div>
+			          <section class="m-doc-details" id="a992171900bd57998b5721cfdd2c23ab5"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;psl::string8_t&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a992171900bd57998b5721cfdd2c23ab5" class="m-doc-self">get_physical_location</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
+              <span class="m-doc-wrap-bumper">std::optional&lt;<a href="namespacepsl.html#ac7892d6a968c132663a90145e821c26b" class="m-doc">psl::<wbr />string8_t</a>&gt; psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a992171900bd57998b5721cfdd2c23ab5" class="m-doc-self">get_physical_location</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid) const</span></span>
             </h3>
-            <p>gets the relative location (to the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>&#x27;s location) of the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Brief</h3>
+              <p>gets the relative location (to the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>&#x27;s location) of the given <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>silently fails for <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s that are not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -615,13 +1302,13 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>silently fails for <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s that are not present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a2b1243cd199b4accef5215d898dc305c"><div>
+			          <section class="m-doc-details" id="a2b1243cd199b4accef5215d898dc305c"><div>
             <h3>
               <span class="m-doc-wrap-bumper">size_t psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2b1243cd199b4accef5215d898dc305c" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
-            <p>returns the count of <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p>
+              <h3>Brief</h3>
+              <p>returns the count of <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&#x27;s present in the <a href="classpsl_1_1meta_1_1library.html" class="m-doc">meta::<wbr />library</a>.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -631,6 +1318,16 @@
               </tfoot>
             </table>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -670,6 +1367,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

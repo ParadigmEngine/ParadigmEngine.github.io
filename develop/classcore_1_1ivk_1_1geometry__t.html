@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,56 +47,202 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>geometry_t <span class="m-thin">class</span>
         </h1>
         <p>describes the driver visible concept of geometry.</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
         <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#ae04c926f9676756b5cdf72f614b72791" class="m-doc">geometry_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
-              <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; data,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; geometryBuffer,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; indicesBuffer)</span>
-            </dt>
-            <dd>constructs, and uploads the geometry data to the buffers.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae04c926f9676756b5cdf72f614b72791" class="m-doc">geometry_t</a>                </div>
+                <div class="m-entry">constructs, and uploads the geometry data to the buffers.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae04c926f9676756b5cdf72f614b72791" class="m-doc">geometry_t</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaData</div>
+                  <div class="m-entry">const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaFile</div>
+                  <div class="m-entry"><a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">context</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">data</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">geometryBuffer</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">indicesBuffer</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">constructs, and uploads the geometry data to the buffers.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#add50ca4c415f04dd841cf3bd27cb3f5c" class="m-doc">compatible</a>(</span><span class="m-doc-wrap">const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp; material) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a5243b6bd1d230f6909dcb09b642ed9bb" class="m-doc">bind</a>(</span><span class="m-doc-wrap">vk::CommandBuffer&amp; buffer,
-              const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp; material) const <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd>binds the geometry to the given material for rendering.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae80f4ae36a39252896cb7c27dcf5e450" class="m-doc">data</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; <span class="m-label m-flat m-success">noexcept</span></span>
-            </dt>
-            <dd></dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#add50ca4c415f04dd841cf3bd27cb3f5c" class="m-doc">compatible</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#add50ca4c415f04dd841cf3bd27cb3f5c" class="m-doc">compatible</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">material</div>
+                  <div class="m-entry">const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5243b6bd1d230f6909dcb09b642ed9bb" class="m-doc">bind</a>                </div>
+                <div class="m-entry">binds the geometry to the given material for rendering.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5243b6bd1d230f6909dcb09b642ed9bb" class="m-doc">bind</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer</div>
+                  <div class="m-entry">vk::CommandBuffer&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">material</div>
+                  <div class="m-entry">const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">binds the geometry to the given material for rendering.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae80f4ae36a39252896cb7c27dcf5e450" class="m-doc">data</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae80f4ae36a39252896cb7c27dcf5e450" class="m-doc">data</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ae04c926f9676756b5cdf72f614b72791"><div>
+          
+          			          <section class="m-doc-details" id="ae04c926f9676756b5cdf72f614b72791"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae04c926f9676756b5cdf72f614b72791" class="m-doc-self">geometry_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae04c926f9676756b5cdf72f614b72791" class="m-doc-self">geometry_t</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
               const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
               <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
               <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
@@ -104,7 +250,8 @@
               <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; geometryBuffer,
               <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt; indicesBuffer)</span></span>
             </h3>
-            <p>constructs, and uploads the geometry data to the buffers.</p>
+              <h3>Brief</h3>
+              <p>constructs, and uploads the geometry data to the buffers.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -141,7 +288,8 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="add50ca4c415f04dd841cf3bd27cb3f5c"><div>
+
+          			          <section class="m-doc-details" id="add50ca4c415f04dd841cf3bd27cb3f5c"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#add50ca4c415f04dd841cf3bd27cb3f5c" class="m-doc-self">compatible</a>(</span><span class="m-doc-wrap">const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp; material) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -163,12 +311,15 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a5243b6bd1d230f6909dcb09b642ed9bb"><div>
+			          <section class="m-doc-details" id="a5243b6bd1d230f6909dcb09b642ed9bb"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void core::<wbr />ivk::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5243b6bd1d230f6909dcb09b642ed9bb" class="m-doc-self">bind</a>(</span><span class="m-doc-wrap">vk::CommandBuffer&amp; buffer,
               const <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>&amp; material) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
-            <p>binds the geometry to the given material for rendering.</p>
+              <h3>Brief</h3>
+              <p>binds the geometry to the given material for rendering.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>only invoke this method in the context of recording draw instructions.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -184,9 +335,8 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>only invoke this method in the context of recording draw instructions.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="ae80f4ae36a39252896cb7c27dcf5e450"><div>
+			          <section class="m-doc-details" id="ae80f4ae36a39252896cb7c27dcf5e450"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; core::<wbr />ivk::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae80f4ae36a39252896cb7c27dcf5e450" class="m-doc-self">data</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -199,6 +349,16 @@
               </tfoot>
             </table>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -238,6 +398,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

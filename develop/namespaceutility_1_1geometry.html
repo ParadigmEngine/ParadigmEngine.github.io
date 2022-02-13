@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -48,60 +48,256 @@
         </h1>
         <p>various geometry and geometry related operation utilities.</p>
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#func-members">Functions</a></li>
-              </ul>
-            </li>
+
+            <li><a href="#func-members">functions</a></li>
           </ul>
         </nav>
         <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
+          <h2><a href="#func-members">functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">static auto <a href="#ae66e362257c10c36e17c5b7c8b257142" class="m-doc">generate_tangents</a>(</span><span class="m-doc-wrap">const std::vector&lt;psl::vec3&gt;&amp; positions,
-              const std::vector&lt;psl::vec2&gt;&amp; uvs,
-              const std::vector&lt;uint32_t&gt;&amp; indices) -&gt; std::vector&lt;psl::vec3&gt;</span>
-            </dt>
-            <dd>generates tangent information for the geometry data</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">static auto <a href="#a2a5f96dd8117504383f3620b532902bb" class="m-doc">generate_tangents</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; geometry_data) -&gt; bool</span>
-            </dt>
-            <dd>generates tangent information for the geometry data.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">static auto <a href="#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc">create_quad</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              float top,
-              float bottom,
-              float left,
-              float right) -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</span>
-            </dt>
-            <dd>generates a quad primitive with the bounds coordinates.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">static auto <a href="#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc">create_plane</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              psl::vec2 size = psl::vec2::one,
-              psl::ivec2 subdivisions = psl::ivec2(1, 1),
-              psl::vec2 uvScale = psl::vec2::one) -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</span>
-            </dt>
-            <dd>generates a plane primitive with the bounds coordinates.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">static auto <a href="#a2cad1acf10ad75297286015854b56183" class="m-doc">create_box</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              psl::vec3 scale = psl::vec3::one) -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</span>
-            </dt>
-            <dd>generates a box primitive with a pivot of {0,0,0}.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae66e362257c10c36e17c5b7c8b257142" class="m-doc">generate_tangents</a>                </div>
+                <div class="m-entry">generates tangent information for the geometry data</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae66e362257c10c36e17c5b7c8b257142" class="m-doc">generate_tangents</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::vector&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">positions</div>
+                  <div class="m-entry">const std::vector&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uvs</div>
+                  <div class="m-entry">const std::vector&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">indices</div>
+                  <div class="m-entry">const std::vector&lt;uint32_t&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">generates tangent information for the geometry data</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2a5f96dd8117504383f3620b532902bb" class="m-doc">generate_tangents</a>                </div>
+                <div class="m-entry">generates tangent information for the geometry data.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2a5f96dd8117504383f3620b532902bb" class="m-doc">generate_tangents</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">geometry_data</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">generates tangent information for the geometry data.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc">create_quad</a>                </div>
+                <div class="m-entry">generates a quad primitive with the bounds coordinates.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc">create_quad</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">top</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">bottom</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">left</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">right</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">generates a quad primitive with the bounds coordinates.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc">create_plane</a>                </div>
+                <div class="m-entry">generates a plane primitive with the bounds coordinates.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc">create_plane</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry"><a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a></div>
+                  <div class="m-entry right_align">= <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec2::<wbr />one</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">subdivisions</div>
+                  <div class="m-entry"><a href="namespacepsl.html#a4cacd6ff553084dd2e38637f88513a29" class="m-doc">psl::<wbr />ivec2</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl.html#a4cacd6ff553084dd2e38637f88513a29" class="m-doc">psl::<wbr />ivec2</a>(1, 1)</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uvScale</div>
+                  <div class="m-entry"><a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a></div>
+                  <div class="m-entry right_align">= <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec2::<wbr />one</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">generates a plane primitive with the bounds coordinates.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2cad1acf10ad75297286015854b56183" class="m-doc">create_box</a>                </div>
+                <div class="m-entry">generates a box primitive with a pivot of {0,0,0}.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2cad1acf10ad75297286015854b56183" class="m-doc">create_box</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">scale</div>
+                  <div class="m-entry"><a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a></div>
+                  <div class="m-entry right_align">= <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec3::<wbr />one</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">generates a box primitive with a pivot of {0,0,0}.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="ae66e362257c10c36e17c5b7c8b257142"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">static std::vector&lt;psl::vec3&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae66e362257c10c36e17c5b7c8b257142" class="m-doc-self">generate_tangents</a>(</span><span class="m-doc-wrap">const std::vector&lt;psl::vec3&gt;&amp; positions,
-              const std::vector&lt;psl::vec2&gt;&amp; uvs,
+              <span class="m-doc-wrap-bumper">static std::vector&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae66e362257c10c36e17c5b7c8b257142" class="m-doc-self">generate_tangents</a>(</span><span class="m-doc-wrap">const std::vector&lt;<a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a>&gt;&amp; positions,
+              const std::vector&lt;<a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a>&gt;&amp; uvs,
               const std::vector&lt;uint32_t&gt;&amp; indices)</span></span>
             </h3>
-            <p>generates tangent information for the geometry data</p>
+              <h3>Brief</h3>
+              <p>generates tangent information for the geometry data</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>it is expected this is valid geometry data, only minimal to no data validation is done.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -127,13 +323,15 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>it is expected this is valid geometry data, only minimal to no data validation is done.</p></aside>
           </div></section>
           <section class="m-doc-details" id="a2a5f96dd8117504383f3620b532902bb"><div>
             <h3>
               <span class="m-doc-wrap-bumper">static bool utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2a5f96dd8117504383f3620b532902bb" class="m-doc-self">generate_tangents</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; geometry_data)</span></span>
             </h3>
-            <p>generates tangent information for the geometry data.</p>
+              <h3>Brief</h3>
+              <p>generates tangent information for the geometry data.</p>
+              <h3>Details</h3>
+              <p><p>generates tangent information for the given geometry data, which, on success, is injected into the input handle.</p><aside class="m-note m-info"><h4>Note</h4><p>it is expected this is valid geometry data, only minimal to no data validation is done.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -151,17 +349,19 @@
                 </tr>
               </tfoot>
             </table>
-<p>generates tangent information for the given geometry data, which, on success, is injected into the input handle.</p><aside class="m-note m-info"><h4>Note</h4><p>it is expected this is valid geometry data, only minimal to no data validation is done.</p></aside>
           </div></section>
           <section class="m-doc-details" id="aa48d48bf9e504bec8cf17573963cbc85"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc-self">create_quad</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc-self">create_quad</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
               float top,
               float bottom,
               float left,
               float right)</span></span>
             </h3>
-            <p>generates a quad primitive with the bounds coordinates.</p>
+              <h3>Brief</h3>
+              <p>generates a quad primitive with the bounds coordinates.</p>
+              <h3>Details</h3>
+              <p><p>the principal difference between this function and <a href="namespaceutility_1_1geometry.html#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc">utility::<wbr />geometry::<wbr />create_plane()</a> is that this method allows fine control of the extents. This can be handy for generating UI elements.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -195,16 +395,18 @@
                 </tr>
               </tfoot>
             </table>
-<p>the principal difference between this function and <a href="namespaceutility_1_1geometry.html#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc">utility::<wbr />geometry::<wbr />create_plane()</a> is that this method allows fine control of the extents. This can be handy for generating UI elements.</p>
           </div></section>
           <section class="m-doc-details" id="abd39083d08922ebcf7e3f56259c2ff02"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc-self">create_plane</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              psl::vec2 size = psl::vec2::one,
-              psl::ivec2 subdivisions = psl::ivec2(1, 1),
-              psl::vec2 uvScale = psl::vec2::one)</span></span>
+              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd39083d08922ebcf7e3f56259c2ff02" class="m-doc-self">create_plane</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
+              <a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a> size = <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec2::<wbr />one</a>,
+              <a href="namespacepsl.html#a4cacd6ff553084dd2e38637f88513a29" class="m-doc">psl::<wbr />ivec2</a> subdivisions = <a href="namespacepsl.html#a4cacd6ff553084dd2e38637f88513a29" class="m-doc">psl::<wbr />ivec2</a>(1, 1),
+              <a href="namespacepsl.html#ab9ae76006e71584db201f753b51ad791" class="m-doc">psl::<wbr />vec2</a> uvScale = <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec2::<wbr />one</a>)</span></span>
             </h3>
-            <p>generates a plane primitive with the bounds coordinates.</p>
+              <h3>Brief</h3>
+              <p>generates a plane primitive with the bounds coordinates.</p>
+              <h3>Details</h3>
+              <p><p>the principal differences between this method and <a href="namespaceutility_1_1geometry.html#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc">utility::<wbr />geometry::<wbr />create_quad()</a> is that the plane can be subdivided, and has finer control over the UV&#x27;s, making it better suited for 3D geometry.</p><aside class="m-note m-info"><h4>Note</h4><p>the final size of the object is always 2x the extents. This means that a size {2, 1} results into a min-coordinate {-2, -1} and max-coordinate {2, 1}.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -234,14 +436,16 @@
                 </tr>
               </tfoot>
             </table>
-<p>the principal differences between this method and <a href="namespaceutility_1_1geometry.html#aa48d48bf9e504bec8cf17573963cbc85" class="m-doc">utility::<wbr />geometry::<wbr />create_quad()</a> is that the plane can be subdivided, and has finer control over the UV&#x27;s, making it better suited for 3D geometry.</p><aside class="m-note m-info"><h4>Note</h4><p>the final size of the object is always 2x the extents. This means that a size {2, 1} results into a min-coordinate {-2, -1} and max-coordinate {2, 1}.</p></aside>
           </div></section>
           <section class="m-doc-details" id="a2cad1acf10ad75297286015854b56183"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2cad1acf10ad75297286015854b56183" class="m-doc-self">create_box</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              psl::vec3 scale = psl::vec3::one)</span></span>
+              <span class="m-doc-wrap-bumper">static <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html" class="m-doc">core::<wbr />data::<wbr />geometry_t</a>&gt; utility::<wbr />geometry::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2cad1acf10ad75297286015854b56183" class="m-doc-self">create_box</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
+              <a href="namespacepsl.html#a19dd7bd8998e5fb33c4e33ba9cfc69ff" class="m-doc">psl::<wbr />vec3</a> scale = <a href="structpsl_1_1tvec.html#a2a310d9aefd11243548b841ea232212d" class="m-doc">psl::<wbr />vec3::<wbr />one</a>)</span></span>
             </h3>
-            <p>generates a box primitive with a pivot of {0,0,0}.</p>
+              <h3>Brief</h3>
+              <p>generates a box primitive with a pivot of {0,0,0}.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>unlike extent, scale implies that the final size is equal to the scale (i.e. an object of 1 unit at a scale of 1 is equal to 1unit).</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -263,7 +467,6 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>unlike extent, scale implies that the final size is equal to the scale (i.e. an object of 1 unit at a scale of 1 is equal to 1unit).</p></aside>
           </div></section>
         </section>
       </div>
@@ -304,6 +507,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

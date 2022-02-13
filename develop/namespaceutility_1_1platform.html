@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -48,83 +48,151 @@
         </h1>
         <p>platform specific utilities that help in identifying the current platform, and various specifications of it.</p>
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#nested-classes">Classes</a></li>
-                <li><a href="#enum-members">Enums</a></li>
-                <li><a href="#func-members">Functions</a></li>
-              </ul>
-            </li>
+
+            <li><a href="#namespaces">namespaces</a></li>
+            <li><a href="#nested-classes">classes</a></li>
+            <li><a href="#enum-members">enums</a></li>
+            <li><a href="#func-members">functions</a></li>
           </ul>
         </nav>
         <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
+          <h2><a href="#namespaces">namespaces</a></h2>
           <dl class="m-doc">
-            <dt>namespace <a href="namespaceutility_1_1platform_1_1file.html" class="m-doc">file</a></dt>
-            <dd>file i/o and manpulations utilities namespace</dd>
+            	<table style="width:100%">
+	<tr>
+	            <div class="m-entry-container hoverable" id="file">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespaceutility_1_1platform_1_1file.html" class="m-doc">file</a></div>
+                <div class="m-entry">file i/o and manpulations utilities namespace</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section id="nested-classes">
-          <h2><a href="#nested-classes">Classes</a></h2>
+          <h2><a href="#nested-classes">classes</a></h2>
           <dl class="m-doc">
-            <dt>
-              class <a href="classutility_1_1platform_1_1directory.html" class="m-doc">directory</a>
-            </dt>
-            <dd>helper class that contains directory specific I/O manipulation methods and platform utilities.</dd>
-            <dt>
-              class <a href="classutility_1_1platform_1_1os.html" class="m-doc">os</a>
-            </dt>
-            <dd>OS specific utility functions.</dd>
+            	<table style="width:100%">
+	<tr>
+	            <div class="m-entry-container hoverable" id="directory">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="classutility_1_1platform_1_1directory.html" class="m-doc">directory</a></div>
+                <div class="m-entry">helper class that contains directory specific I/O manipulation methods and platform utilities.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="os">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="classutility_1_1platform_1_1os.html" class="m-doc">os</a></div>
+                <div class="m-entry">OS specific utility functions.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section id="enum-members">
-          <h2><a href="#enum-members">Enums</a></h2>
+          <h2><a href="#enum-members">enums</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">enum class <a href="#a6def77754618d3ff0beeeec48cd70603" class="m-doc">platform_t</a> { </span><span class="m-doc-wrap"><a href="#a6def77754618d3ff0beeeec48cd70603a696b031073e74bf2cb98e5ef201d4aa3" class="m-doc">UNKNOWN</a> = 0,
-              <a href="#a6def77754618d3ff0beeeec48cd70603a354317d0ca91ae2cd9042b8d9bcbcbac" class="m-doc">lnx</a> = 1,
-              <a href="#a6def77754618d3ff0beeeec48cd70603a8e4f88e9d6ec0106ccc73b39d369c3e8" class="m-doc">osx</a> = 2,
-              <a href="#a6def77754618d3ff0beeeec48cd70603a0f4137ed1502b5045d6083aa258b5c42" class="m-doc">windows</a> = 3,
-              <a href="#a6def77754618d3ff0beeeec48cd70603ac31b32364ce19ca8fcd150a417ecce58" class="m-doc">android</a> = 4,
-              <a href="#a6def77754618d3ff0beeeec48cd70603a9e304d4e8df1b74cfa009913198428ab" class="m-doc">ios</a> = 5 }</span>
-            </dt>
-            <dd>contains all known, supported (or to be supported) platforms.</dd>
-            <dt id="a7d247f23d8e64d0d4a3836be6193ba53">
-              <span class="m-doc-wrap-bumper">enum class <a href="#a7d247f23d8e64d0d4a3836be6193ba53" class="m-doc-self">encoding_t</a> { </span><span class="m-doc-wrap"><a href="#a7d247f23d8e64d0d4a3836be6193ba53a696b031073e74bf2cb98e5ef201d4aa3" class="m-doc">UNKNOWN</a> = 0,
-              <a href="#a7d247f23d8e64d0d4a3836be6193ba53aeb7ee0fb585e2ac64fdc086466c474b1" class="m-doc">UTF8</a> = 1,
-              <a href="#a7d247f23d8e64d0d4a3836be6193ba53af023832671d1cf95ebe4934d58722a14" class="m-doc">UTF16</a> = 2 }</span>
-            </dt>
-            <dd>encoding enum, that can be used to help identify encoding of items.</dd>
-            <dt id="a7f1f0637649f83e28924287bc62452df">
-              <span class="m-doc-wrap-bumper">enum class <a href="#a7f1f0637649f83e28924287bc62452df" class="m-doc-self">architecture_t</a> { </span><span class="m-doc-wrap"><a href="#a7f1f0637649f83e28924287bc62452dfa696b031073e74bf2cb98e5ef201d4aa3" class="m-doc">UNKNOWN</a> = 0,
-              <a href="#a7f1f0637649f83e28924287bc62452dfa9c16d991c79c6330e655aa29ea623492" class="m-doc">x64</a>,
-              <a href="#a7f1f0637649f83e28924287bc62452dfa47f45e65244c17ec9fa8771a5c6d60e1" class="m-doc">ARM</a> }</span>
-            </dt>
-            <dd>contains all known, supported (or to be supported) architectures.</dd>
+            	<table style="width:100%">
+	<tr>
+	              <div class="m-entry-container hoverable" id="a6def77754618d3ff0beeeec48cd70603">
+                <div class="m-entry-row flex">
+                  <div class="m-entry header"><span><a href="#a6def77754618d3ff0beeeec48cd70603" class="m-doc-self">platform_t</a></span></div>
+                  <div class="m-entry">contains all known, supported (or to be supported) platforms.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable" id="a7d247f23d8e64d0d4a3836be6193ba53">
+                <div class="m-entry-row flex">
+                  <div class="m-entry header"><span>encoding_t</span></div>
+                  <div class="m-entry">encoding enum, that can be used to help identify encoding of items.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container hoverable" id="a7f1f0637649f83e28924287bc62452df">
+                <div class="m-entry-row flex">
+                  <div class="m-entry header"><span>architecture_t</span></div>
+                  <div class="m-entry">contains all known, supported (or to be supported) architectures.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
+          <h2><a href="#func-members">functions</a></h2>
           <dl class="m-doc">
-            <dt id="ae5664fbcdba42426b033dd14f5a6112f">
-              <span class="m-doc-wrap-bumper">static void <a href="#ae5664fbcdba42426b033dd14f5a6112f" class="m-doc-self">cmd_prompt_presskeytocontinue</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd>platform specific utility that can freeze the console running on the current thread.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="ae5664fbcdba42426b033dd14f5a6112f">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">cmd_prompt_presskeytocontinue                </div>
+                <div class="m-entry">platform specific utility that can freeze the console running on the current thread.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">cmd_prompt_presskeytocontinue</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-static">static</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">platform specific utility that can freeze the console running on the current thread.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
         <section>
           <h2>Enum documentation</h2>
-          <section class="m-doc-details" id="a6def77754618d3ff0beeeec48cd70603"><div>
-            <h3>
-              enum class utility::<wbr />platform::<wbr /><a href="#a6def77754618d3ff0beeeec48cd70603" class="m-doc-self">platform_t</a>
-            </h3>
-            <p>contains all known, supported (or to be supported) platforms.</p>
-<aside class="m-note m-info"><h4>Note</h4><p>we need to add an extra dash to linux as the define already exists on linux platforms</p></aside>
-          </div></section>
+            <td>
+              <span class="m-doc-wrap-bumper"><a
+                  href="#a6def77754618d3ff0beeeec48cd70603"
+                  class="m-doc">platform_t</a> { </span><span class="m-doc-wrap"><a
+                  href="#a6def77754618d3ff0beeeec48cd70603a696b031073e74bf2cb98e5ef201d4aa3" class="m-doc">UNKNOWN</a>                = 0,
+              <a
+                  href="#a6def77754618d3ff0beeeec48cd70603a354317d0ca91ae2cd9042b8d9bcbcbac" class="m-doc">lnx</a>                = 1,
+              <a
+                  href="#a6def77754618d3ff0beeeec48cd70603a8e4f88e9d6ec0106ccc73b39d369c3e8" class="m-doc">osx</a>                = 2,
+              <a
+                  href="#a6def77754618d3ff0beeeec48cd70603a0f4137ed1502b5045d6083aa258b5c42" class="m-doc">windows</a>                = 3,
+              <a
+                  href="#a6def77754618d3ff0beeeec48cd70603ac31b32364ce19ca8fcd150a417ecce58" class="m-doc">android</a>                = 4,
+              <a
+                  href="#a6def77754618d3ff0beeeec48cd70603a9e304d4e8df1b74cfa009913198428ab" class="m-doc">ios</a>                = 5                }</span>
+              </td>
+              <td>contains all known, supported (or to be supported) platforms.</td>
         </section>
       </div>
     </div>
@@ -164,6 +232,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

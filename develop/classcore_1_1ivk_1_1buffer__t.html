@@ -24,12 +24,12 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
-            <li><a href="annotated.html">Classes</a></li>
-            <li><a href="files.html">Files</a></li>
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
             </svg></a></li>
@@ -47,100 +47,526 @@
           <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>buffer_t <span class="m-thin">class</span>
         </h1>
         <p>maps a memory region and interfaces with the driver for read/writes</p>
+        
         <nav class="m-block m-default">
-          <h3>Contents</h3>
+          <h3>content</h3>
           <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>buffers are used to map regions of memory that the driver should know about, either because they will be used to map GPU resources (geometry, textures, etc..), or because they are used for synchronising information between CPU/GPU (compute results). This class will handle most of the needs for synchonising, and how-to upload the data to the relevant locations as well as managing the internals.</p>
         <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper"><a href="#ab360ebf1e780c1db0ea472dc631dd36a" class="m-doc">buffer_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
-              const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
-              <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
-              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt; buffer_data,
-              std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt;&gt; staging_buffer = std::nullopt)</span>
-            </dt>
-            <dd>constructs a buffer from the given buffer_data, as well as optionally sets a staging resource.</dd>
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab360ebf1e780c1db0ea472dc631dd36a" class="m-doc">buffer_t</a>                </div>
+                <div class="m-entry">constructs a buffer from the given buffer_data, as well as optionally sets a staging resource.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab360ebf1e780c1db0ea472dc631dd36a" class="m-doc">buffer_t</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">cache</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaData</div>
+                  <div class="m-entry">const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">metaFile</div>
+                  <div class="m-entry"><a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">context</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">buffer_data</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">staging_buffer</div>
+                  <div class="m-entry">std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt;&gt;</div>
+                  <div class="m-entry right_align">= std::nullopt</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">constructs a buffer from the given buffer_data, as well as optionally sets a staging resource.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
           </dl>
         </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc">reserve</a>(</span><span class="m-doc-wrap">vk::DeviceSize size) -&gt; std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;</span>
-            </dt>
-            <dd>tries to reserve a region of memory of <em>at least</em> the given size in thye buffer.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae4aac162b5452ac3ce8f3d95c03e46b6" class="m-doc">reserve</a>(</span><span class="m-doc-wrap">std::vector&lt;vk::DeviceSize&gt; sizes,
-              bool optimize = false) -&gt; std::vector&lt;std::pair&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>, <a href="classmemory_1_1range__t.html" class="m-doc">memory::<wbr />range_t</a>&gt;&gt;</span>
-            </dt>
-            <dd>tries to reserve all requested sizes in the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> of this buffer.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a2c6102aabc941d63b4b1cfdd5ea6f8de" class="m-doc">commit</a>(</span><span class="m-doc-wrap">std::vector&lt;<a href="structcore_1_1gfx_1_1commit__instruction.html" class="m-doc">core::<wbr />gfx::<wbr />commit_instruction</a>&gt; instructions) -&gt; bool</span>
-            </dt>
-            <dd>tries to find the appropriate method to update the buffer with the commit instructions.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a24669810fc59f804a1821d0c386e331c" class="m-doc">deallocate</a>(</span><span class="m-doc-wrap"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp; segment) -&gt; bool</span>
-            </dt>
-            <dd>marks the specific region of memory available again.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc">copy_from</a>(</span><span class="m-doc-wrap">const <a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&amp; other,
-              const std::vector&lt;vk::BufferCopy&gt;&amp; copyRegions) -&gt; bool</span>
-            </dt>
-            <dd>allows you to copy from one buffer into another.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a873ee84f97b0417beb31e05d2e1118fb" class="m-doc">is_busy</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
-            </dt>
-            <dd></dd>
-            <dt id="a8e8ed29c8127b44f8e8a610582376b4b">
-              <span class="m-doc-wrap-bumper">void <a href="#a8e8ed29c8127b44f8e8a610582376b4b" class="m-doc-self">wait_until_ready</a>(</span><span class="m-doc-wrap">uint64_t timeout = UINT64_MAX) const</span>
-            </dt>
-            <dd>forcibly wait until all operations are done, or the timeout has been reached.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ae9afa00070261ede13ade00a815251c3" class="m-doc">copy_to_host</a>(</span><span class="m-doc-wrap">bool compressed_copy = true) const -&gt; std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt;</span>
-            </dt>
-            <dd>makes the buffer available on the host.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a59feb39870cbbb869c63cf68cc21ed49" class="m-doc">copy_to_host</a>(</span><span class="m-doc-wrap">const std::vector&lt;vk::BufferCopy&gt;&amp; copyRegions) const -&gt; std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt;</span>
-            </dt>
-            <dd>makes the buffer available on the host.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#af8e31080900492e89667376f99da8793" class="m-doc">gpu_buffer</a>(</span><span class="m-doc-wrap">) const -&gt; const vk::Buffer&amp;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a914fa25b30a83b5484b00dc25062b37c" class="m-doc">data</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a9b39a76bdce901249ca68eee515da811" class="m-doc">buffer_info</a>(</span><span class="m-doc-wrap">) -&gt; vk::DescriptorBufferInfo&amp;</span>
-            </dt>
-            <dd></dd>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc">reserve</a>                </div>
+                <div class="m-entry">tries to reserve a region of memory of <em>at least</em> the given size in thye buffer.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc">reserve</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">vk::DeviceSize</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">tries to reserve a region of memory of <em>at least</em> the given size in thye buffer.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae4aac162b5452ac3ce8f3d95c03e46b6" class="m-doc">reserve</a>                </div>
+                <div class="m-entry">tries to reserve all requested sizes in the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> of this buffer.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae4aac162b5452ac3ce8f3d95c03e46b6" class="m-doc">reserve</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::vector&lt;std::pair&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>, <a href="classmemory_1_1range__t.html" class="m-doc">memory::<wbr />range_t</a>&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">sizes</div>
+                  <div class="m-entry">std::vector&lt;vk::DeviceSize&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">optimize</div>
+                  <div class="m-entry">bool</div>
+                  <div class="m-entry right_align">= false</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">tries to reserve all requested sizes in the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> of this buffer.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2c6102aabc941d63b4b1cfdd5ea6f8de" class="m-doc">commit</a>                </div>
+                <div class="m-entry">tries to find the appropriate method to update the buffer with the commit instructions.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2c6102aabc941d63b4b1cfdd5ea6f8de" class="m-doc">commit</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">instructions</div>
+                  <div class="m-entry">std::vector&lt;<a href="structcore_1_1gfx_1_1commit__instruction.html" class="m-doc">core::<wbr />gfx::<wbr />commit_instruction</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">tries to find the appropriate method to update the buffer with the commit instructions.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a24669810fc59f804a1821d0c386e331c" class="m-doc">deallocate</a>                </div>
+                <div class="m-entry">marks the specific region of memory available again.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a24669810fc59f804a1821d0c386e331c" class="m-doc">deallocate</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">segment</div>
+                  <div class="m-entry"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">marks the specific region of memory available again.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc">copy_from</a>                </div>
+                <div class="m-entry">allows you to copy from one buffer into another.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc">copy_from</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">other</div>
+                  <div class="m-entry">const <a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">copyRegions</div>
+                  <div class="m-entry">const std::vector&lt;vk::BufferCopy&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">allows you to copy from one buffer into another.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a873ee84f97b0417beb31e05d2e1118fb" class="m-doc">is_busy</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a873ee84f97b0417beb31e05d2e1118fb" class="m-doc">is_busy</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a8e8ed29c8127b44f8e8a610582376b4b">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">wait_until_ready                </div>
+                <div class="m-entry">forcibly wait until all operations are done, or the timeout has been reached.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">wait_until_ready</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">timeout</div>
+                  <div class="m-entry">uint64_t</div>
+                  <div class="m-entry right_align">= UINT64_MAX</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">forcibly wait until all operations are done, or the timeout has been reached.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae9afa00070261ede13ade00a815251c3" class="m-doc">copy_to_host</a>                </div>
+                <div class="m-entry">makes the buffer available on the host.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae9afa00070261ede13ade00a815251c3" class="m-doc">copy_to_host</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">compressed_copy</div>
+                  <div class="m-entry">bool</div>
+                  <div class="m-entry right_align">= true</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">makes the buffer available on the host.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a59feb39870cbbb869c63cf68cc21ed49" class="m-doc">copy_to_host</a>                </div>
+                <div class="m-entry">makes the buffer available on the host.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a59feb39870cbbb869c63cf68cc21ed49" class="m-doc">copy_to_host</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">copyRegions</div>
+                  <div class="m-entry">const std::vector&lt;vk::BufferCopy&gt;&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">makes the buffer available on the host.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af8e31080900492e89667376f99da8793" class="m-doc">gpu_buffer</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af8e31080900492e89667376f99da8793" class="m-doc">gpu_buffer</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const vk::Buffer&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a914fa25b30a83b5484b00dc25062b37c" class="m-doc">data</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a914fa25b30a83b5484b00dc25062b37c" class="m-doc">data</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9b39a76bdce901249ca68eee515da811" class="m-doc">buffer_info</a>                </div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9b39a76bdce901249ca68eee515da811" class="m-doc">buffer_info</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">vk::DescriptorBufferInfo&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry"></div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ab360ebf1e780c1db0ea472dc631dd36a"><div>
+          
+          			          <section class="m-doc-details" id="ab360ebf1e780c1db0ea472dc631dd36a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab360ebf1e780c1db0ea472dc631dd36a" class="m-doc-self">buffer_t</a>(</span><span class="m-doc-wrap">core::resource::cache_t&amp; cache,
+              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab360ebf1e780c1db0ea472dc631dd36a" class="m-doc-self">buffer_t</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1cache__t.html" class="m-doc">core::<wbr />resource::<wbr />cache_t</a>&amp; cache,
               const <a href="structcore_1_1resource_1_1metadata.html" class="m-doc">core::<wbr />resource::<wbr />metadata</a>&amp; metaData,
               <a href="classpsl_1_1meta_1_1file.html" class="m-doc">psl::<wbr />meta::<wbr />file</a>* metaFile,
               <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
               <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt; buffer_data,
               std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />buffer_t</a>&gt;&gt; staging_buffer = std::nullopt)</span></span>
             </h3>
-            <p>constructs a buffer from the given buffer_data, as well as optionally sets a staging resource.</p>
+              <h3>Brief</h3>
+              <p>constructs a buffer from the given buffer_data, as well as optionally sets a staging resource.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>it is recommended to give a staging_buffer unless you know this is a host-only resource. failing to give a staging resource to a device-local region that cannot be accessed by the host will result in performance degradation as it has to keep making temporary staging buffers instead.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>buffer_data dictates the size, and alignment of this buffer resource. In the event that the allignment is incorrect, a suitable warning (and potential override) will be supplied. If the supplied buffer_data is non-virtual (i.e. backed by real memory location), then the resource will be duplicated and accessible for read access through the <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> handle directly.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -172,13 +598,14 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-danger"><h4>Warning</h4><p>it is recommended to give a staging_buffer unless you know this is a host-only resource. failing to give a staging resource to a device-local region that cannot be accessed by the host will result in performance degradation as it has to keep making temporary staging buffers instead.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>buffer_data dictates the size, and alignment of this buffer resource. In the event that the allignment is incorrect, a suitable warning (and potential override) will be supplied. If the supplied buffer_data is non-virtual (i.e. backed by real memory location), then the resource will be duplicated and accessible for read access through the <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a> handle directly.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a6e3b4d29ef9aa780c766f4121846042a"><div>
+
+          			          <section class="m-doc-details" id="a6e3b4d29ef9aa780c766f4121846042a"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&gt; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc-self">reserve</a>(</span><span class="m-doc-wrap">vk::DeviceSize size)</span></span>
             </h3>
-            <p>tries to reserve a region of memory of <em>at least</em> the given size in thye buffer.</p>
+              <h3>Brief</h3>
+              <p>tries to reserve a region of memory of <em>at least</em> the given size in thye buffer.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -197,12 +624,15 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ae4aac162b5452ac3ce8f3d95c03e46b6"><div>
+			          <section class="m-doc-details" id="ae4aac162b5452ac3ce8f3d95c03e46b6"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::vector&lt;std::pair&lt;<a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>, <a href="classmemory_1_1range__t.html" class="m-doc">memory::<wbr />range_t</a>&gt;&gt; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae4aac162b5452ac3ce8f3d95c03e46b6" class="m-doc-self">reserve</a>(</span><span class="m-doc-wrap">std::vector&lt;vk::DeviceSize&gt; sizes,
               bool optimize = false)</span></span>
             </h3>
-            <p>tries to reserve all requested sizes in the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> of this buffer.</p>
+              <h3>Brief</h3>
+              <p>tries to reserve all requested sizes in the <a href="classmemory_1_1region.html" class="m-doc">memory::<wbr />region</a> of this buffer.</p>
+              <h3>Details</h3>
+              <p><p>optmized version of <a href="classcore_1_1ivk_1_1buffer__t.html#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc">reserve()</a> that works on a batch of data. It will try to satisfy allocating regions of memory of atleast the given accumulative size. Depending on the optimize boolean parameter&#x27;s value this can be in one optimized <a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a> (true), or in equal amount of memory::segments as there were elements in the sizes requested container (false). when optimize is true, the returned <a href="classmemory_1_1range__t.html" class="m-doc">memory::<wbr />range_t</a> in the pair signifies the offset from the start of the segment (where the actual memory you requested resides). when optimize is false, range always starts at 0, and ends at the actual allocated size.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -224,13 +654,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>optmized version of <a href="classcore_1_1ivk_1_1buffer__t.html#a6e3b4d29ef9aa780c766f4121846042a" class="m-doc">reserve()</a> that works on a batch of data. It will try to satisfy allocating regions of memory of atleast the given accumulative size. Depending on the optimize boolean parameter&#x27;s value this can be in one optimized <a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a> (true), or in equal amount of memory::segments as there were elements in the sizes requested container (false). when optimize is true, the returned <a href="classmemory_1_1range__t.html" class="m-doc">memory::<wbr />range_t</a> in the pair signifies the offset from the start of the segment (where the actual memory you requested resides). when optimize is false, range always starts at 0, and ends at the actual allocated size.</p>
           </div></section>
-          <section class="m-doc-details" id="a2c6102aabc941d63b4b1cfdd5ea6f8de"><div>
+			          <section class="m-doc-details" id="a2c6102aabc941d63b4b1cfdd5ea6f8de"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2c6102aabc941d63b4b1cfdd5ea6f8de" class="m-doc-self">commit</a>(</span><span class="m-doc-wrap">std::vector&lt;<a href="structcore_1_1gfx_1_1commit__instruction.html" class="m-doc">core::<wbr />gfx::<wbr />commit_instruction</a>&gt; instructions)</span></span>
             </h3>
-            <p>tries to find the appropriate method to update the buffer with the commit instructions.</p>
+              <h3>Brief</h3>
+              <p>tries to find the appropriate method to update the buffer with the commit instructions.</p>
+              <h3>Details</h3>
+              <p><p>this method tries to commit the given instruction into the buffer. depending on the type of buffer how this does that can differ greatly.</p><aside class="m-note m-danger"><h4>Warning</h4><p>if the buffer is device local and no staging buffer is known, it will try to create a staging buffer to facilitate transfers this has a performance overhead.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>this method will try to figure out the best way to send this set of instructions to the GPU, possibly merging instructions together.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -248,13 +680,15 @@
                 </tr>
               </tfoot>
             </table>
-<p>this method tries to commit the given instruction into the buffer. depending on the type of buffer how this does that can differ greatly.</p><aside class="m-note m-danger"><h4>Warning</h4><p>if the buffer is device local and no staging buffer is known, it will try to create a staging buffer to facilitate transfers this has a performance overhead.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>this method will try to figure out the best way to send this set of instructions to the GPU, possibly merging instructions together.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a24669810fc59f804a1821d0c386e331c"><div>
+			          <section class="m-doc-details" id="a24669810fc59f804a1821d0c386e331c"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a24669810fc59f804a1821d0c386e331c" class="m-doc-self">deallocate</a>(</span><span class="m-doc-wrap"><a href="classmemory_1_1segment.html" class="m-doc">memory::<wbr />segment</a>&amp; segment)</span></span>
             </h3>
-            <p>marks the specific region of memory available again.</p>
+              <h3>Brief</h3>
+              <p>marks the specific region of memory available again.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>no actual memory will be freed. driver resources are created at the start (constructor) and can only be freed completely (destructor). there is no intermediate unless you copy over the resources to a new, smaller buffer. Check <a href="classcore_1_1ivk_1_1buffer__t.html#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc">copy_<wbr />from()</a> for that.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -272,14 +706,14 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>no actual memory will be freed. driver resources are created at the start (constructor) and can only be freed completely (destructor). there is no intermediate unless you copy over the resources to a new, smaller buffer. Check <a href="classcore_1_1ivk_1_1buffer__t.html#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc">copy_<wbr />from()</a> for that.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="a8ace32dbeb43fe545a6971c33d3d6a4d"><div>
+			          <section class="m-doc-details" id="a8ace32dbeb43fe545a6971c33d3d6a4d"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ace32dbeb43fe545a6971c33d3d6a4d" class="m-doc-self">copy_from</a>(</span><span class="m-doc-wrap">const <a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&amp; other,
               const std::vector&lt;vk::BufferCopy&gt;&amp; copyRegions)</span></span>
             </h3>
-            <p>allows you to copy from one buffer into another.</p>
+              <h3>Brief</h3>
+              <p>allows you to copy from one buffer into another.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -302,10 +736,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a873ee84f97b0417beb31e05d2e1118fb"><div>
+			          <section class="m-doc-details" id="a873ee84f97b0417beb31e05d2e1118fb"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a873ee84f97b0417beb31e05d2e1118fb" class="m-doc-self">is_busy</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>could be true for various situations, in case it is busy uploading, or hasn&#x27;t finalized everything yet amongst other.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
@@ -314,13 +750,13 @@
                 </tr>
               </tfoot>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>could be true for various situations, in case it is busy uploading, or hasn&#x27;t finalized everything yet amongst other.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="ae9afa00070261ede13ade00a815251c3"><div>
+			          <section class="m-doc-details" id="ae9afa00070261ede13ade00a815251c3"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae9afa00070261ede13ade00a815251c3" class="m-doc-self">copy_to_host</a>(</span><span class="m-doc-wrap">bool compressed_copy = true) const</span></span>
             </h3>
-            <p>makes the buffer available on the host.</p>
+              <h3>Brief</h3>
+              <p>makes the buffer available on the host.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -339,11 +775,12 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a59feb39870cbbb869c63cf68cc21ed49"><div>
+			          <section class="m-doc-details" id="a59feb39870cbbb869c63cf68cc21ed49"><div>
             <h3>
               <span class="m-doc-wrap-bumper">std::optional&lt;<a href="classcore_1_1resource_1_1handle.html" class="m-doc">resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc">buffer_<wbr />t</a>&gt;&gt; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a59feb39870cbbb869c63cf68cc21ed49" class="m-doc-self">copy_to_host</a>(</span><span class="m-doc-wrap">const std::vector&lt;vk::BufferCopy&gt;&amp; copyRegions) const</span></span>
             </h3>
-            <p>makes the buffer available on the host.</p>
+              <h3>Brief</h3>
+              <p>makes the buffer available on the host.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -362,7 +799,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="af8e31080900492e89667376f99da8793"><div>
+			          <section class="m-doc-details" id="af8e31080900492e89667376f99da8793"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const vk::Buffer&amp; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af8e31080900492e89667376f99da8793" class="m-doc-self">gpu_buffer</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
@@ -375,7 +812,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a914fa25b30a83b5484b00dc25062b37c"><div>
+			          <section class="m-doc-details" id="a914fa25b30a83b5484b00dc25062b37c"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1data_1_1buffer__t.html" class="m-doc">core::<wbr />data::<wbr />buffer_t</a>&gt; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a914fa25b30a83b5484b00dc25062b37c" class="m-doc-self">data</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
@@ -388,7 +825,7 @@
               </tfoot>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a9b39a76bdce901249ca68eee515da811"><div>
+			          <section class="m-doc-details" id="a9b39a76bdce901249ca68eee515da811"><div>
             <h3>
               <span class="m-doc-wrap-bumper">vk::DescriptorBufferInfo&amp; core::<wbr />ivk::<wbr />buffer_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9b39a76bdce901249ca68eee515da811" class="m-doc-self">buffer_info</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
@@ -401,6 +838,16 @@
               </tfoot>
             </table>
           </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>
@@ -440,6 +887,157 @@
     </div>
   </div>
 </div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
 <script src="search-v2.js"></script>
 <script src="searchdata-v2.js" async="async"></script>
 <footer><nav>

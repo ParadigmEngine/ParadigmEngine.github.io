@@ -55,6 +55,7 @@
             <li><a href="#nested-classes">classes</a></li>
             <li><a href="#typedef-members">typedefs</a></li>
             <li><a href="#func-members">functions</a></li>
+            <li><a href="#var-members">variables</a></li>
           </ul>
         </nav>
 <p>contains various utilities and constructs to aid you. In this you&#x27;ll find constructs that allow event signalling, dealing with UTF encoded strings, etc...</p>
@@ -177,6 +178,66 @@
           <h2><a href="#typedef-members">typedefs</a></h2>
           <dl class="m-doc">
             	<table style="width:100%">
+	<tr>
+	              <div class="m-entry-container hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#aaefec3f470abf4440632948896bbe967" class="m-doc">has_type</a> = <a href="structutility_1_1templates_1_1has__type.html" class="m-doc">utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;</span></div>
+                  <div class="m-entry">checks if the given type exists within the variadic args</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a0282975b000ce8a0f475eb4c72b93bcf" class="m-doc">index_of</a> = <a href="structutility_1_1templates_1_1index__of.html" class="m-doc">utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;</span></div>
+                  <div class="m-entry">retrieve the index of the type in the variadic args</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_at_index</a> = utility::templates::type_at_index&lt;N, Ts...&gt;</span></div>
+                  <div class="m-entry">get the type at the given index in the variadic args</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc">type_at_index_t</a> = typename <a href="namespacepsl.html#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type</span></div>
+                  <div class="m-entry">get the type at the given index in the variadic args</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename... Ts&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">type_pack_t</a> = <a href="structutility_1_1templates_1_1type__pack__t.html" class="m-doc">utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;</span></div>
+                  <div class="m-entry">used to store packs of types to pass around as parameters without instantiating the type&#x27;s objects</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename T&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a481a7c7762b7103c21e502e2bb326572" class="m-doc">container_to_type_pack_t</a> = <a href="namespaceutility_1_1templates.html#aeac3564e6d05aae360f9654fa51c71ac" class="m-doc">utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;</span></div>
+                  <div class="m-entry">transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
 	<tr>
 	              <div class="m-entry-container hoverable" id="aabe2b89b2fcb7960d7ae60c48eb71efa">
                 <div class="m-entry-row flex">
@@ -702,6 +763,197 @@
 
           </dl>
         </section>
+        <section id="var-members">
+          <h2><a href="#var-members">variables</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">concept</div> <a href="#a0fb5f4e25382a2fbf8fb1a2df90d393c" class="m-doc">HasType<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">checks if the given type exists within the variadic args</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#af73642e178e34438acfd25485739be6b" class="m-doc">index_of_v<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">retrieve the index of the type in the variadic args</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#a3ae95e01f5455a035886b1d903670c3c" class="m-doc">type_pack_size_v<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">retrieve the size of a type pack</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#a3cfcf718df84e147b1fad7c5ddd419a3" class="m-doc">container_has_type_v<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">checks if the container&#x27;s template arguments contains the given type.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section>
+          <h2>Typedef documentation</h2>
+          <section class="m-doc-details" id="aaefec3f470abf4440632948896bbe967"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Ts&gt;
+              </div>
+              using psl::<wbr /><a href="#aaefec3f470abf4440632948896bbe967" class="m-doc-self">has_type</a> = <a href="structutility_1_1templates_1_1has__type.html" class="m-doc">utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;
+            </h3>
+            <p>checks if the given type exists within the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>type to search</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to match against</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a0282975b000ce8a0f475eb4c72b93bcf"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Ts&gt;
+              </div>
+              using psl::<wbr /><a href="#a0282975b000ce8a0f475eb4c72b93bcf" class="m-doc-self">index_of</a> = <a href="structutility_1_1templates_1_1index__of.html" class="m-doc">utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;
+            </h3>
+            <p>retrieve the index of the type in the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>type to find the index of</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to match against</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a57654d7fb01d524d871c1ee0f48b61ee"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;size_t N, typename... Ts&gt;
+              </div>
+              using psl::<wbr /><a href="#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc-self">type_at_index</a> = utility::templates::type_at_index&lt;N, Ts...&gt;
+            </h3>
+            <p>get the type at the given index in the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">N</td>
+                  <td>index to retrieve</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to select from</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a46cb5b4394ac9b926b46a8a77492ecd6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;size_t N, typename... Ts&gt;
+              </div>
+              using psl::<wbr /><a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc-self">type_at_index_t</a> = typename <a href="namespacepsl.html#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type
+            </h3>
+            <p>get the type at the given index in the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">N</td>
+                  <td>index to retrieve</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to select from</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a092a42d8d39a0ffc70868b67499ef7d0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename... Ts&gt;
+              </div>
+              using psl::<wbr /><a href="#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc-self">type_pack_t</a> = <a href="structutility_1_1templates_1_1type__pack__t.html" class="m-doc">utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;
+            </h3>
+            <p>used to store packs of types to pass around as parameters without instantiating the type&#x27;s objects</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Ts</td>
+                  <td>types to store</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a481a7c7762b7103c21e502e2bb326572"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              using psl::<wbr /><a href="#a481a7c7762b7103c21e502e2bb326572" class="m-doc-self">container_to_type_pack_t</a> = <a href="namespaceutility_1_1templates.html#aeac3564e6d05aae360f9654fa51c71ac" class="m-doc">utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;
+            </h3>
+            <p>transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>target container to transform</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>this matches any type that satisfies the signature template&lt;typename...&gt;, this means for types such as std::vector, or std::unordered_map, you can get some weird results. As there is no good protection against this, the constraint is for the user to enforce.</p></aside>
+          </div></section>
+        </section>
         <section>
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="a5ad1017fc6d07ed98ea6dfb33b63f62c"><div>
@@ -1065,6 +1317,103 @@ converts a <a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="
                 </tr>
               </tbody>
             </table>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a0fb5f4e25382a2fbf8fb1a2df90d393c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Ts&gt;
+              </div>
+              concept psl::<wbr /><a href="#a0fb5f4e25382a2fbf8fb1a2df90d393c" class="m-doc-self">HasType</a>
+            </h3>
+            <p>checks if the given type exists within the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>type to search</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to match against</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="af73642e178e34438acfd25485739be6b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Ts&gt;
+              </div>
+              static auto psl::<wbr /><a href="#af73642e178e34438acfd25485739be6b" class="m-doc-self">index_of_v</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+            <p>retrieve the index of the type in the variadic args</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>type to find the index of</td>
+                </tr>
+                <tr>
+                  <td>Ts</td>
+                  <td>types to match against</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a3ae95e01f5455a035886b1d903670c3c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static auto psl::<wbr /><a href="#a3ae95e01f5455a035886b1d903670c3c" class="m-doc-self">type_pack_size_v</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+            <p>retrieve the size of a type pack</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>the type pack you want to extract the size from</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a3cfcf718df84e147b1fad7c5ddd419a3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename Container&gt;
+              </div>
+              static auto psl::<wbr /><a href="#a3cfcf718df84e147b1fad7c5ddd419a3" class="m-doc-self">container_has_type_v</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+            <p>checks if the container&#x27;s template arguments contains the given type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>the type to search for.</td>
+                </tr>
+                <tr>
+                  <td>Container</td>
+                  <td>container type to search in.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>this expands any container type that satisfies the signature template&lt;typename...&gt;, this means for types such as std::vector, or std::unordered_map, you can get some weird results. As there is no good protection against this, the constraint is for the user to enforce.</p></aside>
           </div></section>
         </section>
       </div>

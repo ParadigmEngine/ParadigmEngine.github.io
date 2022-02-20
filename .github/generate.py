@@ -124,7 +124,9 @@ def generate(repository, generator, info=Info(), verbose=False):
         if output_dir.parent != ROOT_DIR:
             pathlib.Path.mkdir(output_dir.parent, parents=True, exist_ok=True)
 
-        doxyfile = pathlib.Path.joinpath(path, 'tools', 'doxyfile') if pathlib.Path.exists(pathlib.Path.joinpath(path, 'tools', 'doxyfile')) else pathlib.Path.joinpath(CURRENT_DIR, 'doxyfile')
+        doxyfile = pathlib.Path.joinpath(path, 'tools', 'doxyfile')
+        if not pathlib.Path.exists(doxyfile):
+            doxyfile.write_bytes(pathlib.Path.joinpath(CURRENT_DIR, 'doxyfile').read_bytes())
 
         with tempfile.TemporaryDirectory() as temp_dir:
             documentation_path = generator_dir.joinpath('documentation')

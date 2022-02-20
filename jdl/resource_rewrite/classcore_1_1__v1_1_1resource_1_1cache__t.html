@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>core::_v1::resource::cache_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1__v1.html">_v1</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1__v1_1_1resource.html">resource</a>::<wbr/></span>cache_t <span class="m-thin">class</span>
+        </h1>
+        <p>Container class to load and manage resources.</p>
+        
+        <nav class="m-block m-default">
+          <h3>content</h3>
+          <ul>
+            <li><a href="#member-functions">member functions</a></li>
+          </ul>
+        </nav>
+<aside class="m-note m-info"><h4>Note</h4><p>Invocations of load*&zwj;/create*&zwj;/copy* alter <a href="classcore_1_1__v1_1_1resource_1_1cache__t.html" class="m-doc">cache_<wbr />t</a> state on the calling thread, not on the scheduler. This means that if you wish to access the cache instance over multiple threads, you will have to synchronize externally when invoking these.</p></aside><aside class="m-note m-danger"><h4>Warning</h4><p>load* methods will always return the &quot;pristine&quot; version off of the <code><a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a></code>, but their UID will <em>not</em> match what was requested. This is because loaded resources can be mutated and so might differ from what their &quot;original state&quot; once was for various reasons. To share a variation of a disk based resource, use the <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> method instead.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000008" class="m-doc">Todo</a></h4><p>extend the load*&zwj;/create*&zwj;/copy* functionality to pre-allocate on the calling thread to fully avoid any race condition potentials</p></aside>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad9ab39baf8e80f2f1a9fb532e0553659" class="m-doc">load&lt;…&gt;</a>                </div>
+                <div class="m-entry">Load a resource from the <code>library</code> using a coroutine.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad9ab39baf8e80f2f1a9fb532e0553659" class="m-doc">load&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Load a resource from the <code>library</code> using a coroutine.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abec12a11b4550c348416ebb27f0f7237" class="m-doc">load_on&lt;…&gt;</a>                </div>
+                <div class="m-entry">Load a resource from the <code>library</code> using a coroutine, and schedule it on a specific Scheduler.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abec12a11b4550c348416ebb27f0f7237" class="m-doc">load_on&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, IsCoroutineScheduler Scheduler, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">scheduler</div>
+                  <div class="m-entry">Scheduler&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Load a resource from the <code>library</code> using a coroutine, and schedule it on a specific Scheduler.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a447b553c5765d916a0a87d84c2084ab9" class="m-doc">load_now&lt;…&gt;</a>                </div>
+                <div class="m-entry">Load a resource from the <code>library</code> on the calling thread.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a447b553c5765d916a0a87d84c2084ab9" class="m-doc">load_now&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Load a resource from the <code>library</code> on the calling thread.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8a607fc9aa9ba36c3eee1d663a61fa1a" class="m-doc">copy_on&lt;…&gt;</a>                </div>
+                <div class="m-entry">Creates a deep copy of the given handle, and schedule the operation on the specified Scheduler-type.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8a607fc9aa9ba36c3eee1d663a61fa1a" class="m-doc">copy_on&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, IsCoroutineScheduler Scheduler</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">scheduler</div>
+                  <div class="m-entry">Scheduler&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">base</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Creates a deep copy of the given handle, and schedule the operation on the specified Scheduler-type.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad8bb79fa80c026e0abe0b13f60527c15" class="m-doc">copy&lt;…&gt;</a>                </div>
+                <div class="m-entry">Creates a deep copy of the given handle.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad8bb79fa80c026e0abe0b13f60527c15" class="m-doc">copy&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">base</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Creates a deep copy of the given handle.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a219811529484097c8f9eec035197097b" class="m-doc">copy_now&lt;…&gt;</a>                </div>
+                <div class="m-entry">Creates a deep copy of the given handle on the calling thread.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a219811529484097c8f9eec035197097b" class="m-doc">copy_now&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">base</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Creates a deep copy of the given handle on the calling thread.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abee072b10900ae6fe2fb568518014512" class="m-doc">has</a>                </div>
+                <div class="m-entry">Checks the cache to see if it has a loaded instance of the item.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abee072b10900ae6fe2fb568518014512" class="m-doc">has</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry"><a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Checks the cache to see if it has a loaded instance of the item.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find&lt;…&gt;</a>                </div>
+                <div class="m-entry">Try to find the resource in the cahce.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">uid</div>
+                  <div class="m-entry"><a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Try to find the resource in the cahce.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a741bd6ae709c349be6599d7f5a84b25c" class="m-doc">create&lt;…&gt;</a>                </div>
+                <div class="m-entry">Create a resource directly from code in a coroutine.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a741bd6ae709c349be6599d7f5a84b25c" class="m-doc">create&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Create a resource directly from code in a coroutine.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2875c63a7be687794a9616ce6d293417" class="m-doc">create_now&lt;…&gt;</a>                </div>
+                <div class="m-entry">Create a resource directly from code directly in the calling thread.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2875c63a7be687794a9616ce6d293417" class="m-doc">create_now&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Create a resource directly from code directly in the calling thread.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af65d969aef12df86e62b1799f6235b11" class="m-doc">create_on&lt;…&gt;</a>                </div>
+                <div class="m-entry">Create a resource directly from code in a coroutine, and schedule it on a Schedule-like objecy.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af65d969aef12df86e62b1799f6235b11" class="m-doc">create_on&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T, IsCoroutineScheduler Scheduler, typename... Args</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">scheduler</div>
+                  <div class="m-entry">Scheduler&amp;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">args</div>
+                  <div class="m-entry">Args &amp;&amp; ...</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Create a resource directly from code in a coroutine, and schedule it on a Schedule-like objecy.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#abd14b689a4ec60a44fb28e73b34337f2" class="m-doc">cleanup</a>                </div>
+                <div class="m-entry">Tries to clear all memory that is no longer in use.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abd14b689a4ec60a44fb28e73b34337f2" class="m-doc">cleanup</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">size_t</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Tries to clear all memory that is no longer in use.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a93a7186eb6e1075ff9ba2f6b3c9b3693" class="m-doc">is_empty</a>                </div>
+                <div class="m-entry">Check if the cache is empty or not.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a93a7186eb6e1075ff9ba2f6b3c9b3693" class="m-doc">is_empty</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Check if the cache is empty or not.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab587ac13470709b8ae2f99d197ec8ae9" class="m-doc">size</a>                </div>
+                <div class="m-entry">Size of the cache.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab587ac13470709b8ae2f99d197ec8ae9" class="m-doc">size</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">auto</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Size of the cache.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          
+          			          <section class="m-doc-details" id="ad9ab39baf8e80f2f1a9fb532e0553659"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad9ab39baf8e80f2f1a9fb532e0553659" class="m-doc-self">load</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Load a resource from the <code>library</code> using a coroutine.</p>
+              <h3>Details</h3>
+              <p><p>This method will always load a &quot;pristine&quot; version of the requested item from the disk. It will cache as much as it can to skip the deserialization step if the same type/uid is requested a second time. <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> will always return the last time the UID was loaded</p><aside class="m-note m-info"><h4>Note</h4><p>If you wish to have access to a shared version of the same type, f.e. multiple materials sharing the same shader, use <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> first to see if the asset is already loaded.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type to load</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>uid</td>
+                  <td>UID of item in the <code><a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a></code></td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; awaitable task that contains a handle to the requested type</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="abec12a11b4550c348416ebb27f0f7237"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, IsCoroutineScheduler Scheduler, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abec12a11b4550c348416ebb27f0f7237" class="m-doc-self">load_on</a>(</span><span class="m-doc-wrap">Scheduler&amp; scheduler,
+              const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Load a resource from the <code>library</code> using a coroutine, and schedule it on a specific Scheduler.</p>
+              <h3>Details</h3>
+              <p><p>This method will always load a &quot;pristine&quot; version of the requested item from the disk. It will cache as much as it can to skip the deserialization step if the same type/uid is requested a second time. <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> will always return the last time the UID was loaded</p><aside class="m-note m-info"><h4>Note</h4><p>If you wish to have access to a shared version of the same type, f.e. multiple materials sharing the same shader, use <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> first to see if the asset is already loaded.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type to load</td>
+                </tr>
+                <tr>
+                  <td>Scheduler</td>
+                  <td>type that satisfies <code>IsCoroutineScheduler</code></td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>scheduler</td>
+                  <td>instance of a scheduler</td>
+                </tr>
+                <tr>
+                  <td>uid</td>
+                  <td>UID of item in the <code><a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a></code></td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; awaitable task that contains a handle to the requested type</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a447b553c5765d916a0a87d84c2084ab9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a447b553c5765d916a0a87d84c2084ab9" class="m-doc-self">load_now</a>(</span><span class="m-doc-wrap">const <a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a>&amp; uid,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Load a resource from the <code>library</code> on the calling thread.</p>
+              <h3>Details</h3>
+              <p><p>This method will always load a &quot;pristine&quot; version of the requested item from the disk. It will cache as much as it can to skip the deserialization step if the same type/uid is requested a second time. <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> will always return the last time the UID was loaded</p><aside class="m-note m-info"><h4>Note</h4><p>If you wish to have access to a shared version of the same type, f.e. multiple materials sharing the same shader, use <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc">find()</a></code> first to see if the asset is already loaded.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type to load</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>uid</td>
+                  <td>UID of item in the <code><a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a></code></td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>handle_t&lt;T&gt; a handle to the requested type</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a8a607fc9aa9ba36c3eee1d663a61fa1a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, IsCoroutineScheduler Scheduler&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a607fc9aa9ba36c3eee1d663a61fa1a" class="m-doc-self">copy_on</a>(</span><span class="m-doc-wrap">Scheduler&amp; scheduler,
+              <a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; base)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Creates a deep copy of the given handle, and schedule the operation on the specified Scheduler-type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+                <tr>
+                  <td>Scheduler</td>
+                  <td>type that satisfies <code>IsCoroutineScheduler</code></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>scheduler</td>
+                  <td>instance of a scheduler</td>
+                </tr>
+                <tr>
+                  <td>base</td>
+                  <td>Instance of the handle</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; awaitable task with the results of the copy operation</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ad8bb79fa80c026e0abe0b13f60527c15"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad8bb79fa80c026e0abe0b13f60527c15" class="m-doc-self">copy</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; base)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Creates a deep copy of the given handle.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>base</td>
+                  <td>Instance of the handle</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; awaitable task with the results of the copy operation</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a219811529484097c8f9eec035197097b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a219811529484097c8f9eec035197097b" class="m-doc-self">copy_now</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; base)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Creates a deep copy of the given handle on the calling thread.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>base</td>
+                  <td>Instance of the handle</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>handle_t&lt;T&gt; a handle with the resulting deep copy</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="abee072b10900ae6fe2fb568518014512"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abee072b10900ae6fe2fb568518014512" class="m-doc-self">has</a>(</span><span class="m-doc-wrap"><a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> uid) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Checks the cache to see if it has a loaded instance of the item.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">uid</td>
+                  <td>UID of the resource to find</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true/false based on if the cache has the resource or not</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a9c35a087419fd4adfa66b492f5c48c0a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9c35a087419fd4adfa66b492f5c48c0a" class="m-doc-self">find</a>(</span><span class="m-doc-wrap"><a href="structpsl_1_1_u_i_d.html" class="m-doc">psl::<wbr />UID</a> uid) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Try to find the resource in the cahce.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type of the resource</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>uid</td>
+                  <td>UID of the resource to find</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>A valid handle_t&lt;T&gt; if it was found, otherwise it will return an invalid one</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a741bd6ae709c349be6599d7f5a84b25c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a741bd6ae709c349be6599d7f5a84b25c" class="m-doc-self">create</a>(</span><span class="m-doc-wrap">Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Create a resource directly from code in a coroutine.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>Construction argument types</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>args</td>
+                  <td>These will be forwarded to the constructor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; an awaitable task that contains the results</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a2875c63a7be687794a9616ce6d293417"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2875c63a7be687794a9616ce6d293417" class="m-doc-self">create_now</a>(</span><span class="m-doc-wrap">Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Create a resource directly from code directly in the calling thread.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>Construction argument types</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>args</td>
+                  <td>These will be forwarded to the constructor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>handle_t&lt;T&gt; resulting handle to the constructed resource</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="af65d969aef12df86e62b1799f6235b11"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, IsCoroutineScheduler Scheduler, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">cppcoro::task&lt;<a href="namespacecore_1_1__v1_1_1resource.html#ae5e3d9c32eef234c5d5353414114088a" class="m-doc">handle_<wbr />t</a>&lt;T&gt;&gt; core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af65d969aef12df86e62b1799f6235b11" class="m-doc-self">create_on</a>(</span><span class="m-doc-wrap">Scheduler&amp; scheduler,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Create a resource directly from code in a coroutine, and schedule it on a Schedule-like objecy.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Type contained in the handle</td>
+                </tr>
+                <tr>
+                  <td>Scheduler</td>
+                  <td>type that satisfies <code>IsCoroutineScheduler</code></td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>Construction argument types</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>scheduler</td>
+                  <td>instance of a scheduler</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>These will be forwarded to the constructor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>cppcoro::task&lt;handle_t&lt;T&gt;&gt; an awaitable task that contains the results</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="abd14b689a4ec60a44fb28e73b34337f2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">size_t core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd14b689a4ec60a44fb28e73b34337f2" class="m-doc-self">cleanup</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Tries to clear all memory that is no longer in use.</p>
+              <h3>Details</h3>
+              <p><p>The memory is cleared by checking all resources that are no longer referenced outside of the cache, and by dropping the cached versions of the resources loaded using the load* method group.</p><aside class="m-note m-info"><h4>Note</h4><p>Directly after running a clear you can query <code><a href="classcore_1_1__v1_1_1resource_1_1cache__t.html#a93a7186eb6e1075ff9ba2f6b3c9b3693" class="m-doc">is_<wbr />empty()</a></code> to see if there are still held resources out there, if there are it could be used as an indicator of a resource leak.</p><p>Any <code>handle</code> held outside of the cache is a reference the cache will respect. If you wish to neglect held references then use the <code>unsafe_cleanup()</code> method.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The amount of cycles it took to clean up.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a93a7186eb6e1075ff9ba2f6b3c9b3693"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a93a7186eb6e1075ff9ba2f6b3c9b3693" class="m-doc-self">is_empty</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Check if the cache is empty or not.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>True if the cache is empty</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ab587ac13470709b8ae2f99d197ec8ae9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto core::<wbr />_v1::<wbr />resource::<wbr />cache_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab587ac13470709b8ae2f99d197ec8ae9" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Size of the cache.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the amount of loaded resources</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

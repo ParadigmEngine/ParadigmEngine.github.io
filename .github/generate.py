@@ -121,6 +121,9 @@ def generate(repository, generator, info=Info(), verbose=False):
         if pathlib.Path.exists(output_dir):
             _remove_directory(output_dir, True)
 
+        if output_dir.parent != ROOT_DIR:
+            pathlib.Path.mkdir(output_dir.parent, parents=True, exist_ok=True)
+
         doxyfile = pathlib.Path.joinpath(path, 'tools', 'doxyfile') if pathlib.Path.exists(pathlib.Path.joinpath(path, 'tools', 'doxyfile')) else pathlib.Path.joinpath(CURRENT_DIR, 'doxyfile')
 
         with tempfile.TemporaryDirectory() as temp_dir:

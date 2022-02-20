@@ -1,6 +1,6 @@
 import os
 import json
-from argparse import ArgumentError, ArgumentParser, ArgumentDefaultsHelpFormatter
+from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import subprocess
 import pathlib
 import tempfile
@@ -42,14 +42,14 @@ def run_command(directory=None, command=[], verbose=False):
     return [output.decode('utf-8').strip() for output in output_lines]
 
 class Info:
-    def __init__(self, info_file=None, verbose=False) -> None:
+    def __init__(self, info_file=None, verbose=False, regenerate=False) -> None:
         # tags and branches are a dict(name: sha1), where sha1 indicates the sha1 that was generated for that tag/branch
         self.tags = dict()
         self.branches = dict()
         self.version = GENERATOR_VERSION
         self.__file = info_file
         self.generator = None
-        if info_file is not None and pathlib.Path.exists(info_file):
+        if not regenerate and info_file is not None and pathlib.Path.exists(info_file):
             if verbose:
                 print(f"loading cache at '{info_file}'")
             with pathlib.Path.open(info_file.resolve(), 'rb') as file:
@@ -146,6 +146,39 @@ def generate(repository, generator, info=Info(), verbose=False):
 
             [ generate_for(pathlib.Path(generator_root), repository, key, tags[key], verbose=verbose) for key in tags ]
             [ generate_for(pathlib.Path(generator_root), repository, key, branches[key], verbose=verbose) for key in branches ]
+
+            # generate selector dropdown
+            files = dict()
+            mappings = dict()
+            for name in tags | branches:
+                dir = ROOT_DIR.joinpath(name)
+                files[name] = {entry.relative_to(dir) for entry in dir.iterdir() if entry.is_file() and entry.suffix == '.html'}
+            
+            for key in files:
+                other_keys = [other for other in files if key != other]
+
+                for file in files[key]:
+                    if file in mappings:
+                        continue
+                    mappings[file] = {other: pathlib.Path.joinpath(pathlib.Path(other), file if file in files[other] else pathlib.Path('index.html')) for other in other_keys}
+                    mappings[file][key] = pathlib.Path.joinpath(pathlib.Path(key), file)
+
+            for tag in files:
+                prefix = "../" * (tag.count('/') + 1)
+                other_keys = sorted([other for other in files if tag != other])
+                for file in files[tag]:
+                    with ROOT_DIR.joinpath(tag, file).open('r+') as f:
+                        text = f.read()
+                        f.seek(0)
+                        index = text.find('<use href="#m-doc-search-icon-path" />')
+                        assert index != -1
+                        sub_index = text[index:].find('</li>')
+                        assert sub_index != -1
+                        index = index + sub_index + 5
+                        otheroptions = ''.join(f'<option value="{ prefix + str(mappings[file][othertag].as_posix())}">{othertag}</option>' for othertag in other_keys)
+                        text = text[:index] + '<li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;">'+ f'<option value="{prefix + str(mappings[file][tag].as_posix())}">{tag}</option>' +otheroptions + '</select></li>' + text[index:]
+                        f.write(text)
+                        f.truncate()
     elif verbose:
         print(f"everything was pruned, nothing to generate")
 
@@ -159,6 +192,7 @@ if __name__ == "__main__":
     parser.add_argument("--repository", default="https://github.com/JessyDL/paradigm.git", help="git url for the repo to generate for")
     parser.add_argument("--generator", default="https://github.com/JessyDL/m.css.git", help="git url for the generator to use")
     parser.add_argument("--cache", default=pathlib.Path.joinpath(CURRENT_DIR, "cache.json"), help="Location where to store previous generation info.")
+    parser.add_argument("--force", action="store_true", help="forcibly regenerate the entire cache and results.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Controls verbosity of actions.")
     args = parser.parse_args()
 
@@ -172,6 +206,6 @@ if __name__ == "__main__":
     else:
         PYTHON_COMMAND = 'python3'
 
-    generate(repository=Repository(args.repository, args.verbose), generator=args.generator, info=Info(args.cache), verbose=args.verbose)
+    generate(repository=Repository(args.repository, args.verbose), generator=args.generator, info=Info(args.cache, regenerate=args.force), verbose=args.verbose)
     
 

@@ -22,9 +22,7 @@ jobs:
       run: python .github/generate.py --verbose
     - name: Publish
       run: |
-        git config --local user.name "$USERNAME"
-        git config --local user.email "41898282+$USERNAME@users.noreply.github.com"
-        git diff --exit-code --quiet || (git add -A && git commit -m "Documentation update" && git push https://$USERNAME:$REPO_KEY@github.com/ParadigmEngine/ParadigmEngine.github.io.git)
-      env:
-        REPO_KEY: ${{secrets.PUSH_TOKEN}}
-        USERNAME: github-actions[bot]
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git diff --exit-code --quiet || (git add -A && git commit -m "Documentation update" && git push)
+

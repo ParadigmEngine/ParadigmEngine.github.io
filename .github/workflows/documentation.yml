@@ -1,0 +1,30 @@
+name: Documentation
+
+on: repository_dispatch
+
+jobs:
+  ubuntu:
+    name: ubuntu
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Setup Doxygen
+      run: sudo apt-get update && sudo apt-get install doxygen
+    - name: Update Python
+      run: pip3 install jinja2 Pygments
+    - name: Generate
+      run: python .github/generate.py --verbose
+    - name: Publish
+      run: |
+        git config --local user.name "$USERNAME"
+        git config --local user.email "41898282+$USERNAME@users.noreply.github.com"
+        git diff --exit-code --quiet || (git add -A && git commit -m "Documentation update" && git push https://$USERNAME:$REPO_KEY@github.com/ParadigmEngine/ParadigmEngine.github.io.git)
+      env:
+        REPO_KEY: ${{secrets.PUSH_TOKEN}}
+        USERNAME: github-actions[bot]

@@ -126,6 +126,7 @@ def generate(repository, generator, info=Info(), verbose=False):
 
         doxyfile = pathlib.Path.joinpath(path, 'tools', 'doxyfile')
         if not pathlib.Path.exists(doxyfile):
+            pathlib.Path.mkdir(doxyfile.parent, parents=True, exist_ok=True)
             doxyfile.write_bytes(pathlib.Path.joinpath(CURRENT_DIR, 'doxyfile').read_bytes())
 
         with tempfile.TemporaryDirectory() as temp_dir:

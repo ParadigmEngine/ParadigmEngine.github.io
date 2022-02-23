@@ -2,6 +2,7 @@
     "branches": {
         "develop": "686e45b7bdd6c7cccc836bfef04fcab0bb894d95",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
+        "improvement/ubuntu-gles-ci": "bb12076998d6a23a65a5f3b06091b33dd6f1bcf5",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

@@ -2,7 +2,7 @@
     "branches": {
         "develop": "b3fd9b8ff04ee5747e98fa0dd7a6cc2b39ce0de4",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
-        "improvement/make-deps-extern": "7d41c357c4df0dc72f1aeac6c32d0e95cb89fa62",
+        "improvement/make-deps-extern": "cb0726248945e3bf35b3c6fef743af2a6afc24ea",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

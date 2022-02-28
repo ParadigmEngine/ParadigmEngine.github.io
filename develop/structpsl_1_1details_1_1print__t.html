@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>utility::platform namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::details::print_t struct | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../fix/android-support/namespaceutility_1_1platform.html">fix/android-support</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/structpsl_1_1details_1_1print__t.html">develop</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,156 +44,10 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespaceutility.html">utility</a>::<wbr/></span>platform <span class="m-thin">namespace</span>
+          <div class="m-doc-template">template&lt;typename... Args&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1details.html">details</a>::<wbr/></span>print_t <span class="m-thin">struct</span>
         </h1>
-        <p>platform specific utilities that help in identifying the current platform, and various specifications of it.</p>
-        <nav class="m-block m-default">
-          <h3>content</h3>
-          <ul>
-
-            <li><a href="#namespaces">namespaces</a></li>
-            <li><a href="#nested-classes">classes</a></li>
-            <li><a href="#enum-members">enums</a></li>
-            <li><a href="#func-members">functions</a></li>
-          </ul>
-        </nav>
-        <section id="namespaces">
-          <h2><a href="#namespaces">namespaces</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            <div class="m-entry-container hoverable" id="file">
-             <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="namespaceutility_1_1platform_1_1file.html" class="m-doc">file</a></div>
-                <div class="m-entry">file i/o and manpulations utilities namespace</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">classes</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            <div class="m-entry-container hoverable" id="directory">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classutility_1_1platform_1_1directory.html" class="m-doc">directory</a></div>
-                <div class="m-entry">helper class that contains directory specific I/O manipulation methods and platform utilities.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="os">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classutility_1_1platform_1_1os.html" class="m-doc">os</a></div>
-                <div class="m-entry">OS specific utility functions.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="enum-members">
-          <h2><a href="#enum-members">enums</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	              <div class="m-entry-container hoverable" id="a6def77754618d3ff0beeeec48cd70603">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span><a href="#a6def77754618d3ff0beeeec48cd70603" class="m-doc-self">platform_t</a></span></div>
-                  <div class="m-entry">contains all known, supported (or to be supported) platforms.</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-	</tr>
-	<tr>
-	              <div class="m-entry-container-alternating hoverable" id="a7d247f23d8e64d0d4a3836be6193ba53">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>encoding_t</span></div>
-                  <div class="m-entry">encoding enum, that can be used to help identify encoding of items.</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-	</tr>
-	<tr>
-	              <div class="m-entry-container hoverable" id="a7f1f0637649f83e28924287bc62452df">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>architecture_t</span></div>
-                  <div class="m-entry">contains all known, supported (or to be supported) architectures.</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">functions</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            
-            <div class="m-entry-container hoverable" id="ae5664fbcdba42426b033dd14f5a6112f">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">cmd_prompt_presskeytocontinue                </div>
-                <div class="m-entry">platform specific utility that can freeze the console running on the current thread.</div>
-                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-static">static</span></span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">cmd_prompt_presskeytocontinue</div>
-                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-static">static</span></span></div>
-                </div>
-                <div class="m-entry-row">
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">void</div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">platform specific utility that can freeze the console running on the current thread.</div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section>
-          <h2>Enum documentation</h2>
-            <td>
-              <span class="m-doc-wrap-bumper"><a
-                  href="#a6def77754618d3ff0beeeec48cd70603"
-                  class="m-doc">platform_t</a> { </span><span class="m-doc-wrap"><a
-                  href="#a6def77754618d3ff0beeeec48cd70603a696b031073e74bf2cb98e5ef201d4aa3" class="m-doc">UNKNOWN</a>                = 0,
-              <a
-                  href="#a6def77754618d3ff0beeeec48cd70603a354317d0ca91ae2cd9042b8d9bcbcbac" class="m-doc">lnx</a>                = 1,
-              <a
-                  href="#a6def77754618d3ff0beeeec48cd70603a8e4f88e9d6ec0106ccc73b39d369c3e8" class="m-doc">osx</a>                = 2,
-              <a
-                  href="#a6def77754618d3ff0beeeec48cd70603a0f4137ed1502b5045d6083aa258b5c42" class="m-doc">windows</a>                = 3,
-              <a
-                  href="#a6def77754618d3ff0beeeec48cd70603ac31b32364ce19ca8fcd150a417ecce58" class="m-doc">android</a>                = 4,
-              <a
-                  href="#a6def77754618d3ff0beeeec48cd70603a9e304d4e8df1b74cfa009913198428ab" class="m-doc">ios</a>                = 5                }</span>
-              </td>
-              <td>contains all known, supported (or to be supported) platforms.</td>
-        </section>
+<aside class="m-note m-dim"><h4><a href="todo.html#_todo000011" class="m-doc">Todo</a></h4><p>When Android implements source_location, remove the ifdefs</p></aside>
       </div>
     </div>
   </div>

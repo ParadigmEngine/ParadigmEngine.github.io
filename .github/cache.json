@@ -2,7 +2,7 @@
     "branches": {
         "develop": "47d84c12cb10d26cd7d7cd8cb0a9667e9e8884fe",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
-        "fix/android-support": "a6022ffdff9135d69102ee9f01f5dcdc927b8e0f",
+        "fix/android-support": "5a73449f3099bc12ea57688120374323c8e3ac01",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

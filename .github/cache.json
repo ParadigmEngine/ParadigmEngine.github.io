@@ -1,8 +1,7 @@
 {
     "branches": {
-        "develop": "41e4bf8352f8c32539ed2556ae23f3fea59884e4",
+        "develop": "9d054a206026692ab8d37d33d0ec2e0437886b5b",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
-        "improve/split-ci-flows": "b22439b8902323840deeb15e7707bf4033cca17c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

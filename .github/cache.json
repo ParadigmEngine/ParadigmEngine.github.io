@@ -1,9 +1,8 @@
 {
     "branches": {
-        "develop": "9d054a206026692ab8d37d33d0ec2e0437886b5b",
+        "develop": "6ac600030ef1553b2f5025c013df761a00116e1a",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
-        "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
-        "update-readme": "6bbdbf1200e4501f7a3392a81ce942936cabb65b"
+        "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",
     "tags": {

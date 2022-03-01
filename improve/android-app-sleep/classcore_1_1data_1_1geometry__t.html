@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>core::data::geometry_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../improve/android-app-sleep/classcore_1_1data_1_1geometry__t.html">improve/android-app-sleep</option></select></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1data.html">data</a>::<wbr/></span>geometry_t <span class="m-thin">class</span>
+        </h1>
+        <p>describes a stream of data that will be uploaded to the GPU as geometry data.</p>
+        
+        <nav class="m-block m-default">
+          <h3>content</h3>
+          <ul>
+            <li><a href="#types">types</a></li>
+            <li><a href="#static-attribs">static variables</a></li>
+            <li><a href="#member-functions">member functions</a></li>
+          </ul>
+        </nav>
+<p>Unlike most engines, geometry data in paradigm is considered a collection of undescribed data, that has been keyed. There are some globally accepted keys defined for convenience at the <a href="structcore_1_1data_1_1geometry__t_1_1constants.html" class="m-doc">core::<wbr />data::<wbr />geometry_t::<wbr />constants</a> namespace. Only 2 streams are mandatory (<a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">core::<wbr />data::<wbr />geometry_t::<wbr />constants::<wbr />POSITION</a> and the indices stream), if those are not present, the data is considered invalid. All streams (except the index buffer stream) should have equally as many entries as the position buffer stream has. The index buffer stream should not reffer to positions larger than the size of the position buffer stream.</p><aside class="m-note m-info"><h4>Note</h4><p>these data streams can be anything, as long as atleast a position buffer and a index buffer is present. It&#x27;s up to you to make sure your geometry object has all the required streams to correctly bind it to a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>.</p></aside><aside class="m-note m-dim"><h4><a href="todo.html#_todo000003" class="m-doc">Todo</a></h4><p>write an example of a custom stream.</p><p>support numbered streams (i.e. UV0, UV1, etc..).</p></aside>
+        <section id="types">
+          <h2><a href="#types">types</a></h2>
+          <dl class="m-doc">
+	<h3>classes</h3>
+	<table style="width:100%">
+		<tr>
+			            <div class="m-entry-container hoverable" id="constants">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structcore_1_1data_1_1geometry__t_1_1constants.html" class="m-doc">constants</a></div>
+                <div class="m-entry">contains globally pre-defined keys for common streams that most engines have.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+		</tr>
+	</table>
+          </dl>
+        </section>
+        <section id="static-attribs">
+          <h2><a href="#static-attribs">static variables</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="a411ab8762d37ef65ac77efea4e21f504">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div> serialization_name</div>
+                <div class="m-entry">serialization name to be used by the serializer when writing and reading this container to and from disk.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-private"><span class="tooltip">private</span>private</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc">vertices</a>                </div>
+                <div class="m-entry">returns the stream reference (if any found) for the given key.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc">vertices</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
+                  <div class="m-entry">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a></div>
+                  <div class="m-entry right_align">= <a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">constants::<wbr />POSITION</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the stream reference (if any found) for the given key.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc">vertices</a>                </div>
+                <div class="m-entry">sets the stream data for the given key. If data was already present, then it gets replaced.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc">vertices</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
+                  <div class="m-entry">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stream</div>
+                  <div class="m-entry">const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the stream data for the given key. If data was already present, then it gets replaced.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a681dd32c5d822cc865d9a95bd0c5f1b1" class="m-doc">indices</a>                </div>
+                <div class="m-entry">gets all indices that are currently assigned to this model data.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a681dd32c5d822cc865d9a95bd0c5f1b1" class="m-doc">indices</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::vector&lt;<a href="classcore_1_1data_1_1geometry__t.html#ab20e0ffce44f41f7254446f5b707da6a" class="m-doc">index_<wbr />size_<wbr />t</a>&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">gets all indices that are currently assigned to this model data.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aca8d8be2731f5da1422a5cda3a48d40a" class="m-doc">indices</a>                </div>
+                <div class="m-entry">sets the indices.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aca8d8be2731f5da1422a5cda3a48d40a" class="m-doc">indices</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">indices</div>
+                  <div class="m-entry"><a href="classpsl_1_1array__view.html" class="m-doc">psl::<wbr />array_view</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html#ab20e0ffce44f41f7254446f5b707da6a" class="m-doc">index_<wbr />size_<wbr />t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the indices.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc">vertex_streams</a>                </div>
+                <div class="m-entry">returns all the streams of data and their keys.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc">vertex_streams</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&amp;</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns all the streams of data and their keys.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2f811ccdf09796bc502418f2490fc0a1" class="m-doc">is_valid</a>                </div>
+                <div class="m-entry">helper method to check for validity of the model data in its current state.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2f811ccdf09796bc502418f2490fc0a1" class="m-doc">is_valid</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">helper method to check for validity of the model data in its current state.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a602e5f44fc04934a9bf9d714cb069238">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">erase                </div>
+                <div class="m-entry">erases the given stream if found</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">erase</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
+                  <div class="m-entry"><a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">erases the given stream if found</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a84f4431d33be02ad1abef4a4b566a6db" class="m-doc">serialize&lt;…&gt;</a>                </div>
+                <div class="m-entry">serialization method to be used by the serializer when writing this container to the disk.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a84f4431d33be02ad1abef4a4b566a6db" class="m-doc">serialize&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename S</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">serializer</div>
+                  <div class="m-entry">S&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">serialization method to be used by the serializer when writing this container to the disk.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          
+          			          <section class="m-doc-details" id="aac22e920c0acae59008e2d531e728863"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&gt; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name = <a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">constants::<wbr />POSITION</a>) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the stream reference (if any found) for the given key.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the stream reference (if any found) for the given key.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a8507837aad4c23991daf5d565cf20029"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name,
+              const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&amp; stream)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the stream data for the given key. If data was already present, then it gets replaced.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>be sure that the stream has the correct amount of vertices as is expected by the index buffer. As you might be replacing/resizing the internal model data, we cannot error check this condition for you here.</p></aside></p>
+          </div></section>
+			          <section class="m-doc-details" id="a681dd32c5d822cc865d9a95bd0c5f1b1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const std::vector&lt;<a href="classcore_1_1data_1_1geometry__t.html#ab20e0ffce44f41f7254446f5b707da6a" class="m-doc">index_<wbr />size_<wbr />t</a>&gt;&amp; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a681dd32c5d822cc865d9a95bd0c5f1b1" class="m-doc-self">indices</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>gets all indices that are currently assigned to this model data.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>all indices that are currently assigned to this model data.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="aca8d8be2731f5da1422a5cda3a48d40a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aca8d8be2731f5da1422a5cda3a48d40a" class="m-doc-self">indices</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1array__view.html" class="m-doc">psl::<wbr />array_view</a>&lt;<a href="classcore_1_1data_1_1geometry__t.html#ab20e0ffce44f41f7254446f5b707da6a" class="m-doc">index_<wbr />size_<wbr />t</a>&gt; indices)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the indices.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>be sure to check that the indices do not reffer to out of index locations in the position buffer. Seeing you might be replacing/resizing the model data, we cannot error check this condition for you here.</p></aside></p>
+          </div></section>
+			          <section class="m-doc-details" id="aff9072507331956c9a9a81c50f8b3105"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&amp; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc-self">vertex_streams</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns all the streams of data and their keys.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>all the streams of data and their keys.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a2f811ccdf09796bc502418f2490fc0a1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2f811ccdf09796bc502418f2490fc0a1" class="m-doc-self">is_valid</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>helper method to check for validity of the model data in its current state.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the data passes all checks.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          			          <section class="m-doc-details" id="a84f4431d33be02ad1abef4a4b566a6db"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename S&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a84f4431d33be02ad1abef4a4b566a6db" class="m-doc-self">serialize</a>(</span><span class="m-doc-wrap">S&amp; serializer) <span class="m-label m-danger">private</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>serialization method to be used by the serializer when writing this container to the disk.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">serializer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the serialization object, consult the serialization namespace for more information.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+
+          
+          
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

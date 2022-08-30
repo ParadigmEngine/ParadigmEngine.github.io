@@ -1,7 +1,7 @@
 {
     "branches": {
         "develop": "6ac600030ef1553b2f5025c013df761a00116e1a",
-        "feature/improved-assert": "f92437c2af96698a6604a3cb85450b20874ff86c",
+        "feature/improved-assert": "2d247f82b07a62d59571cc8c954878172c93cbd1",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "fix/win32-window-handle": "ee4513ca5b3c74c76e995132571c57d47bdefd2b",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",

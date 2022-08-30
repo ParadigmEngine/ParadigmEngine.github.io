@@ -1,8 +1,7 @@
 {
     "branches": {
-        "develop": "a826610b584cd20edf9dae2f1706c4b092dc4092",
+        "develop": "c3130a8b9c337911ebb2b0357912e378f64440ab",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
-        "fix/win32-window-handle": "0549138bae65e81457d5f01dbb5a2d44bef5eef3",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },

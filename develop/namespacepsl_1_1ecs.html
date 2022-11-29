@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs.html">develop</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs.html">develop</option><option value="../feature/ui/namespacepsl_1_1ecs.html">feature/ui</option><option value="../improve/ci-deduplication/namespacepsl_1_1ecs.html">improve/ci-deduplication</option></select></li>
           </ol>
         </div>
       </div>
@@ -79,7 +79,16 @@
           <dl class="m-doc">
             	<table style="width:100%">
 	<tr>
-	            <div class="m-entry-container hoverable" id="empty">
+	            <div class="m-entry-container hoverable" id="component_name">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__name.html" class="m-doc">component_name<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">Inheriting this type in your component type allows you to designate a new component name.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="empty">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1empty.html" class="m-doc">empty<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag type to circumvent constructing an object in the backing data</div>
@@ -88,7 +97,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="except">
+	            <div class="m-entry-container hoverable" id="except">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1except.html" class="m-doc">except<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag that disallows a certain component to be present on the given entity.</div>
@@ -97,7 +106,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="filter">
+	            <div class="m-entry-container-alternating hoverable" id="filter">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1filter.html" class="m-doc">filter<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag allows you to filter on sets of components</div>
@@ -106,7 +115,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="full">
+	            <div class="m-entry-container hoverable" id="full">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1full.html" class="m-doc">full</a></div>
                 <div class="m-entry">requires a pack to be whole when filled in</div>
@@ -115,7 +124,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="on_add">
+	            <div class="m-entry-container-alternating hoverable" id="on_add">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_add<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag that allows you to select entities (and components) that have recently added the given component type</div>
@@ -124,7 +133,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="on_break">
+	            <div class="m-entry-container hoverable" id="on_break">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__break.html" class="m-doc">on_break<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_<wbr />remove</a></code></div>
@@ -133,7 +142,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="on_combine">
+	            <div class="m-entry-container-alternating hoverable" id="on_combine">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__combine.html" class="m-doc">on_combine<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_<wbr />add</a></code></div>
@@ -142,7 +151,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="on_remove">
+	            <div class="m-entry-container hoverable" id="on_remove">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_remove<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag that allows you to listen to the event of a component of the given type being removed.</div>
@@ -151,7 +160,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="pack">
+	            <div class="m-entry-container-alternating hoverable" id="pack">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="classpsl_1_1ecs_1_1pack.html" class="m-doc">pack<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">an iterable container to work with components and entities.</div>
@@ -160,7 +169,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="partial">
+	            <div class="m-entry-container hoverable" id="partial">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1partial.html" class="m-doc">partial</a></div>
                 <div class="m-entry">allows packs to exist in a partial state</div>
@@ -459,7 +468,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1data_1_1geometry__t.html">develop</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1data_1_1geometry__t.html">develop</option><option value="../feature/ui/classcore_1_1data_1_1geometry__t.html">feature/ui</option><option value="../improve/ci-deduplication/classcore_1_1data_1_1geometry__t.html">improve/ci-deduplication</option></select></li>
           </ol>
         </div>
       </div>
@@ -101,15 +101,15 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc">vertices</a>                </div>
-                <div class="m-entry">returns the stream reference (if any found) for the given key.</div>
+                  <span class="m-doc-wrap-bumper"><a href="#ac2811d5e9a8b285ef546092ec23c0d1d" class="m-doc">vertices</a>                </div>
+                <div class="m-entry">returns the stream reference for the given key.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
               </div>
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc">vertices</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac2811d5e9a8b285ef546092ec23c0d1d" class="m-doc">vertices</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">std::optional&lt;std::reference_wrapper&lt;const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&gt;</div>
+                  <div class="m-entry">const <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&amp;</div>
                 </div>
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
@@ -127,7 +127,7 @@
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">returns the stream reference (if any found) for the given key.</div>
+                  <div class="m-entry">returns the stream reference for the given key.</div>
                 </div>
               </div>
             </div>
@@ -138,7 +138,43 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc">vertices</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#ad5ea7b53685114e4b49795c47d40e30f" class="m-doc">contains</a>                </div>
+                <div class="m-entry">verifies if the given stream is present in the data</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad5ea7b53685114e4b49795c47d40e30f" class="m-doc">contains</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
+                  <div class="m-entry">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">verifies if the given stream is present in the data</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9c636cfc804189bbfa76949d8ed1af29" class="m-doc">vertices</a>                </div>
                 <div class="m-entry">sets the stream data for the given key. If data was already present, then it gets replaced.</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -146,7 +182,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc">vertices</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9c636cfc804189bbfa76949d8ed1af29" class="m-doc">vertices</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -163,7 +199,7 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stream</div>
-                  <div class="m-entry">const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&amp;</div>
+                  <div class="m-entry">const <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&amp;</div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -174,7 +210,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -205,7 +241,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -241,11 +277,11 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc">vertex_streams</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a47c2433741f5b680dafc676bcf4b157a" class="m-doc">vertex_streams</a>                </div>
                 <div class="m-entry">returns all the streams of data and their keys.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -253,7 +289,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc">vertex_streams</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a47c2433741f5b680dafc676bcf4b157a" class="m-doc">vertex_streams</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -261,7 +297,7 @@
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&amp;</div>
+                  <div class="m-entry">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&gt;&amp;</div>
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -272,7 +308,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -303,7 +339,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable" id="a602e5f44fc04934a9bf9d714cb069238">
+            <div class="m-entry-container-alternating hoverable" id="a602e5f44fc04934a9bf9d714cb069238">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -384,25 +420,49 @@
           <h2>Function documentation</h2>
           
           
-          			          <section class="m-doc-details" id="aac22e920c0acae59008e2d531e728863"><div>
+          			          <section class="m-doc-details" id="ac2811d5e9a8b285ef546092ec23c0d1d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">std::optional&lt;std::reference_wrapper&lt;const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&gt; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aac22e920c0acae59008e2d531e728863" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name = <a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">constants::<wbr />POSITION</a>) const</span></span>
+              <span class="m-doc-wrap-bumper">const <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&amp; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac2811d5e9a8b285ef546092ec23c0d1d" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name = <a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">constants::<wbr />POSITION</a>) const</span></span>
             </h3>
               <h3>Brief</h3>
-              <p>returns the stream reference (if any found) for the given key.</p>
+              <p>returns the stream reference for the given key.</p>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>the stream reference (if any found) for the given key.</td>
+                  <td>the stream reference for the given key. \warn if you are uncertain the stream exists, run the <code>contains</code> method first. The <code>vertices</code> method will terminate if the stream isn&#x27;t found.</td>
                 </tr>
               </tfoot>
             </table>
           </div></section>
-			          <section class="m-doc-details" id="a8507837aad4c23991daf5d565cf20029"><div>
+			          <section class="m-doc-details" id="ad5ea7b53685114e4b49795c47d40e30f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8507837aad4c23991daf5d565cf20029" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name,
-              const <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&amp; stream)</span></span>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad5ea7b53685114e4b49795c47d40e30f" class="m-doc-self">contains</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>verifies if the given stream is present in the data</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">name</td>
+                  <td>stream name see <a href="structcore_1_1data_1_1geometry__t_1_1constants.html#a5385d72e7cd1e7f01f1d8124d0a48ed1" class="m-doc">constants::<wbr />POSITION</a> as example</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the stream exists</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a9c636cfc804189bbfa76949d8ed1af29"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9c636cfc804189bbfa76949d8ed1af29" class="m-doc-self">vertices</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name,
+              const <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&amp; stream)</span></span>
             </h3>
               <h3>Brief</h3>
               <p>sets the stream data for the given key. If data was already present, then it gets replaced.</p>
@@ -433,9 +493,9 @@
               <h3>Details</h3>
               <p><aside class="m-note m-danger"><h4>Warning</h4><p>be sure to check that the indices do not reffer to out of index locations in the position buffer. Seeing you might be replacing/resizing the model data, we cannot error check this condition for you here.</p></aside></p>
           </div></section>
-			          <section class="m-doc-details" id="aff9072507331956c9a9a81c50f8b3105"><div>
+			          <section class="m-doc-details" id="a47c2433741f5b680dafc676bcf4b157a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1stream.html" class="m-doc">core::<wbr />stream</a>&gt;&amp; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aff9072507331956c9a9a81c50f8b3105" class="m-doc-self">vertex_streams</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">const std::unordered_map&lt;<a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>, <a href="classcore_1_1vertex__stream__t.html" class="m-doc">core::<wbr />vertex_stream_t</a>&gt;&amp; core::<wbr />data::<wbr />geometry_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a47c2433741f5b680dafc676bcf4b157a" class="m-doc-self">vertex_streams</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
               <h3>Brief</h3>
               <p>returns all the streams of data and their keys.</p>
@@ -690,7 +750,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

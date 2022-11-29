@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/annotated.html">develop</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/annotated.html">develop</option><option value="../feature/ui/annotated.html">feature/ui</option><option value="../improve/ci-deduplication/annotated.html">improve/ci-deduplication</option></select></li>
           </ol>
         </div>
       </div>
@@ -83,6 +83,7 @@
               <li class="m-doc-collapsible collapsed">
                 <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">All ECS related implementations.</span>
                 <ul class="m-doc">
+                  <li> <a href="namespacecore_1_1ecs_1_1components.html" class="m-doc namespace">components</a> <span class="m-doc">ECS Components.</span></li>
                   <li> <a href="namespacecore_1_1ecs_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">ECS Systems.</span></li>
                 </ul>
               </li>
@@ -93,6 +94,7 @@
                   <li> <a href="structcore_1_1gfx_1_1commit__instruction.html" class="m-doc struct">commit_instruction</a> <span class="m-doc">description of a memory commit instruction. Tries to offer some safer mechanisms.</span></li>
                   <li> <a href="classcore_1_1gfx_1_1computepass.html" class="m-doc class">computepass</a> <span class="m-doc">describes a compute stage in the <a href="classcore_1_1gfx_1_1render__graph.html" class="m-doc">render_<wbr />graph</a></span></li>
                   <li> <a href="classcore_1_1gfx_1_1drawgroup.html" class="m-doc class">drawgroup</a> <span class="m-doc">a collection of draw instructions to be recorded and sent to the GPU.</span></li>
+                  <li> <a href="classcore_1_1gfx_1_1render__graph.html" class="m-doc class">render_graph</a> <span class="m-doc">Describes a fully contained set of graphics instructions \detail A rendergraph allows you to connect the various draw/compute-passes and describe their interdependencies so that it can organize their invocations in a safe manner.</span></li>
                 </ul>
               </li>
               <li class="m-doc-collapsible collapsed">
@@ -162,7 +164,7 @@
                   </li>
                 </ul>
               </li>
-              <li> <a href="classcore_1_1stream.html" class="m-doc class">stream</a> <span class="m-doc">stream contains a type erased &quot;stream&quot; of memory with basic facilities to protect it from incorrect casts.</span></li>
+              <li> <a href="classcore_1_1vertex__stream__t.html" class="m-doc class">vertex_stream_t</a> <span class="m-doc"><a href="classcore_1_1vertex__stream__t.html" class="m-doc">vertex_<wbr />stream_<wbr />t</a> contains a type erased &quot;stream&quot; of memory with basic facilities to protect it from incorrect casts.</span></li>
             </ul>
           </li>
           <li class="m-doc-collapsible">
@@ -188,9 +190,11 @@
                     <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc namespace">details</a> <span class="m-doc">specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></span>
                     <ul class="m-doc">
                       <li> <a href="classpsl_1_1ecs_1_1details_1_1component__info.html" class="m-doc class">component_info</a> <span class="m-doc">implementation detail that stores the component information</span></li>
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html" class="m-doc class">component_key_t</a> <span class="m-doc">Container type for unique component types. These should be construced using the <code><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html#a2c15f2c0216093fd2a74b5ac5088bc85" class="m-doc">component_key_t::<wbr />generate</a></code> helper function.</span></li>
                       <li> <a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc class">dependency_pack</a> <span class="m-doc">describes a set of dependencies for a given system</span></li>
                     </ul>
                   </li>
+                  <li> <a href="structpsl_1_1ecs_1_1component__name.html" class="m-doc struct">component_name</a> <span class="m-doc">Inheriting this type in your component type allows you to designate a new component name.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1empty.html" class="m-doc struct">empty</a> <span class="m-doc">tag type to circumvent constructing an object in the backing data</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1except.html" class="m-doc struct">except</a> <span class="m-doc">tag that disallows a certain component to be present on the given entity.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1filter.html" class="m-doc struct">filter</a> <span class="m-doc">tag allows you to filter on sets of components</span></li>
@@ -456,7 +460,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

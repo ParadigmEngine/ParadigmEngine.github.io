@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1systems_1_1input.html">develop</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1systems_1_1input.html">develop</option><option value="../feature/ui/classcore_1_1systems_1_1input.html">feature/ui</option><option value="../improve/ci-deduplication/classcore_1_1systems_1_1input.html">improve/ci-deduplication</option></select></li>
           </ol>
         </div>
       </div>
@@ -56,7 +56,7 @@
             <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
-<p>the input class is responsible for translating platform specific input events to a more generalised format, and sending out events that have been subscribed to. for example it will translate all keyboard input messages into a generic key message that remains the same for all platforms. You can however reverse-translate back into the platform specific key messages. Every input instance is tied to a <a href="classcore_1_1os_1_1surface.html" class="m-doc">core::<wbr />os::<wbr />surface</a>, and all its data (such as mouse coordinates) is invariably tied to that regardless if the actual platform only has a singleton input system.</p><aside class="m-note m-danger"><h4>Warning</h4><p>all input state persists till the next platform specific message loop. this means that the <a href="structcore_1_1systems_1_1input_1_1mouse__delta.html" class="m-doc">mouse_<wbr />delta</a> can be the same for several frames untill the input system gets an update. that&#x27;s why you should prefer listening to the events rather than iterating the input system itself.</p></aside>
+<p>the input class is responsible for translating platform specific input events to a more generalised format, and sending out events that have been subscribed to. for example it will translate all keyboard input messages into a generic key message that remains the same for all platforms. You can however reverse-translate back into the platform specific key messages. Every input instance is tied to a <a href="classcore_1_1os_1_1surface.html" class="m-doc">core::<wbr />os::<wbr />surface</a>, and all its data (such as mouse coordinates) is invariably tied to that regardless if the actual platform only has a singleton input system.</p><aside class="m-note m-danger"><h4>Warning</h4><p>all input state persists till the next platform specific message loop. this means that the <a href="structcore_1_1systems_1_1input_1_1mouse__delta.html" class="m-doc">mouse_<wbr />delta</a> can be the same for several frames untill the input system gets an update. that&#x27;s why you should prefer listening to the events rather than iterating the input system itself.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>there are several different events to subscribe to, see the <code>subscribe</code> method for further details and documentation.</p></aside>
         <section id="types">
           <h2><a href="#types">types</a></h2>
           <dl class="m-doc">
@@ -136,11 +136,11 @@
 	<table style="width:100%">
 	<tr>
 	            
-            <div class="m-entry-container hoverable" id="a0fc0d635f1cf0442d9bd500a54cdb6bc">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">subscribe&lt;…&gt;                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a26101b95c2bab8ca28df347c3ff90a07" class="m-doc">subscribe&lt;…&gt;</a>                </div>
                 <div class="m-entry">automatically subscribes to all the events the target has method signatures for.</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -148,13 +148,13 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">subscribe&lt;…&gt;</div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a26101b95c2bab8ca28df347c3ff90a07" class="m-doc">subscribe&lt;…&gt;</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
-                  <div class="m-entry">typename T</div>
+                  <div class="m-entry">typename Type</div>
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
@@ -163,7 +163,7 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
-                  <div class="m-entry">T&amp;</div>
+                  <div class="m-entry">Type</div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -174,45 +174,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable" id="a138e63e721304108ab6f2f87cda4d32d">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">subscribe&lt;…&gt;                </div>
-                <div class="m-entry">automatically subscribes to all the events the target has method signatures for.</div>
-                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">subscribe&lt;…&gt;</div>
-                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
-                  <div class="m-entry">typename T</div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">void</div>
-                </div>
-                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
-                <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
-                  <div class="m-entry">T*</div>
-                </div>            
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">automatically subscribes to all the events the target has method signatures for.</div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            
-            <div class="m-entry-container hoverable" id="a0c3b8d537541138ea83975e36b4afbd1">
+            <div class="m-entry-container-alternating hoverable" id="a131869cf9b9773ebd078442f0679ebfb">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -230,7 +192,7 @@
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
-                  <div class="m-entry">typename T</div>
+                  <div class="m-entry">typename Type</div>
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
@@ -239,45 +201,7 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
-                  <div class="m-entry">T&amp;</div>
-                </div>            
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">automatically unsubscribes to all the events the target has method signatures for.</div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            
-            <div class="m-entry-container-alternating hoverable" id="af633b8abecb12b7a950fa4b2881dd43b">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">unsubscribe&lt;…&gt;                </div>
-                <div class="m-entry">automatically unsubscribes to all the events the target has method signatures for.</div>
-                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">unsubscribe&lt;…&gt;</div>
-                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
-                  <div class="m-entry">typename T</div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">void</div>
-                </div>
-                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
-                <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">target</div>
-                  <div class="m-entry">T*</div>
+                  <div class="m-entry">Type</div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -324,7 +248,19 @@
           <h2>Function documentation</h2>
           
           
-          			          <section class="m-doc-details" id="adcf0d8773919f5342aaf39147e01dfa1"><div>
+          			          <section class="m-doc-details" id="a26101b95c2bab8ca28df347c3ff90a07"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename Type&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void core::<wbr />systems::<wbr />input::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a26101b95c2bab8ca28df347c3ff90a07" class="m-doc-self">subscribe</a>(</span><span class="m-doc-wrap">Type target)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>automatically subscribes to all the events the target has method signatures for.</p>
+              <h3>Details</h3>
+              <p><p>The input system checks the target that tries to subscribe itself for several different signatures that satisfy the callbacks. These are:</p><ul><li>T::on_key_pressed(keycode) =&gt; when a keycode is pressed (first frame only)</li><li>T::on_key_released(keycode) =&gt; when a keycode is released (one frame)</li><li>T::on_key_held(keycode) =&gt; when a keycode is held (first frame after pressed)</li><li>T::on_moude_pressed(mousecode) =&gt; when a mousecode is pressed (first frame only)</li><li>T::on_mouse_released(mousecode) =&gt; when a mousecode is released (one frame)</li><li>T::on_mouse_held(mousecode) =&gt; when a mousecode is held (first frame after pressed)</li><li>T::on_mouse_move(mouse_delta) =&gt; when the mouse moves, sends the relative coordinates (difference from last tick)</li><li>T::on_mouse_move(mouse_coordinate) =&gt; when the mouse moves, sends the absolute coordinates</li><li>T::on_mouse_scroll(scroll_delta) =&gt; when the mouse moves, sends the delta change of the scroll in respect to last tick</li></ul></p>
+          </div></section>
+			          <section class="m-doc-details" id="adcf0d8773919f5342aaf39147e01dfa1"><div>
             <h3>
               <span class="m-doc-wrap-bumper">const <a href="structcore_1_1systems_1_1input_1_1mouse__coordinate.html" class="m-doc">mouse_<wbr />coordinate</a>&amp; core::<wbr />systems::<wbr />input::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adcf0d8773919f5342aaf39147e01dfa1" class="m-doc-self">cursor</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
@@ -543,7 +479,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.3 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

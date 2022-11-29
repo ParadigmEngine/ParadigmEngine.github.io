@@ -5,27 +5,22 @@ on: workflow_dispatch
 jobs:
   ubuntu:
     name: ubuntu
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2
       with:
         submodules: recursive
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
     - name: Setup Doxygen
       run: |
-        curl -fsSL -o ../doxygen.tar.gz "https://www.doxygen.nl/files/doxygen-1.9.3.linux.bin.tar.gz"
+        curl -fsSL -o ../doxygen.tar.gz "https://www.doxygen.nl/files/doxygen-1.9.5.linux.bin.tar.gz"
         tar -xzf ../doxygen.tar.gz --directory ../
-        sudo cp -a ../doxygen-1.9.3/bin/doxy* /usr/local/bin
+        sudo cp -a ../doxygen-1.9.5/bin/doxy* /usr/local/bin
     - name: Update Python
       run: pip3 install jinja2 Pygments
     - name: Generate
-      run: python .github/generate.py --verbose
+      run: python3 .github/generate.py --verbose
     - name: Publish
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git diff --exit-code --quiet || (git add -A && git commit -m "Documentation update" && git push)
-

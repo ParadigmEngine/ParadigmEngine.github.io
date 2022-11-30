@@ -1,9 +1,8 @@
 {
     "branches": {
-        "develop": "af76a9eb8e94889c2e4899c283ab24e3326c1e9b",
+        "develop": "f8ef659d396280ff6defcf5c7fbb861027286a7b",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
-        "fix/codeql-support": "b96009b673abafd7a2eaa6f6cedcb02f3d247f7d",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },

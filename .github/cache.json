@@ -3,7 +3,7 @@
         "develop": "04f05e2c9fdf4c2c746f7c63ccec14f29bda8abe",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
-        "fix/codeql-exlusion": "cb07ad1d15c8ac16a681dbd70b0fd4d000d477aa",
+        "fix/codeql-exlusion": "8a0e7979c1231023cf390994dd08f2178e3cf6f3",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },

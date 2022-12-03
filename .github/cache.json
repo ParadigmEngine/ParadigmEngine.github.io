@@ -4,6 +4,7 @@
         "feature/ecs-staged_sparse_memory_region": "3fb1afff987bb75882c2016951d4ac61107da69f",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
+        "fix/buildscript-missing-import": "0bbea25b3349c4813920a838850adf8135f94b39",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },

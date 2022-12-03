@@ -6,6 +6,7 @@
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "fix/buildscript-missing-import": "0bbea25b3349c4813920a838850adf8135f94b39",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
+        "improve/readme": "a6e59085cd4afedb92136494244b87830b5d5f06",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

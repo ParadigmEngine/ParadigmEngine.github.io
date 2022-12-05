@@ -1,6 +1,7 @@
 {
     "branches": {
         "develop": "6a985cee728c81aad217cccfbbba56a41a788919",
+        "feature/refactor-component-info": "8737a52a3ea3b1e3bc4d98dbed4f1b7cbc39cb35",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",

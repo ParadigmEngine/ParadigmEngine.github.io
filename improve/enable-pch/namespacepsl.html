@@ -59,13 +59,22 @@
             <li><a href="#concepts">concepts</a></li>
           </ul>
         </nav>
-<p>contains various utilities and constructs to aid you. In this you&#x27;ll find constructs that allow event signalling, dealing with UTF encoded strings, etc...</p>
+<hr/><p>contains various utilities and constructs to aid you. In this you&#x27;ll find constructs that allow event signalling, dealing with UTF encoded strings, etc...</p>
         <section id="namespaces">
           <h2><a href="#namespaces">namespaces</a></h2>
           <dl class="m-doc">
             	<table style="width:100%">
 	<tr>
-	            <div class="m-entry-container hoverable" id="concepts">
+	            <div class="m-entry-container hoverable" id="async">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1async.html" class="m-doc">async</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="concepts">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1concepts.html" class="m-doc">concepts</a></div>
                 <div class="m-entry">Utility concepts.</div>
@@ -74,10 +83,19 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="ecs">
+	            <div class="m-entry-container hoverable" id="ecs">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1ecs.html" class="m-doc">ecs</a></div>
                 <div class="m-entry">Entity Component System.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="format">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1format.html" class="m-doc">format</a></div>
+                <div class="m-entry"></div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -101,7 +119,34 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="string16">
+	            <div class="m-entry-container hoverable" id="noise">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1noise.html" class="m-doc">noise</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="serialization">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1serialization.html" class="m-doc">serialization</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="spmc">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1spmc.html" class="m-doc">spmc</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="string16">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1string16.html" class="m-doc">string16</a></div>
                 <div class="m-entry">UTF-16 class namespace that contains the typedefs for the string objects, as well as helper methods.</div>
@@ -110,7 +155,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="string32">
+	            <div class="m-entry-container hoverable" id="string32">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1string32.html" class="m-doc">string32</a></div>
                 <div class="m-entry">UTF-32 class namespace that contains the typedefs for the string objects, as well as helper methods.</div>
@@ -119,10 +164,19 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="string8">
+	            <div class="m-entry-container-alternating hoverable" id="string8">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1string8.html" class="m-doc">string8</a></div>
                 <div class="m-entry">UTF-8 class namespace that contains the typedefs for the string objects, as well as helper methods.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="utility">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1utility.html" class="m-doc">utility</a></div>
+                <div class="m-entry"></div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -240,16 +294,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container hoverable" id="a998da8572c087d8d101d2e52bbd04a9f">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>using <a href="#a998da8572c087d8d101d2e52bbd04a9f" class="m-doc-self">stringstream</a> = <a href="namespacepsl_1_1string8.html#a5de1ef6845680758605a8c84ff0cea26" class="m-doc">string8::<wbr />stream</a></span></div>
-                  <div class="m-entry">platform conditional string type, turns into char or wchar depending on the platform and compile options</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-	</tr>
-	<tr>
-	              <div class="m-entry-container-alternating hoverable" id="aabe2b89b2fcb7960d7ae60c48eb71efa">
+	              <div class="m-entry-container hoverable" id="aabe2b89b2fcb7960d7ae60c48eb71efa">
                 <div class="m-entry-row flex">
                   <div class="m-entry header"><span>using <a href="#aabe2b89b2fcb7960d7ae60c48eb71efa" class="m-doc-self">pchar_t</a> = <a href="namespacepsl_1_1platform.html#a6189d7ec55dcf738dfec0e52adc3c1ee" class="m-doc">platform::<wbr />char_t</a></span></div>
                   <div class="m-entry">platform conditional string type, turns into char or wchar depending on the platform and compile options</div>

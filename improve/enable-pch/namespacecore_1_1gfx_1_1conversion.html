@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>psl::ecs namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>core::gfx::conversion namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../improve/enable-pch/namespacepsl_1_1ecs.html">improve/enable-pch</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../improve/enable-pch/namespacecore_1_1gfx_1_1conversion.html">improve/enable-pch</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,170 +44,16 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span>ecs <span class="m-thin">namespace</span>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1gfx.html">gfx</a>::<wbr/></span>conversion <span class="m-thin">namespace</span>
         </h1>
-        <p>Entity Component System.</p>
         <nav class="m-block m-default">
           <h3>content</h3>
           <ul>
 
-            <li><a href="#namespaces">namespaces</a></li>
-            <li><a href="#nested-classes">classes</a></li>
-            <li><a href="#typedef-members">typedefs</a></li>
             <li><a href="#func-members">functions</a></li>
           </ul>
         </nav>
 <hr/>
-        <section id="namespaces">
-          <h2><a href="#namespaces">namespaces</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            <div class="m-entry-container hoverable" id="details">
-             <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc">details</a></div>
-                <div class="m-entry">specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="execution">
-             <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="namespacepsl_1_1ecs_1_1execution.html" class="m-doc">execution</a></div>
-                <div class="m-entry"></div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">classes</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            <div class="m-entry-container hoverable" id="component_name">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__name.html" class="m-doc">component_name<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">Inheriting this type in your component type allows you to designate a new component name.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="empty">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1empty.html" class="m-doc">empty<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">tag type to circumvent constructing an object in the backing data</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="except">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1except.html" class="m-doc">except<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">tag that disallows a certain component to be present on the given entity.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="filter">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1filter.html" class="m-doc">filter<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">tag allows you to filter on sets of components</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="full">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1full.html" class="m-doc">full</a></div>
-                <div class="m-entry">requires a pack to be whole when filled in</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="on_add">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_add<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">tag that allows you to select entities (and components) that have recently added the given component type</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="on_break">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__break.html" class="m-doc">on_break<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_<wbr />remove</a></code></div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="on_combine">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__combine.html" class="m-doc">on_combine<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_<wbr />add</a></code></div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="on_remove">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_remove<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">tag that allows you to listen to the event of a component of the given type being removed.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="pack">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1pack.html" class="m-doc">pack<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">an iterable container to work with components and entities.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="partial">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1partial.html" class="m-doc">partial</a></div>
-                <div class="m-entry">allows packs to exist in a partial state</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="typedef-members">
-          <h2><a href="#typedef-members">typedefs</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	              <div class="m-entry-container hoverable">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>using <a href="#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a> = uint32_t</span></div>
-                  <div class="m-entry">entity points to a collection of components</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
         <section id="func-members">
           <h2><a href="#func-members">functions</a></h2>
           <dl class="m-doc">
@@ -218,32 +64,32 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc">valid</a>                </div>
-                <div class="m-entry">checks if an entity is valid or not</div>
+                  <span class="m-doc-wrap-bumper"><a href="#a99453ffe9d7b474f989abb19c7a871b8" class="m-doc">to_gles</a>                </div>
+                <div class="m-entry"></div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-static">static</span> <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
               </div>
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc">valid</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a99453ffe9d7b474f989abb19c7a871b8" class="m-doc">to_gles</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-static">static</span> <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
                 </div>
                 <div class="m-entry-row">
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">bool</div>
+                  <div class="m-entry">decltype(GL_ARRAY_BUFFER)</div>
                 </div>
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">e</div>
-                  <div class="m-entry"><a href="namespacepsl_1_1ecs.html#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a></div>
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">memory</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">memory_<wbr />usage</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">checks if an entity is valid or not</div>
+                  <div class="m-entry"></div>
                 </div>
               </div>
             </div>
@@ -253,34 +99,13 @@
           </dl>
         </section>
         <section>
-          <h2>Typedef documentation</h2>
-          <section class="m-doc-details" id="af17242c0e907153143d867af38365ff9"><div>
-            <h3>
-              using psl::<wbr />ecs::<wbr /><a href="#af17242c0e907153143d867af38365ff9" class="m-doc-self">entity</a> = uint32_t
-            </h3>
-            <p>entity points to a collection of components</p>
-<hr/><h5>Entity </h5>
-          </div></section>
-        </section>
-        <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="abfe4b1639f3fa5a2c870ddc5187289a6"><div>
+          <section class="m-doc-details" id="a99453ffe9d7b474f989abb19c7a871b8"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">static bool psl::<wbr />ecs::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abfe4b1639f3fa5a2c870ddc5187289a6" class="m-doc-self">valid</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs.html#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a> e) <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">decltype(GL_ARRAY_BUFFER) core::<wbr />gfx::<wbr />conversion::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a99453ffe9d7b474f989abb19c7a871b8" class="m-doc-self">to_gles</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#a3ba86abb213bad6379cc64bf251f2dde" class="m-doc">memory_<wbr />usage</a> memory) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
-              <h3>Brief</h3>
-              <p>checks if an entity is valid or not</p>
-            <table class="m-table m-fullwidth m-flat">
-              <thead>
-                <tr><th colspan="2">Parameters</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="width: 1%">e&nbsp;<span class="m-label m-flat m-info">in</span></td>
-                  <td>the entity to check</td>
-                </tr>
-              </tbody>
-            </table>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>gles does not have a concept of transfer_source/transfer_destination, all buffers are &quot;valid&quot; as either</p></aside></p>
           </div></section>
         </section>
       </div>

@@ -1,6 +1,6 @@
 {
     "branches": {
-        "ci_less_benchmark": "db2889a77630df656d0b2ea9fda0030efbe2a752",
+        "ci_less_benchmark": "c992c073d2b00b31748301dfc0a70f6a0335d9df",
         "develop": "43a824b090f98c8f5f86983e8c73c9f583c64ff8",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",

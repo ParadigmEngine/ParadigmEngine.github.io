@@ -1,7 +1,7 @@
 {
     "branches": {
         "develop": "207b5546833b81ad0997b3e631da5fd1855bcd6c",
-        "feature/ecs-staged_sparse_memory_region": "1331a84e58585a2aa91ada1c22059b68a5b5f7f0",
+        "feature/ecs-staged_sparse_memory_region": "95b10e3a25bb497876a859eee97d0e08ed0074c4",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",

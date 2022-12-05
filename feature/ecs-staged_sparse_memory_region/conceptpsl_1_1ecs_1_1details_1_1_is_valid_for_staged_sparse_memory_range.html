@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>psl::ecs::details namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::ecs::details::IsValidForStagedSparseMemoryRange namespace | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs-staged_sparse_memory_region/namespacepsl_1_1ecs_1_1details.html">feature/ecs-staged_sparse_memory_region</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs-staged_sparse_memory_region/conceptpsl_1_1ecs_1_1details_1_1_is_valid_for_staged_sparse_memory_range.html">feature/ecs-staged_sparse_memory_region</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,104 +44,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span>details <span class="m-thin">namespace</span>
+            psl::ecs::details::IsValidForStagedSparseMemoryRange <span class="m-thin">namespace</span>
         </h1>
-        <p>specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></p>
-        <nav class="m-block m-default">
-          <h3>content</h3>
-          <ul>
-
-            <li><a href="#nested-classes">classes</a></li>
-            <li><a href="#func-members">functions</a></li>
-            <li><a href="#concepts">concepts</a></li>
-          </ul>
-        </nav>
-<p>Unlike normal <a href="classpsl_1_1sparse__array.html" class="m-doc">sparse_<wbr />array</a>, this variation is implemented as a cascading stage, where stage 0 is the &quot;stale&quot; data, stage 1 is the recently added data, and stage 2 is the removed data. This is catered towards usage within the <a href="namespacepsl_1_1ecs.html" class="m-doc">psl::<wbr />ecs</a> solution, which is why it is part of its namespace.</p><p>In general it can be unwieldy and unsafe to use without knowing the internal workings, so avoid using this unless you know what you need it for and are sure you understand its internals.</p>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">classes</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            <div class="m-entry-container hoverable" id="component_info">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1component__info.html" class="m-doc">component_info</a></div>
-                <div class="m-entry">implementation detail that stores the component information</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="component_key_t">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html" class="m-doc">component_key_t</a></div>
-                <div class="m-entry">Container type for unique component types. These should be construced using the <code><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html#a2c15f2c0216093fd2a74b5ac5088bc85" class="m-doc">component_key_t::<wbr />generate</a></code> helper function.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="dependency_pack">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc">dependency_pack</a></div>
-                <div class="m-entry">describes a set of dependencies for a given system</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="staged_sparse_memory_region_t">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html" class="m-doc">staged_sparse_memory_region_t</a></div>
-                <div class="m-entry">A specialized container type to store components in a type agnostic manner.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">functions</a></h2>
-          <dl class="m-doc">
-            	<table style="width:100%">
-	<tr>
-	            
-            <div class="m-entry-container hoverable">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a1a79cb5f60ec5850f9566e18bdb6e7b6" class="m-doc">is_valid_name&lt;…&gt;</a>                </div>
-                <div class="m-entry">Verify the given name is valid for component name substitution.</div>
-                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> -&gt; bool</span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a1a79cb5f60ec5850f9566e18bdb6e7b6" class="m-doc">is_valid_name&lt;…&gt;</a></div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> -&gt; bool</span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
-                  <div class="m-entry"><a href="structpsl_1_1details_1_1fixed__astring.html" class="m-doc">psl::<wbr />details::<wbr />fixed_astring</a> Name</div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">consteval auto</div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">Verify the given name is valid for component name substitution.</div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	</table>
-
-          </dl>
-        </section>
+        <p>Constraint for what types can safely be stored by <code>staged_sparse_memory_region_t</code></p>
         <section id="concepts">
           <h2><a href="#concepts">concepts</a></h2>
           <dl class="m-doc">
@@ -152,30 +57,9 @@
             </td>
             <td>Constraint for what types can safely be stored by <code>staged_sparse_memory_region_t</code></td>
 	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_name_override" class="m-doc">psl::ecs::details::HasComponentNameOverride</a>
-            </td>
-            <td></td>
-	</tr>
 	</table>
 
           </dl>
-        </section>
-        <section>
-          <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a1a79cb5f60ec5850f9566e18bdb6e7b6"><div>
-            <h3>
-              <div class="m-doc-template">
-                template&lt;<a href="structpsl_1_1details_1_1fixed__astring.html" class="m-doc">psl::<wbr />details::<wbr />fixed_astring</a> Name&gt;
-              </div>
-              <span class="m-doc-wrap-bumper">consteval auto psl::<wbr />ecs::<wbr />details::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1a79cb5f60ec5850f9566e18bdb6e7b6" class="m-doc-self">is_valid_name</a>(</span><span class="m-doc-wrap">) -&gt; bool</span></span>
-            </h3>
-              <h3>Brief</h3>
-              <p>Verify the given name is valid for component name substitution.</p>
-              <h3>Details</h3>
-              <p><p>In general this means all characters are valid if they are also valid for that context for typenames. This means the name has to start with an alphabetical letter or underscore. Subsequent values can be alphanumeric.</p></p>
-          </div></section>
         </section>
       </div>
     </div>

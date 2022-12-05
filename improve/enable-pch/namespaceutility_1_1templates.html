@@ -46,7 +46,7 @@
         <h1>
           <span class="m-breadcrumb"><a href="namespaceutility.html">utility</a>::<wbr/></span>templates <span class="m-thin">namespace</span>
         </h1>
-<hr/><p>Class: psl::evocable Info: evocables are similar to common::event in that you can invoke a function or method at any time. Principle difference is that with evocables you assign the std::function&#x27;s parameters beforehand when you invoke the function/method, you use the assigned parameters from beforehand. Details: Precautions should be taken when sending std::ref() and pointers to the evocable as to not Invoke functions/methods after their lifetime has passed. There are 3 duck typed versions:</p><ul><li>evocable: you can only invoke on this variation</li><li>evocableR: the invokes return value is known</li><li>evocableT: mostly for completion and consistency with the Event API, has very few use cases</li></ul><hr/>
+<p>Class: psl::evocable Info: evocables are similar to common::event in that you can invoke a function or method at any time. Principle difference is that with evocables you assign the std::function&#x27;s parameters beforehand when you invoke the function/method, you use the assigned parameters from beforehand. Details: Precautions should be taken when sending std::ref() and pointers to the evocable as to not Invoke functions/methods after their lifetime has passed. There are 3 duck typed versions:</p><ul><li>evocable: you can only invoke on this variation</li><li>evocableR: the invokes return value is known</li><li>evocableT: mostly for completion and consistency with the Event API, has very few use cases</li></ul>
         <section id="concepts">
           <h2><a href="#concepts">concepts</a></h2>
           <dl class="m-doc">

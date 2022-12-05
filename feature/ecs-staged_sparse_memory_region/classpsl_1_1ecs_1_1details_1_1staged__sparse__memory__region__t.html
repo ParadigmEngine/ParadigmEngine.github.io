@@ -962,7 +962,7 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a9728a05e8e037836f995e2e6192a894d" class="m-doc">remap&lt;…&gt;</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a4cdbfa254823e2c80dc81d1c37ebb3ab" class="m-doc">remap&lt;…&gt;</a>                </div>
                 <div class="m-entry">Remaps the current instance based on the mapping provided.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> -&gt; void</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -970,7 +970,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9728a05e8e037836f995e2e6192a894d" class="m-doc">remap&lt;…&gt;</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a4cdbfa254823e2c80dc81d1c37ebb3ab" class="m-doc">remap&lt;…&gt;</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> -&gt; void</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -985,7 +985,7 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">mapping</div>
-                  <div class="m-entry">const <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;<a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>&gt;&amp;</div>
+                  <div class="m-entry">const <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;<a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>, <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>&gt;&amp;</div>
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">predicate</div>
@@ -1711,16 +1711,18 @@
               </tbody>
             </table>
           </div></section>
-			          <section class="m-doc-details" id="a9728a05e8e037836f995e2e6192a894d"><div>
+			          <section class="m-doc-details" id="a4cdbfa254823e2c80dc81d1c37ebb3ab"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename Fn&gt;
               </div>
-              <span class="m-doc-wrap-bumper">auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9728a05e8e037836f995e2e6192a894d" class="m-doc-self">remap</a>(</span><span class="m-doc-wrap">const <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;<a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>&gt;&amp; mapping,
+              <span class="m-doc-wrap-bumper">auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4cdbfa254823e2c80dc81d1c37ebb3ab" class="m-doc-self">remap</a>(</span><span class="m-doc-wrap">const <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;<a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>, <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a>&gt;&amp; mapping,
               Fn&amp;&amp; predicate) -&gt; void</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Remaps the current instance based on the mapping provided.</p>
+              <h3>Details</h3>
+              <p><p>accesses all indices in the current container rejecting those who don&#x27;t satisfy the predicate. Those who weren&#x27;t rejected by the predicate are then looked up in the <code>mapping</code> value, and their return value is used to re-assign the index in the current container. f.e. if the mapping had a value of { 100, 200 } (index, value), and the predicate didn&#x27;t reject the item on our end, then what was at 100 in this container would be remapped to the index 200.</p></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Template parameters</th></tr>

@@ -4,7 +4,7 @@
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
-        "improve/ecs_use_stage_range": "64202f43a04b92cfd24823af4b487d1d8001bd28",
+        "improve/ecs_use_stage_range": "02a33036038bf84bdc6d8676663ee870c5bdd93e",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
         "misc/clang-ftime": "a32b5906b040931fe0e964a32a4aafd35b0f744a"
     },

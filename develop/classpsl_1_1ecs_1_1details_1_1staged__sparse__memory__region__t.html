@@ -51,39 +51,12 @@
         <nav class="m-block m-default">
           <h3>content</h3>
           <ul>
-            <li><a href="#types">types</a></li>
             <li><a href="#static-member-functions">static member functions</a></li>
             <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
             <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <aside class="m-note m-info"><h4>Note</h4><p>due to the dense data being stored on its own page, alignment shouldn&#x27;t be a concern.</p></aside><aside class="m-note m-danger"><h4>Warning</h4><p>This container is unsuitable for types that have non-trivial constructors, copy/move operations, and destructors. Check your type against <code>IsValidForStagedSparseMemoryRange</code> to verify.</p></aside>
-        <section id="types">
-          <h2><a href="#types">types</a></h2>
-          <dl class="m-doc">
-	<h3>enums</h3>
-	<table style="width:100%">
-		<tr>
-			              <div class="m-entry-container hoverable" id="a76d21ed495e39ade283cbf5428ed8fa8">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>stage_t : uint8_t</span></div>
-                  <div class="m-entry">Defines the discrete stages the <code><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html" class="m-doc">staged_<wbr />sparse_<wbr />memory_<wbr />region_<wbr />t</a></code> can store.</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-		</tr>
-		<tr>
-			              <div class="m-entry-container-alternating hoverable" id="a8cbb3ccba07d2c05c255bdd5559654c3">
-                <div class="m-entry-row flex">
-                  <div class="m-entry header"><span>stage_range_t : uint8_t</span></div>
-                  <div class="m-entry">Defines types of ranges you can safely interact with in a contiguous way.</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
-                </div>
-              </div>
-		</tr>
-	</table>
-          </dl>
-        </section>
         <section id="static-member-functions">
           <h2><a href="#static-member-functions">static member functions</a></h2>
           <dl class="m-doc">
@@ -234,8 +207,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -315,8 +288,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a5fb1f955b45e38e31789286a1790398d" class="m-doc">stage_range_t::<wbr />ALL</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba5fb1f955b45e38e31789286a1790398d" class="m-doc">stage_range_t::<wbr />ALL</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -396,8 +369,8 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -433,8 +406,8 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -470,8 +443,8 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8" class="m-doc">stage_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8a47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058a" class="m-doc">stage_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058aa47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -507,8 +480,8 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8" class="m-doc">stage_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8a47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058a" class="m-doc">stage_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058aa47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -550,8 +523,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -593,8 +566,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -634,8 +607,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -675,8 +648,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">stage</div>
-                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
-                  <div class="m-entry right_align">= <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
+                  <div class="m-entry"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a></div>
+                  <div class="m-entry right_align">= <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -1100,7 +1073,7 @@
 			          <section class="m-doc-details" id="a7fb7812dc5b52167c26f01fa39d4f0ac"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7fb7812dc5b52167c26f01fa39d4f0ac" class="m-doc-self">has</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; bool</span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; bool</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Checks if the given index exist in the requested range.</p>
@@ -1168,7 +1141,7 @@
                 template&lt;IsValidForStagedSparseMemoryRange T&gt;
               </div>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a42915ecb36dd63bf2f843fe83044b8f7" class="m-doc-self">get</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a5fb1f955b45e38e31789286a1790398d" class="m-doc">stage_range_t::<wbr />ALL</a>) const -&gt; T &amp; <span class="m-label m-primary">constexpr</span></span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba5fb1f955b45e38e31789286a1790398d" class="m-doc">stage_range_t::<wbr />ALL</a>) const -&gt; T &amp; <span class="m-label m-primary">constexpr</span></span></span>
             </h3>
               <h3>Brief</h3>
               <p>Fetch the item at the given index.</p>
@@ -1251,7 +1224,7 @@
               <div class="m-doc-template">
                 template&lt;IsValidForStagedSparseMemoryRange T&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2c77026a80d869f0ac3279e4939c2bfa" class="m-doc-self">dense</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; psl::array_view&lt; T &gt;</span></span>
+              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2c77026a80d869f0ac3279e4939c2bfa" class="m-doc-self">dense</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; psl::array_view&lt; T &gt;</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a view of the underlying data for the given <code>stage_range_t</code></p>
@@ -1284,7 +1257,7 @@
           </div></section>
 			          <section class="m-doc-details" id="a37e8cf5f7a5de5047b5653560cbe79b2"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a37e8cf5f7a5de5047b5653560cbe79b2" class="m-doc-self">indices</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; psl::array_view&lt; key_type &gt;</span></span>
+              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a37e8cf5f7a5de5047b5653560cbe79b2" class="m-doc-self">indices</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; psl::array_view&lt; key_type &gt;</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a view of the indices for the given <code>stage_range_t</code></p>
@@ -1308,7 +1281,7 @@
           </div></section>
 			          <section class="m-doc-details" id="ab0871d6fc263095471b27990cb75bf7d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab0871d6fc263095471b27990cb75bf7d" class="m-doc-self">data</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8" class="m-doc">stage_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8a47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a>) noexcept -&gt; pointer</span></span>
+              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab0871d6fc263095471b27990cb75bf7d" class="m-doc-self">data</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058a" class="m-doc">stage_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058aa47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a>) noexcept -&gt; pointer</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get the data pointer for the given stage (where the data begins)</p>
@@ -1332,7 +1305,7 @@
           </div></section>
 			          <section class="m-doc-details" id="afaeb2685e1f4bf7afca9b2b7878e16e2"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afaeb2685e1f4bf7afca9b2b7878e16e2" class="m-doc-self">cdata</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8" class="m-doc">stage_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a76d21ed495e39ade283cbf5428ed8fa8a47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a>) const noexcept -&gt; const_pointer</span></span>
+              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afaeb2685e1f4bf7afca9b2b7878e16e2" class="m-doc-self">cdata</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058a" class="m-doc">stage_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a121d9da34ff91ed2bb7cd6c8e5a2058aa47022477f8027a5c85993672b6d49cbd" class="m-doc">stage_t::<wbr />SETTLED</a>) const noexcept -&gt; const_pointer</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get the data pointer for the given stage (where the data begins)</p>
@@ -1360,7 +1333,7 @@
                 template&lt;IsValidForStagedSparseMemoryRange T&gt;
               </div>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a244b6e0ed6362d3d7872835518010b68" class="m-doc-self">at</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; T const &amp;</span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; T const &amp;</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a reference of the requested type at the index.</p>
@@ -1403,7 +1376,7 @@
                 template&lt;IsValidForStagedSparseMemoryRange T&gt;
               </div>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaf04d9a2bee85329120ae008f861ba4f" class="m-doc-self">at</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) noexcept -&gt; T &amp;</span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) noexcept -&gt; T &amp;</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a reference of the requested type at the index.</p>
@@ -1443,7 +1416,7 @@
 			          <section class="m-doc-details" id="a77a2d2d97c05c52d5f9bdf87f05850b3"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a77a2d2d97c05c52d5f9bdf87f05850b3" class="m-doc-self">addressof</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; const_pointer</span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; const_pointer</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a pointer of the data at the index.</p>
@@ -1474,7 +1447,7 @@
 			          <section class="m-doc-details" id="af4c9d6e955eaf3169af0747cdec17384"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr />ecs::<wbr />details::<wbr />staged_sparse_memory_region_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af4c9d6e955eaf3169af0747cdec17384" class="m-doc-self">addressof</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a0d46c7bb92bd5972a3c61ce4081d8e0a" class="m-doc">key_<wbr />type</a> index,
-              <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html#a8cbb3ccba07d2c05c255bdd5559654c3a3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) noexcept -&gt; pointer</span></span>
+              <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) noexcept -&gt; pointer</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Get a pointer of the data at the index.</p>

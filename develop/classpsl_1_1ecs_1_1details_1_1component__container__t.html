@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::ecs::details::component_container_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -29,10 +29,10 @@
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
             <li><a href="annotated.html">classes</a></li>
-            <li><a href="files.html" id="m-navbar-current">files</a></li>
+            <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/refactor-component-info/files.html">feature/refactor-component-info</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classpsl_1_1ecs_1_1details_1_1component__container__t.html">develop</option></select></li>
           </ol>
         </div>
       </div>
@@ -43,25 +43,11 @@
   <div class="m-container m-container-inflatable">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <h1>Files</h1>
-        <ul class="m-doc">
-        </ul>
-        <script>
-        function toggle(e) {
-            e.parentElement.className = e.parentElement.className == 'm-doc-collapsible' ?
-                'm-doc-expansible' : 'm-doc-collapsible';
-            return false;
-        }
-        /* Collapse all nodes marked as such. Doing it via JS instead of
-           directly in markup so disabling it doesn't harm usability. The list
-           is somehow regenerated on every iteration and shrinks as I change
-           the classes. It's not documented anywhere and I'm not sure if this
-           is the same across browsers, so I am going backwards in that list to
-           be sure. */
-        var collapsed = document.getElementsByClassName("collapsed");
-        for(var i = collapsed.length - 1; i >= 0; --i)
-            collapsed[i].className = 'm-doc-expansible';
-        </script>
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs_1_1details.html">details</a>::<wbr/></span>component_container_t <span class="m-thin">class</span>
+        </h1>
+        <p>implementation detail that stores the component data</p>
+<p>This class serves as a base to the actual component storage. It contains some primitive functionality itself, but mostly serves as a safer way of accessing the component data from the state.</p><aside class="m-note m-danger"><h4>Warning</h4><p>this should never be used by anything other than the <a href="classpsl_1_1ecs_1_1state__t.html" class="m-doc">psl::<wbr />ecs::<wbr />state_t</a> The &#x27;public&#x27; API is not safe to use.</p></aside>
       </div>
     </div>
   </div>

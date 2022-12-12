@@ -55,6 +55,8 @@
             <li><a href="#nested-classes">classes</a></li>
             <li><a href="#typedef-members">typedefs</a></li>
             <li><a href="#func-members">functions</a></li>
+            <li><a href="#var-members">variables</a></li>
+            <li><a href="#concepts">concepts</a></li>
           </ul>
         </nav>
         <section id="namespaces">
@@ -79,10 +81,10 @@
           <dl class="m-doc">
             	<table style="width:100%">
 	<tr>
-	            <div class="m-entry-container hoverable" id="component_name">
+	            <div class="m-entry-container hoverable" id="component_traits">
               <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__name.html" class="m-doc">component_name<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">Inheriting this type in your component type allows you to designate a new component name.</div>
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__traits.html" class="m-doc">component_traits<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">Specialize this type to override default behaviours, or to enable serialization.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -242,6 +244,56 @@
 
           </dl>
         </section>
+        <section id="var-members">
+          <h2><a href="#var-members">variables</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#a9d5812fe53c91191668f2a3b0defd8ab" class="m-doc">component_type_v<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="concepts">
+          <h2><a href="#concepts">concepts</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_trivial_type" class="m-doc">psl::ecs::IsComponentTrivialType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_flag_type" class="m-doc">psl::ecs::IsComponentFlagType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_type_serializable" class="m-doc">psl::ecs::IsComponentTypeSerializable</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_complex_type" class="m-doc">psl::ecs::IsComponentComplexType</a>
+            </td>
+            <td></td>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
         <section>
           <h2>Typedef documentation</h2>
           <section class="m-doc-details" id="af17242c0e907153143d867af38365ff9"><div>
@@ -271,6 +323,18 @@
                 </tr>
               </tbody>
             </table>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a9d5812fe53c91191668f2a3b0defd8ab"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static auto psl::<wbr />ecs::<wbr /><a href="#a9d5812fe53c91191668f2a3b0defd8ab" class="m-doc-self">component_type_v</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<aside class="m-note m-danger"><h4>Warning</h4><p>Do not specialize this.</p></aside>
           </div></section>
         </section>
       </div>

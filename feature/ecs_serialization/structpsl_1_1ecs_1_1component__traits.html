@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>psl::ecs::component_name struct | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::ecs::component_traits struct | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs_serialization/structpsl_1_1ecs_1_1component__name.html">feature/ecs_serialization</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs_serialization/structpsl_1_1ecs_1_1component__traits.html">feature/ecs_serialization</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,21 +44,11 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <div class="m-doc-template">template&lt;<a href="structpsl_1_1details_1_1fixed__astring.html" class="m-doc">psl::<wbr />details::<wbr />fixed_astring</a> Name&gt;</div>
-          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span>component_name <span class="m-thin">struct</span>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span>component_traits <span class="m-thin">struct</span>
         </h1>
-        <p>Inheriting this type in your component type allows you to designate a new component name.</p>
-        <table class="m-table m-fullwidth m-flat">
-          <thead>
-            <tr><th colspan="2">template parameters</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="width: 1%">Name</td>
-              <td>Sets the new name for the given component.</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>Specialize this type to override default behaviours, or to enable serialization.</p>
+<aside class="m-note m-info"><h4>Note</h4><p><code>serializable</code> controls the default behaviour. Ineligible types (complex component types) will throw compile errors if you try to force serialization.</p></aside>
       </div>
     </div>
   </div>

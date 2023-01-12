@@ -1,12 +1,11 @@
 {
     "branches": {
-        "develop": "d7184fa1ce3d1e1129a6595f6975ed3cdcc8bd4f",
-        "feature/ecs-indirect-view": "c284a8d7dcb5b54b3c252aaa4854023b58bc9eaf",
+        "develop": "2083b500bf19654d11d8beea092cde28f32d0be6",
+        "feature/ecs-indirect-view": "4954d77c6303c7718e3b5039bc6fc193530ac875",
         "feature/new_format": "edca5ef72432b7b78fcc5a939c86c555ada1698e",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
-        "jdl/cleanup-cmake": "dfd72428ca2e1ae8a404b9ec592b328137285b91",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
         "misc/clang-ftime": "a32b5906b040931fe0e964a32a4aafd35b0f744a"
     },

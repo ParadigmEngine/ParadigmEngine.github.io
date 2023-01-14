@@ -1,7 +1,7 @@
 {
     "branches": {
         "develop": "2083b500bf19654d11d8beea092cde28f32d0be6",
-        "feature/ecs-indirect-view": "016449586ae12773c5b11860355d14c253dcdc69",
+        "feature/ecs-indirect-view": "193929cb0dc1fa7e3dc777275e0d8f9c63f62690",
         "feature/new_format": "edca5ef72432b7b78fcc5a939c86c555ada1698e",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",

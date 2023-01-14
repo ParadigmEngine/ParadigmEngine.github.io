@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs-indirect-view/namespacepsl_1_1ecs.html">feature/ecs-indirect-view</option><option value="../../develop/namespacepsl_1_1ecs.html">develop</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../feature/ecs-indirect-view/namespacepsl_1_1ecs.html">feature/ecs-indirect-view</option></select></li>
           </ol>
         </div>
       </div>
@@ -90,7 +90,16 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="empty">
+	            <div class="m-entry-container-alternating hoverable" id="direct_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1direct__t.html" class="m-doc">direct_t</a></div>
+                <div class="m-entry">Guarantees direct access to the underlying data.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="empty">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1empty.html" class="m-doc">empty<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag type to circumvent constructing an object in the backing data</div>
@@ -99,7 +108,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="except">
+	            <div class="m-entry-container-alternating hoverable" id="except">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1except.html" class="m-doc">except<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag that disallows a certain component to be present on the given entity.</div>
@@ -108,7 +117,7 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="filter">
+	            <div class="m-entry-container hoverable" id="filter">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1filter.html" class="m-doc">filter<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry">tag allows you to filter on sets of components</div>
@@ -117,10 +126,19 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="full">
+	            <div class="m-entry-container-alternating hoverable" id="full_t">
               <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1full.html" class="m-doc">full</a></div>
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1full__t.html" class="m-doc">full_t</a></div>
                 <div class="m-entry">requires a pack to be whole when filled in</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="indirect_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1indirect__t.html" class="m-doc">indirect_t</a></div>
+                <div class="m-entry">The data is not optimized for direct access.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -162,18 +180,9 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="pack">
+	            <div class="m-entry-container-alternating hoverable" id="partial_t">
               <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1pack.html" class="m-doc">pack<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">an iterable container to work with components and entities.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-	</tr>
-	<tr>
-	            <div class="m-entry-container hoverable" id="partial">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1partial.html" class="m-doc">partial</a></div>
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1partial__t.html" class="m-doc">partial_t</a></div>
                 <div class="m-entry">allows packs to exist in a partial state</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
@@ -192,6 +201,16 @@
                 <div class="m-entry-row flex">
                   <div class="m-entry header"><span>using <a href="#af17242c0e907153143d867af38365ff9" class="m-doc">entity</a> = uint32_t</span></div>
                   <div class="m-entry">entity points to a collection of components</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;IsPack T&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a1a40117d56cca64a15b660c720fa0286" class="m-doc">decode_pack_types_t</a> = typename <a href="structpsl_1_1ecs_1_1decode__pack__types.html" class="m-doc">decode_<wbr />pack_<wbr />types</a>&lt;std::remove_cvref_t&lt;T&gt;&gt;::type</span></div>
+                  <div class="m-entry">Helper to convert a pack to a type_pack_t of its arguments (including policies etc..)</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
               </div>
@@ -280,6 +299,24 @@
 	</tr>
 	<tr>
 	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_access_direct" class="m-doc">psl::ecs::IsAccessDirect</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_pack_partial" class="m-doc">psl::ecs::IsPackPartial</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_access_indirect" class="m-doc">psl::ecs::IsAccessIndirect</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
               <a href="conceptpsl_1_1ecs_1.html#_is_component_type_serializable" class="m-doc">psl::ecs::IsComponentTypeSerializable</a>
             </td>
             <td></td>
@@ -298,7 +335,19 @@
 	</tr>
 	<tr>
 	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_pack_full" class="m-doc">psl::ecs::IsPackFull</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
               <a href="conceptpsl_1_1ecs_1.html#_is_component_complex_type" class="m-doc">psl::ecs::IsComponentComplexType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_pack" class="m-doc">psl::ecs::IsPack</a>
             </td>
             <td></td>
 	</tr>
@@ -314,6 +363,26 @@
             </h3>
             <p>entity points to a collection of components</p>
 <hr/><h5>Entity </h5>
+          </div></section>
+          <section class="m-doc-details" id="a1a40117d56cca64a15b660c720fa0286"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;IsPack T&gt;
+              </div>
+              using psl::<wbr />ecs::<wbr /><a href="#a1a40117d56cca64a15b660c720fa0286" class="m-doc-self">decode_pack_types_t</a> = typename <a href="structpsl_1_1ecs_1_1decode__pack__types.html" class="m-doc">decode_<wbr />pack_<wbr />types</a>&lt;std::remove_cvref_t&lt;T&gt;&gt;::type
+            </h3>
+            <p>Helper to convert a pack to a type_pack_t of its arguments (including policies etc..)</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>pack type to decode</td>
+                </tr>
+              </tbody>
+            </table>
           </div></section>
         </section>
         <section>

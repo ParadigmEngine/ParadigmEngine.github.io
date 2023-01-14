@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/annotated.html">develop</option><option value="../feature/ecs-indirect-view/annotated.html">feature/ecs-indirect-view</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/annotated.html">develop</option></select></li>
           </ol>
         </div>
       </div>
@@ -196,16 +196,17 @@
                     </ul>
                   </li>
                   <li> <a href="structpsl_1_1ecs_1_1component__traits.html" class="m-doc struct">component_traits</a> <span class="m-doc">Specialize this type to override default behaviours, or to enable serialization.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1direct__t.html" class="m-doc struct">direct_t</a> <span class="m-doc">Guarantees direct access to the underlying data.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1empty.html" class="m-doc struct">empty</a> <span class="m-doc">tag type to circumvent constructing an object in the backing data</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1except.html" class="m-doc struct">except</a> <span class="m-doc">tag that disallows a certain component to be present on the given entity.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1filter.html" class="m-doc struct">filter</a> <span class="m-doc">tag allows you to filter on sets of components</span></li>
-                  <li> <a href="structpsl_1_1ecs_1_1full.html" class="m-doc struct">full</a> <span class="m-doc">requires a pack to be whole when filled in</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1full__t.html" class="m-doc struct">full_t</a> <span class="m-doc">requires a pack to be whole when filled in</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1indirect__t.html" class="m-doc struct">indirect_t</a> <span class="m-doc">The data is not optimized for direct access.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc struct">on_add</a> <span class="m-doc">tag that allows you to select entities (and components) that have recently added the given component type</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1on__break.html" class="m-doc struct">on_break</a> <span class="m-doc">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_<wbr />remove</a></code></span></li>
                   <li> <a href="structpsl_1_1ecs_1_1on__combine.html" class="m-doc struct">on_combine</a> <span class="m-doc">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_<wbr />add</a></code></span></li>
                   <li> <a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc struct">on_remove</a> <span class="m-doc">tag that allows you to listen to the event of a component of the given type being removed.</span></li>
-                  <li> <a href="classpsl_1_1ecs_1_1pack.html" class="m-doc class">pack</a> <span class="m-doc">an iterable container to work with components and entities.</span></li>
-                  <li> <a href="structpsl_1_1ecs_1_1partial.html" class="m-doc struct">partial</a> <span class="m-doc">allows packs to exist in a partial state</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1partial__t.html" class="m-doc struct">partial_t</a> <span class="m-doc">allows packs to exist in a partial state</span></li>
                 </ul>
               </li>
               <li> <a href="namespacepsl_1_1math.html" class="m-doc namespace">math</a> <span class="m-doc">conversions</span></li>

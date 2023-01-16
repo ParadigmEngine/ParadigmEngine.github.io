@@ -4,6 +4,7 @@
         "feature/new_format": "edca5ef72432b7b78fcc5a939c86c555ada1698e",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
+        "fix/memory-leak-ecs": "3923e439e013bba1692ad155e2d8c2a59466d5ac",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
         "misc/clang-ftime": "a32b5906b040931fe0e964a32a4aafd35b0f744a"

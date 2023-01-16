@@ -665,7 +665,7 @@
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
                   <span class="m-doc-wrap-bumper"><a href="#a747117ac8760c0b462da10de473ede39" class="m-doc">addressof_if</a>                </div>
-                <div class="m-entry">Get a pointer of the data at the index.</div>
+                <div class="m-entry">Get a pointer of the data at the index, or nullptr when not found.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const noexcept -&gt; const_pointer</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
               </div>
@@ -694,7 +694,7 @@
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">Get a pointer of the data at the index.</div>
+                  <div class="m-entry">Get a pointer of the data at the index, or nullptr when not found.</div>
                 </div>
               </div>
             </div>
@@ -706,7 +706,7 @@
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
                   <span class="m-doc-wrap-bumper"><a href="#a36d37dd5790346d1cd71509b261a0870" class="m-doc">addressof_if</a>                </div>
-                <div class="m-entry">Get a pointer of the data at the index.</div>
+                <div class="m-entry">Get a pointer of the data at the index, or nullptr when not found.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> noexcept -&gt; pointer</span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
               </div>
@@ -735,7 +735,7 @@
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">Get a pointer of the data at the index.</div>
+                  <div class="m-entry">Get a pointer of the data at the index, or nullptr when not found.</div>
                 </div>
               </div>
             </div>
@@ -1604,9 +1604,7 @@
               <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) const noexcept -&gt; const_pointer</span></span>
             </h3>
               <h3>Brief</h3>
-              <p>Get a pointer of the data at the index.</p>
-              <h3>Details</h3>
-              <p><aside class="m-note m-info"><h4>Note</h4><p>When assertions are enabled, this function can assert</p></aside></p>
+              <p>Get a pointer of the data at the index, or nullptr when not found.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -1624,7 +1622,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>memory address</td>
+                  <td>memory address or nullptr</td>
                 </tr>
               </tfoot>
             </table>
@@ -1635,9 +1633,7 @@
               <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123b" class="m-doc">stage_<wbr />range_<wbr />t</a> stage = <a href="namespacepsl_1_1ecs_1_1details.html#a410fd361c184c589a6ca5b28b680123ba3bfa0eed9e858c516e816a519b2a82eb" class="m-doc">stage_range_t::<wbr />ALIVE</a>) noexcept -&gt; pointer</span></span>
             </h3>
               <h3>Brief</h3>
-              <p>Get a pointer of the data at the index.</p>
-              <h3>Details</h3>
-              <p><aside class="m-note m-info"><h4>Note</h4><p>When assertions are enabled, this function can assert</p></aside></p>
+              <p>Get a pointer of the data at the index, or nullptr when not found.</p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -1655,7 +1651,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>memory address</td>
+                  <td>memory address or nullptr</td>
                 </tr>
               </tfoot>
             </table>

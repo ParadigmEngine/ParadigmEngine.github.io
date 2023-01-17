@@ -1,7 +1,8 @@
 {
     "branches": {
         "develop": "797fdb5957389aa8d336af6c88a999488bf39006",
-        "feature/new_format": "edca5ef72432b7b78fcc5a939c86c555ada1698e",
+        "feature/format-parser-v2": "797fdb5957389aa8d336af6c88a999488bf39006",
+        "feature/new_format": "1781728a630b072d681a8161e4a939217c2d53f6",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",

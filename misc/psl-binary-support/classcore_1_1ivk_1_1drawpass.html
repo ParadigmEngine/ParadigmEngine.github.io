@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>core::ivk::drawpass class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../misc/psl-binary-support/classcore_1_1ivk_1_1drawpass.html">misc/psl-binary-support</option></select></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1ivk.html">ivk</a>::<wbr/></span>drawpass <span class="m-thin">class</span>
+        </h1>
+        <p>a pass describes a start-to-finish sequence of commands to render into a set of rendertargets.</p>
+        
+        <nav class="m-block m-default">
+          <h3>content</h3>
+          <ul>
+            <li><a href="#typeless-methods">constructors, destructors, conversion operators</a></li>
+            <li><a href="#member-functions">member functions</a></li>
+            <li><a href="#attribs">variables</a></li>
+          </ul>
+        </nav>
+<p>A pass is a collection of drawcalls, grouped into sets of drawgroups, and a target framebuffer or swapchain. This describes a full pipeline (synced) to get something into a set of rendertargets and to either use it in subsequent passes, or present it to a core::gfx::surface. Passes also make sure that they don&#x27;t create race conditions with other passes that have been assigned as its dependencies.</p>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a0162a577587b0359a36a62cdf1d677e2" class="m-doc">drawpass</a>                </div>
+                <div class="m-entry">creates a pass that targets a framebuffer.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a0162a577587b0359a36a62cdf1d677e2" class="m-doc">drawpass</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">context</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">framebuffer</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates a pass that targets a framebuffer.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5ae41fa34c68a93a3f79b4539b3363c1" class="m-doc">drawpass</a>                </div>
+                <div class="m-entry">creates a pass that targets a swapchain image set.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5ae41fa34c68a93a3f79b4539b3363c1" class="m-doc">drawpass</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">context</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">swapchain</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates a pass that targets a swapchain image set.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+
+          </dl>
+        </section>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="af24327f51d0ba22225756feaf05729ec">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">prepare                </div>
+                <div class="m-entry">prepares the pass for presenting (i.e. it does some basic housekeeping such as fetching the swapchain image if any)</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">prepare</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">prepares the pass for presenting (i.e. it does some basic housekeeping such as fetching the swapchain image if any)</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable" id="a822cdd0001a0326b016699443e0e3094">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">present                </div>
+                <div class="m-entry">submits the recorded instructions to the GPU, handling the dependencies accordingly.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">present</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">submits the recorded instructions to the GPU, handling the dependencies accordingly.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a7d04a89c282d9f7a83bdd914d0276411">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">bias                </div>
+                <div class="m-entry">set the depth bias on the current pass.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">bias</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">bias</div>
+                  <div class="m-entry">const <a href="structcore_1_1ivk_1_1depth__bias.html" class="m-doc">core::<wbr />ivk::<wbr />depth_bias</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">set the depth bias on the current pass.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac4eaeb2561325fc435d4b1158686bb58" class="m-doc">bias</a>                </div>
+                <div class="m-entry">returns the current dept bias on this instance.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac4eaeb2561325fc435d4b1158686bb58" class="m-doc">bias</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="structcore_1_1ivk_1_1depth__bias.html" class="m-doc">core::<wbr />ivk::<wbr />depth_bias</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the current dept bias on this instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2de0c68dc0d628ba953df461ce82212e" class="m-doc">build</a>                </div>
+                <div class="m-entry">build, and records the draw, and other instructions associated with this pass.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2de0c68dc0d628ba953df461ce82212e" class="m-doc">build</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">build, and records the draw, and other instructions associated with this pass.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable" id="a3b8b2cb9d0af90956d0858df19d1cff8">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">add                </div>
+                <div class="m-entry">add an additional drawgroup to be included in this pass&#x27; draw instructions.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">add</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">group</div>
+                  <div class="m-entry"><a href="classcore_1_1gfx_1_1drawgroup.html" class="m-doc">core::<wbr />gfx::<wbr />drawgroup</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">add an additional drawgroup to be included in this pass&#x27; draw instructions.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="a852d928f47ec70451e4149305e333ea1">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">connect                </div>
+                <div class="m-entry">makes the current pass wait for the given pass to complete</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">connect</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">pass</div>
+                  <div class="m-entry"><a href="classpsl_1_1view__ptr.html" class="m-doc">psl::<wbr />view_ptr</a>&lt;<a href="classcore_1_1ivk_1_1drawpass.html" class="m-doc">drawpass</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">makes the current pass wait for the given pass to complete</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable" id="a4a0893120bd8e8a1aa0ed6e70af45fc9">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">remove                </div>
+                <div class="m-entry">removes an existing drawgroup from this pass&#x27; draw instructions.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">remove</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">group</div>
+                  <div class="m-entry">const <a href="classcore_1_1gfx_1_1drawgroup.html" class="m-doc">core::<wbr />gfx::<wbr />drawgroup</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">removes an existing drawgroup from this pass&#x27; draw instructions.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable" id="af7f3bd2d59b42491093dd66324d497d0">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">clear                </div>
+                <div class="m-entry">removes all drawgroups from this pass&#x27; draw instructions.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">clear</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">removes all drawgroups from this pass&#x27; draw instructions.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a450218e567f1eb7c0b1ec0bfab1f1042" class="m-doc">create_fences</a>                </div>
+                <div class="m-entry">creates the vk::Fence&#x27;s that will be used to sync access to this pass.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a450218e567f1eb7c0b1ec0bfab1f1042" class="m-doc">create_fences</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">size</div>
+                  <div class="m-entry">const size_t</div>
+                  <div class="m-entry right_align">= 1u</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">creates the vk::Fence&#x27;s that will be used to sync access to this pass.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable" id="a02720d42f1e4d89f26633baed73d1127">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper">destroy_fences                </div>
+                <div class="m-entry">cleans up the created vk::Fence&#x27;s of the core::ivk::pass::create_fences() method.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">destroy_fences</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-private">private </span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">cleans up the created vk::Fence&#x27;s of the core::ivk::pass::create_fences() method.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section id="attribs">
+          <h2><a href="#attribs">variables</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	
+            <div class="m-entry-container hoverable" id="aaeb148b060ee3f66c6dbf07d91394c4a">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">vk::PipelineStageFlags</div> m_SubmitPipelineStages</div>
+                <div class="m-entry">Pipeline stages used to wait at for graphics queue submissions.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-private"><span class="tooltip">private</span>private</span></span></div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          			          <section class="m-doc-details" id="a0162a577587b0359a36a62cdf1d677e2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />drawpass::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0162a577587b0359a36a62cdf1d677e2" class="m-doc-self">drawpass</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc">core::<wbr />ivk::<wbr />framebuffer_t</a>&gt; framebuffer)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>creates a pass that targets a framebuffer.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">context&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the valid and loaded context to bind this pass to.</td>
+                </tr>
+                <tr>
+                  <td>framebuffer&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the valid and loaded framebuffer that this pass will output to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a5ae41fa34c68a93a3f79b4539b3363c1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> core::<wbr />ivk::<wbr />drawpass::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5ae41fa34c68a93a3f79b4539b3363c1" class="m-doc-self">drawpass</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a>&gt; context,
+              <a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt; swapchain)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>creates a pass that targets a swapchain image set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">context&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the valid and loaded context to bind this pass to.</td>
+                </tr>
+                <tr>
+                  <td>swapchain&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the valid and loaded swapchain that this pass will output to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+
+          			          <section class="m-doc-details" id="ac4eaeb2561325fc435d4b1158686bb58"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="structcore_1_1ivk_1_1depth__bias.html" class="m-doc">core::<wbr />ivk::<wbr />depth_bias</a> core::<wbr />ivk::<wbr />drawpass::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac4eaeb2561325fc435d4b1158686bb58" class="m-doc-self">bias</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the current dept bias on this instance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the current dept bias on this instance.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a2de0c68dc0d628ba953df461ce82212e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />ivk::<wbr />drawpass::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2de0c68dc0d628ba953df461ce82212e" class="m-doc-self">build</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>build, and records the draw, and other instructions associated with this pass.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true on success, false if submitting the instructions to the GPU failed.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          			          <section class="m-doc-details" id="a450218e567f1eb7c0b1ec0bfab1f1042"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />ivk::<wbr />drawpass::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a450218e567f1eb7c0b1ec0bfab1f1042" class="m-doc-self">create_fences</a>(</span><span class="m-doc-wrap">const size_t size = 1u) <span class="m-label m-danger">private</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>creates the vk::Fence&#x27;s that will be used to sync access to this pass.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">size&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the amount of fences to create.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+
+          
+          
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

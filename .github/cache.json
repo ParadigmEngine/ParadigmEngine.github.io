@@ -7,7 +7,8 @@
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
-        "misc/clang-ftime": "a32b5906b040931fe0e964a32a4aafd35b0f744a"
+        "misc/clang-ftime": "a32b5906b040931fe0e964a32a4aafd35b0f744a",
+        "misc/updated-litmus": "182b494be47cc34b55da826010d39916a90e56c0"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",
     "tags": {

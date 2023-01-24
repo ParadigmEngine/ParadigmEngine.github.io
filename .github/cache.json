@@ -1,7 +1,7 @@
 {
     "branches": {
         "develop": "13bf0c1be51a643b1a33e4722eac60c41b5470d7",
-        "feature/format-parser-v2": "b737c471f3e4b05ab0126413454c6f60f5ef4f28",
+        "feature/format-parser-v2": "ffdf7f3270cf99f9e2262bf037742f3c002c4b2d",
         "feature/new_format": "1781728a630b072d681a8161e4a939217c2d53f6",
         "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",

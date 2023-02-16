@@ -117,7 +117,7 @@ def generate(repository, generator, info=Info(), verbose=False):
         if verbose:
             print(f"generating {name} - {sha1}")
         path = repository.checkout(name)
-        output_dir = pathlib.Path.joinpath(ROOT_DIR, name)
+        output_dir = pathlib.Path.joinpath(ROOT_DIR, "docs", name)
         if pathlib.Path.exists(output_dir):
             _remove_directory(output_dir, True)
 
@@ -151,7 +151,7 @@ def generate(repository, generator, info=Info(), verbose=False):
             files = dict()
             mappings = dict()
             for name in tags | branches:
-                dir = ROOT_DIR.joinpath(name)
+                dir = ROOT_DIR.joinpath("docs", name)
                 files[name] = {entry.relative_to(dir) for entry in dir.iterdir() if entry.is_file() and entry.suffix == '.html'}
             
             for key in files:
@@ -167,7 +167,7 @@ def generate(repository, generator, info=Info(), verbose=False):
                 prefix = "../" * (tag.count('/') + 1)
                 other_keys = sorted([other for other in files if tag != other])
                 for file in files[tag]:
-                    with ROOT_DIR.joinpath(tag, file).open('r+') as f:
+                    with ROOT_DIR.joinpath("docs", tag, file).open('r+') as f:
                         text = f.read()
                         f.seek(0)
                         index = text.find('<use href="#m-doc-search-icon-path" />')

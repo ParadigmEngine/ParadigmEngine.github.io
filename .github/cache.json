@@ -7,7 +7,7 @@
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
-        "misc/update-ndk": "d5c0c39e178e007366b110c28adad467963b6a94"
+        "misc/update-ndk": "3e77a645404cc1536c413ac69a6c72238eec8cdd"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",
     "tags": {

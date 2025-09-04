@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs_1_1details.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/namespacepsl_1_1ecs_1_1details.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs_1_1details.html">develop</option><option value="../feature/cppfront/namespacepsl_1_1ecs_1_1details.html">feature/cppfront</option><option value="../feature/skeletal-mesh/namespacepsl_1_1ecs_1_1details.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/namespacepsl_1_1ecs_1_1details.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/namespacepsl_1_1ecs_1_1details.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/namespacepsl_1_1ecs_1_1details.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <h1>
           <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span>details <span class="m-thin">namespace</span>
         </h1>
-        <p>specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></p>
+        <p>Private implementation details for the ECS.</p>
         <nav class="m-block m-default">
           <h3>content</h3>
           <ul>
@@ -57,7 +57,7 @@
             <li><a href="#concepts">concepts</a></li>
           </ul>
         </nav>
-<p>Private implementation details for the ECS.</p><p>Unlike normal <a href="classpsl_1_1sparse__array.html" class="m-doc">sparse_<wbr />array</a>, this variation is implemented as a cascading stage, where stage 0 is the &quot;stale&quot; data, stage 1 is the recently added data, and stage 2 is the removed data. This is catered towards usage within the <a href="namespacepsl_1_1ecs.html" class="m-doc">psl::<wbr />ecs</a> solution, which is why it is part of its namespace.</p><p>In general it can be unwieldy and unsafe to use without knowing the internal workings, so avoid using this unless you know what you need it for and are sure you understand its internals.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Users should not rely on these implementations.</p></aside>
+<aside class="m-note m-danger"><h4>Warning</h4><p>Users should not rely on these implementations.</p></aside>
         <section id="nested-classes">
           <h2><a href="#nested-classes">classes</a></h2>
           <dl class="m-doc">
@@ -75,13 +75,22 @@
 	            <div class="m-entry-container-alternating hoverable" id="component_key_t">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html" class="m-doc">component_key_t</a></div>
-                <div class="m-entry">Container type for unique component types. These should be construced using the <code><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html#a2c15f2c0216093fd2a74b5ac5088bc85" class="m-doc">component_key_t::<wbr />generate</a></code> helper function.</div>
+                <div class="m-entry">Container type for unique component types. These should be construced using the <code><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html#a67a17f8097ce68e99fc7a80bb5462335" class="m-doc">component_key_t::<wbr />generate</a></code> helper function.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container hoverable" id="dependency_pack">
+	            <div class="m-entry-container hoverable" id="component_type_info_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1details_1_1component__type__info__t.html" class="m-doc">component_type_info_t</a></div>
+                <div class="m-entry">collects all handy information we need of a component both for identification purposes, and for safe de/serialization</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="dependency_pack">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc">dependency_pack</a></div>
                 <div class="m-entry">describes a set of dependencies for a given system</div>
@@ -90,10 +99,19 @@
             </div>
 	</tr>
 	<tr>
-	            <div class="m-entry-container-alternating hoverable" id="staged_sparse_memory_region_t">
+	            <div class="m-entry-container hoverable" id="entity_relationship_handler_t">
               <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html" class="m-doc">staged_sparse_memory_region_t</a></div>
-                <div class="m-entry">A specialized container type to store components in a type agnostic manner.</div>
+                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1entity__relationship__handler__t.html" class="m-doc">entity_relationship_handler_t</a></div>
+                <div class="m-entry">A null implementation of the entity relationship handler.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="mutate_instruction_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1details_1_1mutate__instruction__t.html" class="m-doc">mutate_instruction_t<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">Wrapper around a component type to allow for mutations of the given component.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -110,7 +128,7 @@
 	              <div class="m-entry-container hoverable" id="a121d9da34ff91ed2bb7cd6c8e5a2058a">
                 <div class="m-entry-row flex">
                   <div class="m-entry header"><span>stage_t : uint8_t</span></div>
-                  <div class="m-entry">Defines the discrete stages the <code><a href="classpsl_1_1ecs_1_1details_1_1staged__sparse__memory__region__t.html" class="m-doc">staged_<wbr />sparse_<wbr />memory_<wbr />region_<wbr />t</a></code> can store.</div>
+                  <div class="m-entry">Defines the discrete stages the <code>staged_sparse_memory_region_t</code> can store.</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">enum class</span>class</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
               </div>
@@ -178,7 +196,91 @@
             	<table style="width:100%">
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_traits_prototype_definition" class="m-doc">psl::ecs::details::HasComponentTraitsPrototypeDefinition</a>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_simple_filtering_op" class="m-doc">psl::ecs::details::IsSimpleFilteringOp</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_combine" class="m-doc">psl::ecs::details::IsOnCombine</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_member_prototype_definition" class="m-doc">psl::ecs::details::HasComponentMemberPrototypeDefinition</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_get_relationship" class="m-doc">psl::ecs::details::IsGetRelationship</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_order_by" class="m-doc">psl::ecs::details::IsOrderBy</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_remove" class="m-doc">psl::ecs::details::IsOnRemove</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_valid_component" class="m-doc">psl::ecs::details::IsValidComponent</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_condition" class="m-doc">psl::ecs::details::IsOnCondition</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_add" class="m-doc">psl::ecs::details::IsOnAdd</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_except" class="m-doc">psl::ecs::details::IsExcept</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_type_prototype_definition" class="m-doc">psl::ecs::details::HasComponentTypePrototypeDefinition</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_range_type" class="m-doc">psl::ecs::details::IsRangeType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_mutate" class="m-doc">psl::ecs::details::IsOnMutate</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_mutate_instruction" class="m-doc">psl::ecs::details::IsMutateInstruction</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_filter" class="m-doc">psl::ecs::details::IsFilter</a>
             </td>
             <td></td>
 	</tr>
@@ -190,21 +292,45 @@
 	</tr>
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_valid_for_staged_sparse_memory_range" class="m-doc">psl::ecs::details::IsValidForStagedSparseMemoryRange</a>
-            </td>
-            <td>Constraint for what types can safely be stored by <code>staged_sparse_memory_region_t</code></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_type_prototype_definition" class="m-doc">psl::ecs::details::HasComponentTypePrototypeDefinition</a>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_implicit_filter" class="m-doc">psl::ecs::details::IsImplicitFilter</a>
             </td>
             <td></td>
 	</tr>
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_member_prototype_definition" class="m-doc">psl::ecs::details::HasComponentMemberPrototypeDefinition</a>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_preseed_tag" class="m-doc">psl::ecs::details::IsPreseedTag</a>
             </td>
             <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_hierarchy_change" class="m-doc">psl::ecs::details::IsHierarchyChange</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_is_on_break" class="m-doc">psl::ecs::details::IsOnBreak</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_preseed_tag" class="m-doc">psl::ecs::details::HasPreseedTag</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_has_component_traits_prototype_definition" class="m-doc">psl::ecs::details::HasComponentTraitsPrototypeDefinition</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1_1details_1.html#_does_component_type_need_prototype_call" class="m-doc">psl::ecs::details::DoesComponentTypeNeedPrototypeCall</a>
+            </td>
+            <td>Designates types that either <em>need</em> to be constructed, or that have a prototype definition that override their normal operations.</td>
 	</tr>
 	</table>
 
@@ -219,7 +345,7 @@
               <h3>Brief</h3>
               <p>Verify the given name is valid for component name substitution.</p>
               <h3>Details</h3>
-              <p><p>In general this means all characters are valid if they are also valid for that context for typenames. This means the name has to start with an alphabetical letter or underscore. Subsequent values can be alphanumeric.</p></p>
+              <p><p>In general this means all characters are valid if they are also valid for that context for typenames. This means the name has to start with an alphabetical letter or underscore. Subsequent values can be alphanumeric, underscores, colons, or spaces.</p><aside class="m-note m-danger"><h4>Warning</h4><p>This does not check for reserved names, such as <code>__invalid__</code> or <code>__default__</code>.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>Templated names are not supported due to portability issues, so this function will return false for those.</p></aside></p>
           </div></section>
         </section>
       </div>

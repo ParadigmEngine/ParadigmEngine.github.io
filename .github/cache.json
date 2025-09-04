@@ -1,13 +1,16 @@
 {
     "branches": {
-        "develop": "76cbbab9a80c83a81dc85a3a04fdab7240402dfe",
+        "develop": "bf4796fa672dec44ddd197f204265f5848343639",
+        "feature/cppfront": "d516bb81caccb74a44abed908374e990d3dac9a4",
         "feature/format-parser-v2": "47deb0099368729e68165bc5fd9f536160c34233",
         "feature/new_format": "1781728a630b072d681a8161e4a939217c2d53f6",
-        "feature/skeletal-animation": "e764a37c14e86a32e727eec46fb6c89c320be187",
+        "feature/skeletal-mesh": "2bedf36ae270de807070cd879d86fbe155549e93",
         "feature/ui": "3ee732f1ff3e06b81124aece4d46ae6505c6003e",
+        "feature/wasm-ci-tests": "65f2a98462a3d7d5622bec9df97675b31979436b",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
-        "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
-        "misc/update-ndk": "3e77a645404cc1536c413ac69a6c72238eec8cdd"
+        "jdl/bundle-instance-data-abstraction": "8ad7eb52217ffabaf20adc37b7465efcdb959c12",
+        "jdl/csharp-bindings": "823598c3ede755983ddfeb6bd352241c37d22572",
+        "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",
     "tags": {

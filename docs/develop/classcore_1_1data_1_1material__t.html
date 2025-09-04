@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1data_1_1material__t.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/classcore_1_1data_1_1material__t.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1data_1_1material__t.html">develop</option><option value="../feature/cppfront/classcore_1_1data_1_1material__t.html">feature/cppfront</option><option value="../feature/skeletal-mesh/classcore_1_1data_1_1material__t.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/classcore_1_1data_1_1material__t.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/classcore_1_1data_1_1material__t.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/classcore_1_1data_1_1material__t.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -53,6 +53,7 @@
           <ul>
             <li><a href="#types">types</a></li>
             <li><a href="#static-attribs">static variables</a></li>
+            <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
 <p>Material data describes a collection of textures, buffers, shaders, override parameters for these shaders, blend operations (such as opaque or transparent), render order offsets, and generic options of how this material <em>should</em> be rendered. It also contains facilities to set default values on buffers if needed.</p>
@@ -89,6 +90,73 @@
 	</tr>
 	</table>
           </dl>
+        </section>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a962fa5687340d699f5746083acf31c8f" class="m-doc">resolve_tags</a>                </div>
+                <div class="m-entry">resolves the tags for all bindings into the actual UIDs in case they were missing</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a962fa5687340d699f5746083acf31c8f" class="m-doc">resolve_tags</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">library</div>
+                  <div class="m-entry">const <a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a>&amp;</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">resolves the tags for all bindings into the actual UIDs in case they were missing</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          
+          			          <section class="m-doc-details" id="a962fa5687340d699f5746083acf31c8f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />material_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a962fa5687340d699f5746083acf31c8f" class="m-doc-self">resolve_tags</a>(</span><span class="m-doc-wrap">const <a href="classpsl_1_1meta_1_1library.html" class="m-doc">psl::<wbr />meta::<wbr />library</a>&amp; library) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>resolves the tags for all bindings into the actual UIDs in case they were missing</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-default"><h4>See also</h4><p><a href="classcore_1_1data_1_1material__t_1_1binding.html#a74fdf4076283f07da40815a745180d16" class="m-doc">binding::<wbr />resolve_tags</a> for more information</p></aside></p>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
         <section>
           <h2>Variable documentation</h2>

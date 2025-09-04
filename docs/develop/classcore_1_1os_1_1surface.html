@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1os_1_1surface.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/classcore_1_1os_1_1surface.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1os_1_1surface.html">develop</option><option value="../feature/cppfront/classcore_1_1os_1_1surface.html">feature/cppfront</option><option value="../feature/skeletal-mesh/classcore_1_1os_1_1surface.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/classcore_1_1os_1_1surface.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/classcore_1_1os_1_1surface.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/classcore_1_1os_1_1surface.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -321,42 +321,6 @@
               </div>
             </div>
 	</tr>
-	<tr>
-	            
-            <div class="m-entry-container hoverable">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#aa7b3ec29b0e211088c166922398989c7" class="m-doc">register_swapchain</a>                </div>
-                <div class="m-entry">this method will be called by the swapchain class, so that the surface knows who to notify of resize events, etc..</div>
-                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa7b3ec29b0e211088c166922398989c7" class="m-doc">register_swapchain</a></div>
-                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-                </div>
-                <div class="m-entry-row">
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">void</div>
-                </div>
-                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
-                <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">swapchain</div>
-                  <div class="m-entry"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt;</div>
-                </div>            
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">this method will be called by the swapchain class, so that the surface knows who to notify of resize events, etc..</div>
-                </div>
-              </div>
-            </div>
-	</tr>
 	</table>
 	<table style="width:100%">
 	<tr>
@@ -608,15 +572,6 @@
               <p>the input instance associated with this surface.</p>
               <h3>Details</h3>
               <p><p>every surface has its own input system even though that some platforms cannot have multiple surfaces, or that their input systems boil down to a singleton. by returning a specific instance, regardless of this we ensure that all access and handling is uniform across the various platforms.</p></p>
-          </div></section>
-			          <section class="m-doc-details" id="aa7b3ec29b0e211088c166922398989c7"><div>
-            <h3>
-              <span class="m-doc-wrap-bumper">void core::<wbr />os::<wbr />surface::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa7b3ec29b0e211088c166922398989c7" class="m-doc-self">register_swapchain</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1handle.html" class="m-doc">core::<wbr />resource::<wbr />handle</a>&lt;<a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc">core::<wbr />ivk::<wbr />swapchain</a>&gt; swapchain)</span></span>
-            </h3>
-              <h3>Brief</h3>
-              <p>this method will be called by the swapchain class, so that the surface knows who to notify of resize events, etc..</p>
-              <h3>Details</h3>
-              <p><aside class="m-note m-dim"><h4><a href="todo.html#_todo000006" class="m-doc">Todo</a></h4><p>can we hide this?</p></aside></p>
           </div></section>
 
           

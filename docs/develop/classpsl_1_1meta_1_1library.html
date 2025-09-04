@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classpsl_1_1meta_1_1library.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/classpsl_1_1meta_1_1library.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classpsl_1_1meta_1_1library.html">develop</option><option value="../feature/cppfront/classpsl_1_1meta_1_1library.html">feature/cppfront</option><option value="../feature/skeletal-mesh/classpsl_1_1meta_1_1library.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/classpsl_1_1meta_1_1library.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/classpsl_1_1meta_1_1library.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/classpsl_1_1meta_1_1library.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -66,7 +66,7 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc">library</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#abee6c3e4b178e9df811acaf6bb714136" class="m-doc">library</a>                </div>
                 <div class="m-entry">location on disk where the library can be found.</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -74,7 +74,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc">library</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#abee6c3e4b178e9df811acaf6bb714136" class="m-doc">library</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -87,7 +87,8 @@
                 <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">lib</div>
-                  <div class="m-entry"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a></div>
+                  <div class="m-entry">std::optional&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt;</div>
+                  <div class="m-entry right_align">= {}</div>
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">environment</div>
@@ -812,9 +813,9 @@
         <section>
           <h2>Function documentation</h2>
           
-          			          <section class="m-doc-details" id="a6229350f2c3579b9cdf09a36fd329aee"><div>
+          			          <section class="m-doc-details" id="abee6c3e4b178e9df811acaf6bb714136"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6229350f2c3579b9cdf09a36fd329aee" class="m-doc-self">library</a>(</span><span class="m-doc-wrap"><a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a> lib,
+              <span class="m-doc-wrap-bumper"> psl::<wbr />meta::<wbr />library::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abee6c3e4b178e9df811acaf6bb714136" class="m-doc-self">library</a>(</span><span class="m-doc-wrap">std::optional&lt;<a href="namespacepsl_1_1string8.html#a33ea0c093c01c9a47fcb8fd1e8e9d915" class="m-doc">psl::<wbr />string8::<wbr />view</a>&gt; lib = {},
               std::vector&lt;<a href="namespacepsl.html#a85fcb1d59546dbc50b32b2724bdc1a64" class="m-doc">psl::<wbr />string8_t</a>&gt; environment = {})</span></span>
             </h3>
               <h3>Brief</h3>
@@ -831,8 +832,8 @@
                   <td>The filepath to which file should be loaded. This path can either be absolute or relative.</td>
                 </tr>
                 <tr>
-                  <td>environment</td>
-                  <td></td>
+                  <td>environment&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>a list of environment values to select within the library to load, this is a form of permutating the loaded values.</td>
                 </tr>
               </tbody>
             </table>

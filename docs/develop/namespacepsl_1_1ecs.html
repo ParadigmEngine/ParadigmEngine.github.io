@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/namespacepsl_1_1ecs.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl_1_1ecs.html">develop</option><option value="../feature/cppfront/namespacepsl_1_1ecs.html">feature/cppfront</option><option value="../feature/skeletal-mesh/namespacepsl_1_1ecs.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/namespacepsl_1_1ecs.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/namespacepsl_1_1ecs.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/namespacepsl_1_1ecs.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -66,7 +66,7 @@
 	            <div class="m-entry-container hoverable" id="details">
              <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc">details</a></div>
-                <div class="m-entry">specialized implementation of <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a></div>
+                <div class="m-entry">Private implementation details for the ECS.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -80,10 +80,28 @@
           <dl class="m-doc">
             	<table style="width:100%">
 	<tr>
-	            <div class="m-entry-container hoverable" id="component_traits">
+	            <div class="m-entry-container hoverable" id="component_trait_name_t">
               <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__traits.html" class="m-doc">component_traits<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">Specialize this type to override default behaviours, or to enable serialization.</div>
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__trait__name__t.html" class="m-doc">component_trait_name_t<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">specialize this trait to change the serialization name of a component (also includes the debug name)</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="component_trait_serializable_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__trait__serializable__t.html" class="m-doc">component_trait_serializable_t<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">controls wether a component can be serialized</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="component_trait_version_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1component__trait__version__t.html" class="m-doc">component_trait_version_t<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">allows you to inject a version tag for a given component</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -179,6 +197,24 @@
             </div>
 	</tr>
 	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="on_hierarchy_change">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__hierarchy__change.html" class="m-doc">on_hierarchy_change<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag that allows you to filter based on hierarchy changes</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="on_mutate">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__mutate.html" class="m-doc">on_mutate<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry">tag that allows you to filter based on if a restricted mutability component has been mutated</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
 	            <div class="m-entry-container-alternating hoverable" id="on_remove">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_remove<span class="m-doc-template">&lt;...&gt;</a></div>
@@ -196,6 +232,15 @@
               </div>
             </div>
 	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="preseed_tag">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="structpsl_1_1ecs_1_1preseed__tag.html" class="m-doc">preseed_tag</a></div>
+                <div class="m-entry">tag to indicate the ecs to preseed the pack with all entities</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
 	</table>
 
           </dl>
@@ -206,6 +251,16 @@
             	<table style="width:100%">
 	<tr>
 	              <div class="m-entry-container hoverable">
+                <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename T&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a942b7004c94c8bdc8a626d570d7262b3" class="m-doc">component_traits_t</a> = <a href="structpsl_1_1ecs_1_1details_1_1component__traits__impl__t.html" class="m-doc">details::<wbr />component_traits_impl_t</a>&lt;T&gt;</span></div>
+                  <div class="m-entry"></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;IsPack T&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a1a40117d56cca64a15b660c720fa0286" class="m-doc">decode_pack_types_t</a> = typename <a href="structpsl_1_1ecs_1_1decode__pack__types.html" class="m-doc">decode_<wbr />pack_<wbr />types</a>&lt;std::remove_cvref_t&lt;T&gt;&gt;::type</span></div>
@@ -226,6 +281,16 @@
 	
             <div class="m-entry-container hoverable">
               <div class="m-entry-row flex">
+                <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#a178f2379f796278ebafc69b4088a97e0" class="m-doc">component_traits_v<span class="m-doc-template">&lt;...&gt;</a></div>
+                <div class="m-entry"></div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex">
                 <div class="m-entry header"><div class="m-doc-template">auto</div> <a href="#a9d5812fe53c91191668f2a3b0defd8ab" class="m-doc">component_type_v<span class="m-doc-template">&lt;...&gt;</a></div>
                 <div class="m-entry"></div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-constexpr"><span class="tooltip">constexpr</span>constexpr</span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span><span class="m-label m-flat m-static"><span class="tooltip">static</span>static</span></span></div>
@@ -242,49 +307,7 @@
             	<table style="width:100%">
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_access_direct" class="m-doc">psl::ecs::IsAccessDirect</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_pack" class="m-doc">psl::ecs::IsPack</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
               <a href="conceptpsl_1_1ecs_1.html#_is_access_indirect" class="m-doc">psl::ecs::IsAccessIndirect</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_component_type_serializable" class="m-doc">psl::ecs::IsComponentTypeSerializable</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_pack_full" class="m-doc">psl::ecs::IsPackFull</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_component_flag_type" class="m-doc">psl::ecs::IsComponentFlagType</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_access_type" class="m-doc">psl::ecs::IsAccessType</a>
-            </td>
-            <td></td>
-	</tr>
-	<tr>
-	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_entity" class="m-doc">psl::ecs::IsEntity</a>
             </td>
             <td></td>
 	</tr>
@@ -296,13 +319,31 @@
 	</tr>
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_component_trivial_type" class="m-doc">psl::ecs::IsComponentTrivialType</a>
+              <a href="conceptpsl_1_1ecs_1.html#_is_pack_full" class="m-doc">psl::ecs::IsPackFull</a>
             </td>
             <td></td>
 	</tr>
 	<tr>
 	            <td>
-              <a href="conceptpsl_1_1ecs_1.html#_is_policy" class="m-doc">psl::ecs::IsPolicy</a>
+              <a href="conceptpsl_1_1ecs_1.html#_is_entity_filtering_op" class="m-doc">psl::ecs::IsEntityFilteringOp</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_pack" class="m-doc">psl::ecs::IsPack</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_filtering_op" class="m-doc">psl::ecs::IsFilteringOp</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_flag_type" class="m-doc">psl::ecs::IsComponentFlagType</a>
             </td>
             <td></td>
 	</tr>
@@ -312,12 +353,75 @@
             </td>
             <td></td>
 	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_unrestricted_mutable" class="m-doc">psl::ecs::IsUnrestrictedMutable</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_not_filtering_op" class="m-doc">psl::ecs::IsNotFilteringOp</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_trivial_type" class="m-doc">psl::ecs::IsComponentTrivialType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_component_type_serializable" class="m-doc">psl::ecs::IsComponentTypeSerializable</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_restricted_mutable" class="m-doc">psl::ecs::IsRestrictedMutable</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_entity" class="m-doc">psl::ecs::IsEntity</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_access_direct" class="m-doc">psl::ecs::IsAccessDirect</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_access_type" class="m-doc">psl::ecs::IsAccessType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
+              <a href="conceptpsl_1_1ecs_1.html#_is_policy" class="m-doc">psl::ecs::IsPolicy</a>
+            </td>
+            <td></td>
+	</tr>
 	</table>
 
           </dl>
         </section>
         <section>
           <h2>Typedef documentation</h2>
+          <section class="m-doc-details" id="a942b7004c94c8bdc8a626d570d7262b3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              using psl::<wbr />ecs::<wbr /><a href="#a942b7004c94c8bdc8a626d570d7262b3" class="m-doc-self">component_traits_t</a> = <a href="structpsl_1_1ecs_1_1details_1_1component__traits__impl__t.html" class="m-doc">details::<wbr />component_traits_impl_t</a>&lt;T&gt;
+            </h3>
+<aside class="m-note m-danger"><h4>Warning</h4><p>do not specialize, specialize the individual traits instead so as to preserve future compatibility</p></aside>
+          </div></section>
           <section class="m-doc-details" id="a1a40117d56cca64a15b660c720fa0286"><div>
             <h3>
               <div class="m-doc-template">
@@ -341,6 +445,15 @@
         </section>
         <section>
           <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a178f2379f796278ebafc69b4088a97e0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              auto psl::<wbr />ecs::<wbr /><a href="#a178f2379f796278ebafc69b4088a97e0" class="m-doc-self">component_traits_v</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<aside class="m-note m-danger"><h4>Warning</h4><p>do not specialize, specialize the individual traits instead so as to preserve future compatibility</p></aside>
+          </div></section>
           <section class="m-doc-details" id="a9d5812fe53c91191668f2a3b0defd8ab"><div>
             <h3>
               <div class="m-doc-template">

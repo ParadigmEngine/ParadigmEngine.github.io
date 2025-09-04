@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl.html">develop</option><option value="../feature/format-parser-v2/index.html">feature/format-parser-v2</option><option value="../misc/update-ndk/namespacepsl.html">misc/update-ndk</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl.html">develop</option><option value="../feature/cppfront/namespacepsl.html">feature/cppfront</option><option value="../feature/skeletal-mesh/namespacepsl.html">feature/skeletal-mesh</option><option value="../feature/wasm-ci-tests/namespacepsl.html">feature/wasm-ci-tests</option><option value="../jdl/bundle-instance-data-abstraction/namespacepsl.html">jdl/bundle-instance-data-abstraction</option><option value="../jdl/csharp-bindings/namespacepsl.html">jdl/csharp-bindings</option></select></li>
           </ol>
         </div>
       </div>
@@ -127,6 +127,15 @@
               </div>
             </div>
 	</tr>
+	<tr>
+	            <div class="m-entry-container-alternating hoverable" id="utility">
+             <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="namespacepsl_1_1utility.html" class="m-doc">utility</a></div>
+                <div class="m-entry">this namespace contains various helper utilities to aid you.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
 	</table>
 
           </dl>
@@ -183,7 +192,7 @@
 	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#aaefec3f470abf4440632948896bbe967" class="m-doc">has_type</a> = <a href="structutility_1_1templates_1_1has__type.html" class="m-doc">utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;</span></div>
+                  <div class="m-entry header"><span>using <a href="#ac0dc775a81fff4ca5f205a71418c79b4" class="m-doc">has_type</a> = <a href="structpsl_1_1utility_1_1templates_1_1has__type.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;</span></div>
                   <div class="m-entry">checks if the given type exists within the variadic args</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
@@ -193,7 +202,7 @@
 	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#a0282975b000ce8a0f475eb4c72b93bcf" class="m-doc">index_of</a> = <a href="structutility_1_1templates_1_1index__of.html" class="m-doc">utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;</span></div>
+                  <div class="m-entry header"><span>using <a href="#a9914991d2dbd21fa79afeb9632b59787" class="m-doc">index_of</a> = <a href="structpsl_1_1utility_1_1templates_1_1index__of.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;</span></div>
                   <div class="m-entry">retrieve the index of the type in the variadic args</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
@@ -203,7 +212,7 @@
 	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_at_index</a> = <a href="structutility_1_1templates_1_1type__at__index.html" class="m-doc">utility::<wbr />templates::<wbr />type_at_index</a>&lt;N, Ts...&gt;</span></div>
+                  <div class="m-entry header"><span>using <a href="#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc">type_at_index</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__at__index.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_at_index</a>&lt;N, Ts...&gt;</span></div>
                   <div class="m-entry">get the type at the given index in the variadic args</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
@@ -213,7 +222,7 @@
 	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc">type_at_index_t</a> = typename <a href="namespacepsl.html#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type</span></div>
+                  <div class="m-entry header"><span>using <a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc">type_at_index_t</a> = typename <a href="namespacepsl.html#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type</span></div>
                   <div class="m-entry">get the type at the given index in the variadic args</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
@@ -223,7 +232,7 @@
 	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename... Ts&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">type_pack_t</a> = <a href="structutility_1_1templates_1_1type__pack__t.html" class="m-doc">utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;</span></div>
+                  <div class="m-entry header"><span>using <a href="#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">type_pack_t</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__pack__t.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;</span></div>
                   <div class="m-entry">used to store packs of types to pass around as parameters without instantiating the type&#x27;s objects</div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
@@ -233,8 +242,8 @@
 	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T&gt;</div>
-                  <div class="m-entry header"><span>using <a href="#a481a7c7762b7103c21e502e2bb326572" class="m-doc">container_to_type_pack_t</a> = <a href="namespaceutility_1_1templates.html#a618b3bbf85ea60316154703bc9d8aa4e" class="m-doc">utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;</span></div>
-                  <div class="m-entry">transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a></div>
+                  <div class="m-entry header"><span>using <a href="#a8848e3d66d25a014391fae46b8170592" class="m-doc">container_to_type_pack_t</a> = <a href="namespacepsl_1_1utility_1_1templates.html#a25912f6f68da502366e1f17f0cbf4c14" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;</span></div>
+                  <div class="m-entry">transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
                 </div>
               </div>
@@ -271,6 +280,48 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc">fatal</a>                </div>
+                <div class="m-entry">Similar to std::terminate, but additionally prints a message and location.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc">fatal</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">reason</div>
+                  <div class="m-entry">auto const&amp;</div>
+                  <div class="m-entry right_align">= &quot;&quot;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">loc</div>
+                  <div class="m-entry">const <a href="namespacepsl.html#ae1469ff8161e2df4634dda9ad2af73a6" class="m-doc">psl::<wbr />source_location</a>&amp;</div>
+                  <div class="m-entry right_align">= psl::source_location::current()</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Similar to std::terminate, but additionally prints a message and location.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
                   <span class="m-doc-wrap-bumper"><a href="#a5ad1017fc6d07ed98ea6dfb33b63f62c" class="m-doc">to_string8_t</a>                </div>
                 <div class="m-entry">converts a <a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a> into a UTF-8 string.</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
@@ -303,7 +354,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -339,7 +390,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -375,7 +426,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -411,7 +462,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -447,7 +498,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -483,7 +534,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -527,7 +578,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -567,7 +618,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -603,7 +654,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -647,7 +698,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -683,7 +734,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -729,7 +780,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -765,6 +816,82 @@
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
                   <div class="m-entry">wrapper around printf that changes behaviour depending on the size of <a href="namespacepsl.html#ae3a22c89857046a4886c58c5e7743060" class="m-doc">psl::<wbr />char_t</a>.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#af67edc05d64867692f95c78360249f2d" class="m-doc">narrow_cast&lt;…&gt;</a>                </div>
+                <div class="m-entry">Checks if the conversion would result in an overflow when asserts are enabled.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> noexcept -&gt; TargetType</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-constexpr">constexpr</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#af67edc05d64867692f95c78360249f2d" class="m-doc">narrow_cast&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> noexcept -&gt; TargetType</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-constexpr">constexpr</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename TargetType</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">auto</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">v</div>
+                  <div class="m-entry">auto</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">Checks if the conversion would result in an overflow when asserts are enabled.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa3d7f3935f8b5887a467c2c8b3d43ffc" class="m-doc">to_underlying&lt;…&gt;</a>                </div>
+                <div class="m-entry">converts an enum class to its underlying type</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> noexcept -&gt; std::underlying_type_t&lt; T &gt;</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-constexpr">constexpr</span></span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa3d7f3935f8b5887a467c2c8b3d43ffc" class="m-doc">to_underlying&lt;…&gt;</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> noexcept -&gt; std::underlying_type_t&lt; T &gt;</span>      <span class="m-label m-flat m-public">public</span>
+ <span class="m-label m-flat m-constexpr">constexpr</span></span></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">template</div>
+                  <div class="m-entry">typename T</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">T</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">converts an enum class to its underlying type</div>
                 </div>
               </div>
             </div>
@@ -817,6 +944,12 @@
             	<table style="width:100%">
 	<tr>
 	            <td>
+              <a href="conceptpsl_1.html#_is_range_type" class="m-doc">psl::IsRangeType</a>
+            </td>
+            <td></td>
+	</tr>
+	<tr>
+	            <td>
               <a href="conceptpsl_1.html#_has_type" class="m-doc">psl::HasType</a>
             </td>
             <td>checks if the given type exists within the variadic args</td>
@@ -827,12 +960,12 @@
         </section>
         <section>
           <h2>Typedef documentation</h2>
-          <section class="m-doc-details" id="aaefec3f470abf4440632948896bbe967"><div>
+          <section class="m-doc-details" id="ac0dc775a81fff4ca5f205a71418c79b4"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T, typename... Ts&gt;
               </div>
-              using psl::<wbr /><a href="#aaefec3f470abf4440632948896bbe967" class="m-doc-self">has_type</a> = <a href="structutility_1_1templates_1_1has__type.html" class="m-doc">utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;
+              using psl::<wbr /><a href="#ac0dc775a81fff4ca5f205a71418c79b4" class="m-doc-self">has_type</a> = <a href="structpsl_1_1utility_1_1templates_1_1has__type.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;
             </h3>
             <p>checks if the given type exists within the variadic args</p>
             <table class="m-table m-fullwidth m-flat">
@@ -851,12 +984,12 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a0282975b000ce8a0f475eb4c72b93bcf"><div>
+          <section class="m-doc-details" id="a9914991d2dbd21fa79afeb9632b59787"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T, typename... Ts&gt;
               </div>
-              using psl::<wbr /><a href="#a0282975b000ce8a0f475eb4c72b93bcf" class="m-doc-self">index_of</a> = <a href="structutility_1_1templates_1_1index__of.html" class="m-doc">utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;
+              using psl::<wbr /><a href="#a9914991d2dbd21fa79afeb9632b59787" class="m-doc-self">index_of</a> = <a href="structpsl_1_1utility_1_1templates_1_1index__of.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;
             </h3>
             <p>retrieve the index of the type in the variadic args</p>
             <table class="m-table m-fullwidth m-flat">
@@ -874,14 +1007,14 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a8848e3d66d25a014391fae46b8170592" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
           </div></section>
-          <section class="m-doc-details" id="a57654d7fb01d524d871c1ee0f48b61ee"><div>
+          <section class="m-doc-details" id="a4fd7a04882d08f7a63644c6502d5b448"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;size_t N, typename... Ts&gt;
               </div>
-              using psl::<wbr /><a href="#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc-self">type_at_index</a> = <a href="structutility_1_1templates_1_1type__at__index.html" class="m-doc">utility::<wbr />templates::<wbr />type_at_index</a>&lt;N, Ts...&gt;
+              using psl::<wbr /><a href="#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc-self">type_at_index</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__at__index.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_at_index</a>&lt;N, Ts...&gt;
             </h3>
             <p>get the type at the given index in the variadic args</p>
             <table class="m-table m-fullwidth m-flat">
@@ -899,14 +1032,14 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a8848e3d66d25a014391fae46b8170592" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
           </div></section>
           <section class="m-doc-details" id="a46cb5b4394ac9b926b46a8a77492ecd6"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;size_t N, typename... Ts&gt;
               </div>
-              using psl::<wbr /><a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc-self">type_at_index_t</a> = typename <a href="namespacepsl.html#a57654d7fb01d524d871c1ee0f48b61ee" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type
+              using psl::<wbr /><a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc-self">type_at_index_t</a> = typename <a href="namespacepsl.html#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type
             </h3>
             <p>get the type at the given index in the variadic args</p>
             <table class="m-table m-fullwidth m-flat">
@@ -924,14 +1057,14 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a8848e3d66d25a014391fae46b8170592" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
           </div></section>
-          <section class="m-doc-details" id="a092a42d8d39a0ffc70868b67499ef7d0"><div>
+          <section class="m-doc-details" id="a5ee8acedc9a6931c5473335092b4c2f9"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename... Ts&gt;
               </div>
-              using psl::<wbr /><a href="#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc-self">type_pack_t</a> = <a href="structutility_1_1templates_1_1type__pack__t.html" class="m-doc">utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;
+              using psl::<wbr /><a href="#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc-self">type_pack_t</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__pack__t.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;
             </h3>
             <p>used to store packs of types to pass around as parameters without instantiating the type&#x27;s objects</p>
             <table class="m-table m-fullwidth m-flat">
@@ -946,14 +1079,14 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="a481a7c7762b7103c21e502e2bb326572"><div>
+          <section class="m-doc-details" id="a8848e3d66d25a014391fae46b8170592"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              using psl::<wbr /><a href="#a481a7c7762b7103c21e502e2bb326572" class="m-doc-self">container_to_type_pack_t</a> = <a href="namespaceutility_1_1templates.html#a618b3bbf85ea60316154703bc9d8aa4e" class="m-doc">utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;
+              using psl::<wbr /><a href="#a8848e3d66d25a014391fae46b8170592" class="m-doc-self">container_to_type_pack_t</a> = <a href="namespacepsl_1_1utility_1_1templates.html#a25912f6f68da502366e1f17f0cbf4c14" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;
             </h3>
-            <p>transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a></p>
+            <p>transforms a container like type (like tuple, or pair) into a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Template parameters</th></tr>
@@ -970,6 +1103,29 @@
         </section>
         <section>
           <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a2b81a3646d5efd6595bc3dce8965b844"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc-self">fatal</a>(</span><span class="m-doc-wrap">auto const&amp; reason = &quot;&quot;,
+              const <a href="namespacepsl.html#ae1469ff8161e2df4634dda9ad2af73a6" class="m-doc">psl::<wbr />source_location</a>&amp; loc = psl::source_location::current())</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Similar to std::terminate, but additionally prints a message and location.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">reason</td>
+                  <td>An optional message to print</td>
+                </tr>
+                <tr>
+                  <td>loc</td>
+                  <td>The location where the fatal error occurred, note ignore setting this value, it will be set automatically</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
           <section class="m-doc-details" id="a5ad1017fc6d07ed98ea6dfb33b63f62c"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="namespacepsl.html#a85fcb1d59546dbc50b32b2724bdc1a64" class="m-doc">psl::<wbr />string8_t</a> psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5ad1017fc6d07ed98ea6dfb33b63f62c" class="m-doc-self">to_string8_t</a>(</span><span class="m-doc-wrap">const <a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a>&amp; s)</span></span>
@@ -1328,6 +1484,80 @@
               </tbody>
             </table>
           </div></section>
+          <section class="m-doc-details" id="af67edc05d64867692f95c78360249f2d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename TargetType&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af67edc05d64867692f95c78360249f2d" class="m-doc-self">narrow_cast</a>(</span><span class="m-doc-wrap">auto v) noexcept -&gt; TargetType <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Checks if the conversion would result in an overflow when asserts are enabled.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">TargetType</td>
+                  <td>Type to convert to</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>v</td>
+                  <td>Value to convert</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The result of the conversion</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="aa3d7f3935f8b5887a467c2c8b3d43ffc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="platform__def_8hpp.html#a724fb9f82013c782db5c3c12ea36aac8" class="m-doc">FORCEINLINE</a> auto psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa3d7f3935f8b5887a467c2c8b3d43ffc" class="m-doc-self">to_underlying</a>(</span><span class="m-doc-wrap">T value) noexcept -&gt; std::underlying_type_t&lt; T &gt; <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>converts an enum class to its underlying type</p>
+              <h3>Details</h3>
+              <p><p>note this is missing on the android implementation</p><aside class="m-note m-dim"><h4><a href="todo.html#_todo000019" class="m-doc">Todo</a></h4><p>when android supports this remove</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>value</td>
+                  <td>enum to cast to underlying value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>the value of the enum casted to its underlying type</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
         </section>
         <section>
           <h2>Variable documentation</h2>
@@ -1354,7 +1584,7 @@
                 </tr>
               </tbody>
             </table>
-<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a092a42d8d39a0ffc70868b67499ef7d0" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a481a7c7762b7103c21e502e2bb326572" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
+<aside class="m-note m-info"><h4>Note</h4><p>don&#x27;t use this with container types, convert the container type to a <a href="namespacepsl.html#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">psl::<wbr />type_pack_t</a> first using <a href="namespacepsl.html#a8848e3d66d25a014391fae46b8170592" class="m-doc">psl::<wbr />container_to_type_pack_t</a></p></aside>
           </div></section>
           <section class="m-doc-details" id="a3ae95e01f5455a035886b1d903670c3c"><div>
             <h3>

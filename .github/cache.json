@@ -1,6 +1,6 @@
 {
     "branches": {
-        "develop": "1be1d4479caa4a1df58e285595ca9033dac841fb",
+        "develop": "dfaa707404473885e4801c6f10531f35cfb7a80e",
         "feature/cppfront": "d516bb81caccb74a44abed908374e990d3dac9a4",
         "feature/format-parser-v2": "47deb0099368729e68165bc5fd9f536160c34233",
         "feature/new_format": "1781728a630b072d681a8161e4a939217c2d53f6",
@@ -10,7 +10,6 @@
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/bundle-instance-data-abstraction": "8ad7eb52217ffabaf20adc37b7465efcdb959c12",
         "jdl/csharp-bindings": "823598c3ede755983ddfeb6bd352241c37d22572",
-        "jdl/render-perf-improvements": "b459de45ee2ee05b7b74fde423e914e89e85199b",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",

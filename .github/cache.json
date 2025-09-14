@@ -11,7 +11,7 @@
         "jdl/bundle-instance-data-abstraction": "8ad7eb52217ffabaf20adc37b7465efcdb959c12",
         "jdl/csharp-bindings": "823598c3ede755983ddfeb6bd352241c37d22572",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad",
-        "jdl/sparse_array_revamp": "46a6c0b3c712d114363279ec48bdf3329091b535"
+        "jdl/sparse_array_revamp": "f402d6acce97b66c308075f91f73ad19d7ac3d50"
     },
     "generator": "017f4e1d4dcc5b5a5bb16dc1e243557b76b6250f",
     "tags": {

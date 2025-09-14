@@ -148,7 +148,7 @@
 	            <div class="m-entry-container hoverable" id="sparse_array">
               <div class="m-entry-row flex">
                 <div class="m-entry header"><a href="classpsl_1_1sparse__array.html" class="m-doc">sparse_array<span class="m-doc-template">&lt;...&gt;</a></div>
-                <div class="m-entry">container type that is fast to iterate, but has non-continuous interface</div>
+                <div class="m-entry">A sparse array implementation that provides a mapping between user provided keys and a dense storage of values.</div>
                 <div class="m-entry modifiers"><span></span></div>
               </div>
             </div>
@@ -191,6 +191,16 @@
 	<tr>
 	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
+                  <div class="m-doc-template">template&lt;typename UserKey = size_t, typename IndexType = UserKey, IndexType CHUNKS_SIZE = 4096, typename BufferGrowthStrategy = details::default_buffer_growth_strategy_t&gt;</div>
+                  <div class="m-entry header"><span>using <a href="#a8975ff33ad8e486c499844681a5380ca" class="m-doc">sparse_indice_array</a> = <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;std::byte, UserKey, IndexType, CHUNKS_SIZE, BufferGrowthStrategy, <a href="structpsl_1_1impl_1_1no__storage__base__t.html" class="m-doc">impl::<wbr />no_storage_base_t</a>&lt;std::byte, IndexType&gt;&gt;</span></div>
+                  <div class="m-entry">A sparse array that only stores the indices of the elements that are present. The value type is std::byte which doesn&#x27;t matter but it needs something, and the storage type does not actually store any data.</div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-public"><span class="tooltip">public</span>public</span></span></div>
+                </div>
+              </div>
+	</tr>
+	<tr>
+	              <div class="m-entry-container-alternating hoverable">
+                <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
                   <div class="m-entry header"><span>using <a href="#ac0dc775a81fff4ca5f205a71418c79b4" class="m-doc">has_type</a> = <a href="structpsl_1_1utility_1_1templates_1_1has__type.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />has_type</a>&lt;T, Ts...&gt;</span></div>
                   <div class="m-entry">checks if the given type exists within the variadic args</div>
@@ -199,7 +209,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container-alternating hoverable">
+	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T, typename... Ts&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a9914991d2dbd21fa79afeb9632b59787" class="m-doc">index_of</a> = <a href="structpsl_1_1utility_1_1templates_1_1index__of.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />index_of</a>&lt;T, Ts...&gt;</span></div>
@@ -209,7 +219,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container hoverable">
+	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc">type_at_index</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__at__index.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_at_index</a>&lt;N, Ts...&gt;</span></div>
@@ -219,7 +229,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container-alternating hoverable">
+	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;size_t N, typename... Ts&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a46cb5b4394ac9b926b46a8a77492ecd6" class="m-doc">type_at_index_t</a> = typename <a href="namespacepsl.html#a4fd7a04882d08f7a63644c6502d5b448" class="m-doc">type_<wbr />at_<wbr />index</a>&lt;N, Ts...&gt;::type</span></div>
@@ -229,7 +239,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container hoverable">
+	              <div class="m-entry-container-alternating hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename... Ts&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a5ee8acedc9a6931c5473335092b4c2f9" class="m-doc">type_pack_t</a> = <a href="structpsl_1_1utility_1_1templates_1_1type__pack__t.html" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />type_pack_t</a>&lt;Ts...&gt;</span></div>
@@ -239,7 +249,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container-alternating hoverable">
+	              <div class="m-entry-container hoverable">
                 <div class="m-entry-row flex">
                   <div class="m-doc-template">template&lt;typename T&gt;</div>
                   <div class="m-entry header"><span>using <a href="#a8848e3d66d25a014391fae46b8170592" class="m-doc">container_to_type_pack_t</a> = <a href="namespacepsl_1_1utility_1_1templates.html#a25912f6f68da502366e1f17f0cbf4c14" class="m-doc">psl::<wbr />utility::<wbr />templates::<wbr />container_to_type_pack_t</a>&lt;T&gt;</span></div>
@@ -249,7 +259,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container hoverable" id="a998da8572c087d8d101d2e52bbd04a9f">
+	              <div class="m-entry-container-alternating hoverable" id="a998da8572c087d8d101d2e52bbd04a9f">
                 <div class="m-entry-row flex">
                   <div class="m-entry header"><span>using <a href="#a998da8572c087d8d101d2e52bbd04a9f" class="m-doc-self">stringstream</a> = <a href="namespacepsl_1_1string8.html#a5de1ef6845680758605a8c84ff0cea26" class="m-doc">string8::<wbr />stream</a></span></div>
                   <div class="m-entry">platform conditional string type, turns into char or wchar depending on the platform and compile options</div>
@@ -258,7 +268,7 @@
               </div>
 	</tr>
 	<tr>
-	              <div class="m-entry-container-alternating hoverable" id="aabe2b89b2fcb7960d7ae60c48eb71efa">
+	              <div class="m-entry-container hoverable" id="aabe2b89b2fcb7960d7ae60c48eb71efa">
                 <div class="m-entry-row flex">
                   <div class="m-entry header"><span>using <a href="#aabe2b89b2fcb7960d7ae60c48eb71efa" class="m-doc-self">pchar_t</a> = <a href="namespacepsl_1_1platform.html#a6189d7ec55dcf738dfec0e52adc3c1ee" class="m-doc">platform::<wbr />char_t</a></span></div>
                   <div class="m-entry">platform conditional string type, turns into char or wchar depending on the platform and compile options</div>
@@ -960,6 +970,39 @@
         </section>
         <section>
           <h2>Typedef documentation</h2>
+          <section class="m-doc-details" id="a8975ff33ad8e486c499844681a5380ca"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename UserKey = size_t, typename IndexType = UserKey, IndexType CHUNKS_SIZE = 4096, typename BufferGrowthStrategy = details::default_buffer_growth_strategy_t&gt;
+              </div>
+              using psl::<wbr /><a href="#a8975ff33ad8e486c499844681a5380ca" class="m-doc-self">sparse_indice_array</a> = <a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a>&lt;std::byte, UserKey, IndexType, CHUNKS_SIZE, BufferGrowthStrategy, <a href="structpsl_1_1impl_1_1no__storage__base__t.html" class="m-doc">impl::<wbr />no_storage_base_t</a>&lt;std::byte, IndexType&gt;&gt;
+            </h3>
+            <p>A sparse array that only stores the indices of the elements that are present. The value type is std::byte which doesn&#x27;t matter but it needs something, and the storage type does not actually store any data.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">UserKey</td>
+                  <td>The type used by the user to index the sparse array.</td>
+                </tr>
+                <tr>
+                  <td>IndexType</td>
+                  <td>The internal type used to index the sparse array. These is the internal type used, typically this should be the same as UserKey, but for certain opaque types this can be different.</td>
+                </tr>
+                <tr>
+                  <td>CHUNKS_SIZE</td>
+                  <td>The size of each chunk in the sparse array. This should be a power of two for optimal performance.</td>
+                </tr>
+                <tr>
+                  <td>BufferGrowthStrategy</td>
+                  <td>The strategy used to grow the internal buffers.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="classpsl_1_1sparse__array.html" class="m-doc">psl::<wbr />sparse_array</a> for more information.</p></aside>
+          </div></section>
           <section class="m-doc-details" id="ac0dc775a81fff4ca5f205a71418c79b4"><div>
             <h3>
               <div class="m-doc-template">

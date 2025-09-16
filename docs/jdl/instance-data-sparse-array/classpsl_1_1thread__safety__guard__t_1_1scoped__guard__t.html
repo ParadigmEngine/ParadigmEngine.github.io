@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>psl::thread_safety_guard_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::thread_safety_guard_t::scoped_guard_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/instance-data-sparse-array/classpsl_1_1thread__safety__guard__t.html">jdl/instance-data-sparse-array</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/instance-data-sparse-array/classpsl_1_1thread__safety__guard__t_1_1scoped__guard__t.html">jdl/instance-data-sparse-array</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,72 +44,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span>thread_safety_guard_t <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="classpsl_1_1thread__safety__guard__t.html">thread_safety_guard_t</a>::<wbr/></span>scoped_guard_t <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
         </h1>
-        <p>A thread safety guard that can be used to ensure that a certain scope is only accessed by a single thread at a time.</p>
-        
-        <nav class="m-block m-default">
-          <h3>content</h3>
-          <ul>
-            <li><a href="#types">types</a></li>
-            <li><a href="#member-functions">member functions</a></li>
-          </ul>
-        </nav>
-        <section id="types">
-          <h2><a href="#types">types</a></h2>
-          <dl class="m-doc">
-	<h3>classes</h3>
-	<table style="width:100%">
-		<tr>
-			            <div class="m-entry-container hoverable" id="scoped_guard_t">
-              <div class="m-entry-row flex">
-                <div class="m-entry header"><a href="classpsl_1_1thread__safety__guard__t_1_1scoped__guard__t.html" class="m-doc">scoped_guard_t</a></div>
-                <div class="m-entry">A scoped guard that ensures that the current thread is the only one accessing the guarded scope.</div>
-                <div class="m-entry modifiers"><span></span></div>
-              </div>
-            </div>
-		</tr>
-	</table>
-          </dl>
-        </section>
-        <section id="member-functions">
-          <h2><a href="#member-functions">member-functions</a></h2>
-          <dl class="m-doc">
-	<table style="width:100%">
-	<tr>
-	            
-            <div class="m-entry-container hoverable" id="a9ac7b61b68dafd787b3658e302543fc0">
-              <div class="m-entry-row flex" id="brief">
-                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
-                <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">scoped_guard                </div>
-                <div class="m-entry">Creates a new scoped guard that will lock the current thread to the guarded scope.</div>
-                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-              </div>
-              <div class="m-entry-row flex collapsed" id="expanded">
-                <div class="m-entry-row flex">
-                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">scoped_guard</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
-</span></div>
-                </div>
-                <div class="m-entry-row">
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry"><a href="classpsl_1_1thread__safety__guard__t_1_1scoped__guard__t.html" class="m-doc">scoped_<wbr />guard_<wbr />t</a></div>
-                </div>
-                <div class="m-entry-row">
-                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">Creates a new scoped guard that will lock the current thread to the guarded scope.</div>
-                </div>
-              </div>
-            </div>
-	</tr>
-	</table>
-          </dl>
-        </section>
+        <p>A scoped guard that ensures that the current thread is the only one accessing the guarded scope.</p>
       </div>
     </div>
   </div>

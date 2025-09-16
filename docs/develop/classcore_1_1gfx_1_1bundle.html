@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1gfx_1_1bundle.html">develop</option><option value="../jdl/instance-data-sparse-array/classcore_1_1gfx_1_1bundle.html">jdl/instance-data-sparse-array</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/classcore_1_1gfx_1_1bundle.html">develop</option><option value="../jdl/remove-psl-source-location/classcore_1_1gfx_1_1bundle.html">jdl/remove-psl-source-location</option></select></li>
           </ol>
         </div>
       </div>
@@ -105,7 +105,7 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a5fae881382769ecad6e0d9a130399df5" class="m-doc">instances</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a764686c711c723c276852d992c63a0f3" class="m-doc">instances</a>                </div>
                 <div class="m-entry">returns the instance count currently used for the given piece of geometry.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
@@ -113,7 +113,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5fae881382769ecad6e0d9a130399df5" class="m-doc">instances</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a764686c711c723c276852d992c63a0f3" class="m-doc">instances</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
                 </div>
@@ -137,11 +137,57 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container hoverable" id="a17d74c5a6d7e6cfc2d30523c2851624d">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#aba04dfd27354415184063649101f21dc" class="m-doc">size</a>                </div>
+                  <span class="m-doc-wrap-bumper">instantiate                </div>
+                <div class="m-entry">instantiate one or more instances for the given geometry, returning their IDs.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;">instantiate</div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">std::vector&lt;<a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a>&gt;</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">geometry</div>
+                  <div class="m-entry"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt;</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">count</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a></div>
+                  <div class="m-entry right_align">= 1</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">type</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#aec9cbe859936b1be635cd4032a9cf8cb" class="m-doc">geometry_<wbr />type</a></div>
+                  <div class="m-entry right_align">= <a href="namespacecore_1_1gfx.html#aec9cbe859936b1be635cd4032a9cf8cbafe6f99ef1ec99efbdc19a9786cf1facc" class="m-doc">geometry_type::<wbr />STATIC</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">instantiate one or more instances for the given geometry, returning their IDs.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#afdf8aec8257a97114c3a2255d3260bef" class="m-doc">size</a>                </div>
                 <div class="m-entry">returns how many instances are currently active for the given geometry.</div>
                 <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
@@ -149,7 +195,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aba04dfd27354415184063649101f21dc" class="m-doc">size</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#afdf8aec8257a97114c3a2255d3260bef" class="m-doc">size</a></div>
                   <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
                 </div>
@@ -173,7 +219,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -209,11 +255,11 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#ac70777d171058331ef47376935c6d337" class="m-doc">release</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a2dcd4040c7e0f65400ab1c17a5c22870" class="m-doc">release</a>                </div>
                 <div class="m-entry">release the instance associated with the given ID and geometry</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
@@ -221,7 +267,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac70777d171058331ef47376935c6d337" class="m-doc">release</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2dcd4040c7e0f65400ab1c17a5c22870" class="m-doc">release</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
  <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
                 </div>
@@ -238,7 +284,7 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">id</div>
-                  <div class="m-entry">uint32_t</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a></div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -249,7 +295,7 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container-alternating hoverable">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
@@ -286,19 +332,19 @@
 	</tr>
 	<tr>
 	            
-            <div class="m-entry-container hoverable">
+            <div class="m-entry-container-alternating hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a25a25b3f113952ecc8b3d51341953cfb" class="m-doc">set&lt;…&gt;</a>                </div>
-                <div class="m-entry">set instance data for the given instance (and range)</div>
+                  <span class="m-doc-wrap-bumper"><a href="#ac3c6edd136410003fbe01e9507f5b561" class="m-doc">set&lt;…&gt;</a>                </div>
+                <div class="m-entry">set instance data for the given instances</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
               </div>
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a25a25b3f113952ecc8b3d51341953cfb" class="m-doc">set&lt;…&gt;</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac3c6edd136410003fbe01e9507f5b561" class="m-doc">set&lt;…&gt;</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -316,8 +362,8 @@
                   <div class="m-entry"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt;</div>
                 </div>            
                 <div class="m-entry-row flex">
-                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">id</div>
-                  <div class="m-entry">uint32_t</div>
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">ids</div>
+                  <div class="m-entry">std::span&lt;<a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a> const&gt;</div>
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">name</div>
@@ -325,11 +371,11 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">values</div>
-                  <div class="m-entry">const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;T&gt;&amp;</div>
+                  <div class="m-entry"><a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;T&gt;</div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">set instance data for the given instance (and range)</div>
+                  <div class="m-entry">set instance data for the given instances</div>
                 </div>
               </div>
             </div>
@@ -351,9 +397,9 @@
               <h3>Details</h3>
               <p><p>Assigns a material to this bundle. If no render_layer_override is provided, the materials default value will be used instead.</p></p>
           </div></section>
-			          <section class="m-doc-details" id="a5fae881382769ecad6e0d9a130399df5"><div>
+			          <section class="m-doc-details" id="a764686c711c723c276852d992c63a0f3"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">uint32_t core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5fae881382769ecad6e0d9a130399df5" class="m-doc-self">instances</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">uint32_t core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a764686c711c723c276852d992c63a0f3" class="m-doc-self">instances</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
               <h3>Brief</h3>
               <p>returns the instance count currently used for the given piece of geometry.</p>
@@ -369,9 +415,9 @@
               </tbody>
             </table>
           </div></section>
-			          <section class="m-doc-details" id="aba04dfd27354415184063649101f21dc"><div>
+			          <section class="m-doc-details" id="afdf8aec8257a97114c3a2255d3260bef"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">uint32_t core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aba04dfd27354415184063649101f21dc" class="m-doc-self">size</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">uint32_t core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afdf8aec8257a97114c3a2255d3260bef" class="m-doc-self">size</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
               <h3>Brief</h3>
               <p>returns how many instances are currently active for the given geometry.</p>
@@ -405,10 +451,10 @@
               </tbody>
             </table>
           </div></section>
-			          <section class="m-doc-details" id="ac70777d171058331ef47376935c6d337"><div>
+			          <section class="m-doc-details" id="a2dcd4040c7e0f65400ab1c17a5c22870"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac70777d171058331ef47376935c6d337" class="m-doc-self">release</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry,
-              uint32_t id) <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2dcd4040c7e0f65400ab1c17a5c22870" class="m-doc-self">release</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry,
+              <a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a> id) <span class="m-label m-success">noexcept</span></span></span>
             </h3>
               <h3>Brief</h3>
               <p>release the instance associated with the given ID and geometry</p>
@@ -452,18 +498,20 @@
               </tbody>
             </table>
           </div></section>
-			          <section class="m-doc-details" id="a25a25b3f113952ecc8b3d51341953cfb"><div>
+			          <section class="m-doc-details" id="ac3c6edd136410003fbe01e9507f5b561"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a25a25b3f113952ecc8b3d51341953cfb" class="m-doc-self">set</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry,
-              uint32_t id,
+              <span class="m-doc-wrap-bumper">bool core::<wbr />gfx::<wbr />bundle::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac3c6edd136410003fbe01e9507f5b561" class="m-doc-self">set</a>(</span><span class="m-doc-wrap"><a href="classcore_1_1resource_1_1tag.html" class="m-doc">core::<wbr />resource::<wbr />tag</a>&lt;<a href="classcore_1_1gfx_1_1geometry__t.html" class="m-doc">core::<wbr />gfx::<wbr />geometry_t</a>&gt; geometry,
+              std::span&lt;<a href="namespacecore_1_1gfx.html#a5700867ab929910ebd478429cb0a8154" class="m-doc">instancing_<wbr />size_<wbr />type</a> const&gt; ids,
               <a href="namespacepsl.html#a410ffef54619c8dff3cdf8bd46755632" class="m-doc">psl::<wbr />string_view</a> name,
-              const <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;T&gt;&amp; values)</span></span>
+              <a href="namespacepsl.html#a609e5ab943426dc775d70f8136eccd7f" class="m-doc">psl::<wbr />array</a>&lt;T&gt; values)</span></span>
             </h3>
               <h3>Brief</h3>
-              <p>set instance data for the given instance (and range)</p>
+              <p>set instance data for the given instances</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-danger"><h4>Warning</h4><p>This method is not thread safe, and should be externally synchronized.</p></aside></p>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr><th colspan="2">Parameters</th></tr>
@@ -474,8 +522,8 @@
                   <td>target UID</td>
                 </tr>
                 <tr>
-                  <td>id&nbsp;<span class="m-label m-flat m-info">in</span></td>
-                  <td>first instance ID</td>
+                  <td>ids&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>instance IDs</td>
                 </tr>
                 <tr>
                   <td>name&nbsp;<span class="m-label m-flat m-info">in</span></td>

@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl.html">develop</option><option value="../jdl/remove-psl-source-location/namespacepsl.html">jdl/remove-psl-source-location</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../develop/namespacepsl.html">develop</option></select></li>
           </ol>
         </div>
       </div>
@@ -308,7 +308,7 @@
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc">fatal</a>                </div>
+                  <span class="m-doc-wrap-bumper"><a href="#a177b9cd988462359fd68d4e405fb61cd" class="m-doc">fatal</a>                </div>
                 <div class="m-entry">Similar to std::terminate, but additionally prints a message and location.</div>
                 <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
@@ -316,7 +316,7 @@
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc">fatal</a></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a177b9cd988462359fd68d4e405fb61cd" class="m-doc">fatal</a></div>
                   <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
 </span></div>
                 </div>
@@ -334,8 +334,8 @@
                 </div>            
                 <div class="m-entry-row flex">
                   <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">loc</div>
-                  <div class="m-entry">const <a href="namespacepsl.html#ae1469ff8161e2df4634dda9ad2af73a6" class="m-doc">psl::<wbr />source_location</a>&amp;</div>
-                  <div class="m-entry right_align">= psl::source_location::current()</div>
+                  <div class="m-entry">const std::source_location&amp;</div>
+                  <div class="m-entry right_align">= std::source_location::current()</div>
                 </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
@@ -1168,10 +1168,10 @@
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a2b81a3646d5efd6595bc3dce8965b844"><div>
+          <section class="m-doc-details" id="a177b9cd988462359fd68d4e405fb61cd"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2b81a3646d5efd6595bc3dce8965b844" class="m-doc-self">fatal</a>(</span><span class="m-doc-wrap">auto const&amp; reason = &quot;&quot;,
-              const <a href="namespacepsl.html#ae1469ff8161e2df4634dda9ad2af73a6" class="m-doc">psl::<wbr />source_location</a>&amp; loc = psl::source_location::current())</span></span>
+              <span class="m-doc-wrap-bumper">void psl::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a177b9cd988462359fd68d4e405fb61cd" class="m-doc-self">fatal</a>(</span><span class="m-doc-wrap">auto const&amp; reason = &quot;&quot;,
+              const std::source_location&amp; loc = std::source_location::current())</span></span>
             </h3>
               <h3>Brief</h3>
               <p>Similar to std::terminate, but additionally prints a message and location.</p>

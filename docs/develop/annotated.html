@@ -83,7 +83,13 @@
               <li class="m-doc-collapsible collapsed">
                 <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">All ECS related implementations.</span>
                 <ul class="m-doc">
-                  <li> <a href="namespacecore_1_1ecs_1_1components.html" class="m-doc namespace">components</a> <span class="m-doc">ECS Components.</span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs_1_1components.html" class="m-doc namespace">components</a> <span class="m-doc">ECS Components.</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1ecs_1_1components_1_1transform__instance__data__tag.html" class="m-doc struct">transform_instance_data_tag</a> <span class="m-doc">Tag that indicates we should upload the transform instance data for this renderable.</span></li>
+                      <li> <a href="structcore_1_1ecs_1_1components_1_1transform__instance__object__model__tag.html" class="m-doc struct">transform_instance_object_model_tag</a> <span class="m-doc">Tag that indicates we should upload the transform instance object model data for this renderable.</span></li>
+                    </ul>
+                  </li>
                   <li> <a href="namespacecore_1_1ecs_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">ECS Systems.</span></li>
                 </ul>
               </li>
@@ -197,6 +203,7 @@
                       <li> <a href="structpsl_1_1ecs_1_1details_1_1mutate__instruction__t.html" class="m-doc struct">mutate_instruction_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Wrapper around a component type to allow for mutations of the given component.</span></li>
                     </ul>
                   </li>
+                  <li> <a href="classpsl_1_1ecs_1_1accessor.html" class="m-doc class">accessor</a> <span class="m-doc">A helper class to construct and assign components in case they have private constructors or assignment operators.</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1component__trait__name__t.html" class="m-doc struct">component_trait_name_t</a> <span class="m-doc">specialize this trait to change the serialization name of a component (also includes the debug name)</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1component__trait__serializable__t.html" class="m-doc struct">component_trait_serializable_t</a> <span class="m-doc">controls wether a component can be serialized</span></li>
                   <li> <a href="structpsl_1_1ecs_1_1component__trait__version__t.html" class="m-doc struct">component_trait_version_t</a> <span class="m-doc">allows you to inject a version tag for a given component</span></li>

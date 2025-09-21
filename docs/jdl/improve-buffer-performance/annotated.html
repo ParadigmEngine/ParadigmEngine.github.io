@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html" id="m-navbar-current">classes</a></li>
+            <li><a href="files.html">files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/improve-buffer-performance/annotated.html">jdl/improve-buffer-performance</option></select></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>classes</h1>
+        <ul class="m-doc">
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)"></a><a href="namespacecore.html" class="m-doc namespace">core</a> <span class="m-doc">the engine core, here all graphics resources and render operations are described.</span>
+            <ul class="m-doc">
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1data.html" class="m-doc namespace">data</a> <span class="m-doc">contains all data types that can be serialized to/from disk.</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1data_1_1buffer__t.html" class="m-doc class">buffer_t</a> <span class="m-doc">container class for GPU data.</span></li>
+                  <li> <a href="classcore_1_1data_1_1clear__value.html" class="m-doc class">clear_value</a> <span class="m-doc">typesafe alternative to vk::ClearValue</span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1data_1_1framebuffer__t.html" class="m-doc class">framebuffer_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">container class that describes the data to create a set of rendertargets.</span>
+                    <ul class="m-doc">
+                      <li class="m-doc-collapsible collapsed">
+                        <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1data_1_1framebuffer__t_1_1attachment.html" class="m-doc class">attachment</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">describes a single rendertarget in a framebuffer.</span>
+                        <ul class="m-doc">
+                          <li> <a href="classcore_1_1data_1_1framebuffer__t_1_1attachment_1_1description.html" class="m-doc class">description</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">describes how the rendertarget should be loaded, stored, it&#x27;s sample count, and what transition layouts it should go through.</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1data_1_1geometry__t.html" class="m-doc class">geometry_t</a> <span class="m-doc">describes a stream of data that will be uploaded to the GPU as geometry data.</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1data_1_1geometry__t_1_1constants.html" class="m-doc struct">constants</a> <span class="m-doc">contains globally pre-defined keys for common streams that most engines have.</span></li>
+                    </ul>
+                  </li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1data_1_1material__t.html" class="m-doc class">material_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Describes a collection of resources that can be used to initialize a <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc">core::<wbr />ivk::<wbr />material_t</a>.</span>
+                    <ul class="m-doc">
+                      <li> <a href="classcore_1_1data_1_1material__t_1_1blendstate.html" class="m-doc class">blendstate</a> <span class="m-doc">describes the blend operation (source/destination) per color component in the render operation.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="classcore_1_1data_1_1sampler__t.html" class="m-doc class">sampler_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">describes the data to build a <a href="classcore_1_1ivk_1_1sampler__t.html" class="m-doc">core::<wbr />ivk::<wbr />sampler_t</a> instance</span></li>
+                  <li> <a href="classcore_1_1data_1_1window.html" class="m-doc class">window</a> <span class="m-doc">contains the data to initialize a <a href="classcore_1_1os_1_1surface.html" class="m-doc">core::<wbr />os::<wbr />surface</a></span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">All ECS related implementations.</span>
+                <ul class="m-doc">
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ecs_1_1components.html" class="m-doc namespace">components</a> <span class="m-doc">ECS Components.</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1ecs_1_1components_1_1transform__instance__data__tag.html" class="m-doc struct">transform_instance_data_tag</a> <span class="m-doc">Tag that indicates we should upload the transform instance data for this renderable.</span></li>
+                      <li> <a href="structcore_1_1ecs_1_1components_1_1transform__instance__object__model__tag.html" class="m-doc struct">transform_instance_object_model_tag</a> <span class="m-doc">Tag that indicates we should upload the transform instance object model data for this renderable.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="namespacecore_1_1ecs_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">ECS Systems.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1gfx.html" class="m-doc namespace">gfx</a> <span class="m-doc">namespace that deals with the abstract render objects</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1gfx_1_1bundle.html" class="m-doc class">bundle</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc"></span></li>
+                  <li> <a href="structcore_1_1gfx_1_1commit__instruction.html" class="m-doc struct">commit_instruction</a> <span class="m-doc">description of a memory commit instruction. Tries to offer some safer mechanisms.</span></li>
+                  <li> <a href="classcore_1_1gfx_1_1computepass.html" class="m-doc class">computepass</a> <span class="m-doc">describes a compute stage in the <a href="classcore_1_1gfx_1_1render__graph.html" class="m-doc">render_<wbr />graph</a></span></li>
+                  <li> <a href="classcore_1_1gfx_1_1drawgroup.html" class="m-doc class">drawgroup</a> <span class="m-doc">a collection of draw instructions to be recorded and sent to the GPU.</span></li>
+                  <li> <a href="classcore_1_1gfx_1_1render__graph.html" class="m-doc class">render_graph</a> <span class="m-doc">Describes a fully contained set of graphics instructions \detail A rendergraph allows you to connect the various draw/compute-passes and describe their interdependencies so that it can organize their invocations in a safe manner.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1igles.html" class="m-doc namespace">igles</a> <span class="m-doc">OpenGLES API abstraction.</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1igles_1_1compute.html" class="m-doc class">compute</a> <span class="m-doc"><a href="classcore_1_1igles_1_1material__t.html" class="m-doc">core::<wbr />igles::<wbr />material_t</a>-like object for compute resources</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1ivk.html" class="m-doc namespace">ivk</a> <span class="m-doc">deals with all objects that are directly mapped to vulkan objects (i.e. they have internal vulkan concepts in them)</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1ivk_1_1buffer__t.html" class="m-doc class">buffer_t</a> <span class="m-doc">maps a memory region and interfaces with the driver for read/writes</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1context.html" class="m-doc class">context</a> <span class="m-doc">encapsulated a graphics context.</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1drawpass.html" class="m-doc class">drawpass</a> <span class="m-doc">a pass describes a start-to-finish sequence of commands to render into a set of rendertargets.</span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1ivk_1_1framebuffer__t.html" class="m-doc class">framebuffer_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">describes a set of images to use as rendertargets</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1ivk_1_1framebuffer__t_1_1binding.html" class="m-doc struct">binding</a> <span class="m-doc">describes a single binding point (can be many) in a framebuffer.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="classcore_1_1ivk_1_1geometry__t.html" class="m-doc class">geometry_t</a> <span class="m-doc">describes the driver visible concept of geometry.</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1material__t.html" class="m-doc class">material_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">class that creates a bindable collection of resources that can be used in conjuction with a surface to render.</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1pipeline.html" class="m-doc class">pipeline</a> <span class="m-doc">encapsulated the concept of a graphics pipeline on the GPU</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1pipeline__cache.html" class="m-doc class">pipeline_cache</a> <span class="m-doc">the pipeline cache allows sharing of pipelines between various materials.</span></li>
+                  <li> <a href="structcore_1_1ivk_1_1pipeline__key.html" class="m-doc struct">pipeline_key</a> <span class="m-doc">the pipeline key creates a hash of the important elements of a vk::Pipeline</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1sampler__t.html" class="m-doc class">sampler_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">sampler object for texture filtering and lookups</span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1ivk_1_1shader.html" class="m-doc class">shader</a> <span class="m-doc">creates a shader object from a SPIR-V module</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1ivk_1_1shader_1_1specialization.html" class="m-doc struct">specialization</a> <span class="m-doc">contains the specialization info that might be used by the shader.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="classcore_1_1ivk_1_1swapchain.html" class="m-doc class">swapchain</a> <span class="m-doc">describes a framebuffer that is specially handled and created by the driver</span></li>
+                  <li> <a href="classcore_1_1ivk_1_1texture__t.html" class="m-doc class">texture_t</a> <span class="m-doc">a texture resource used for rendering, either as target, or as input resource.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1meta.html" class="m-doc namespace">meta</a> <span class="m-doc">contains all extensions to the <a href="namespacepsl_1_1meta.html" class="m-doc">psl::<wbr />meta</a> namespace.</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1meta_1_1shader.html" class="m-doc class">shader</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">contains extensions for meta data when loading shader files.</span></li>
+                  <li> <a href="classcore_1_1meta_1_1texture__t.html" class="m-doc class">texture_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Custom meta data that describes a texture. i.e. width, height, format, etc..</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1os.html" class="m-doc namespace">os</a> <span class="m-doc">specific OS wrappers and resources.</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1os_1_1surface.html" class="m-doc class">surface</a> <span class="m-doc">primitive object that create a surface we can render on.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1resource.html" class="m-doc namespace">resource</a> <span class="m-doc">deals with resource creation, tracking, and managing.</span>
+                <ul class="m-doc">
+                  <li> <a href="classcore_1_1resource_1_1handle.html" class="m-doc class">handle</a> <span class="m-doc">wraps around a resource for sharing and management purposes.</span></li>
+                  <li> <a href="structcore_1_1resource_1_1metadata.html" class="m-doc struct">metadata</a> <span class="m-doc">represents a container of resources and their UID mappings</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacecore_1_1systems.html" class="m-doc namespace">systems</a> <span class="m-doc">contains systems that are responsible for handling certain aspects (audio, input, physics, etc..).</span>
+                <ul class="m-doc">
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classcore_1_1systems_1_1input.html" class="m-doc class">input</a> <span class="m-doc">handles all inputs and sends out generic events that can be subscribed to.</span>
+                    <ul class="m-doc">
+                      <li> <a href="structcore_1_1systems_1_1input_1_1mouse__coordinate.html" class="m-doc struct">mouse_coordinate</a> <span class="m-doc">absolute mouse coordinates that also contain the surface width/height.</span></li>
+                      <li> <a href="structcore_1_1systems_1_1input_1_1mouse__delta.html" class="m-doc struct">mouse_delta</a> <span class="m-doc">contains the mouse delta coordinates in respect to the last message tick.</span></li>
+                      <li> <a href="structcore_1_1systems_1_1input_1_1scroll__delta.html" class="m-doc struct">scroll_delta</a> <span class="m-doc">delta information for the mouse scroll wheel.</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li> <a href="classcore_1_1vertex__stream__t.html" class="m-doc class">vertex_stream_t</a> <span class="m-doc"><a href="classcore_1_1vertex__stream__t.html" class="m-doc">vertex_<wbr />stream_<wbr />t</a> contains a type erased &quot;stream&quot; of memory with basic facilities to protect it from incorrect casts.</span></li>
+            </ul>
+          </li>
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)"></a><a href="namespacememory.html" class="m-doc namespace">memory</a> <span class="m-doc">this namespace contains types and utilities for managing regions of memory</span>
+            <ul class="m-doc">
+              <li> <a href="classmemory_1_1allocator__base.html" class="m-doc class">allocator_base</a> <span class="m-doc">base class that defines the interface for an allocator.</span></li>
+              <li> <a href="classmemory_1_1block__allocator.html" class="m-doc class">block_allocator</a> <span class="m-doc">predifined block size allocator, much faster than most allocators, but can only allocate one sized blocks.</span></li>
+              <li> <a href="classmemory_1_1default__allocator.html" class="m-doc class">default_allocator</a> <span class="m-doc">default allocator that internally works using lists</span></li>
+              <li> <a href="classmemory_1_1range__t.html" class="m-doc class">range_t</a> <span class="m-doc">defines a begin/end location in (virtual) memory (in respect to the region, or segment).</span></li>
+              <li> <a href="classmemory_1_1region.html" class="m-doc class">region</a> <span class="m-doc">defines a region of memory that <em>might</em> be physically backed depending on the allocator.</span></li>
+              <li> <a href="classmemory_1_1segment.html" class="m-doc class">segment</a> <span class="m-doc">a segment defines a addressable and mapped region of memory.</span></li>
+              <li> <a href="classmemory_1_1sparse__array.html" class="m-doc class">sparse_array</a> <span class="m-doc">container type that is fast to iterate, but has non-continuous interface</span></li>
+            </ul>
+          </li>
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl.html" class="m-doc namespace">psl</a> <span class="m-doc">paradigm standard library</span>
+            <ul class="m-doc">
+              <li> <a href="namespacepsl_1_1concepts.html" class="m-doc namespace">concepts</a> <span class="m-doc">Utility concepts.</span></li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1ecs.html" class="m-doc namespace">ecs</a> <span class="m-doc">Entity Component System.</span>
+                <ul class="m-doc">
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1ecs_1_1details.html" class="m-doc namespace">details</a> <span class="m-doc">Private implementation details for the ECS.</span>
+                    <ul class="m-doc">
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1component__container__t.html" class="m-doc class">component_container_t</a> <span class="m-doc">implementation detail that stores the component data</span></li>
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html" class="m-doc class">component_key_t</a> <span class="m-doc">Container type for unique component types. These should be construced using the <code><a href="classpsl_1_1ecs_1_1details_1_1component__key__t.html#a67a17f8097ce68e99fc7a80bb5462335" class="m-doc">component_key_t::<wbr />generate</a></code> helper function.</span></li>
+                      <li> <a href="structpsl_1_1ecs_1_1details_1_1component__type__info__t.html" class="m-doc struct">component_type_info_t</a> <span class="m-doc">collects all handy information we need of a component both for identification purposes, and for safe de/serialization</span></li>
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc class">dependency_pack</a> <span class="m-doc">describes a set of dependencies for a given system</span></li>
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1entity__relationship__handler__t.html" class="m-doc class">entity_relationship_handler_t</a> <span class="m-doc">A null implementation of the entity relationship handler.</span></li>
+                      <li> <a href="structpsl_1_1ecs_1_1details_1_1mutate__instruction__t.html" class="m-doc struct">mutate_instruction_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Wrapper around a component type to allow for mutations of the given component.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="classpsl_1_1ecs_1_1accessor.html" class="m-doc class">accessor</a> <span class="m-doc">A helper class to construct and assign components in case they have private constructors or assignment operators.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1component__trait__name__t.html" class="m-doc struct">component_trait_name_t</a> <span class="m-doc">specialize this trait to change the serialization name of a component (also includes the debug name)</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1component__trait__serializable__t.html" class="m-doc struct">component_trait_serializable_t</a> <span class="m-doc">controls wether a component can be serialized</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1component__trait__version__t.html" class="m-doc struct">component_trait_version_t</a> <span class="m-doc">allows you to inject a version tag for a given component</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1direct__t.html" class="m-doc struct">direct_t</a> <span class="m-doc">Guarantees direct access to the underlying data.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1empty.html" class="m-doc struct">empty</a> <span class="m-doc">tag type to circumvent constructing an object in the backing data</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1entity__t.html" class="m-doc struct">entity_t</a> <span class="m-doc">entity points to a collection of components</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1except.html" class="m-doc struct">except</a> <span class="m-doc">tag that disallows a certain component to be present on the given entity.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1filter.html" class="m-doc struct">filter</a> <span class="m-doc">tag allows you to filter on sets of components</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1full__t.html" class="m-doc struct">full_t</a> <span class="m-doc">requires a pack to be whole when filled in</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1indirect__t.html" class="m-doc struct">indirect_t</a> <span class="m-doc">The data is not optimized for direct access.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc struct">on_add</a> <span class="m-doc">tag that allows you to select entities (and components) that have recently added the given component type</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__break.html" class="m-doc struct">on_break</a> <span class="m-doc">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc">on_<wbr />remove</a></code></span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__combine.html" class="m-doc struct">on_combine</a> <span class="m-doc">specialized tag of <code><a href="structpsl_1_1ecs_1_1on__add.html" class="m-doc">on_<wbr />add</a></code></span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__hierarchy__change.html" class="m-doc struct">on_hierarchy_change</a> <span class="m-doc">tag that allows you to filter based on hierarchy changes</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__mutate.html" class="m-doc struct">on_mutate</a> <span class="m-doc">tag that allows you to filter based on if a restricted mutability component has been mutated</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1on__remove.html" class="m-doc struct">on_remove</a> <span class="m-doc">tag that allows you to listen to the event of a component of the given type being removed.</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1partial__t.html" class="m-doc struct">partial_t</a> <span class="m-doc">allows packs to exist in a partial state</span></li>
+                  <li> <a href="structpsl_1_1ecs_1_1preseed__tag.html" class="m-doc struct">preseed_tag</a> <span class="m-doc">tag to indicate the ecs to preseed the pack with all entities</span></li>
+                </ul>
+              </li>
+              <li> <a href="namespacepsl_1_1math.html" class="m-doc namespace">math</a> <span class="m-doc">conversions</span></li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1meta.html" class="m-doc namespace">meta</a> <span class="m-doc">contains utilities to identify types and instances at runtime and on disk.</span>
+                <ul class="m-doc">
+                  <li> <a href="classpsl_1_1meta_1_1file.html" class="m-doc class">file</a> <span class="m-doc">disk-based representation of a runtime instance.</span></li>
+                  <li> <a href="classpsl_1_1meta_1_1library.html" class="m-doc class">library</a> <span class="m-doc">container class for <a href="classpsl_1_1meta_1_1file.html" class="m-doc">meta::<wbr />file</a>&#x27;s</span></li>
+                </ul>
+              </li>
+              <li> <a href="namespacepsl_1_1string16.html" class="m-doc namespace">string16</a> <span class="m-doc">UTF-16 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+              <li> <a href="namespacepsl_1_1string32.html" class="m-doc namespace">string32</a> <span class="m-doc">UTF-32 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+              <li> <a href="namespacepsl_1_1string8.html" class="m-doc namespace">string8</a> <span class="m-doc">UTF-8 class namespace that contains the typedefs for the string objects, as well as helper methods.</span></li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1utility.html" class="m-doc namespace">utility</a> <span class="m-doc">this namespace contains various helper utilities to aid you.</span>
+                <ul class="m-doc">
+                  <li> <a href="namespacepsl_1_1utility_1_1binary.html" class="m-doc namespace">binary</a> <span class="m-doc">contains various utilities in helping you to convert to, and from a byte stream.</span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="namespacepsl_1_1utility_1_1platform.html" class="m-doc namespace">platform</a> <span class="m-doc">platform specific utilities that help in identifying the current platform, and various specifications of it.</span>
+                    <ul class="m-doc">
+                      <li> <a href="namespacepsl_1_1utility_1_1platform_1_1file.html" class="m-doc namespace">file</a> <span class="m-doc">file i/o and manpulations utilities namespace</span></li>
+                      <li> <a href="classpsl_1_1utility_1_1platform_1_1directory.html" class="m-doc class">directory</a> <span class="m-doc">helper class that contains directory specific I/O manipulation methods and platform utilities.</span></li>
+                      <li> <a href="classpsl_1_1utility_1_1platform_1_1os.html" class="m-doc class">os</a> <span class="m-doc">OS specific utility functions.</span></li>
+                    </ul>
+                  </li>
+                  <li> <a href="namespacepsl_1_1utility_1_1string.html" class="m-doc namespace">string</a> <span class="m-doc">utility namespace to deal with <a href="namespacepsl.html#a5d21cdbe1f2c04b94b2a4674de0f5fde" class="m-doc">psl::<wbr />string</a> operations.</span></li>
+                  <li> <a href="namespacepsl_1_1utility_1_1templates.html" class="m-doc namespace">templates</a> <span class="m-doc"></span></li>
+                  <li class="m-doc-collapsible collapsed">
+                    <a href="#" onclick="return toggle(this)"></a><a href="classpsl_1_1utility_1_1debug.html" class="m-doc class">debug</a> <span class="m-doc">contains some debug information, such as trace information, as well as utilities to debug.</span>
+                    <ul class="m-doc">
+                      <li> <a href="structpsl_1_1utility_1_1debug_1_1trace__info.html" class="m-doc struct">trace_info</a> <span class="m-doc">contains the structure of a trace</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li> <a href="classpsl_1_1sparse__array.html" class="m-doc class">sparse_array</a> <span class="m-doc">A sparse array implementation that provides a mapping between user provided keys and a dense storage of values.</span></li>
+              <li> <a href="classpsl_1_1static__ring__array.html" class="m-doc class">static_ring_array</a> <span class="m-doc">a deque-like interface implemented as an std::array&lt;T, N&gt; under the hood</span></li>
+              <li class="m-doc-collapsible collapsed">
+                <a href="#" onclick="return toggle(this)"></a><a href="classpsl_1_1thread__safety__guard__t.html" class="m-doc class">thread_safety_guard_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">A thread safety guard that can be used to ensure that a certain scope is only accessed by a single thread at a time.</span>
+                <ul class="m-doc">
+                  <li> <a href="classpsl_1_1thread__safety__guard__t_1_1scoped__guard__t.html" class="m-doc class">scoped_guard_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">A scoped guard that ensures that the current thread is the only one accessing the guarded scope.</span></li>
+                </ul>
+              </li>
+              <li> <a href="structpsl_1_1_u_i_d.html" class="m-doc struct">UID</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">is an object holding a Unique IDentifier (<a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>)</span></li>
+              <li> <a href="classpsl_1_1view__ptr.html" class="m-doc class">view_ptr</a> <span class="m-doc">a non-owning &#x27;smart&#x27; pointer type</span></li>
+            </ul>
+          </li>
+          <li> <a href="namespacestd.html" class="m-doc namespace">std</a> <span class="m-doc">STL namespace.</span></li>
+          <li> <a href="classspdlogbuf.html" class="m-doc class">spdlogbuf</a> <span class="m-doc">A custom streambuf that intercepts the std::cout and redirects it to the spdlog logger.</span></li>
+        </ul>
+        <script>
+        function toggle(e) {
+            e.parentElement.className = e.parentElement.className == 'm-doc-collapsible' ?
+                'm-doc-expansible' : 'm-doc-collapsible';
+            return false;
+        }
+        /* Collapse all nodes marked as such. Doing it via JS instead of
+           directly in markup so disabling it doesn't harm usability. The list
+           is somehow regenerated on every iteration and shrinks as I change
+           the classes. It's not documented anywhere and I'm not sure if this
+           is the same across browsers, so I am going backwards in that list to
+           be sure. */
+        var collapsed = document.getElementsByClassName("collapsed");
+        for(var i = collapsed.length - 1; i >= 0; --i)
+            collapsed[i].className = 'm-doc-expansible';
+        </script>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

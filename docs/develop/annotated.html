@@ -201,6 +201,7 @@
                       <li> <a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc class">dependency_pack</a> <span class="m-doc">describes a set of dependencies for a given system</span></li>
                       <li> <a href="classpsl_1_1ecs_1_1details_1_1entity__relationship__handler__t.html" class="m-doc class">entity_relationship_handler_t</a> <span class="m-doc">A null implementation of the entity relationship handler.</span></li>
                       <li> <a href="structpsl_1_1ecs_1_1details_1_1mutate__instruction__t.html" class="m-doc struct">mutate_instruction_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Wrapper around a component type to allow for mutations of the given component.</span></li>
+                      <li> <a href="classpsl_1_1ecs_1_1details_1_1system__scheduler__t.html" class="m-doc class">system_scheduler_t</a> <span class="m-doc">Manages the scheduling of systems which are ready to be executed. This scheduler is responsible for ensuring that systems are executed. Internally it will make sure that the system has enough cache to be scheduled, and that the components it has need for are not being used by other systems. If that&#x27;s the case it will immediately run the system on the calling thread. Otherwise it will store the system as a pending task, and once resources are freed up the scheduler will check the pending tasks and try to execute them.</span></li>
                     </ul>
                   </li>
                   <li> <a href="classpsl_1_1ecs_1_1accessor.html" class="m-doc class">accessor</a> <span class="m-doc">A helper class to construct and assign components in case they have private constructors or assignment operators.</span></li>
@@ -265,6 +266,7 @@
                   <li> <a href="classpsl_1_1thread__safety__guard__t_1_1scoped__guard__t.html" class="m-doc class">scoped_guard_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">A scoped guard that ensures that the current thread is the only one accessing the guarded scope.</span></li>
                 </ul>
               </li>
+              <li> <a href="classpsl_1_1thread__safety__noop__guard__t.html" class="m-doc class">thread_safety_noop_guard_t</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">A thread safety guard that does nothing. Mirrors the interface of <a href="classpsl_1_1thread__safety__guard__t.html" class="m-doc">thread_<wbr />safety_<wbr />guard_<wbr />t</a>.</span></li>
               <li> <a href="structpsl_1_1_u_i_d.html" class="m-doc struct">UID</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">is an object holding a Unique IDentifier (<a href="structpsl_1_1_u_i_d.html" class="m-doc">UID</a>)</span></li>
               <li> <a href="classpsl_1_1view__ptr.html" class="m-doc class">view_ptr</a> <span class="m-doc">a non-owning &#x27;smart&#x27; pointer type</span></li>
             </ul>

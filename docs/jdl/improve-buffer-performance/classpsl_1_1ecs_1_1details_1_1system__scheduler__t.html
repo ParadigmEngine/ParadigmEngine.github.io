@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>psl::ecs::details::dependency_pack class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <title>psl::ecs::details::system_scheduler_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -32,7 +32,7 @@
             <li><a href="files.html">files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
               <use href="#m-doc-search-icon-path" />
-            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/improve-buffer-performance/classpsl_1_1ecs_1_1details_1_1dependency__pack.html">jdl/improve-buffer-performance</option></select></li>
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/improve-buffer-performance/classpsl_1_1ecs_1_1details_1_1system__scheduler__t.html">jdl/improve-buffer-performance</option></select></li>
           </ol>
         </div>
       </div>
@@ -44,9 +44,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs_1_1details.html">details</a>::<wbr/></span>dependency_pack <span class="m-thin">class</span>
+          <span class="m-breadcrumb"><a href="namespacepsl.html">psl</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs.html">ecs</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacepsl_1_1ecs_1_1details.html">details</a>::<wbr/></span>system_scheduler_t <span class="m-thin">class</span>
         </h1>
-        <p>describes a set of dependencies for a given system</p>
+        <p>Manages the scheduling of systems which are ready to be executed. This scheduler is responsible for ensuring that systems are executed. Internally it will make sure that the system has enough cache to be scheduled, and that the components it has need for are not being used by other systems. If that&#x27;s the case it will immediately run the system on the calling thread. Otherwise it will store the system as a pending task, and once resources are freed up the scheduler will check the pending tasks and try to execute them.</p>
         
         <nav class="m-block m-default">
           <h3>content</h3>
@@ -54,44 +54,83 @@
             <li><a href="#member-functions">member functions</a></li>
           </ul>
         </nav>
-<p>systems can have various dependencies, for example a movement system could have dependencies on both a psl::ecs::components::transform component and a psl::ecs::components::renderable component. This dependency will output a set of <a href="structpsl_1_1ecs_1_1entity__t.html" class="m-doc">psl::<wbr />ecs::<wbr />entity_t</a>&#x27;s that have all required psl::ecs::components present. Certain systems could have sets of dependencies, for example the render system requires knowing about both all <code>psl::ecs::components::renderable</code> that have a <code>psl::ecs::components::transform</code>, but also needs to know all <code>psl::ecs::components::camera&#x27;s</code>. So that system would require several <a href="classpsl_1_1ecs_1_1details_1_1dependency__pack.html" class="m-doc">dependency_<wbr />pack</a>&#x27;s.</p>
         <section id="member-functions">
           <h2><a href="#member-functions">member-functions</a></h2>
           <dl class="m-doc">
 	<table style="width:100%">
 	<tr>
 	            
-            <div class="m-entry-container hoverable" id="abee73dc3b3039447554d9f998afe829d">
+            <div class="m-entry-container hoverable">
               <div class="m-entry-row flex" id="brief">
                 <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
                 <div class="m-entry header">
-                  <span class="m-doc-wrap-bumper">align_of_first_binding                </div>
-                <div class="m-entry">used in conjunction with size_per_element to determine the overall alignment of a packed array so we can safely allocate memory for it.</div>
-                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                  <span class="m-doc-wrap-bumper"><a href="#ad6ae7699a1db6d8212e9a524ea46b75d" class="m-doc">execute</a>                </div>
+                <div class="m-entry">Schedules a system for execution, if it cannot be executed immediately it will be stored as a pending task.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
               </div>
               <div class="m-entry-row flex collapsed" id="expanded">
                 <div class="m-entry-row flex">
                   <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
-                  <div class="m-entry header" style="width: auto;max-width: unset;">align_of_first_binding</div>
-                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
- <span class="m-label m-flat m-noexcept">noexcept</span></span></div>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad6ae7699a1db6d8212e9a524ea46b75d" class="m-doc">execute</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
                 </div>
                 <div class="m-entry-row">
                 </div>
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
-                  <div class="m-entry">size_t</div>
+                  <div class="m-entry">void</div>
                 </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">id</div>
+                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1system__token.html" class="m-doc">system_<wbr />token</a></div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">system</div>
+                  <div class="m-entry"><a href="classpsl_1_1ecs_1_1details_1_1system__information.html" class="m-doc">system_<wbr />information</a>*</div>
+                </div>            
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">filters</div>
+                  <div class="m-entry">std::vector&lt;<a href="structpsl_1_1ecs_1_1details_1_1filter__task__result__t.html" class="m-doc">filter_<wbr />task_<wbr />result_<wbr />t</a>*&gt;</div>
+                  <div class="m-entry right_align">= {}</div>
+                </div>            
                 <div class="m-entry-row">
                   <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
-                  <div class="m-entry">used in conjunction with size_per_element to determine the overall alignment of a packed array so we can safely allocate memory for it.</div>
+                  <div class="m-entry">Schedules a system for execution, if it cannot be executed immediately it will be stored as a pending task.</div>
                 </div>
               </div>
             </div>
 	</tr>
 	</table>
           </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          
+          			          <section class="m-doc-details" id="ad6ae7699a1db6d8212e9a524ea46b75d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void psl::<wbr />ecs::<wbr />details::<wbr />system_scheduler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad6ae7699a1db6d8212e9a524ea46b75d" class="m-doc-self">execute</a>(</span><span class="m-doc-wrap"><a href="classpsl_1_1ecs_1_1details_1_1system__token.html" class="m-doc">system_<wbr />token</a> id,
+              <a href="classpsl_1_1ecs_1_1details_1_1system__information.html" class="m-doc">system_<wbr />information</a>* system,
+              std::vector&lt;<a href="structpsl_1_1ecs_1_1details_1_1filter__task__result__t.html" class="m-doc">filter_<wbr />task_<wbr />result_<wbr />t</a>*&gt; filters = {})</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>Schedules a system for execution, if it cannot be executed immediately it will be stored as a pending task.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>This function is thread-safe and can be called from any thread. Additionally the calling thread <em>might</em> be used to execute the system if possible.</p></aside></p>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </section>
       </div>
     </div>

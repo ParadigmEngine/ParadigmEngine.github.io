@@ -116,6 +116,15 @@
               </div>
             </div>
 	</tr>
+	<tr>
+	            <div class="m-entry-container hoverable" id="system_scheduler_t">
+              <div class="m-entry-row flex">
+                <div class="m-entry header"><a href="classpsl_1_1ecs_1_1details_1_1system__scheduler__t.html" class="m-doc">system_scheduler_t</a></div>
+                <div class="m-entry">Manages the scheduling of systems which are ready to be executed. This scheduler is responsible for ensuring that systems are executed. Internally it will make sure that the system has enough cache to be scheduled, and that the components it has need for are not being used by other systems. If that&#x27;s the case it will immediately run the system on the calling thread. Otherwise it will store the system as a pending task, and once resources are freed up the scheduler will check the pending tasks and try to execute them.</div>
+                <div class="m-entry modifiers"><span></span></div>
+              </div>
+            </div>
+	</tr>
 	</table>
 
           </dl>

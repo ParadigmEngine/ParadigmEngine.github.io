@@ -1,6 +1,6 @@
 {
     "branches": {
-        "develop": "af1a88d5d7ebf1049d285ac94e62a25f0958176c",
+        "develop": "2be8800a16c3b5e093f2407578579d13e86ee3b4",
         "feature/cppfront": "d516bb81caccb74a44abed908374e990d3dac9a4",
         "feature/format-parser-v2": "47deb0099368729e68165bc5fd9f536160c34233",
         "feature/new_format": "1781728a630b072d681a8161e4a939217c2d53f6",

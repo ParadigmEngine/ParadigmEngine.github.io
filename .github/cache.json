@@ -9,6 +9,7 @@
         "feature/wasm-ci-tests": "65f2a98462a3d7d5622bec9df97675b31979436b",
         "improve/android-app-sleep": "3f6db653442c03e14c4877a9ecd7acfb5fcacf9c",
         "jdl/bundle-instance-data-abstraction": "8ad7eb52217ffabaf20adc37b7465efcdb959c12",
+        "jdl/cmake-improvements": "7467fc90fe5851af3773e90b43ea91f2dbd2244d",
         "jdl/csharp-bindings": "823598c3ede755983ddfeb6bd352241c37d22572",
         "jdl/resource_rewrite": "c894b8a566f18f3d6f339bdbf3f69b4a477ff2ad"
     },

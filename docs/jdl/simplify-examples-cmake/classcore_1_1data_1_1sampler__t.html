@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>core::data::sampler_t class | Paradigm Engine C++20 Rendering Library & Toolchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Paradigm Engine <span class="m-thin">C++20 Rendering Library & Toolchain</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">pages</a></li>
+            <li><a href="namespaces.html">namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">classes</a></li>
+            <li><a href="files.html">files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li><li style="line-height: 2.5rem;"><select name="branch/tag" id="ref-select" onchange="location = this.value;" style="border-width: 0 0 0.25rem 0;"><option value="../../jdl/simplify-examples-cmake/classcore_1_1data_1_1sampler__t.html">jdl/simplify-examples-cmake</option><option value="../../jdl/enable-ci-examples/classcore_1_1data_1_1sampler__t.html">jdl/enable-ci-examples</option></select></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacecore.html">core</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecore_1_1data.html">data</a>::<wbr/></span>sampler_t <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
+        </h1>
+        <p>describes the data to build a <a href="classcore_1_1ivk_1_1sampler__t.html" class="m-doc">core::<wbr />ivk::<wbr />sampler_t</a> instance</p>
+        
+        <nav class="m-block m-default">
+          <h3>content</h3>
+          <ul>
+            <li><a href="#member-functions">member functions</a></li>
+          </ul>
+        </nav>
+        <section id="member-functions">
+          <h2><a href="#member-functions">member-functions</a></h2>
+          <dl class="m-doc">
+	<table style="width:100%">
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a99a4c1d2bcc15290d438b19f547497c1" class="m-doc">mipmaps</a>                </div>
+                <div class="m-entry">returns if mipmapping is enabled or not</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a99a4c1d2bcc15290d438b19f547497c1" class="m-doc">mipmaps</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns if mipmapping is enabled or not</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad254be2aa17fa473d9eb6a28420e2d8f" class="m-doc">mipmaps</a>                </div>
+                <div class="m-entry">enables or disables mipmapping on this sampler.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad254be2aa17fa473d9eb6a28420e2d8f" class="m-doc">mipmaps</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">bool</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">enables or disables mipmapping on this sampler.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8effea61912629b90bba6f483a7fc65e" class="m-doc">mip_bias</a>                </div>
+                <div class="m-entry">returns the mip_bias that might be present on this sampler.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8effea61912629b90bba6f483a7fc65e" class="m-doc">mip_bias</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">float</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the mip_bias that might be present on this sampler.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a0368167ed286f535ce7066b887838085" class="m-doc">mip_bias</a>                </div>
+                <div class="m-entry">sets the mip bias when sampling mipmaps.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a0368167ed286f535ce7066b887838085" class="m-doc">mip_bias</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the mip bias when sampling mipmaps.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a15261c7a4e1eb460bf578a19339b9fc7" class="m-doc">mip_mode</a>                </div>
+                <div class="m-entry">returns the mode for mipmap texture lookups.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a15261c7a4e1eb460bf578a19339b9fc7" class="m-doc">mip_mode</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#aed4ecae98e0bfbd106628120a165d9a8" class="m-doc">core::<wbr />gfx::<wbr />sampler_mipmap_mode</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the mode for mipmap texture lookups.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a195286f174e5947f0042f9c997423a84" class="m-doc">mip_mode</a>                </div>
+                <div class="m-entry">sets the mode for mipmap texture lookups.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a195286f174e5947f0042f9c997423a84" class="m-doc">mip_mode</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#aed4ecae98e0bfbd106628120a165d9a8" class="m-doc">core::<wbr />gfx::<wbr />sampler_mipmap_mode</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the mode for mipmap texture lookups.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a44b2d8b8491adb30aabcd0534d6938f0" class="m-doc">mip_minlod</a>                </div>
+                <div class="m-entry">returns the minimal mipmap LOD this instance has set.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a44b2d8b8491adb30aabcd0534d6938f0" class="m-doc">mip_minlod</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">float</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the minimal mipmap LOD this instance has set.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a5eb3f322de4a02f84f87b0b61ab738f4" class="m-doc">mip_minlod</a>                </div>
+                <div class="m-entry">sets the minimal mipmap LOD offset for this instance.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a5eb3f322de4a02f84f87b0b61ab738f4" class="m-doc">mip_minlod</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the minimal mipmap LOD offset for this instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ace67337e9b24c8dd56a522d32f77ca70" class="m-doc">mip_maxlod</a>                </div>
+                <div class="m-entry">returns the max mipmap LOD this instance has set.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ace67337e9b24c8dd56a522d32f77ca70" class="m-doc">mip_maxlod</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">float</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the max mipmap LOD this instance has set.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad2d81cf6cb28a272eacf0fbbf98b1b0e" class="m-doc">mip_maxlod</a>                </div>
+                <div class="m-entry">sets the minimal mipmap max LOD for this instance.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad2d81cf6cb28a272eacf0fbbf98b1b0e" class="m-doc">mip_maxlod</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the minimal mipmap max LOD for this instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a389bea496611d8bbebe7c39447745f14" class="m-doc">addressU</a>                </div>
+                <div class="m-entry">returns how this instances deals with texture tiling in the U-axis.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a389bea496611d8bbebe7c39447745f14" class="m-doc">addressU</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns how this instances deals with texture tiling in the U-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad1e49988b27d9d699c813cdd71ee529e" class="m-doc">addressU</a>                </div>
+                <div class="m-entry">sets how this instance should deal with texture tiling in the U-axis.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad1e49988b27d9d699c813cdd71ee529e" class="m-doc">addressU</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets how this instance should deal with texture tiling in the U-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a1da95da7879280c55166811f36c88af0" class="m-doc">addressV</a>                </div>
+                <div class="m-entry">returns how this instances deals with texture tiling in the V-axis.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a1da95da7879280c55166811f36c88af0" class="m-doc">addressV</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns how this instances deals with texture tiling in the V-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a3e2f8df44cef4d7d52104924d0b3f757" class="m-doc">addressV</a>                </div>
+                <div class="m-entry">sets how this instance should deal with texture tiling in the V-axis.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a3e2f8df44cef4d7d52104924d0b3f757" class="m-doc">addressV</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets how this instance should deal with texture tiling in the V-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a245249ae46a9a1ef00d576b387d3a6f9" class="m-doc">addressW</a>                </div>
+                <div class="m-entry">returns how this instances deals with texture tiling in the W-axis.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a245249ae46a9a1ef00d576b387d3a6f9" class="m-doc">addressW</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns how this instances deals with texture tiling in the W-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a4c101776de82fdf817906cc90d1f58bb" class="m-doc">addressW</a>                </div>
+                <div class="m-entry">sets how this instance should deal with texture tiling in the W-axis.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a4c101776de82fdf817906cc90d1f58bb" class="m-doc">addressW</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets how this instance should deal with texture tiling in the W-axis.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6d74233c5e92367a1343fa8d5985d9d3" class="m-doc">border_color</a>                </div>
+                <div class="m-entry">returns the border color that will be used during texture lookups.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6d74233c5e92367a1343fa8d5985d9d3" class="m-doc">border_color</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ada9246b9968c9b2b547313c1ed29e5e7" class="m-doc">core::<wbr />gfx::<wbr />border_color</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the border color that will be used during texture lookups.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a6f10ca85e2b9b6ef76ee99b37ff1bee3" class="m-doc">border_color</a>                </div>
+                <div class="m-entry">sets the border color that should be used during texture lookups.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a6f10ca85e2b9b6ef76ee99b37ff1bee3" class="m-doc">border_color</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#ada9246b9968c9b2b547313c1ed29e5e7" class="m-doc">core::<wbr />gfx::<wbr />border_color</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the border color that should be used during texture lookups.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#afadbce6da831055d2c609ced1ead86ed" class="m-doc">anisotropic_filtering</a>                </div>
+                <div class="m-entry">returns if anisotropic filtering is enabled.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#afadbce6da831055d2c609ced1ead86ed" class="m-doc">anisotropic_filtering</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns if anisotropic filtering is enabled.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a3ed49d83c248405f594f572fbb708cca" class="m-doc">anisotropic_filtering</a>                </div>
+                <div class="m-entry">call this to enable or disable anisotropic filtering.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a3ed49d83c248405f594f572fbb708cca" class="m-doc">anisotropic_filtering</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">bool</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">call this to enable or disable anisotropic filtering.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac7dfb67005aa203f296e3e576e315ec9" class="m-doc">max_anisotropy</a>                </div>
+                <div class="m-entry">returns the max anistropic value for this instance.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac7dfb67005aa203f296e3e576e315ec9" class="m-doc">max_anisotropy</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">float</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the max anistropic value for this instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ab23aa4a8d62db40d680dbce1c0e890c7" class="m-doc">max_anisotropy</a>                </div>
+                <div class="m-entry">sets the max anistropic value for this instance.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ab23aa4a8d62db40d680dbce1c0e890c7" class="m-doc">max_anisotropy</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">float</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the max anistropic value for this instance.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_mode</a>                </div>
+                <div class="m-entry">returns if compare operations have been enabled or not.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_mode</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns if compare operations have been enabled or not.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ad1534b0e40eb01cd61e1b6181eedc8ac" class="m-doc">compare_mode</a>                </div>
+                <div class="m-entry">enables or disables compare ops.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ad1534b0e40eb01cd61e1b6181eedc8ac" class="m-doc">compare_mode</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">bool</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">enables or disables compare ops.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a22cbd56ee7897e681e8d6fe8a19011ca" class="m-doc">compare_op</a>                </div>
+                <div class="m-entry">returns what compare op would be used if <a href="classcore_1_1data_1_1sampler__t.html#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_<wbr />mode()</a> is true.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a22cbd56ee7897e681e8d6fe8a19011ca" class="m-doc">compare_op</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a8866821c51fbf21e872fdb10244da13e" class="m-doc">core::<wbr />gfx::<wbr />compare_op</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns what compare op would be used if <a href="classcore_1_1data_1_1sampler__t.html#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_<wbr />mode()</a> is true.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aab7948823d39f7b057bd03a78df0f1da" class="m-doc">compare_op</a>                </div>
+                <div class="m-entry">sets the compare op to a new value.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aab7948823d39f7b057bd03a78df0f1da" class="m-doc">compare_op</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a8866821c51fbf21e872fdb10244da13e" class="m-doc">core::<wbr />gfx::<wbr />compare_op</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the compare op to a new value.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#ac4c54b94de7058efc5cba15dc5c1c6fc" class="m-doc">filter_min</a>                </div>
+                <div class="m-entry">returns the filtering mode to use when dealing with minification.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#ac4c54b94de7058efc5cba15dc5c1c6fc" class="m-doc">filter_min</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the filtering mode to use when dealing with minification.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a9f04ea7c197d542743dc093fd3191568" class="m-doc">filter_min</a>                </div>
+                <div class="m-entry">sets the filtering mode to use when dealing with minification.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a9f04ea7c197d542743dc093fd3191568" class="m-doc">filter_min</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the filtering mode to use when dealing with minification.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#aa6ed4ba35c21ce7fc44411485aa92965" class="m-doc">filter_max</a>                </div>
+                <div class="m-entry">returns the filtering mode to use when dealing with magnification.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#aa6ed4ba35c21ce7fc44411485aa92965" class="m-doc">filter_max</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a></div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns the filtering mode to use when dealing with magnification.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a1fa3a46c92a8f22417fb1df966370fdf" class="m-doc">filter_max</a>                </div>
+                <div class="m-entry">sets the filtering mode to use when dealing with magnification.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a1fa3a46c92a8f22417fb1df966370fdf" class="m-doc">filter_max</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a></div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">sets the filtering mode to use when dealing with magnification.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a95ff1293a765ba49a903232e0c399387" class="m-doc">normalized_coordinates</a>                </div>
+                <div class="m-entry">returns if the coordinates for this sampler will be normalized or not.</div>
+                <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a95ff1293a765ba49a903232e0c399387" class="m-doc">normalized_coordinates</a></div>
+                  <div class="m-entry modifiers"><span><span class="m-label m-flat m-const"> const</span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">bool</div>
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">returns if the coordinates for this sampler will be normalized or not.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	<tr>
+	            
+            <div class="m-entry-container-alternating hoverable">
+              <div class="m-entry-row flex" id="brief">
+                <button class="hiddenbutton" onclick="expandable_node(this.parentNode)"><i class="arrow right"></i></button>
+                <div class="m-entry header">
+                  <span class="m-doc-wrap-bumper"><a href="#a8a0797c16364d3462cb8df84bb86bcb5" class="m-doc">normalized_coordinates</a>                </div>
+                <div class="m-entry">enables or disables coordinate normalization when this sampler is used.</div>
+                <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+              </div>
+              <div class="m-entry-row flex collapsed" id="expanded">
+                <div class="m-entry-row flex">
+                  <button class="hiddenbutton" onclick="expandable_node(this.parentNode.parentNode)"><i class="arrow down"></i></button>
+                  <div class="m-entry header" style="width: auto;max-width: unset;"><a href="#a8a0797c16364d3462cb8df84bb86bcb5" class="m-doc">normalized_coordinates</a></div>
+                  <div class="m-entry modifiers"><span>      <span class="m-label m-flat m-public">public</span>
+</span></div>
+                </div>
+                <div class="m-entry-row">
+                </div>
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">returns</div>
+                  <div class="m-entry">void</div>
+                </div>
+                <div class="m-entry-row"><div class="block header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">parameters</div></div>
+                <div class="m-entry-row flex">
+                  <div class="m-entry header" style="margin-left:2rem;width:6rem;color:#7b7b7b;">value</div>
+                  <div class="m-entry">bool</div>
+                </div>            
+                <div class="m-entry-row">
+                  <div class="m-entry header" style="margin-left:1rem;width:6rem;color:#9b9b9b;">description</div>
+                  <div class="m-entry">enables or disables coordinate normalization when this sampler is used.</div>
+                </div>
+              </div>
+            </div>
+	</tr>
+	</table>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          
+          
+          			          <section class="m-doc-details" id="a99a4c1d2bcc15290d438b19f547497c1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a99a4c1d2bcc15290d438b19f547497c1" class="m-doc-self">mipmaps</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns if mipmapping is enabled or not</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>if mipmapping is enabled or not</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ad254be2aa17fa473d9eb6a28420e2d8f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad254be2aa17fa473d9eb6a28420e2d8f" class="m-doc-self">mipmaps</a>(</span><span class="m-doc-wrap">bool value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>enables or disables mipmapping on this sampler.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>true for enabling mipmapping.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a8effea61912629b90bba6f483a7fc65e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">float core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8effea61912629b90bba6f483a7fc65e" class="m-doc-self">mip_bias</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the mip_bias that might be present on this sampler.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p><a href="classcore_1_1data_1_1sampler__t.html#a99a4c1d2bcc15290d438b19f547497c1" class="m-doc">mipmaps()</a> should be true for this to have an effect.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the mip_bias that might be present on this sampler.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a0368167ed286f535ce7066b887838085"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0368167ed286f535ce7066b887838085" class="m-doc-self">mip_bias</a>(</span><span class="m-doc-wrap">float value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the mip bias when sampling mipmaps.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p><a href="classcore_1_1data_1_1sampler__t.html#a99a4c1d2bcc15290d438b19f547497c1" class="m-doc">mipmaps()</a> should be true for this to have an effect.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the bias to apply to mipmap sampling.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a15261c7a4e1eb460bf578a19339b9fc7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#aed4ecae98e0bfbd106628120a165d9a8" class="m-doc">core::<wbr />gfx::<wbr />sampler_mipmap_mode</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a15261c7a4e1eb460bf578a19339b9fc7" class="m-doc-self">mip_mode</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the mode for mipmap texture lookups.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the mode for mipmap texture lookups.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a195286f174e5947f0042f9c997423a84"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a195286f174e5947f0042f9c997423a84" class="m-doc-self">mip_mode</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#aed4ecae98e0bfbd106628120a165d9a8" class="m-doc">core::<wbr />gfx::<wbr />sampler_mipmap_mode</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the mode for mipmap texture lookups.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the mode to change to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a44b2d8b8491adb30aabcd0534d6938f0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">float core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a44b2d8b8491adb30aabcd0534d6938f0" class="m-doc-self">mip_minlod</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the minimal mipmap LOD this instance has set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the minimal mipmap LOD this instance has set.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a5eb3f322de4a02f84f87b0b61ab738f4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5eb3f322de4a02f84f87b0b61ab738f4" class="m-doc-self">mip_minlod</a>(</span><span class="m-doc-wrap">float value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the minimal mipmap LOD offset for this instance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the value to set.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ace67337e9b24c8dd56a522d32f77ca70"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">float core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ace67337e9b24c8dd56a522d32f77ca70" class="m-doc-self">mip_maxlod</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the max mipmap LOD this instance has set.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-dim"><h4><a href="todo.html#_todo000004" class="m-doc">Todo</a></h4><p>this value is currently ignored in core::core::ivk::sampler_t.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the max mipmap LOD this instance has set.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ad2d81cf6cb28a272eacf0fbbf98b1b0e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad2d81cf6cb28a272eacf0fbbf98b1b0e" class="m-doc-self">mip_maxlod</a>(</span><span class="m-doc-wrap">float value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the minimal mipmap max LOD for this instance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the value to set.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a389bea496611d8bbebe7c39447745f14"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a389bea496611d8bbebe7c39447745f14" class="m-doc-self">addressU</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns how this instances deals with texture tiling in the U-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>how this instances deals with texture tiling in the U-axis.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ad1e49988b27d9d699c813cdd71ee529e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad1e49988b27d9d699c813cdd71ee529e" class="m-doc-self">addressU</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets how this instance should deal with texture tiling in the U-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the mode to set this instance to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a1da95da7879280c55166811f36c88af0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1da95da7879280c55166811f36c88af0" class="m-doc-self">addressV</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns how this instances deals with texture tiling in the V-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>how this instances deals with texture tiling in the V-axis.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a3e2f8df44cef4d7d52104924d0b3f757"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3e2f8df44cef4d7d52104924d0b3f757" class="m-doc-self">addressV</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets how this instance should deal with texture tiling in the V-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the mode to set this instance to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a245249ae46a9a1ef00d576b387d3a6f9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a245249ae46a9a1ef00d576b387d3a6f9" class="m-doc-self">addressW</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns how this instances deals with texture tiling in the W-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>how this instances deals with texture tiling in the W-axis.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a4c101776de82fdf817906cc90d1f58bb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4c101776de82fdf817906cc90d1f58bb" class="m-doc-self">addressW</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#ae3afb190d93ff19b04358befbf73943b" class="m-doc">core::<wbr />gfx::<wbr />sampler_address_mode</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets how this instance should deal with texture tiling in the W-axis.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the mode to set this instance to.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a6d74233c5e92367a1343fa8d5985d9d3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#ada9246b9968c9b2b547313c1ed29e5e7" class="m-doc">core::<wbr />gfx::<wbr />border_color</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d74233c5e92367a1343fa8d5985d9d3" class="m-doc-self">border_color</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the border color that will be used during texture lookups.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the border color that will be used during texture lookups.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a6f10ca85e2b9b6ef76ee99b37ff1bee3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6f10ca85e2b9b6ef76ee99b37ff1bee3" class="m-doc-self">border_color</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#ada9246b9968c9b2b547313c1ed29e5e7" class="m-doc">core::<wbr />gfx::<wbr />border_color</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the border color that should be used during texture lookups.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the new border color value.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="afadbce6da831055d2c609ced1ead86ed"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afadbce6da831055d2c609ced1ead86ed" class="m-doc-self">anisotropic_filtering</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns if anisotropic filtering is enabled.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>if anisotropic filtering is enabled.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a3ed49d83c248405f594f572fbb708cca"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3ed49d83c248405f594f572fbb708cca" class="m-doc-self">anisotropic_filtering</a>(</span><span class="m-doc-wrap">bool value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>call this to enable or disable anisotropic filtering.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p>if the current <a href="classcore_1_1ivk_1_1context.html" class="m-doc">core::<wbr />ivk::<wbr />context</a> doesn&#x27;t support anisotropic filtering, then this value will be ingored upstream (core::core::ivk::sampler_t).</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>set to true to enable anisotropic filtering.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ac7dfb67005aa203f296e3e576e315ec9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">float core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac7dfb67005aa203f296e3e576e315ec9" class="m-doc-self">max_anisotropy</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the max anistropic value for this instance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the max anistropic value for this instance.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ab23aa4a8d62db40d680dbce1c0e890c7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab23aa4a8d62db40d680dbce1c0e890c7" class="m-doc-self">max_anisotropy</a>(</span><span class="m-doc-wrap">float value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the max anistropic value for this instance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the value to set the max anisotropic value.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ae833716f38eb04b802575c92dd7fd9ca"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc-self">compare_mode</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns if compare operations have been enabled or not.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>if compare operations have been enabled or not.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ad1534b0e40eb01cd61e1b6181eedc8ac"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad1534b0e40eb01cd61e1b6181eedc8ac" class="m-doc-self">compare_mode</a>(</span><span class="m-doc-wrap">bool value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>enables or disables compare ops.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>set to true to enable compare ops.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a22cbd56ee7897e681e8d6fe8a19011ca"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#a8866821c51fbf21e872fdb10244da13e" class="m-doc">core::<wbr />gfx::<wbr />compare_op</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a22cbd56ee7897e681e8d6fe8a19011ca" class="m-doc-self">compare_op</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns what compare op would be used if <a href="classcore_1_1data_1_1sampler__t.html#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_<wbr />mode()</a> is true.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>what compare op would be used if <a href="classcore_1_1data_1_1sampler__t.html#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_<wbr />mode()</a> is true.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="aab7948823d39f7b057bd03a78df0f1da"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aab7948823d39f7b057bd03a78df0f1da" class="m-doc-self">compare_op</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#a8866821c51fbf21e872fdb10244da13e" class="m-doc">core::<wbr />gfx::<wbr />compare_op</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the compare op to a new value.</p>
+              <h3>Details</h3>
+              <p><aside class="m-note m-info"><h4>Note</h4><p><a href="classcore_1_1data_1_1sampler__t.html#a22cbd56ee7897e681e8d6fe8a19011ca" class="m-doc">compare_<wbr />op()</a> will only be used if <a href="classcore_1_1data_1_1sampler__t.html#ae833716f38eb04b802575c92dd7fd9ca" class="m-doc">compare_<wbr />mode()</a> is true. You can still set this value regardless however.</p></aside></p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the new compare op to use.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="ac4c54b94de7058efc5cba15dc5c1c6fc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac4c54b94de7058efc5cba15dc5c1c6fc" class="m-doc-self">filter_min</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the filtering mode to use when dealing with minification.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the filtering mode to use when dealing with minification.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a9f04ea7c197d542743dc093fd3191568"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9f04ea7c197d542743dc093fd3191568" class="m-doc-self">filter_min</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the filtering mode to use when dealing with minification.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the new filter mode to use.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="aa6ed4ba35c21ce7fc44411485aa92965"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a> core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6ed4ba35c21ce7fc44411485aa92965" class="m-doc-self">filter_max</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns the filtering mode to use when dealing with magnification.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the filtering mode to use when dealing with magnification.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a1fa3a46c92a8f22417fb1df966370fdf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1fa3a46c92a8f22417fb1df966370fdf" class="m-doc-self">filter_max</a>(</span><span class="m-doc-wrap"><a href="namespacecore_1_1gfx.html#a58684ed66f227dc0225fe10aced5a7e1" class="m-doc">core::<wbr />gfx::<wbr />filter</a> value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>sets the filtering mode to use when dealing with magnification.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>the new filter mode to use.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a95ff1293a765ba49a903232e0c399387"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a95ff1293a765ba49a903232e0c399387" class="m-doc-self">normalized_coordinates</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>returns if the coordinates for this sampler will be normalized or not.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>if the coordinates for this sampler will be normalized or not.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+			          <section class="m-doc-details" id="a8a0797c16364d3462cb8df84bb86bcb5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void core::<wbr />data::<wbr />sampler_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a0797c16364d3462cb8df84bb86bcb5" class="m-doc-self">normalized_coordinates</a>(</span><span class="m-doc-wrap">bool value)</span></span>
+            </h3>
+              <h3>Brief</h3>
+              <p>enables or disables coordinate normalization when this sampler is used.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>enables or disables the behaviour.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var visibility_level = 1;
+  function radio_visibility_toggle(value) {
+    if(value.id === 'first_toggle' && value.checked)  {
+      visibility_level = 1;
+    }
+    else if(value.id === 'second_toggle' && value.checked)  {
+      visibility_level = 2;
+    }
+    else if(value.id === 'third_toggle' && value.checked)  {
+      visibility_level = 3;
+    }
+    else {
+    return;
+    }
+    
+    update_visibility();
+  }
+  
+  function update_visibility()
+  {
+    localStorage.visibility_level = visibility_level;
+    var private_elements = document.getElementsByClassName("private-visibility");
+    var protected_elements = document.getElementsByClassName("protected-visibility");
+    if (visibility_level == 1) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "none";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 2) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "none";
+      }
+    } else if (visibility_level == 3) {
+    for (i = 0; i < protected_elements.length; i++) {
+        protected_elements[i].style.display = "";
+      }
+    for (i = 0; i < private_elements.length; i++) {
+        private_elements[i].style.display = "";
+      }
+    }
+  }
+  
+  function load_image(target, url, map_id)
+  {
+    var img = document.createElement("img");
+     var loc = url.match(/[^\/]+$/)[0];
+    img.src = loc;
+    img.alt = loc;
+    img.style = "display: block;margin-left: auto;margin-right: auto;"
+    img.useMap ="#localmap"			
+    target.appendChild(img);
+    
+    if(map_id)
+    {
+      var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+      var class_tree = document.getElementById(map_id);
+       class_tree.style = "";
+       
+       var request = new XMLHttpRequest();  
+      request.open('GET', file, true);
+      request.onreadystatechange = function(){
+        if (request.readyState === 4){
+          if (request.status === 200) 
+          {  
+            target.innerHTML += request.responseText;
+            target.childNodes[1].name="localmap"
+            var c = target.childNodes[1].childNodes;
+              for (i = 1; i < c.length; i+=2) {
+              c[i].href =c[i].href.replace("$", "");
+            }
+          }  			
+        }
+      };
+      request.send();	
+    }
+  }
+  
+  function on_document_body_loaded()
+  {
+    if (localStorage.getItem("visibility_level") === null) {
+      visibility_level = 1;
+    }
+    else
+    {
+     visibility_level =localStorage.visibility_level;
+     }
+    var first = document.getElementById('first_toggle');
+    if(first != null)	{
+      first.checked = visibility_level == 1;
+      var second = document.getElementById('second_toggle');
+      second.checked = visibility_level == 2;
+      var third = document.getElementById('third_toggle');
+      third.checked = visibility_level == 3;  
+      update_visibility();
+    }
+    
+    var img_tag = document.getElementById("img_tag");	
+    if(img_tag != null)
+    {
+      var img = document.createElement("img");
+      img.onload = function() 
+      {
+      img.alt = loc;
+        img.style = "display: block;margin-left: auto;margin-right: auto;";
+        img.useMap ="#localmap";
+        img_tag.appendChild(img);
+        
+        var file = document.location.href.replace(".html", "__inherit__graph.map");	 
+        var class_tree = document.getElementById("class-tree");
+         class_tree.style = "";
+         
+         var request = new XMLHttpRequest();  
+        request.open('GET', file, true);
+        request.onreadystatechange = function(){
+          if (request.readyState === 4){
+            if (request.status === 200) 
+            {  
+              img_tag.innerHTML += request.responseText;
+              img_tag.childNodes[1].name="localmap"
+              var c = img_tag.childNodes[1].childNodes;
+                for (i = 1; i < c.length; i+=2) {
+                c[i].href =c[i].href.replace("$", "");
+              }
+            }  			
+          }
+        };
+        request.send();	
+      }
+      
+      var url = document.location.href.replace(".html", "__inherit__graph.png");
+       var loc = url.match(/[^\/]+$/)[0];
+      img.src = loc;
+    }
+  }
+  
+  function expandable_node(target)
+  {
+    var other = target.parentNode.querySelector((target.id == "expanded")?"#brief": "#expanded");
+    if(other != null)
+    {
+      target.className = "m-entry-row collapsed"
+      other.className = (other.id == "expanded")?"m-entry-row":"m-entry-row flex";
+    }
+  }
+  </script>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>Paradigm Engine C++20 Rendering Library & Toolchain. Created with <a href="https://doxygen.org/">Doxygen</a> 1.9.5 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
